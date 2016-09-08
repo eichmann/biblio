@@ -1,0 +1,50 @@
+<%@ page language="java" contentType="text/html; charset=US-ASCII" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="biblio" uri="http://slis.uiowa.edu/BIBFRAME"%>
+<%@ taglib prefix="util" uri="http://icts.uiowa.edu/tagUtil"%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>TransliteratedTitle - http://bib.ld4l.org/ontology/TransliteratedTitle</title>
+<style type="text/css" media="all">    @import "/biblio/resources/style.css";</style></head>
+<body>
+<div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
+   <p><a href="altTransliteratedTitle.jsp?uri=${param.uri}">alternate view</a></p>
+   <biblio:TransliteratedTitle subjectURI="${param.uri}">
+
+   <h3>Default Properties</h3>
+   <table>
+      <tr><td>URI</td><td><a href="<biblio:TransliteratedTitleSubjectURI/>"><biblio:TransliteratedTitleSubjectURI /></a></td></tr>
+      <tr><td>Label</td><td><biblio:TransliteratedTitleLabel /></td></tr>
+   </table>
+
+   <h3>Functional Datatype Properties</h3>
+   <table>
+   </table>
+
+   <h3>Non-Functional Datatype Properties</h3>
+   <table>
+   </table>
+
+   <h3>Object Properties</h3>
+   <table>
+      <biblio:foreachTransliteratedTitleIsTitleOfIterator>
+         <tr><td>isTitleOf</td><td><a href="../<biblio:TransliteratedTitleIsTitleOfType/>/<biblio:TransliteratedTitleIsTitleOfType/>.jsp?uri=<biblio:TransliteratedTitleIsTitleOf/>"><biblio:TransliteratedTitleIsTitleOf /></a></td></tr>
+      </biblio:foreachTransliteratedTitleIsTitleOfIterator>
+      <biblio:foreachTransliteratedTitleHasSourceStatusIterator>
+         <tr><td>hasSourceStatus</td><td><a href="../<biblio:TransliteratedTitleHasSourceStatusType/>/<biblio:TransliteratedTitleHasSourceStatusType/>.jsp?uri=<biblio:TransliteratedTitleHasSourceStatus/>"><biblio:TransliteratedTitleHasSourceStatus /></a></td></tr>
+      </biblio:foreachTransliteratedTitleHasSourceStatusIterator>
+      <biblio:foreachTransliteratedTitleIsPreferredTitleOfIterator>
+         <tr><td>isPreferredTitleOf</td><td><a href="../<biblio:TransliteratedTitleIsPreferredTitleOfType/>/<biblio:TransliteratedTitleIsPreferredTitleOfType/>.jsp?uri=<biblio:TransliteratedTitleIsPreferredTitleOf/>"><biblio:TransliteratedTitleIsPreferredTitleOf /></a></td></tr>
+      </biblio:foreachTransliteratedTitleIsPreferredTitleOfIterator>
+      <biblio:foreachTransliteratedTitleHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:TransliteratedTitleHasPartType/>/<biblio:TransliteratedTitleHasPartType/>.jsp?uri=<biblio:TransliteratedTitleHasPart/>"><biblio:TransliteratedTitleHasPart /></a></td></tr>
+      </biblio:foreachTransliteratedTitleHasPartIterator>
+   </table>
+   </biblio:TransliteratedTitle>
+
+<jsp:include page="/footer.jsp" flush="true" /></div></div></body>
+</html>
+
