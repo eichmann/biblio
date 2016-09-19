@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altCoverTitle.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=CoverTitle&uri=${param.uri}">RDF dump</a></p>
    <biblio:CoverTitle subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -36,12 +37,22 @@
       <biblio:foreachCoverTitleHasSourceStatusIterator>
          <tr><td>hasSourceStatus</td><td><a href="../<biblio:CoverTitleHasSourceStatusType/>/<biblio:CoverTitleHasSourceStatusType/>.jsp?uri=<biblio:CoverTitleHasSourceStatus/>"><biblio:CoverTitleHasSourceStatus /></a></td></tr>
       </biblio:foreachCoverTitleHasSourceStatusIterator>
+      <biblio:foreachCoverTitleHasDerivativeIterator>
+         <tr><td>hasDerivative</td><td><a href="../<biblio:CoverTitleHasDerivativeType/>/<biblio:CoverTitleHasDerivativeType/>.jsp?uri=<biblio:CoverTitleHasDerivative/>"><biblio:CoverTitleHasDerivative /></a></td></tr>
+      </biblio:foreachCoverTitleHasDerivativeIterator>
       <biblio:foreachCoverTitleIsPreferredTitleOfIterator>
          <tr><td>isPreferredTitleOf</td><td><a href="../<biblio:CoverTitleIsPreferredTitleOfType/>/<biblio:CoverTitleIsPreferredTitleOfType/>.jsp?uri=<biblio:CoverTitleIsPreferredTitleOf/>"><biblio:CoverTitleIsPreferredTitleOf /></a></td></tr>
       </biblio:foreachCoverTitleIsPreferredTitleOfIterator>
+      <biblio:foreachCoverTitleDerivedFromIterator>
+         <tr><td>derivedFrom</td><td><a href="../<biblio:CoverTitleDerivedFromType/>/<biblio:CoverTitleDerivedFromType/>.jsp?uri=<biblio:CoverTitleDerivedFrom/>"><biblio:CoverTitleDerivedFrom /></a></td></tr>
+      </biblio:foreachCoverTitleDerivedFromIterator>
       <biblio:foreachCoverTitleHasPartIterator>
          <tr><td>hasPart</td><td><a href="../<biblio:CoverTitleHasPartType/>/<biblio:CoverTitleHasPartType/>.jsp?uri=<biblio:CoverTitleHasPart/>"><biblio:CoverTitleHasPart /></a></td></tr>
       </biblio:foreachCoverTitleHasPartIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
    </table>
    </biblio:CoverTitle>
 

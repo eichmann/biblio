@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altEditorContribution.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=EditorContribution&uri=${param.uri}">RDF dump</a></p>
    <biblio:EditorContribution subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -33,12 +34,13 @@
       <biblio:foreachEditorContributionAgentIterator>
          <tr><td>agent</td><td><a href="../<biblio:EditorContributionAgentType/>/<biblio:EditorContributionAgentType/>.jsp?uri=<biblio:EditorContributionAgent/>"><biblio:EditorContributionAgent /></a></td></tr>
       </biblio:foreachEditorContributionAgentIterator>
-      <biblio:foreachEditorContributionAgentIterator>
-         <tr><td>agent</td><td><a href="../<biblio:EditorContributionAgentType/>/<biblio:EditorContributionAgentType/>.jsp?uri=<biblio:EditorContributionAgent/>"><biblio:EditorContributionAgent /></a></td></tr>
-      </biblio:foreachEditorContributionAgentIterator>
       <biblio:foreachEditorContributionContributedToIterator>
          <tr><td>contributedTo</td><td><a href="../<biblio:EditorContributionContributedToType/>/<biblio:EditorContributionContributedToType/>.jsp?uri=<biblio:EditorContributionContributedTo/>"><biblio:EditorContributionContributedTo /></a></td></tr>
       </biblio:foreachEditorContributionContributedToIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
    </table>
    </biblio:EditorContribution>
 

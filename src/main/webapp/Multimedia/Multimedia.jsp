@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altMultimedia.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=Multimedia&uri=${param.uri}">RDF dump</a></p>
    <biblio:Multimedia subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -32,6 +33,9 @@
       <biblio:foreachMultimediaFrequencyIterator>
          <tr><td>frequency</td><td><biblio:MultimediaFrequency /></td></tr>
       </biblio:foreachMultimediaFrequencyIterator>
+      <biblio:foreachMultimediaFormDesignationIterator>
+         <tr><td>formDesignation</td><td><biblio:MultimediaFormDesignation /></td></tr>
+      </biblio:foreachMultimediaFormDesignationIterator>
       <biblio:foreachMultimediaLanguageNoteIterator>
          <tr><td>languageNote</td><td><biblio:MultimediaLanguageNote /></td></tr>
       </biblio:foreachMultimediaLanguageNoteIterator>
@@ -42,9 +46,6 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachMultimediaSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:MultimediaSubjectType/>/<biblio:MultimediaSubjectType/>.jsp?uri=<biblio:MultimediaSubject/>"><biblio:MultimediaSubject /></a></td></tr>
-      </biblio:foreachMultimediaSubjectIterator>
       <biblio:foreachMultimediaPerformedAtIterator>
          <tr><td>performedAt</td><td><a href="../<biblio:MultimediaPerformedAtType/>/<biblio:MultimediaPerformedAtType/>.jsp?uri=<biblio:MultimediaPerformedAt/>"><biblio:MultimediaPerformedAt /></a></td></tr>
       </biblio:foreachMultimediaPerformedAtIterator>
@@ -63,9 +64,9 @@
       <biblio:foreachMultimediaHasDataSourceIterator>
          <tr><td>hasDataSource</td><td><a href="../<biblio:MultimediaHasDataSourceType/>/<biblio:MultimediaHasDataSourceType/>.jsp?uri=<biblio:MultimediaHasDataSource/>"><biblio:MultimediaHasDataSource /></a></td></tr>
       </biblio:foreachMultimediaHasDataSourceIterator>
-      <biblio:foreachMultimediaIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:MultimediaIdentifiedByType/>/<biblio:MultimediaIdentifiedByType/>.jsp?uri=<biblio:MultimediaIdentifiedBy/>"><biblio:MultimediaIdentifiedBy /></a></td></tr>
-      </biblio:foreachMultimediaIdentifiedByIterator>
+      <biblio:foreachMultimediaPrecedesIterator>
+         <tr><td>precedes</td><td><a href="../<biblio:MultimediaPrecedesType/>/<biblio:MultimediaPrecedesType/>.jsp?uri=<biblio:MultimediaPrecedes/>"><biblio:MultimediaPrecedes /></a></td></tr>
+      </biblio:foreachMultimediaPrecedesIterator>
       <biblio:foreachMultimediaContinuesUnderNewTitleIterator>
          <tr><td>continuesUnderNewTitle</td><td><a href="../<biblio:MultimediaContinuesUnderNewTitleType/>/<biblio:MultimediaContinuesUnderNewTitleType/>.jsp?uri=<biblio:MultimediaContinuesUnderNewTitle/>"><biblio:MultimediaContinuesUnderNewTitle /></a></td></tr>
       </biblio:foreachMultimediaContinuesUnderNewTitleIterator>
@@ -75,6 +76,9 @@
       <biblio:foreachMultimediaIsFindingAidForIterator>
          <tr><td>isFindingAidFor</td><td><a href="../<biblio:MultimediaIsFindingAidForType/>/<biblio:MultimediaIsFindingAidForType/>.jsp?uri=<biblio:MultimediaIsFindingAidFor/>"><biblio:MultimediaIsFindingAidFor /></a></td></tr>
       </biblio:foreachMultimediaIsFindingAidForIterator>
+      <biblio:foreachMultimediaFollowsIterator>
+         <tr><td>follows</td><td><a href="../<biblio:MultimediaFollowsType/>/<biblio:MultimediaFollowsType/>.jsp?uri=<biblio:MultimediaFollows/>"><biblio:MultimediaFollows /></a></td></tr>
+      </biblio:foreachMultimediaFollowsIterator>
       <biblio:foreachMultimediaAbsorbedByIterator>
          <tr><td>absorbedBy</td><td><a href="../<biblio:MultimediaAbsorbedByType/>/<biblio:MultimediaAbsorbedByType/>.jsp?uri=<biblio:MultimediaAbsorbedBy/>"><biblio:MultimediaAbsorbedBy /></a></td></tr>
       </biblio:foreachMultimediaAbsorbedByIterator>
@@ -84,12 +88,12 @@
       <biblio:foreachMultimediaSeparatedFromIterator>
          <tr><td>separatedFrom</td><td><a href="../<biblio:MultimediaSeparatedFromType/>/<biblio:MultimediaSeparatedFromType/>.jsp?uri=<biblio:MultimediaSeparatedFrom/>"><biblio:MultimediaSeparatedFrom /></a></td></tr>
       </biblio:foreachMultimediaSeparatedFromIterator>
-      <biblio:foreachMultimediaSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:MultimediaSubjectType/>/<biblio:MultimediaSubjectType/>.jsp?uri=<biblio:MultimediaSubject/>"><biblio:MultimediaSubject /></a></td></tr>
-      </biblio:foreachMultimediaSubjectIterator>
       <biblio:foreachMultimediaTranslatedAsIterator>
          <tr><td>translatedAs</td><td><a href="../<biblio:MultimediaTranslatedAsType/>/<biblio:MultimediaTranslatedAsType/>.jsp?uri=<biblio:MultimediaTranslatedAs/>"><biblio:MultimediaTranslatedAs /></a></td></tr>
       </biblio:foreachMultimediaTranslatedAsIterator>
+      <biblio:foreachMultimediaHasDerivativeIterator>
+         <tr><td>hasDerivative</td><td><a href="../<biblio:MultimediaHasDerivativeType/>/<biblio:MultimediaHasDerivativeType/>.jsp?uri=<biblio:MultimediaHasDerivative/>"><biblio:MultimediaHasDerivative /></a></td></tr>
+      </biblio:foreachMultimediaHasDerivativeIterator>
       <biblio:foreachMultimediaHasInstanceIterator>
          <tr><td>hasInstance</td><td><a href="../<biblio:MultimediaHasInstanceType/>/<biblio:MultimediaHasInstanceType/>.jsp?uri=<biblio:MultimediaHasInstance/>"><biblio:MultimediaHasInstance /></a></td></tr>
       </biblio:foreachMultimediaHasInstanceIterator>
@@ -105,15 +109,15 @@
       <biblio:foreachMultimediaPrecedesInNarrativeIterator>
          <tr><td>precedesInNarrative</td><td><a href="../<biblio:MultimediaPrecedesInNarrativeType/>/<biblio:MultimediaPrecedesInNarrativeType/>.jsp?uri=<biblio:MultimediaPrecedesInNarrative/>"><biblio:MultimediaPrecedesInNarrative /></a></td></tr>
       </biblio:foreachMultimediaPrecedesInNarrativeIterator>
+      <biblio:foreachMultimediaIsSubjectOfIterator>
+         <tr><td>isSubjectOf</td><td><a href="../<biblio:MultimediaIsSubjectOfType/>/<biblio:MultimediaIsSubjectOfType/>.jsp?uri=<biblio:MultimediaIsSubjectOf/>"><biblio:MultimediaIsSubjectOf /></a></td></tr>
+      </biblio:foreachMultimediaIsSubjectOfIterator>
       <biblio:foreachMultimediaIsLastOfIterator>
          <tr><td>isLastOf</td><td><a href="../<biblio:MultimediaIsLastOfType/>/<biblio:MultimediaIsLastOfType/>.jsp?uri=<biblio:MultimediaIsLastOf/>"><biblio:MultimediaIsLastOf /></a></td></tr>
       </biblio:foreachMultimediaIsLastOfIterator>
       <biblio:foreachMultimediaIsFirstOfIterator>
          <tr><td>isFirstOf</td><td><a href="../<biblio:MultimediaIsFirstOfType/>/<biblio:MultimediaIsFirstOfType/>.jsp?uri=<biblio:MultimediaIsFirstOf/>"><biblio:MultimediaIsFirstOf /></a></td></tr>
       </biblio:foreachMultimediaIsFirstOfIterator>
-      <biblio:foreachMultimediaRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:MultimediaRelationType/>/<biblio:MultimediaRelationType/>.jsp?uri=<biblio:MultimediaRelation/>"><biblio:MultimediaRelation /></a></td></tr>
-      </biblio:foreachMultimediaRelationIterator>
       <biblio:foreachMultimediaSupersedesIterator>
          <tr><td>supersedes</td><td><a href="../<biblio:MultimediaSupersedesType/>/<biblio:MultimediaSupersedesType/>.jsp?uri=<biblio:MultimediaSupersedes/>"><biblio:MultimediaSupersedes /></a></td></tr>
       </biblio:foreachMultimediaSupersedesIterator>
@@ -126,12 +130,27 @@
       <biblio:foreachMultimediaSupplementsIterator>
          <tr><td>supplements</td><td><a href="../<biblio:MultimediaSupplementsType/>/<biblio:MultimediaSupplementsType/>.jsp?uri=<biblio:MultimediaSupplements/>"><biblio:MultimediaSupplements /></a></td></tr>
       </biblio:foreachMultimediaSupplementsIterator>
+      <biblio:foreachMultimediaHasPreferredTitleIterator>
+         <tr><td>hasPreferredTitle</td><td><a href="../<biblio:MultimediaHasPreferredTitleType/>/<biblio:MultimediaHasPreferredTitleType/>.jsp?uri=<biblio:MultimediaHasPreferredTitle/>"><biblio:MultimediaHasPreferredTitle /></a></td></tr>
+      </biblio:foreachMultimediaHasPreferredTitleIterator>
+      <biblio:foreachMultimediaDerivedFromIterator>
+         <tr><td>derivedFrom</td><td><a href="../<biblio:MultimediaDerivedFromType/>/<biblio:MultimediaDerivedFromType/>.jsp?uri=<biblio:MultimediaDerivedFrom/>"><biblio:MultimediaDerivedFrom /></a></td></tr>
+      </biblio:foreachMultimediaDerivedFromIterator>
+      <biblio:foreachMultimediaReceivedIterator>
+         <tr><td>received</td><td><a href="../<biblio:MultimediaReceivedType/>/<biblio:MultimediaReceivedType/>.jsp?uri=<biblio:MultimediaReceived/>"><biblio:MultimediaReceived /></a></td></tr>
+      </biblio:foreachMultimediaReceivedIterator>
       <biblio:foreachMultimediaHasOtherEditionIterator>
          <tr><td>hasOtherEdition</td><td><a href="../<biblio:MultimediaHasOtherEditionType/>/<biblio:MultimediaHasOtherEditionType/>.jsp?uri=<biblio:MultimediaHasOtherEdition/>"><biblio:MultimediaHasOtherEdition /></a></td></tr>
       </biblio:foreachMultimediaHasOtherEditionIterator>
       <biblio:foreachMultimediaHasContributionIterator>
          <tr><td>hasContribution</td><td><a href="../<biblio:MultimediaHasContributionType/>/<biblio:MultimediaHasContributionType/>.jsp?uri=<biblio:MultimediaHasContribution/>"><biblio:MultimediaHasContribution /></a></td></tr>
       </biblio:foreachMultimediaHasContributionIterator>
+      <biblio:foreachMultimediaAccompaniesIterator>
+         <tr><td>accompanies</td><td><a href="../<biblio:MultimediaAccompaniesType/>/<biblio:MultimediaAccompaniesType/>.jsp?uri=<biblio:MultimediaAccompanies/>"><biblio:MultimediaAccompanies /></a></td></tr>
+      </biblio:foreachMultimediaAccompaniesIterator>
+      <biblio:foreachMultimediaHasTitleIterator>
+         <tr><td>hasTitle</td><td><a href="../<biblio:MultimediaHasTitleType/>/<biblio:MultimediaHasTitleType/>.jsp?uri=<biblio:MultimediaHasTitle/>"><biblio:MultimediaHasTitle /></a></td></tr>
+      </biblio:foreachMultimediaHasTitleIterator>
       <biblio:foreachMultimediaHasSupplementIterator>
          <tr><td>hasSupplement</td><td><a href="../<biblio:MultimediaHasSupplementType/>/<biblio:MultimediaHasSupplementType/>.jsp?uri=<biblio:MultimediaHasSupplement/>"><biblio:MultimediaHasSupplement /></a></td></tr>
       </biblio:foreachMultimediaHasSupplementIterator>
@@ -159,6 +178,13 @@
       <biblio:foreachMultimediaIsUnionOfIterator>
          <tr><td>isUnionOf</td><td><a href="../<biblio:MultimediaIsUnionOfType/>/<biblio:MultimediaIsUnionOfType/>.jsp?uri=<biblio:MultimediaIsUnionOf/>"><biblio:MultimediaIsUnionOf /></a></td></tr>
       </biblio:foreachMultimediaIsUnionOfIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
+      <biblio:foreachMultimediaRelationInverseIterator>
+         <tr><td>relation</td><td><a href="../<biblio:MultimediaRelationInverseType/>/<biblio:MultimediaRelationInverseType/>.jsp?uri=<biblio:MultimediaRelationInverse/>"><biblio:MultimediaRelationInverse/></a></td></tr>
+      </biblio:foreachMultimediaRelationInverseIterator>
    </table>
    </biblio:Multimedia>
 

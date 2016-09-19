@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altOrganization.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=Organization&uri=${param.uri}">RDF dump</a></p>
    <biblio:Organization subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -26,25 +27,29 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
-      <biblio:foreachOrganizationBirthDateIterator>
-         <tr><td>birthDate</td><td><biblio:OrganizationBirthDate /></td></tr>
-      </biblio:foreachOrganizationBirthDateIterator>
-      <biblio:foreachOrganizationDeathDateIterator>
-         <tr><td>deathDate</td><td><biblio:OrganizationDeathDate /></td></tr>
-      </biblio:foreachOrganizationDeathDateIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachOrganizationIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:OrganizationIdentifiedByType/>/<biblio:OrganizationIdentifiedByType/>.jsp?uri=<biblio:OrganizationIdentifiedBy/>"><biblio:OrganizationIdentifiedBy /></a></td></tr>
-      </biblio:foreachOrganizationIdentifiedByIterator>
-      <biblio:foreachOrganizationIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:OrganizationIdentifiedByType/>/<biblio:OrganizationIdentifiedByType/>.jsp?uri=<biblio:OrganizationIdentifiedBy/>"><biblio:OrganizationIdentifiedBy /></a></td></tr>
-      </biblio:foreachOrganizationIdentifiedByIterator>
+      <biblio:foreachOrganizationIsSubjectOfIterator>
+         <tr><td>isSubjectOf</td><td><a href="../<biblio:OrganizationIsSubjectOfType/>/<biblio:OrganizationIsSubjectOfType/>.jsp?uri=<biblio:OrganizationIsSubjectOf/>"><biblio:OrganizationIsSubjectOf /></a></td></tr>
+      </biblio:foreachOrganizationIsSubjectOfIterator>
+      <biblio:foreachOrganizationReceivedIterator>
+         <tr><td>received</td><td><a href="../<biblio:OrganizationReceivedType/>/<biblio:OrganizationReceivedType/>.jsp?uri=<biblio:OrganizationReceived/>"><biblio:OrganizationReceived /></a></td></tr>
+      </biblio:foreachOrganizationReceivedIterator>
       <biblio:foreachOrganizationIsAnnotatorOfIterator>
          <tr><td>isAnnotatorOf</td><td><a href="../<biblio:OrganizationIsAnnotatorOfType/>/<biblio:OrganizationIsAnnotatorOfType/>.jsp?uri=<biblio:OrganizationIsAnnotatorOf/>"><biblio:OrganizationIsAnnotatorOf /></a></td></tr>
       </biblio:foreachOrganizationIsAnnotatorOfIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
+      <biblio:foreachOrganizationAgentInverseIterator>
+         <tr><td>agent</td><td><a href="../<biblio:OrganizationAgentInverseType/>/<biblio:OrganizationAgentInverseType/>.jsp?uri=<biblio:OrganizationAgentInverse/>"><biblio:OrganizationAgentInverse/></a></td></tr>
+      </biblio:foreachOrganizationAgentInverseIterator>
+      <biblio:foreachOrganizationHeldByInverseIterator>
+         <tr><td>heldBy</td><td><a href="../<biblio:OrganizationHeldByInverseType/>/<biblio:OrganizationHeldByInverseType/>.jsp?uri=<biblio:OrganizationHeldByInverse/>"><biblio:OrganizationHeldByInverse/></a></td></tr>
+      </biblio:foreachOrganizationHeldByInverseIterator>
    </table>
    </biblio:Organization>
 

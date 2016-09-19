@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altManuscript.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=Manuscript&uri=${param.uri}">RDF dump</a></p>
    <biblio:Manuscript subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -26,6 +27,9 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
+      <biblio:foreachManuscriptDimensionsIterator>
+         <tr><td>dimensions</td><td><biblio:ManuscriptDimensions /></td></tr>
+      </biblio:foreachManuscriptDimensionsIterator>
    </table>
 
    <h3>Object Properties</h3>
@@ -42,6 +46,13 @@
       <biblio:foreachManuscriptHeldByIterator>
          <tr><td>heldBy</td><td><a href="../<biblio:ManuscriptHeldByType/>/<biblio:ManuscriptHeldByType/>.jsp?uri=<biblio:ManuscriptHeldBy/>"><biblio:ManuscriptHeldBy /></a></td></tr>
       </biblio:foreachManuscriptHeldByIterator>
+      <biblio:foreachManuscriptHasTitleIterator>
+         <tr><td>hasTitle</td><td><a href="../<biblio:ManuscriptHasTitleType/>/<biblio:ManuscriptHasTitleType/>.jsp?uri=<biblio:ManuscriptHasTitle/>"><biblio:ManuscriptHasTitle /></a></td></tr>
+      </biblio:foreachManuscriptHasTitleIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
    </table>
    </biblio:Manuscript>
 

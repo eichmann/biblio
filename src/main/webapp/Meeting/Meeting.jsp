@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altMeeting.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=Meeting&uri=${param.uri}">RDF dump</a></p>
    <biblio:Meeting subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -30,15 +31,25 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachMeetingIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:MeetingIdentifiedByType/>/<biblio:MeetingIdentifiedByType/>.jsp?uri=<biblio:MeetingIdentifiedBy/>"><biblio:MeetingIdentifiedBy /></a></td></tr>
-      </biblio:foreachMeetingIdentifiedByIterator>
+      <biblio:foreachMeetingIsSubjectOfIterator>
+         <tr><td>isSubjectOf</td><td><a href="../<biblio:MeetingIsSubjectOfType/>/<biblio:MeetingIsSubjectOfType/>.jsp?uri=<biblio:MeetingIsSubjectOf/>"><biblio:MeetingIsSubjectOf /></a></td></tr>
+      </biblio:foreachMeetingIsSubjectOfIterator>
+      <biblio:foreachMeetingAtLocationIterator>
+         <tr><td>atLocation</td><td><a href="../<biblio:MeetingAtLocationType/>/<biblio:MeetingAtLocationType/>.jsp?uri=<biblio:MeetingAtLocation/>"><biblio:MeetingAtLocation /></a></td></tr>
+      </biblio:foreachMeetingAtLocationIterator>
       <biblio:foreachMeetingRecordedInIterator>
          <tr><td>recordedIn</td><td><a href="../<biblio:MeetingRecordedInType/>/<biblio:MeetingRecordedInType/>.jsp?uri=<biblio:MeetingRecordedIn/>"><biblio:MeetingRecordedIn /></a></td></tr>
       </biblio:foreachMeetingRecordedInIterator>
       <biblio:foreachMeetingPerformanceOfIterator>
          <tr><td>performanceOf</td><td><a href="../<biblio:MeetingPerformanceOfType/>/<biblio:MeetingPerformanceOfType/>.jsp?uri=<biblio:MeetingPerformanceOf/>"><biblio:MeetingPerformanceOf /></a></td></tr>
       </biblio:foreachMeetingPerformanceOfIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
+      <biblio:foreachMeetingAgentInverseIterator>
+         <tr><td>agent</td><td><a href="../<biblio:MeetingAgentInverseType/>/<biblio:MeetingAgentInverseType/>.jsp?uri=<biblio:MeetingAgentInverse/>"><biblio:MeetingAgentInverse/></a></td></tr>
+      </biblio:foreachMeetingAgentInverseIterator>
    </table>
    </biblio:Meeting>
 

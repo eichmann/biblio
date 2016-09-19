@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altTitle.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=Title&uri=${param.uri}">RDF dump</a></p>
    <biblio:Title subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -36,12 +37,22 @@
       <biblio:foreachTitleHasSourceStatusIterator>
          <tr><td>hasSourceStatus</td><td><a href="../<biblio:TitleHasSourceStatusType/>/<biblio:TitleHasSourceStatusType/>.jsp?uri=<biblio:TitleHasSourceStatus/>"><biblio:TitleHasSourceStatus /></a></td></tr>
       </biblio:foreachTitleHasSourceStatusIterator>
+      <biblio:foreachTitleHasDerivativeIterator>
+         <tr><td>hasDerivative</td><td><a href="../<biblio:TitleHasDerivativeType/>/<biblio:TitleHasDerivativeType/>.jsp?uri=<biblio:TitleHasDerivative/>"><biblio:TitleHasDerivative /></a></td></tr>
+      </biblio:foreachTitleHasDerivativeIterator>
       <biblio:foreachTitleIsPreferredTitleOfIterator>
          <tr><td>isPreferredTitleOf</td><td><a href="../<biblio:TitleIsPreferredTitleOfType/>/<biblio:TitleIsPreferredTitleOfType/>.jsp?uri=<biblio:TitleIsPreferredTitleOf/>"><biblio:TitleIsPreferredTitleOf /></a></td></tr>
       </biblio:foreachTitleIsPreferredTitleOfIterator>
+      <biblio:foreachTitleDerivedFromIterator>
+         <tr><td>derivedFrom</td><td><a href="../<biblio:TitleDerivedFromType/>/<biblio:TitleDerivedFromType/>.jsp?uri=<biblio:TitleDerivedFrom/>"><biblio:TitleDerivedFrom /></a></td></tr>
+      </biblio:foreachTitleDerivedFromIterator>
       <biblio:foreachTitleHasPartIterator>
          <tr><td>hasPart</td><td><a href="../<biblio:TitleHasPartType/>/<biblio:TitleHasPartType/>.jsp?uri=<biblio:TitleHasPart/>"><biblio:TitleHasPart /></a></td></tr>
       </biblio:foreachTitleHasPartIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
    </table>
    </biblio:Title>
 

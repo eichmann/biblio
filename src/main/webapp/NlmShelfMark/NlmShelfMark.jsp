@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altNlmShelfMark.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=NlmShelfMark&uri=${param.uri}">RDF dump</a></p>
    <biblio:NlmShelfMark subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -30,9 +31,10 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachNlmShelfMarkIsClassificationForIterator>
-         <tr><td>isClassificationFor</td><td><a href="../<biblio:NlmShelfMarkIsClassificationForType/>/<biblio:NlmShelfMarkIsClassificationForType/>.jsp?uri=<biblio:NlmShelfMarkIsClassificationFor/>"><biblio:NlmShelfMarkIsClassificationFor /></a></td></tr>
-      </biblio:foreachNlmShelfMarkIsClassificationForIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
    </table>
    </biblio:NlmShelfMark>
 

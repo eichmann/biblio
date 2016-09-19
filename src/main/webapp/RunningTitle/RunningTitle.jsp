@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altRunningTitle.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=RunningTitle&uri=${param.uri}">RDF dump</a></p>
    <biblio:RunningTitle subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -36,12 +37,22 @@
       <biblio:foreachRunningTitleHasSourceStatusIterator>
          <tr><td>hasSourceStatus</td><td><a href="../<biblio:RunningTitleHasSourceStatusType/>/<biblio:RunningTitleHasSourceStatusType/>.jsp?uri=<biblio:RunningTitleHasSourceStatus/>"><biblio:RunningTitleHasSourceStatus /></a></td></tr>
       </biblio:foreachRunningTitleHasSourceStatusIterator>
+      <biblio:foreachRunningTitleHasDerivativeIterator>
+         <tr><td>hasDerivative</td><td><a href="../<biblio:RunningTitleHasDerivativeType/>/<biblio:RunningTitleHasDerivativeType/>.jsp?uri=<biblio:RunningTitleHasDerivative/>"><biblio:RunningTitleHasDerivative /></a></td></tr>
+      </biblio:foreachRunningTitleHasDerivativeIterator>
       <biblio:foreachRunningTitleIsPreferredTitleOfIterator>
          <tr><td>isPreferredTitleOf</td><td><a href="../<biblio:RunningTitleIsPreferredTitleOfType/>/<biblio:RunningTitleIsPreferredTitleOfType/>.jsp?uri=<biblio:RunningTitleIsPreferredTitleOf/>"><biblio:RunningTitleIsPreferredTitleOf /></a></td></tr>
       </biblio:foreachRunningTitleIsPreferredTitleOfIterator>
+      <biblio:foreachRunningTitleDerivedFromIterator>
+         <tr><td>derivedFrom</td><td><a href="../<biblio:RunningTitleDerivedFromType/>/<biblio:RunningTitleDerivedFromType/>.jsp?uri=<biblio:RunningTitleDerivedFrom/>"><biblio:RunningTitleDerivedFrom /></a></td></tr>
+      </biblio:foreachRunningTitleDerivedFromIterator>
       <biblio:foreachRunningTitleHasPartIterator>
          <tr><td>hasPart</td><td><a href="../<biblio:RunningTitleHasPartType/>/<biblio:RunningTitleHasPartType/>.jsp?uri=<biblio:RunningTitleHasPart/>"><biblio:RunningTitleHasPart /></a></td></tr>
       </biblio:foreachRunningTitleHasPartIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
    </table>
    </biblio:RunningTitle>
 

@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altMovingImage.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=MovingImage&uri=${param.uri}">RDF dump</a></p>
    <biblio:MovingImage subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -32,6 +33,9 @@
       <biblio:foreachMovingImageFrequencyIterator>
          <tr><td>frequency</td><td><biblio:MovingImageFrequency /></td></tr>
       </biblio:foreachMovingImageFrequencyIterator>
+      <biblio:foreachMovingImageFormDesignationIterator>
+         <tr><td>formDesignation</td><td><biblio:MovingImageFormDesignation /></td></tr>
+      </biblio:foreachMovingImageFormDesignationIterator>
       <biblio:foreachMovingImageLanguageNoteIterator>
          <tr><td>languageNote</td><td><biblio:MovingImageLanguageNote /></td></tr>
       </biblio:foreachMovingImageLanguageNoteIterator>
@@ -60,9 +64,9 @@
       <biblio:foreachMovingImageHasDataSourceIterator>
          <tr><td>hasDataSource</td><td><a href="../<biblio:MovingImageHasDataSourceType/>/<biblio:MovingImageHasDataSourceType/>.jsp?uri=<biblio:MovingImageHasDataSource/>"><biblio:MovingImageHasDataSource /></a></td></tr>
       </biblio:foreachMovingImageHasDataSourceIterator>
-      <biblio:foreachMovingImageIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:MovingImageIdentifiedByType/>/<biblio:MovingImageIdentifiedByType/>.jsp?uri=<biblio:MovingImageIdentifiedBy/>"><biblio:MovingImageIdentifiedBy /></a></td></tr>
-      </biblio:foreachMovingImageIdentifiedByIterator>
+      <biblio:foreachMovingImagePrecedesIterator>
+         <tr><td>precedes</td><td><a href="../<biblio:MovingImagePrecedesType/>/<biblio:MovingImagePrecedesType/>.jsp?uri=<biblio:MovingImagePrecedes/>"><biblio:MovingImagePrecedes /></a></td></tr>
+      </biblio:foreachMovingImagePrecedesIterator>
       <biblio:foreachMovingImageContinuesUnderNewTitleIterator>
          <tr><td>continuesUnderNewTitle</td><td><a href="../<biblio:MovingImageContinuesUnderNewTitleType/>/<biblio:MovingImageContinuesUnderNewTitleType/>.jsp?uri=<biblio:MovingImageContinuesUnderNewTitle/>"><biblio:MovingImageContinuesUnderNewTitle /></a></td></tr>
       </biblio:foreachMovingImageContinuesUnderNewTitleIterator>
@@ -72,6 +76,9 @@
       <biblio:foreachMovingImageIsFindingAidForIterator>
          <tr><td>isFindingAidFor</td><td><a href="../<biblio:MovingImageIsFindingAidForType/>/<biblio:MovingImageIsFindingAidForType/>.jsp?uri=<biblio:MovingImageIsFindingAidFor/>"><biblio:MovingImageIsFindingAidFor /></a></td></tr>
       </biblio:foreachMovingImageIsFindingAidForIterator>
+      <biblio:foreachMovingImageFollowsIterator>
+         <tr><td>follows</td><td><a href="../<biblio:MovingImageFollowsType/>/<biblio:MovingImageFollowsType/>.jsp?uri=<biblio:MovingImageFollows/>"><biblio:MovingImageFollows /></a></td></tr>
+      </biblio:foreachMovingImageFollowsIterator>
       <biblio:foreachMovingImageAbsorbedByIterator>
          <tr><td>absorbedBy</td><td><a href="../<biblio:MovingImageAbsorbedByType/>/<biblio:MovingImageAbsorbedByType/>.jsp?uri=<biblio:MovingImageAbsorbedBy/>"><biblio:MovingImageAbsorbedBy /></a></td></tr>
       </biblio:foreachMovingImageAbsorbedByIterator>
@@ -81,12 +88,12 @@
       <biblio:foreachMovingImageSeparatedFromIterator>
          <tr><td>separatedFrom</td><td><a href="../<biblio:MovingImageSeparatedFromType/>/<biblio:MovingImageSeparatedFromType/>.jsp?uri=<biblio:MovingImageSeparatedFrom/>"><biblio:MovingImageSeparatedFrom /></a></td></tr>
       </biblio:foreachMovingImageSeparatedFromIterator>
-      <biblio:foreachMovingImageSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:MovingImageSubjectType/>/<biblio:MovingImageSubjectType/>.jsp?uri=<biblio:MovingImageSubject/>"><biblio:MovingImageSubject /></a></td></tr>
-      </biblio:foreachMovingImageSubjectIterator>
       <biblio:foreachMovingImageTranslatedAsIterator>
          <tr><td>translatedAs</td><td><a href="../<biblio:MovingImageTranslatedAsType/>/<biblio:MovingImageTranslatedAsType/>.jsp?uri=<biblio:MovingImageTranslatedAs/>"><biblio:MovingImageTranslatedAs /></a></td></tr>
       </biblio:foreachMovingImageTranslatedAsIterator>
+      <biblio:foreachMovingImageHasDerivativeIterator>
+         <tr><td>hasDerivative</td><td><a href="../<biblio:MovingImageHasDerivativeType/>/<biblio:MovingImageHasDerivativeType/>.jsp?uri=<biblio:MovingImageHasDerivative/>"><biblio:MovingImageHasDerivative /></a></td></tr>
+      </biblio:foreachMovingImageHasDerivativeIterator>
       <biblio:foreachMovingImageHasInstanceIterator>
          <tr><td>hasInstance</td><td><a href="../<biblio:MovingImageHasInstanceType/>/<biblio:MovingImageHasInstanceType/>.jsp?uri=<biblio:MovingImageHasInstance/>"><biblio:MovingImageHasInstance /></a></td></tr>
       </biblio:foreachMovingImageHasInstanceIterator>
@@ -102,15 +109,15 @@
       <biblio:foreachMovingImagePrecedesInNarrativeIterator>
          <tr><td>precedesInNarrative</td><td><a href="../<biblio:MovingImagePrecedesInNarrativeType/>/<biblio:MovingImagePrecedesInNarrativeType/>.jsp?uri=<biblio:MovingImagePrecedesInNarrative/>"><biblio:MovingImagePrecedesInNarrative /></a></td></tr>
       </biblio:foreachMovingImagePrecedesInNarrativeIterator>
+      <biblio:foreachMovingImageIsSubjectOfIterator>
+         <tr><td>isSubjectOf</td><td><a href="../<biblio:MovingImageIsSubjectOfType/>/<biblio:MovingImageIsSubjectOfType/>.jsp?uri=<biblio:MovingImageIsSubjectOf/>"><biblio:MovingImageIsSubjectOf /></a></td></tr>
+      </biblio:foreachMovingImageIsSubjectOfIterator>
       <biblio:foreachMovingImageIsLastOfIterator>
          <tr><td>isLastOf</td><td><a href="../<biblio:MovingImageIsLastOfType/>/<biblio:MovingImageIsLastOfType/>.jsp?uri=<biblio:MovingImageIsLastOf/>"><biblio:MovingImageIsLastOf /></a></td></tr>
       </biblio:foreachMovingImageIsLastOfIterator>
       <biblio:foreachMovingImageIsFirstOfIterator>
          <tr><td>isFirstOf</td><td><a href="../<biblio:MovingImageIsFirstOfType/>/<biblio:MovingImageIsFirstOfType/>.jsp?uri=<biblio:MovingImageIsFirstOf/>"><biblio:MovingImageIsFirstOf /></a></td></tr>
       </biblio:foreachMovingImageIsFirstOfIterator>
-      <biblio:foreachMovingImageRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:MovingImageRelationType/>/<biblio:MovingImageRelationType/>.jsp?uri=<biblio:MovingImageRelation/>"><biblio:MovingImageRelation /></a></td></tr>
-      </biblio:foreachMovingImageRelationIterator>
       <biblio:foreachMovingImageSupersedesIterator>
          <tr><td>supersedes</td><td><a href="../<biblio:MovingImageSupersedesType/>/<biblio:MovingImageSupersedesType/>.jsp?uri=<biblio:MovingImageSupersedes/>"><biblio:MovingImageSupersedes /></a></td></tr>
       </biblio:foreachMovingImageSupersedesIterator>
@@ -123,12 +130,27 @@
       <biblio:foreachMovingImageSupplementsIterator>
          <tr><td>supplements</td><td><a href="../<biblio:MovingImageSupplementsType/>/<biblio:MovingImageSupplementsType/>.jsp?uri=<biblio:MovingImageSupplements/>"><biblio:MovingImageSupplements /></a></td></tr>
       </biblio:foreachMovingImageSupplementsIterator>
+      <biblio:foreachMovingImageHasPreferredTitleIterator>
+         <tr><td>hasPreferredTitle</td><td><a href="../<biblio:MovingImageHasPreferredTitleType/>/<biblio:MovingImageHasPreferredTitleType/>.jsp?uri=<biblio:MovingImageHasPreferredTitle/>"><biblio:MovingImageHasPreferredTitle /></a></td></tr>
+      </biblio:foreachMovingImageHasPreferredTitleIterator>
+      <biblio:foreachMovingImageDerivedFromIterator>
+         <tr><td>derivedFrom</td><td><a href="../<biblio:MovingImageDerivedFromType/>/<biblio:MovingImageDerivedFromType/>.jsp?uri=<biblio:MovingImageDerivedFrom/>"><biblio:MovingImageDerivedFrom /></a></td></tr>
+      </biblio:foreachMovingImageDerivedFromIterator>
+      <biblio:foreachMovingImageReceivedIterator>
+         <tr><td>received</td><td><a href="../<biblio:MovingImageReceivedType/>/<biblio:MovingImageReceivedType/>.jsp?uri=<biblio:MovingImageReceived/>"><biblio:MovingImageReceived /></a></td></tr>
+      </biblio:foreachMovingImageReceivedIterator>
       <biblio:foreachMovingImageHasOtherEditionIterator>
          <tr><td>hasOtherEdition</td><td><a href="../<biblio:MovingImageHasOtherEditionType/>/<biblio:MovingImageHasOtherEditionType/>.jsp?uri=<biblio:MovingImageHasOtherEdition/>"><biblio:MovingImageHasOtherEdition /></a></td></tr>
       </biblio:foreachMovingImageHasOtherEditionIterator>
       <biblio:foreachMovingImageHasContributionIterator>
          <tr><td>hasContribution</td><td><a href="../<biblio:MovingImageHasContributionType/>/<biblio:MovingImageHasContributionType/>.jsp?uri=<biblio:MovingImageHasContribution/>"><biblio:MovingImageHasContribution /></a></td></tr>
       </biblio:foreachMovingImageHasContributionIterator>
+      <biblio:foreachMovingImageAccompaniesIterator>
+         <tr><td>accompanies</td><td><a href="../<biblio:MovingImageAccompaniesType/>/<biblio:MovingImageAccompaniesType/>.jsp?uri=<biblio:MovingImageAccompanies/>"><biblio:MovingImageAccompanies /></a></td></tr>
+      </biblio:foreachMovingImageAccompaniesIterator>
+      <biblio:foreachMovingImageHasTitleIterator>
+         <tr><td>hasTitle</td><td><a href="../<biblio:MovingImageHasTitleType/>/<biblio:MovingImageHasTitleType/>.jsp?uri=<biblio:MovingImageHasTitle/>"><biblio:MovingImageHasTitle /></a></td></tr>
+      </biblio:foreachMovingImageHasTitleIterator>
       <biblio:foreachMovingImageHasSupplementIterator>
          <tr><td>hasSupplement</td><td><a href="../<biblio:MovingImageHasSupplementType/>/<biblio:MovingImageHasSupplementType/>.jsp?uri=<biblio:MovingImageHasSupplement/>"><biblio:MovingImageHasSupplement /></a></td></tr>
       </biblio:foreachMovingImageHasSupplementIterator>
@@ -156,6 +178,13 @@
       <biblio:foreachMovingImageIsUnionOfIterator>
          <tr><td>isUnionOf</td><td><a href="../<biblio:MovingImageIsUnionOfType/>/<biblio:MovingImageIsUnionOfType/>.jsp?uri=<biblio:MovingImageIsUnionOf/>"><biblio:MovingImageIsUnionOf /></a></td></tr>
       </biblio:foreachMovingImageIsUnionOfIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
+      <biblio:foreachMovingImageRelationInverseIterator>
+         <tr><td>relation</td><td><a href="../<biblio:MovingImageRelationInverseType/>/<biblio:MovingImageRelationInverseType/>.jsp?uri=<biblio:MovingImageRelationInverse/>"><biblio:MovingImageRelationInverse/></a></td></tr>
+      </biblio:foreachMovingImageRelationInverseIterator>
    </table>
    </biblio:MovingImage>
 

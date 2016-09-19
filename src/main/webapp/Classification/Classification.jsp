@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altClassification.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=Classification&uri=${param.uri}">RDF dump</a></p>
    <biblio:Classification subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -33,6 +34,13 @@
       <biblio:foreachClassificationIsClassificationForIterator>
          <tr><td>isClassificationFor</td><td><a href="../<biblio:ClassificationIsClassificationForType/>/<biblio:ClassificationIsClassificationForType/>.jsp?uri=<biblio:ClassificationIsClassificationFor/>"><biblio:ClassificationIsClassificationFor /></a></td></tr>
       </biblio:foreachClassificationIsClassificationForIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
+      <biblio:foreachClassificationHasGenreInverseIterator>
+         <tr><td>hasGenre</td><td><a href="../<biblio:ClassificationHasGenreInverseType/>/<biblio:ClassificationHasGenreInverseType/>.jsp?uri=<biblio:ClassificationHasGenreInverse/>"><biblio:ClassificationHasGenreInverse/></a></td></tr>
+      </biblio:foreachClassificationHasGenreInverseIterator>
    </table>
    </biblio:Classification>
 

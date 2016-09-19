@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altItem.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=Item&uri=${param.uri}">RDF dump</a></p>
    <biblio:Item subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -26,6 +27,9 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
+      <biblio:foreachItemDimensionsIterator>
+         <tr><td>dimensions</td><td><biblio:ItemDimensions /></td></tr>
+      </biblio:foreachItemDimensionsIterator>
    </table>
 
    <h3>Object Properties</h3>
@@ -42,6 +46,13 @@
       <biblio:foreachItemHeldByIterator>
          <tr><td>heldBy</td><td><a href="../<biblio:ItemHeldByType/>/<biblio:ItemHeldByType/>.jsp?uri=<biblio:ItemHeldBy/>"><biblio:ItemHeldBy /></a></td></tr>
       </biblio:foreachItemHeldByIterator>
+      <biblio:foreachItemHasTitleIterator>
+         <tr><td>hasTitle</td><td><a href="../<biblio:ItemHasTitleType/>/<biblio:ItemHasTitleType/>.jsp?uri=<biblio:ItemHasTitle/>"><biblio:ItemHasTitle /></a></td></tr>
+      </biblio:foreachItemHasTitleIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
    </table>
    </biblio:Item>
 

@@ -31,6 +31,7 @@ src/main/webapp/AuthorContribution/AuthorContribution.jsp -text
 src/main/webapp/AuthorContribution/AuthorContributionList.jsp -text
 src/main/webapp/Authority/Authority.jsp -text
 src/main/webapp/Authority/AuthorityList.jsp -text
+src/main/webapp/Authority/altAuthority.jsp -text
 src/main/webapp/Award/Award.jsp -text
 src/main/webapp/Award/AwardList.jsp -text
 src/main/webapp/AwardReceipt/AwardReceipt.jsp -text
@@ -117,6 +118,7 @@ src/main/webapp/Index/Index.jsp -text
 src/main/webapp/Index/IndexList.jsp -text
 src/main/webapp/Instance/Instance.jsp -text
 src/main/webapp/Instance/InstanceList.jsp -text
+src/main/webapp/Instance/altInstance.jsp -text
 src/main/webapp/IntegratingResource/IntegratingResource.jsp -text
 src/main/webapp/IntegratingResource/IntegratingResourceList.jsp -text
 src/main/webapp/Isan/Isan.jsp -text
@@ -145,6 +147,7 @@ src/main/webapp/Iswc/Iswc.jsp -text
 src/main/webapp/Iswc/IswcList.jsp -text
 src/main/webapp/Item/Item.jsp -text
 src/main/webapp/Item/ItemList.jsp -text
+src/main/webapp/Item/altItem.jsp -text
 src/main/webapp/Journal/Journal.jsp -text
 src/main/webapp/Journal/JournalList.jsp -text
 src/main/webapp/KeyTitle/KeyTitle.jsp -text
@@ -217,6 +220,7 @@ src/main/webapp/OclcIdentifier/OclcIdentifier.jsp -text
 src/main/webapp/OclcIdentifier/OclcIdentifierList.jsp -text
 src/main/webapp/Organization/Organization.jsp -text
 src/main/webapp/Organization/OrganizationList.jsp -text
+src/main/webapp/Organization/altOrganization.jsp -text
 src/main/webapp/PartNameElement/PartNameElement.jsp -text
 src/main/webapp/PartNameElement/PartNameElementList.jsp -text
 src/main/webapp/PartNumberElement/PartNumberElement.jsp -text
@@ -229,6 +233,7 @@ src/main/webapp/PeriodicalPart/PeriodicalPart.jsp -text
 src/main/webapp/PeriodicalPart/PeriodicalPartList.jsp -text
 src/main/webapp/Person/Person.jsp -text
 src/main/webapp/Person/PersonList.jsp -text
+src/main/webapp/Person/altPerson.jsp -text
 src/main/webapp/Policy/Policy.jsp -text
 src/main/webapp/Policy/PolicyList.jsp -text
 src/main/webapp/PolicySet/PolicySet.jsp -text
@@ -303,11 +308,14 @@ src/main/webapp/VideoRecordingNumber/VideoRecordingNumber.jsp -text
 src/main/webapp/VideoRecordingNumber/VideoRecordingNumberList.jsp -text
 src/main/webapp/Work/Work.jsp -text
 src/main/webapp/Work/WorkList.jsp -text
+src/main/webapp/Work/altWork.jsp -text
 src/main/webapp/classHierarchy.jsp -text
 src/main/webapp/footer.jsp -text
 src/main/webapp/header.jsp -text
+src/main/webapp/images/bullet-l1.gif -text
 src/main/webapp/index.jsp -text
 src/main/webapp/menu.jsp -text
 src/main/webapp/resources/style.css -text
+src/main/webapp/utility/sparqlDump.jsp -text
 src/test/java/edu/uiowa/slis/viva/DemoTest.java -text
 src/test/resources/README.txt -text

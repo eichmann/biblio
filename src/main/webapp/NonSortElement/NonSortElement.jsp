@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altNonSortElement.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=NonSortElement&uri=${param.uri}">RDF dump</a></p>
    <biblio:NonSortElement subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -30,9 +31,16 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachNonSortElementIsPartOfIterator>
+         <tr><td>isPartOf</td><td><a href="../<biblio:NonSortElementIsPartOfType/>/<biblio:NonSortElementIsPartOfType/>.jsp?uri=<biblio:NonSortElementIsPartOf/>"><biblio:NonSortElementIsPartOf /></a></td></tr>
+      </biblio:foreachNonSortElementIsPartOfIterator>
       <biblio:foreachNonSortElementPrecedesIterator>
          <tr><td>precedes</td><td><a href="../<biblio:NonSortElementPrecedesType/>/<biblio:NonSortElementPrecedesType/>.jsp?uri=<biblio:NonSortElementPrecedes/>"><biblio:NonSortElementPrecedes /></a></td></tr>
       </biblio:foreachNonSortElementPrecedesIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
    </table>
    </biblio:NonSortElement>
 

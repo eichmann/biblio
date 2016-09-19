@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altWork.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=Work&uri=${param.uri}">RDF dump</a></p>
    <biblio:Work subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -32,6 +33,9 @@
       <biblio:foreachWorkFrequencyIterator>
          <tr><td>frequency</td><td><biblio:WorkFrequency /></td></tr>
       </biblio:foreachWorkFrequencyIterator>
+      <biblio:foreachWorkFormDesignationIterator>
+         <tr><td>formDesignation</td><td><biblio:WorkFormDesignation /></td></tr>
+      </biblio:foreachWorkFormDesignationIterator>
       <biblio:foreachWorkLanguageNoteIterator>
          <tr><td>languageNote</td><td><biblio:WorkLanguageNote /></td></tr>
       </biblio:foreachWorkLanguageNoteIterator>
@@ -60,9 +64,9 @@
       <biblio:foreachWorkHasDataSourceIterator>
          <tr><td>hasDataSource</td><td><a href="../<biblio:WorkHasDataSourceType/>/<biblio:WorkHasDataSourceType/>.jsp?uri=<biblio:WorkHasDataSource/>"><biblio:WorkHasDataSource /></a></td></tr>
       </biblio:foreachWorkHasDataSourceIterator>
-      <biblio:foreachWorkIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:WorkIdentifiedByType/>/<biblio:WorkIdentifiedByType/>.jsp?uri=<biblio:WorkIdentifiedBy/>"><biblio:WorkIdentifiedBy /></a></td></tr>
-      </biblio:foreachWorkIdentifiedByIterator>
+      <biblio:foreachWorkPrecedesIterator>
+         <tr><td>precedes</td><td><a href="../<biblio:WorkPrecedesType/>/<biblio:WorkPrecedesType/>.jsp?uri=<biblio:WorkPrecedes/>"><biblio:WorkPrecedes /></a></td></tr>
+      </biblio:foreachWorkPrecedesIterator>
       <biblio:foreachWorkContinuesUnderNewTitleIterator>
          <tr><td>continuesUnderNewTitle</td><td><a href="../<biblio:WorkContinuesUnderNewTitleType/>/<biblio:WorkContinuesUnderNewTitleType/>.jsp?uri=<biblio:WorkContinuesUnderNewTitle/>"><biblio:WorkContinuesUnderNewTitle /></a></td></tr>
       </biblio:foreachWorkContinuesUnderNewTitleIterator>
@@ -72,6 +76,9 @@
       <biblio:foreachWorkIsFindingAidForIterator>
          <tr><td>isFindingAidFor</td><td><a href="../<biblio:WorkIsFindingAidForType/>/<biblio:WorkIsFindingAidForType/>.jsp?uri=<biblio:WorkIsFindingAidFor/>"><biblio:WorkIsFindingAidFor /></a></td></tr>
       </biblio:foreachWorkIsFindingAidForIterator>
+      <biblio:foreachWorkFollowsIterator>
+         <tr><td>follows</td><td><a href="../<biblio:WorkFollowsType/>/<biblio:WorkFollowsType/>.jsp?uri=<biblio:WorkFollows/>"><biblio:WorkFollows /></a></td></tr>
+      </biblio:foreachWorkFollowsIterator>
       <biblio:foreachWorkAbsorbedByIterator>
          <tr><td>absorbedBy</td><td><a href="../<biblio:WorkAbsorbedByType/>/<biblio:WorkAbsorbedByType/>.jsp?uri=<biblio:WorkAbsorbedBy/>"><biblio:WorkAbsorbedBy /></a></td></tr>
       </biblio:foreachWorkAbsorbedByIterator>
@@ -81,12 +88,12 @@
       <biblio:foreachWorkSeparatedFromIterator>
          <tr><td>separatedFrom</td><td><a href="../<biblio:WorkSeparatedFromType/>/<biblio:WorkSeparatedFromType/>.jsp?uri=<biblio:WorkSeparatedFrom/>"><biblio:WorkSeparatedFrom /></a></td></tr>
       </biblio:foreachWorkSeparatedFromIterator>
-      <biblio:foreachWorkSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:WorkSubjectType/>/<biblio:WorkSubjectType/>.jsp?uri=<biblio:WorkSubject/>"><biblio:WorkSubject /></a></td></tr>
-      </biblio:foreachWorkSubjectIterator>
       <biblio:foreachWorkTranslatedAsIterator>
          <tr><td>translatedAs</td><td><a href="../<biblio:WorkTranslatedAsType/>/<biblio:WorkTranslatedAsType/>.jsp?uri=<biblio:WorkTranslatedAs/>"><biblio:WorkTranslatedAs /></a></td></tr>
       </biblio:foreachWorkTranslatedAsIterator>
+      <biblio:foreachWorkHasDerivativeIterator>
+         <tr><td>hasDerivative</td><td><a href="../<biblio:WorkHasDerivativeType/>/<biblio:WorkHasDerivativeType/>.jsp?uri=<biblio:WorkHasDerivative/>"><biblio:WorkHasDerivative /></a></td></tr>
+      </biblio:foreachWorkHasDerivativeIterator>
       <biblio:foreachWorkHasInstanceIterator>
          <tr><td>hasInstance</td><td><a href="../<biblio:WorkHasInstanceType/>/<biblio:WorkHasInstanceType/>.jsp?uri=<biblio:WorkHasInstance/>"><biblio:WorkHasInstance /></a></td></tr>
       </biblio:foreachWorkHasInstanceIterator>
@@ -102,15 +109,15 @@
       <biblio:foreachWorkPrecedesInNarrativeIterator>
          <tr><td>precedesInNarrative</td><td><a href="../<biblio:WorkPrecedesInNarrativeType/>/<biblio:WorkPrecedesInNarrativeType/>.jsp?uri=<biblio:WorkPrecedesInNarrative/>"><biblio:WorkPrecedesInNarrative /></a></td></tr>
       </biblio:foreachWorkPrecedesInNarrativeIterator>
+      <biblio:foreachWorkIsSubjectOfIterator>
+         <tr><td>isSubjectOf</td><td><a href="../<biblio:WorkIsSubjectOfType/>/<biblio:WorkIsSubjectOfType/>.jsp?uri=<biblio:WorkIsSubjectOf/>"><biblio:WorkIsSubjectOf /></a></td></tr>
+      </biblio:foreachWorkIsSubjectOfIterator>
       <biblio:foreachWorkIsLastOfIterator>
          <tr><td>isLastOf</td><td><a href="../<biblio:WorkIsLastOfType/>/<biblio:WorkIsLastOfType/>.jsp?uri=<biblio:WorkIsLastOf/>"><biblio:WorkIsLastOf /></a></td></tr>
       </biblio:foreachWorkIsLastOfIterator>
       <biblio:foreachWorkIsFirstOfIterator>
          <tr><td>isFirstOf</td><td><a href="../<biblio:WorkIsFirstOfType/>/<biblio:WorkIsFirstOfType/>.jsp?uri=<biblio:WorkIsFirstOf/>"><biblio:WorkIsFirstOf /></a></td></tr>
       </biblio:foreachWorkIsFirstOfIterator>
-      <biblio:foreachWorkRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:WorkRelationType/>/<biblio:WorkRelationType/>.jsp?uri=<biblio:WorkRelation/>"><biblio:WorkRelation /></a></td></tr>
-      </biblio:foreachWorkRelationIterator>
       <biblio:foreachWorkSupersedesIterator>
          <tr><td>supersedes</td><td><a href="../<biblio:WorkSupersedesType/>/<biblio:WorkSupersedesType/>.jsp?uri=<biblio:WorkSupersedes/>"><biblio:WorkSupersedes /></a></td></tr>
       </biblio:foreachWorkSupersedesIterator>
@@ -123,12 +130,27 @@
       <biblio:foreachWorkSupplementsIterator>
          <tr><td>supplements</td><td><a href="../<biblio:WorkSupplementsType/>/<biblio:WorkSupplementsType/>.jsp?uri=<biblio:WorkSupplements/>"><biblio:WorkSupplements /></a></td></tr>
       </biblio:foreachWorkSupplementsIterator>
+      <biblio:foreachWorkHasPreferredTitleIterator>
+         <tr><td>hasPreferredTitle</td><td><a href="../<biblio:WorkHasPreferredTitleType/>/<biblio:WorkHasPreferredTitleType/>.jsp?uri=<biblio:WorkHasPreferredTitle/>"><biblio:WorkHasPreferredTitle /></a></td></tr>
+      </biblio:foreachWorkHasPreferredTitleIterator>
+      <biblio:foreachWorkDerivedFromIterator>
+         <tr><td>derivedFrom</td><td><a href="../<biblio:WorkDerivedFromType/>/<biblio:WorkDerivedFromType/>.jsp?uri=<biblio:WorkDerivedFrom/>"><biblio:WorkDerivedFrom /></a></td></tr>
+      </biblio:foreachWorkDerivedFromIterator>
+      <biblio:foreachWorkReceivedIterator>
+         <tr><td>received</td><td><a href="../<biblio:WorkReceivedType/>/<biblio:WorkReceivedType/>.jsp?uri=<biblio:WorkReceived/>"><biblio:WorkReceived /></a></td></tr>
+      </biblio:foreachWorkReceivedIterator>
       <biblio:foreachWorkHasOtherEditionIterator>
          <tr><td>hasOtherEdition</td><td><a href="../<biblio:WorkHasOtherEditionType/>/<biblio:WorkHasOtherEditionType/>.jsp?uri=<biblio:WorkHasOtherEdition/>"><biblio:WorkHasOtherEdition /></a></td></tr>
       </biblio:foreachWorkHasOtherEditionIterator>
       <biblio:foreachWorkHasContributionIterator>
          <tr><td>hasContribution</td><td><a href="../<biblio:WorkHasContributionType/>/<biblio:WorkHasContributionType/>.jsp?uri=<biblio:WorkHasContribution/>"><biblio:WorkHasContribution /></a></td></tr>
       </biblio:foreachWorkHasContributionIterator>
+      <biblio:foreachWorkAccompaniesIterator>
+         <tr><td>accompanies</td><td><a href="../<biblio:WorkAccompaniesType/>/<biblio:WorkAccompaniesType/>.jsp?uri=<biblio:WorkAccompanies/>"><biblio:WorkAccompanies /></a></td></tr>
+      </biblio:foreachWorkAccompaniesIterator>
+      <biblio:foreachWorkHasTitleIterator>
+         <tr><td>hasTitle</td><td><a href="../<biblio:WorkHasTitleType/>/<biblio:WorkHasTitleType/>.jsp?uri=<biblio:WorkHasTitle/>"><biblio:WorkHasTitle /></a></td></tr>
+      </biblio:foreachWorkHasTitleIterator>
       <biblio:foreachWorkHasSupplementIterator>
          <tr><td>hasSupplement</td><td><a href="../<biblio:WorkHasSupplementType/>/<biblio:WorkHasSupplementType/>.jsp?uri=<biblio:WorkHasSupplement/>"><biblio:WorkHasSupplement /></a></td></tr>
       </biblio:foreachWorkHasSupplementIterator>
@@ -156,6 +178,13 @@
       <biblio:foreachWorkIsUnionOfIterator>
          <tr><td>isUnionOf</td><td><a href="../<biblio:WorkIsUnionOfType/>/<biblio:WorkIsUnionOfType/>.jsp?uri=<biblio:WorkIsUnionOf/>"><biblio:WorkIsUnionOf /></a></td></tr>
       </biblio:foreachWorkIsUnionOfIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
+      <biblio:foreachWorkRelationInverseIterator>
+         <tr><td>relation</td><td><a href="../<biblio:WorkRelationInverseType/>/<biblio:WorkRelationInverseType/>.jsp?uri=<biblio:WorkRelationInverse/>"><biblio:WorkRelationInverse/></a></td></tr>
+      </biblio:foreachWorkRelationInverseIterator>
    </table>
    </biblio:Work>
 

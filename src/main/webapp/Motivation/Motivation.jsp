@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altMotivation.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=Motivation&uri=${param.uri}">RDF dump</a></p>
    <biblio:Motivation subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -30,6 +31,16 @@
 
    <h3>Object Properties</h3>
    <table>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
+      <biblio:foreachMotivationMotivatedByInverseIterator>
+         <tr><td>motivatedBy</td><td><a href="../<biblio:MotivationMotivatedByInverseType/>/<biblio:MotivationMotivatedByInverseType/>.jsp?uri=<biblio:MotivationMotivatedByInverse/>"><biblio:MotivationMotivatedByInverse/></a></td></tr>
+      </biblio:foreachMotivationMotivatedByInverseIterator>
+      <biblio:foreachMotivationHasGenreInverseIterator>
+         <tr><td>hasGenre</td><td><a href="../<biblio:MotivationHasGenreInverseType/>/<biblio:MotivationHasGenreInverseType/>.jsp?uri=<biblio:MotivationHasGenreInverse/>"><biblio:MotivationHasGenreInverse/></a></td></tr>
+      </biblio:foreachMotivationHasGenreInverseIterator>
    </table>
    </biblio:Motivation>
 

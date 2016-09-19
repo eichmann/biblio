@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altBinderTitle.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=BinderTitle&uri=${param.uri}">RDF dump</a></p>
    <biblio:BinderTitle subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -36,12 +37,22 @@
       <biblio:foreachBinderTitleHasSourceStatusIterator>
          <tr><td>hasSourceStatus</td><td><a href="../<biblio:BinderTitleHasSourceStatusType/>/<biblio:BinderTitleHasSourceStatusType/>.jsp?uri=<biblio:BinderTitleHasSourceStatus/>"><biblio:BinderTitleHasSourceStatus /></a></td></tr>
       </biblio:foreachBinderTitleHasSourceStatusIterator>
+      <biblio:foreachBinderTitleHasDerivativeIterator>
+         <tr><td>hasDerivative</td><td><a href="../<biblio:BinderTitleHasDerivativeType/>/<biblio:BinderTitleHasDerivativeType/>.jsp?uri=<biblio:BinderTitleHasDerivative/>"><biblio:BinderTitleHasDerivative /></a></td></tr>
+      </biblio:foreachBinderTitleHasDerivativeIterator>
       <biblio:foreachBinderTitleIsPreferredTitleOfIterator>
          <tr><td>isPreferredTitleOf</td><td><a href="../<biblio:BinderTitleIsPreferredTitleOfType/>/<biblio:BinderTitleIsPreferredTitleOfType/>.jsp?uri=<biblio:BinderTitleIsPreferredTitleOf/>"><biblio:BinderTitleIsPreferredTitleOf /></a></td></tr>
       </biblio:foreachBinderTitleIsPreferredTitleOfIterator>
+      <biblio:foreachBinderTitleDerivedFromIterator>
+         <tr><td>derivedFrom</td><td><a href="../<biblio:BinderTitleDerivedFromType/>/<biblio:BinderTitleDerivedFromType/>.jsp?uri=<biblio:BinderTitleDerivedFrom/>"><biblio:BinderTitleDerivedFrom /></a></td></tr>
+      </biblio:foreachBinderTitleDerivedFromIterator>
       <biblio:foreachBinderTitleHasPartIterator>
          <tr><td>hasPart</td><td><a href="../<biblio:BinderTitleHasPartType/>/<biblio:BinderTitleHasPartType/>.jsp?uri=<biblio:BinderTitleHasPart/>"><biblio:BinderTitleHasPart /></a></td></tr>
       </biblio:foreachBinderTitleHasPartIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
    </table>
    </biblio:BinderTitle>
 

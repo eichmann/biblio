@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altTopic.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=Topic&uri=${param.uri}">RDF dump</a></p>
    <biblio:Topic subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -30,6 +31,16 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachTopicIsSubjectOfIterator>
+         <tr><td>isSubjectOf</td><td><a href="../<biblio:TopicIsSubjectOfType/>/<biblio:TopicIsSubjectOfType/>.jsp?uri=<biblio:TopicIsSubjectOf/>"><biblio:TopicIsSubjectOf /></a></td></tr>
+      </biblio:foreachTopicIsSubjectOfIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
+      <biblio:foreachTopicHasGenreInverseIterator>
+         <tr><td>hasGenre</td><td><a href="../<biblio:TopicHasGenreInverseType/>/<biblio:TopicHasGenreInverseType/>.jsp?uri=<biblio:TopicHasGenreInverse/>"><biblio:TopicHasGenreInverse/></a></td></tr>
+      </biblio:foreachTopicHasGenreInverseIterator>
    </table>
    </biblio:Topic>
 

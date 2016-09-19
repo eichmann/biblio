@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altNarratorContribution.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=NarratorContribution&uri=${param.uri}">RDF dump</a></p>
    <biblio:NarratorContribution subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -36,6 +37,10 @@
       <biblio:foreachNarratorContributionContributedToIterator>
          <tr><td>contributedTo</td><td><a href="../<biblio:NarratorContributionContributedToType/>/<biblio:NarratorContributionContributedToType/>.jsp?uri=<biblio:NarratorContributionContributedTo/>"><biblio:NarratorContributionContributedTo /></a></td></tr>
       </biblio:foreachNarratorContributionContributedToIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
    </table>
    </biblio:NarratorContribution>
 

@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altLcOverseasAcqNumber.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=LcOverseasAcqNumber&uri=${param.uri}">RDF dump</a></p>
    <biblio:LcOverseasAcqNumber subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -33,6 +34,10 @@
       <biblio:foreachLcOverseasAcqNumberIdentifiesIterator>
          <tr><td>identifies</td><td><a href="../<biblio:LcOverseasAcqNumberIdentifiesType/>/<biblio:LcOverseasAcqNumberIdentifiesType/>.jsp?uri=<biblio:LcOverseasAcqNumberIdentifies/>"><biblio:LcOverseasAcqNumberIdentifies /></a></td></tr>
       </biblio:foreachLcOverseasAcqNumberIdentifiesIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
    </table>
    </biblio:LcOverseasAcqNumber>
 

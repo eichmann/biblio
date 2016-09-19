@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altConciseTitle.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=ConciseTitle&uri=${param.uri}">RDF dump</a></p>
    <biblio:ConciseTitle subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -36,12 +37,22 @@
       <biblio:foreachConciseTitleHasSourceStatusIterator>
          <tr><td>hasSourceStatus</td><td><a href="../<biblio:ConciseTitleHasSourceStatusType/>/<biblio:ConciseTitleHasSourceStatusType/>.jsp?uri=<biblio:ConciseTitleHasSourceStatus/>"><biblio:ConciseTitleHasSourceStatus /></a></td></tr>
       </biblio:foreachConciseTitleHasSourceStatusIterator>
+      <biblio:foreachConciseTitleHasDerivativeIterator>
+         <tr><td>hasDerivative</td><td><a href="../<biblio:ConciseTitleHasDerivativeType/>/<biblio:ConciseTitleHasDerivativeType/>.jsp?uri=<biblio:ConciseTitleHasDerivative/>"><biblio:ConciseTitleHasDerivative /></a></td></tr>
+      </biblio:foreachConciseTitleHasDerivativeIterator>
       <biblio:foreachConciseTitleIsPreferredTitleOfIterator>
          <tr><td>isPreferredTitleOf</td><td><a href="../<biblio:ConciseTitleIsPreferredTitleOfType/>/<biblio:ConciseTitleIsPreferredTitleOfType/>.jsp?uri=<biblio:ConciseTitleIsPreferredTitleOf/>"><biblio:ConciseTitleIsPreferredTitleOf /></a></td></tr>
       </biblio:foreachConciseTitleIsPreferredTitleOfIterator>
+      <biblio:foreachConciseTitleDerivedFromIterator>
+         <tr><td>derivedFrom</td><td><a href="../<biblio:ConciseTitleDerivedFromType/>/<biblio:ConciseTitleDerivedFromType/>.jsp?uri=<biblio:ConciseTitleDerivedFrom/>"><biblio:ConciseTitleDerivedFrom /></a></td></tr>
+      </biblio:foreachConciseTitleDerivedFromIterator>
       <biblio:foreachConciseTitleHasPartIterator>
          <tr><td>hasPart</td><td><a href="../<biblio:ConciseTitleHasPartType/>/<biblio:ConciseTitleHasPartType/>.jsp?uri=<biblio:ConciseTitleHasPart/>"><biblio:ConciseTitleHasPart /></a></td></tr>
       </biblio:foreachConciseTitleHasPartIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
    </table>
    </biblio:ConciseTitle>
 

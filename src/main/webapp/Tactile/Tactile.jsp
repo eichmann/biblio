@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altTactile.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=Tactile&uri=${param.uri}">RDF dump</a></p>
    <biblio:Tactile subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -63,12 +64,21 @@
       <biblio:foreachTactileProviderStatementIterator>
          <tr><td>providerStatement</td><td><biblio:TactileProviderStatement /></td></tr>
       </biblio:foreachTactileProviderStatementIterator>
+      <biblio:foreachTactileFormDesignationIterator>
+         <tr><td>formDesignation</td><td><biblio:TactileFormDesignation /></td></tr>
+      </biblio:foreachTactileFormDesignationIterator>
       <biblio:foreachTactileCustodialHistoryIterator>
          <tr><td>custodialHistory</td><td><biblio:TactileCustodialHistory /></td></tr>
       </biblio:foreachTactileCustodialHistoryIterator>
       <biblio:foreachTactileContentsNoteIterator>
          <tr><td>contentsNote</td><td><biblio:TactileContentsNote /></td></tr>
       </biblio:foreachTactileContentsNoteIterator>
+      <biblio:foreachTactileDimensionsIterator>
+         <tr><td>dimensions</td><td><biblio:TactileDimensions /></td></tr>
+      </biblio:foreachTactileDimensionsIterator>
+      <biblio:foreachTactileNoteIterator>
+         <tr><td>note</td><td><biblio:TactileNote /></td></tr>
+      </biblio:foreachTactileNoteIterator>
       <biblio:foreachTactileResponsibilityNoteIterator>
          <tr><td>responsibilityNote</td><td><biblio:TactileResponsibilityNote /></td></tr>
       </biblio:foreachTactileResponsibilityNoteIterator>
@@ -94,18 +104,36 @@
       <biblio:foreachTactileHasReproductionIterator>
          <tr><td>hasReproduction</td><td><a href="../<biblio:TactileHasReproductionType/>/<biblio:TactileHasReproductionType/>.jsp?uri=<biblio:TactileHasReproduction/>"><biblio:TactileHasReproduction /></a></td></tr>
       </biblio:foreachTactileHasReproductionIterator>
+      <biblio:foreachTactileSubjectIterator>
+         <tr><td>subject</td><td><a href="../<biblio:TactileSubjectType/>/<biblio:TactileSubjectType/>.jsp?uri=<biblio:TactileSubject/>"><biblio:TactileSubject /></a></td></tr>
+      </biblio:foreachTactileSubjectIterator>
       <biblio:foreachTactileHasTableOfContentsIterator>
          <tr><td>hasTableOfContents</td><td><a href="../<biblio:TactileHasTableOfContentsType/>/<biblio:TactileHasTableOfContentsType/>.jsp?uri=<biblio:TactileHasTableOfContents/>"><biblio:TactileHasTableOfContents /></a></td></tr>
       </biblio:foreachTactileHasTableOfContentsIterator>
+      <biblio:foreachTactileHasAnnotationIterator>
+         <tr><td>hasAnnotation</td><td><a href="../<biblio:TactileHasAnnotationType/>/<biblio:TactileHasAnnotationType/>.jsp?uri=<biblio:TactileHasAnnotation/>"><biblio:TactileHasAnnotation /></a></td></tr>
+      </biblio:foreachTactileHasAnnotationIterator>
       <biblio:foreachTactileHasCoverArtIterator>
          <tr><td>hasCoverArt</td><td><a href="../<biblio:TactileHasCoverArtType/>/<biblio:TactileHasCoverArtType/>.jsp?uri=<biblio:TactileHasCoverArt/>"><biblio:TactileHasCoverArt /></a></td></tr>
       </biblio:foreachTactileHasCoverArtIterator>
+      <biblio:foreachTactileRelationIterator>
+         <tr><td>relation</td><td><a href="../<biblio:TactileRelationType/>/<biblio:TactileRelationType/>.jsp?uri=<biblio:TactileRelation/>"><biblio:TactileRelation /></a></td></tr>
+      </biblio:foreachTactileRelationIterator>
+      <biblio:foreachTactileLanguageIterator>
+         <tr><td>language</td><td><a href="../<biblio:TactileLanguageType/>/<biblio:TactileLanguageType/>.jsp?uri=<biblio:TactileLanguage/>"><biblio:TactileLanguage /></a></td></tr>
+      </biblio:foreachTactileLanguageIterator>
       <biblio:foreachTactileReproducesIterator>
          <tr><td>reproduces</td><td><a href="../<biblio:TactileReproducesType/>/<biblio:TactileReproducesType/>.jsp?uri=<biblio:TactileReproduces/>"><biblio:TactileReproduces /></a></td></tr>
       </biblio:foreachTactileReproducesIterator>
+      <biblio:foreachTactileHasPreferredTitleIterator>
+         <tr><td>hasPreferredTitle</td><td><a href="../<biblio:TactileHasPreferredTitleType/>/<biblio:TactileHasPreferredTitleType/>.jsp?uri=<biblio:TactileHasPreferredTitle/>"><biblio:TactileHasPreferredTitle /></a></td></tr>
+      </biblio:foreachTactileHasPreferredTitleIterator>
       <biblio:foreachTactileHasHoldingIterator>
          <tr><td>hasHolding</td><td><a href="../<biblio:TactileHasHoldingType/>/<biblio:TactileHasHoldingType/>.jsp?uri=<biblio:TactileHasHolding/>"><biblio:TactileHasHolding /></a></td></tr>
       </biblio:foreachTactileHasHoldingIterator>
+      <biblio:foreachTactileHasTitleIterator>
+         <tr><td>hasTitle</td><td><a href="../<biblio:TactileHasTitleType/>/<biblio:TactileHasTitleType/>.jsp?uri=<biblio:TactileHasTitle/>"><biblio:TactileHasTitle /></a></td></tr>
+      </biblio:foreachTactileHasTitleIterator>
       <biblio:foreachTactileEquivalentToIterator>
          <tr><td>equivalentTo</td><td><a href="../<biblio:TactileEquivalentToType/>/<biblio:TactileEquivalentToType/>.jsp?uri=<biblio:TactileEquivalentTo/>"><biblio:TactileEquivalentTo /></a></td></tr>
       </biblio:foreachTactileEquivalentToIterator>
@@ -115,6 +143,13 @@
       <biblio:foreachTactileIsInstanceOfIterator>
          <tr><td>isInstanceOf</td><td><a href="../<biblio:TactileIsInstanceOfType/>/<biblio:TactileIsInstanceOfType/>.jsp?uri=<biblio:TactileIsInstanceOf/>"><biblio:TactileIsInstanceOf /></a></td></tr>
       </biblio:foreachTactileIsInstanceOfIterator>
+      <biblio:foreachTactileHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:TactileHasPartType/>/<biblio:TactileHasPartType/>.jsp?uri=<biblio:TactileHasPart/>"><biblio:TactileHasPart /></a></td></tr>
+      </biblio:foreachTactileHasPartIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
    </table>
    </biblio:Tactile>
 

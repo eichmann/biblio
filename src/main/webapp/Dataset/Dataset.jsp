@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altDataset.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=Dataset&uri=${param.uri}">RDF dump</a></p>
    <biblio:Dataset subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -32,6 +33,9 @@
       <biblio:foreachDatasetFrequencyIterator>
          <tr><td>frequency</td><td><biblio:DatasetFrequency /></td></tr>
       </biblio:foreachDatasetFrequencyIterator>
+      <biblio:foreachDatasetFormDesignationIterator>
+         <tr><td>formDesignation</td><td><biblio:DatasetFormDesignation /></td></tr>
+      </biblio:foreachDatasetFormDesignationIterator>
       <biblio:foreachDatasetLanguageNoteIterator>
          <tr><td>languageNote</td><td><biblio:DatasetLanguageNote /></td></tr>
       </biblio:foreachDatasetLanguageNoteIterator>
@@ -42,9 +46,6 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachDatasetSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:DatasetSubjectType/>/<biblio:DatasetSubjectType/>.jsp?uri=<biblio:DatasetSubject/>"><biblio:DatasetSubject /></a></td></tr>
-      </biblio:foreachDatasetSubjectIterator>
       <biblio:foreachDatasetPerformedAtIterator>
          <tr><td>performedAt</td><td><a href="../<biblio:DatasetPerformedAtType/>/<biblio:DatasetPerformedAtType/>.jsp?uri=<biblio:DatasetPerformedAt/>"><biblio:DatasetPerformedAt /></a></td></tr>
       </biblio:foreachDatasetPerformedAtIterator>
@@ -63,9 +64,9 @@
       <biblio:foreachDatasetHasDataSourceIterator>
          <tr><td>hasDataSource</td><td><a href="../<biblio:DatasetHasDataSourceType/>/<biblio:DatasetHasDataSourceType/>.jsp?uri=<biblio:DatasetHasDataSource/>"><biblio:DatasetHasDataSource /></a></td></tr>
       </biblio:foreachDatasetHasDataSourceIterator>
-      <biblio:foreachDatasetIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:DatasetIdentifiedByType/>/<biblio:DatasetIdentifiedByType/>.jsp?uri=<biblio:DatasetIdentifiedBy/>"><biblio:DatasetIdentifiedBy /></a></td></tr>
-      </biblio:foreachDatasetIdentifiedByIterator>
+      <biblio:foreachDatasetPrecedesIterator>
+         <tr><td>precedes</td><td><a href="../<biblio:DatasetPrecedesType/>/<biblio:DatasetPrecedesType/>.jsp?uri=<biblio:DatasetPrecedes/>"><biblio:DatasetPrecedes /></a></td></tr>
+      </biblio:foreachDatasetPrecedesIterator>
       <biblio:foreachDatasetContinuesUnderNewTitleIterator>
          <tr><td>continuesUnderNewTitle</td><td><a href="../<biblio:DatasetContinuesUnderNewTitleType/>/<biblio:DatasetContinuesUnderNewTitleType/>.jsp?uri=<biblio:DatasetContinuesUnderNewTitle/>"><biblio:DatasetContinuesUnderNewTitle /></a></td></tr>
       </biblio:foreachDatasetContinuesUnderNewTitleIterator>
@@ -75,6 +76,9 @@
       <biblio:foreachDatasetIsFindingAidForIterator>
          <tr><td>isFindingAidFor</td><td><a href="../<biblio:DatasetIsFindingAidForType/>/<biblio:DatasetIsFindingAidForType/>.jsp?uri=<biblio:DatasetIsFindingAidFor/>"><biblio:DatasetIsFindingAidFor /></a></td></tr>
       </biblio:foreachDatasetIsFindingAidForIterator>
+      <biblio:foreachDatasetFollowsIterator>
+         <tr><td>follows</td><td><a href="../<biblio:DatasetFollowsType/>/<biblio:DatasetFollowsType/>.jsp?uri=<biblio:DatasetFollows/>"><biblio:DatasetFollows /></a></td></tr>
+      </biblio:foreachDatasetFollowsIterator>
       <biblio:foreachDatasetAbsorbedByIterator>
          <tr><td>absorbedBy</td><td><a href="../<biblio:DatasetAbsorbedByType/>/<biblio:DatasetAbsorbedByType/>.jsp?uri=<biblio:DatasetAbsorbedBy/>"><biblio:DatasetAbsorbedBy /></a></td></tr>
       </biblio:foreachDatasetAbsorbedByIterator>
@@ -84,12 +88,12 @@
       <biblio:foreachDatasetSeparatedFromIterator>
          <tr><td>separatedFrom</td><td><a href="../<biblio:DatasetSeparatedFromType/>/<biblio:DatasetSeparatedFromType/>.jsp?uri=<biblio:DatasetSeparatedFrom/>"><biblio:DatasetSeparatedFrom /></a></td></tr>
       </biblio:foreachDatasetSeparatedFromIterator>
-      <biblio:foreachDatasetSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:DatasetSubjectType/>/<biblio:DatasetSubjectType/>.jsp?uri=<biblio:DatasetSubject/>"><biblio:DatasetSubject /></a></td></tr>
-      </biblio:foreachDatasetSubjectIterator>
       <biblio:foreachDatasetTranslatedAsIterator>
          <tr><td>translatedAs</td><td><a href="../<biblio:DatasetTranslatedAsType/>/<biblio:DatasetTranslatedAsType/>.jsp?uri=<biblio:DatasetTranslatedAs/>"><biblio:DatasetTranslatedAs /></a></td></tr>
       </biblio:foreachDatasetTranslatedAsIterator>
+      <biblio:foreachDatasetHasDerivativeIterator>
+         <tr><td>hasDerivative</td><td><a href="../<biblio:DatasetHasDerivativeType/>/<biblio:DatasetHasDerivativeType/>.jsp?uri=<biblio:DatasetHasDerivative/>"><biblio:DatasetHasDerivative /></a></td></tr>
+      </biblio:foreachDatasetHasDerivativeIterator>
       <biblio:foreachDatasetHasInstanceIterator>
          <tr><td>hasInstance</td><td><a href="../<biblio:DatasetHasInstanceType/>/<biblio:DatasetHasInstanceType/>.jsp?uri=<biblio:DatasetHasInstance/>"><biblio:DatasetHasInstance /></a></td></tr>
       </biblio:foreachDatasetHasInstanceIterator>
@@ -105,15 +109,15 @@
       <biblio:foreachDatasetPrecedesInNarrativeIterator>
          <tr><td>precedesInNarrative</td><td><a href="../<biblio:DatasetPrecedesInNarrativeType/>/<biblio:DatasetPrecedesInNarrativeType/>.jsp?uri=<biblio:DatasetPrecedesInNarrative/>"><biblio:DatasetPrecedesInNarrative /></a></td></tr>
       </biblio:foreachDatasetPrecedesInNarrativeIterator>
+      <biblio:foreachDatasetIsSubjectOfIterator>
+         <tr><td>isSubjectOf</td><td><a href="../<biblio:DatasetIsSubjectOfType/>/<biblio:DatasetIsSubjectOfType/>.jsp?uri=<biblio:DatasetIsSubjectOf/>"><biblio:DatasetIsSubjectOf /></a></td></tr>
+      </biblio:foreachDatasetIsSubjectOfIterator>
       <biblio:foreachDatasetIsLastOfIterator>
          <tr><td>isLastOf</td><td><a href="../<biblio:DatasetIsLastOfType/>/<biblio:DatasetIsLastOfType/>.jsp?uri=<biblio:DatasetIsLastOf/>"><biblio:DatasetIsLastOf /></a></td></tr>
       </biblio:foreachDatasetIsLastOfIterator>
       <biblio:foreachDatasetIsFirstOfIterator>
          <tr><td>isFirstOf</td><td><a href="../<biblio:DatasetIsFirstOfType/>/<biblio:DatasetIsFirstOfType/>.jsp?uri=<biblio:DatasetIsFirstOf/>"><biblio:DatasetIsFirstOf /></a></td></tr>
       </biblio:foreachDatasetIsFirstOfIterator>
-      <biblio:foreachDatasetRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:DatasetRelationType/>/<biblio:DatasetRelationType/>.jsp?uri=<biblio:DatasetRelation/>"><biblio:DatasetRelation /></a></td></tr>
-      </biblio:foreachDatasetRelationIterator>
       <biblio:foreachDatasetSupersedesIterator>
          <tr><td>supersedes</td><td><a href="../<biblio:DatasetSupersedesType/>/<biblio:DatasetSupersedesType/>.jsp?uri=<biblio:DatasetSupersedes/>"><biblio:DatasetSupersedes /></a></td></tr>
       </biblio:foreachDatasetSupersedesIterator>
@@ -126,12 +130,27 @@
       <biblio:foreachDatasetSupplementsIterator>
          <tr><td>supplements</td><td><a href="../<biblio:DatasetSupplementsType/>/<biblio:DatasetSupplementsType/>.jsp?uri=<biblio:DatasetSupplements/>"><biblio:DatasetSupplements /></a></td></tr>
       </biblio:foreachDatasetSupplementsIterator>
+      <biblio:foreachDatasetHasPreferredTitleIterator>
+         <tr><td>hasPreferredTitle</td><td><a href="../<biblio:DatasetHasPreferredTitleType/>/<biblio:DatasetHasPreferredTitleType/>.jsp?uri=<biblio:DatasetHasPreferredTitle/>"><biblio:DatasetHasPreferredTitle /></a></td></tr>
+      </biblio:foreachDatasetHasPreferredTitleIterator>
+      <biblio:foreachDatasetDerivedFromIterator>
+         <tr><td>derivedFrom</td><td><a href="../<biblio:DatasetDerivedFromType/>/<biblio:DatasetDerivedFromType/>.jsp?uri=<biblio:DatasetDerivedFrom/>"><biblio:DatasetDerivedFrom /></a></td></tr>
+      </biblio:foreachDatasetDerivedFromIterator>
+      <biblio:foreachDatasetReceivedIterator>
+         <tr><td>received</td><td><a href="../<biblio:DatasetReceivedType/>/<biblio:DatasetReceivedType/>.jsp?uri=<biblio:DatasetReceived/>"><biblio:DatasetReceived /></a></td></tr>
+      </biblio:foreachDatasetReceivedIterator>
       <biblio:foreachDatasetHasOtherEditionIterator>
          <tr><td>hasOtherEdition</td><td><a href="../<biblio:DatasetHasOtherEditionType/>/<biblio:DatasetHasOtherEditionType/>.jsp?uri=<biblio:DatasetHasOtherEdition/>"><biblio:DatasetHasOtherEdition /></a></td></tr>
       </biblio:foreachDatasetHasOtherEditionIterator>
       <biblio:foreachDatasetHasContributionIterator>
          <tr><td>hasContribution</td><td><a href="../<biblio:DatasetHasContributionType/>/<biblio:DatasetHasContributionType/>.jsp?uri=<biblio:DatasetHasContribution/>"><biblio:DatasetHasContribution /></a></td></tr>
       </biblio:foreachDatasetHasContributionIterator>
+      <biblio:foreachDatasetAccompaniesIterator>
+         <tr><td>accompanies</td><td><a href="../<biblio:DatasetAccompaniesType/>/<biblio:DatasetAccompaniesType/>.jsp?uri=<biblio:DatasetAccompanies/>"><biblio:DatasetAccompanies /></a></td></tr>
+      </biblio:foreachDatasetAccompaniesIterator>
+      <biblio:foreachDatasetHasTitleIterator>
+         <tr><td>hasTitle</td><td><a href="../<biblio:DatasetHasTitleType/>/<biblio:DatasetHasTitleType/>.jsp?uri=<biblio:DatasetHasTitle/>"><biblio:DatasetHasTitle /></a></td></tr>
+      </biblio:foreachDatasetHasTitleIterator>
       <biblio:foreachDatasetHasSupplementIterator>
          <tr><td>hasSupplement</td><td><a href="../<biblio:DatasetHasSupplementType/>/<biblio:DatasetHasSupplementType/>.jsp?uri=<biblio:DatasetHasSupplement/>"><biblio:DatasetHasSupplement /></a></td></tr>
       </biblio:foreachDatasetHasSupplementIterator>
@@ -159,6 +178,13 @@
       <biblio:foreachDatasetIsUnionOfIterator>
          <tr><td>isUnionOf</td><td><a href="../<biblio:DatasetIsUnionOfType/>/<biblio:DatasetIsUnionOfType/>.jsp?uri=<biblio:DatasetIsUnionOf/>"><biblio:DatasetIsUnionOf /></a></td></tr>
       </biblio:foreachDatasetIsUnionOfIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
+      <biblio:foreachDatasetRelationInverseIterator>
+         <tr><td>relation</td><td><a href="../<biblio:DatasetRelationInverseType/>/<biblio:DatasetRelationInverseType/>.jsp?uri=<biblio:DatasetRelationInverse/>"><biblio:DatasetRelationInverse/></a></td></tr>
+      </biblio:foreachDatasetRelationInverseIterator>
    </table>
    </biblio:Dataset>
 

@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altIntegratingResource.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=IntegratingResource&uri=${param.uri}">RDF dump</a></p>
    <biblio:IntegratingResource subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -32,6 +33,9 @@
       <biblio:foreachIntegratingResourceFrequencyIterator>
          <tr><td>frequency</td><td><biblio:IntegratingResourceFrequency /></td></tr>
       </biblio:foreachIntegratingResourceFrequencyIterator>
+      <biblio:foreachIntegratingResourceFormDesignationIterator>
+         <tr><td>formDesignation</td><td><biblio:IntegratingResourceFormDesignation /></td></tr>
+      </biblio:foreachIntegratingResourceFormDesignationIterator>
       <biblio:foreachIntegratingResourceLanguageNoteIterator>
          <tr><td>languageNote</td><td><biblio:IntegratingResourceLanguageNote /></td></tr>
       </biblio:foreachIntegratingResourceLanguageNoteIterator>
@@ -42,18 +46,6 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachIntegratingResourceIsPartOfIterator>
-         <tr><td>isPartOf</td><td><a href="../<biblio:IntegratingResourceIsPartOfType/>/<biblio:IntegratingResourceIsPartOfType/>.jsp?uri=<biblio:IntegratingResourceIsPartOf/>"><biblio:IntegratingResourceIsPartOf /></a></td></tr>
-      </biblio:foreachIntegratingResourceIsPartOfIterator>
-      <biblio:foreachIntegratingResourceIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:IntegratingResourceIdentifiedByType/>/<biblio:IntegratingResourceIdentifiedByType/>.jsp?uri=<biblio:IntegratingResourceIdentifiedBy/>"><biblio:IntegratingResourceIdentifiedBy /></a></td></tr>
-      </biblio:foreachIntegratingResourceIdentifiedByIterator>
-      <biblio:foreachIntegratingResourceSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:IntegratingResourceSubjectType/>/<biblio:IntegratingResourceSubjectType/>.jsp?uri=<biblio:IntegratingResourceSubject/>"><biblio:IntegratingResourceSubject /></a></td></tr>
-      </biblio:foreachIntegratingResourceSubjectIterator>
-      <biblio:foreachIntegratingResourceLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:IntegratingResourceLanguageType/>/<biblio:IntegratingResourceLanguageType/>.jsp?uri=<biblio:IntegratingResourceLanguage/>"><biblio:IntegratingResourceLanguage /></a></td></tr>
-      </biblio:foreachIntegratingResourceLanguageIterator>
       <biblio:foreachIntegratingResourcePerformedAtIterator>
          <tr><td>performedAt</td><td><a href="../<biblio:IntegratingResourcePerformedAtType/>/<biblio:IntegratingResourcePerformedAtType/>.jsp?uri=<biblio:IntegratingResourcePerformedAt/>"><biblio:IntegratingResourcePerformedAt /></a></td></tr>
       </biblio:foreachIntegratingResourcePerformedAtIterator>
@@ -72,9 +64,9 @@
       <biblio:foreachIntegratingResourceHasDataSourceIterator>
          <tr><td>hasDataSource</td><td><a href="../<biblio:IntegratingResourceHasDataSourceType/>/<biblio:IntegratingResourceHasDataSourceType/>.jsp?uri=<biblio:IntegratingResourceHasDataSource/>"><biblio:IntegratingResourceHasDataSource /></a></td></tr>
       </biblio:foreachIntegratingResourceHasDataSourceIterator>
-      <biblio:foreachIntegratingResourceIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:IntegratingResourceIdentifiedByType/>/<biblio:IntegratingResourceIdentifiedByType/>.jsp?uri=<biblio:IntegratingResourceIdentifiedBy/>"><biblio:IntegratingResourceIdentifiedBy /></a></td></tr>
-      </biblio:foreachIntegratingResourceIdentifiedByIterator>
+      <biblio:foreachIntegratingResourcePrecedesIterator>
+         <tr><td>precedes</td><td><a href="../<biblio:IntegratingResourcePrecedesType/>/<biblio:IntegratingResourcePrecedesType/>.jsp?uri=<biblio:IntegratingResourcePrecedes/>"><biblio:IntegratingResourcePrecedes /></a></td></tr>
+      </biblio:foreachIntegratingResourcePrecedesIterator>
       <biblio:foreachIntegratingResourceContinuesUnderNewTitleIterator>
          <tr><td>continuesUnderNewTitle</td><td><a href="../<biblio:IntegratingResourceContinuesUnderNewTitleType/>/<biblio:IntegratingResourceContinuesUnderNewTitleType/>.jsp?uri=<biblio:IntegratingResourceContinuesUnderNewTitle/>"><biblio:IntegratingResourceContinuesUnderNewTitle /></a></td></tr>
       </biblio:foreachIntegratingResourceContinuesUnderNewTitleIterator>
@@ -84,6 +76,9 @@
       <biblio:foreachIntegratingResourceIsFindingAidForIterator>
          <tr><td>isFindingAidFor</td><td><a href="../<biblio:IntegratingResourceIsFindingAidForType/>/<biblio:IntegratingResourceIsFindingAidForType/>.jsp?uri=<biblio:IntegratingResourceIsFindingAidFor/>"><biblio:IntegratingResourceIsFindingAidFor /></a></td></tr>
       </biblio:foreachIntegratingResourceIsFindingAidForIterator>
+      <biblio:foreachIntegratingResourceFollowsIterator>
+         <tr><td>follows</td><td><a href="../<biblio:IntegratingResourceFollowsType/>/<biblio:IntegratingResourceFollowsType/>.jsp?uri=<biblio:IntegratingResourceFollows/>"><biblio:IntegratingResourceFollows /></a></td></tr>
+      </biblio:foreachIntegratingResourceFollowsIterator>
       <biblio:foreachIntegratingResourceAbsorbedByIterator>
          <tr><td>absorbedBy</td><td><a href="../<biblio:IntegratingResourceAbsorbedByType/>/<biblio:IntegratingResourceAbsorbedByType/>.jsp?uri=<biblio:IntegratingResourceAbsorbedBy/>"><biblio:IntegratingResourceAbsorbedBy /></a></td></tr>
       </biblio:foreachIntegratingResourceAbsorbedByIterator>
@@ -93,12 +88,12 @@
       <biblio:foreachIntegratingResourceSeparatedFromIterator>
          <tr><td>separatedFrom</td><td><a href="../<biblio:IntegratingResourceSeparatedFromType/>/<biblio:IntegratingResourceSeparatedFromType/>.jsp?uri=<biblio:IntegratingResourceSeparatedFrom/>"><biblio:IntegratingResourceSeparatedFrom /></a></td></tr>
       </biblio:foreachIntegratingResourceSeparatedFromIterator>
-      <biblio:foreachIntegratingResourceSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:IntegratingResourceSubjectType/>/<biblio:IntegratingResourceSubjectType/>.jsp?uri=<biblio:IntegratingResourceSubject/>"><biblio:IntegratingResourceSubject /></a></td></tr>
-      </biblio:foreachIntegratingResourceSubjectIterator>
       <biblio:foreachIntegratingResourceTranslatedAsIterator>
          <tr><td>translatedAs</td><td><a href="../<biblio:IntegratingResourceTranslatedAsType/>/<biblio:IntegratingResourceTranslatedAsType/>.jsp?uri=<biblio:IntegratingResourceTranslatedAs/>"><biblio:IntegratingResourceTranslatedAs /></a></td></tr>
       </biblio:foreachIntegratingResourceTranslatedAsIterator>
+      <biblio:foreachIntegratingResourceHasDerivativeIterator>
+         <tr><td>hasDerivative</td><td><a href="../<biblio:IntegratingResourceHasDerivativeType/>/<biblio:IntegratingResourceHasDerivativeType/>.jsp?uri=<biblio:IntegratingResourceHasDerivative/>"><biblio:IntegratingResourceHasDerivative /></a></td></tr>
+      </biblio:foreachIntegratingResourceHasDerivativeIterator>
       <biblio:foreachIntegratingResourceHasInstanceIterator>
          <tr><td>hasInstance</td><td><a href="../<biblio:IntegratingResourceHasInstanceType/>/<biblio:IntegratingResourceHasInstanceType/>.jsp?uri=<biblio:IntegratingResourceHasInstance/>"><biblio:IntegratingResourceHasInstance /></a></td></tr>
       </biblio:foreachIntegratingResourceHasInstanceIterator>
@@ -114,15 +109,15 @@
       <biblio:foreachIntegratingResourcePrecedesInNarrativeIterator>
          <tr><td>precedesInNarrative</td><td><a href="../<biblio:IntegratingResourcePrecedesInNarrativeType/>/<biblio:IntegratingResourcePrecedesInNarrativeType/>.jsp?uri=<biblio:IntegratingResourcePrecedesInNarrative/>"><biblio:IntegratingResourcePrecedesInNarrative /></a></td></tr>
       </biblio:foreachIntegratingResourcePrecedesInNarrativeIterator>
+      <biblio:foreachIntegratingResourceIsSubjectOfIterator>
+         <tr><td>isSubjectOf</td><td><a href="../<biblio:IntegratingResourceIsSubjectOfType/>/<biblio:IntegratingResourceIsSubjectOfType/>.jsp?uri=<biblio:IntegratingResourceIsSubjectOf/>"><biblio:IntegratingResourceIsSubjectOf /></a></td></tr>
+      </biblio:foreachIntegratingResourceIsSubjectOfIterator>
       <biblio:foreachIntegratingResourceIsLastOfIterator>
          <tr><td>isLastOf</td><td><a href="../<biblio:IntegratingResourceIsLastOfType/>/<biblio:IntegratingResourceIsLastOfType/>.jsp?uri=<biblio:IntegratingResourceIsLastOf/>"><biblio:IntegratingResourceIsLastOf /></a></td></tr>
       </biblio:foreachIntegratingResourceIsLastOfIterator>
       <biblio:foreachIntegratingResourceIsFirstOfIterator>
          <tr><td>isFirstOf</td><td><a href="../<biblio:IntegratingResourceIsFirstOfType/>/<biblio:IntegratingResourceIsFirstOfType/>.jsp?uri=<biblio:IntegratingResourceIsFirstOf/>"><biblio:IntegratingResourceIsFirstOf /></a></td></tr>
       </biblio:foreachIntegratingResourceIsFirstOfIterator>
-      <biblio:foreachIntegratingResourceRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:IntegratingResourceRelationType/>/<biblio:IntegratingResourceRelationType/>.jsp?uri=<biblio:IntegratingResourceRelation/>"><biblio:IntegratingResourceRelation /></a></td></tr>
-      </biblio:foreachIntegratingResourceRelationIterator>
       <biblio:foreachIntegratingResourceSupersedesIterator>
          <tr><td>supersedes</td><td><a href="../<biblio:IntegratingResourceSupersedesType/>/<biblio:IntegratingResourceSupersedesType/>.jsp?uri=<biblio:IntegratingResourceSupersedes/>"><biblio:IntegratingResourceSupersedes /></a></td></tr>
       </biblio:foreachIntegratingResourceSupersedesIterator>
@@ -135,12 +130,27 @@
       <biblio:foreachIntegratingResourceSupplementsIterator>
          <tr><td>supplements</td><td><a href="../<biblio:IntegratingResourceSupplementsType/>/<biblio:IntegratingResourceSupplementsType/>.jsp?uri=<biblio:IntegratingResourceSupplements/>"><biblio:IntegratingResourceSupplements /></a></td></tr>
       </biblio:foreachIntegratingResourceSupplementsIterator>
+      <biblio:foreachIntegratingResourceHasPreferredTitleIterator>
+         <tr><td>hasPreferredTitle</td><td><a href="../<biblio:IntegratingResourceHasPreferredTitleType/>/<biblio:IntegratingResourceHasPreferredTitleType/>.jsp?uri=<biblio:IntegratingResourceHasPreferredTitle/>"><biblio:IntegratingResourceHasPreferredTitle /></a></td></tr>
+      </biblio:foreachIntegratingResourceHasPreferredTitleIterator>
+      <biblio:foreachIntegratingResourceDerivedFromIterator>
+         <tr><td>derivedFrom</td><td><a href="../<biblio:IntegratingResourceDerivedFromType/>/<biblio:IntegratingResourceDerivedFromType/>.jsp?uri=<biblio:IntegratingResourceDerivedFrom/>"><biblio:IntegratingResourceDerivedFrom /></a></td></tr>
+      </biblio:foreachIntegratingResourceDerivedFromIterator>
+      <biblio:foreachIntegratingResourceReceivedIterator>
+         <tr><td>received</td><td><a href="../<biblio:IntegratingResourceReceivedType/>/<biblio:IntegratingResourceReceivedType/>.jsp?uri=<biblio:IntegratingResourceReceived/>"><biblio:IntegratingResourceReceived /></a></td></tr>
+      </biblio:foreachIntegratingResourceReceivedIterator>
       <biblio:foreachIntegratingResourceHasOtherEditionIterator>
          <tr><td>hasOtherEdition</td><td><a href="../<biblio:IntegratingResourceHasOtherEditionType/>/<biblio:IntegratingResourceHasOtherEditionType/>.jsp?uri=<biblio:IntegratingResourceHasOtherEdition/>"><biblio:IntegratingResourceHasOtherEdition /></a></td></tr>
       </biblio:foreachIntegratingResourceHasOtherEditionIterator>
       <biblio:foreachIntegratingResourceHasContributionIterator>
          <tr><td>hasContribution</td><td><a href="../<biblio:IntegratingResourceHasContributionType/>/<biblio:IntegratingResourceHasContributionType/>.jsp?uri=<biblio:IntegratingResourceHasContribution/>"><biblio:IntegratingResourceHasContribution /></a></td></tr>
       </biblio:foreachIntegratingResourceHasContributionIterator>
+      <biblio:foreachIntegratingResourceAccompaniesIterator>
+         <tr><td>accompanies</td><td><a href="../<biblio:IntegratingResourceAccompaniesType/>/<biblio:IntegratingResourceAccompaniesType/>.jsp?uri=<biblio:IntegratingResourceAccompanies/>"><biblio:IntegratingResourceAccompanies /></a></td></tr>
+      </biblio:foreachIntegratingResourceAccompaniesIterator>
+      <biblio:foreachIntegratingResourceHasTitleIterator>
+         <tr><td>hasTitle</td><td><a href="../<biblio:IntegratingResourceHasTitleType/>/<biblio:IntegratingResourceHasTitleType/>.jsp?uri=<biblio:IntegratingResourceHasTitle/>"><biblio:IntegratingResourceHasTitle /></a></td></tr>
+      </biblio:foreachIntegratingResourceHasTitleIterator>
       <biblio:foreachIntegratingResourceHasSupplementIterator>
          <tr><td>hasSupplement</td><td><a href="../<biblio:IntegratingResourceHasSupplementType/>/<biblio:IntegratingResourceHasSupplementType/>.jsp?uri=<biblio:IntegratingResourceHasSupplement/>"><biblio:IntegratingResourceHasSupplement /></a></td></tr>
       </biblio:foreachIntegratingResourceHasSupplementIterator>
@@ -168,6 +178,13 @@
       <biblio:foreachIntegratingResourceIsUnionOfIterator>
          <tr><td>isUnionOf</td><td><a href="../<biblio:IntegratingResourceIsUnionOfType/>/<biblio:IntegratingResourceIsUnionOfType/>.jsp?uri=<biblio:IntegratingResourceIsUnionOf/>"><biblio:IntegratingResourceIsUnionOf /></a></td></tr>
       </biblio:foreachIntegratingResourceIsUnionOfIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
+      <biblio:foreachIntegratingResourceRelationInverseIterator>
+         <tr><td>relation</td><td><a href="../<biblio:IntegratingResourceRelationInverseType/>/<biblio:IntegratingResourceRelationInverseType/>.jsp?uri=<biblio:IntegratingResourceRelationInverse/>"><biblio:IntegratingResourceRelationInverse/></a></td></tr>
+      </biblio:foreachIntegratingResourceRelationInverseIterator>
    </table>
    </biblio:IntegratingResource>
 

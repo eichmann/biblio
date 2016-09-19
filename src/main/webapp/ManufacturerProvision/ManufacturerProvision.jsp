@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altManufacturerProvision.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=ManufacturerProvision&uri=${param.uri}">RDF dump</a></p>
    <biblio:ManufacturerProvision subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -39,6 +40,10 @@
       <biblio:foreachManufacturerProvisionMadeAvailableIterator>
          <tr><td>madeAvailable</td><td><a href="../<biblio:ManufacturerProvisionMadeAvailableType/>/<biblio:ManufacturerProvisionMadeAvailableType/>.jsp?uri=<biblio:ManufacturerProvisionMadeAvailable/>"><biblio:ManufacturerProvisionMadeAvailable /></a></td></tr>
       </biblio:foreachManufacturerProvisionMadeAvailableIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
    </table>
    </biblio:ManufacturerProvision>
 

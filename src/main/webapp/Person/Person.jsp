@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altPerson.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=Person&uri=${param.uri}">RDF dump</a></p>
    <biblio:Person subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -32,12 +33,6 @@
       <biblio:foreachPersonDeathDateIterator>
          <tr><td>deathDate</td><td><biblio:PersonDeathDate /></td></tr>
       </biblio:foreachPersonDeathDateIterator>
-      <biblio:foreachPersonBirthDateIterator>
-         <tr><td>birthDate</td><td><biblio:PersonBirthDate /></td></tr>
-      </biblio:foreachPersonBirthDateIterator>
-      <biblio:foreachPersonDeathDateIterator>
-         <tr><td>deathDate</td><td><biblio:PersonDeathDate /></td></tr>
-      </biblio:foreachPersonDeathDateIterator>
    </table>
 
    <h3>Object Properties</h3>
@@ -45,12 +40,25 @@
       <biblio:foreachPersonIdentifiedByIterator>
          <tr><td>identifiedBy</td><td><a href="../<biblio:PersonIdentifiedByType/>/<biblio:PersonIdentifiedByType/>.jsp?uri=<biblio:PersonIdentifiedBy/>"><biblio:PersonIdentifiedBy /></a></td></tr>
       </biblio:foreachPersonIdentifiedByIterator>
-      <biblio:foreachPersonIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:PersonIdentifiedByType/>/<biblio:PersonIdentifiedByType/>.jsp?uri=<biblio:PersonIdentifiedBy/>"><biblio:PersonIdentifiedBy /></a></td></tr>
-      </biblio:foreachPersonIdentifiedByIterator>
+      <biblio:foreachPersonIsSubjectOfIterator>
+         <tr><td>isSubjectOf</td><td><a href="../<biblio:PersonIsSubjectOfType/>/<biblio:PersonIsSubjectOfType/>.jsp?uri=<biblio:PersonIsSubjectOf/>"><biblio:PersonIsSubjectOf /></a></td></tr>
+      </biblio:foreachPersonIsSubjectOfIterator>
+      <biblio:foreachPersonReceivedIterator>
+         <tr><td>received</td><td><a href="../<biblio:PersonReceivedType/>/<biblio:PersonReceivedType/>.jsp?uri=<biblio:PersonReceived/>"><biblio:PersonReceived /></a></td></tr>
+      </biblio:foreachPersonReceivedIterator>
       <biblio:foreachPersonIsAnnotatorOfIterator>
          <tr><td>isAnnotatorOf</td><td><a href="../<biblio:PersonIsAnnotatorOfType/>/<biblio:PersonIsAnnotatorOfType/>.jsp?uri=<biblio:PersonIsAnnotatorOf/>"><biblio:PersonIsAnnotatorOf /></a></td></tr>
       </biblio:foreachPersonIsAnnotatorOfIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
+      <biblio:foreachPersonAgentInverseIterator>
+         <tr><td>agent</td><td><a href="../<biblio:PersonAgentInverseType/>/<biblio:PersonAgentInverseType/>.jsp?uri=<biblio:PersonAgentInverse/>"><biblio:PersonAgentInverse/></a></td></tr>
+      </biblio:foreachPersonAgentInverseIterator>
+      <biblio:foreachPersonHeldByInverseIterator>
+         <tr><td>heldBy</td><td><a href="../<biblio:PersonHeldByInverseType/>/<biblio:PersonHeldByInverseType/>.jsp?uri=<biblio:PersonHeldByInverse/>"><biblio:PersonHeldByInverse/></a></td></tr>
+      </biblio:foreachPersonHeldByInverseIterator>
    </table>
    </biblio:Person>
 

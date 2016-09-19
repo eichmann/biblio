@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altContainerTitle.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=ContainerTitle&uri=${param.uri}">RDF dump</a></p>
    <biblio:ContainerTitle subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -36,12 +37,22 @@
       <biblio:foreachContainerTitleHasSourceStatusIterator>
          <tr><td>hasSourceStatus</td><td><a href="../<biblio:ContainerTitleHasSourceStatusType/>/<biblio:ContainerTitleHasSourceStatusType/>.jsp?uri=<biblio:ContainerTitleHasSourceStatus/>"><biblio:ContainerTitleHasSourceStatus /></a></td></tr>
       </biblio:foreachContainerTitleHasSourceStatusIterator>
+      <biblio:foreachContainerTitleHasDerivativeIterator>
+         <tr><td>hasDerivative</td><td><a href="../<biblio:ContainerTitleHasDerivativeType/>/<biblio:ContainerTitleHasDerivativeType/>.jsp?uri=<biblio:ContainerTitleHasDerivative/>"><biblio:ContainerTitleHasDerivative /></a></td></tr>
+      </biblio:foreachContainerTitleHasDerivativeIterator>
       <biblio:foreachContainerTitleIsPreferredTitleOfIterator>
          <tr><td>isPreferredTitleOf</td><td><a href="../<biblio:ContainerTitleIsPreferredTitleOfType/>/<biblio:ContainerTitleIsPreferredTitleOfType/>.jsp?uri=<biblio:ContainerTitleIsPreferredTitleOf/>"><biblio:ContainerTitleIsPreferredTitleOf /></a></td></tr>
       </biblio:foreachContainerTitleIsPreferredTitleOfIterator>
+      <biblio:foreachContainerTitleDerivedFromIterator>
+         <tr><td>derivedFrom</td><td><a href="../<biblio:ContainerTitleDerivedFromType/>/<biblio:ContainerTitleDerivedFromType/>.jsp?uri=<biblio:ContainerTitleDerivedFrom/>"><biblio:ContainerTitleDerivedFrom /></a></td></tr>
+      </biblio:foreachContainerTitleDerivedFromIterator>
       <biblio:foreachContainerTitleHasPartIterator>
          <tr><td>hasPart</td><td><a href="../<biblio:ContainerTitleHasPartType/>/<biblio:ContainerTitleHasPartType/>.jsp?uri=<biblio:ContainerTitleHasPart/>"><biblio:ContainerTitleHasPart /></a></td></tr>
       </biblio:foreachContainerTitleHasPartIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
    </table>
    </biblio:ContainerTitle>
 

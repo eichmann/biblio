@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altLocation.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=Location&uri=${param.uri}">RDF dump</a></p>
    <biblio:Location subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -33,6 +34,19 @@
       <biblio:foreachLocationLocationOfIterator>
          <tr><td>locationOf</td><td><a href="../<biblio:LocationLocationOfType/>/<biblio:LocationLocationOfType/>.jsp?uri=<biblio:LocationLocationOf/>"><biblio:LocationLocationOf /></a></td></tr>
       </biblio:foreachLocationLocationOfIterator>
+      <biblio:foreachLocationIsSubjectOfIterator>
+         <tr><td>isSubjectOf</td><td><a href="../<biblio:LocationIsSubjectOfType/>/<biblio:LocationIsSubjectOfType/>.jsp?uri=<biblio:LocationIsSubjectOf/>"><biblio:LocationIsSubjectOf /></a></td></tr>
+      </biblio:foreachLocationIsSubjectOfIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
+      <biblio:foreachLocationHasOriginPlaceInverseIterator>
+         <tr><td>hasOriginPlace</td><td><a href="../<biblio:LocationHasOriginPlaceInverseType/>/<biblio:LocationHasOriginPlaceInverseType/>.jsp?uri=<biblio:LocationHasOriginPlaceInverse/>"><biblio:LocationHasOriginPlaceInverse/></a></td></tr>
+      </biblio:foreachLocationHasOriginPlaceInverseIterator>
+      <biblio:foreachLocationAgentInverseIterator>
+         <tr><td>agent</td><td><a href="../<biblio:LocationAgentInverseType/>/<biblio:LocationAgentInverseType/>.jsp?uri=<biblio:LocationAgentInverse/>"><biblio:LocationAgentInverse/></a></td></tr>
+      </biblio:foreachLocationAgentInverseIterator>
    </table>
    </biblio:Location>
 

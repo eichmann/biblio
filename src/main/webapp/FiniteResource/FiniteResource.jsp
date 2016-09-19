@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altFiniteResource.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=FiniteResource&uri=${param.uri}">RDF dump</a></p>
    <biblio:FiniteResource subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -32,6 +33,9 @@
       <biblio:foreachFiniteResourceFrequencyIterator>
          <tr><td>frequency</td><td><biblio:FiniteResourceFrequency /></td></tr>
       </biblio:foreachFiniteResourceFrequencyIterator>
+      <biblio:foreachFiniteResourceFormDesignationIterator>
+         <tr><td>formDesignation</td><td><biblio:FiniteResourceFormDesignation /></td></tr>
+      </biblio:foreachFiniteResourceFormDesignationIterator>
       <biblio:foreachFiniteResourceLanguageNoteIterator>
          <tr><td>languageNote</td><td><biblio:FiniteResourceLanguageNote /></td></tr>
       </biblio:foreachFiniteResourceLanguageNoteIterator>
@@ -60,9 +64,9 @@
       <biblio:foreachFiniteResourceHasDataSourceIterator>
          <tr><td>hasDataSource</td><td><a href="../<biblio:FiniteResourceHasDataSourceType/>/<biblio:FiniteResourceHasDataSourceType/>.jsp?uri=<biblio:FiniteResourceHasDataSource/>"><biblio:FiniteResourceHasDataSource /></a></td></tr>
       </biblio:foreachFiniteResourceHasDataSourceIterator>
-      <biblio:foreachFiniteResourceIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:FiniteResourceIdentifiedByType/>/<biblio:FiniteResourceIdentifiedByType/>.jsp?uri=<biblio:FiniteResourceIdentifiedBy/>"><biblio:FiniteResourceIdentifiedBy /></a></td></tr>
-      </biblio:foreachFiniteResourceIdentifiedByIterator>
+      <biblio:foreachFiniteResourcePrecedesIterator>
+         <tr><td>precedes</td><td><a href="../<biblio:FiniteResourcePrecedesType/>/<biblio:FiniteResourcePrecedesType/>.jsp?uri=<biblio:FiniteResourcePrecedes/>"><biblio:FiniteResourcePrecedes /></a></td></tr>
+      </biblio:foreachFiniteResourcePrecedesIterator>
       <biblio:foreachFiniteResourceContinuesUnderNewTitleIterator>
          <tr><td>continuesUnderNewTitle</td><td><a href="../<biblio:FiniteResourceContinuesUnderNewTitleType/>/<biblio:FiniteResourceContinuesUnderNewTitleType/>.jsp?uri=<biblio:FiniteResourceContinuesUnderNewTitle/>"><biblio:FiniteResourceContinuesUnderNewTitle /></a></td></tr>
       </biblio:foreachFiniteResourceContinuesUnderNewTitleIterator>
@@ -72,6 +76,9 @@
       <biblio:foreachFiniteResourceIsFindingAidForIterator>
          <tr><td>isFindingAidFor</td><td><a href="../<biblio:FiniteResourceIsFindingAidForType/>/<biblio:FiniteResourceIsFindingAidForType/>.jsp?uri=<biblio:FiniteResourceIsFindingAidFor/>"><biblio:FiniteResourceIsFindingAidFor /></a></td></tr>
       </biblio:foreachFiniteResourceIsFindingAidForIterator>
+      <biblio:foreachFiniteResourceFollowsIterator>
+         <tr><td>follows</td><td><a href="../<biblio:FiniteResourceFollowsType/>/<biblio:FiniteResourceFollowsType/>.jsp?uri=<biblio:FiniteResourceFollows/>"><biblio:FiniteResourceFollows /></a></td></tr>
+      </biblio:foreachFiniteResourceFollowsIterator>
       <biblio:foreachFiniteResourceAbsorbedByIterator>
          <tr><td>absorbedBy</td><td><a href="../<biblio:FiniteResourceAbsorbedByType/>/<biblio:FiniteResourceAbsorbedByType/>.jsp?uri=<biblio:FiniteResourceAbsorbedBy/>"><biblio:FiniteResourceAbsorbedBy /></a></td></tr>
       </biblio:foreachFiniteResourceAbsorbedByIterator>
@@ -81,12 +88,12 @@
       <biblio:foreachFiniteResourceSeparatedFromIterator>
          <tr><td>separatedFrom</td><td><a href="../<biblio:FiniteResourceSeparatedFromType/>/<biblio:FiniteResourceSeparatedFromType/>.jsp?uri=<biblio:FiniteResourceSeparatedFrom/>"><biblio:FiniteResourceSeparatedFrom /></a></td></tr>
       </biblio:foreachFiniteResourceSeparatedFromIterator>
-      <biblio:foreachFiniteResourceSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:FiniteResourceSubjectType/>/<biblio:FiniteResourceSubjectType/>.jsp?uri=<biblio:FiniteResourceSubject/>"><biblio:FiniteResourceSubject /></a></td></tr>
-      </biblio:foreachFiniteResourceSubjectIterator>
       <biblio:foreachFiniteResourceTranslatedAsIterator>
          <tr><td>translatedAs</td><td><a href="../<biblio:FiniteResourceTranslatedAsType/>/<biblio:FiniteResourceTranslatedAsType/>.jsp?uri=<biblio:FiniteResourceTranslatedAs/>"><biblio:FiniteResourceTranslatedAs /></a></td></tr>
       </biblio:foreachFiniteResourceTranslatedAsIterator>
+      <biblio:foreachFiniteResourceHasDerivativeIterator>
+         <tr><td>hasDerivative</td><td><a href="../<biblio:FiniteResourceHasDerivativeType/>/<biblio:FiniteResourceHasDerivativeType/>.jsp?uri=<biblio:FiniteResourceHasDerivative/>"><biblio:FiniteResourceHasDerivative /></a></td></tr>
+      </biblio:foreachFiniteResourceHasDerivativeIterator>
       <biblio:foreachFiniteResourceHasInstanceIterator>
          <tr><td>hasInstance</td><td><a href="../<biblio:FiniteResourceHasInstanceType/>/<biblio:FiniteResourceHasInstanceType/>.jsp?uri=<biblio:FiniteResourceHasInstance/>"><biblio:FiniteResourceHasInstance /></a></td></tr>
       </biblio:foreachFiniteResourceHasInstanceIterator>
@@ -102,15 +109,15 @@
       <biblio:foreachFiniteResourcePrecedesInNarrativeIterator>
          <tr><td>precedesInNarrative</td><td><a href="../<biblio:FiniteResourcePrecedesInNarrativeType/>/<biblio:FiniteResourcePrecedesInNarrativeType/>.jsp?uri=<biblio:FiniteResourcePrecedesInNarrative/>"><biblio:FiniteResourcePrecedesInNarrative /></a></td></tr>
       </biblio:foreachFiniteResourcePrecedesInNarrativeIterator>
+      <biblio:foreachFiniteResourceIsSubjectOfIterator>
+         <tr><td>isSubjectOf</td><td><a href="../<biblio:FiniteResourceIsSubjectOfType/>/<biblio:FiniteResourceIsSubjectOfType/>.jsp?uri=<biblio:FiniteResourceIsSubjectOf/>"><biblio:FiniteResourceIsSubjectOf /></a></td></tr>
+      </biblio:foreachFiniteResourceIsSubjectOfIterator>
       <biblio:foreachFiniteResourceIsLastOfIterator>
          <tr><td>isLastOf</td><td><a href="../<biblio:FiniteResourceIsLastOfType/>/<biblio:FiniteResourceIsLastOfType/>.jsp?uri=<biblio:FiniteResourceIsLastOf/>"><biblio:FiniteResourceIsLastOf /></a></td></tr>
       </biblio:foreachFiniteResourceIsLastOfIterator>
       <biblio:foreachFiniteResourceIsFirstOfIterator>
          <tr><td>isFirstOf</td><td><a href="../<biblio:FiniteResourceIsFirstOfType/>/<biblio:FiniteResourceIsFirstOfType/>.jsp?uri=<biblio:FiniteResourceIsFirstOf/>"><biblio:FiniteResourceIsFirstOf /></a></td></tr>
       </biblio:foreachFiniteResourceIsFirstOfIterator>
-      <biblio:foreachFiniteResourceRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:FiniteResourceRelationType/>/<biblio:FiniteResourceRelationType/>.jsp?uri=<biblio:FiniteResourceRelation/>"><biblio:FiniteResourceRelation /></a></td></tr>
-      </biblio:foreachFiniteResourceRelationIterator>
       <biblio:foreachFiniteResourceSupersedesIterator>
          <tr><td>supersedes</td><td><a href="../<biblio:FiniteResourceSupersedesType/>/<biblio:FiniteResourceSupersedesType/>.jsp?uri=<biblio:FiniteResourceSupersedes/>"><biblio:FiniteResourceSupersedes /></a></td></tr>
       </biblio:foreachFiniteResourceSupersedesIterator>
@@ -123,12 +130,27 @@
       <biblio:foreachFiniteResourceSupplementsIterator>
          <tr><td>supplements</td><td><a href="../<biblio:FiniteResourceSupplementsType/>/<biblio:FiniteResourceSupplementsType/>.jsp?uri=<biblio:FiniteResourceSupplements/>"><biblio:FiniteResourceSupplements /></a></td></tr>
       </biblio:foreachFiniteResourceSupplementsIterator>
+      <biblio:foreachFiniteResourceHasPreferredTitleIterator>
+         <tr><td>hasPreferredTitle</td><td><a href="../<biblio:FiniteResourceHasPreferredTitleType/>/<biblio:FiniteResourceHasPreferredTitleType/>.jsp?uri=<biblio:FiniteResourceHasPreferredTitle/>"><biblio:FiniteResourceHasPreferredTitle /></a></td></tr>
+      </biblio:foreachFiniteResourceHasPreferredTitleIterator>
+      <biblio:foreachFiniteResourceDerivedFromIterator>
+         <tr><td>derivedFrom</td><td><a href="../<biblio:FiniteResourceDerivedFromType/>/<biblio:FiniteResourceDerivedFromType/>.jsp?uri=<biblio:FiniteResourceDerivedFrom/>"><biblio:FiniteResourceDerivedFrom /></a></td></tr>
+      </biblio:foreachFiniteResourceDerivedFromIterator>
+      <biblio:foreachFiniteResourceReceivedIterator>
+         <tr><td>received</td><td><a href="../<biblio:FiniteResourceReceivedType/>/<biblio:FiniteResourceReceivedType/>.jsp?uri=<biblio:FiniteResourceReceived/>"><biblio:FiniteResourceReceived /></a></td></tr>
+      </biblio:foreachFiniteResourceReceivedIterator>
       <biblio:foreachFiniteResourceHasOtherEditionIterator>
          <tr><td>hasOtherEdition</td><td><a href="../<biblio:FiniteResourceHasOtherEditionType/>/<biblio:FiniteResourceHasOtherEditionType/>.jsp?uri=<biblio:FiniteResourceHasOtherEdition/>"><biblio:FiniteResourceHasOtherEdition /></a></td></tr>
       </biblio:foreachFiniteResourceHasOtherEditionIterator>
       <biblio:foreachFiniteResourceHasContributionIterator>
          <tr><td>hasContribution</td><td><a href="../<biblio:FiniteResourceHasContributionType/>/<biblio:FiniteResourceHasContributionType/>.jsp?uri=<biblio:FiniteResourceHasContribution/>"><biblio:FiniteResourceHasContribution /></a></td></tr>
       </biblio:foreachFiniteResourceHasContributionIterator>
+      <biblio:foreachFiniteResourceAccompaniesIterator>
+         <tr><td>accompanies</td><td><a href="../<biblio:FiniteResourceAccompaniesType/>/<biblio:FiniteResourceAccompaniesType/>.jsp?uri=<biblio:FiniteResourceAccompanies/>"><biblio:FiniteResourceAccompanies /></a></td></tr>
+      </biblio:foreachFiniteResourceAccompaniesIterator>
+      <biblio:foreachFiniteResourceHasTitleIterator>
+         <tr><td>hasTitle</td><td><a href="../<biblio:FiniteResourceHasTitleType/>/<biblio:FiniteResourceHasTitleType/>.jsp?uri=<biblio:FiniteResourceHasTitle/>"><biblio:FiniteResourceHasTitle /></a></td></tr>
+      </biblio:foreachFiniteResourceHasTitleIterator>
       <biblio:foreachFiniteResourceHasSupplementIterator>
          <tr><td>hasSupplement</td><td><a href="../<biblio:FiniteResourceHasSupplementType/>/<biblio:FiniteResourceHasSupplementType/>.jsp?uri=<biblio:FiniteResourceHasSupplement/>"><biblio:FiniteResourceHasSupplement /></a></td></tr>
       </biblio:foreachFiniteResourceHasSupplementIterator>
@@ -156,6 +178,13 @@
       <biblio:foreachFiniteResourceIsUnionOfIterator>
          <tr><td>isUnionOf</td><td><a href="../<biblio:FiniteResourceIsUnionOfType/>/<biblio:FiniteResourceIsUnionOfType/>.jsp?uri=<biblio:FiniteResourceIsUnionOf/>"><biblio:FiniteResourceIsUnionOf /></a></td></tr>
       </biblio:foreachFiniteResourceIsUnionOfIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
+      <biblio:foreachFiniteResourceRelationInverseIterator>
+         <tr><td>relation</td><td><a href="../<biblio:FiniteResourceRelationInverseType/>/<biblio:FiniteResourceRelationInverseType/>.jsp?uri=<biblio:FiniteResourceRelationInverse/>"><biblio:FiniteResourceRelationInverse/></a></td></tr>
+      </biblio:foreachFiniteResourceRelationInverseIterator>
    </table>
    </biblio:FiniteResource>
 

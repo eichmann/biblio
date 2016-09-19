@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altVideoRecordingNumber.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=VideoRecordingNumber&uri=${param.uri}">RDF dump</a></p>
    <biblio:VideoRecordingNumber subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -33,6 +34,10 @@
       <biblio:foreachVideoRecordingNumberIdentifiesIterator>
          <tr><td>identifies</td><td><a href="../<biblio:VideoRecordingNumberIdentifiesType/>/<biblio:VideoRecordingNumberIdentifiesType/>.jsp?uri=<biblio:VideoRecordingNumberIdentifies/>"><biblio:VideoRecordingNumberIdentifies /></a></td></tr>
       </biblio:foreachVideoRecordingNumberIdentifiesIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
    </table>
    </biblio:VideoRecordingNumber>
 

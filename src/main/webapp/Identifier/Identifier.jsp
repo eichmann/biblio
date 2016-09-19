@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altIdentifier.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=Identifier&uri=${param.uri}">RDF dump</a></p>
    <biblio:Identifier subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -33,6 +34,10 @@
       <biblio:foreachIdentifierIdentifiesIterator>
          <tr><td>identifies</td><td><a href="../<biblio:IdentifierIdentifiesType/>/<biblio:IdentifierIdentifiesType/>.jsp?uri=<biblio:IdentifierIdentifies/>"><biblio:IdentifierIdentifies /></a></td></tr>
       </biblio:foreachIdentifierIdentifiesIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
    </table>
    </biblio:Identifier>
 

@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altAudio.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=Audio&uri=${param.uri}">RDF dump</a></p>
    <biblio:Audio subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -32,6 +33,9 @@
       <biblio:foreachAudioFrequencyIterator>
          <tr><td>frequency</td><td><biblio:AudioFrequency /></td></tr>
       </biblio:foreachAudioFrequencyIterator>
+      <biblio:foreachAudioFormDesignationIterator>
+         <tr><td>formDesignation</td><td><biblio:AudioFormDesignation /></td></tr>
+      </biblio:foreachAudioFormDesignationIterator>
       <biblio:foreachAudioLanguageNoteIterator>
          <tr><td>languageNote</td><td><biblio:AudioLanguageNote /></td></tr>
       </biblio:foreachAudioLanguageNoteIterator>
@@ -42,12 +46,30 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachAudioPerformedAtIterator>
-         <tr><td>performedAt</td><td><a href="../<biblio:AudioPerformedAtType/>/<biblio:AudioPerformedAtType/>.jsp?uri=<biblio:AudioPerformedAt/>"><biblio:AudioPerformedAt /></a></td></tr>
-      </biblio:foreachAudioPerformedAtIterator>
       <biblio:foreachAudioIsPartOfIterator>
          <tr><td>isPartOf</td><td><a href="../<biblio:AudioIsPartOfType/>/<biblio:AudioIsPartOfType/>.jsp?uri=<biblio:AudioIsPartOf/>"><biblio:AudioIsPartOf /></a></td></tr>
       </biblio:foreachAudioIsPartOfIterator>
+      <biblio:foreachAudioFollowsIterator>
+         <tr><td>follows</td><td><a href="../<biblio:AudioFollowsType/>/<biblio:AudioFollowsType/>.jsp?uri=<biblio:AudioFollows/>"><biblio:AudioFollows /></a></td></tr>
+      </biblio:foreachAudioFollowsIterator>
+      <biblio:foreachAudioSubjectIterator>
+         <tr><td>subject</td><td><a href="../<biblio:AudioSubjectType/>/<biblio:AudioSubjectType/>.jsp?uri=<biblio:AudioSubject/>"><biblio:AudioSubject /></a></td></tr>
+      </biblio:foreachAudioSubjectIterator>
+      <biblio:foreachAudioHasAnnotationIterator>
+         <tr><td>hasAnnotation</td><td><a href="../<biblio:AudioHasAnnotationType/>/<biblio:AudioHasAnnotationType/>.jsp?uri=<biblio:AudioHasAnnotation/>"><biblio:AudioHasAnnotation /></a></td></tr>
+      </biblio:foreachAudioHasAnnotationIterator>
+      <biblio:foreachAudioRelationIterator>
+         <tr><td>relation</td><td><a href="../<biblio:AudioRelationType/>/<biblio:AudioRelationType/>.jsp?uri=<biblio:AudioRelation/>"><biblio:AudioRelation /></a></td></tr>
+      </biblio:foreachAudioRelationIterator>
+      <biblio:foreachAudioLanguageIterator>
+         <tr><td>language</td><td><a href="../<biblio:AudioLanguageType/>/<biblio:AudioLanguageType/>.jsp?uri=<biblio:AudioLanguage/>"><biblio:AudioLanguage /></a></td></tr>
+      </biblio:foreachAudioLanguageIterator>
+      <biblio:foreachAudioHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:AudioHasPartType/>/<biblio:AudioHasPartType/>.jsp?uri=<biblio:AudioHasPart/>"><biblio:AudioHasPart /></a></td></tr>
+      </biblio:foreachAudioHasPartIterator>
+      <biblio:foreachAudioPerformedAtIterator>
+         <tr><td>performedAt</td><td><a href="../<biblio:AudioPerformedAtType/>/<biblio:AudioPerformedAtType/>.jsp?uri=<biblio:AudioPerformedAt/>"><biblio:AudioPerformedAt /></a></td></tr>
+      </biblio:foreachAudioPerformedAtIterator>
       <biblio:foreachAudioFollowsInNarrativeIterator>
          <tr><td>followsInNarrative</td><td><a href="../<biblio:AudioFollowsInNarrativeType/>/<biblio:AudioFollowsInNarrativeType/>.jsp?uri=<biblio:AudioFollowsInNarrative/>"><biblio:AudioFollowsInNarrative /></a></td></tr>
       </biblio:foreachAudioFollowsInNarrativeIterator>
@@ -60,9 +82,9 @@
       <biblio:foreachAudioHasDataSourceIterator>
          <tr><td>hasDataSource</td><td><a href="../<biblio:AudioHasDataSourceType/>/<biblio:AudioHasDataSourceType/>.jsp?uri=<biblio:AudioHasDataSource/>"><biblio:AudioHasDataSource /></a></td></tr>
       </biblio:foreachAudioHasDataSourceIterator>
-      <biblio:foreachAudioIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:AudioIdentifiedByType/>/<biblio:AudioIdentifiedByType/>.jsp?uri=<biblio:AudioIdentifiedBy/>"><biblio:AudioIdentifiedBy /></a></td></tr>
-      </biblio:foreachAudioIdentifiedByIterator>
+      <biblio:foreachAudioPrecedesIterator>
+         <tr><td>precedes</td><td><a href="../<biblio:AudioPrecedesType/>/<biblio:AudioPrecedesType/>.jsp?uri=<biblio:AudioPrecedes/>"><biblio:AudioPrecedes /></a></td></tr>
+      </biblio:foreachAudioPrecedesIterator>
       <biblio:foreachAudioContinuesUnderNewTitleIterator>
          <tr><td>continuesUnderNewTitle</td><td><a href="../<biblio:AudioContinuesUnderNewTitleType/>/<biblio:AudioContinuesUnderNewTitleType/>.jsp?uri=<biblio:AudioContinuesUnderNewTitle/>"><biblio:AudioContinuesUnderNewTitle /></a></td></tr>
       </biblio:foreachAudioContinuesUnderNewTitleIterator>
@@ -81,12 +103,12 @@
       <biblio:foreachAudioSeparatedFromIterator>
          <tr><td>separatedFrom</td><td><a href="../<biblio:AudioSeparatedFromType/>/<biblio:AudioSeparatedFromType/>.jsp?uri=<biblio:AudioSeparatedFrom/>"><biblio:AudioSeparatedFrom /></a></td></tr>
       </biblio:foreachAudioSeparatedFromIterator>
-      <biblio:foreachAudioSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:AudioSubjectType/>/<biblio:AudioSubjectType/>.jsp?uri=<biblio:AudioSubject/>"><biblio:AudioSubject /></a></td></tr>
-      </biblio:foreachAudioSubjectIterator>
       <biblio:foreachAudioTranslatedAsIterator>
          <tr><td>translatedAs</td><td><a href="../<biblio:AudioTranslatedAsType/>/<biblio:AudioTranslatedAsType/>.jsp?uri=<biblio:AudioTranslatedAs/>"><biblio:AudioTranslatedAs /></a></td></tr>
       </biblio:foreachAudioTranslatedAsIterator>
+      <biblio:foreachAudioHasDerivativeIterator>
+         <tr><td>hasDerivative</td><td><a href="../<biblio:AudioHasDerivativeType/>/<biblio:AudioHasDerivativeType/>.jsp?uri=<biblio:AudioHasDerivative/>"><biblio:AudioHasDerivative /></a></td></tr>
+      </biblio:foreachAudioHasDerivativeIterator>
       <biblio:foreachAudioHasInstanceIterator>
          <tr><td>hasInstance</td><td><a href="../<biblio:AudioHasInstanceType/>/<biblio:AudioHasInstanceType/>.jsp?uri=<biblio:AudioHasInstance/>"><biblio:AudioHasInstance /></a></td></tr>
       </biblio:foreachAudioHasInstanceIterator>
@@ -102,33 +124,45 @@
       <biblio:foreachAudioPrecedesInNarrativeIterator>
          <tr><td>precedesInNarrative</td><td><a href="../<biblio:AudioPrecedesInNarrativeType/>/<biblio:AudioPrecedesInNarrativeType/>.jsp?uri=<biblio:AudioPrecedesInNarrative/>"><biblio:AudioPrecedesInNarrative /></a></td></tr>
       </biblio:foreachAudioPrecedesInNarrativeIterator>
+      <biblio:foreachAudioIsSubjectOfIterator>
+         <tr><td>isSubjectOf</td><td><a href="../<biblio:AudioIsSubjectOfType/>/<biblio:AudioIsSubjectOfType/>.jsp?uri=<biblio:AudioIsSubjectOf/>"><biblio:AudioIsSubjectOf /></a></td></tr>
+      </biblio:foreachAudioIsSubjectOfIterator>
       <biblio:foreachAudioIsLastOfIterator>
          <tr><td>isLastOf</td><td><a href="../<biblio:AudioIsLastOfType/>/<biblio:AudioIsLastOfType/>.jsp?uri=<biblio:AudioIsLastOf/>"><biblio:AudioIsLastOf /></a></td></tr>
       </biblio:foreachAudioIsLastOfIterator>
       <biblio:foreachAudioIsFirstOfIterator>
          <tr><td>isFirstOf</td><td><a href="../<biblio:AudioIsFirstOfType/>/<biblio:AudioIsFirstOfType/>.jsp?uri=<biblio:AudioIsFirstOf/>"><biblio:AudioIsFirstOf /></a></td></tr>
       </biblio:foreachAudioIsFirstOfIterator>
-      <biblio:foreachAudioRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:AudioRelationType/>/<biblio:AudioRelationType/>.jsp?uri=<biblio:AudioRelation/>"><biblio:AudioRelation /></a></td></tr>
-      </biblio:foreachAudioRelationIterator>
       <biblio:foreachAudioSupersedesIterator>
          <tr><td>supersedes</td><td><a href="../<biblio:AudioSupersedesType/>/<biblio:AudioSupersedesType/>.jsp?uri=<biblio:AudioSupersedes/>"><biblio:AudioSupersedes /></a></td></tr>
       </biblio:foreachAudioSupersedesIterator>
       <biblio:foreachAudioIsExpressionOfIterator>
          <tr><td>isExpressionOf</td><td><a href="../<biblio:AudioIsExpressionOfType/>/<biblio:AudioIsExpressionOfType/>.jsp?uri=<biblio:AudioIsExpressionOf/>"><biblio:AudioIsExpressionOf /></a></td></tr>
       </biblio:foreachAudioIsExpressionOfIterator>
-      <biblio:foreachAudioLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:AudioLanguageType/>/<biblio:AudioLanguageType/>.jsp?uri=<biblio:AudioLanguage/>"><biblio:AudioLanguage /></a></td></tr>
-      </biblio:foreachAudioLanguageIterator>
       <biblio:foreachAudioSupplementsIterator>
          <tr><td>supplements</td><td><a href="../<biblio:AudioSupplementsType/>/<biblio:AudioSupplementsType/>.jsp?uri=<biblio:AudioSupplements/>"><biblio:AudioSupplements /></a></td></tr>
       </biblio:foreachAudioSupplementsIterator>
+      <biblio:foreachAudioHasPreferredTitleIterator>
+         <tr><td>hasPreferredTitle</td><td><a href="../<biblio:AudioHasPreferredTitleType/>/<biblio:AudioHasPreferredTitleType/>.jsp?uri=<biblio:AudioHasPreferredTitle/>"><biblio:AudioHasPreferredTitle /></a></td></tr>
+      </biblio:foreachAudioHasPreferredTitleIterator>
+      <biblio:foreachAudioDerivedFromIterator>
+         <tr><td>derivedFrom</td><td><a href="../<biblio:AudioDerivedFromType/>/<biblio:AudioDerivedFromType/>.jsp?uri=<biblio:AudioDerivedFrom/>"><biblio:AudioDerivedFrom /></a></td></tr>
+      </biblio:foreachAudioDerivedFromIterator>
+      <biblio:foreachAudioReceivedIterator>
+         <tr><td>received</td><td><a href="../<biblio:AudioReceivedType/>/<biblio:AudioReceivedType/>.jsp?uri=<biblio:AudioReceived/>"><biblio:AudioReceived /></a></td></tr>
+      </biblio:foreachAudioReceivedIterator>
       <biblio:foreachAudioHasOtherEditionIterator>
          <tr><td>hasOtherEdition</td><td><a href="../<biblio:AudioHasOtherEditionType/>/<biblio:AudioHasOtherEditionType/>.jsp?uri=<biblio:AudioHasOtherEdition/>"><biblio:AudioHasOtherEdition /></a></td></tr>
       </biblio:foreachAudioHasOtherEditionIterator>
       <biblio:foreachAudioHasContributionIterator>
          <tr><td>hasContribution</td><td><a href="../<biblio:AudioHasContributionType/>/<biblio:AudioHasContributionType/>.jsp?uri=<biblio:AudioHasContribution/>"><biblio:AudioHasContribution /></a></td></tr>
       </biblio:foreachAudioHasContributionIterator>
+      <biblio:foreachAudioAccompaniesIterator>
+         <tr><td>accompanies</td><td><a href="../<biblio:AudioAccompaniesType/>/<biblio:AudioAccompaniesType/>.jsp?uri=<biblio:AudioAccompanies/>"><biblio:AudioAccompanies /></a></td></tr>
+      </biblio:foreachAudioAccompaniesIterator>
+      <biblio:foreachAudioHasTitleIterator>
+         <tr><td>hasTitle</td><td><a href="../<biblio:AudioHasTitleType/>/<biblio:AudioHasTitleType/>.jsp?uri=<biblio:AudioHasTitle/>"><biblio:AudioHasTitle /></a></td></tr>
+      </biblio:foreachAudioHasTitleIterator>
       <biblio:foreachAudioHasSupplementIterator>
          <tr><td>hasSupplement</td><td><a href="../<biblio:AudioHasSupplementType/>/<biblio:AudioHasSupplementType/>.jsp?uri=<biblio:AudioHasSupplement/>"><biblio:AudioHasSupplement /></a></td></tr>
       </biblio:foreachAudioHasSupplementIterator>
@@ -150,12 +184,13 @@
       <biblio:foreachAudioCreatedForDegreeIterator>
          <tr><td>createdForDegree</td><td><a href="../<biblio:AudioCreatedForDegreeType/>/<biblio:AudioCreatedForDegreeType/>.jsp?uri=<biblio:AudioCreatedForDegree/>"><biblio:AudioCreatedForDegree /></a></td></tr>
       </biblio:foreachAudioCreatedForDegreeIterator>
-      <biblio:foreachAudioHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:AudioHasPartType/>/<biblio:AudioHasPartType/>.jsp?uri=<biblio:AudioHasPart/>"><biblio:AudioHasPart /></a></td></tr>
-      </biblio:foreachAudioHasPartIterator>
       <biblio:foreachAudioIsUnionOfIterator>
          <tr><td>isUnionOf</td><td><a href="../<biblio:AudioIsUnionOfType/>/<biblio:AudioIsUnionOfType/>.jsp?uri=<biblio:AudioIsUnionOf/>"><biblio:AudioIsUnionOf /></a></td></tr>
       </biblio:foreachAudioIsUnionOfIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
    </table>
    </biblio:Audio>
 

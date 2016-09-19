@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altTranslatedTitle.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=TranslatedTitle&uri=${param.uri}">RDF dump</a></p>
    <biblio:TranslatedTitle subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -36,12 +37,22 @@
       <biblio:foreachTranslatedTitleHasSourceStatusIterator>
          <tr><td>hasSourceStatus</td><td><a href="../<biblio:TranslatedTitleHasSourceStatusType/>/<biblio:TranslatedTitleHasSourceStatusType/>.jsp?uri=<biblio:TranslatedTitleHasSourceStatus/>"><biblio:TranslatedTitleHasSourceStatus /></a></td></tr>
       </biblio:foreachTranslatedTitleHasSourceStatusIterator>
+      <biblio:foreachTranslatedTitleHasDerivativeIterator>
+         <tr><td>hasDerivative</td><td><a href="../<biblio:TranslatedTitleHasDerivativeType/>/<biblio:TranslatedTitleHasDerivativeType/>.jsp?uri=<biblio:TranslatedTitleHasDerivative/>"><biblio:TranslatedTitleHasDerivative /></a></td></tr>
+      </biblio:foreachTranslatedTitleHasDerivativeIterator>
       <biblio:foreachTranslatedTitleIsPreferredTitleOfIterator>
          <tr><td>isPreferredTitleOf</td><td><a href="../<biblio:TranslatedTitleIsPreferredTitleOfType/>/<biblio:TranslatedTitleIsPreferredTitleOfType/>.jsp?uri=<biblio:TranslatedTitleIsPreferredTitleOf/>"><biblio:TranslatedTitleIsPreferredTitleOf /></a></td></tr>
       </biblio:foreachTranslatedTitleIsPreferredTitleOfIterator>
+      <biblio:foreachTranslatedTitleDerivedFromIterator>
+         <tr><td>derivedFrom</td><td><a href="../<biblio:TranslatedTitleDerivedFromType/>/<biblio:TranslatedTitleDerivedFromType/>.jsp?uri=<biblio:TranslatedTitleDerivedFrom/>"><biblio:TranslatedTitleDerivedFrom /></a></td></tr>
+      </biblio:foreachTranslatedTitleDerivedFromIterator>
       <biblio:foreachTranslatedTitleHasPartIterator>
          <tr><td>hasPart</td><td><a href="../<biblio:TranslatedTitleHasPartType/>/<biblio:TranslatedTitleHasPartType/>.jsp?uri=<biblio:TranslatedTitleHasPart/>"><biblio:TranslatedTitleHasPart /></a></td></tr>
       </biblio:foreachTranslatedTitleHasPartIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
    </table>
    </biblio:TranslatedTitle>
 

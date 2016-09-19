@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altConference.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=Conference&uri=${param.uri}">RDF dump</a></p>
    <biblio:Conference subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -33,15 +34,16 @@
       <biblio:foreachConferenceIdentifiedByIterator>
          <tr><td>identifiedBy</td><td><a href="../<biblio:ConferenceIdentifiedByType/>/<biblio:ConferenceIdentifiedByType/>.jsp?uri=<biblio:ConferenceIdentifiedBy/>"><biblio:ConferenceIdentifiedBy /></a></td></tr>
       </biblio:foreachConferenceIdentifiedByIterator>
-      <biblio:foreachConferenceIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:ConferenceIdentifiedByType/>/<biblio:ConferenceIdentifiedByType/>.jsp?uri=<biblio:ConferenceIdentifiedBy/>"><biblio:ConferenceIdentifiedBy /></a></td></tr>
-      </biblio:foreachConferenceIdentifiedByIterator>
-      <biblio:foreachConferenceRecordedInIterator>
-         <tr><td>recordedIn</td><td><a href="../<biblio:ConferenceRecordedInType/>/<biblio:ConferenceRecordedInType/>.jsp?uri=<biblio:ConferenceRecordedIn/>"><biblio:ConferenceRecordedIn /></a></td></tr>
-      </biblio:foreachConferenceRecordedInIterator>
-      <biblio:foreachConferencePerformanceOfIterator>
-         <tr><td>performanceOf</td><td><a href="../<biblio:ConferencePerformanceOfType/>/<biblio:ConferencePerformanceOfType/>.jsp?uri=<biblio:ConferencePerformanceOf/>"><biblio:ConferencePerformanceOf /></a></td></tr>
-      </biblio:foreachConferencePerformanceOfIterator>
+      <biblio:foreachConferenceIsSubjectOfIterator>
+         <tr><td>isSubjectOf</td><td><a href="../<biblio:ConferenceIsSubjectOfType/>/<biblio:ConferenceIsSubjectOfType/>.jsp?uri=<biblio:ConferenceIsSubjectOf/>"><biblio:ConferenceIsSubjectOf /></a></td></tr>
+      </biblio:foreachConferenceIsSubjectOfIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
+      <biblio:foreachConferenceAgentInverseIterator>
+         <tr><td>agent</td><td><a href="../<biblio:ConferenceAgentInverseType/>/<biblio:ConferenceAgentInverseType/>.jsp?uri=<biblio:ConferenceAgentInverse/>"><biblio:ConferenceAgentInverse/></a></td></tr>
+      </biblio:foreachConferenceAgentInverseIterator>
    </table>
    </biblio:Conference>
 

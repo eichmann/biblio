@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altEvent.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=Event&uri=${param.uri}">RDF dump</a></p>
    <biblio:Event subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -30,12 +31,19 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachEventAtLocationIterator>
+         <tr><td>atLocation</td><td><a href="../<biblio:EventAtLocationType/>/<biblio:EventAtLocationType/>.jsp?uri=<biblio:EventAtLocation/>"><biblio:EventAtLocation /></a></td></tr>
+      </biblio:foreachEventAtLocationIterator>
       <biblio:foreachEventRecordedInIterator>
          <tr><td>recordedIn</td><td><a href="../<biblio:EventRecordedInType/>/<biblio:EventRecordedInType/>.jsp?uri=<biblio:EventRecordedIn/>"><biblio:EventRecordedIn /></a></td></tr>
       </biblio:foreachEventRecordedInIterator>
       <biblio:foreachEventPerformanceOfIterator>
          <tr><td>performanceOf</td><td><a href="../<biblio:EventPerformanceOfType/>/<biblio:EventPerformanceOfType/>.jsp?uri=<biblio:EventPerformanceOf/>"><biblio:EventPerformanceOf /></a></td></tr>
       </biblio:foreachEventPerformanceOfIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
    </table>
    </biblio:Event>
 

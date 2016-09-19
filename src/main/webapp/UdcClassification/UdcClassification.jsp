@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altUdcClassification.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=UdcClassification&uri=${param.uri}">RDF dump</a></p>
    <biblio:UdcClassification subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -33,6 +34,10 @@
       <biblio:foreachUdcClassificationIsClassificationForIterator>
          <tr><td>isClassificationFor</td><td><a href="../<biblio:UdcClassificationIsClassificationForType/>/<biblio:UdcClassificationIsClassificationForType/>.jsp?uri=<biblio:UdcClassificationIsClassificationFor/>"><biblio:UdcClassificationIsClassificationFor /></a></td></tr>
       </biblio:foreachUdcClassificationIsClassificationForIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
    </table>
    </biblio:UdcClassification>
 

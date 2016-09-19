@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altDistinctiveTitle.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=DistinctiveTitle&uri=${param.uri}">RDF dump</a></p>
    <biblio:DistinctiveTitle subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -36,12 +37,22 @@
       <biblio:foreachDistinctiveTitleHasSourceStatusIterator>
          <tr><td>hasSourceStatus</td><td><a href="../<biblio:DistinctiveTitleHasSourceStatusType/>/<biblio:DistinctiveTitleHasSourceStatusType/>.jsp?uri=<biblio:DistinctiveTitleHasSourceStatus/>"><biblio:DistinctiveTitleHasSourceStatus /></a></td></tr>
       </biblio:foreachDistinctiveTitleHasSourceStatusIterator>
+      <biblio:foreachDistinctiveTitleHasDerivativeIterator>
+         <tr><td>hasDerivative</td><td><a href="../<biblio:DistinctiveTitleHasDerivativeType/>/<biblio:DistinctiveTitleHasDerivativeType/>.jsp?uri=<biblio:DistinctiveTitleHasDerivative/>"><biblio:DistinctiveTitleHasDerivative /></a></td></tr>
+      </biblio:foreachDistinctiveTitleHasDerivativeIterator>
       <biblio:foreachDistinctiveTitleIsPreferredTitleOfIterator>
          <tr><td>isPreferredTitleOf</td><td><a href="../<biblio:DistinctiveTitleIsPreferredTitleOfType/>/<biblio:DistinctiveTitleIsPreferredTitleOfType/>.jsp?uri=<biblio:DistinctiveTitleIsPreferredTitleOf/>"><biblio:DistinctiveTitleIsPreferredTitleOf /></a></td></tr>
       </biblio:foreachDistinctiveTitleIsPreferredTitleOfIterator>
+      <biblio:foreachDistinctiveTitleDerivedFromIterator>
+         <tr><td>derivedFrom</td><td><a href="../<biblio:DistinctiveTitleDerivedFromType/>/<biblio:DistinctiveTitleDerivedFromType/>.jsp?uri=<biblio:DistinctiveTitleDerivedFrom/>"><biblio:DistinctiveTitleDerivedFrom /></a></td></tr>
+      </biblio:foreachDistinctiveTitleDerivedFromIterator>
       <biblio:foreachDistinctiveTitleHasPartIterator>
          <tr><td>hasPart</td><td><a href="../<biblio:DistinctiveTitleHasPartType/>/<biblio:DistinctiveTitleHasPartType/>.jsp?uri=<biblio:DistinctiveTitleHasPart/>"><biblio:DistinctiveTitleHasPart /></a></td></tr>
       </biblio:foreachDistinctiveTitleHasPartIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
    </table>
    </biblio:DistinctiveTitle>
 

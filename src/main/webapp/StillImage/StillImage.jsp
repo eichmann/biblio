@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altStillImage.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=StillImage&uri=${param.uri}">RDF dump</a></p>
    <biblio:StillImage subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -32,6 +33,9 @@
       <biblio:foreachStillImageFrequencyIterator>
          <tr><td>frequency</td><td><biblio:StillImageFrequency /></td></tr>
       </biblio:foreachStillImageFrequencyIterator>
+      <biblio:foreachStillImageFormDesignationIterator>
+         <tr><td>formDesignation</td><td><biblio:StillImageFormDesignation /></td></tr>
+      </biblio:foreachStillImageFormDesignationIterator>
       <biblio:foreachStillImageLanguageNoteIterator>
          <tr><td>languageNote</td><td><biblio:StillImageLanguageNote /></td></tr>
       </biblio:foreachStillImageLanguageNoteIterator>
@@ -42,6 +46,15 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachStillImageSubjectIterator>
+         <tr><td>subject</td><td><a href="../<biblio:StillImageSubjectType/>/<biblio:StillImageSubjectType/>.jsp?uri=<biblio:StillImageSubject/>"><biblio:StillImageSubject /></a></td></tr>
+      </biblio:foreachStillImageSubjectIterator>
+      <biblio:foreachStillImageHasAnnotationIterator>
+         <tr><td>hasAnnotation</td><td><a href="../<biblio:StillImageHasAnnotationType/>/<biblio:StillImageHasAnnotationType/>.jsp?uri=<biblio:StillImageHasAnnotation/>"><biblio:StillImageHasAnnotation /></a></td></tr>
+      </biblio:foreachStillImageHasAnnotationIterator>
+      <biblio:foreachStillImageLanguageIterator>
+         <tr><td>language</td><td><a href="../<biblio:StillImageLanguageType/>/<biblio:StillImageLanguageType/>.jsp?uri=<biblio:StillImageLanguage/>"><biblio:StillImageLanguage /></a></td></tr>
+      </biblio:foreachStillImageLanguageIterator>
       <biblio:foreachStillImagePerformedAtIterator>
          <tr><td>performedAt</td><td><a href="../<biblio:StillImagePerformedAtType/>/<biblio:StillImagePerformedAtType/>.jsp?uri=<biblio:StillImagePerformedAt/>"><biblio:StillImagePerformedAt /></a></td></tr>
       </biblio:foreachStillImagePerformedAtIterator>
@@ -60,9 +73,9 @@
       <biblio:foreachStillImageHasDataSourceIterator>
          <tr><td>hasDataSource</td><td><a href="../<biblio:StillImageHasDataSourceType/>/<biblio:StillImageHasDataSourceType/>.jsp?uri=<biblio:StillImageHasDataSource/>"><biblio:StillImageHasDataSource /></a></td></tr>
       </biblio:foreachStillImageHasDataSourceIterator>
-      <biblio:foreachStillImageIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:StillImageIdentifiedByType/>/<biblio:StillImageIdentifiedByType/>.jsp?uri=<biblio:StillImageIdentifiedBy/>"><biblio:StillImageIdentifiedBy /></a></td></tr>
-      </biblio:foreachStillImageIdentifiedByIterator>
+      <biblio:foreachStillImagePrecedesIterator>
+         <tr><td>precedes</td><td><a href="../<biblio:StillImagePrecedesType/>/<biblio:StillImagePrecedesType/>.jsp?uri=<biblio:StillImagePrecedes/>"><biblio:StillImagePrecedes /></a></td></tr>
+      </biblio:foreachStillImagePrecedesIterator>
       <biblio:foreachStillImageContinuesUnderNewTitleIterator>
          <tr><td>continuesUnderNewTitle</td><td><a href="../<biblio:StillImageContinuesUnderNewTitleType/>/<biblio:StillImageContinuesUnderNewTitleType/>.jsp?uri=<biblio:StillImageContinuesUnderNewTitle/>"><biblio:StillImageContinuesUnderNewTitle /></a></td></tr>
       </biblio:foreachStillImageContinuesUnderNewTitleIterator>
@@ -72,6 +85,9 @@
       <biblio:foreachStillImageIsFindingAidForIterator>
          <tr><td>isFindingAidFor</td><td><a href="../<biblio:StillImageIsFindingAidForType/>/<biblio:StillImageIsFindingAidForType/>.jsp?uri=<biblio:StillImageIsFindingAidFor/>"><biblio:StillImageIsFindingAidFor /></a></td></tr>
       </biblio:foreachStillImageIsFindingAidForIterator>
+      <biblio:foreachStillImageFollowsIterator>
+         <tr><td>follows</td><td><a href="../<biblio:StillImageFollowsType/>/<biblio:StillImageFollowsType/>.jsp?uri=<biblio:StillImageFollows/>"><biblio:StillImageFollows /></a></td></tr>
+      </biblio:foreachStillImageFollowsIterator>
       <biblio:foreachStillImageAbsorbedByIterator>
          <tr><td>absorbedBy</td><td><a href="../<biblio:StillImageAbsorbedByType/>/<biblio:StillImageAbsorbedByType/>.jsp?uri=<biblio:StillImageAbsorbedBy/>"><biblio:StillImageAbsorbedBy /></a></td></tr>
       </biblio:foreachStillImageAbsorbedByIterator>
@@ -81,12 +97,12 @@
       <biblio:foreachStillImageSeparatedFromIterator>
          <tr><td>separatedFrom</td><td><a href="../<biblio:StillImageSeparatedFromType/>/<biblio:StillImageSeparatedFromType/>.jsp?uri=<biblio:StillImageSeparatedFrom/>"><biblio:StillImageSeparatedFrom /></a></td></tr>
       </biblio:foreachStillImageSeparatedFromIterator>
-      <biblio:foreachStillImageSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:StillImageSubjectType/>/<biblio:StillImageSubjectType/>.jsp?uri=<biblio:StillImageSubject/>"><biblio:StillImageSubject /></a></td></tr>
-      </biblio:foreachStillImageSubjectIterator>
       <biblio:foreachStillImageTranslatedAsIterator>
          <tr><td>translatedAs</td><td><a href="../<biblio:StillImageTranslatedAsType/>/<biblio:StillImageTranslatedAsType/>.jsp?uri=<biblio:StillImageTranslatedAs/>"><biblio:StillImageTranslatedAs /></a></td></tr>
       </biblio:foreachStillImageTranslatedAsIterator>
+      <biblio:foreachStillImageHasDerivativeIterator>
+         <tr><td>hasDerivative</td><td><a href="../<biblio:StillImageHasDerivativeType/>/<biblio:StillImageHasDerivativeType/>.jsp?uri=<biblio:StillImageHasDerivative/>"><biblio:StillImageHasDerivative /></a></td></tr>
+      </biblio:foreachStillImageHasDerivativeIterator>
       <biblio:foreachStillImageHasInstanceIterator>
          <tr><td>hasInstance</td><td><a href="../<biblio:StillImageHasInstanceType/>/<biblio:StillImageHasInstanceType/>.jsp?uri=<biblio:StillImageHasInstance/>"><biblio:StillImageHasInstance /></a></td></tr>
       </biblio:foreachStillImageHasInstanceIterator>
@@ -102,33 +118,45 @@
       <biblio:foreachStillImagePrecedesInNarrativeIterator>
          <tr><td>precedesInNarrative</td><td><a href="../<biblio:StillImagePrecedesInNarrativeType/>/<biblio:StillImagePrecedesInNarrativeType/>.jsp?uri=<biblio:StillImagePrecedesInNarrative/>"><biblio:StillImagePrecedesInNarrative /></a></td></tr>
       </biblio:foreachStillImagePrecedesInNarrativeIterator>
+      <biblio:foreachStillImageIsSubjectOfIterator>
+         <tr><td>isSubjectOf</td><td><a href="../<biblio:StillImageIsSubjectOfType/>/<biblio:StillImageIsSubjectOfType/>.jsp?uri=<biblio:StillImageIsSubjectOf/>"><biblio:StillImageIsSubjectOf /></a></td></tr>
+      </biblio:foreachStillImageIsSubjectOfIterator>
       <biblio:foreachStillImageIsLastOfIterator>
          <tr><td>isLastOf</td><td><a href="../<biblio:StillImageIsLastOfType/>/<biblio:StillImageIsLastOfType/>.jsp?uri=<biblio:StillImageIsLastOf/>"><biblio:StillImageIsLastOf /></a></td></tr>
       </biblio:foreachStillImageIsLastOfIterator>
       <biblio:foreachStillImageIsFirstOfIterator>
          <tr><td>isFirstOf</td><td><a href="../<biblio:StillImageIsFirstOfType/>/<biblio:StillImageIsFirstOfType/>.jsp?uri=<biblio:StillImageIsFirstOf/>"><biblio:StillImageIsFirstOf /></a></td></tr>
       </biblio:foreachStillImageIsFirstOfIterator>
-      <biblio:foreachStillImageRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:StillImageRelationType/>/<biblio:StillImageRelationType/>.jsp?uri=<biblio:StillImageRelation/>"><biblio:StillImageRelation /></a></td></tr>
-      </biblio:foreachStillImageRelationIterator>
       <biblio:foreachStillImageSupersedesIterator>
          <tr><td>supersedes</td><td><a href="../<biblio:StillImageSupersedesType/>/<biblio:StillImageSupersedesType/>.jsp?uri=<biblio:StillImageSupersedes/>"><biblio:StillImageSupersedes /></a></td></tr>
       </biblio:foreachStillImageSupersedesIterator>
       <biblio:foreachStillImageIsExpressionOfIterator>
          <tr><td>isExpressionOf</td><td><a href="../<biblio:StillImageIsExpressionOfType/>/<biblio:StillImageIsExpressionOfType/>.jsp?uri=<biblio:StillImageIsExpressionOf/>"><biblio:StillImageIsExpressionOf /></a></td></tr>
       </biblio:foreachStillImageIsExpressionOfIterator>
-      <biblio:foreachStillImageLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:StillImageLanguageType/>/<biblio:StillImageLanguageType/>.jsp?uri=<biblio:StillImageLanguage/>"><biblio:StillImageLanguage /></a></td></tr>
-      </biblio:foreachStillImageLanguageIterator>
       <biblio:foreachStillImageSupplementsIterator>
          <tr><td>supplements</td><td><a href="../<biblio:StillImageSupplementsType/>/<biblio:StillImageSupplementsType/>.jsp?uri=<biblio:StillImageSupplements/>"><biblio:StillImageSupplements /></a></td></tr>
       </biblio:foreachStillImageSupplementsIterator>
+      <biblio:foreachStillImageHasPreferredTitleIterator>
+         <tr><td>hasPreferredTitle</td><td><a href="../<biblio:StillImageHasPreferredTitleType/>/<biblio:StillImageHasPreferredTitleType/>.jsp?uri=<biblio:StillImageHasPreferredTitle/>"><biblio:StillImageHasPreferredTitle /></a></td></tr>
+      </biblio:foreachStillImageHasPreferredTitleIterator>
+      <biblio:foreachStillImageDerivedFromIterator>
+         <tr><td>derivedFrom</td><td><a href="../<biblio:StillImageDerivedFromType/>/<biblio:StillImageDerivedFromType/>.jsp?uri=<biblio:StillImageDerivedFrom/>"><biblio:StillImageDerivedFrom /></a></td></tr>
+      </biblio:foreachStillImageDerivedFromIterator>
+      <biblio:foreachStillImageReceivedIterator>
+         <tr><td>received</td><td><a href="../<biblio:StillImageReceivedType/>/<biblio:StillImageReceivedType/>.jsp?uri=<biblio:StillImageReceived/>"><biblio:StillImageReceived /></a></td></tr>
+      </biblio:foreachStillImageReceivedIterator>
       <biblio:foreachStillImageHasOtherEditionIterator>
          <tr><td>hasOtherEdition</td><td><a href="../<biblio:StillImageHasOtherEditionType/>/<biblio:StillImageHasOtherEditionType/>.jsp?uri=<biblio:StillImageHasOtherEdition/>"><biblio:StillImageHasOtherEdition /></a></td></tr>
       </biblio:foreachStillImageHasOtherEditionIterator>
       <biblio:foreachStillImageHasContributionIterator>
          <tr><td>hasContribution</td><td><a href="../<biblio:StillImageHasContributionType/>/<biblio:StillImageHasContributionType/>.jsp?uri=<biblio:StillImageHasContribution/>"><biblio:StillImageHasContribution /></a></td></tr>
       </biblio:foreachStillImageHasContributionIterator>
+      <biblio:foreachStillImageAccompaniesIterator>
+         <tr><td>accompanies</td><td><a href="../<biblio:StillImageAccompaniesType/>/<biblio:StillImageAccompaniesType/>.jsp?uri=<biblio:StillImageAccompanies/>"><biblio:StillImageAccompanies /></a></td></tr>
+      </biblio:foreachStillImageAccompaniesIterator>
+      <biblio:foreachStillImageHasTitleIterator>
+         <tr><td>hasTitle</td><td><a href="../<biblio:StillImageHasTitleType/>/<biblio:StillImageHasTitleType/>.jsp?uri=<biblio:StillImageHasTitle/>"><biblio:StillImageHasTitle /></a></td></tr>
+      </biblio:foreachStillImageHasTitleIterator>
       <biblio:foreachStillImageHasSupplementIterator>
          <tr><td>hasSupplement</td><td><a href="../<biblio:StillImageHasSupplementType/>/<biblio:StillImageHasSupplementType/>.jsp?uri=<biblio:StillImageHasSupplement/>"><biblio:StillImageHasSupplement /></a></td></tr>
       </biblio:foreachStillImageHasSupplementIterator>
@@ -156,6 +184,13 @@
       <biblio:foreachStillImageIsUnionOfIterator>
          <tr><td>isUnionOf</td><td><a href="../<biblio:StillImageIsUnionOfType/>/<biblio:StillImageIsUnionOfType/>.jsp?uri=<biblio:StillImageIsUnionOf/>"><biblio:StillImageIsUnionOf /></a></td></tr>
       </biblio:foreachStillImageIsUnionOfIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
+      <biblio:foreachStillImageRelationInverseIterator>
+         <tr><td>relation</td><td><a href="../<biblio:StillImageRelationInverseType/>/<biblio:StillImageRelationInverseType/>.jsp?uri=<biblio:StillImageRelationInverse/>"><biblio:StillImageRelationInverse/></a></td></tr>
+      </biblio:foreachStillImageRelationInverseIterator>
    </table>
    </biblio:StillImage>
 

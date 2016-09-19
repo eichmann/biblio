@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altAudience.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=Audience&uri=${param.uri}">RDF dump</a></p>
    <biblio:Audience subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -30,6 +31,13 @@
 
    <h3>Object Properties</h3>
    <table>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
+      <biblio:foreachAudienceAudienceInverseIterator>
+         <tr><td>audience</td><td><a href="../<biblio:AudienceAudienceInverseType/>/<biblio:AudienceAudienceInverseType/>.jsp?uri=<biblio:AudienceAudienceInverse/>"><biblio:AudienceAudienceInverse/></a></td></tr>
+      </biblio:foreachAudienceAudienceInverseIterator>
    </table>
    </biblio:Audience>
 

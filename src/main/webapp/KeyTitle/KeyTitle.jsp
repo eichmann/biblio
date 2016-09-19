@@ -12,6 +12,7 @@
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altKeyTitle.jsp?uri=${param.uri}">alternate view</a></p>
+   <p><a href="../utility/sparqlDump.jsp?type=KeyTitle&uri=${param.uri}">RDF dump</a></p>
    <biblio:KeyTitle subjectURI="${param.uri}">
 
    <h3>Default Properties</h3>
@@ -39,12 +40,19 @@
       <biblio:foreachKeyTitleHasSourceStatusIterator>
          <tr><td>hasSourceStatus</td><td><a href="../<biblio:KeyTitleHasSourceStatusType/>/<biblio:KeyTitleHasSourceStatusType/>.jsp?uri=<biblio:KeyTitleHasSourceStatus/>"><biblio:KeyTitleHasSourceStatus /></a></td></tr>
       </biblio:foreachKeyTitleHasSourceStatusIterator>
+      <biblio:foreachKeyTitleHasDerivativeIterator>
+         <tr><td>hasDerivative</td><td><a href="../<biblio:KeyTitleHasDerivativeType/>/<biblio:KeyTitleHasDerivativeType/>.jsp?uri=<biblio:KeyTitleHasDerivative/>"><biblio:KeyTitleHasDerivative /></a></td></tr>
+      </biblio:foreachKeyTitleHasDerivativeIterator>
       <biblio:foreachKeyTitleIsPreferredTitleOfIterator>
          <tr><td>isPreferredTitleOf</td><td><a href="../<biblio:KeyTitleIsPreferredTitleOfType/>/<biblio:KeyTitleIsPreferredTitleOfType/>.jsp?uri=<biblio:KeyTitleIsPreferredTitleOf/>"><biblio:KeyTitleIsPreferredTitleOf /></a></td></tr>
       </biblio:foreachKeyTitleIsPreferredTitleOfIterator>
-      <biblio:foreachKeyTitleHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:KeyTitleHasPartType/>/<biblio:KeyTitleHasPartType/>.jsp?uri=<biblio:KeyTitleHasPart/>"><biblio:KeyTitleHasPart /></a></td></tr>
-      </biblio:foreachKeyTitleHasPartIterator>
+      <biblio:foreachKeyTitleDerivedFromIterator>
+         <tr><td>derivedFrom</td><td><a href="../<biblio:KeyTitleDerivedFromType/>/<biblio:KeyTitleDerivedFromType/>.jsp?uri=<biblio:KeyTitleDerivedFrom/>"><biblio:KeyTitleDerivedFrom /></a></td></tr>
+      </biblio:foreachKeyTitleDerivedFromIterator>
+   </table>
+
+   <h3>Inverse Object Properties (these do not have declared inverses)</h3>
+   <table>
    </table>
    </biblio:KeyTitle>
 
