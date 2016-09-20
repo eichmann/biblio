@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=US-ASCII" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="biblio" uri="http://slis.uiowa.edu/BIBFRAME"%>
 <%@ taglib prefix="util" uri="http://icts.uiowa.edu/tagUtil"%>
@@ -6,7 +6,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Isbn10 - http://bib.ld4l.org/ontology/Isbn10</title>
 <style type="text/css" media="all">    @import "/biblio/resources/style.css";</style></head>
 <body>
@@ -31,6 +31,9 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachIsbn10IdentifiesIterator>
+         <tr><td>identifies</td><td><a href="../<biblio:Isbn10IdentifiesType/>/<biblio:Isbn10IdentifiesType/>.jsp?uri=<biblio:Isbn10Identifies/>"><biblio:Isbn10Identifies /></a></td></tr>
+      </biblio:foreachIsbn10IdentifiesIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>

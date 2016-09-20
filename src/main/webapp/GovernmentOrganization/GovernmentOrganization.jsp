@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=US-ASCII" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="biblio" uri="http://slis.uiowa.edu/BIBFRAME"%>
 <%@ taglib prefix="util" uri="http://icts.uiowa.edu/tagUtil"%>
@@ -6,7 +6,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>GovernmentOrganization - http://schema.org/GovernmentOrganization</title>
 <style type="text/css" media="all">    @import "/biblio/resources/style.css";</style></head>
 <body>
@@ -31,6 +31,12 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachGovernmentOrganizationReceivedIterator>
+         <tr><td>received</td><td><a href="../<biblio:GovernmentOrganizationReceivedType/>/<biblio:GovernmentOrganizationReceivedType/>.jsp?uri=<biblio:GovernmentOrganizationReceived/>"><biblio:GovernmentOrganizationReceived /></a></td></tr>
+      </biblio:foreachGovernmentOrganizationReceivedIterator>
+      <biblio:foreachGovernmentOrganizationIsAnnotatorOfIterator>
+         <tr><td>isAnnotatorOf</td><td><a href="../<biblio:GovernmentOrganizationIsAnnotatorOfType/>/<biblio:GovernmentOrganizationIsAnnotatorOfType/>.jsp?uri=<biblio:GovernmentOrganizationIsAnnotatorOf/>"><biblio:GovernmentOrganizationIsAnnotatorOf /></a></td></tr>
+      </biblio:foreachGovernmentOrganizationIsAnnotatorOfIterator>
       <biblio:foreachGovernmentOrganizationIsSubjectOfIterator>
          <tr><td>isSubjectOf</td><td><a href="../<biblio:GovernmentOrganizationIsSubjectOfType/>/<biblio:GovernmentOrganizationIsSubjectOfType/>.jsp?uri=<biblio:GovernmentOrganizationIsSubjectOf/>"><biblio:GovernmentOrganizationIsSubjectOf /></a></td></tr>
       </biblio:foreachGovernmentOrganizationIsSubjectOfIterator>
@@ -38,6 +44,9 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
+      <biblio:foreachGovernmentOrganizationHeldByInverseIterator>
+         <tr><td>heldBy</td><td><a href="../<biblio:GovernmentOrganizationHeldByInverseType/>/<biblio:GovernmentOrganizationHeldByInverseType/>.jsp?uri=<biblio:GovernmentOrganizationHeldByInverse/>"><biblio:GovernmentOrganizationHeldByInverse/></a></td></tr>
+      </biblio:foreachGovernmentOrganizationHeldByInverseIterator>
       <biblio:foreachGovernmentOrganizationAgentInverseIterator>
          <tr><td>agent</td><td><a href="../<biblio:GovernmentOrganizationAgentInverseType/>/<biblio:GovernmentOrganizationAgentInverseType/>.jsp?uri=<biblio:GovernmentOrganizationAgentInverse/>"><biblio:GovernmentOrganizationAgentInverse/></a></td></tr>
       </biblio:foreachGovernmentOrganizationAgentInverseIterator>

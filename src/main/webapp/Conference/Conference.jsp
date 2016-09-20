@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=US-ASCII" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="biblio" uri="http://slis.uiowa.edu/BIBFRAME"%>
 <%@ taglib prefix="util" uri="http://icts.uiowa.edu/tagUtil"%>
@@ -6,7 +6,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Conference - http://bib.ld4l.org/ontology/Conference</title>
 <style type="text/css" media="all">    @import "/biblio/resources/style.css";</style></head>
 <body>
@@ -37,6 +37,15 @@
       <biblio:foreachConferenceIsSubjectOfIterator>
          <tr><td>isSubjectOf</td><td><a href="../<biblio:ConferenceIsSubjectOfType/>/<biblio:ConferenceIsSubjectOfType/>.jsp?uri=<biblio:ConferenceIsSubjectOf/>"><biblio:ConferenceIsSubjectOf /></a></td></tr>
       </biblio:foreachConferenceIsSubjectOfIterator>
+      <biblio:foreachConferenceAtLocationIterator>
+         <tr><td>atLocation</td><td><a href="../<biblio:ConferenceAtLocationType/>/<biblio:ConferenceAtLocationType/>.jsp?uri=<biblio:ConferenceAtLocation/>"><biblio:ConferenceAtLocation /></a></td></tr>
+      </biblio:foreachConferenceAtLocationIterator>
+      <biblio:foreachConferenceRecordedInIterator>
+         <tr><td>recordedIn</td><td><a href="../<biblio:ConferenceRecordedInType/>/<biblio:ConferenceRecordedInType/>.jsp?uri=<biblio:ConferenceRecordedIn/>"><biblio:ConferenceRecordedIn /></a></td></tr>
+      </biblio:foreachConferenceRecordedInIterator>
+      <biblio:foreachConferencePerformanceOfIterator>
+         <tr><td>performanceOf</td><td><a href="../<biblio:ConferencePerformanceOfType/>/<biblio:ConferencePerformanceOfType/>.jsp?uri=<biblio:ConferencePerformanceOf/>"><biblio:ConferencePerformanceOf /></a></td></tr>
+      </biblio:foreachConferencePerformanceOfIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>

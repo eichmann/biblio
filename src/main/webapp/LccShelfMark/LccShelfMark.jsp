@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=US-ASCII" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="biblio" uri="http://slis.uiowa.edu/BIBFRAME"%>
 <%@ taglib prefix="util" uri="http://icts.uiowa.edu/tagUtil"%>
@@ -6,7 +6,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>LccShelfMark - http://bib.ld4l.org/ontology/LccShelfMark</title>
 <style type="text/css" media="all">    @import "/biblio/resources/style.css";</style></head>
 <body>
@@ -31,10 +31,16 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachLccShelfMarkIsClassificationForIterator>
+         <tr><td>isClassificationFor</td><td><a href="../<biblio:LccShelfMarkIsClassificationForType/>/<biblio:LccShelfMarkIsClassificationForType/>.jsp?uri=<biblio:LccShelfMarkIsClassificationFor/>"><biblio:LccShelfMarkIsClassificationFor /></a></td></tr>
+      </biblio:foreachLccShelfMarkIsClassificationForIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
+      <biblio:foreachLccShelfMarkHasGenreInverseIterator>
+         <tr><td>hasGenre</td><td><a href="../<biblio:LccShelfMarkHasGenreInverseType/>/<biblio:LccShelfMarkHasGenreInverseType/>.jsp?uri=<biblio:LccShelfMarkHasGenreInverse/>"><biblio:LccShelfMarkHasGenreInverse/></a></td></tr>
+      </biblio:foreachLccShelfMarkHasGenreInverseIterator>
    </table>
    </biblio:LccShelfMark>
 

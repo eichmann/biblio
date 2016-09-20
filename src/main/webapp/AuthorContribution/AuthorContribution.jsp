@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=US-ASCII" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="biblio" uri="http://slis.uiowa.edu/BIBFRAME"%>
 <%@ taglib prefix="util" uri="http://icts.uiowa.edu/tagUtil"%>
@@ -6,7 +6,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>AuthorContribution - http://bib.ld4l.org/ontology/AuthorContribution</title>
 <style type="text/css" media="all">    @import "/biblio/resources/style.css";</style></head>
 <body>
@@ -34,6 +34,9 @@
       <biblio:foreachAuthorContributionAgentIterator>
          <tr><td>agent</td><td><a href="../<biblio:AuthorContributionAgentType/>/<biblio:AuthorContributionAgentType/>.jsp?uri=<biblio:AuthorContributionAgent/>"><biblio:AuthorContributionAgent /></a></td></tr>
       </biblio:foreachAuthorContributionAgentIterator>
+      <biblio:foreachAuthorContributionContributedToIterator>
+         <tr><td>contributedTo</td><td><a href="../<biblio:AuthorContributionContributedToType/>/<biblio:AuthorContributionContributedToType/>.jsp?uri=<biblio:AuthorContributionContributedTo/>"><biblio:AuthorContributionContributedTo /></a></td></tr>
+      </biblio:foreachAuthorContributionContributedToIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
