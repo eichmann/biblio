@@ -46,33 +46,6 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachJournalIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:JournalIdentifiedByType/>/<biblio:JournalIdentifiedByType/>.jsp?uri=<biblio:JournalIdentifiedBy/>"><biblio:JournalIdentifiedBy /></a></td></tr>
-      </biblio:foreachJournalIdentifiedByIterator>
-      <biblio:foreachJournalPrecedesIterator>
-         <tr><td>precedes</td><td><a href="../<biblio:JournalPrecedesType/>/<biblio:JournalPrecedesType/>.jsp?uri=<biblio:JournalPrecedes/>"><biblio:JournalPrecedes /></a></td></tr>
-      </biblio:foreachJournalPrecedesIterator>
-      <biblio:foreachJournalHasFirstIterator>
-         <tr><td>hasFirst</td><td><a href="../<biblio:JournalHasFirstType/>/<biblio:JournalHasFirstType/>.jsp?uri=<biblio:JournalHasFirst/>"><biblio:JournalHasFirst /></a></td></tr>
-      </biblio:foreachJournalHasFirstIterator>
-      <biblio:foreachJournalSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:JournalSubjectType/>/<biblio:JournalSubjectType/>.jsp?uri=<biblio:JournalSubject/>"><biblio:JournalSubject /></a></td></tr>
-      </biblio:foreachJournalSubjectIterator>
-      <biblio:foreachJournalHasAnnotationIterator>
-         <tr><td>hasAnnotation</td><td><a href="../<biblio:JournalHasAnnotationType/>/<biblio:JournalHasAnnotationType/>.jsp?uri=<biblio:JournalHasAnnotation/>"><biblio:JournalHasAnnotation /></a></td></tr>
-      </biblio:foreachJournalHasAnnotationIterator>
-      <biblio:foreachJournalHasLastIterator>
-         <tr><td>hasLast</td><td><a href="../<biblio:JournalHasLastType/>/<biblio:JournalHasLastType/>.jsp?uri=<biblio:JournalHasLast/>"><biblio:JournalHasLast /></a></td></tr>
-      </biblio:foreachJournalHasLastIterator>
-      <biblio:foreachJournalRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:JournalRelationType/>/<biblio:JournalRelationType/>.jsp?uri=<biblio:JournalRelation/>"><biblio:JournalRelation /></a></td></tr>
-      </biblio:foreachJournalRelationIterator>
-      <biblio:foreachJournalLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:JournalLanguageType/>/<biblio:JournalLanguageType/>.jsp?uri=<biblio:JournalLanguage/>"><biblio:JournalLanguage /></a></td></tr>
-      </biblio:foreachJournalLanguageIterator>
-      <biblio:foreachJournalAccompaniedByIterator>
-         <tr><td>accompaniedBy</td><td><a href="../<biblio:JournalAccompaniedByType/>/<biblio:JournalAccompaniedByType/>.jsp?uri=<biblio:JournalAccompaniedBy/>"><biblio:JournalAccompaniedBy /></a></td></tr>
-      </biblio:foreachJournalAccompaniedByIterator>
       <biblio:foreachJournalPerformedAtIterator>
          <tr><td>performedAt</td><td><a href="../<biblio:JournalPerformedAtType/>/<biblio:JournalPerformedAtType/>.jsp?uri=<biblio:JournalPerformedAt/>"><biblio:JournalPerformedAt /></a></td></tr>
       </biblio:foreachJournalPerformedAtIterator>
@@ -91,6 +64,9 @@
       <biblio:foreachJournalHasDataSourceIterator>
          <tr><td>hasDataSource</td><td><a href="../<biblio:JournalHasDataSourceType/>/<biblio:JournalHasDataSourceType/>.jsp?uri=<biblio:JournalHasDataSource/>"><biblio:JournalHasDataSource /></a></td></tr>
       </biblio:foreachJournalHasDataSourceIterator>
+      <biblio:foreachJournalPrecedesIterator>
+         <tr><td>precedes</td><td><a href="../<biblio:JournalPrecedesType/>/<biblio:JournalPrecedesType/>.jsp?uri=<biblio:JournalPrecedes/>"><biblio:JournalPrecedes /></a></td></tr>
+      </biblio:foreachJournalPrecedesIterator>
       <biblio:foreachJournalContinuesUnderNewTitleIterator>
          <tr><td>continuesUnderNewTitle</td><td><a href="../<biblio:JournalContinuesUnderNewTitleType/>/<biblio:JournalContinuesUnderNewTitleType/>.jsp?uri=<biblio:JournalContinuesUnderNewTitle/>"><biblio:JournalContinuesUnderNewTitle /></a></td></tr>
       </biblio:foreachJournalContinuesUnderNewTitleIterator>
@@ -148,6 +124,9 @@
       <biblio:foreachJournalIsExpressionOfIterator>
          <tr><td>isExpressionOf</td><td><a href="../<biblio:JournalIsExpressionOfType/>/<biblio:JournalIsExpressionOfType/>.jsp?uri=<biblio:JournalIsExpressionOf/>"><biblio:JournalIsExpressionOf /></a></td></tr>
       </biblio:foreachJournalIsExpressionOfIterator>
+      <biblio:foreachJournalLanguageIterator>
+         <tr><td>language</td><td><a href="../<biblio:JournalLanguageType/>/<biblio:JournalLanguageType/>.jsp?uri=<biblio:JournalLanguage/>"><biblio:JournalLanguage /></a></td></tr>
+      </biblio:foreachJournalLanguageIterator>
       <biblio:foreachJournalSupplementsIterator>
          <tr><td>supplements</td><td><a href="../<biblio:JournalSupplementsType/>/<biblio:JournalSupplementsType/>.jsp?uri=<biblio:JournalSupplements/>"><biblio:JournalSupplements /></a></td></tr>
       </biblio:foreachJournalSupplementsIterator>
@@ -199,6 +178,27 @@
       <biblio:foreachJournalIsUnionOfIterator>
          <tr><td>isUnionOf</td><td><a href="../<biblio:JournalIsUnionOfType/>/<biblio:JournalIsUnionOfType/>.jsp?uri=<biblio:JournalIsUnionOf/>"><biblio:JournalIsUnionOf /></a></td></tr>
       </biblio:foreachJournalIsUnionOfIterator>
+      <biblio:foreachJournalIdentifiedByIterator>
+         <tr><td>identifiedBy</td><td><a href="../<biblio:JournalIdentifiedByType/>/<biblio:JournalIdentifiedByType/>.jsp?uri=<biblio:JournalIdentifiedBy/>"><biblio:JournalIdentifiedBy /></a></td></tr>
+      </biblio:foreachJournalIdentifiedByIterator>
+      <biblio:foreachJournalHasFirstIterator>
+         <tr><td>hasFirst</td><td><a href="../<biblio:JournalHasFirstType/>/<biblio:JournalHasFirstType/>.jsp?uri=<biblio:JournalHasFirst/>"><biblio:JournalHasFirst /></a></td></tr>
+      </biblio:foreachJournalHasFirstIterator>
+      <biblio:foreachJournalSubjectIterator>
+         <tr><td>subject</td><td><a href="../<biblio:JournalSubjectType/>/<biblio:JournalSubjectType/>.jsp?uri=<biblio:JournalSubject/>"><biblio:JournalSubject /></a></td></tr>
+      </biblio:foreachJournalSubjectIterator>
+      <biblio:foreachJournalHasAnnotationIterator>
+         <tr><td>hasAnnotation</td><td><a href="../<biblio:JournalHasAnnotationType/>/<biblio:JournalHasAnnotationType/>.jsp?uri=<biblio:JournalHasAnnotation/>"><biblio:JournalHasAnnotation /></a></td></tr>
+      </biblio:foreachJournalHasAnnotationIterator>
+      <biblio:foreachJournalHasLastIterator>
+         <tr><td>hasLast</td><td><a href="../<biblio:JournalHasLastType/>/<biblio:JournalHasLastType/>.jsp?uri=<biblio:JournalHasLast/>"><biblio:JournalHasLast /></a></td></tr>
+      </biblio:foreachJournalHasLastIterator>
+      <biblio:foreachJournalRelationIterator>
+         <tr><td>relation</td><td><a href="../<biblio:JournalRelationType/>/<biblio:JournalRelationType/>.jsp?uri=<biblio:JournalRelation/>"><biblio:JournalRelation /></a></td></tr>
+      </biblio:foreachJournalRelationIterator>
+      <biblio:foreachJournalAccompaniedByIterator>
+         <tr><td>accompaniedBy</td><td><a href="../<biblio:JournalAccompaniedByType/>/<biblio:JournalAccompaniedByType/>.jsp?uri=<biblio:JournalAccompaniedBy/>"><biblio:JournalAccompaniedBy /></a></td></tr>
+      </biblio:foreachJournalAccompaniedByIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>

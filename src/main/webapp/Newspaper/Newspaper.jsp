@@ -46,33 +46,6 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachNewspaperIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:NewspaperIdentifiedByType/>/<biblio:NewspaperIdentifiedByType/>.jsp?uri=<biblio:NewspaperIdentifiedBy/>"><biblio:NewspaperIdentifiedBy /></a></td></tr>
-      </biblio:foreachNewspaperIdentifiedByIterator>
-      <biblio:foreachNewspaperPrecedesIterator>
-         <tr><td>precedes</td><td><a href="../<biblio:NewspaperPrecedesType/>/<biblio:NewspaperPrecedesType/>.jsp?uri=<biblio:NewspaperPrecedes/>"><biblio:NewspaperPrecedes /></a></td></tr>
-      </biblio:foreachNewspaperPrecedesIterator>
-      <biblio:foreachNewspaperHasFirstIterator>
-         <tr><td>hasFirst</td><td><a href="../<biblio:NewspaperHasFirstType/>/<biblio:NewspaperHasFirstType/>.jsp?uri=<biblio:NewspaperHasFirst/>"><biblio:NewspaperHasFirst /></a></td></tr>
-      </biblio:foreachNewspaperHasFirstIterator>
-      <biblio:foreachNewspaperSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:NewspaperSubjectType/>/<biblio:NewspaperSubjectType/>.jsp?uri=<biblio:NewspaperSubject/>"><biblio:NewspaperSubject /></a></td></tr>
-      </biblio:foreachNewspaperSubjectIterator>
-      <biblio:foreachNewspaperHasAnnotationIterator>
-         <tr><td>hasAnnotation</td><td><a href="../<biblio:NewspaperHasAnnotationType/>/<biblio:NewspaperHasAnnotationType/>.jsp?uri=<biblio:NewspaperHasAnnotation/>"><biblio:NewspaperHasAnnotation /></a></td></tr>
-      </biblio:foreachNewspaperHasAnnotationIterator>
-      <biblio:foreachNewspaperHasLastIterator>
-         <tr><td>hasLast</td><td><a href="../<biblio:NewspaperHasLastType/>/<biblio:NewspaperHasLastType/>.jsp?uri=<biblio:NewspaperHasLast/>"><biblio:NewspaperHasLast /></a></td></tr>
-      </biblio:foreachNewspaperHasLastIterator>
-      <biblio:foreachNewspaperRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:NewspaperRelationType/>/<biblio:NewspaperRelationType/>.jsp?uri=<biblio:NewspaperRelation/>"><biblio:NewspaperRelation /></a></td></tr>
-      </biblio:foreachNewspaperRelationIterator>
-      <biblio:foreachNewspaperLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:NewspaperLanguageType/>/<biblio:NewspaperLanguageType/>.jsp?uri=<biblio:NewspaperLanguage/>"><biblio:NewspaperLanguage /></a></td></tr>
-      </biblio:foreachNewspaperLanguageIterator>
-      <biblio:foreachNewspaperAccompaniedByIterator>
-         <tr><td>accompaniedBy</td><td><a href="../<biblio:NewspaperAccompaniedByType/>/<biblio:NewspaperAccompaniedByType/>.jsp?uri=<biblio:NewspaperAccompaniedBy/>"><biblio:NewspaperAccompaniedBy /></a></td></tr>
-      </biblio:foreachNewspaperAccompaniedByIterator>
       <biblio:foreachNewspaperPerformedAtIterator>
          <tr><td>performedAt</td><td><a href="../<biblio:NewspaperPerformedAtType/>/<biblio:NewspaperPerformedAtType/>.jsp?uri=<biblio:NewspaperPerformedAt/>"><biblio:NewspaperPerformedAt /></a></td></tr>
       </biblio:foreachNewspaperPerformedAtIterator>
@@ -91,6 +64,9 @@
       <biblio:foreachNewspaperHasDataSourceIterator>
          <tr><td>hasDataSource</td><td><a href="../<biblio:NewspaperHasDataSourceType/>/<biblio:NewspaperHasDataSourceType/>.jsp?uri=<biblio:NewspaperHasDataSource/>"><biblio:NewspaperHasDataSource /></a></td></tr>
       </biblio:foreachNewspaperHasDataSourceIterator>
+      <biblio:foreachNewspaperPrecedesIterator>
+         <tr><td>precedes</td><td><a href="../<biblio:NewspaperPrecedesType/>/<biblio:NewspaperPrecedesType/>.jsp?uri=<biblio:NewspaperPrecedes/>"><biblio:NewspaperPrecedes /></a></td></tr>
+      </biblio:foreachNewspaperPrecedesIterator>
       <biblio:foreachNewspaperContinuesUnderNewTitleIterator>
          <tr><td>continuesUnderNewTitle</td><td><a href="../<biblio:NewspaperContinuesUnderNewTitleType/>/<biblio:NewspaperContinuesUnderNewTitleType/>.jsp?uri=<biblio:NewspaperContinuesUnderNewTitle/>"><biblio:NewspaperContinuesUnderNewTitle /></a></td></tr>
       </biblio:foreachNewspaperContinuesUnderNewTitleIterator>
@@ -148,6 +124,9 @@
       <biblio:foreachNewspaperIsExpressionOfIterator>
          <tr><td>isExpressionOf</td><td><a href="../<biblio:NewspaperIsExpressionOfType/>/<biblio:NewspaperIsExpressionOfType/>.jsp?uri=<biblio:NewspaperIsExpressionOf/>"><biblio:NewspaperIsExpressionOf /></a></td></tr>
       </biblio:foreachNewspaperIsExpressionOfIterator>
+      <biblio:foreachNewspaperLanguageIterator>
+         <tr><td>language</td><td><a href="../<biblio:NewspaperLanguageType/>/<biblio:NewspaperLanguageType/>.jsp?uri=<biblio:NewspaperLanguage/>"><biblio:NewspaperLanguage /></a></td></tr>
+      </biblio:foreachNewspaperLanguageIterator>
       <biblio:foreachNewspaperSupplementsIterator>
          <tr><td>supplements</td><td><a href="../<biblio:NewspaperSupplementsType/>/<biblio:NewspaperSupplementsType/>.jsp?uri=<biblio:NewspaperSupplements/>"><biblio:NewspaperSupplements /></a></td></tr>
       </biblio:foreachNewspaperSupplementsIterator>
@@ -199,6 +178,27 @@
       <biblio:foreachNewspaperIsUnionOfIterator>
          <tr><td>isUnionOf</td><td><a href="../<biblio:NewspaperIsUnionOfType/>/<biblio:NewspaperIsUnionOfType/>.jsp?uri=<biblio:NewspaperIsUnionOf/>"><biblio:NewspaperIsUnionOf /></a></td></tr>
       </biblio:foreachNewspaperIsUnionOfIterator>
+      <biblio:foreachNewspaperIdentifiedByIterator>
+         <tr><td>identifiedBy</td><td><a href="../<biblio:NewspaperIdentifiedByType/>/<biblio:NewspaperIdentifiedByType/>.jsp?uri=<biblio:NewspaperIdentifiedBy/>"><biblio:NewspaperIdentifiedBy /></a></td></tr>
+      </biblio:foreachNewspaperIdentifiedByIterator>
+      <biblio:foreachNewspaperHasFirstIterator>
+         <tr><td>hasFirst</td><td><a href="../<biblio:NewspaperHasFirstType/>/<biblio:NewspaperHasFirstType/>.jsp?uri=<biblio:NewspaperHasFirst/>"><biblio:NewspaperHasFirst /></a></td></tr>
+      </biblio:foreachNewspaperHasFirstIterator>
+      <biblio:foreachNewspaperSubjectIterator>
+         <tr><td>subject</td><td><a href="../<biblio:NewspaperSubjectType/>/<biblio:NewspaperSubjectType/>.jsp?uri=<biblio:NewspaperSubject/>"><biblio:NewspaperSubject /></a></td></tr>
+      </biblio:foreachNewspaperSubjectIterator>
+      <biblio:foreachNewspaperHasAnnotationIterator>
+         <tr><td>hasAnnotation</td><td><a href="../<biblio:NewspaperHasAnnotationType/>/<biblio:NewspaperHasAnnotationType/>.jsp?uri=<biblio:NewspaperHasAnnotation/>"><biblio:NewspaperHasAnnotation /></a></td></tr>
+      </biblio:foreachNewspaperHasAnnotationIterator>
+      <biblio:foreachNewspaperHasLastIterator>
+         <tr><td>hasLast</td><td><a href="../<biblio:NewspaperHasLastType/>/<biblio:NewspaperHasLastType/>.jsp?uri=<biblio:NewspaperHasLast/>"><biblio:NewspaperHasLast /></a></td></tr>
+      </biblio:foreachNewspaperHasLastIterator>
+      <biblio:foreachNewspaperRelationIterator>
+         <tr><td>relation</td><td><a href="../<biblio:NewspaperRelationType/>/<biblio:NewspaperRelationType/>.jsp?uri=<biblio:NewspaperRelation/>"><biblio:NewspaperRelation /></a></td></tr>
+      </biblio:foreachNewspaperRelationIterator>
+      <biblio:foreachNewspaperAccompaniedByIterator>
+         <tr><td>accompaniedBy</td><td><a href="../<biblio:NewspaperAccompaniedByType/>/<biblio:NewspaperAccompaniedByType/>.jsp?uri=<biblio:NewspaperAccompaniedBy/>"><biblio:NewspaperAccompaniedBy /></a></td></tr>
+      </biblio:foreachNewspaperAccompaniedByIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>

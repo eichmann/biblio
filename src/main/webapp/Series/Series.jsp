@@ -46,33 +46,6 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachSeriesIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:SeriesIdentifiedByType/>/<biblio:SeriesIdentifiedByType/>.jsp?uri=<biblio:SeriesIdentifiedBy/>"><biblio:SeriesIdentifiedBy /></a></td></tr>
-      </biblio:foreachSeriesIdentifiedByIterator>
-      <biblio:foreachSeriesPrecedesIterator>
-         <tr><td>precedes</td><td><a href="../<biblio:SeriesPrecedesType/>/<biblio:SeriesPrecedesType/>.jsp?uri=<biblio:SeriesPrecedes/>"><biblio:SeriesPrecedes /></a></td></tr>
-      </biblio:foreachSeriesPrecedesIterator>
-      <biblio:foreachSeriesHasFirstIterator>
-         <tr><td>hasFirst</td><td><a href="../<biblio:SeriesHasFirstType/>/<biblio:SeriesHasFirstType/>.jsp?uri=<biblio:SeriesHasFirst/>"><biblio:SeriesHasFirst /></a></td></tr>
-      </biblio:foreachSeriesHasFirstIterator>
-      <biblio:foreachSeriesSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:SeriesSubjectType/>/<biblio:SeriesSubjectType/>.jsp?uri=<biblio:SeriesSubject/>"><biblio:SeriesSubject /></a></td></tr>
-      </biblio:foreachSeriesSubjectIterator>
-      <biblio:foreachSeriesHasAnnotationIterator>
-         <tr><td>hasAnnotation</td><td><a href="../<biblio:SeriesHasAnnotationType/>/<biblio:SeriesHasAnnotationType/>.jsp?uri=<biblio:SeriesHasAnnotation/>"><biblio:SeriesHasAnnotation /></a></td></tr>
-      </biblio:foreachSeriesHasAnnotationIterator>
-      <biblio:foreachSeriesHasLastIterator>
-         <tr><td>hasLast</td><td><a href="../<biblio:SeriesHasLastType/>/<biblio:SeriesHasLastType/>.jsp?uri=<biblio:SeriesHasLast/>"><biblio:SeriesHasLast /></a></td></tr>
-      </biblio:foreachSeriesHasLastIterator>
-      <biblio:foreachSeriesRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:SeriesRelationType/>/<biblio:SeriesRelationType/>.jsp?uri=<biblio:SeriesRelation/>"><biblio:SeriesRelation /></a></td></tr>
-      </biblio:foreachSeriesRelationIterator>
-      <biblio:foreachSeriesLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:SeriesLanguageType/>/<biblio:SeriesLanguageType/>.jsp?uri=<biblio:SeriesLanguage/>"><biblio:SeriesLanguage /></a></td></tr>
-      </biblio:foreachSeriesLanguageIterator>
-      <biblio:foreachSeriesAccompaniedByIterator>
-         <tr><td>accompaniedBy</td><td><a href="../<biblio:SeriesAccompaniedByType/>/<biblio:SeriesAccompaniedByType/>.jsp?uri=<biblio:SeriesAccompaniedBy/>"><biblio:SeriesAccompaniedBy /></a></td></tr>
-      </biblio:foreachSeriesAccompaniedByIterator>
       <biblio:foreachSeriesPerformedAtIterator>
          <tr><td>performedAt</td><td><a href="../<biblio:SeriesPerformedAtType/>/<biblio:SeriesPerformedAtType/>.jsp?uri=<biblio:SeriesPerformedAt/>"><biblio:SeriesPerformedAt /></a></td></tr>
       </biblio:foreachSeriesPerformedAtIterator>
@@ -91,6 +64,9 @@
       <biblio:foreachSeriesHasDataSourceIterator>
          <tr><td>hasDataSource</td><td><a href="../<biblio:SeriesHasDataSourceType/>/<biblio:SeriesHasDataSourceType/>.jsp?uri=<biblio:SeriesHasDataSource/>"><biblio:SeriesHasDataSource /></a></td></tr>
       </biblio:foreachSeriesHasDataSourceIterator>
+      <biblio:foreachSeriesPrecedesIterator>
+         <tr><td>precedes</td><td><a href="../<biblio:SeriesPrecedesType/>/<biblio:SeriesPrecedesType/>.jsp?uri=<biblio:SeriesPrecedes/>"><biblio:SeriesPrecedes /></a></td></tr>
+      </biblio:foreachSeriesPrecedesIterator>
       <biblio:foreachSeriesContinuesUnderNewTitleIterator>
          <tr><td>continuesUnderNewTitle</td><td><a href="../<biblio:SeriesContinuesUnderNewTitleType/>/<biblio:SeriesContinuesUnderNewTitleType/>.jsp?uri=<biblio:SeriesContinuesUnderNewTitle/>"><biblio:SeriesContinuesUnderNewTitle /></a></td></tr>
       </biblio:foreachSeriesContinuesUnderNewTitleIterator>
@@ -148,6 +124,9 @@
       <biblio:foreachSeriesIsExpressionOfIterator>
          <tr><td>isExpressionOf</td><td><a href="../<biblio:SeriesIsExpressionOfType/>/<biblio:SeriesIsExpressionOfType/>.jsp?uri=<biblio:SeriesIsExpressionOf/>"><biblio:SeriesIsExpressionOf /></a></td></tr>
       </biblio:foreachSeriesIsExpressionOfIterator>
+      <biblio:foreachSeriesLanguageIterator>
+         <tr><td>language</td><td><a href="../<biblio:SeriesLanguageType/>/<biblio:SeriesLanguageType/>.jsp?uri=<biblio:SeriesLanguage/>"><biblio:SeriesLanguage /></a></td></tr>
+      </biblio:foreachSeriesLanguageIterator>
       <biblio:foreachSeriesSupplementsIterator>
          <tr><td>supplements</td><td><a href="../<biblio:SeriesSupplementsType/>/<biblio:SeriesSupplementsType/>.jsp?uri=<biblio:SeriesSupplements/>"><biblio:SeriesSupplements /></a></td></tr>
       </biblio:foreachSeriesSupplementsIterator>
@@ -199,6 +178,27 @@
       <biblio:foreachSeriesIsUnionOfIterator>
          <tr><td>isUnionOf</td><td><a href="../<biblio:SeriesIsUnionOfType/>/<biblio:SeriesIsUnionOfType/>.jsp?uri=<biblio:SeriesIsUnionOf/>"><biblio:SeriesIsUnionOf /></a></td></tr>
       </biblio:foreachSeriesIsUnionOfIterator>
+      <biblio:foreachSeriesIdentifiedByIterator>
+         <tr><td>identifiedBy</td><td><a href="../<biblio:SeriesIdentifiedByType/>/<biblio:SeriesIdentifiedByType/>.jsp?uri=<biblio:SeriesIdentifiedBy/>"><biblio:SeriesIdentifiedBy /></a></td></tr>
+      </biblio:foreachSeriesIdentifiedByIterator>
+      <biblio:foreachSeriesHasFirstIterator>
+         <tr><td>hasFirst</td><td><a href="../<biblio:SeriesHasFirstType/>/<biblio:SeriesHasFirstType/>.jsp?uri=<biblio:SeriesHasFirst/>"><biblio:SeriesHasFirst /></a></td></tr>
+      </biblio:foreachSeriesHasFirstIterator>
+      <biblio:foreachSeriesSubjectIterator>
+         <tr><td>subject</td><td><a href="../<biblio:SeriesSubjectType/>/<biblio:SeriesSubjectType/>.jsp?uri=<biblio:SeriesSubject/>"><biblio:SeriesSubject /></a></td></tr>
+      </biblio:foreachSeriesSubjectIterator>
+      <biblio:foreachSeriesHasAnnotationIterator>
+         <tr><td>hasAnnotation</td><td><a href="../<biblio:SeriesHasAnnotationType/>/<biblio:SeriesHasAnnotationType/>.jsp?uri=<biblio:SeriesHasAnnotation/>"><biblio:SeriesHasAnnotation /></a></td></tr>
+      </biblio:foreachSeriesHasAnnotationIterator>
+      <biblio:foreachSeriesHasLastIterator>
+         <tr><td>hasLast</td><td><a href="../<biblio:SeriesHasLastType/>/<biblio:SeriesHasLastType/>.jsp?uri=<biblio:SeriesHasLast/>"><biblio:SeriesHasLast /></a></td></tr>
+      </biblio:foreachSeriesHasLastIterator>
+      <biblio:foreachSeriesRelationIterator>
+         <tr><td>relation</td><td><a href="../<biblio:SeriesRelationType/>/<biblio:SeriesRelationType/>.jsp?uri=<biblio:SeriesRelation/>"><biblio:SeriesRelation /></a></td></tr>
+      </biblio:foreachSeriesRelationIterator>
+      <biblio:foreachSeriesAccompaniedByIterator>
+         <tr><td>accompaniedBy</td><td><a href="../<biblio:SeriesAccompaniedByType/>/<biblio:SeriesAccompaniedByType/>.jsp?uri=<biblio:SeriesAccompaniedBy/>"><biblio:SeriesAccompaniedBy /></a></td></tr>
+      </biblio:foreachSeriesAccompaniedByIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>

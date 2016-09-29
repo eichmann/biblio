@@ -31,25 +31,25 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachGovernmentOrganizationIsSubjectOfIterator>
+         <tr><td>isSubjectOf</td><td><a href="../<biblio:GovernmentOrganizationIsSubjectOfType/>/<biblio:GovernmentOrganizationIsSubjectOfType/>.jsp?uri=<biblio:GovernmentOrganizationIsSubjectOf/>"><biblio:GovernmentOrganizationIsSubjectOf /></a></td></tr>
+      </biblio:foreachGovernmentOrganizationIsSubjectOfIterator>
       <biblio:foreachGovernmentOrganizationReceivedIterator>
          <tr><td>received</td><td><a href="../<biblio:GovernmentOrganizationReceivedType/>/<biblio:GovernmentOrganizationReceivedType/>.jsp?uri=<biblio:GovernmentOrganizationReceived/>"><biblio:GovernmentOrganizationReceived /></a></td></tr>
       </biblio:foreachGovernmentOrganizationReceivedIterator>
       <biblio:foreachGovernmentOrganizationIsAnnotatorOfIterator>
          <tr><td>isAnnotatorOf</td><td><a href="../<biblio:GovernmentOrganizationIsAnnotatorOfType/>/<biblio:GovernmentOrganizationIsAnnotatorOfType/>.jsp?uri=<biblio:GovernmentOrganizationIsAnnotatorOf/>"><biblio:GovernmentOrganizationIsAnnotatorOf /></a></td></tr>
       </biblio:foreachGovernmentOrganizationIsAnnotatorOfIterator>
-      <biblio:foreachGovernmentOrganizationIsSubjectOfIterator>
-         <tr><td>isSubjectOf</td><td><a href="../<biblio:GovernmentOrganizationIsSubjectOfType/>/<biblio:GovernmentOrganizationIsSubjectOfType/>.jsp?uri=<biblio:GovernmentOrganizationIsSubjectOf/>"><biblio:GovernmentOrganizationIsSubjectOf /></a></td></tr>
-      </biblio:foreachGovernmentOrganizationIsSubjectOfIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
-      <biblio:foreachGovernmentOrganizationHeldByInverseIterator>
-         <tr><td>heldBy</td><td><a href="../<biblio:GovernmentOrganizationHeldByInverseType/>/<biblio:GovernmentOrganizationHeldByInverseType/>.jsp?uri=<biblio:GovernmentOrganizationHeldByInverse/>"><biblio:GovernmentOrganizationHeldByInverse/></a></td></tr>
-      </biblio:foreachGovernmentOrganizationHeldByInverseIterator>
       <biblio:foreachGovernmentOrganizationAgentInverseIterator>
          <tr><td>agent</td><td><a href="../<biblio:GovernmentOrganizationAgentInverseType/>/<biblio:GovernmentOrganizationAgentInverseType/>.jsp?uri=<biblio:GovernmentOrganizationAgentInverse/>"><biblio:GovernmentOrganizationAgentInverse/></a></td></tr>
       </biblio:foreachGovernmentOrganizationAgentInverseIterator>
+      <biblio:foreachGovernmentOrganizationHeldByInverseIterator>
+         <tr><td>heldBy</td><td><a href="../<biblio:GovernmentOrganizationHeldByInverseType/>/<biblio:GovernmentOrganizationHeldByInverseType/>.jsp?uri=<biblio:GovernmentOrganizationHeldByInverse/>"><biblio:GovernmentOrganizationHeldByInverse/></a></td></tr>
+      </biblio:foreachGovernmentOrganizationHeldByInverseIterator>
    </table>
    </biblio:GovernmentOrganization>
 
