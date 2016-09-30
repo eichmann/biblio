@@ -35,6 +35,9 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
+      <biblio:foreachConceptSchemeInSchemeInverseIterator>
+         <tr><td>inScheme</td><td><a href="../<biblio:ConceptSchemeInSchemeInverseType/>/<biblio:ConceptSchemeInSchemeInverseType/>.jsp?uri=<biblio:ConceptSchemeInSchemeInverse/>"><biblio:ConceptSchemeInSchemeInverse/></a></td></tr>
+      </biblio:foreachConceptSchemeInSchemeInverseIterator>
    </table>
    </biblio:ConceptScheme>
 

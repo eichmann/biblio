@@ -31,6 +31,9 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachMotivationInSchemeIterator>
+         <tr><td>inScheme</td><td><a href="../<biblio:MotivationInSchemeType/>/<biblio:MotivationInSchemeType/>.jsp?uri=<biblio:MotivationInScheme/>"><biblio:MotivationInScheme /></a></td></tr>
+      </biblio:foreachMotivationInSchemeIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
