@@ -32,18 +32,18 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachAnnotationMotivatedByIterator>
-         <tr><td>motivatedBy</td><td><a href="../<biblio:AnnotationMotivatedByType/>/<biblio:AnnotationMotivatedByType/>.jsp?uri=<biblio:AnnotationMotivatedBy/>"><biblio:AnnotationMotivatedBy /></a></td></tr>
-      </biblio:foreachAnnotationMotivatedByIterator>
-      <biblio:foreachAnnotationAnnotatedByIterator>
-         <tr><td>annotatedBy</td><td><a href="../<biblio:AnnotationAnnotatedByType/>/<biblio:AnnotationAnnotatedByType/>.jsp?uri=<biblio:AnnotationAnnotatedBy/>"><biblio:AnnotationAnnotatedBy /></a></td></tr>
-      </biblio:foreachAnnotationAnnotatedByIterator>
       <biblio:foreachAnnotationHasBodyIterator>
          <tr><td>hasBody</td><td><a href="../<biblio:AnnotationHasBodyType/>/<biblio:AnnotationHasBodyType/>.jsp?uri=<biblio:AnnotationHasBody/>"><biblio:AnnotationHasBody /></a></td></tr>
       </biblio:foreachAnnotationHasBodyIterator>
+      <biblio:foreachAnnotationMotivatedByIterator>
+         <tr><td>motivatedBy</td><td><a href="../<biblio:AnnotationMotivatedByType/>/<biblio:AnnotationMotivatedByType/>.jsp?uri=<biblio:AnnotationMotivatedBy/>"><biblio:AnnotationMotivatedBy /></a></td></tr>
+      </biblio:foreachAnnotationMotivatedByIterator>
       <biblio:foreachAnnotationHasTargetIterator>
          <tr><td>hasTarget</td><td><a href="../<biblio:AnnotationHasTargetType/>/<biblio:AnnotationHasTargetType/>.jsp?uri=<biblio:AnnotationHasTarget/>"><biblio:AnnotationHasTarget /></a></td></tr>
       </biblio:foreachAnnotationHasTargetIterator>
+      <biblio:foreachAnnotationAnnotatedByIterator>
+         <tr><td>annotatedBy</td><td><a href="../<biblio:AnnotationAnnotatedByType/>/<biblio:AnnotationAnnotatedByType/>.jsp?uri=<biblio:AnnotationAnnotatedBy/>"><biblio:AnnotationAnnotatedBy /></a></td></tr>
+      </biblio:foreachAnnotationAnnotatedByIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>

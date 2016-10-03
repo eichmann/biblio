@@ -34,10 +34,19 @@
       <biblio:foreachTopicIsSubjectOfIterator>
          <tr><td>isSubjectOf</td><td><a href="../<biblio:TopicIsSubjectOfType/>/<biblio:TopicIsSubjectOfType/>.jsp?uri=<biblio:TopicIsSubjectOf/>"><biblio:TopicIsSubjectOf /></a></td></tr>
       </biblio:foreachTopicIsSubjectOfIterator>
+      <biblio:foreachTopicSemanticRelationIterator>
+         <tr><td>semanticRelation</td><td><a href="../<biblio:TopicSemanticRelationType/>/<biblio:TopicSemanticRelationType/>.jsp?uri=<biblio:TopicSemanticRelation/>"><biblio:TopicSemanticRelation /></a></td></tr>
+      </biblio:foreachTopicSemanticRelationIterator>
+      <biblio:foreachTopicTopConceptOfIterator>
+         <tr><td>topConceptOf</td><td><a href="../<biblio:TopicTopConceptOfType/>/<biblio:TopicTopConceptOfType/>.jsp?uri=<biblio:TopicTopConceptOf/>"><biblio:TopicTopConceptOf /></a></td></tr>
+      </biblio:foreachTopicTopConceptOfIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
+      <biblio:foreachTopicMemberInverseIterator>
+         <tr><td>member</td><td><a href="../<biblio:TopicMemberInverseType/>/<biblio:TopicMemberInverseType/>.jsp?uri=<biblio:TopicMemberInverse/>"><biblio:TopicMemberInverse/></a></td></tr>
+      </biblio:foreachTopicMemberInverseIterator>
       <biblio:foreachTopicHasGenreInverseIterator>
          <tr><td>hasGenre</td><td><a href="../<biblio:TopicHasGenreInverseType/>/<biblio:TopicHasGenreInverseType/>.jsp?uri=<biblio:TopicHasGenreInverse/>"><biblio:TopicHasGenreInverse/></a></td></tr>
       </biblio:foreachTopicHasGenreInverseIterator>

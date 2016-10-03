@@ -46,12 +46,18 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachMagazinePerformedAtIterator>
-         <tr><td>performedAt</td><td><a href="../<biblio:MagazinePerformedAtType/>/<biblio:MagazinePerformedAtType/>.jsp?uri=<biblio:MagazinePerformedAt/>"><biblio:MagazinePerformedAt /></a></td></tr>
-      </biblio:foreachMagazinePerformedAtIterator>
+      <biblio:foreachMagazineHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:MagazineHasPartType/>/<biblio:MagazineHasPartType/>.jsp?uri=<biblio:MagazineHasPart/>"><biblio:MagazineHasPart /></a></td></tr>
+      </biblio:foreachMagazineHasPartIterator>
+      <biblio:foreachMagazineLanguageIterator>
+         <tr><td>language</td><td><a href="../<biblio:MagazineLanguageType/>/<biblio:MagazineLanguageType/>.jsp?uri=<biblio:MagazineLanguage/>"><biblio:MagazineLanguage /></a></td></tr>
+      </biblio:foreachMagazineLanguageIterator>
       <biblio:foreachMagazineIsPartOfIterator>
          <tr><td>isPartOf</td><td><a href="../<biblio:MagazineIsPartOfType/>/<biblio:MagazineIsPartOfType/>.jsp?uri=<biblio:MagazineIsPartOf/>"><biblio:MagazineIsPartOf /></a></td></tr>
       </biblio:foreachMagazineIsPartOfIterator>
+      <biblio:foreachMagazinePerformedAtIterator>
+         <tr><td>performedAt</td><td><a href="../<biblio:MagazinePerformedAtType/>/<biblio:MagazinePerformedAtType/>.jsp?uri=<biblio:MagazinePerformedAt/>"><biblio:MagazinePerformedAt /></a></td></tr>
+      </biblio:foreachMagazinePerformedAtIterator>
       <biblio:foreachMagazineFollowsInNarrativeIterator>
          <tr><td>followsInNarrative</td><td><a href="../<biblio:MagazineFollowsInNarrativeType/>/<biblio:MagazineFollowsInNarrativeType/>.jsp?uri=<biblio:MagazineFollowsInNarrative/>"><biblio:MagazineFollowsInNarrative /></a></td></tr>
       </biblio:foreachMagazineFollowsInNarrativeIterator>
@@ -124,9 +130,6 @@
       <biblio:foreachMagazineIsExpressionOfIterator>
          <tr><td>isExpressionOf</td><td><a href="../<biblio:MagazineIsExpressionOfType/>/<biblio:MagazineIsExpressionOfType/>.jsp?uri=<biblio:MagazineIsExpressionOf/>"><biblio:MagazineIsExpressionOf /></a></td></tr>
       </biblio:foreachMagazineIsExpressionOfIterator>
-      <biblio:foreachMagazineLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:MagazineLanguageType/>/<biblio:MagazineLanguageType/>.jsp?uri=<biblio:MagazineLanguage/>"><biblio:MagazineLanguage /></a></td></tr>
-      </biblio:foreachMagazineLanguageIterator>
       <biblio:foreachMagazineSupplementsIterator>
          <tr><td>supplements</td><td><a href="../<biblio:MagazineSupplementsType/>/<biblio:MagazineSupplementsType/>.jsp?uri=<biblio:MagazineSupplements/>"><biblio:MagazineSupplements /></a></td></tr>
       </biblio:foreachMagazineSupplementsIterator>
@@ -172,30 +175,27 @@
       <biblio:foreachMagazineCreatedForDegreeIterator>
          <tr><td>createdForDegree</td><td><a href="../<biblio:MagazineCreatedForDegreeType/>/<biblio:MagazineCreatedForDegreeType/>.jsp?uri=<biblio:MagazineCreatedForDegree/>"><biblio:MagazineCreatedForDegree /></a></td></tr>
       </biblio:foreachMagazineCreatedForDegreeIterator>
-      <biblio:foreachMagazineHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:MagazineHasPartType/>/<biblio:MagazineHasPartType/>.jsp?uri=<biblio:MagazineHasPart/>"><biblio:MagazineHasPart /></a></td></tr>
-      </biblio:foreachMagazineHasPartIterator>
       <biblio:foreachMagazineIsUnionOfIterator>
          <tr><td>isUnionOf</td><td><a href="../<biblio:MagazineIsUnionOfType/>/<biblio:MagazineIsUnionOfType/>.jsp?uri=<biblio:MagazineIsUnionOf/>"><biblio:MagazineIsUnionOf /></a></td></tr>
       </biblio:foreachMagazineIsUnionOfIterator>
+      <biblio:foreachMagazineRelationIterator>
+         <tr><td>relation</td><td><a href="../<biblio:MagazineRelationType/>/<biblio:MagazineRelationType/>.jsp?uri=<biblio:MagazineRelation/>"><biblio:MagazineRelation /></a></td></tr>
+      </biblio:foreachMagazineRelationIterator>
+      <biblio:foreachMagazineSubjectIterator>
+         <tr><td>subject</td><td><a href="../<biblio:MagazineSubjectType/>/<biblio:MagazineSubjectType/>.jsp?uri=<biblio:MagazineSubject/>"><biblio:MagazineSubject /></a></td></tr>
+      </biblio:foreachMagazineSubjectIterator>
       <biblio:foreachMagazineIdentifiedByIterator>
          <tr><td>identifiedBy</td><td><a href="../<biblio:MagazineIdentifiedByType/>/<biblio:MagazineIdentifiedByType/>.jsp?uri=<biblio:MagazineIdentifiedBy/>"><biblio:MagazineIdentifiedBy /></a></td></tr>
       </biblio:foreachMagazineIdentifiedByIterator>
       <biblio:foreachMagazineHasFirstIterator>
          <tr><td>hasFirst</td><td><a href="../<biblio:MagazineHasFirstType/>/<biblio:MagazineHasFirstType/>.jsp?uri=<biblio:MagazineHasFirst/>"><biblio:MagazineHasFirst /></a></td></tr>
       </biblio:foreachMagazineHasFirstIterator>
-      <biblio:foreachMagazineSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:MagazineSubjectType/>/<biblio:MagazineSubjectType/>.jsp?uri=<biblio:MagazineSubject/>"><biblio:MagazineSubject /></a></td></tr>
-      </biblio:foreachMagazineSubjectIterator>
       <biblio:foreachMagazineHasAnnotationIterator>
          <tr><td>hasAnnotation</td><td><a href="../<biblio:MagazineHasAnnotationType/>/<biblio:MagazineHasAnnotationType/>.jsp?uri=<biblio:MagazineHasAnnotation/>"><biblio:MagazineHasAnnotation /></a></td></tr>
       </biblio:foreachMagazineHasAnnotationIterator>
       <biblio:foreachMagazineHasLastIterator>
          <tr><td>hasLast</td><td><a href="../<biblio:MagazineHasLastType/>/<biblio:MagazineHasLastType/>.jsp?uri=<biblio:MagazineHasLast/>"><biblio:MagazineHasLast /></a></td></tr>
       </biblio:foreachMagazineHasLastIterator>
-      <biblio:foreachMagazineRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:MagazineRelationType/>/<biblio:MagazineRelationType/>.jsp?uri=<biblio:MagazineRelation/>"><biblio:MagazineRelation /></a></td></tr>
-      </biblio:foreachMagazineRelationIterator>
       <biblio:foreachMagazineAccompaniedByIterator>
          <tr><td>accompaniedBy</td><td><a href="../<biblio:MagazineAccompaniedByType/>/<biblio:MagazineAccompaniedByType/>.jsp?uri=<biblio:MagazineAccompaniedBy/>"><biblio:MagazineAccompaniedBy /></a></td></tr>
       </biblio:foreachMagazineAccompaniedByIterator>

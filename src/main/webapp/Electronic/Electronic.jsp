@@ -98,15 +98,24 @@
       <biblio:foreachElectronicIdentifiedByIterator>
          <tr><td>identifiedBy</td><td><a href="../<biblio:ElectronicIdentifiedByType/>/<biblio:ElectronicIdentifiedByType/>.jsp?uri=<biblio:ElectronicIdentifiedBy/>"><biblio:ElectronicIdentifiedBy /></a></td></tr>
       </biblio:foreachElectronicIdentifiedByIterator>
+      <biblio:foreachElectronicRelationIterator>
+         <tr><td>relation</td><td><a href="../<biblio:ElectronicRelationType/>/<biblio:ElectronicRelationType/>.jsp?uri=<biblio:ElectronicRelation/>"><biblio:ElectronicRelation /></a></td></tr>
+      </biblio:foreachElectronicRelationIterator>
+      <biblio:foreachElectronicHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:ElectronicHasPartType/>/<biblio:ElectronicHasPartType/>.jsp?uri=<biblio:ElectronicHasPart/>"><biblio:ElectronicHasPart /></a></td></tr>
+      </biblio:foreachElectronicHasPartIterator>
+      <biblio:foreachElectronicSubjectIterator>
+         <tr><td>subject</td><td><a href="../<biblio:ElectronicSubjectType/>/<biblio:ElectronicSubjectType/>.jsp?uri=<biblio:ElectronicSubject/>"><biblio:ElectronicSubject /></a></td></tr>
+      </biblio:foreachElectronicSubjectIterator>
+      <biblio:foreachElectronicLanguageIterator>
+         <tr><td>language</td><td><a href="../<biblio:ElectronicLanguageType/>/<biblio:ElectronicLanguageType/>.jsp?uri=<biblio:ElectronicLanguage/>"><biblio:ElectronicLanguage /></a></td></tr>
+      </biblio:foreachElectronicLanguageIterator>
       <biblio:foreachElectronicHasProvisionIterator>
          <tr><td>hasProvision</td><td><a href="../<biblio:ElectronicHasProvisionType/>/<biblio:ElectronicHasProvisionType/>.jsp?uri=<biblio:ElectronicHasProvision/>"><biblio:ElectronicHasProvision /></a></td></tr>
       </biblio:foreachElectronicHasProvisionIterator>
       <biblio:foreachElectronicHasReproductionIterator>
          <tr><td>hasReproduction</td><td><a href="../<biblio:ElectronicHasReproductionType/>/<biblio:ElectronicHasReproductionType/>.jsp?uri=<biblio:ElectronicHasReproduction/>"><biblio:ElectronicHasReproduction /></a></td></tr>
       </biblio:foreachElectronicHasReproductionIterator>
-      <biblio:foreachElectronicSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:ElectronicSubjectType/>/<biblio:ElectronicSubjectType/>.jsp?uri=<biblio:ElectronicSubject/>"><biblio:ElectronicSubject /></a></td></tr>
-      </biblio:foreachElectronicSubjectIterator>
       <biblio:foreachElectronicHasTableOfContentsIterator>
          <tr><td>hasTableOfContents</td><td><a href="../<biblio:ElectronicHasTableOfContentsType/>/<biblio:ElectronicHasTableOfContentsType/>.jsp?uri=<biblio:ElectronicHasTableOfContents/>"><biblio:ElectronicHasTableOfContents /></a></td></tr>
       </biblio:foreachElectronicHasTableOfContentsIterator>
@@ -116,12 +125,6 @@
       <biblio:foreachElectronicHasCoverArtIterator>
          <tr><td>hasCoverArt</td><td><a href="../<biblio:ElectronicHasCoverArtType/>/<biblio:ElectronicHasCoverArtType/>.jsp?uri=<biblio:ElectronicHasCoverArt/>"><biblio:ElectronicHasCoverArt /></a></td></tr>
       </biblio:foreachElectronicHasCoverArtIterator>
-      <biblio:foreachElectronicRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:ElectronicRelationType/>/<biblio:ElectronicRelationType/>.jsp?uri=<biblio:ElectronicRelation/>"><biblio:ElectronicRelation /></a></td></tr>
-      </biblio:foreachElectronicRelationIterator>
-      <biblio:foreachElectronicLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:ElectronicLanguageType/>/<biblio:ElectronicLanguageType/>.jsp?uri=<biblio:ElectronicLanguage/>"><biblio:ElectronicLanguage /></a></td></tr>
-      </biblio:foreachElectronicLanguageIterator>
       <biblio:foreachElectronicReproducesIterator>
          <tr><td>reproduces</td><td><a href="../<biblio:ElectronicReproducesType/>/<biblio:ElectronicReproducesType/>.jsp?uri=<biblio:ElectronicReproduces/>"><biblio:ElectronicReproduces /></a></td></tr>
       </biblio:foreachElectronicReproducesIterator>
@@ -143,9 +146,6 @@
       <biblio:foreachElectronicIsInstanceOfIterator>
          <tr><td>isInstanceOf</td><td><a href="../<biblio:ElectronicIsInstanceOfType/>/<biblio:ElectronicIsInstanceOfType/>.jsp?uri=<biblio:ElectronicIsInstanceOf/>"><biblio:ElectronicIsInstanceOf /></a></td></tr>
       </biblio:foreachElectronicIsInstanceOfIterator>
-      <biblio:foreachElectronicHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:ElectronicHasPartType/>/<biblio:ElectronicHasPartType/>.jsp?uri=<biblio:ElectronicHasPart/>"><biblio:ElectronicHasPart /></a></td></tr>
-      </biblio:foreachElectronicHasPartIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>

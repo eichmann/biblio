@@ -34,10 +34,19 @@
       <biblio:foreachLccClassificationIsClassificationForIterator>
          <tr><td>isClassificationFor</td><td><a href="../<biblio:LccClassificationIsClassificationForType/>/<biblio:LccClassificationIsClassificationForType/>.jsp?uri=<biblio:LccClassificationIsClassificationFor/>"><biblio:LccClassificationIsClassificationFor /></a></td></tr>
       </biblio:foreachLccClassificationIsClassificationForIterator>
+      <biblio:foreachLccClassificationSemanticRelationIterator>
+         <tr><td>semanticRelation</td><td><a href="../<biblio:LccClassificationSemanticRelationType/>/<biblio:LccClassificationSemanticRelationType/>.jsp?uri=<biblio:LccClassificationSemanticRelation/>"><biblio:LccClassificationSemanticRelation /></a></td></tr>
+      </biblio:foreachLccClassificationSemanticRelationIterator>
+      <biblio:foreachLccClassificationTopConceptOfIterator>
+         <tr><td>topConceptOf</td><td><a href="../<biblio:LccClassificationTopConceptOfType/>/<biblio:LccClassificationTopConceptOfType/>.jsp?uri=<biblio:LccClassificationTopConceptOf/>"><biblio:LccClassificationTopConceptOf /></a></td></tr>
+      </biblio:foreachLccClassificationTopConceptOfIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
+      <biblio:foreachLccClassificationMemberInverseIterator>
+         <tr><td>member</td><td><a href="../<biblio:LccClassificationMemberInverseType/>/<biblio:LccClassificationMemberInverseType/>.jsp?uri=<biblio:LccClassificationMemberInverse/>"><biblio:LccClassificationMemberInverse/></a></td></tr>
+      </biblio:foreachLccClassificationMemberInverseIterator>
       <biblio:foreachLccClassificationHasGenreInverseIterator>
          <tr><td>hasGenre</td><td><a href="../<biblio:LccClassificationHasGenreInverseType/>/<biblio:LccClassificationHasGenreInverseType/>.jsp?uri=<biblio:LccClassificationHasGenreInverse/>"><biblio:LccClassificationHasGenreInverse/></a></td></tr>
       </biblio:foreachLccClassificationHasGenreInverseIterator>

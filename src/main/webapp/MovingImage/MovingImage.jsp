@@ -46,12 +46,18 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachMovingImagePerformedAtIterator>
-         <tr><td>performedAt</td><td><a href="../<biblio:MovingImagePerformedAtType/>/<biblio:MovingImagePerformedAtType/>.jsp?uri=<biblio:MovingImagePerformedAt/>"><biblio:MovingImagePerformedAt /></a></td></tr>
-      </biblio:foreachMovingImagePerformedAtIterator>
+      <biblio:foreachMovingImageHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:MovingImageHasPartType/>/<biblio:MovingImageHasPartType/>.jsp?uri=<biblio:MovingImageHasPart/>"><biblio:MovingImageHasPart /></a></td></tr>
+      </biblio:foreachMovingImageHasPartIterator>
+      <biblio:foreachMovingImageLanguageIterator>
+         <tr><td>language</td><td><a href="../<biblio:MovingImageLanguageType/>/<biblio:MovingImageLanguageType/>.jsp?uri=<biblio:MovingImageLanguage/>"><biblio:MovingImageLanguage /></a></td></tr>
+      </biblio:foreachMovingImageLanguageIterator>
       <biblio:foreachMovingImageIsPartOfIterator>
          <tr><td>isPartOf</td><td><a href="../<biblio:MovingImageIsPartOfType/>/<biblio:MovingImageIsPartOfType/>.jsp?uri=<biblio:MovingImageIsPartOf/>"><biblio:MovingImageIsPartOf /></a></td></tr>
       </biblio:foreachMovingImageIsPartOfIterator>
+      <biblio:foreachMovingImagePerformedAtIterator>
+         <tr><td>performedAt</td><td><a href="../<biblio:MovingImagePerformedAtType/>/<biblio:MovingImagePerformedAtType/>.jsp?uri=<biblio:MovingImagePerformedAt/>"><biblio:MovingImagePerformedAt /></a></td></tr>
+      </biblio:foreachMovingImagePerformedAtIterator>
       <biblio:foreachMovingImageFollowsInNarrativeIterator>
          <tr><td>followsInNarrative</td><td><a href="../<biblio:MovingImageFollowsInNarrativeType/>/<biblio:MovingImageFollowsInNarrativeType/>.jsp?uri=<biblio:MovingImageFollowsInNarrative/>"><biblio:MovingImageFollowsInNarrative /></a></td></tr>
       </biblio:foreachMovingImageFollowsInNarrativeIterator>
@@ -124,9 +130,6 @@
       <biblio:foreachMovingImageIsExpressionOfIterator>
          <tr><td>isExpressionOf</td><td><a href="../<biblio:MovingImageIsExpressionOfType/>/<biblio:MovingImageIsExpressionOfType/>.jsp?uri=<biblio:MovingImageIsExpressionOf/>"><biblio:MovingImageIsExpressionOf /></a></td></tr>
       </biblio:foreachMovingImageIsExpressionOfIterator>
-      <biblio:foreachMovingImageLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:MovingImageLanguageType/>/<biblio:MovingImageLanguageType/>.jsp?uri=<biblio:MovingImageLanguage/>"><biblio:MovingImageLanguage /></a></td></tr>
-      </biblio:foreachMovingImageLanguageIterator>
       <biblio:foreachMovingImageSupplementsIterator>
          <tr><td>supplements</td><td><a href="../<biblio:MovingImageSupplementsType/>/<biblio:MovingImageSupplementsType/>.jsp?uri=<biblio:MovingImageSupplements/>"><biblio:MovingImageSupplements /></a></td></tr>
       </biblio:foreachMovingImageSupplementsIterator>
@@ -172,9 +175,6 @@
       <biblio:foreachMovingImageCreatedForDegreeIterator>
          <tr><td>createdForDegree</td><td><a href="../<biblio:MovingImageCreatedForDegreeType/>/<biblio:MovingImageCreatedForDegreeType/>.jsp?uri=<biblio:MovingImageCreatedForDegree/>"><biblio:MovingImageCreatedForDegree /></a></td></tr>
       </biblio:foreachMovingImageCreatedForDegreeIterator>
-      <biblio:foreachMovingImageHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:MovingImageHasPartType/>/<biblio:MovingImageHasPartType/>.jsp?uri=<biblio:MovingImageHasPart/>"><biblio:MovingImageHasPart /></a></td></tr>
-      </biblio:foreachMovingImageHasPartIterator>
       <biblio:foreachMovingImageIsUnionOfIterator>
          <tr><td>isUnionOf</td><td><a href="../<biblio:MovingImageIsUnionOfType/>/<biblio:MovingImageIsUnionOfType/>.jsp?uri=<biblio:MovingImageIsUnionOf/>"><biblio:MovingImageIsUnionOf /></a></td></tr>
       </biblio:foreachMovingImageIsUnionOfIterator>

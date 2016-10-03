@@ -31,6 +31,9 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachRunningTitleHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:RunningTitleHasPartType/>/<biblio:RunningTitleHasPartType/>.jsp?uri=<biblio:RunningTitleHasPart/>"><biblio:RunningTitleHasPart /></a></td></tr>
+      </biblio:foreachRunningTitleHasPartIterator>
       <biblio:foreachRunningTitleIsTitleOfIterator>
          <tr><td>isTitleOf</td><td><a href="../<biblio:RunningTitleIsTitleOfType/>/<biblio:RunningTitleIsTitleOfType/>.jsp?uri=<biblio:RunningTitleIsTitleOf/>"><biblio:RunningTitleIsTitleOf /></a></td></tr>
       </biblio:foreachRunningTitleIsTitleOfIterator>
@@ -46,9 +49,6 @@
       <biblio:foreachRunningTitleDerivedFromIterator>
          <tr><td>derivedFrom</td><td><a href="../<biblio:RunningTitleDerivedFromType/>/<biblio:RunningTitleDerivedFromType/>.jsp?uri=<biblio:RunningTitleDerivedFrom/>"><biblio:RunningTitleDerivedFrom /></a></td></tr>
       </biblio:foreachRunningTitleDerivedFromIterator>
-      <biblio:foreachRunningTitleHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:RunningTitleHasPartType/>/<biblio:RunningTitleHasPartType/>.jsp?uri=<biblio:RunningTitleHasPart/>"><biblio:RunningTitleHasPart /></a></td></tr>
-      </biblio:foreachRunningTitleHasPartIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>

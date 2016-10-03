@@ -49,12 +49,18 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachDissertationPerformedAtIterator>
-         <tr><td>performedAt</td><td><a href="../<biblio:DissertationPerformedAtType/>/<biblio:DissertationPerformedAtType/>.jsp?uri=<biblio:DissertationPerformedAt/>"><biblio:DissertationPerformedAt /></a></td></tr>
-      </biblio:foreachDissertationPerformedAtIterator>
+      <biblio:foreachDissertationHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:DissertationHasPartType/>/<biblio:DissertationHasPartType/>.jsp?uri=<biblio:DissertationHasPart/>"><biblio:DissertationHasPart /></a></td></tr>
+      </biblio:foreachDissertationHasPartIterator>
+      <biblio:foreachDissertationLanguageIterator>
+         <tr><td>language</td><td><a href="../<biblio:DissertationLanguageType/>/<biblio:DissertationLanguageType/>.jsp?uri=<biblio:DissertationLanguage/>"><biblio:DissertationLanguage /></a></td></tr>
+      </biblio:foreachDissertationLanguageIterator>
       <biblio:foreachDissertationIsPartOfIterator>
          <tr><td>isPartOf</td><td><a href="../<biblio:DissertationIsPartOfType/>/<biblio:DissertationIsPartOfType/>.jsp?uri=<biblio:DissertationIsPartOf/>"><biblio:DissertationIsPartOf /></a></td></tr>
       </biblio:foreachDissertationIsPartOfIterator>
+      <biblio:foreachDissertationPerformedAtIterator>
+         <tr><td>performedAt</td><td><a href="../<biblio:DissertationPerformedAtType/>/<biblio:DissertationPerformedAtType/>.jsp?uri=<biblio:DissertationPerformedAt/>"><biblio:DissertationPerformedAt /></a></td></tr>
+      </biblio:foreachDissertationPerformedAtIterator>
       <biblio:foreachDissertationFollowsInNarrativeIterator>
          <tr><td>followsInNarrative</td><td><a href="../<biblio:DissertationFollowsInNarrativeType/>/<biblio:DissertationFollowsInNarrativeType/>.jsp?uri=<biblio:DissertationFollowsInNarrative/>"><biblio:DissertationFollowsInNarrative /></a></td></tr>
       </biblio:foreachDissertationFollowsInNarrativeIterator>
@@ -127,9 +133,6 @@
       <biblio:foreachDissertationIsExpressionOfIterator>
          <tr><td>isExpressionOf</td><td><a href="../<biblio:DissertationIsExpressionOfType/>/<biblio:DissertationIsExpressionOfType/>.jsp?uri=<biblio:DissertationIsExpressionOf/>"><biblio:DissertationIsExpressionOf /></a></td></tr>
       </biblio:foreachDissertationIsExpressionOfIterator>
-      <biblio:foreachDissertationLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:DissertationLanguageType/>/<biblio:DissertationLanguageType/>.jsp?uri=<biblio:DissertationLanguage/>"><biblio:DissertationLanguage /></a></td></tr>
-      </biblio:foreachDissertationLanguageIterator>
       <biblio:foreachDissertationSupplementsIterator>
          <tr><td>supplements</td><td><a href="../<biblio:DissertationSupplementsType/>/<biblio:DissertationSupplementsType/>.jsp?uri=<biblio:DissertationSupplements/>"><biblio:DissertationSupplements /></a></td></tr>
       </biblio:foreachDissertationSupplementsIterator>
@@ -175,9 +178,6 @@
       <biblio:foreachDissertationCreatedForDegreeIterator>
          <tr><td>createdForDegree</td><td><a href="../<biblio:DissertationCreatedForDegreeType/>/<biblio:DissertationCreatedForDegreeType/>.jsp?uri=<biblio:DissertationCreatedForDegree/>"><biblio:DissertationCreatedForDegree /></a></td></tr>
       </biblio:foreachDissertationCreatedForDegreeIterator>
-      <biblio:foreachDissertationHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:DissertationHasPartType/>/<biblio:DissertationHasPartType/>.jsp?uri=<biblio:DissertationHasPart/>"><biblio:DissertationHasPart /></a></td></tr>
-      </biblio:foreachDissertationHasPartIterator>
       <biblio:foreachDissertationIsUnionOfIterator>
          <tr><td>isUnionOf</td><td><a href="../<biblio:DissertationIsUnionOfType/>/<biblio:DissertationIsUnionOfType/>.jsp?uri=<biblio:DissertationIsUnionOf/>"><biblio:DissertationIsUnionOf /></a></td></tr>
       </biblio:foreachDissertationIsUnionOfIterator>

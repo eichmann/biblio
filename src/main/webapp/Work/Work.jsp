@@ -46,12 +46,18 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachWorkPerformedAtIterator>
-         <tr><td>performedAt</td><td><a href="../<biblio:WorkPerformedAtType/>/<biblio:WorkPerformedAtType/>.jsp?uri=<biblio:WorkPerformedAt/>"><biblio:WorkPerformedAt /></a></td></tr>
-      </biblio:foreachWorkPerformedAtIterator>
+      <biblio:foreachWorkHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:WorkHasPartType/>/<biblio:WorkHasPartType/>.jsp?uri=<biblio:WorkHasPart/>"><biblio:WorkHasPart /></a></td></tr>
+      </biblio:foreachWorkHasPartIterator>
+      <biblio:foreachWorkLanguageIterator>
+         <tr><td>language</td><td><a href="../<biblio:WorkLanguageType/>/<biblio:WorkLanguageType/>.jsp?uri=<biblio:WorkLanguage/>"><biblio:WorkLanguage /></a></td></tr>
+      </biblio:foreachWorkLanguageIterator>
       <biblio:foreachWorkIsPartOfIterator>
          <tr><td>isPartOf</td><td><a href="../<biblio:WorkIsPartOfType/>/<biblio:WorkIsPartOfType/>.jsp?uri=<biblio:WorkIsPartOf/>"><biblio:WorkIsPartOf /></a></td></tr>
       </biblio:foreachWorkIsPartOfIterator>
+      <biblio:foreachWorkPerformedAtIterator>
+         <tr><td>performedAt</td><td><a href="../<biblio:WorkPerformedAtType/>/<biblio:WorkPerformedAtType/>.jsp?uri=<biblio:WorkPerformedAt/>"><biblio:WorkPerformedAt /></a></td></tr>
+      </biblio:foreachWorkPerformedAtIterator>
       <biblio:foreachWorkFollowsInNarrativeIterator>
          <tr><td>followsInNarrative</td><td><a href="../<biblio:WorkFollowsInNarrativeType/>/<biblio:WorkFollowsInNarrativeType/>.jsp?uri=<biblio:WorkFollowsInNarrative/>"><biblio:WorkFollowsInNarrative /></a></td></tr>
       </biblio:foreachWorkFollowsInNarrativeIterator>
@@ -124,9 +130,6 @@
       <biblio:foreachWorkIsExpressionOfIterator>
          <tr><td>isExpressionOf</td><td><a href="../<biblio:WorkIsExpressionOfType/>/<biblio:WorkIsExpressionOfType/>.jsp?uri=<biblio:WorkIsExpressionOf/>"><biblio:WorkIsExpressionOf /></a></td></tr>
       </biblio:foreachWorkIsExpressionOfIterator>
-      <biblio:foreachWorkLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:WorkLanguageType/>/<biblio:WorkLanguageType/>.jsp?uri=<biblio:WorkLanguage/>"><biblio:WorkLanguage /></a></td></tr>
-      </biblio:foreachWorkLanguageIterator>
       <biblio:foreachWorkSupplementsIterator>
          <tr><td>supplements</td><td><a href="../<biblio:WorkSupplementsType/>/<biblio:WorkSupplementsType/>.jsp?uri=<biblio:WorkSupplements/>"><biblio:WorkSupplements /></a></td></tr>
       </biblio:foreachWorkSupplementsIterator>
@@ -172,9 +175,6 @@
       <biblio:foreachWorkCreatedForDegreeIterator>
          <tr><td>createdForDegree</td><td><a href="../<biblio:WorkCreatedForDegreeType/>/<biblio:WorkCreatedForDegreeType/>.jsp?uri=<biblio:WorkCreatedForDegree/>"><biblio:WorkCreatedForDegree /></a></td></tr>
       </biblio:foreachWorkCreatedForDegreeIterator>
-      <biblio:foreachWorkHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:WorkHasPartType/>/<biblio:WorkHasPartType/>.jsp?uri=<biblio:WorkHasPart/>"><biblio:WorkHasPart /></a></td></tr>
-      </biblio:foreachWorkHasPartIterator>
       <biblio:foreachWorkIsUnionOfIterator>
          <tr><td>isUnionOf</td><td><a href="../<biblio:WorkIsUnionOfType/>/<biblio:WorkIsUnionOfType/>.jsp?uri=<biblio:WorkIsUnionOf/>"><biblio:WorkIsUnionOf /></a></td></tr>
       </biblio:foreachWorkIsUnionOfIterator>

@@ -46,12 +46,18 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachThreeDimensionalObjectPerformedAtIterator>
-         <tr><td>performedAt</td><td><a href="../<biblio:ThreeDimensionalObjectPerformedAtType/>/<biblio:ThreeDimensionalObjectPerformedAtType/>.jsp?uri=<biblio:ThreeDimensionalObjectPerformedAt/>"><biblio:ThreeDimensionalObjectPerformedAt /></a></td></tr>
-      </biblio:foreachThreeDimensionalObjectPerformedAtIterator>
+      <biblio:foreachThreeDimensionalObjectHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:ThreeDimensionalObjectHasPartType/>/<biblio:ThreeDimensionalObjectHasPartType/>.jsp?uri=<biblio:ThreeDimensionalObjectHasPart/>"><biblio:ThreeDimensionalObjectHasPart /></a></td></tr>
+      </biblio:foreachThreeDimensionalObjectHasPartIterator>
+      <biblio:foreachThreeDimensionalObjectLanguageIterator>
+         <tr><td>language</td><td><a href="../<biblio:ThreeDimensionalObjectLanguageType/>/<biblio:ThreeDimensionalObjectLanguageType/>.jsp?uri=<biblio:ThreeDimensionalObjectLanguage/>"><biblio:ThreeDimensionalObjectLanguage /></a></td></tr>
+      </biblio:foreachThreeDimensionalObjectLanguageIterator>
       <biblio:foreachThreeDimensionalObjectIsPartOfIterator>
          <tr><td>isPartOf</td><td><a href="../<biblio:ThreeDimensionalObjectIsPartOfType/>/<biblio:ThreeDimensionalObjectIsPartOfType/>.jsp?uri=<biblio:ThreeDimensionalObjectIsPartOf/>"><biblio:ThreeDimensionalObjectIsPartOf /></a></td></tr>
       </biblio:foreachThreeDimensionalObjectIsPartOfIterator>
+      <biblio:foreachThreeDimensionalObjectPerformedAtIterator>
+         <tr><td>performedAt</td><td><a href="../<biblio:ThreeDimensionalObjectPerformedAtType/>/<biblio:ThreeDimensionalObjectPerformedAtType/>.jsp?uri=<biblio:ThreeDimensionalObjectPerformedAt/>"><biblio:ThreeDimensionalObjectPerformedAt /></a></td></tr>
+      </biblio:foreachThreeDimensionalObjectPerformedAtIterator>
       <biblio:foreachThreeDimensionalObjectFollowsInNarrativeIterator>
          <tr><td>followsInNarrative</td><td><a href="../<biblio:ThreeDimensionalObjectFollowsInNarrativeType/>/<biblio:ThreeDimensionalObjectFollowsInNarrativeType/>.jsp?uri=<biblio:ThreeDimensionalObjectFollowsInNarrative/>"><biblio:ThreeDimensionalObjectFollowsInNarrative /></a></td></tr>
       </biblio:foreachThreeDimensionalObjectFollowsInNarrativeIterator>
@@ -124,9 +130,6 @@
       <biblio:foreachThreeDimensionalObjectIsExpressionOfIterator>
          <tr><td>isExpressionOf</td><td><a href="../<biblio:ThreeDimensionalObjectIsExpressionOfType/>/<biblio:ThreeDimensionalObjectIsExpressionOfType/>.jsp?uri=<biblio:ThreeDimensionalObjectIsExpressionOf/>"><biblio:ThreeDimensionalObjectIsExpressionOf /></a></td></tr>
       </biblio:foreachThreeDimensionalObjectIsExpressionOfIterator>
-      <biblio:foreachThreeDimensionalObjectLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:ThreeDimensionalObjectLanguageType/>/<biblio:ThreeDimensionalObjectLanguageType/>.jsp?uri=<biblio:ThreeDimensionalObjectLanguage/>"><biblio:ThreeDimensionalObjectLanguage /></a></td></tr>
-      </biblio:foreachThreeDimensionalObjectLanguageIterator>
       <biblio:foreachThreeDimensionalObjectSupplementsIterator>
          <tr><td>supplements</td><td><a href="../<biblio:ThreeDimensionalObjectSupplementsType/>/<biblio:ThreeDimensionalObjectSupplementsType/>.jsp?uri=<biblio:ThreeDimensionalObjectSupplements/>"><biblio:ThreeDimensionalObjectSupplements /></a></td></tr>
       </biblio:foreachThreeDimensionalObjectSupplementsIterator>
@@ -172,9 +175,6 @@
       <biblio:foreachThreeDimensionalObjectCreatedForDegreeIterator>
          <tr><td>createdForDegree</td><td><a href="../<biblio:ThreeDimensionalObjectCreatedForDegreeType/>/<biblio:ThreeDimensionalObjectCreatedForDegreeType/>.jsp?uri=<biblio:ThreeDimensionalObjectCreatedForDegree/>"><biblio:ThreeDimensionalObjectCreatedForDegree /></a></td></tr>
       </biblio:foreachThreeDimensionalObjectCreatedForDegreeIterator>
-      <biblio:foreachThreeDimensionalObjectHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:ThreeDimensionalObjectHasPartType/>/<biblio:ThreeDimensionalObjectHasPartType/>.jsp?uri=<biblio:ThreeDimensionalObjectHasPart/>"><biblio:ThreeDimensionalObjectHasPart /></a></td></tr>
-      </biblio:foreachThreeDimensionalObjectHasPartIterator>
       <biblio:foreachThreeDimensionalObjectIsUnionOfIterator>
          <tr><td>isUnionOf</td><td><a href="../<biblio:ThreeDimensionalObjectIsUnionOfType/>/<biblio:ThreeDimensionalObjectIsUnionOfType/>.jsp?uri=<biblio:ThreeDimensionalObjectIsUnionOf/>"><biblio:ThreeDimensionalObjectIsUnionOf /></a></td></tr>
       </biblio:foreachThreeDimensionalObjectIsUnionOfIterator>

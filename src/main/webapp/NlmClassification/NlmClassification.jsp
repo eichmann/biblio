@@ -34,10 +34,19 @@
       <biblio:foreachNlmClassificationIsClassificationForIterator>
          <tr><td>isClassificationFor</td><td><a href="../<biblio:NlmClassificationIsClassificationForType/>/<biblio:NlmClassificationIsClassificationForType/>.jsp?uri=<biblio:NlmClassificationIsClassificationFor/>"><biblio:NlmClassificationIsClassificationFor /></a></td></tr>
       </biblio:foreachNlmClassificationIsClassificationForIterator>
+      <biblio:foreachNlmClassificationSemanticRelationIterator>
+         <tr><td>semanticRelation</td><td><a href="../<biblio:NlmClassificationSemanticRelationType/>/<biblio:NlmClassificationSemanticRelationType/>.jsp?uri=<biblio:NlmClassificationSemanticRelation/>"><biblio:NlmClassificationSemanticRelation /></a></td></tr>
+      </biblio:foreachNlmClassificationSemanticRelationIterator>
+      <biblio:foreachNlmClassificationTopConceptOfIterator>
+         <tr><td>topConceptOf</td><td><a href="../<biblio:NlmClassificationTopConceptOfType/>/<biblio:NlmClassificationTopConceptOfType/>.jsp?uri=<biblio:NlmClassificationTopConceptOf/>"><biblio:NlmClassificationTopConceptOf /></a></td></tr>
+      </biblio:foreachNlmClassificationTopConceptOfIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
+      <biblio:foreachNlmClassificationMemberInverseIterator>
+         <tr><td>member</td><td><a href="../<biblio:NlmClassificationMemberInverseType/>/<biblio:NlmClassificationMemberInverseType/>.jsp?uri=<biblio:NlmClassificationMemberInverse/>"><biblio:NlmClassificationMemberInverse/></a></td></tr>
+      </biblio:foreachNlmClassificationMemberInverseIterator>
       <biblio:foreachNlmClassificationHasGenreInverseIterator>
          <tr><td>hasGenre</td><td><a href="../<biblio:NlmClassificationHasGenreInverseType/>/<biblio:NlmClassificationHasGenreInverseType/>.jsp?uri=<biblio:NlmClassificationHasGenreInverse/>"><biblio:NlmClassificationHasGenreInverse/></a></td></tr>
       </biblio:foreachNlmClassificationHasGenreInverseIterator>

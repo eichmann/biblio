@@ -31,6 +31,12 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachAcademicDegreeSemanticRelationIterator>
+         <tr><td>semanticRelation</td><td><a href="../<biblio:AcademicDegreeSemanticRelationType/>/<biblio:AcademicDegreeSemanticRelationType/>.jsp?uri=<biblio:AcademicDegreeSemanticRelation/>"><biblio:AcademicDegreeSemanticRelation /></a></td></tr>
+      </biblio:foreachAcademicDegreeSemanticRelationIterator>
+      <biblio:foreachAcademicDegreeTopConceptOfIterator>
+         <tr><td>topConceptOf</td><td><a href="../<biblio:AcademicDegreeTopConceptOfType/>/<biblio:AcademicDegreeTopConceptOfType/>.jsp?uri=<biblio:AcademicDegreeTopConceptOf/>"><biblio:AcademicDegreeTopConceptOf /></a></td></tr>
+      </biblio:foreachAcademicDegreeTopConceptOfIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
@@ -38,6 +44,9 @@
       <biblio:foreachAcademicDegreeCreatedForDegreeInverseIterator>
          <tr><td>createdForDegree</td><td><a href="../<biblio:AcademicDegreeCreatedForDegreeInverseType/>/<biblio:AcademicDegreeCreatedForDegreeInverseType/>.jsp?uri=<biblio:AcademicDegreeCreatedForDegreeInverse/>"><biblio:AcademicDegreeCreatedForDegreeInverse/></a></td></tr>
       </biblio:foreachAcademicDegreeCreatedForDegreeInverseIterator>
+      <biblio:foreachAcademicDegreeMemberInverseIterator>
+         <tr><td>member</td><td><a href="../<biblio:AcademicDegreeMemberInverseType/>/<biblio:AcademicDegreeMemberInverseType/>.jsp?uri=<biblio:AcademicDegreeMemberInverse/>"><biblio:AcademicDegreeMemberInverse/></a></td></tr>
+      </biblio:foreachAcademicDegreeMemberInverseIterator>
       <biblio:foreachAcademicDegreeHasGenreInverseIterator>
          <tr><td>hasGenre</td><td><a href="../<biblio:AcademicDegreeHasGenreInverseType/>/<biblio:AcademicDegreeHasGenreInverseType/>.jsp?uri=<biblio:AcademicDegreeHasGenreInverse/>"><biblio:AcademicDegreeHasGenreInverse/></a></td></tr>
       </biblio:foreachAcademicDegreeHasGenreInverseIterator>

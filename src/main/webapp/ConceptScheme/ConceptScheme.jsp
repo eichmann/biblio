@@ -31,6 +31,9 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachConceptSchemeHasTopConceptIterator>
+         <tr><td>hasTopConcept</td><td><a href="../<biblio:ConceptSchemeHasTopConceptType/>/<biblio:ConceptSchemeHasTopConceptType/>.jsp?uri=<biblio:ConceptSchemeHasTopConcept/>"><biblio:ConceptSchemeHasTopConcept /></a></td></tr>
+      </biblio:foreachConceptSchemeHasTopConceptIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>

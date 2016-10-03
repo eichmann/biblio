@@ -95,6 +95,18 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachPrintRelationIterator>
+         <tr><td>relation</td><td><a href="../<biblio:PrintRelationType/>/<biblio:PrintRelationType/>.jsp?uri=<biblio:PrintRelation/>"><biblio:PrintRelation /></a></td></tr>
+      </biblio:foreachPrintRelationIterator>
+      <biblio:foreachPrintHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:PrintHasPartType/>/<biblio:PrintHasPartType/>.jsp?uri=<biblio:PrintHasPart/>"><biblio:PrintHasPart /></a></td></tr>
+      </biblio:foreachPrintHasPartIterator>
+      <biblio:foreachPrintSubjectIterator>
+         <tr><td>subject</td><td><a href="../<biblio:PrintSubjectType/>/<biblio:PrintSubjectType/>.jsp?uri=<biblio:PrintSubject/>"><biblio:PrintSubject /></a></td></tr>
+      </biblio:foreachPrintSubjectIterator>
+      <biblio:foreachPrintLanguageIterator>
+         <tr><td>language</td><td><a href="../<biblio:PrintLanguageType/>/<biblio:PrintLanguageType/>.jsp?uri=<biblio:PrintLanguage/>"><biblio:PrintLanguage /></a></td></tr>
+      </biblio:foreachPrintLanguageIterator>
       <biblio:foreachPrintIdentifiedByIterator>
          <tr><td>identifiedBy</td><td><a href="../<biblio:PrintIdentifiedByType/>/<biblio:PrintIdentifiedByType/>.jsp?uri=<biblio:PrintIdentifiedBy/>"><biblio:PrintIdentifiedBy /></a></td></tr>
       </biblio:foreachPrintIdentifiedByIterator>
@@ -104,9 +116,6 @@
       <biblio:foreachPrintHasReproductionIterator>
          <tr><td>hasReproduction</td><td><a href="../<biblio:PrintHasReproductionType/>/<biblio:PrintHasReproductionType/>.jsp?uri=<biblio:PrintHasReproduction/>"><biblio:PrintHasReproduction /></a></td></tr>
       </biblio:foreachPrintHasReproductionIterator>
-      <biblio:foreachPrintSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:PrintSubjectType/>/<biblio:PrintSubjectType/>.jsp?uri=<biblio:PrintSubject/>"><biblio:PrintSubject /></a></td></tr>
-      </biblio:foreachPrintSubjectIterator>
       <biblio:foreachPrintHasTableOfContentsIterator>
          <tr><td>hasTableOfContents</td><td><a href="../<biblio:PrintHasTableOfContentsType/>/<biblio:PrintHasTableOfContentsType/>.jsp?uri=<biblio:PrintHasTableOfContents/>"><biblio:PrintHasTableOfContents /></a></td></tr>
       </biblio:foreachPrintHasTableOfContentsIterator>
@@ -116,12 +125,6 @@
       <biblio:foreachPrintHasCoverArtIterator>
          <tr><td>hasCoverArt</td><td><a href="../<biblio:PrintHasCoverArtType/>/<biblio:PrintHasCoverArtType/>.jsp?uri=<biblio:PrintHasCoverArt/>"><biblio:PrintHasCoverArt /></a></td></tr>
       </biblio:foreachPrintHasCoverArtIterator>
-      <biblio:foreachPrintRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:PrintRelationType/>/<biblio:PrintRelationType/>.jsp?uri=<biblio:PrintRelation/>"><biblio:PrintRelation /></a></td></tr>
-      </biblio:foreachPrintRelationIterator>
-      <biblio:foreachPrintLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:PrintLanguageType/>/<biblio:PrintLanguageType/>.jsp?uri=<biblio:PrintLanguage/>"><biblio:PrintLanguage /></a></td></tr>
-      </biblio:foreachPrintLanguageIterator>
       <biblio:foreachPrintReproducesIterator>
          <tr><td>reproduces</td><td><a href="../<biblio:PrintReproducesType/>/<biblio:PrintReproducesType/>.jsp?uri=<biblio:PrintReproduces/>"><biblio:PrintReproduces /></a></td></tr>
       </biblio:foreachPrintReproducesIterator>
@@ -143,9 +146,6 @@
       <biblio:foreachPrintIsInstanceOfIterator>
          <tr><td>isInstanceOf</td><td><a href="../<biblio:PrintIsInstanceOfType/>/<biblio:PrintIsInstanceOfType/>.jsp?uri=<biblio:PrintIsInstanceOf/>"><biblio:PrintIsInstanceOf /></a></td></tr>
       </biblio:foreachPrintIsInstanceOfIterator>
-      <biblio:foreachPrintHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:PrintHasPartType/>/<biblio:PrintHasPartType/>.jsp?uri=<biblio:PrintHasPart/>"><biblio:PrintHasPart /></a></td></tr>
-      </biblio:foreachPrintHasPartIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>

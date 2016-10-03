@@ -31,6 +31,9 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachCollectionMemberIterator>
+         <tr><td>member</td><td><a href="../<biblio:CollectionMemberType/>/<biblio:CollectionMemberType/>.jsp?uri=<biblio:CollectionMember/>"><biblio:CollectionMember /></a></td></tr>
+      </biblio:foreachCollectionMemberIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>

@@ -95,6 +95,18 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachTactileRelationIterator>
+         <tr><td>relation</td><td><a href="../<biblio:TactileRelationType/>/<biblio:TactileRelationType/>.jsp?uri=<biblio:TactileRelation/>"><biblio:TactileRelation /></a></td></tr>
+      </biblio:foreachTactileRelationIterator>
+      <biblio:foreachTactileHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:TactileHasPartType/>/<biblio:TactileHasPartType/>.jsp?uri=<biblio:TactileHasPart/>"><biblio:TactileHasPart /></a></td></tr>
+      </biblio:foreachTactileHasPartIterator>
+      <biblio:foreachTactileSubjectIterator>
+         <tr><td>subject</td><td><a href="../<biblio:TactileSubjectType/>/<biblio:TactileSubjectType/>.jsp?uri=<biblio:TactileSubject/>"><biblio:TactileSubject /></a></td></tr>
+      </biblio:foreachTactileSubjectIterator>
+      <biblio:foreachTactileLanguageIterator>
+         <tr><td>language</td><td><a href="../<biblio:TactileLanguageType/>/<biblio:TactileLanguageType/>.jsp?uri=<biblio:TactileLanguage/>"><biblio:TactileLanguage /></a></td></tr>
+      </biblio:foreachTactileLanguageIterator>
       <biblio:foreachTactileIdentifiedByIterator>
          <tr><td>identifiedBy</td><td><a href="../<biblio:TactileIdentifiedByType/>/<biblio:TactileIdentifiedByType/>.jsp?uri=<biblio:TactileIdentifiedBy/>"><biblio:TactileIdentifiedBy /></a></td></tr>
       </biblio:foreachTactileIdentifiedByIterator>
@@ -104,9 +116,6 @@
       <biblio:foreachTactileHasReproductionIterator>
          <tr><td>hasReproduction</td><td><a href="../<biblio:TactileHasReproductionType/>/<biblio:TactileHasReproductionType/>.jsp?uri=<biblio:TactileHasReproduction/>"><biblio:TactileHasReproduction /></a></td></tr>
       </biblio:foreachTactileHasReproductionIterator>
-      <biblio:foreachTactileSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:TactileSubjectType/>/<biblio:TactileSubjectType/>.jsp?uri=<biblio:TactileSubject/>"><biblio:TactileSubject /></a></td></tr>
-      </biblio:foreachTactileSubjectIterator>
       <biblio:foreachTactileHasTableOfContentsIterator>
          <tr><td>hasTableOfContents</td><td><a href="../<biblio:TactileHasTableOfContentsType/>/<biblio:TactileHasTableOfContentsType/>.jsp?uri=<biblio:TactileHasTableOfContents/>"><biblio:TactileHasTableOfContents /></a></td></tr>
       </biblio:foreachTactileHasTableOfContentsIterator>
@@ -116,12 +125,6 @@
       <biblio:foreachTactileHasCoverArtIterator>
          <tr><td>hasCoverArt</td><td><a href="../<biblio:TactileHasCoverArtType/>/<biblio:TactileHasCoverArtType/>.jsp?uri=<biblio:TactileHasCoverArt/>"><biblio:TactileHasCoverArt /></a></td></tr>
       </biblio:foreachTactileHasCoverArtIterator>
-      <biblio:foreachTactileRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:TactileRelationType/>/<biblio:TactileRelationType/>.jsp?uri=<biblio:TactileRelation/>"><biblio:TactileRelation /></a></td></tr>
-      </biblio:foreachTactileRelationIterator>
-      <biblio:foreachTactileLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:TactileLanguageType/>/<biblio:TactileLanguageType/>.jsp?uri=<biblio:TactileLanguage/>"><biblio:TactileLanguage /></a></td></tr>
-      </biblio:foreachTactileLanguageIterator>
       <biblio:foreachTactileReproducesIterator>
          <tr><td>reproduces</td><td><a href="../<biblio:TactileReproducesType/>/<biblio:TactileReproducesType/>.jsp?uri=<biblio:TactileReproduces/>"><biblio:TactileReproduces /></a></td></tr>
       </biblio:foreachTactileReproducesIterator>
@@ -143,9 +146,6 @@
       <biblio:foreachTactileIsInstanceOfIterator>
          <tr><td>isInstanceOf</td><td><a href="../<biblio:TactileIsInstanceOfType/>/<biblio:TactileIsInstanceOfType/>.jsp?uri=<biblio:TactileIsInstanceOf/>"><biblio:TactileIsInstanceOf /></a></td></tr>
       </biblio:foreachTactileIsInstanceOfIterator>
-      <biblio:foreachTactileHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:TactileHasPartType/>/<biblio:TactileHasPartType/>.jsp?uri=<biblio:TactileHasPart/>"><biblio:TactileHasPart /></a></td></tr>
-      </biblio:foreachTactileHasPartIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>

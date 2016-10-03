@@ -49,18 +49,21 @@
       <biblio:foreachStillImageSubjectIterator>
          <tr><td>subject</td><td><a href="../<biblio:StillImageSubjectType/>/<biblio:StillImageSubjectType/>.jsp?uri=<biblio:StillImageSubject/>"><biblio:StillImageSubject /></a></td></tr>
       </biblio:foreachStillImageSubjectIterator>
-      <biblio:foreachStillImageHasAnnotationIterator>
-         <tr><td>hasAnnotation</td><td><a href="../<biblio:StillImageHasAnnotationType/>/<biblio:StillImageHasAnnotationType/>.jsp?uri=<biblio:StillImageHasAnnotation/>"><biblio:StillImageHasAnnotation /></a></td></tr>
-      </biblio:foreachStillImageHasAnnotationIterator>
       <biblio:foreachStillImageLanguageIterator>
          <tr><td>language</td><td><a href="../<biblio:StillImageLanguageType/>/<biblio:StillImageLanguageType/>.jsp?uri=<biblio:StillImageLanguage/>"><biblio:StillImageLanguage /></a></td></tr>
       </biblio:foreachStillImageLanguageIterator>
-      <biblio:foreachStillImagePerformedAtIterator>
-         <tr><td>performedAt</td><td><a href="../<biblio:StillImagePerformedAtType/>/<biblio:StillImagePerformedAtType/>.jsp?uri=<biblio:StillImagePerformedAt/>"><biblio:StillImagePerformedAt /></a></td></tr>
-      </biblio:foreachStillImagePerformedAtIterator>
+      <biblio:foreachStillImageHasAnnotationIterator>
+         <tr><td>hasAnnotation</td><td><a href="../<biblio:StillImageHasAnnotationType/>/<biblio:StillImageHasAnnotationType/>.jsp?uri=<biblio:StillImageHasAnnotation/>"><biblio:StillImageHasAnnotation /></a></td></tr>
+      </biblio:foreachStillImageHasAnnotationIterator>
+      <biblio:foreachStillImageHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:StillImageHasPartType/>/<biblio:StillImageHasPartType/>.jsp?uri=<biblio:StillImageHasPart/>"><biblio:StillImageHasPart /></a></td></tr>
+      </biblio:foreachStillImageHasPartIterator>
       <biblio:foreachStillImageIsPartOfIterator>
          <tr><td>isPartOf</td><td><a href="../<biblio:StillImageIsPartOfType/>/<biblio:StillImageIsPartOfType/>.jsp?uri=<biblio:StillImageIsPartOf/>"><biblio:StillImageIsPartOf /></a></td></tr>
       </biblio:foreachStillImageIsPartOfIterator>
+      <biblio:foreachStillImagePerformedAtIterator>
+         <tr><td>performedAt</td><td><a href="../<biblio:StillImagePerformedAtType/>/<biblio:StillImagePerformedAtType/>.jsp?uri=<biblio:StillImagePerformedAt/>"><biblio:StillImagePerformedAt /></a></td></tr>
+      </biblio:foreachStillImagePerformedAtIterator>
       <biblio:foreachStillImageFollowsInNarrativeIterator>
          <tr><td>followsInNarrative</td><td><a href="../<biblio:StillImageFollowsInNarrativeType/>/<biblio:StillImageFollowsInNarrativeType/>.jsp?uri=<biblio:StillImageFollowsInNarrative/>"><biblio:StillImageFollowsInNarrative /></a></td></tr>
       </biblio:foreachStillImageFollowsInNarrativeIterator>
@@ -178,9 +181,6 @@
       <biblio:foreachStillImageCreatedForDegreeIterator>
          <tr><td>createdForDegree</td><td><a href="../<biblio:StillImageCreatedForDegreeType/>/<biblio:StillImageCreatedForDegreeType/>.jsp?uri=<biblio:StillImageCreatedForDegree/>"><biblio:StillImageCreatedForDegree /></a></td></tr>
       </biblio:foreachStillImageCreatedForDegreeIterator>
-      <biblio:foreachStillImageHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:StillImageHasPartType/>/<biblio:StillImageHasPartType/>.jsp?uri=<biblio:StillImageHasPart/>"><biblio:StillImageHasPart /></a></td></tr>
-      </biblio:foreachStillImageHasPartIterator>
       <biblio:foreachStillImageIsUnionOfIterator>
          <tr><td>isUnionOf</td><td><a href="../<biblio:StillImageIsUnionOfType/>/<biblio:StillImageIsUnionOfType/>.jsp?uri=<biblio:StillImageIsUnionOf/>"><biblio:StillImageIsUnionOf /></a></td></tr>
       </biblio:foreachStillImageIsUnionOfIterator>

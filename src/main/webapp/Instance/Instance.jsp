@@ -95,6 +95,18 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachInstanceRelationIterator>
+         <tr><td>relation</td><td><a href="../<biblio:InstanceRelationType/>/<biblio:InstanceRelationType/>.jsp?uri=<biblio:InstanceRelation/>"><biblio:InstanceRelation /></a></td></tr>
+      </biblio:foreachInstanceRelationIterator>
+      <biblio:foreachInstanceHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:InstanceHasPartType/>/<biblio:InstanceHasPartType/>.jsp?uri=<biblio:InstanceHasPart/>"><biblio:InstanceHasPart /></a></td></tr>
+      </biblio:foreachInstanceHasPartIterator>
+      <biblio:foreachInstanceSubjectIterator>
+         <tr><td>subject</td><td><a href="../<biblio:InstanceSubjectType/>/<biblio:InstanceSubjectType/>.jsp?uri=<biblio:InstanceSubject/>"><biblio:InstanceSubject /></a></td></tr>
+      </biblio:foreachInstanceSubjectIterator>
+      <biblio:foreachInstanceLanguageIterator>
+         <tr><td>language</td><td><a href="../<biblio:InstanceLanguageType/>/<biblio:InstanceLanguageType/>.jsp?uri=<biblio:InstanceLanguage/>"><biblio:InstanceLanguage /></a></td></tr>
+      </biblio:foreachInstanceLanguageIterator>
       <biblio:foreachInstanceIdentifiedByIterator>
          <tr><td>identifiedBy</td><td><a href="../<biblio:InstanceIdentifiedByType/>/<biblio:InstanceIdentifiedByType/>.jsp?uri=<biblio:InstanceIdentifiedBy/>"><biblio:InstanceIdentifiedBy /></a></td></tr>
       </biblio:foreachInstanceIdentifiedByIterator>
@@ -104,9 +116,6 @@
       <biblio:foreachInstanceHasReproductionIterator>
          <tr><td>hasReproduction</td><td><a href="../<biblio:InstanceHasReproductionType/>/<biblio:InstanceHasReproductionType/>.jsp?uri=<biblio:InstanceHasReproduction/>"><biblio:InstanceHasReproduction /></a></td></tr>
       </biblio:foreachInstanceHasReproductionIterator>
-      <biblio:foreachInstanceSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:InstanceSubjectType/>/<biblio:InstanceSubjectType/>.jsp?uri=<biblio:InstanceSubject/>"><biblio:InstanceSubject /></a></td></tr>
-      </biblio:foreachInstanceSubjectIterator>
       <biblio:foreachInstanceHasTableOfContentsIterator>
          <tr><td>hasTableOfContents</td><td><a href="../<biblio:InstanceHasTableOfContentsType/>/<biblio:InstanceHasTableOfContentsType/>.jsp?uri=<biblio:InstanceHasTableOfContents/>"><biblio:InstanceHasTableOfContents /></a></td></tr>
       </biblio:foreachInstanceHasTableOfContentsIterator>
@@ -116,12 +125,6 @@
       <biblio:foreachInstanceHasCoverArtIterator>
          <tr><td>hasCoverArt</td><td><a href="../<biblio:InstanceHasCoverArtType/>/<biblio:InstanceHasCoverArtType/>.jsp?uri=<biblio:InstanceHasCoverArt/>"><biblio:InstanceHasCoverArt /></a></td></tr>
       </biblio:foreachInstanceHasCoverArtIterator>
-      <biblio:foreachInstanceRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:InstanceRelationType/>/<biblio:InstanceRelationType/>.jsp?uri=<biblio:InstanceRelation/>"><biblio:InstanceRelation /></a></td></tr>
-      </biblio:foreachInstanceRelationIterator>
-      <biblio:foreachInstanceLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:InstanceLanguageType/>/<biblio:InstanceLanguageType/>.jsp?uri=<biblio:InstanceLanguage/>"><biblio:InstanceLanguage /></a></td></tr>
-      </biblio:foreachInstanceLanguageIterator>
       <biblio:foreachInstanceReproducesIterator>
          <tr><td>reproduces</td><td><a href="../<biblio:InstanceReproducesType/>/<biblio:InstanceReproducesType/>.jsp?uri=<biblio:InstanceReproduces/>"><biblio:InstanceReproduces /></a></td></tr>
       </biblio:foreachInstanceReproducesIterator>
@@ -143,9 +146,6 @@
       <biblio:foreachInstanceIsInstanceOfIterator>
          <tr><td>isInstanceOf</td><td><a href="../<biblio:InstanceIsInstanceOfType/>/<biblio:InstanceIsInstanceOfType/>.jsp?uri=<biblio:InstanceIsInstanceOf/>"><biblio:InstanceIsInstanceOf /></a></td></tr>
       </biblio:foreachInstanceIsInstanceOfIterator>
-      <biblio:foreachInstanceHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:InstanceHasPartType/>/<biblio:InstanceHasPartType/>.jsp?uri=<biblio:InstanceHasPart/>"><biblio:InstanceHasPart /></a></td></tr>
-      </biblio:foreachInstanceHasPartIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>

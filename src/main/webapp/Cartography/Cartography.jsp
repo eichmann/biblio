@@ -69,18 +69,21 @@
       <biblio:foreachCartographySubjectIterator>
          <tr><td>subject</td><td><a href="../<biblio:CartographySubjectType/>/<biblio:CartographySubjectType/>.jsp?uri=<biblio:CartographySubject/>"><biblio:CartographySubject /></a></td></tr>
       </biblio:foreachCartographySubjectIterator>
-      <biblio:foreachCartographyHasAnnotationIterator>
-         <tr><td>hasAnnotation</td><td><a href="../<biblio:CartographyHasAnnotationType/>/<biblio:CartographyHasAnnotationType/>.jsp?uri=<biblio:CartographyHasAnnotation/>"><biblio:CartographyHasAnnotation /></a></td></tr>
-      </biblio:foreachCartographyHasAnnotationIterator>
       <biblio:foreachCartographyLanguageIterator>
          <tr><td>language</td><td><a href="../<biblio:CartographyLanguageType/>/<biblio:CartographyLanguageType/>.jsp?uri=<biblio:CartographyLanguage/>"><biblio:CartographyLanguage /></a></td></tr>
       </biblio:foreachCartographyLanguageIterator>
-      <biblio:foreachCartographyPerformedAtIterator>
-         <tr><td>performedAt</td><td><a href="../<biblio:CartographyPerformedAtType/>/<biblio:CartographyPerformedAtType/>.jsp?uri=<biblio:CartographyPerformedAt/>"><biblio:CartographyPerformedAt /></a></td></tr>
-      </biblio:foreachCartographyPerformedAtIterator>
+      <biblio:foreachCartographyHasAnnotationIterator>
+         <tr><td>hasAnnotation</td><td><a href="../<biblio:CartographyHasAnnotationType/>/<biblio:CartographyHasAnnotationType/>.jsp?uri=<biblio:CartographyHasAnnotation/>"><biblio:CartographyHasAnnotation /></a></td></tr>
+      </biblio:foreachCartographyHasAnnotationIterator>
+      <biblio:foreachCartographyHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:CartographyHasPartType/>/<biblio:CartographyHasPartType/>.jsp?uri=<biblio:CartographyHasPart/>"><biblio:CartographyHasPart /></a></td></tr>
+      </biblio:foreachCartographyHasPartIterator>
       <biblio:foreachCartographyIsPartOfIterator>
          <tr><td>isPartOf</td><td><a href="../<biblio:CartographyIsPartOfType/>/<biblio:CartographyIsPartOfType/>.jsp?uri=<biblio:CartographyIsPartOf/>"><biblio:CartographyIsPartOf /></a></td></tr>
       </biblio:foreachCartographyIsPartOfIterator>
+      <biblio:foreachCartographyPerformedAtIterator>
+         <tr><td>performedAt</td><td><a href="../<biblio:CartographyPerformedAtType/>/<biblio:CartographyPerformedAtType/>.jsp?uri=<biblio:CartographyPerformedAt/>"><biblio:CartographyPerformedAt /></a></td></tr>
+      </biblio:foreachCartographyPerformedAtIterator>
       <biblio:foreachCartographyFollowsInNarrativeIterator>
          <tr><td>followsInNarrative</td><td><a href="../<biblio:CartographyFollowsInNarrativeType/>/<biblio:CartographyFollowsInNarrativeType/>.jsp?uri=<biblio:CartographyFollowsInNarrative/>"><biblio:CartographyFollowsInNarrative /></a></td></tr>
       </biblio:foreachCartographyFollowsInNarrativeIterator>
@@ -198,9 +201,6 @@
       <biblio:foreachCartographyCreatedForDegreeIterator>
          <tr><td>createdForDegree</td><td><a href="../<biblio:CartographyCreatedForDegreeType/>/<biblio:CartographyCreatedForDegreeType/>.jsp?uri=<biblio:CartographyCreatedForDegree/>"><biblio:CartographyCreatedForDegree /></a></td></tr>
       </biblio:foreachCartographyCreatedForDegreeIterator>
-      <biblio:foreachCartographyHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:CartographyHasPartType/>/<biblio:CartographyHasPartType/>.jsp?uri=<biblio:CartographyHasPart/>"><biblio:CartographyHasPart /></a></td></tr>
-      </biblio:foreachCartographyHasPartIterator>
       <biblio:foreachCartographyIsUnionOfIterator>
          <tr><td>isUnionOf</td><td><a href="../<biblio:CartographyIsUnionOfType/>/<biblio:CartographyIsUnionOfType/>.jsp?uri=<biblio:CartographyIsUnionOf/>"><biblio:CartographyIsUnionOf /></a></td></tr>
       </biblio:foreachCartographyIsUnionOfIterator>

@@ -46,6 +46,18 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachTextRelationIterator>
+         <tr><td>relation</td><td><a href="../<biblio:TextRelationType/>/<biblio:TextRelationType/>.jsp?uri=<biblio:TextRelation/>"><biblio:TextRelation /></a></td></tr>
+      </biblio:foreachTextRelationIterator>
+      <biblio:foreachTextHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:TextHasPartType/>/<biblio:TextHasPartType/>.jsp?uri=<biblio:TextHasPart/>"><biblio:TextHasPart /></a></td></tr>
+      </biblio:foreachTextHasPartIterator>
+      <biblio:foreachTextSubjectIterator>
+         <tr><td>subject</td><td><a href="../<biblio:TextSubjectType/>/<biblio:TextSubjectType/>.jsp?uri=<biblio:TextSubject/>"><biblio:TextSubject /></a></td></tr>
+      </biblio:foreachTextSubjectIterator>
+      <biblio:foreachTextLanguageIterator>
+         <tr><td>language</td><td><a href="../<biblio:TextLanguageType/>/<biblio:TextLanguageType/>.jsp?uri=<biblio:TextLanguage/>"><biblio:TextLanguage /></a></td></tr>
+      </biblio:foreachTextLanguageIterator>
       <biblio:foreachTextIsPartOfIterator>
          <tr><td>isPartOf</td><td><a href="../<biblio:TextIsPartOfType/>/<biblio:TextIsPartOfType/>.jsp?uri=<biblio:TextIsPartOf/>"><biblio:TextIsPartOf /></a></td></tr>
       </biblio:foreachTextIsPartOfIterator>
@@ -58,27 +70,15 @@
       <biblio:foreachTextFollowsIterator>
          <tr><td>follows</td><td><a href="../<biblio:TextFollowsType/>/<biblio:TextFollowsType/>.jsp?uri=<biblio:TextFollows/>"><biblio:TextFollows /></a></td></tr>
       </biblio:foreachTextFollowsIterator>
-      <biblio:foreachTextSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:TextSubjectType/>/<biblio:TextSubjectType/>.jsp?uri=<biblio:TextSubject/>"><biblio:TextSubject /></a></td></tr>
-      </biblio:foreachTextSubjectIterator>
       <biblio:foreachTextHasAnnotationIterator>
          <tr><td>hasAnnotation</td><td><a href="../<biblio:TextHasAnnotationType/>/<biblio:TextHasAnnotationType/>.jsp?uri=<biblio:TextHasAnnotation/>"><biblio:TextHasAnnotation /></a></td></tr>
       </biblio:foreachTextHasAnnotationIterator>
       <biblio:foreachTextIsSubjectOfIterator>
          <tr><td>isSubjectOf</td><td><a href="../<biblio:TextIsSubjectOfType/>/<biblio:TextIsSubjectOfType/>.jsp?uri=<biblio:TextIsSubjectOf/>"><biblio:TextIsSubjectOf /></a></td></tr>
       </biblio:foreachTextIsSubjectOfIterator>
-      <biblio:foreachTextRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:TextRelationType/>/<biblio:TextRelationType/>.jsp?uri=<biblio:TextRelation/>"><biblio:TextRelation /></a></td></tr>
-      </biblio:foreachTextRelationIterator>
-      <biblio:foreachTextLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:TextLanguageType/>/<biblio:TextLanguageType/>.jsp?uri=<biblio:TextLanguage/>"><biblio:TextLanguage /></a></td></tr>
-      </biblio:foreachTextLanguageIterator>
       <biblio:foreachTextAccompaniedByIterator>
          <tr><td>accompaniedBy</td><td><a href="../<biblio:TextAccompaniedByType/>/<biblio:TextAccompaniedByType/>.jsp?uri=<biblio:TextAccompaniedBy/>"><biblio:TextAccompaniedBy /></a></td></tr>
       </biblio:foreachTextAccompaniedByIterator>
-      <biblio:foreachTextHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:TextHasPartType/>/<biblio:TextHasPartType/>.jsp?uri=<biblio:TextHasPart/>"><biblio:TextHasPart /></a></td></tr>
-      </biblio:foreachTextHasPartIterator>
       <biblio:foreachTextPerformedAtIterator>
          <tr><td>performedAt</td><td><a href="../<biblio:TextPerformedAtType/>/<biblio:TextPerformedAtType/>.jsp?uri=<biblio:TextPerformedAt/>"><biblio:TextPerformedAt /></a></td></tr>
       </biblio:foreachTextPerformedAtIterator>

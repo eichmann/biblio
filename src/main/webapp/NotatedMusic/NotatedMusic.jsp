@@ -46,33 +46,33 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachNotatedMusicFollowsIterator>
-         <tr><td>follows</td><td><a href="../<biblio:NotatedMusicFollowsType/>/<biblio:NotatedMusicFollowsType/>.jsp?uri=<biblio:NotatedMusicFollows/>"><biblio:NotatedMusicFollows /></a></td></tr>
-      </biblio:foreachNotatedMusicFollowsIterator>
+      <biblio:foreachNotatedMusicRelationIterator>
+         <tr><td>relation</td><td><a href="../<biblio:NotatedMusicRelationType/>/<biblio:NotatedMusicRelationType/>.jsp?uri=<biblio:NotatedMusicRelation/>"><biblio:NotatedMusicRelation /></a></td></tr>
+      </biblio:foreachNotatedMusicRelationIterator>
+      <biblio:foreachNotatedMusicHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:NotatedMusicHasPartType/>/<biblio:NotatedMusicHasPartType/>.jsp?uri=<biblio:NotatedMusicHasPart/>"><biblio:NotatedMusicHasPart /></a></td></tr>
+      </biblio:foreachNotatedMusicHasPartIterator>
       <biblio:foreachNotatedMusicSubjectIterator>
          <tr><td>subject</td><td><a href="../<biblio:NotatedMusicSubjectType/>/<biblio:NotatedMusicSubjectType/>.jsp?uri=<biblio:NotatedMusicSubject/>"><biblio:NotatedMusicSubject /></a></td></tr>
       </biblio:foreachNotatedMusicSubjectIterator>
+      <biblio:foreachNotatedMusicLanguageIterator>
+         <tr><td>language</td><td><a href="../<biblio:NotatedMusicLanguageType/>/<biblio:NotatedMusicLanguageType/>.jsp?uri=<biblio:NotatedMusicLanguage/>"><biblio:NotatedMusicLanguage /></a></td></tr>
+      </biblio:foreachNotatedMusicLanguageIterator>
+      <biblio:foreachNotatedMusicFollowsIterator>
+         <tr><td>follows</td><td><a href="../<biblio:NotatedMusicFollowsType/>/<biblio:NotatedMusicFollowsType/>.jsp?uri=<biblio:NotatedMusicFollows/>"><biblio:NotatedMusicFollows /></a></td></tr>
+      </biblio:foreachNotatedMusicFollowsIterator>
       <biblio:foreachNotatedMusicHasAnnotationIterator>
          <tr><td>hasAnnotation</td><td><a href="../<biblio:NotatedMusicHasAnnotationType/>/<biblio:NotatedMusicHasAnnotationType/>.jsp?uri=<biblio:NotatedMusicHasAnnotation/>"><biblio:NotatedMusicHasAnnotation /></a></td></tr>
       </biblio:foreachNotatedMusicHasAnnotationIterator>
       <biblio:foreachNotatedMusicIsSubjectOfIterator>
          <tr><td>isSubjectOf</td><td><a href="../<biblio:NotatedMusicIsSubjectOfType/>/<biblio:NotatedMusicIsSubjectOfType/>.jsp?uri=<biblio:NotatedMusicIsSubjectOf/>"><biblio:NotatedMusicIsSubjectOf /></a></td></tr>
       </biblio:foreachNotatedMusicIsSubjectOfIterator>
-      <biblio:foreachNotatedMusicRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:NotatedMusicRelationType/>/<biblio:NotatedMusicRelationType/>.jsp?uri=<biblio:NotatedMusicRelation/>"><biblio:NotatedMusicRelation /></a></td></tr>
-      </biblio:foreachNotatedMusicRelationIterator>
-      <biblio:foreachNotatedMusicLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:NotatedMusicLanguageType/>/<biblio:NotatedMusicLanguageType/>.jsp?uri=<biblio:NotatedMusicLanguage/>"><biblio:NotatedMusicLanguage /></a></td></tr>
-      </biblio:foreachNotatedMusicLanguageIterator>
-      <biblio:foreachNotatedMusicHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:NotatedMusicHasPartType/>/<biblio:NotatedMusicHasPartType/>.jsp?uri=<biblio:NotatedMusicHasPart/>"><biblio:NotatedMusicHasPart /></a></td></tr>
-      </biblio:foreachNotatedMusicHasPartIterator>
-      <biblio:foreachNotatedMusicPerformedAtIterator>
-         <tr><td>performedAt</td><td><a href="../<biblio:NotatedMusicPerformedAtType/>/<biblio:NotatedMusicPerformedAtType/>.jsp?uri=<biblio:NotatedMusicPerformedAt/>"><biblio:NotatedMusicPerformedAt /></a></td></tr>
-      </biblio:foreachNotatedMusicPerformedAtIterator>
       <biblio:foreachNotatedMusicIsPartOfIterator>
          <tr><td>isPartOf</td><td><a href="../<biblio:NotatedMusicIsPartOfType/>/<biblio:NotatedMusicIsPartOfType/>.jsp?uri=<biblio:NotatedMusicIsPartOf/>"><biblio:NotatedMusicIsPartOf /></a></td></tr>
       </biblio:foreachNotatedMusicIsPartOfIterator>
+      <biblio:foreachNotatedMusicPerformedAtIterator>
+         <tr><td>performedAt</td><td><a href="../<biblio:NotatedMusicPerformedAtType/>/<biblio:NotatedMusicPerformedAtType/>.jsp?uri=<biblio:NotatedMusicPerformedAt/>"><biblio:NotatedMusicPerformedAt /></a></td></tr>
+      </biblio:foreachNotatedMusicPerformedAtIterator>
       <biblio:foreachNotatedMusicFollowsInNarrativeIterator>
          <tr><td>followsInNarrative</td><td><a href="../<biblio:NotatedMusicFollowsInNarrativeType/>/<biblio:NotatedMusicFollowsInNarrativeType/>.jsp?uri=<biblio:NotatedMusicFollowsInNarrative/>"><biblio:NotatedMusicFollowsInNarrative /></a></td></tr>
       </biblio:foreachNotatedMusicFollowsInNarrativeIterator>

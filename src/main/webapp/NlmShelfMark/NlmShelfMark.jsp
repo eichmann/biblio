@@ -34,10 +34,19 @@
       <biblio:foreachNlmShelfMarkIsClassificationForIterator>
          <tr><td>isClassificationFor</td><td><a href="../<biblio:NlmShelfMarkIsClassificationForType/>/<biblio:NlmShelfMarkIsClassificationForType/>.jsp?uri=<biblio:NlmShelfMarkIsClassificationFor/>"><biblio:NlmShelfMarkIsClassificationFor /></a></td></tr>
       </biblio:foreachNlmShelfMarkIsClassificationForIterator>
+      <biblio:foreachNlmShelfMarkSemanticRelationIterator>
+         <tr><td>semanticRelation</td><td><a href="../<biblio:NlmShelfMarkSemanticRelationType/>/<biblio:NlmShelfMarkSemanticRelationType/>.jsp?uri=<biblio:NlmShelfMarkSemanticRelation/>"><biblio:NlmShelfMarkSemanticRelation /></a></td></tr>
+      </biblio:foreachNlmShelfMarkSemanticRelationIterator>
+      <biblio:foreachNlmShelfMarkTopConceptOfIterator>
+         <tr><td>topConceptOf</td><td><a href="../<biblio:NlmShelfMarkTopConceptOfType/>/<biblio:NlmShelfMarkTopConceptOfType/>.jsp?uri=<biblio:NlmShelfMarkTopConceptOf/>"><biblio:NlmShelfMarkTopConceptOf /></a></td></tr>
+      </biblio:foreachNlmShelfMarkTopConceptOfIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
+      <biblio:foreachNlmShelfMarkMemberInverseIterator>
+         <tr><td>member</td><td><a href="../<biblio:NlmShelfMarkMemberInverseType/>/<biblio:NlmShelfMarkMemberInverseType/>.jsp?uri=<biblio:NlmShelfMarkMemberInverse/>"><biblio:NlmShelfMarkMemberInverse/></a></td></tr>
+      </biblio:foreachNlmShelfMarkMemberInverseIterator>
       <biblio:foreachNlmShelfMarkHasGenreInverseIterator>
          <tr><td>hasGenre</td><td><a href="../<biblio:NlmShelfMarkHasGenreInverseType/>/<biblio:NlmShelfMarkHasGenreInverseType/>.jsp?uri=<biblio:NlmShelfMarkHasGenreInverse/>"><biblio:NlmShelfMarkHasGenreInverse/></a></td></tr>
       </biblio:foreachNlmShelfMarkHasGenreInverseIterator>

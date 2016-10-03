@@ -46,12 +46,18 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachFiniteResourcePerformedAtIterator>
-         <tr><td>performedAt</td><td><a href="../<biblio:FiniteResourcePerformedAtType/>/<biblio:FiniteResourcePerformedAtType/>.jsp?uri=<biblio:FiniteResourcePerformedAt/>"><biblio:FiniteResourcePerformedAt /></a></td></tr>
-      </biblio:foreachFiniteResourcePerformedAtIterator>
+      <biblio:foreachFiniteResourceHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:FiniteResourceHasPartType/>/<biblio:FiniteResourceHasPartType/>.jsp?uri=<biblio:FiniteResourceHasPart/>"><biblio:FiniteResourceHasPart /></a></td></tr>
+      </biblio:foreachFiniteResourceHasPartIterator>
+      <biblio:foreachFiniteResourceLanguageIterator>
+         <tr><td>language</td><td><a href="../<biblio:FiniteResourceLanguageType/>/<biblio:FiniteResourceLanguageType/>.jsp?uri=<biblio:FiniteResourceLanguage/>"><biblio:FiniteResourceLanguage /></a></td></tr>
+      </biblio:foreachFiniteResourceLanguageIterator>
       <biblio:foreachFiniteResourceIsPartOfIterator>
          <tr><td>isPartOf</td><td><a href="../<biblio:FiniteResourceIsPartOfType/>/<biblio:FiniteResourceIsPartOfType/>.jsp?uri=<biblio:FiniteResourceIsPartOf/>"><biblio:FiniteResourceIsPartOf /></a></td></tr>
       </biblio:foreachFiniteResourceIsPartOfIterator>
+      <biblio:foreachFiniteResourcePerformedAtIterator>
+         <tr><td>performedAt</td><td><a href="../<biblio:FiniteResourcePerformedAtType/>/<biblio:FiniteResourcePerformedAtType/>.jsp?uri=<biblio:FiniteResourcePerformedAt/>"><biblio:FiniteResourcePerformedAt /></a></td></tr>
+      </biblio:foreachFiniteResourcePerformedAtIterator>
       <biblio:foreachFiniteResourceFollowsInNarrativeIterator>
          <tr><td>followsInNarrative</td><td><a href="../<biblio:FiniteResourceFollowsInNarrativeType/>/<biblio:FiniteResourceFollowsInNarrativeType/>.jsp?uri=<biblio:FiniteResourceFollowsInNarrative/>"><biblio:FiniteResourceFollowsInNarrative /></a></td></tr>
       </biblio:foreachFiniteResourceFollowsInNarrativeIterator>
@@ -124,9 +130,6 @@
       <biblio:foreachFiniteResourceIsExpressionOfIterator>
          <tr><td>isExpressionOf</td><td><a href="../<biblio:FiniteResourceIsExpressionOfType/>/<biblio:FiniteResourceIsExpressionOfType/>.jsp?uri=<biblio:FiniteResourceIsExpressionOf/>"><biblio:FiniteResourceIsExpressionOf /></a></td></tr>
       </biblio:foreachFiniteResourceIsExpressionOfIterator>
-      <biblio:foreachFiniteResourceLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:FiniteResourceLanguageType/>/<biblio:FiniteResourceLanguageType/>.jsp?uri=<biblio:FiniteResourceLanguage/>"><biblio:FiniteResourceLanguage /></a></td></tr>
-      </biblio:foreachFiniteResourceLanguageIterator>
       <biblio:foreachFiniteResourceSupplementsIterator>
          <tr><td>supplements</td><td><a href="../<biblio:FiniteResourceSupplementsType/>/<biblio:FiniteResourceSupplementsType/>.jsp?uri=<biblio:FiniteResourceSupplements/>"><biblio:FiniteResourceSupplements /></a></td></tr>
       </biblio:foreachFiniteResourceSupplementsIterator>
@@ -172,9 +175,6 @@
       <biblio:foreachFiniteResourceCreatedForDegreeIterator>
          <tr><td>createdForDegree</td><td><a href="../<biblio:FiniteResourceCreatedForDegreeType/>/<biblio:FiniteResourceCreatedForDegreeType/>.jsp?uri=<biblio:FiniteResourceCreatedForDegree/>"><biblio:FiniteResourceCreatedForDegree /></a></td></tr>
       </biblio:foreachFiniteResourceCreatedForDegreeIterator>
-      <biblio:foreachFiniteResourceHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:FiniteResourceHasPartType/>/<biblio:FiniteResourceHasPartType/>.jsp?uri=<biblio:FiniteResourceHasPart/>"><biblio:FiniteResourceHasPart /></a></td></tr>
-      </biblio:foreachFiniteResourceHasPartIterator>
       <biblio:foreachFiniteResourceIsUnionOfIterator>
          <tr><td>isUnionOf</td><td><a href="../<biblio:FiniteResourceIsUnionOfType/>/<biblio:FiniteResourceIsUnionOfType/>.jsp?uri=<biblio:FiniteResourceIsUnionOf/>"><biblio:FiniteResourceIsUnionOf /></a></td></tr>
       </biblio:foreachFiniteResourceIsUnionOfIterator>

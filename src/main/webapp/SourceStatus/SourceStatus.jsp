@@ -34,10 +34,19 @@
       <biblio:foreachSourceStatusIsSourceStatusOfIterator>
          <tr><td>isSourceStatusOf</td><td><a href="../<biblio:SourceStatusIsSourceStatusOfType/>/<biblio:SourceStatusIsSourceStatusOfType/>.jsp?uri=<biblio:SourceStatusIsSourceStatusOf/>"><biblio:SourceStatusIsSourceStatusOf /></a></td></tr>
       </biblio:foreachSourceStatusIsSourceStatusOfIterator>
+      <biblio:foreachSourceStatusSemanticRelationIterator>
+         <tr><td>semanticRelation</td><td><a href="../<biblio:SourceStatusSemanticRelationType/>/<biblio:SourceStatusSemanticRelationType/>.jsp?uri=<biblio:SourceStatusSemanticRelation/>"><biblio:SourceStatusSemanticRelation /></a></td></tr>
+      </biblio:foreachSourceStatusSemanticRelationIterator>
+      <biblio:foreachSourceStatusTopConceptOfIterator>
+         <tr><td>topConceptOf</td><td><a href="../<biblio:SourceStatusTopConceptOfType/>/<biblio:SourceStatusTopConceptOfType/>.jsp?uri=<biblio:SourceStatusTopConceptOf/>"><biblio:SourceStatusTopConceptOf /></a></td></tr>
+      </biblio:foreachSourceStatusTopConceptOfIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
+      <biblio:foreachSourceStatusMemberInverseIterator>
+         <tr><td>member</td><td><a href="../<biblio:SourceStatusMemberInverseType/>/<biblio:SourceStatusMemberInverseType/>.jsp?uri=<biblio:SourceStatusMemberInverse/>"><biblio:SourceStatusMemberInverse/></a></td></tr>
+      </biblio:foreachSourceStatusMemberInverseIterator>
       <biblio:foreachSourceStatusHasGenreInverseIterator>
          <tr><td>hasGenre</td><td><a href="../<biblio:SourceStatusHasGenreInverseType/>/<biblio:SourceStatusHasGenreInverseType/>.jsp?uri=<biblio:SourceStatusHasGenreInverse/>"><biblio:SourceStatusHasGenreInverse/></a></td></tr>
       </biblio:foreachSourceStatusHasGenreInverseIterator>

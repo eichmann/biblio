@@ -34,10 +34,19 @@
       <biblio:foreachLccShelfMarkIsClassificationForIterator>
          <tr><td>isClassificationFor</td><td><a href="../<biblio:LccShelfMarkIsClassificationForType/>/<biblio:LccShelfMarkIsClassificationForType/>.jsp?uri=<biblio:LccShelfMarkIsClassificationFor/>"><biblio:LccShelfMarkIsClassificationFor /></a></td></tr>
       </biblio:foreachLccShelfMarkIsClassificationForIterator>
+      <biblio:foreachLccShelfMarkSemanticRelationIterator>
+         <tr><td>semanticRelation</td><td><a href="../<biblio:LccShelfMarkSemanticRelationType/>/<biblio:LccShelfMarkSemanticRelationType/>.jsp?uri=<biblio:LccShelfMarkSemanticRelation/>"><biblio:LccShelfMarkSemanticRelation /></a></td></tr>
+      </biblio:foreachLccShelfMarkSemanticRelationIterator>
+      <biblio:foreachLccShelfMarkTopConceptOfIterator>
+         <tr><td>topConceptOf</td><td><a href="../<biblio:LccShelfMarkTopConceptOfType/>/<biblio:LccShelfMarkTopConceptOfType/>.jsp?uri=<biblio:LccShelfMarkTopConceptOf/>"><biblio:LccShelfMarkTopConceptOf /></a></td></tr>
+      </biblio:foreachLccShelfMarkTopConceptOfIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
+      <biblio:foreachLccShelfMarkMemberInverseIterator>
+         <tr><td>member</td><td><a href="../<biblio:LccShelfMarkMemberInverseType/>/<biblio:LccShelfMarkMemberInverseType/>.jsp?uri=<biblio:LccShelfMarkMemberInverse/>"><biblio:LccShelfMarkMemberInverse/></a></td></tr>
+      </biblio:foreachLccShelfMarkMemberInverseIterator>
       <biblio:foreachLccShelfMarkHasGenreInverseIterator>
          <tr><td>hasGenre</td><td><a href="../<biblio:LccShelfMarkHasGenreInverseType/>/<biblio:LccShelfMarkHasGenreInverseType/>.jsp?uri=<biblio:LccShelfMarkHasGenreInverse/>"><biblio:LccShelfMarkHasGenreInverse/></a></td></tr>
       </biblio:foreachLccShelfMarkHasGenreInverseIterator>

@@ -34,10 +34,19 @@
       <biblio:foreachUdcClassificationIsClassificationForIterator>
          <tr><td>isClassificationFor</td><td><a href="../<biblio:UdcClassificationIsClassificationForType/>/<biblio:UdcClassificationIsClassificationForType/>.jsp?uri=<biblio:UdcClassificationIsClassificationFor/>"><biblio:UdcClassificationIsClassificationFor /></a></td></tr>
       </biblio:foreachUdcClassificationIsClassificationForIterator>
+      <biblio:foreachUdcClassificationSemanticRelationIterator>
+         <tr><td>semanticRelation</td><td><a href="../<biblio:UdcClassificationSemanticRelationType/>/<biblio:UdcClassificationSemanticRelationType/>.jsp?uri=<biblio:UdcClassificationSemanticRelation/>"><biblio:UdcClassificationSemanticRelation /></a></td></tr>
+      </biblio:foreachUdcClassificationSemanticRelationIterator>
+      <biblio:foreachUdcClassificationTopConceptOfIterator>
+         <tr><td>topConceptOf</td><td><a href="../<biblio:UdcClassificationTopConceptOfType/>/<biblio:UdcClassificationTopConceptOfType/>.jsp?uri=<biblio:UdcClassificationTopConceptOf/>"><biblio:UdcClassificationTopConceptOf /></a></td></tr>
+      </biblio:foreachUdcClassificationTopConceptOfIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
+      <biblio:foreachUdcClassificationMemberInverseIterator>
+         <tr><td>member</td><td><a href="../<biblio:UdcClassificationMemberInverseType/>/<biblio:UdcClassificationMemberInverseType/>.jsp?uri=<biblio:UdcClassificationMemberInverse/>"><biblio:UdcClassificationMemberInverse/></a></td></tr>
+      </biblio:foreachUdcClassificationMemberInverseIterator>
       <biblio:foreachUdcClassificationHasGenreInverseIterator>
          <tr><td>hasGenre</td><td><a href="../<biblio:UdcClassificationHasGenreInverseType/>/<biblio:UdcClassificationHasGenreInverseType/>.jsp?uri=<biblio:UdcClassificationHasGenreInverse/>"><biblio:UdcClassificationHasGenreInverse/></a></td></tr>
       </biblio:foreachUdcClassificationHasGenreInverseIterator>

@@ -216,8 +216,12 @@ src/main/webapp/NotatedMovement/NotatedMovement.jsp -text
 src/main/webapp/NotatedMovement/NotatedMovementList.jsp -text
 src/main/webapp/NotatedMusic/NotatedMusic.jsp -text
 src/main/webapp/NotatedMusic/NotatedMusicList.jsp -text
+src/main/webapp/Nothing/Nothing.jsp -text
+src/main/webapp/Nothing/NothingList.jsp -text
 src/main/webapp/OclcIdentifier/OclcIdentifier.jsp -text
 src/main/webapp/OclcIdentifier/OclcIdentifierList.jsp -text
+src/main/webapp/OrderedCollection/OrderedCollection.jsp -text
+src/main/webapp/OrderedCollection/OrderedCollectionList.jsp -text
 src/main/webapp/Organization/Organization.jsp -text
 src/main/webapp/Organization/OrganizationList.jsp -text
 src/main/webapp/Organization/altOrganization.jsp -text
@@ -286,6 +290,8 @@ src/main/webapp/TemporalEntity/TemporalEntity.jsp -text
 src/main/webapp/TemporalEntity/TemporalEntityList.jsp -text
 src/main/webapp/Text/Text.jsp -text
 src/main/webapp/Text/TextList.jsp -text
+src/main/webapp/Thing/Thing.jsp -text
+src/main/webapp/Thing/ThingList.jsp -text
 src/main/webapp/ThreeDimensionalObject/ThreeDimensionalObject.jsp -text
 src/main/webapp/ThreeDimensionalObject/ThreeDimensionalObjectList.jsp -text
 src/main/webapp/Title/Title.jsp -text

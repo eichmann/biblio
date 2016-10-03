@@ -49,6 +49,9 @@
       <biblio:foreachPolicySetHasRetentionPolicyIterator>
          <tr><td>hasRetentionPolicy</td><td><a href="../<biblio:PolicySetHasRetentionPolicyType/>/<biblio:PolicySetHasRetentionPolicyType/>.jsp?uri=<biblio:PolicySetHasRetentionPolicy/>"><biblio:PolicySetHasRetentionPolicy /></a></td></tr>
       </biblio:foreachPolicySetHasRetentionPolicyIterator>
+      <biblio:foreachPolicySetMemberIterator>
+         <tr><td>member</td><td><a href="../<biblio:PolicySetMemberType/>/<biblio:PolicySetMemberType/>.jsp?uri=<biblio:PolicySetMember/>"><biblio:PolicySetMember /></a></td></tr>
+      </biblio:foreachPolicySetMemberIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>

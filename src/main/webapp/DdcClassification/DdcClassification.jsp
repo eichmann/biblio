@@ -31,6 +31,12 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachDdcClassificationSemanticRelationIterator>
+         <tr><td>semanticRelation</td><td><a href="../<biblio:DdcClassificationSemanticRelationType/>/<biblio:DdcClassificationSemanticRelationType/>.jsp?uri=<biblio:DdcClassificationSemanticRelation/>"><biblio:DdcClassificationSemanticRelation /></a></td></tr>
+      </biblio:foreachDdcClassificationSemanticRelationIterator>
+      <biblio:foreachDdcClassificationTopConceptOfIterator>
+         <tr><td>topConceptOf</td><td><a href="../<biblio:DdcClassificationTopConceptOfType/>/<biblio:DdcClassificationTopConceptOfType/>.jsp?uri=<biblio:DdcClassificationTopConceptOf/>"><biblio:DdcClassificationTopConceptOf /></a></td></tr>
+      </biblio:foreachDdcClassificationTopConceptOfIterator>
       <biblio:foreachDdcClassificationIsClassificationForIterator>
          <tr><td>isClassificationFor</td><td><a href="../<biblio:DdcClassificationIsClassificationForType/>/<biblio:DdcClassificationIsClassificationForType/>.jsp?uri=<biblio:DdcClassificationIsClassificationFor/>"><biblio:DdcClassificationIsClassificationFor /></a></td></tr>
       </biblio:foreachDdcClassificationIsClassificationForIterator>
@@ -38,6 +44,9 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
+      <biblio:foreachDdcClassificationMemberInverseIterator>
+         <tr><td>member</td><td><a href="../<biblio:DdcClassificationMemberInverseType/>/<biblio:DdcClassificationMemberInverseType/>.jsp?uri=<biblio:DdcClassificationMemberInverse/>"><biblio:DdcClassificationMemberInverse/></a></td></tr>
+      </biblio:foreachDdcClassificationMemberInverseIterator>
       <biblio:foreachDdcClassificationHasGenreInverseIterator>
          <tr><td>hasGenre</td><td><a href="../<biblio:DdcClassificationHasGenreInverseType/>/<biblio:DdcClassificationHasGenreInverseType/>.jsp?uri=<biblio:DdcClassificationHasGenreInverse/>"><biblio:DdcClassificationHasGenreInverse/></a></td></tr>
       </biblio:foreachDdcClassificationHasGenreInverseIterator>

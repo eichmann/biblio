@@ -31,10 +31,19 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachConceptSemanticRelationIterator>
+         <tr><td>semanticRelation</td><td><a href="../<biblio:ConceptSemanticRelationType/>/<biblio:ConceptSemanticRelationType/>.jsp?uri=<biblio:ConceptSemanticRelation/>"><biblio:ConceptSemanticRelation /></a></td></tr>
+      </biblio:foreachConceptSemanticRelationIterator>
+      <biblio:foreachConceptTopConceptOfIterator>
+         <tr><td>topConceptOf</td><td><a href="../<biblio:ConceptTopConceptOfType/>/<biblio:ConceptTopConceptOfType/>.jsp?uri=<biblio:ConceptTopConceptOf/>"><biblio:ConceptTopConceptOf /></a></td></tr>
+      </biblio:foreachConceptTopConceptOfIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
+      <biblio:foreachConceptMemberInverseIterator>
+         <tr><td>member</td><td><a href="../<biblio:ConceptMemberInverseType/>/<biblio:ConceptMemberInverseType/>.jsp?uri=<biblio:ConceptMemberInverse/>"><biblio:ConceptMemberInverse/></a></td></tr>
+      </biblio:foreachConceptMemberInverseIterator>
       <biblio:foreachConceptHasGenreInverseIterator>
          <tr><td>hasGenre</td><td><a href="../<biblio:ConceptHasGenreInverseType/>/<biblio:ConceptHasGenreInverseType/>.jsp?uri=<biblio:ConceptHasGenreInverse/>"><biblio:ConceptHasGenreInverse/></a></td></tr>
       </biblio:foreachConceptHasGenreInverseIterator>

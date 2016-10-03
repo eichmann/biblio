@@ -46,12 +46,18 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachNotatedMovementPerformedAtIterator>
-         <tr><td>performedAt</td><td><a href="../<biblio:NotatedMovementPerformedAtType/>/<biblio:NotatedMovementPerformedAtType/>.jsp?uri=<biblio:NotatedMovementPerformedAt/>"><biblio:NotatedMovementPerformedAt /></a></td></tr>
-      </biblio:foreachNotatedMovementPerformedAtIterator>
+      <biblio:foreachNotatedMovementHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:NotatedMovementHasPartType/>/<biblio:NotatedMovementHasPartType/>.jsp?uri=<biblio:NotatedMovementHasPart/>"><biblio:NotatedMovementHasPart /></a></td></tr>
+      </biblio:foreachNotatedMovementHasPartIterator>
+      <biblio:foreachNotatedMovementLanguageIterator>
+         <tr><td>language</td><td><a href="../<biblio:NotatedMovementLanguageType/>/<biblio:NotatedMovementLanguageType/>.jsp?uri=<biblio:NotatedMovementLanguage/>"><biblio:NotatedMovementLanguage /></a></td></tr>
+      </biblio:foreachNotatedMovementLanguageIterator>
       <biblio:foreachNotatedMovementIsPartOfIterator>
          <tr><td>isPartOf</td><td><a href="../<biblio:NotatedMovementIsPartOfType/>/<biblio:NotatedMovementIsPartOfType/>.jsp?uri=<biblio:NotatedMovementIsPartOf/>"><biblio:NotatedMovementIsPartOf /></a></td></tr>
       </biblio:foreachNotatedMovementIsPartOfIterator>
+      <biblio:foreachNotatedMovementPerformedAtIterator>
+         <tr><td>performedAt</td><td><a href="../<biblio:NotatedMovementPerformedAtType/>/<biblio:NotatedMovementPerformedAtType/>.jsp?uri=<biblio:NotatedMovementPerformedAt/>"><biblio:NotatedMovementPerformedAt /></a></td></tr>
+      </biblio:foreachNotatedMovementPerformedAtIterator>
       <biblio:foreachNotatedMovementFollowsInNarrativeIterator>
          <tr><td>followsInNarrative</td><td><a href="../<biblio:NotatedMovementFollowsInNarrativeType/>/<biblio:NotatedMovementFollowsInNarrativeType/>.jsp?uri=<biblio:NotatedMovementFollowsInNarrative/>"><biblio:NotatedMovementFollowsInNarrative /></a></td></tr>
       </biblio:foreachNotatedMovementFollowsInNarrativeIterator>
@@ -124,9 +130,6 @@
       <biblio:foreachNotatedMovementIsExpressionOfIterator>
          <tr><td>isExpressionOf</td><td><a href="../<biblio:NotatedMovementIsExpressionOfType/>/<biblio:NotatedMovementIsExpressionOfType/>.jsp?uri=<biblio:NotatedMovementIsExpressionOf/>"><biblio:NotatedMovementIsExpressionOf /></a></td></tr>
       </biblio:foreachNotatedMovementIsExpressionOfIterator>
-      <biblio:foreachNotatedMovementLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:NotatedMovementLanguageType/>/<biblio:NotatedMovementLanguageType/>.jsp?uri=<biblio:NotatedMovementLanguage/>"><biblio:NotatedMovementLanguage /></a></td></tr>
-      </biblio:foreachNotatedMovementLanguageIterator>
       <biblio:foreachNotatedMovementSupplementsIterator>
          <tr><td>supplements</td><td><a href="../<biblio:NotatedMovementSupplementsType/>/<biblio:NotatedMovementSupplementsType/>.jsp?uri=<biblio:NotatedMovementSupplements/>"><biblio:NotatedMovementSupplements /></a></td></tr>
       </biblio:foreachNotatedMovementSupplementsIterator>
@@ -172,9 +175,6 @@
       <biblio:foreachNotatedMovementCreatedForDegreeIterator>
          <tr><td>createdForDegree</td><td><a href="../<biblio:NotatedMovementCreatedForDegreeType/>/<biblio:NotatedMovementCreatedForDegreeType/>.jsp?uri=<biblio:NotatedMovementCreatedForDegree/>"><biblio:NotatedMovementCreatedForDegree /></a></td></tr>
       </biblio:foreachNotatedMovementCreatedForDegreeIterator>
-      <biblio:foreachNotatedMovementHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:NotatedMovementHasPartType/>/<biblio:NotatedMovementHasPartType/>.jsp?uri=<biblio:NotatedMovementHasPart/>"><biblio:NotatedMovementHasPart /></a></td></tr>
-      </biblio:foreachNotatedMovementHasPartIterator>
       <biblio:foreachNotatedMovementIsUnionOfIterator>
          <tr><td>isUnionOf</td><td><a href="../<biblio:NotatedMovementIsUnionOfType/>/<biblio:NotatedMovementIsUnionOfType/>.jsp?uri=<biblio:NotatedMovementIsUnionOf/>"><biblio:NotatedMovementIsUnionOf /></a></td></tr>
       </biblio:foreachNotatedMovementIsUnionOfIterator>

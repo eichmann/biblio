@@ -46,12 +46,18 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachMultipartMonographPerformedAtIterator>
-         <tr><td>performedAt</td><td><a href="../<biblio:MultipartMonographPerformedAtType/>/<biblio:MultipartMonographPerformedAtType/>.jsp?uri=<biblio:MultipartMonographPerformedAt/>"><biblio:MultipartMonographPerformedAt /></a></td></tr>
-      </biblio:foreachMultipartMonographPerformedAtIterator>
+      <biblio:foreachMultipartMonographHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:MultipartMonographHasPartType/>/<biblio:MultipartMonographHasPartType/>.jsp?uri=<biblio:MultipartMonographHasPart/>"><biblio:MultipartMonographHasPart /></a></td></tr>
+      </biblio:foreachMultipartMonographHasPartIterator>
+      <biblio:foreachMultipartMonographLanguageIterator>
+         <tr><td>language</td><td><a href="../<biblio:MultipartMonographLanguageType/>/<biblio:MultipartMonographLanguageType/>.jsp?uri=<biblio:MultipartMonographLanguage/>"><biblio:MultipartMonographLanguage /></a></td></tr>
+      </biblio:foreachMultipartMonographLanguageIterator>
       <biblio:foreachMultipartMonographIsPartOfIterator>
          <tr><td>isPartOf</td><td><a href="../<biblio:MultipartMonographIsPartOfType/>/<biblio:MultipartMonographIsPartOfType/>.jsp?uri=<biblio:MultipartMonographIsPartOf/>"><biblio:MultipartMonographIsPartOf /></a></td></tr>
       </biblio:foreachMultipartMonographIsPartOfIterator>
+      <biblio:foreachMultipartMonographPerformedAtIterator>
+         <tr><td>performedAt</td><td><a href="../<biblio:MultipartMonographPerformedAtType/>/<biblio:MultipartMonographPerformedAtType/>.jsp?uri=<biblio:MultipartMonographPerformedAt/>"><biblio:MultipartMonographPerformedAt /></a></td></tr>
+      </biblio:foreachMultipartMonographPerformedAtIterator>
       <biblio:foreachMultipartMonographFollowsInNarrativeIterator>
          <tr><td>followsInNarrative</td><td><a href="../<biblio:MultipartMonographFollowsInNarrativeType/>/<biblio:MultipartMonographFollowsInNarrativeType/>.jsp?uri=<biblio:MultipartMonographFollowsInNarrative/>"><biblio:MultipartMonographFollowsInNarrative /></a></td></tr>
       </biblio:foreachMultipartMonographFollowsInNarrativeIterator>
@@ -124,9 +130,6 @@
       <biblio:foreachMultipartMonographIsExpressionOfIterator>
          <tr><td>isExpressionOf</td><td><a href="../<biblio:MultipartMonographIsExpressionOfType/>/<biblio:MultipartMonographIsExpressionOfType/>.jsp?uri=<biblio:MultipartMonographIsExpressionOf/>"><biblio:MultipartMonographIsExpressionOf /></a></td></tr>
       </biblio:foreachMultipartMonographIsExpressionOfIterator>
-      <biblio:foreachMultipartMonographLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:MultipartMonographLanguageType/>/<biblio:MultipartMonographLanguageType/>.jsp?uri=<biblio:MultipartMonographLanguage/>"><biblio:MultipartMonographLanguage /></a></td></tr>
-      </biblio:foreachMultipartMonographLanguageIterator>
       <biblio:foreachMultipartMonographSupplementsIterator>
          <tr><td>supplements</td><td><a href="../<biblio:MultipartMonographSupplementsType/>/<biblio:MultipartMonographSupplementsType/>.jsp?uri=<biblio:MultipartMonographSupplements/>"><biblio:MultipartMonographSupplements /></a></td></tr>
       </biblio:foreachMultipartMonographSupplementsIterator>
@@ -172,24 +175,21 @@
       <biblio:foreachMultipartMonographCreatedForDegreeIterator>
          <tr><td>createdForDegree</td><td><a href="../<biblio:MultipartMonographCreatedForDegreeType/>/<biblio:MultipartMonographCreatedForDegreeType/>.jsp?uri=<biblio:MultipartMonographCreatedForDegree/>"><biblio:MultipartMonographCreatedForDegree /></a></td></tr>
       </biblio:foreachMultipartMonographCreatedForDegreeIterator>
-      <biblio:foreachMultipartMonographHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:MultipartMonographHasPartType/>/<biblio:MultipartMonographHasPartType/>.jsp?uri=<biblio:MultipartMonographHasPart/>"><biblio:MultipartMonographHasPart /></a></td></tr>
-      </biblio:foreachMultipartMonographHasPartIterator>
       <biblio:foreachMultipartMonographIsUnionOfIterator>
          <tr><td>isUnionOf</td><td><a href="../<biblio:MultipartMonographIsUnionOfType/>/<biblio:MultipartMonographIsUnionOfType/>.jsp?uri=<biblio:MultipartMonographIsUnionOf/>"><biblio:MultipartMonographIsUnionOf /></a></td></tr>
       </biblio:foreachMultipartMonographIsUnionOfIterator>
-      <biblio:foreachMultipartMonographIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:MultipartMonographIdentifiedByType/>/<biblio:MultipartMonographIdentifiedByType/>.jsp?uri=<biblio:MultipartMonographIdentifiedBy/>"><biblio:MultipartMonographIdentifiedBy /></a></td></tr>
-      </biblio:foreachMultipartMonographIdentifiedByIterator>
-      <biblio:foreachMultipartMonographSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:MultipartMonographSubjectType/>/<biblio:MultipartMonographSubjectType/>.jsp?uri=<biblio:MultipartMonographSubject/>"><biblio:MultipartMonographSubject /></a></td></tr>
-      </biblio:foreachMultipartMonographSubjectIterator>
-      <biblio:foreachMultipartMonographHasAnnotationIterator>
-         <tr><td>hasAnnotation</td><td><a href="../<biblio:MultipartMonographHasAnnotationType/>/<biblio:MultipartMonographHasAnnotationType/>.jsp?uri=<biblio:MultipartMonographHasAnnotation/>"><biblio:MultipartMonographHasAnnotation /></a></td></tr>
-      </biblio:foreachMultipartMonographHasAnnotationIterator>
       <biblio:foreachMultipartMonographRelationIterator>
          <tr><td>relation</td><td><a href="../<biblio:MultipartMonographRelationType/>/<biblio:MultipartMonographRelationType/>.jsp?uri=<biblio:MultipartMonographRelation/>"><biblio:MultipartMonographRelation /></a></td></tr>
       </biblio:foreachMultipartMonographRelationIterator>
+      <biblio:foreachMultipartMonographSubjectIterator>
+         <tr><td>subject</td><td><a href="../<biblio:MultipartMonographSubjectType/>/<biblio:MultipartMonographSubjectType/>.jsp?uri=<biblio:MultipartMonographSubject/>"><biblio:MultipartMonographSubject /></a></td></tr>
+      </biblio:foreachMultipartMonographSubjectIterator>
+      <biblio:foreachMultipartMonographIdentifiedByIterator>
+         <tr><td>identifiedBy</td><td><a href="../<biblio:MultipartMonographIdentifiedByType/>/<biblio:MultipartMonographIdentifiedByType/>.jsp?uri=<biblio:MultipartMonographIdentifiedBy/>"><biblio:MultipartMonographIdentifiedBy /></a></td></tr>
+      </biblio:foreachMultipartMonographIdentifiedByIterator>
+      <biblio:foreachMultipartMonographHasAnnotationIterator>
+         <tr><td>hasAnnotation</td><td><a href="../<biblio:MultipartMonographHasAnnotationType/>/<biblio:MultipartMonographHasAnnotationType/>.jsp?uri=<biblio:MultipartMonographHasAnnotation/>"><biblio:MultipartMonographHasAnnotation /></a></td></tr>
+      </biblio:foreachMultipartMonographHasAnnotationIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>

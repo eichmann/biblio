@@ -46,12 +46,18 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachContinuingResourcePerformedAtIterator>
-         <tr><td>performedAt</td><td><a href="../<biblio:ContinuingResourcePerformedAtType/>/<biblio:ContinuingResourcePerformedAtType/>.jsp?uri=<biblio:ContinuingResourcePerformedAt/>"><biblio:ContinuingResourcePerformedAt /></a></td></tr>
-      </biblio:foreachContinuingResourcePerformedAtIterator>
+      <biblio:foreachContinuingResourceHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:ContinuingResourceHasPartType/>/<biblio:ContinuingResourceHasPartType/>.jsp?uri=<biblio:ContinuingResourceHasPart/>"><biblio:ContinuingResourceHasPart /></a></td></tr>
+      </biblio:foreachContinuingResourceHasPartIterator>
+      <biblio:foreachContinuingResourceLanguageIterator>
+         <tr><td>language</td><td><a href="../<biblio:ContinuingResourceLanguageType/>/<biblio:ContinuingResourceLanguageType/>.jsp?uri=<biblio:ContinuingResourceLanguage/>"><biblio:ContinuingResourceLanguage /></a></td></tr>
+      </biblio:foreachContinuingResourceLanguageIterator>
       <biblio:foreachContinuingResourceIsPartOfIterator>
          <tr><td>isPartOf</td><td><a href="../<biblio:ContinuingResourceIsPartOfType/>/<biblio:ContinuingResourceIsPartOfType/>.jsp?uri=<biblio:ContinuingResourceIsPartOf/>"><biblio:ContinuingResourceIsPartOf /></a></td></tr>
       </biblio:foreachContinuingResourceIsPartOfIterator>
+      <biblio:foreachContinuingResourcePerformedAtIterator>
+         <tr><td>performedAt</td><td><a href="../<biblio:ContinuingResourcePerformedAtType/>/<biblio:ContinuingResourcePerformedAtType/>.jsp?uri=<biblio:ContinuingResourcePerformedAt/>"><biblio:ContinuingResourcePerformedAt /></a></td></tr>
+      </biblio:foreachContinuingResourcePerformedAtIterator>
       <biblio:foreachContinuingResourceFollowsInNarrativeIterator>
          <tr><td>followsInNarrative</td><td><a href="../<biblio:ContinuingResourceFollowsInNarrativeType/>/<biblio:ContinuingResourceFollowsInNarrativeType/>.jsp?uri=<biblio:ContinuingResourceFollowsInNarrative/>"><biblio:ContinuingResourceFollowsInNarrative /></a></td></tr>
       </biblio:foreachContinuingResourceFollowsInNarrativeIterator>
@@ -124,9 +130,6 @@
       <biblio:foreachContinuingResourceIsExpressionOfIterator>
          <tr><td>isExpressionOf</td><td><a href="../<biblio:ContinuingResourceIsExpressionOfType/>/<biblio:ContinuingResourceIsExpressionOfType/>.jsp?uri=<biblio:ContinuingResourceIsExpressionOf/>"><biblio:ContinuingResourceIsExpressionOf /></a></td></tr>
       </biblio:foreachContinuingResourceIsExpressionOfIterator>
-      <biblio:foreachContinuingResourceLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:ContinuingResourceLanguageType/>/<biblio:ContinuingResourceLanguageType/>.jsp?uri=<biblio:ContinuingResourceLanguage/>"><biblio:ContinuingResourceLanguage /></a></td></tr>
-      </biblio:foreachContinuingResourceLanguageIterator>
       <biblio:foreachContinuingResourceSupplementsIterator>
          <tr><td>supplements</td><td><a href="../<biblio:ContinuingResourceSupplementsType/>/<biblio:ContinuingResourceSupplementsType/>.jsp?uri=<biblio:ContinuingResourceSupplements/>"><biblio:ContinuingResourceSupplements /></a></td></tr>
       </biblio:foreachContinuingResourceSupplementsIterator>
@@ -172,9 +175,6 @@
       <biblio:foreachContinuingResourceCreatedForDegreeIterator>
          <tr><td>createdForDegree</td><td><a href="../<biblio:ContinuingResourceCreatedForDegreeType/>/<biblio:ContinuingResourceCreatedForDegreeType/>.jsp?uri=<biblio:ContinuingResourceCreatedForDegree/>"><biblio:ContinuingResourceCreatedForDegree /></a></td></tr>
       </biblio:foreachContinuingResourceCreatedForDegreeIterator>
-      <biblio:foreachContinuingResourceHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:ContinuingResourceHasPartType/>/<biblio:ContinuingResourceHasPartType/>.jsp?uri=<biblio:ContinuingResourceHasPart/>"><biblio:ContinuingResourceHasPart /></a></td></tr>
-      </biblio:foreachContinuingResourceHasPartIterator>
       <biblio:foreachContinuingResourceIsUnionOfIterator>
          <tr><td>isUnionOf</td><td><a href="../<biblio:ContinuingResourceIsUnionOfType/>/<biblio:ContinuingResourceIsUnionOfType/>.jsp?uri=<biblio:ContinuingResourceIsUnionOf/>"><biblio:ContinuingResourceIsUnionOf /></a></td></tr>
       </biblio:foreachContinuingResourceIsUnionOfIterator>

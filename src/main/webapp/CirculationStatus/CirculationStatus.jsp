@@ -31,10 +31,19 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachCirculationStatusSemanticRelationIterator>
+         <tr><td>semanticRelation</td><td><a href="../<biblio:CirculationStatusSemanticRelationType/>/<biblio:CirculationStatusSemanticRelationType/>.jsp?uri=<biblio:CirculationStatusSemanticRelation/>"><biblio:CirculationStatusSemanticRelation /></a></td></tr>
+      </biblio:foreachCirculationStatusSemanticRelationIterator>
+      <biblio:foreachCirculationStatusTopConceptOfIterator>
+         <tr><td>topConceptOf</td><td><a href="../<biblio:CirculationStatusTopConceptOfType/>/<biblio:CirculationStatusTopConceptOfType/>.jsp?uri=<biblio:CirculationStatusTopConceptOf/>"><biblio:CirculationStatusTopConceptOf /></a></td></tr>
+      </biblio:foreachCirculationStatusTopConceptOfIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
+      <biblio:foreachCirculationStatusMemberInverseIterator>
+         <tr><td>member</td><td><a href="../<biblio:CirculationStatusMemberInverseType/>/<biblio:CirculationStatusMemberInverseType/>.jsp?uri=<biblio:CirculationStatusMemberInverse/>"><biblio:CirculationStatusMemberInverse/></a></td></tr>
+      </biblio:foreachCirculationStatusMemberInverseIterator>
       <biblio:foreachCirculationStatusHasGenreInverseIterator>
          <tr><td>hasGenre</td><td><a href="../<biblio:CirculationStatusHasGenreInverseType/>/<biblio:CirculationStatusHasGenreInverseType/>.jsp?uri=<biblio:CirculationStatusHasGenreInverse/>"><biblio:CirculationStatusHasGenreInverse/></a></td></tr>
       </biblio:foreachCirculationStatusHasGenreInverseIterator>

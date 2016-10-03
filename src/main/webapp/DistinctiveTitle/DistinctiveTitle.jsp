@@ -31,6 +31,9 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachDistinctiveTitleHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:DistinctiveTitleHasPartType/>/<biblio:DistinctiveTitleHasPartType/>.jsp?uri=<biblio:DistinctiveTitleHasPart/>"><biblio:DistinctiveTitleHasPart /></a></td></tr>
+      </biblio:foreachDistinctiveTitleHasPartIterator>
       <biblio:foreachDistinctiveTitleIsTitleOfIterator>
          <tr><td>isTitleOf</td><td><a href="../<biblio:DistinctiveTitleIsTitleOfType/>/<biblio:DistinctiveTitleIsTitleOfType/>.jsp?uri=<biblio:DistinctiveTitleIsTitleOf/>"><biblio:DistinctiveTitleIsTitleOf /></a></td></tr>
       </biblio:foreachDistinctiveTitleIsTitleOfIterator>
@@ -46,9 +49,6 @@
       <biblio:foreachDistinctiveTitleDerivedFromIterator>
          <tr><td>derivedFrom</td><td><a href="../<biblio:DistinctiveTitleDerivedFromType/>/<biblio:DistinctiveTitleDerivedFromType/>.jsp?uri=<biblio:DistinctiveTitleDerivedFrom/>"><biblio:DistinctiveTitleDerivedFrom /></a></td></tr>
       </biblio:foreachDistinctiveTitleDerivedFromIterator>
-      <biblio:foreachDistinctiveTitleHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:DistinctiveTitleHasPartType/>/<biblio:DistinctiveTitleHasPartType/>.jsp?uri=<biblio:DistinctiveTitleHasPart/>"><biblio:DistinctiveTitleHasPart /></a></td></tr>
-      </biblio:foreachDistinctiveTitleHasPartIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>

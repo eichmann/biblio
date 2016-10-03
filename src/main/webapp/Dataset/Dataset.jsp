@@ -46,12 +46,18 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachDatasetPerformedAtIterator>
-         <tr><td>performedAt</td><td><a href="../<biblio:DatasetPerformedAtType/>/<biblio:DatasetPerformedAtType/>.jsp?uri=<biblio:DatasetPerformedAt/>"><biblio:DatasetPerformedAt /></a></td></tr>
-      </biblio:foreachDatasetPerformedAtIterator>
+      <biblio:foreachDatasetHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:DatasetHasPartType/>/<biblio:DatasetHasPartType/>.jsp?uri=<biblio:DatasetHasPart/>"><biblio:DatasetHasPart /></a></td></tr>
+      </biblio:foreachDatasetHasPartIterator>
+      <biblio:foreachDatasetLanguageIterator>
+         <tr><td>language</td><td><a href="../<biblio:DatasetLanguageType/>/<biblio:DatasetLanguageType/>.jsp?uri=<biblio:DatasetLanguage/>"><biblio:DatasetLanguage /></a></td></tr>
+      </biblio:foreachDatasetLanguageIterator>
       <biblio:foreachDatasetIsPartOfIterator>
          <tr><td>isPartOf</td><td><a href="../<biblio:DatasetIsPartOfType/>/<biblio:DatasetIsPartOfType/>.jsp?uri=<biblio:DatasetIsPartOf/>"><biblio:DatasetIsPartOf /></a></td></tr>
       </biblio:foreachDatasetIsPartOfIterator>
+      <biblio:foreachDatasetPerformedAtIterator>
+         <tr><td>performedAt</td><td><a href="../<biblio:DatasetPerformedAtType/>/<biblio:DatasetPerformedAtType/>.jsp?uri=<biblio:DatasetPerformedAt/>"><biblio:DatasetPerformedAt /></a></td></tr>
+      </biblio:foreachDatasetPerformedAtIterator>
       <biblio:foreachDatasetFollowsInNarrativeIterator>
          <tr><td>followsInNarrative</td><td><a href="../<biblio:DatasetFollowsInNarrativeType/>/<biblio:DatasetFollowsInNarrativeType/>.jsp?uri=<biblio:DatasetFollowsInNarrative/>"><biblio:DatasetFollowsInNarrative /></a></td></tr>
       </biblio:foreachDatasetFollowsInNarrativeIterator>
@@ -124,9 +130,6 @@
       <biblio:foreachDatasetIsExpressionOfIterator>
          <tr><td>isExpressionOf</td><td><a href="../<biblio:DatasetIsExpressionOfType/>/<biblio:DatasetIsExpressionOfType/>.jsp?uri=<biblio:DatasetIsExpressionOf/>"><biblio:DatasetIsExpressionOf /></a></td></tr>
       </biblio:foreachDatasetIsExpressionOfIterator>
-      <biblio:foreachDatasetLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:DatasetLanguageType/>/<biblio:DatasetLanguageType/>.jsp?uri=<biblio:DatasetLanguage/>"><biblio:DatasetLanguage /></a></td></tr>
-      </biblio:foreachDatasetLanguageIterator>
       <biblio:foreachDatasetSupplementsIterator>
          <tr><td>supplements</td><td><a href="../<biblio:DatasetSupplementsType/>/<biblio:DatasetSupplementsType/>.jsp?uri=<biblio:DatasetSupplements/>"><biblio:DatasetSupplements /></a></td></tr>
       </biblio:foreachDatasetSupplementsIterator>
@@ -172,9 +175,6 @@
       <biblio:foreachDatasetCreatedForDegreeIterator>
          <tr><td>createdForDegree</td><td><a href="../<biblio:DatasetCreatedForDegreeType/>/<biblio:DatasetCreatedForDegreeType/>.jsp?uri=<biblio:DatasetCreatedForDegree/>"><biblio:DatasetCreatedForDegree /></a></td></tr>
       </biblio:foreachDatasetCreatedForDegreeIterator>
-      <biblio:foreachDatasetHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:DatasetHasPartType/>/<biblio:DatasetHasPartType/>.jsp?uri=<biblio:DatasetHasPart/>"><biblio:DatasetHasPart /></a></td></tr>
-      </biblio:foreachDatasetHasPartIterator>
       <biblio:foreachDatasetIsUnionOfIterator>
          <tr><td>isUnionOf</td><td><a href="../<biblio:DatasetIsUnionOfType/>/<biblio:DatasetIsUnionOfType/>.jsp?uri=<biblio:DatasetIsUnionOf/>"><biblio:DatasetIsUnionOf /></a></td></tr>
       </biblio:foreachDatasetIsUnionOfIterator>

@@ -46,12 +46,18 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachPeriodicalPartPerformedAtIterator>
-         <tr><td>performedAt</td><td><a href="../<biblio:PeriodicalPartPerformedAtType/>/<biblio:PeriodicalPartPerformedAtType/>.jsp?uri=<biblio:PeriodicalPartPerformedAt/>"><biblio:PeriodicalPartPerformedAt /></a></td></tr>
-      </biblio:foreachPeriodicalPartPerformedAtIterator>
+      <biblio:foreachPeriodicalPartHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:PeriodicalPartHasPartType/>/<biblio:PeriodicalPartHasPartType/>.jsp?uri=<biblio:PeriodicalPartHasPart/>"><biblio:PeriodicalPartHasPart /></a></td></tr>
+      </biblio:foreachPeriodicalPartHasPartIterator>
+      <biblio:foreachPeriodicalPartLanguageIterator>
+         <tr><td>language</td><td><a href="../<biblio:PeriodicalPartLanguageType/>/<biblio:PeriodicalPartLanguageType/>.jsp?uri=<biblio:PeriodicalPartLanguage/>"><biblio:PeriodicalPartLanguage /></a></td></tr>
+      </biblio:foreachPeriodicalPartLanguageIterator>
       <biblio:foreachPeriodicalPartIsPartOfIterator>
          <tr><td>isPartOf</td><td><a href="../<biblio:PeriodicalPartIsPartOfType/>/<biblio:PeriodicalPartIsPartOfType/>.jsp?uri=<biblio:PeriodicalPartIsPartOf/>"><biblio:PeriodicalPartIsPartOf /></a></td></tr>
       </biblio:foreachPeriodicalPartIsPartOfIterator>
+      <biblio:foreachPeriodicalPartPerformedAtIterator>
+         <tr><td>performedAt</td><td><a href="../<biblio:PeriodicalPartPerformedAtType/>/<biblio:PeriodicalPartPerformedAtType/>.jsp?uri=<biblio:PeriodicalPartPerformedAt/>"><biblio:PeriodicalPartPerformedAt /></a></td></tr>
+      </biblio:foreachPeriodicalPartPerformedAtIterator>
       <biblio:foreachPeriodicalPartFollowsInNarrativeIterator>
          <tr><td>followsInNarrative</td><td><a href="../<biblio:PeriodicalPartFollowsInNarrativeType/>/<biblio:PeriodicalPartFollowsInNarrativeType/>.jsp?uri=<biblio:PeriodicalPartFollowsInNarrative/>"><biblio:PeriodicalPartFollowsInNarrative /></a></td></tr>
       </biblio:foreachPeriodicalPartFollowsInNarrativeIterator>
@@ -124,9 +130,6 @@
       <biblio:foreachPeriodicalPartIsExpressionOfIterator>
          <tr><td>isExpressionOf</td><td><a href="../<biblio:PeriodicalPartIsExpressionOfType/>/<biblio:PeriodicalPartIsExpressionOfType/>.jsp?uri=<biblio:PeriodicalPartIsExpressionOf/>"><biblio:PeriodicalPartIsExpressionOf /></a></td></tr>
       </biblio:foreachPeriodicalPartIsExpressionOfIterator>
-      <biblio:foreachPeriodicalPartLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:PeriodicalPartLanguageType/>/<biblio:PeriodicalPartLanguageType/>.jsp?uri=<biblio:PeriodicalPartLanguage/>"><biblio:PeriodicalPartLanguage /></a></td></tr>
-      </biblio:foreachPeriodicalPartLanguageIterator>
       <biblio:foreachPeriodicalPartSupplementsIterator>
          <tr><td>supplements</td><td><a href="../<biblio:PeriodicalPartSupplementsType/>/<biblio:PeriodicalPartSupplementsType/>.jsp?uri=<biblio:PeriodicalPartSupplements/>"><biblio:PeriodicalPartSupplements /></a></td></tr>
       </biblio:foreachPeriodicalPartSupplementsIterator>
@@ -172,9 +175,6 @@
       <biblio:foreachPeriodicalPartCreatedForDegreeIterator>
          <tr><td>createdForDegree</td><td><a href="../<biblio:PeriodicalPartCreatedForDegreeType/>/<biblio:PeriodicalPartCreatedForDegreeType/>.jsp?uri=<biblio:PeriodicalPartCreatedForDegree/>"><biblio:PeriodicalPartCreatedForDegree /></a></td></tr>
       </biblio:foreachPeriodicalPartCreatedForDegreeIterator>
-      <biblio:foreachPeriodicalPartHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:PeriodicalPartHasPartType/>/<biblio:PeriodicalPartHasPartType/>.jsp?uri=<biblio:PeriodicalPartHasPart/>"><biblio:PeriodicalPartHasPart /></a></td></tr>
-      </biblio:foreachPeriodicalPartHasPartIterator>
       <biblio:foreachPeriodicalPartIsUnionOfIterator>
          <tr><td>isUnionOf</td><td><a href="../<biblio:PeriodicalPartIsUnionOfType/>/<biblio:PeriodicalPartIsUnionOfType/>.jsp?uri=<biblio:PeriodicalPartIsUnionOf/>"><biblio:PeriodicalPartIsUnionOf /></a></td></tr>
       </biblio:foreachPeriodicalPartIsUnionOfIterator>

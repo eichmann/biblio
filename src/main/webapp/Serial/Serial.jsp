@@ -46,6 +46,15 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachSerialRelationIterator>
+         <tr><td>relation</td><td><a href="../<biblio:SerialRelationType/>/<biblio:SerialRelationType/>.jsp?uri=<biblio:SerialRelation/>"><biblio:SerialRelation /></a></td></tr>
+      </biblio:foreachSerialRelationIterator>
+      <biblio:foreachSerialSubjectIterator>
+         <tr><td>subject</td><td><a href="../<biblio:SerialSubjectType/>/<biblio:SerialSubjectType/>.jsp?uri=<biblio:SerialSubject/>"><biblio:SerialSubject /></a></td></tr>
+      </biblio:foreachSerialSubjectIterator>
+      <biblio:foreachSerialLanguageIterator>
+         <tr><td>language</td><td><a href="../<biblio:SerialLanguageType/>/<biblio:SerialLanguageType/>.jsp?uri=<biblio:SerialLanguage/>"><biblio:SerialLanguage /></a></td></tr>
+      </biblio:foreachSerialLanguageIterator>
       <biblio:foreachSerialIdentifiedByIterator>
          <tr><td>identifiedBy</td><td><a href="../<biblio:SerialIdentifiedByType/>/<biblio:SerialIdentifiedByType/>.jsp?uri=<biblio:SerialIdentifiedBy/>"><biblio:SerialIdentifiedBy /></a></td></tr>
       </biblio:foreachSerialIdentifiedByIterator>
@@ -55,30 +64,24 @@
       <biblio:foreachSerialHasFirstIterator>
          <tr><td>hasFirst</td><td><a href="../<biblio:SerialHasFirstType/>/<biblio:SerialHasFirstType/>.jsp?uri=<biblio:SerialHasFirst/>"><biblio:SerialHasFirst /></a></td></tr>
       </biblio:foreachSerialHasFirstIterator>
-      <biblio:foreachSerialSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:SerialSubjectType/>/<biblio:SerialSubjectType/>.jsp?uri=<biblio:SerialSubject/>"><biblio:SerialSubject /></a></td></tr>
-      </biblio:foreachSerialSubjectIterator>
       <biblio:foreachSerialHasAnnotationIterator>
          <tr><td>hasAnnotation</td><td><a href="../<biblio:SerialHasAnnotationType/>/<biblio:SerialHasAnnotationType/>.jsp?uri=<biblio:SerialHasAnnotation/>"><biblio:SerialHasAnnotation /></a></td></tr>
       </biblio:foreachSerialHasAnnotationIterator>
       <biblio:foreachSerialHasLastIterator>
          <tr><td>hasLast</td><td><a href="../<biblio:SerialHasLastType/>/<biblio:SerialHasLastType/>.jsp?uri=<biblio:SerialHasLast/>"><biblio:SerialHasLast /></a></td></tr>
       </biblio:foreachSerialHasLastIterator>
-      <biblio:foreachSerialRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:SerialRelationType/>/<biblio:SerialRelationType/>.jsp?uri=<biblio:SerialRelation/>"><biblio:SerialRelation /></a></td></tr>
-      </biblio:foreachSerialRelationIterator>
-      <biblio:foreachSerialLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:SerialLanguageType/>/<biblio:SerialLanguageType/>.jsp?uri=<biblio:SerialLanguage/>"><biblio:SerialLanguage /></a></td></tr>
-      </biblio:foreachSerialLanguageIterator>
       <biblio:foreachSerialAccompaniedByIterator>
          <tr><td>accompaniedBy</td><td><a href="../<biblio:SerialAccompaniedByType/>/<biblio:SerialAccompaniedByType/>.jsp?uri=<biblio:SerialAccompaniedBy/>"><biblio:SerialAccompaniedBy /></a></td></tr>
       </biblio:foreachSerialAccompaniedByIterator>
-      <biblio:foreachSerialPerformedAtIterator>
-         <tr><td>performedAt</td><td><a href="../<biblio:SerialPerformedAtType/>/<biblio:SerialPerformedAtType/>.jsp?uri=<biblio:SerialPerformedAt/>"><biblio:SerialPerformedAt /></a></td></tr>
-      </biblio:foreachSerialPerformedAtIterator>
+      <biblio:foreachSerialHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:SerialHasPartType/>/<biblio:SerialHasPartType/>.jsp?uri=<biblio:SerialHasPart/>"><biblio:SerialHasPart /></a></td></tr>
+      </biblio:foreachSerialHasPartIterator>
       <biblio:foreachSerialIsPartOfIterator>
          <tr><td>isPartOf</td><td><a href="../<biblio:SerialIsPartOfType/>/<biblio:SerialIsPartOfType/>.jsp?uri=<biblio:SerialIsPartOf/>"><biblio:SerialIsPartOf /></a></td></tr>
       </biblio:foreachSerialIsPartOfIterator>
+      <biblio:foreachSerialPerformedAtIterator>
+         <tr><td>performedAt</td><td><a href="../<biblio:SerialPerformedAtType/>/<biblio:SerialPerformedAtType/>.jsp?uri=<biblio:SerialPerformedAt/>"><biblio:SerialPerformedAt /></a></td></tr>
+      </biblio:foreachSerialPerformedAtIterator>
       <biblio:foreachSerialFollowsInNarrativeIterator>
          <tr><td>followsInNarrative</td><td><a href="../<biblio:SerialFollowsInNarrativeType/>/<biblio:SerialFollowsInNarrativeType/>.jsp?uri=<biblio:SerialFollowsInNarrative/>"><biblio:SerialFollowsInNarrative /></a></td></tr>
       </biblio:foreachSerialFollowsInNarrativeIterator>
@@ -193,9 +196,6 @@
       <biblio:foreachSerialCreatedForDegreeIterator>
          <tr><td>createdForDegree</td><td><a href="../<biblio:SerialCreatedForDegreeType/>/<biblio:SerialCreatedForDegreeType/>.jsp?uri=<biblio:SerialCreatedForDegree/>"><biblio:SerialCreatedForDegree /></a></td></tr>
       </biblio:foreachSerialCreatedForDegreeIterator>
-      <biblio:foreachSerialHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:SerialHasPartType/>/<biblio:SerialHasPartType/>.jsp?uri=<biblio:SerialHasPart/>"><biblio:SerialHasPart /></a></td></tr>
-      </biblio:foreachSerialHasPartIterator>
       <biblio:foreachSerialIsUnionOfIterator>
          <tr><td>isUnionOf</td><td><a href="../<biblio:SerialIsUnionOfType/>/<biblio:SerialIsUnionOfType/>.jsp?uri=<biblio:SerialIsUnionOf/>"><biblio:SerialIsUnionOf /></a></td></tr>
       </biblio:foreachSerialIsUnionOfIterator>

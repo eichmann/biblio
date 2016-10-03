@@ -46,12 +46,18 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachMultimediaPerformedAtIterator>
-         <tr><td>performedAt</td><td><a href="../<biblio:MultimediaPerformedAtType/>/<biblio:MultimediaPerformedAtType/>.jsp?uri=<biblio:MultimediaPerformedAt/>"><biblio:MultimediaPerformedAt /></a></td></tr>
-      </biblio:foreachMultimediaPerformedAtIterator>
+      <biblio:foreachMultimediaHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:MultimediaHasPartType/>/<biblio:MultimediaHasPartType/>.jsp?uri=<biblio:MultimediaHasPart/>"><biblio:MultimediaHasPart /></a></td></tr>
+      </biblio:foreachMultimediaHasPartIterator>
+      <biblio:foreachMultimediaLanguageIterator>
+         <tr><td>language</td><td><a href="../<biblio:MultimediaLanguageType/>/<biblio:MultimediaLanguageType/>.jsp?uri=<biblio:MultimediaLanguage/>"><biblio:MultimediaLanguage /></a></td></tr>
+      </biblio:foreachMultimediaLanguageIterator>
       <biblio:foreachMultimediaIsPartOfIterator>
          <tr><td>isPartOf</td><td><a href="../<biblio:MultimediaIsPartOfType/>/<biblio:MultimediaIsPartOfType/>.jsp?uri=<biblio:MultimediaIsPartOf/>"><biblio:MultimediaIsPartOf /></a></td></tr>
       </biblio:foreachMultimediaIsPartOfIterator>
+      <biblio:foreachMultimediaPerformedAtIterator>
+         <tr><td>performedAt</td><td><a href="../<biblio:MultimediaPerformedAtType/>/<biblio:MultimediaPerformedAtType/>.jsp?uri=<biblio:MultimediaPerformedAt/>"><biblio:MultimediaPerformedAt /></a></td></tr>
+      </biblio:foreachMultimediaPerformedAtIterator>
       <biblio:foreachMultimediaFollowsInNarrativeIterator>
          <tr><td>followsInNarrative</td><td><a href="../<biblio:MultimediaFollowsInNarrativeType/>/<biblio:MultimediaFollowsInNarrativeType/>.jsp?uri=<biblio:MultimediaFollowsInNarrative/>"><biblio:MultimediaFollowsInNarrative /></a></td></tr>
       </biblio:foreachMultimediaFollowsInNarrativeIterator>
@@ -124,9 +130,6 @@
       <biblio:foreachMultimediaIsExpressionOfIterator>
          <tr><td>isExpressionOf</td><td><a href="../<biblio:MultimediaIsExpressionOfType/>/<biblio:MultimediaIsExpressionOfType/>.jsp?uri=<biblio:MultimediaIsExpressionOf/>"><biblio:MultimediaIsExpressionOf /></a></td></tr>
       </biblio:foreachMultimediaIsExpressionOfIterator>
-      <biblio:foreachMultimediaLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:MultimediaLanguageType/>/<biblio:MultimediaLanguageType/>.jsp?uri=<biblio:MultimediaLanguage/>"><biblio:MultimediaLanguage /></a></td></tr>
-      </biblio:foreachMultimediaLanguageIterator>
       <biblio:foreachMultimediaSupplementsIterator>
          <tr><td>supplements</td><td><a href="../<biblio:MultimediaSupplementsType/>/<biblio:MultimediaSupplementsType/>.jsp?uri=<biblio:MultimediaSupplements/>"><biblio:MultimediaSupplements /></a></td></tr>
       </biblio:foreachMultimediaSupplementsIterator>
@@ -172,9 +175,6 @@
       <biblio:foreachMultimediaCreatedForDegreeIterator>
          <tr><td>createdForDegree</td><td><a href="../<biblio:MultimediaCreatedForDegreeType/>/<biblio:MultimediaCreatedForDegreeType/>.jsp?uri=<biblio:MultimediaCreatedForDegree/>"><biblio:MultimediaCreatedForDegree /></a></td></tr>
       </biblio:foreachMultimediaCreatedForDegreeIterator>
-      <biblio:foreachMultimediaHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:MultimediaHasPartType/>/<biblio:MultimediaHasPartType/>.jsp?uri=<biblio:MultimediaHasPart/>"><biblio:MultimediaHasPart /></a></td></tr>
-      </biblio:foreachMultimediaHasPartIterator>
       <biblio:foreachMultimediaIsUnionOfIterator>
          <tr><td>isUnionOf</td><td><a href="../<biblio:MultimediaIsUnionOfType/>/<biblio:MultimediaIsUnionOfType/>.jsp?uri=<biblio:MultimediaIsUnionOf/>"><biblio:MultimediaIsUnionOf /></a></td></tr>
       </biblio:foreachMultimediaIsUnionOfIterator>
