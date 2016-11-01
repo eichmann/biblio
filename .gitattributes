@@ -323,6 +323,7 @@ src/main/webapp/images/bullet-l1.gif -text
 src/main/webapp/index.jsp -text
 src/main/webapp/menu.jsp -text
 src/main/webapp/resources/style.css -text
+src/main/webapp/sparql.jsp -text
 src/main/webapp/utility/sparqlDump.jsp -text
 src/test/java/edu/uiowa/slis/viva/DemoTest.java -text
 src/test/resources/README.txt -text

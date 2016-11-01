@@ -100,6 +100,11 @@
         	<artifactId>BIBFRAME</artifactId>
         	<version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <dependency>
+        	<groupId>SPARQLTagLib</groupId>
+        	<artifactId>SPARQLTagLib</artifactId>
+        	<version>0.0.1-SNAPSHOT</version>
+        </dependency>
   </dependencies>
   <build>
   	<plugins>
