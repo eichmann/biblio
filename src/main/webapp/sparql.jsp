@@ -24,14 +24,18 @@
 </sparql:setTriplestore>
 
 <sparql:query var="person" triplestore="${slis}">
-    SELECT ?s ?p ?o where { ?s ?p ?o }
+    SELECT ?s ?o
+    WHERE {
+        ?s foaf:name ?o.
+        ?s rdf:type foaf:Person.
+    }
     LIMIT 1000
 </sparql:query>
 
 <table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th></tr>
 <c:forEach items="${person.rows}" var="row" varStatus="rowCounter">
-    <tr><td>${row.s}</td><td>${row.p}</td><td>${row.o}</td></tr>
+    <tr><td><a href="Person/Person.jsp?uri=${row.s}">${row.s}</a></td><td>${row.p}</td><td>${row.o}</td></tr>
 </c:forEach>
 </table>
 
