@@ -34,13 +34,16 @@
       <biblio:foreachLocationLocationOfIterator>
          <tr><td>locationOf</td><td><a href="../<biblio:LocationLocationOfType/>/<biblio:LocationLocationOfType/>.jsp?uri=<biblio:LocationLocationOf/>"><biblio:LocationLocationOf /></a></td></tr>
       </biblio:foreachLocationLocationOfIterator>
-      <biblio:foreachLocationIsSubjectOfIterator>
-         <tr><td>isSubjectOf</td><td><a href="../<biblio:LocationIsSubjectOfType/>/<biblio:LocationIsSubjectOfType/>.jsp?uri=<biblio:LocationIsSubjectOf/>"><biblio:LocationIsSubjectOf /></a></td></tr>
-      </biblio:foreachLocationIsSubjectOfIterator>
+      <biblio:foreachLocationIdentifiedByIterator>
+         <tr><td>identifiedBy</td><td><a href="../<biblio:LocationIdentifiedByType/>/<biblio:LocationIdentifiedByType/>.jsp?uri=<biblio:LocationIdentifiedBy/>"><biblio:LocationIdentifiedBy /></a></td></tr>
+      </biblio:foreachLocationIdentifiedByIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
+      <biblio:foreachLocationRelationInverseIterator>
+         <tr><td>relation</td><td><a href="../<biblio:LocationRelationInverseType/>/<biblio:LocationRelationInverseType/>.jsp?uri=<biblio:LocationRelationInverse/>"><biblio:LocationRelationInverse/></a></td></tr>
+      </biblio:foreachLocationRelationInverseIterator>
       <biblio:foreachLocationHasOriginPlaceInverseIterator>
          <tr><td>hasOriginPlace</td><td><a href="../<biblio:LocationHasOriginPlaceInverseType/>/<biblio:LocationHasOriginPlaceInverseType/>.jsp?uri=<biblio:LocationHasOriginPlaceInverse/>"><biblio:LocationHasOriginPlaceInverse/></a></td></tr>
       </biblio:foreachLocationHasOriginPlaceInverseIterator>

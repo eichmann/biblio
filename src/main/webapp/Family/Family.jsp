@@ -27,10 +27,19 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
+      <biblio:foreachFamilyBirthDateIterator>
+         <tr><td>birthDate</td><td><biblio:FamilyBirthDate /></td></tr>
+      </biblio:foreachFamilyBirthDateIterator>
+      <biblio:foreachFamilyDeathDateIterator>
+         <tr><td>deathDate</td><td><biblio:FamilyDeathDate /></td></tr>
+      </biblio:foreachFamilyDeathDateIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachFamilyIdentifiedByIterator>
+         <tr><td>identifiedBy</td><td><a href="../<biblio:FamilyIdentifiedByType/>/<biblio:FamilyIdentifiedByType/>.jsp?uri=<biblio:FamilyIdentifiedBy/>"><biblio:FamilyIdentifiedBy /></a></td></tr>
+      </biblio:foreachFamilyIdentifiedByIterator>
       <biblio:foreachFamilyReceivedIterator>
          <tr><td>received</td><td><a href="../<biblio:FamilyReceivedType/>/<biblio:FamilyReceivedType/>.jsp?uri=<biblio:FamilyReceived/>"><biblio:FamilyReceived /></a></td></tr>
       </biblio:foreachFamilyReceivedIterator>
@@ -44,6 +53,9 @@
       <biblio:foreachFamilyAgentInverseIterator>
          <tr><td>agent</td><td><a href="../<biblio:FamilyAgentInverseType/>/<biblio:FamilyAgentInverseType/>.jsp?uri=<biblio:FamilyAgentInverse/>"><biblio:FamilyAgentInverse/></a></td></tr>
       </biblio:foreachFamilyAgentInverseIterator>
+      <biblio:foreachFamilyRelationInverseIterator>
+         <tr><td>relation</td><td><a href="../<biblio:FamilyRelationInverseType/>/<biblio:FamilyRelationInverseType/>.jsp?uri=<biblio:FamilyRelationInverse/>"><biblio:FamilyRelationInverse/></a></td></tr>
+      </biblio:foreachFamilyRelationInverseIterator>
       <biblio:foreachFamilyHeldByInverseIterator>
          <tr><td>heldBy</td><td><a href="../<biblio:FamilyHeldByInverseType/>/<biblio:FamilyHeldByInverseType/>.jsp?uri=<biblio:FamilyHeldByInverse/>"><biblio:FamilyHeldByInverse/></a></td></tr>
       </biblio:foreachFamilyHeldByInverseIterator>

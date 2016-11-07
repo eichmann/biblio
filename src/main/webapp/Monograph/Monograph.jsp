@@ -64,18 +64,6 @@
       <biblio:foreachMonographIdentifiedByIterator>
          <tr><td>identifiedBy</td><td><a href="../<biblio:MonographIdentifiedByType/>/<biblio:MonographIdentifiedByType/>.jsp?uri=<biblio:MonographIdentifiedBy/>"><biblio:MonographIdentifiedBy /></a></td></tr>
       </biblio:foreachMonographIdentifiedByIterator>
-      <biblio:foreachMonographPrecedesIterator>
-         <tr><td>precedes</td><td><a href="../<biblio:MonographPrecedesType/>/<biblio:MonographPrecedesType/>.jsp?uri=<biblio:MonographPrecedes/>"><biblio:MonographPrecedes /></a></td></tr>
-      </biblio:foreachMonographPrecedesIterator>
-      <biblio:foreachMonographFollowsIterator>
-         <tr><td>follows</td><td><a href="../<biblio:MonographFollowsType/>/<biblio:MonographFollowsType/>.jsp?uri=<biblio:MonographFollows/>"><biblio:MonographFollows /></a></td></tr>
-      </biblio:foreachMonographFollowsIterator>
-      <biblio:foreachMonographHasAnnotationIterator>
-         <tr><td>hasAnnotation</td><td><a href="../<biblio:MonographHasAnnotationType/>/<biblio:MonographHasAnnotationType/>.jsp?uri=<biblio:MonographHasAnnotation/>"><biblio:MonographHasAnnotation /></a></td></tr>
-      </biblio:foreachMonographHasAnnotationIterator>
-      <biblio:foreachMonographIsSubjectOfIterator>
-         <tr><td>isSubjectOf</td><td><a href="../<biblio:MonographIsSubjectOfType/>/<biblio:MonographIsSubjectOfType/>.jsp?uri=<biblio:MonographIsSubjectOf/>"><biblio:MonographIsSubjectOf /></a></td></tr>
-      </biblio:foreachMonographIsSubjectOfIterator>
       <biblio:foreachMonographPerformedAtIterator>
          <tr><td>performedAt</td><td><a href="../<biblio:MonographPerformedAtType/>/<biblio:MonographPerformedAtType/>.jsp?uri=<biblio:MonographPerformedAt/>"><biblio:MonographPerformedAt /></a></td></tr>
       </biblio:foreachMonographPerformedAtIterator>
@@ -91,6 +79,9 @@
       <biblio:foreachMonographHasDataSourceIterator>
          <tr><td>hasDataSource</td><td><a href="../<biblio:MonographHasDataSourceType/>/<biblio:MonographHasDataSourceType/>.jsp?uri=<biblio:MonographHasDataSource/>"><biblio:MonographHasDataSource /></a></td></tr>
       </biblio:foreachMonographHasDataSourceIterator>
+      <biblio:foreachMonographPrecedesIterator>
+         <tr><td>precedes</td><td><a href="../<biblio:MonographPrecedesType/>/<biblio:MonographPrecedesType/>.jsp?uri=<biblio:MonographPrecedes/>"><biblio:MonographPrecedes /></a></td></tr>
+      </biblio:foreachMonographPrecedesIterator>
       <biblio:foreachMonographContinuesUnderNewTitleIterator>
          <tr><td>continuesUnderNewTitle</td><td><a href="../<biblio:MonographContinuesUnderNewTitleType/>/<biblio:MonographContinuesUnderNewTitleType/>.jsp?uri=<biblio:MonographContinuesUnderNewTitle/>"><biblio:MonographContinuesUnderNewTitle /></a></td></tr>
       </biblio:foreachMonographContinuesUnderNewTitleIterator>
@@ -160,9 +151,6 @@
       <biblio:foreachMonographHasContributionIterator>
          <tr><td>hasContribution</td><td><a href="../<biblio:MonographHasContributionType/>/<biblio:MonographHasContributionType/>.jsp?uri=<biblio:MonographHasContribution/>"><biblio:MonographHasContribution /></a></td></tr>
       </biblio:foreachMonographHasContributionIterator>
-      <biblio:foreachMonographAccompaniesIterator>
-         <tr><td>accompanies</td><td><a href="../<biblio:MonographAccompaniesType/>/<biblio:MonographAccompaniesType/>.jsp?uri=<biblio:MonographAccompanies/>"><biblio:MonographAccompanies /></a></td></tr>
-      </biblio:foreachMonographAccompaniesIterator>
       <biblio:foreachMonographHasTitleIterator>
          <tr><td>hasTitle</td><td><a href="../<biblio:MonographHasTitleType/>/<biblio:MonographHasTitleType/>.jsp?uri=<biblio:MonographHasTitle/>"><biblio:MonographHasTitle /></a></td></tr>
       </biblio:foreachMonographHasTitleIterator>
@@ -194,6 +182,9 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
+      <biblio:foreachMonographAgentInverseIterator>
+         <tr><td>agent</td><td><a href="../<biblio:MonographAgentInverseType/>/<biblio:MonographAgentInverseType/>.jsp?uri=<biblio:MonographAgentInverse/>"><biblio:MonographAgentInverse/></a></td></tr>
+      </biblio:foreachMonographAgentInverseIterator>
    </table>
    </biblio:Monograph>
 

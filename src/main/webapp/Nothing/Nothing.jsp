@@ -40,12 +40,6 @@
       <biblio:foreachNothingTopObjectPropertyIterator>
          <tr><td>topObjectProperty</td><td><a href="../<biblio:NothingTopObjectPropertyType/>/<biblio:NothingTopObjectPropertyType/>.jsp?uri=<biblio:NothingTopObjectProperty/>"><biblio:NothingTopObjectProperty /></a></td></tr>
       </biblio:foreachNothingTopObjectPropertyIterator>
-      <biblio:foreachNothingIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:NothingIdentifiedByType/>/<biblio:NothingIdentifiedByType/>.jsp?uri=<biblio:NothingIdentifiedBy/>"><biblio:NothingIdentifiedBy /></a></td></tr>
-      </biblio:foreachNothingIdentifiedByIterator>
-      <biblio:foreachNothingIsSubjectOfIterator>
-         <tr><td>isSubjectOf</td><td><a href="../<biblio:NothingIsSubjectOfType/>/<biblio:NothingIsSubjectOfType/>.jsp?uri=<biblio:NothingIsSubjectOf/>"><biblio:NothingIsSubjectOf /></a></td></tr>
-      </biblio:foreachNothingIsSubjectOfIterator>
       <biblio:foreachNothingBottomObjectPropertyIterator>
          <tr><td>bottomObjectProperty</td><td><a href="../<biblio:NothingBottomObjectPropertyType/>/<biblio:NothingBottomObjectPropertyType/>.jsp?uri=<biblio:NothingBottomObjectProperty/>"><biblio:NothingBottomObjectProperty /></a></td></tr>
       </biblio:foreachNothingBottomObjectPropertyIterator>

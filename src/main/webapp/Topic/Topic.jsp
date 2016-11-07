@@ -31,9 +31,9 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachTopicIsSubjectOfIterator>
-         <tr><td>isSubjectOf</td><td><a href="../<biblio:TopicIsSubjectOfType/>/<biblio:TopicIsSubjectOfType/>.jsp?uri=<biblio:TopicIsSubjectOf/>"><biblio:TopicIsSubjectOf /></a></td></tr>
-      </biblio:foreachTopicIsSubjectOfIterator>
+      <biblio:foreachTopicIdentifiedByIterator>
+         <tr><td>identifiedBy</td><td><a href="../<biblio:TopicIdentifiedByType/>/<biblio:TopicIdentifiedByType/>.jsp?uri=<biblio:TopicIdentifiedBy/>"><biblio:TopicIdentifiedBy /></a></td></tr>
+      </biblio:foreachTopicIdentifiedByIterator>
       <biblio:foreachTopicSemanticRelationIterator>
          <tr><td>semanticRelation</td><td><a href="../<biblio:TopicSemanticRelationType/>/<biblio:TopicSemanticRelationType/>.jsp?uri=<biblio:TopicSemanticRelation/>"><biblio:TopicSemanticRelation /></a></td></tr>
       </biblio:foreachTopicSemanticRelationIterator>

@@ -46,9 +46,15 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachPeriodicalPartRelationIterator>
+         <tr><td>relation</td><td><a href="../<biblio:PeriodicalPartRelationType/>/<biblio:PeriodicalPartRelationType/>.jsp?uri=<biblio:PeriodicalPartRelation/>"><biblio:PeriodicalPartRelation /></a></td></tr>
+      </biblio:foreachPeriodicalPartRelationIterator>
       <biblio:foreachPeriodicalPartHasPartIterator>
          <tr><td>hasPart</td><td><a href="../<biblio:PeriodicalPartHasPartType/>/<biblio:PeriodicalPartHasPartType/>.jsp?uri=<biblio:PeriodicalPartHasPart/>"><biblio:PeriodicalPartHasPart /></a></td></tr>
       </biblio:foreachPeriodicalPartHasPartIterator>
+      <biblio:foreachPeriodicalPartSubjectIterator>
+         <tr><td>subject</td><td><a href="../<biblio:PeriodicalPartSubjectType/>/<biblio:PeriodicalPartSubjectType/>.jsp?uri=<biblio:PeriodicalPartSubject/>"><biblio:PeriodicalPartSubject /></a></td></tr>
+      </biblio:foreachPeriodicalPartSubjectIterator>
       <biblio:foreachPeriodicalPartLanguageIterator>
          <tr><td>language</td><td><a href="../<biblio:PeriodicalPartLanguageType/>/<biblio:PeriodicalPartLanguageType/>.jsp?uri=<biblio:PeriodicalPartLanguage/>"><biblio:PeriodicalPartLanguage /></a></td></tr>
       </biblio:foreachPeriodicalPartLanguageIterator>
@@ -70,6 +76,9 @@
       <biblio:foreachPeriodicalPartHasDataSourceIterator>
          <tr><td>hasDataSource</td><td><a href="../<biblio:PeriodicalPartHasDataSourceType/>/<biblio:PeriodicalPartHasDataSourceType/>.jsp?uri=<biblio:PeriodicalPartHasDataSource/>"><biblio:PeriodicalPartHasDataSource /></a></td></tr>
       </biblio:foreachPeriodicalPartHasDataSourceIterator>
+      <biblio:foreachPeriodicalPartIdentifiedByIterator>
+         <tr><td>identifiedBy</td><td><a href="../<biblio:PeriodicalPartIdentifiedByType/>/<biblio:PeriodicalPartIdentifiedByType/>.jsp?uri=<biblio:PeriodicalPartIdentifiedBy/>"><biblio:PeriodicalPartIdentifiedBy /></a></td></tr>
+      </biblio:foreachPeriodicalPartIdentifiedByIterator>
       <biblio:foreachPeriodicalPartPrecedesIterator>
          <tr><td>precedes</td><td><a href="../<biblio:PeriodicalPartPrecedesType/>/<biblio:PeriodicalPartPrecedesType/>.jsp?uri=<biblio:PeriodicalPartPrecedes/>"><biblio:PeriodicalPartPrecedes /></a></td></tr>
       </biblio:foreachPeriodicalPartPrecedesIterator>
@@ -82,9 +91,6 @@
       <biblio:foreachPeriodicalPartIsFindingAidForIterator>
          <tr><td>isFindingAidFor</td><td><a href="../<biblio:PeriodicalPartIsFindingAidForType/>/<biblio:PeriodicalPartIsFindingAidForType/>.jsp?uri=<biblio:PeriodicalPartIsFindingAidFor/>"><biblio:PeriodicalPartIsFindingAidFor /></a></td></tr>
       </biblio:foreachPeriodicalPartIsFindingAidForIterator>
-      <biblio:foreachPeriodicalPartFollowsIterator>
-         <tr><td>follows</td><td><a href="../<biblio:PeriodicalPartFollowsType/>/<biblio:PeriodicalPartFollowsType/>.jsp?uri=<biblio:PeriodicalPartFollows/>"><biblio:PeriodicalPartFollows /></a></td></tr>
-      </biblio:foreachPeriodicalPartFollowsIterator>
       <biblio:foreachPeriodicalPartAbsorbedByIterator>
          <tr><td>absorbedBy</td><td><a href="../<biblio:PeriodicalPartAbsorbedByType/>/<biblio:PeriodicalPartAbsorbedByType/>.jsp?uri=<biblio:PeriodicalPartAbsorbedBy/>"><biblio:PeriodicalPartAbsorbedBy /></a></td></tr>
       </biblio:foreachPeriodicalPartAbsorbedByIterator>
@@ -115,9 +121,6 @@
       <biblio:foreachPeriodicalPartPrecedesInNarrativeIterator>
          <tr><td>precedesInNarrative</td><td><a href="../<biblio:PeriodicalPartPrecedesInNarrativeType/>/<biblio:PeriodicalPartPrecedesInNarrativeType/>.jsp?uri=<biblio:PeriodicalPartPrecedesInNarrative/>"><biblio:PeriodicalPartPrecedesInNarrative /></a></td></tr>
       </biblio:foreachPeriodicalPartPrecedesInNarrativeIterator>
-      <biblio:foreachPeriodicalPartIsSubjectOfIterator>
-         <tr><td>isSubjectOf</td><td><a href="../<biblio:PeriodicalPartIsSubjectOfType/>/<biblio:PeriodicalPartIsSubjectOfType/>.jsp?uri=<biblio:PeriodicalPartIsSubjectOf/>"><biblio:PeriodicalPartIsSubjectOf /></a></td></tr>
-      </biblio:foreachPeriodicalPartIsSubjectOfIterator>
       <biblio:foreachPeriodicalPartIsLastOfIterator>
          <tr><td>isLastOf</td><td><a href="../<biblio:PeriodicalPartIsLastOfType/>/<biblio:PeriodicalPartIsLastOfType/>.jsp?uri=<biblio:PeriodicalPartIsLastOf/>"><biblio:PeriodicalPartIsLastOf /></a></td></tr>
       </biblio:foreachPeriodicalPartIsLastOfIterator>
@@ -148,9 +151,6 @@
       <biblio:foreachPeriodicalPartHasContributionIterator>
          <tr><td>hasContribution</td><td><a href="../<biblio:PeriodicalPartHasContributionType/>/<biblio:PeriodicalPartHasContributionType/>.jsp?uri=<biblio:PeriodicalPartHasContribution/>"><biblio:PeriodicalPartHasContribution /></a></td></tr>
       </biblio:foreachPeriodicalPartHasContributionIterator>
-      <biblio:foreachPeriodicalPartAccompaniesIterator>
-         <tr><td>accompanies</td><td><a href="../<biblio:PeriodicalPartAccompaniesType/>/<biblio:PeriodicalPartAccompaniesType/>.jsp?uri=<biblio:PeriodicalPartAccompanies/>"><biblio:PeriodicalPartAccompanies /></a></td></tr>
-      </biblio:foreachPeriodicalPartAccompaniesIterator>
       <biblio:foreachPeriodicalPartHasTitleIterator>
          <tr><td>hasTitle</td><td><a href="../<biblio:PeriodicalPartHasTitleType/>/<biblio:PeriodicalPartHasTitleType/>.jsp?uri=<biblio:PeriodicalPartHasTitle/>"><biblio:PeriodicalPartHasTitle /></a></td></tr>
       </biblio:foreachPeriodicalPartHasTitleIterator>
@@ -182,9 +182,9 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
-      <biblio:foreachPeriodicalPartRelationInverseIterator>
-         <tr><td>relation</td><td><a href="../<biblio:PeriodicalPartRelationInverseType/>/<biblio:PeriodicalPartRelationInverseType/>.jsp?uri=<biblio:PeriodicalPartRelationInverse/>"><biblio:PeriodicalPartRelationInverse/></a></td></tr>
-      </biblio:foreachPeriodicalPartRelationInverseIterator>
+      <biblio:foreachPeriodicalPartAgentInverseIterator>
+         <tr><td>agent</td><td><a href="../<biblio:PeriodicalPartAgentInverseType/>/<biblio:PeriodicalPartAgentInverseType/>.jsp?uri=<biblio:PeriodicalPartAgentInverse/>"><biblio:PeriodicalPartAgentInverse/></a></td></tr>
+      </biblio:foreachPeriodicalPartAgentInverseIterator>
    </table>
    </biblio:PeriodicalPart>
 

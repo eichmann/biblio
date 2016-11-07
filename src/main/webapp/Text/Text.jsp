@@ -67,18 +67,6 @@
       <biblio:foreachTextPrecedesIterator>
          <tr><td>precedes</td><td><a href="../<biblio:TextPrecedesType/>/<biblio:TextPrecedesType/>.jsp?uri=<biblio:TextPrecedes/>"><biblio:TextPrecedes /></a></td></tr>
       </biblio:foreachTextPrecedesIterator>
-      <biblio:foreachTextFollowsIterator>
-         <tr><td>follows</td><td><a href="../<biblio:TextFollowsType/>/<biblio:TextFollowsType/>.jsp?uri=<biblio:TextFollows/>"><biblio:TextFollows /></a></td></tr>
-      </biblio:foreachTextFollowsIterator>
-      <biblio:foreachTextHasAnnotationIterator>
-         <tr><td>hasAnnotation</td><td><a href="../<biblio:TextHasAnnotationType/>/<biblio:TextHasAnnotationType/>.jsp?uri=<biblio:TextHasAnnotation/>"><biblio:TextHasAnnotation /></a></td></tr>
-      </biblio:foreachTextHasAnnotationIterator>
-      <biblio:foreachTextIsSubjectOfIterator>
-         <tr><td>isSubjectOf</td><td><a href="../<biblio:TextIsSubjectOfType/>/<biblio:TextIsSubjectOfType/>.jsp?uri=<biblio:TextIsSubjectOf/>"><biblio:TextIsSubjectOf /></a></td></tr>
-      </biblio:foreachTextIsSubjectOfIterator>
-      <biblio:foreachTextAccompaniedByIterator>
-         <tr><td>accompaniedBy</td><td><a href="../<biblio:TextAccompaniedByType/>/<biblio:TextAccompaniedByType/>.jsp?uri=<biblio:TextAccompaniedBy/>"><biblio:TextAccompaniedBy /></a></td></tr>
-      </biblio:foreachTextAccompaniedByIterator>
       <biblio:foreachTextPerformedAtIterator>
          <tr><td>performedAt</td><td><a href="../<biblio:TextPerformedAtType/>/<biblio:TextPerformedAtType/>.jsp?uri=<biblio:TextPerformedAt/>"><biblio:TextPerformedAt /></a></td></tr>
       </biblio:foreachTextPerformedAtIterator>
@@ -163,9 +151,6 @@
       <biblio:foreachTextHasContributionIterator>
          <tr><td>hasContribution</td><td><a href="../<biblio:TextHasContributionType/>/<biblio:TextHasContributionType/>.jsp?uri=<biblio:TextHasContribution/>"><biblio:TextHasContribution /></a></td></tr>
       </biblio:foreachTextHasContributionIterator>
-      <biblio:foreachTextAccompaniesIterator>
-         <tr><td>accompanies</td><td><a href="../<biblio:TextAccompaniesType/>/<biblio:TextAccompaniesType/>.jsp?uri=<biblio:TextAccompanies/>"><biblio:TextAccompanies /></a></td></tr>
-      </biblio:foreachTextAccompaniesIterator>
       <biblio:foreachTextHasTitleIterator>
          <tr><td>hasTitle</td><td><a href="../<biblio:TextHasTitleType/>/<biblio:TextHasTitleType/>.jsp?uri=<biblio:TextHasTitle/>"><biblio:TextHasTitle /></a></td></tr>
       </biblio:foreachTextHasTitleIterator>
@@ -197,6 +182,9 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
+      <biblio:foreachTextAgentInverseIterator>
+         <tr><td>agent</td><td><a href="../<biblio:TextAgentInverseType/>/<biblio:TextAgentInverseType/>.jsp?uri=<biblio:TextAgentInverse/>"><biblio:TextAgentInverse/></a></td></tr>
+      </biblio:foreachTextAgentInverseIterator>
    </table>
    </biblio:Text>
 

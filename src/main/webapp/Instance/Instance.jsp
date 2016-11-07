@@ -76,9 +76,6 @@
       <biblio:foreachInstanceDimensionsIterator>
          <tr><td>dimensions</td><td><biblio:InstanceDimensions /></td></tr>
       </biblio:foreachInstanceDimensionsIterator>
-      <biblio:foreachInstanceNoteIterator>
-         <tr><td>note</td><td><biblio:InstanceNote /></td></tr>
-      </biblio:foreachInstanceNoteIterator>
       <biblio:foreachInstanceResponsibilityNoteIterator>
          <tr><td>responsibilityNote</td><td><biblio:InstanceResponsibilityNote /></td></tr>
       </biblio:foreachInstanceResponsibilityNoteIterator>
@@ -95,18 +92,6 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachInstanceRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:InstanceRelationType/>/<biblio:InstanceRelationType/>.jsp?uri=<biblio:InstanceRelation/>"><biblio:InstanceRelation /></a></td></tr>
-      </biblio:foreachInstanceRelationIterator>
-      <biblio:foreachInstanceHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:InstanceHasPartType/>/<biblio:InstanceHasPartType/>.jsp?uri=<biblio:InstanceHasPart/>"><biblio:InstanceHasPart /></a></td></tr>
-      </biblio:foreachInstanceHasPartIterator>
-      <biblio:foreachInstanceSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:InstanceSubjectType/>/<biblio:InstanceSubjectType/>.jsp?uri=<biblio:InstanceSubject/>"><biblio:InstanceSubject /></a></td></tr>
-      </biblio:foreachInstanceSubjectIterator>
-      <biblio:foreachInstanceLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:InstanceLanguageType/>/<biblio:InstanceLanguageType/>.jsp?uri=<biblio:InstanceLanguage/>"><biblio:InstanceLanguage /></a></td></tr>
-      </biblio:foreachInstanceLanguageIterator>
       <biblio:foreachInstanceIdentifiedByIterator>
          <tr><td>identifiedBy</td><td><a href="../<biblio:InstanceIdentifiedByType/>/<biblio:InstanceIdentifiedByType/>.jsp?uri=<biblio:InstanceIdentifiedBy/>"><biblio:InstanceIdentifiedBy /></a></td></tr>
       </biblio:foreachInstanceIdentifiedByIterator>
@@ -119,9 +104,6 @@
       <biblio:foreachInstanceHasTableOfContentsIterator>
          <tr><td>hasTableOfContents</td><td><a href="../<biblio:InstanceHasTableOfContentsType/>/<biblio:InstanceHasTableOfContentsType/>.jsp?uri=<biblio:InstanceHasTableOfContents/>"><biblio:InstanceHasTableOfContents /></a></td></tr>
       </biblio:foreachInstanceHasTableOfContentsIterator>
-      <biblio:foreachInstanceHasAnnotationIterator>
-         <tr><td>hasAnnotation</td><td><a href="../<biblio:InstanceHasAnnotationType/>/<biblio:InstanceHasAnnotationType/>.jsp?uri=<biblio:InstanceHasAnnotation/>"><biblio:InstanceHasAnnotation /></a></td></tr>
-      </biblio:foreachInstanceHasAnnotationIterator>
       <biblio:foreachInstanceHasCoverArtIterator>
          <tr><td>hasCoverArt</td><td><a href="../<biblio:InstanceHasCoverArtType/>/<biblio:InstanceHasCoverArtType/>.jsp?uri=<biblio:InstanceHasCoverArt/>"><biblio:InstanceHasCoverArt /></a></td></tr>
       </biblio:foreachInstanceHasCoverArtIterator>

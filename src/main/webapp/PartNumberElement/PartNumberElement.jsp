@@ -31,9 +31,6 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachPartNumberElementIsPartOfIterator>
-         <tr><td>isPartOf</td><td><a href="../<biblio:PartNumberElementIsPartOfType/>/<biblio:PartNumberElementIsPartOfType/>.jsp?uri=<biblio:PartNumberElementIsPartOf/>"><biblio:PartNumberElementIsPartOf /></a></td></tr>
-      </biblio:foreachPartNumberElementIsPartOfIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>

@@ -40,12 +40,6 @@
       <biblio:foreachThingTopObjectPropertyIterator>
          <tr><td>topObjectProperty</td><td><a href="../<biblio:ThingTopObjectPropertyType/>/<biblio:ThingTopObjectPropertyType/>.jsp?uri=<biblio:ThingTopObjectProperty/>"><biblio:ThingTopObjectProperty /></a></td></tr>
       </biblio:foreachThingTopObjectPropertyIterator>
-      <biblio:foreachThingIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:ThingIdentifiedByType/>/<biblio:ThingIdentifiedByType/>.jsp?uri=<biblio:ThingIdentifiedBy/>"><biblio:ThingIdentifiedBy /></a></td></tr>
-      </biblio:foreachThingIdentifiedByIterator>
-      <biblio:foreachThingIsSubjectOfIterator>
-         <tr><td>isSubjectOf</td><td><a href="../<biblio:ThingIsSubjectOfType/>/<biblio:ThingIsSubjectOfType/>.jsp?uri=<biblio:ThingIsSubjectOf/>"><biblio:ThingIsSubjectOf /></a></td></tr>
-      </biblio:foreachThingIsSubjectOfIterator>
       <biblio:foreachThingBottomObjectPropertyIterator>
          <tr><td>bottomObjectProperty</td><td><a href="../<biblio:ThingBottomObjectPropertyType/>/<biblio:ThingBottomObjectPropertyType/>.jsp?uri=<biblio:ThingBottomObjectProperty/>"><biblio:ThingBottomObjectProperty /></a></td></tr>
       </biblio:foreachThingBottomObjectPropertyIterator>

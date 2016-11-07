@@ -46,9 +46,15 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachNotatedMovementRelationIterator>
+         <tr><td>relation</td><td><a href="../<biblio:NotatedMovementRelationType/>/<biblio:NotatedMovementRelationType/>.jsp?uri=<biblio:NotatedMovementRelation/>"><biblio:NotatedMovementRelation /></a></td></tr>
+      </biblio:foreachNotatedMovementRelationIterator>
       <biblio:foreachNotatedMovementHasPartIterator>
          <tr><td>hasPart</td><td><a href="../<biblio:NotatedMovementHasPartType/>/<biblio:NotatedMovementHasPartType/>.jsp?uri=<biblio:NotatedMovementHasPart/>"><biblio:NotatedMovementHasPart /></a></td></tr>
       </biblio:foreachNotatedMovementHasPartIterator>
+      <biblio:foreachNotatedMovementSubjectIterator>
+         <tr><td>subject</td><td><a href="../<biblio:NotatedMovementSubjectType/>/<biblio:NotatedMovementSubjectType/>.jsp?uri=<biblio:NotatedMovementSubject/>"><biblio:NotatedMovementSubject /></a></td></tr>
+      </biblio:foreachNotatedMovementSubjectIterator>
       <biblio:foreachNotatedMovementLanguageIterator>
          <tr><td>language</td><td><a href="../<biblio:NotatedMovementLanguageType/>/<biblio:NotatedMovementLanguageType/>.jsp?uri=<biblio:NotatedMovementLanguage/>"><biblio:NotatedMovementLanguage /></a></td></tr>
       </biblio:foreachNotatedMovementLanguageIterator>
@@ -70,6 +76,9 @@
       <biblio:foreachNotatedMovementHasDataSourceIterator>
          <tr><td>hasDataSource</td><td><a href="../<biblio:NotatedMovementHasDataSourceType/>/<biblio:NotatedMovementHasDataSourceType/>.jsp?uri=<biblio:NotatedMovementHasDataSource/>"><biblio:NotatedMovementHasDataSource /></a></td></tr>
       </biblio:foreachNotatedMovementHasDataSourceIterator>
+      <biblio:foreachNotatedMovementIdentifiedByIterator>
+         <tr><td>identifiedBy</td><td><a href="../<biblio:NotatedMovementIdentifiedByType/>/<biblio:NotatedMovementIdentifiedByType/>.jsp?uri=<biblio:NotatedMovementIdentifiedBy/>"><biblio:NotatedMovementIdentifiedBy /></a></td></tr>
+      </biblio:foreachNotatedMovementIdentifiedByIterator>
       <biblio:foreachNotatedMovementPrecedesIterator>
          <tr><td>precedes</td><td><a href="../<biblio:NotatedMovementPrecedesType/>/<biblio:NotatedMovementPrecedesType/>.jsp?uri=<biblio:NotatedMovementPrecedes/>"><biblio:NotatedMovementPrecedes /></a></td></tr>
       </biblio:foreachNotatedMovementPrecedesIterator>
@@ -82,9 +91,6 @@
       <biblio:foreachNotatedMovementIsFindingAidForIterator>
          <tr><td>isFindingAidFor</td><td><a href="../<biblio:NotatedMovementIsFindingAidForType/>/<biblio:NotatedMovementIsFindingAidForType/>.jsp?uri=<biblio:NotatedMovementIsFindingAidFor/>"><biblio:NotatedMovementIsFindingAidFor /></a></td></tr>
       </biblio:foreachNotatedMovementIsFindingAidForIterator>
-      <biblio:foreachNotatedMovementFollowsIterator>
-         <tr><td>follows</td><td><a href="../<biblio:NotatedMovementFollowsType/>/<biblio:NotatedMovementFollowsType/>.jsp?uri=<biblio:NotatedMovementFollows/>"><biblio:NotatedMovementFollows /></a></td></tr>
-      </biblio:foreachNotatedMovementFollowsIterator>
       <biblio:foreachNotatedMovementAbsorbedByIterator>
          <tr><td>absorbedBy</td><td><a href="../<biblio:NotatedMovementAbsorbedByType/>/<biblio:NotatedMovementAbsorbedByType/>.jsp?uri=<biblio:NotatedMovementAbsorbedBy/>"><biblio:NotatedMovementAbsorbedBy /></a></td></tr>
       </biblio:foreachNotatedMovementAbsorbedByIterator>
@@ -115,9 +121,6 @@
       <biblio:foreachNotatedMovementPrecedesInNarrativeIterator>
          <tr><td>precedesInNarrative</td><td><a href="../<biblio:NotatedMovementPrecedesInNarrativeType/>/<biblio:NotatedMovementPrecedesInNarrativeType/>.jsp?uri=<biblio:NotatedMovementPrecedesInNarrative/>"><biblio:NotatedMovementPrecedesInNarrative /></a></td></tr>
       </biblio:foreachNotatedMovementPrecedesInNarrativeIterator>
-      <biblio:foreachNotatedMovementIsSubjectOfIterator>
-         <tr><td>isSubjectOf</td><td><a href="../<biblio:NotatedMovementIsSubjectOfType/>/<biblio:NotatedMovementIsSubjectOfType/>.jsp?uri=<biblio:NotatedMovementIsSubjectOf/>"><biblio:NotatedMovementIsSubjectOf /></a></td></tr>
-      </biblio:foreachNotatedMovementIsSubjectOfIterator>
       <biblio:foreachNotatedMovementIsLastOfIterator>
          <tr><td>isLastOf</td><td><a href="../<biblio:NotatedMovementIsLastOfType/>/<biblio:NotatedMovementIsLastOfType/>.jsp?uri=<biblio:NotatedMovementIsLastOf/>"><biblio:NotatedMovementIsLastOf /></a></td></tr>
       </biblio:foreachNotatedMovementIsLastOfIterator>
@@ -148,9 +151,6 @@
       <biblio:foreachNotatedMovementHasContributionIterator>
          <tr><td>hasContribution</td><td><a href="../<biblio:NotatedMovementHasContributionType/>/<biblio:NotatedMovementHasContributionType/>.jsp?uri=<biblio:NotatedMovementHasContribution/>"><biblio:NotatedMovementHasContribution /></a></td></tr>
       </biblio:foreachNotatedMovementHasContributionIterator>
-      <biblio:foreachNotatedMovementAccompaniesIterator>
-         <tr><td>accompanies</td><td><a href="../<biblio:NotatedMovementAccompaniesType/>/<biblio:NotatedMovementAccompaniesType/>.jsp?uri=<biblio:NotatedMovementAccompanies/>"><biblio:NotatedMovementAccompanies /></a></td></tr>
-      </biblio:foreachNotatedMovementAccompaniesIterator>
       <biblio:foreachNotatedMovementHasTitleIterator>
          <tr><td>hasTitle</td><td><a href="../<biblio:NotatedMovementHasTitleType/>/<biblio:NotatedMovementHasTitleType/>.jsp?uri=<biblio:NotatedMovementHasTitle/>"><biblio:NotatedMovementHasTitle /></a></td></tr>
       </biblio:foreachNotatedMovementHasTitleIterator>
@@ -182,9 +182,9 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
-      <biblio:foreachNotatedMovementRelationInverseIterator>
-         <tr><td>relation</td><td><a href="../<biblio:NotatedMovementRelationInverseType/>/<biblio:NotatedMovementRelationInverseType/>.jsp?uri=<biblio:NotatedMovementRelationInverse/>"><biblio:NotatedMovementRelationInverse/></a></td></tr>
-      </biblio:foreachNotatedMovementRelationInverseIterator>
+      <biblio:foreachNotatedMovementAgentInverseIterator>
+         <tr><td>agent</td><td><a href="../<biblio:NotatedMovementAgentInverseType/>/<biblio:NotatedMovementAgentInverseType/>.jsp?uri=<biblio:NotatedMovementAgentInverse/>"><biblio:NotatedMovementAgentInverse/></a></td></tr>
+      </biblio:foreachNotatedMovementAgentInverseIterator>
    </table>
    </biblio:NotatedMovement>
 

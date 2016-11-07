@@ -31,6 +31,12 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachDistributorProvisionAtLocationIterator>
+         <tr><td>atLocation</td><td><a href="../<biblio:DistributorProvisionAtLocationType/>/<biblio:DistributorProvisionAtLocationType/>.jsp?uri=<biblio:DistributorProvisionAtLocation/>"><biblio:DistributorProvisionAtLocation /></a></td></tr>
+      </biblio:foreachDistributorProvisionAtLocationIterator>
+      <biblio:foreachDistributorProvisionAgentIterator>
+         <tr><td>agent</td><td><a href="../<biblio:DistributorProvisionAgentType/>/<biblio:DistributorProvisionAgentType/>.jsp?uri=<biblio:DistributorProvisionAgent/>"><biblio:DistributorProvisionAgent /></a></td></tr>
+      </biblio:foreachDistributorProvisionAgentIterator>
       <biblio:foreachDistributorProvisionMadeAvailableIterator>
          <tr><td>madeAvailable</td><td><a href="../<biblio:DistributorProvisionMadeAvailableType/>/<biblio:DistributorProvisionMadeAvailableType/>.jsp?uri=<biblio:DistributorProvisionMadeAvailable/>"><biblio:DistributorProvisionMadeAvailable /></a></td></tr>
       </biblio:foreachDistributorProvisionMadeAvailableIterator>

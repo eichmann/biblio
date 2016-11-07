@@ -46,15 +46,24 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachMultimediaRelationIterator>
+         <tr><td>relation</td><td><a href="../<biblio:MultimediaRelationType/>/<biblio:MultimediaRelationType/>.jsp?uri=<biblio:MultimediaRelation/>"><biblio:MultimediaRelation /></a></td></tr>
+      </biblio:foreachMultimediaRelationIterator>
       <biblio:foreachMultimediaHasPartIterator>
          <tr><td>hasPart</td><td><a href="../<biblio:MultimediaHasPartType/>/<biblio:MultimediaHasPartType/>.jsp?uri=<biblio:MultimediaHasPart/>"><biblio:MultimediaHasPart /></a></td></tr>
       </biblio:foreachMultimediaHasPartIterator>
+      <biblio:foreachMultimediaSubjectIterator>
+         <tr><td>subject</td><td><a href="../<biblio:MultimediaSubjectType/>/<biblio:MultimediaSubjectType/>.jsp?uri=<biblio:MultimediaSubject/>"><biblio:MultimediaSubject /></a></td></tr>
+      </biblio:foreachMultimediaSubjectIterator>
       <biblio:foreachMultimediaLanguageIterator>
          <tr><td>language</td><td><a href="../<biblio:MultimediaLanguageType/>/<biblio:MultimediaLanguageType/>.jsp?uri=<biblio:MultimediaLanguage/>"><biblio:MultimediaLanguage /></a></td></tr>
       </biblio:foreachMultimediaLanguageIterator>
       <biblio:foreachMultimediaIsPartOfIterator>
          <tr><td>isPartOf</td><td><a href="../<biblio:MultimediaIsPartOfType/>/<biblio:MultimediaIsPartOfType/>.jsp?uri=<biblio:MultimediaIsPartOf/>"><biblio:MultimediaIsPartOf /></a></td></tr>
       </biblio:foreachMultimediaIsPartOfIterator>
+      <biblio:foreachMultimediaIdentifiedByIterator>
+         <tr><td>identifiedBy</td><td><a href="../<biblio:MultimediaIdentifiedByType/>/<biblio:MultimediaIdentifiedByType/>.jsp?uri=<biblio:MultimediaIdentifiedBy/>"><biblio:MultimediaIdentifiedBy /></a></td></tr>
+      </biblio:foreachMultimediaIdentifiedByIterator>
       <biblio:foreachMultimediaPerformedAtIterator>
          <tr><td>performedAt</td><td><a href="../<biblio:MultimediaPerformedAtType/>/<biblio:MultimediaPerformedAtType/>.jsp?uri=<biblio:MultimediaPerformedAt/>"><biblio:MultimediaPerformedAt /></a></td></tr>
       </biblio:foreachMultimediaPerformedAtIterator>
@@ -82,9 +91,6 @@
       <biblio:foreachMultimediaIsFindingAidForIterator>
          <tr><td>isFindingAidFor</td><td><a href="../<biblio:MultimediaIsFindingAidForType/>/<biblio:MultimediaIsFindingAidForType/>.jsp?uri=<biblio:MultimediaIsFindingAidFor/>"><biblio:MultimediaIsFindingAidFor /></a></td></tr>
       </biblio:foreachMultimediaIsFindingAidForIterator>
-      <biblio:foreachMultimediaFollowsIterator>
-         <tr><td>follows</td><td><a href="../<biblio:MultimediaFollowsType/>/<biblio:MultimediaFollowsType/>.jsp?uri=<biblio:MultimediaFollows/>"><biblio:MultimediaFollows /></a></td></tr>
-      </biblio:foreachMultimediaFollowsIterator>
       <biblio:foreachMultimediaAbsorbedByIterator>
          <tr><td>absorbedBy</td><td><a href="../<biblio:MultimediaAbsorbedByType/>/<biblio:MultimediaAbsorbedByType/>.jsp?uri=<biblio:MultimediaAbsorbedBy/>"><biblio:MultimediaAbsorbedBy /></a></td></tr>
       </biblio:foreachMultimediaAbsorbedByIterator>
@@ -115,9 +121,6 @@
       <biblio:foreachMultimediaPrecedesInNarrativeIterator>
          <tr><td>precedesInNarrative</td><td><a href="../<biblio:MultimediaPrecedesInNarrativeType/>/<biblio:MultimediaPrecedesInNarrativeType/>.jsp?uri=<biblio:MultimediaPrecedesInNarrative/>"><biblio:MultimediaPrecedesInNarrative /></a></td></tr>
       </biblio:foreachMultimediaPrecedesInNarrativeIterator>
-      <biblio:foreachMultimediaIsSubjectOfIterator>
-         <tr><td>isSubjectOf</td><td><a href="../<biblio:MultimediaIsSubjectOfType/>/<biblio:MultimediaIsSubjectOfType/>.jsp?uri=<biblio:MultimediaIsSubjectOf/>"><biblio:MultimediaIsSubjectOf /></a></td></tr>
-      </biblio:foreachMultimediaIsSubjectOfIterator>
       <biblio:foreachMultimediaIsLastOfIterator>
          <tr><td>isLastOf</td><td><a href="../<biblio:MultimediaIsLastOfType/>/<biblio:MultimediaIsLastOfType/>.jsp?uri=<biblio:MultimediaIsLastOf/>"><biblio:MultimediaIsLastOf /></a></td></tr>
       </biblio:foreachMultimediaIsLastOfIterator>
@@ -148,9 +151,6 @@
       <biblio:foreachMultimediaHasContributionIterator>
          <tr><td>hasContribution</td><td><a href="../<biblio:MultimediaHasContributionType/>/<biblio:MultimediaHasContributionType/>.jsp?uri=<biblio:MultimediaHasContribution/>"><biblio:MultimediaHasContribution /></a></td></tr>
       </biblio:foreachMultimediaHasContributionIterator>
-      <biblio:foreachMultimediaAccompaniesIterator>
-         <tr><td>accompanies</td><td><a href="../<biblio:MultimediaAccompaniesType/>/<biblio:MultimediaAccompaniesType/>.jsp?uri=<biblio:MultimediaAccompanies/>"><biblio:MultimediaAccompanies /></a></td></tr>
-      </biblio:foreachMultimediaAccompaniesIterator>
       <biblio:foreachMultimediaHasTitleIterator>
          <tr><td>hasTitle</td><td><a href="../<biblio:MultimediaHasTitleType/>/<biblio:MultimediaHasTitleType/>.jsp?uri=<biblio:MultimediaHasTitle/>"><biblio:MultimediaHasTitle /></a></td></tr>
       </biblio:foreachMultimediaHasTitleIterator>
@@ -182,9 +182,9 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
-      <biblio:foreachMultimediaRelationInverseIterator>
-         <tr><td>relation</td><td><a href="../<biblio:MultimediaRelationInverseType/>/<biblio:MultimediaRelationInverseType/>.jsp?uri=<biblio:MultimediaRelationInverse/>"><biblio:MultimediaRelationInverse/></a></td></tr>
-      </biblio:foreachMultimediaRelationInverseIterator>
+      <biblio:foreachMultimediaAgentInverseIterator>
+         <tr><td>agent</td><td><a href="../<biblio:MultimediaAgentInverseType/>/<biblio:MultimediaAgentInverseType/>.jsp?uri=<biblio:MultimediaAgentInverse/>"><biblio:MultimediaAgentInverse/></a></td></tr>
+      </biblio:foreachMultimediaAgentInverseIterator>
    </table>
    </biblio:Multimedia>
 

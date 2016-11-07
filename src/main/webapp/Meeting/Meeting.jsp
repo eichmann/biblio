@@ -31,9 +31,9 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachMeetingIsSubjectOfIterator>
-         <tr><td>isSubjectOf</td><td><a href="../<biblio:MeetingIsSubjectOfType/>/<biblio:MeetingIsSubjectOfType/>.jsp?uri=<biblio:MeetingIsSubjectOf/>"><biblio:MeetingIsSubjectOf /></a></td></tr>
-      </biblio:foreachMeetingIsSubjectOfIterator>
+      <biblio:foreachMeetingIdentifiedByIterator>
+         <tr><td>identifiedBy</td><td><a href="../<biblio:MeetingIdentifiedByType/>/<biblio:MeetingIdentifiedByType/>.jsp?uri=<biblio:MeetingIdentifiedBy/>"><biblio:MeetingIdentifiedBy /></a></td></tr>
+      </biblio:foreachMeetingIdentifiedByIterator>
       <biblio:foreachMeetingAtLocationIterator>
          <tr><td>atLocation</td><td><a href="../<biblio:MeetingAtLocationType/>/<biblio:MeetingAtLocationType/>.jsp?uri=<biblio:MeetingAtLocation/>"><biblio:MeetingAtLocation /></a></td></tr>
       </biblio:foreachMeetingAtLocationIterator>

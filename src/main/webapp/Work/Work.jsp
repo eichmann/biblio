@@ -46,9 +46,15 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachWorkRelationIterator>
+         <tr><td>relation</td><td><a href="../<biblio:WorkRelationType/>/<biblio:WorkRelationType/>.jsp?uri=<biblio:WorkRelation/>"><biblio:WorkRelation /></a></td></tr>
+      </biblio:foreachWorkRelationIterator>
       <biblio:foreachWorkHasPartIterator>
          <tr><td>hasPart</td><td><a href="../<biblio:WorkHasPartType/>/<biblio:WorkHasPartType/>.jsp?uri=<biblio:WorkHasPart/>"><biblio:WorkHasPart /></a></td></tr>
       </biblio:foreachWorkHasPartIterator>
+      <biblio:foreachWorkSubjectIterator>
+         <tr><td>subject</td><td><a href="../<biblio:WorkSubjectType/>/<biblio:WorkSubjectType/>.jsp?uri=<biblio:WorkSubject/>"><biblio:WorkSubject /></a></td></tr>
+      </biblio:foreachWorkSubjectIterator>
       <biblio:foreachWorkLanguageIterator>
          <tr><td>language</td><td><a href="../<biblio:WorkLanguageType/>/<biblio:WorkLanguageType/>.jsp?uri=<biblio:WorkLanguage/>"><biblio:WorkLanguage /></a></td></tr>
       </biblio:foreachWorkLanguageIterator>
@@ -70,6 +76,9 @@
       <biblio:foreachWorkHasDataSourceIterator>
          <tr><td>hasDataSource</td><td><a href="../<biblio:WorkHasDataSourceType/>/<biblio:WorkHasDataSourceType/>.jsp?uri=<biblio:WorkHasDataSource/>"><biblio:WorkHasDataSource /></a></td></tr>
       </biblio:foreachWorkHasDataSourceIterator>
+      <biblio:foreachWorkIdentifiedByIterator>
+         <tr><td>identifiedBy</td><td><a href="../<biblio:WorkIdentifiedByType/>/<biblio:WorkIdentifiedByType/>.jsp?uri=<biblio:WorkIdentifiedBy/>"><biblio:WorkIdentifiedBy /></a></td></tr>
+      </biblio:foreachWorkIdentifiedByIterator>
       <biblio:foreachWorkPrecedesIterator>
          <tr><td>precedes</td><td><a href="../<biblio:WorkPrecedesType/>/<biblio:WorkPrecedesType/>.jsp?uri=<biblio:WorkPrecedes/>"><biblio:WorkPrecedes /></a></td></tr>
       </biblio:foreachWorkPrecedesIterator>
@@ -82,9 +91,6 @@
       <biblio:foreachWorkIsFindingAidForIterator>
          <tr><td>isFindingAidFor</td><td><a href="../<biblio:WorkIsFindingAidForType/>/<biblio:WorkIsFindingAidForType/>.jsp?uri=<biblio:WorkIsFindingAidFor/>"><biblio:WorkIsFindingAidFor /></a></td></tr>
       </biblio:foreachWorkIsFindingAidForIterator>
-      <biblio:foreachWorkFollowsIterator>
-         <tr><td>follows</td><td><a href="../<biblio:WorkFollowsType/>/<biblio:WorkFollowsType/>.jsp?uri=<biblio:WorkFollows/>"><biblio:WorkFollows /></a></td></tr>
-      </biblio:foreachWorkFollowsIterator>
       <biblio:foreachWorkAbsorbedByIterator>
          <tr><td>absorbedBy</td><td><a href="../<biblio:WorkAbsorbedByType/>/<biblio:WorkAbsorbedByType/>.jsp?uri=<biblio:WorkAbsorbedBy/>"><biblio:WorkAbsorbedBy /></a></td></tr>
       </biblio:foreachWorkAbsorbedByIterator>
@@ -115,9 +121,6 @@
       <biblio:foreachWorkPrecedesInNarrativeIterator>
          <tr><td>precedesInNarrative</td><td><a href="../<biblio:WorkPrecedesInNarrativeType/>/<biblio:WorkPrecedesInNarrativeType/>.jsp?uri=<biblio:WorkPrecedesInNarrative/>"><biblio:WorkPrecedesInNarrative /></a></td></tr>
       </biblio:foreachWorkPrecedesInNarrativeIterator>
-      <biblio:foreachWorkIsSubjectOfIterator>
-         <tr><td>isSubjectOf</td><td><a href="../<biblio:WorkIsSubjectOfType/>/<biblio:WorkIsSubjectOfType/>.jsp?uri=<biblio:WorkIsSubjectOf/>"><biblio:WorkIsSubjectOf /></a></td></tr>
-      </biblio:foreachWorkIsSubjectOfIterator>
       <biblio:foreachWorkIsLastOfIterator>
          <tr><td>isLastOf</td><td><a href="../<biblio:WorkIsLastOfType/>/<biblio:WorkIsLastOfType/>.jsp?uri=<biblio:WorkIsLastOf/>"><biblio:WorkIsLastOf /></a></td></tr>
       </biblio:foreachWorkIsLastOfIterator>
@@ -148,9 +151,6 @@
       <biblio:foreachWorkHasContributionIterator>
          <tr><td>hasContribution</td><td><a href="../<biblio:WorkHasContributionType/>/<biblio:WorkHasContributionType/>.jsp?uri=<biblio:WorkHasContribution/>"><biblio:WorkHasContribution /></a></td></tr>
       </biblio:foreachWorkHasContributionIterator>
-      <biblio:foreachWorkAccompaniesIterator>
-         <tr><td>accompanies</td><td><a href="../<biblio:WorkAccompaniesType/>/<biblio:WorkAccompaniesType/>.jsp?uri=<biblio:WorkAccompanies/>"><biblio:WorkAccompanies /></a></td></tr>
-      </biblio:foreachWorkAccompaniesIterator>
       <biblio:foreachWorkHasTitleIterator>
          <tr><td>hasTitle</td><td><a href="../<biblio:WorkHasTitleType/>/<biblio:WorkHasTitleType/>.jsp?uri=<biblio:WorkHasTitle/>"><biblio:WorkHasTitle /></a></td></tr>
       </biblio:foreachWorkHasTitleIterator>
@@ -182,9 +182,9 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
-      <biblio:foreachWorkRelationInverseIterator>
-         <tr><td>relation</td><td><a href="../<biblio:WorkRelationInverseType/>/<biblio:WorkRelationInverseType/>.jsp?uri=<biblio:WorkRelationInverse/>"><biblio:WorkRelationInverse/></a></td></tr>
-      </biblio:foreachWorkRelationInverseIterator>
+      <biblio:foreachWorkAgentInverseIterator>
+         <tr><td>agent</td><td><a href="../<biblio:WorkAgentInverseType/>/<biblio:WorkAgentInverseType/>.jsp?uri=<biblio:WorkAgentInverse/>"><biblio:WorkAgentInverse/></a></td></tr>
+      </biblio:foreachWorkAgentInverseIterator>
    </table>
    </biblio:Work>
 

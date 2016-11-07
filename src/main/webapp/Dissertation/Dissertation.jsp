@@ -49,9 +49,15 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachDissertationRelationIterator>
+         <tr><td>relation</td><td><a href="../<biblio:DissertationRelationType/>/<biblio:DissertationRelationType/>.jsp?uri=<biblio:DissertationRelation/>"><biblio:DissertationRelation /></a></td></tr>
+      </biblio:foreachDissertationRelationIterator>
       <biblio:foreachDissertationHasPartIterator>
          <tr><td>hasPart</td><td><a href="../<biblio:DissertationHasPartType/>/<biblio:DissertationHasPartType/>.jsp?uri=<biblio:DissertationHasPart/>"><biblio:DissertationHasPart /></a></td></tr>
       </biblio:foreachDissertationHasPartIterator>
+      <biblio:foreachDissertationSubjectIterator>
+         <tr><td>subject</td><td><a href="../<biblio:DissertationSubjectType/>/<biblio:DissertationSubjectType/>.jsp?uri=<biblio:DissertationSubject/>"><biblio:DissertationSubject /></a></td></tr>
+      </biblio:foreachDissertationSubjectIterator>
       <biblio:foreachDissertationLanguageIterator>
          <tr><td>language</td><td><a href="../<biblio:DissertationLanguageType/>/<biblio:DissertationLanguageType/>.jsp?uri=<biblio:DissertationLanguage/>"><biblio:DissertationLanguage /></a></td></tr>
       </biblio:foreachDissertationLanguageIterator>
@@ -73,6 +79,9 @@
       <biblio:foreachDissertationHasDataSourceIterator>
          <tr><td>hasDataSource</td><td><a href="../<biblio:DissertationHasDataSourceType/>/<biblio:DissertationHasDataSourceType/>.jsp?uri=<biblio:DissertationHasDataSource/>"><biblio:DissertationHasDataSource /></a></td></tr>
       </biblio:foreachDissertationHasDataSourceIterator>
+      <biblio:foreachDissertationIdentifiedByIterator>
+         <tr><td>identifiedBy</td><td><a href="../<biblio:DissertationIdentifiedByType/>/<biblio:DissertationIdentifiedByType/>.jsp?uri=<biblio:DissertationIdentifiedBy/>"><biblio:DissertationIdentifiedBy /></a></td></tr>
+      </biblio:foreachDissertationIdentifiedByIterator>
       <biblio:foreachDissertationPrecedesIterator>
          <tr><td>precedes</td><td><a href="../<biblio:DissertationPrecedesType/>/<biblio:DissertationPrecedesType/>.jsp?uri=<biblio:DissertationPrecedes/>"><biblio:DissertationPrecedes /></a></td></tr>
       </biblio:foreachDissertationPrecedesIterator>
@@ -85,9 +94,6 @@
       <biblio:foreachDissertationIsFindingAidForIterator>
          <tr><td>isFindingAidFor</td><td><a href="../<biblio:DissertationIsFindingAidForType/>/<biblio:DissertationIsFindingAidForType/>.jsp?uri=<biblio:DissertationIsFindingAidFor/>"><biblio:DissertationIsFindingAidFor /></a></td></tr>
       </biblio:foreachDissertationIsFindingAidForIterator>
-      <biblio:foreachDissertationFollowsIterator>
-         <tr><td>follows</td><td><a href="../<biblio:DissertationFollowsType/>/<biblio:DissertationFollowsType/>.jsp?uri=<biblio:DissertationFollows/>"><biblio:DissertationFollows /></a></td></tr>
-      </biblio:foreachDissertationFollowsIterator>
       <biblio:foreachDissertationAbsorbedByIterator>
          <tr><td>absorbedBy</td><td><a href="../<biblio:DissertationAbsorbedByType/>/<biblio:DissertationAbsorbedByType/>.jsp?uri=<biblio:DissertationAbsorbedBy/>"><biblio:DissertationAbsorbedBy /></a></td></tr>
       </biblio:foreachDissertationAbsorbedByIterator>
@@ -118,9 +124,6 @@
       <biblio:foreachDissertationPrecedesInNarrativeIterator>
          <tr><td>precedesInNarrative</td><td><a href="../<biblio:DissertationPrecedesInNarrativeType/>/<biblio:DissertationPrecedesInNarrativeType/>.jsp?uri=<biblio:DissertationPrecedesInNarrative/>"><biblio:DissertationPrecedesInNarrative /></a></td></tr>
       </biblio:foreachDissertationPrecedesInNarrativeIterator>
-      <biblio:foreachDissertationIsSubjectOfIterator>
-         <tr><td>isSubjectOf</td><td><a href="../<biblio:DissertationIsSubjectOfType/>/<biblio:DissertationIsSubjectOfType/>.jsp?uri=<biblio:DissertationIsSubjectOf/>"><biblio:DissertationIsSubjectOf /></a></td></tr>
-      </biblio:foreachDissertationIsSubjectOfIterator>
       <biblio:foreachDissertationIsLastOfIterator>
          <tr><td>isLastOf</td><td><a href="../<biblio:DissertationIsLastOfType/>/<biblio:DissertationIsLastOfType/>.jsp?uri=<biblio:DissertationIsLastOf/>"><biblio:DissertationIsLastOf /></a></td></tr>
       </biblio:foreachDissertationIsLastOfIterator>
@@ -151,9 +154,6 @@
       <biblio:foreachDissertationHasContributionIterator>
          <tr><td>hasContribution</td><td><a href="../<biblio:DissertationHasContributionType/>/<biblio:DissertationHasContributionType/>.jsp?uri=<biblio:DissertationHasContribution/>"><biblio:DissertationHasContribution /></a></td></tr>
       </biblio:foreachDissertationHasContributionIterator>
-      <biblio:foreachDissertationAccompaniesIterator>
-         <tr><td>accompanies</td><td><a href="../<biblio:DissertationAccompaniesType/>/<biblio:DissertationAccompaniesType/>.jsp?uri=<biblio:DissertationAccompanies/>"><biblio:DissertationAccompanies /></a></td></tr>
-      </biblio:foreachDissertationAccompaniesIterator>
       <biblio:foreachDissertationHasTitleIterator>
          <tr><td>hasTitle</td><td><a href="../<biblio:DissertationHasTitleType/>/<biblio:DissertationHasTitleType/>.jsp?uri=<biblio:DissertationHasTitle/>"><biblio:DissertationHasTitle /></a></td></tr>
       </biblio:foreachDissertationHasTitleIterator>
@@ -185,9 +185,9 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
-      <biblio:foreachDissertationRelationInverseIterator>
-         <tr><td>relation</td><td><a href="../<biblio:DissertationRelationInverseType/>/<biblio:DissertationRelationInverseType/>.jsp?uri=<biblio:DissertationRelationInverse/>"><biblio:DissertationRelationInverse/></a></td></tr>
-      </biblio:foreachDissertationRelationInverseIterator>
+      <biblio:foreachDissertationAgentInverseIterator>
+         <tr><td>agent</td><td><a href="../<biblio:DissertationAgentInverseType/>/<biblio:DissertationAgentInverseType/>.jsp?uri=<biblio:DissertationAgentInverse/>"><biblio:DissertationAgentInverse/></a></td></tr>
+      </biblio:foreachDissertationAgentInverseIterator>
    </table>
    </biblio:Dissertation>
 

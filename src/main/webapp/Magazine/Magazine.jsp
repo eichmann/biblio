@@ -46,9 +46,15 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachMagazineRelationIterator>
+         <tr><td>relation</td><td><a href="../<biblio:MagazineRelationType/>/<biblio:MagazineRelationType/>.jsp?uri=<biblio:MagazineRelation/>"><biblio:MagazineRelation /></a></td></tr>
+      </biblio:foreachMagazineRelationIterator>
       <biblio:foreachMagazineHasPartIterator>
          <tr><td>hasPart</td><td><a href="../<biblio:MagazineHasPartType/>/<biblio:MagazineHasPartType/>.jsp?uri=<biblio:MagazineHasPart/>"><biblio:MagazineHasPart /></a></td></tr>
       </biblio:foreachMagazineHasPartIterator>
+      <biblio:foreachMagazineSubjectIterator>
+         <tr><td>subject</td><td><a href="../<biblio:MagazineSubjectType/>/<biblio:MagazineSubjectType/>.jsp?uri=<biblio:MagazineSubject/>"><biblio:MagazineSubject /></a></td></tr>
+      </biblio:foreachMagazineSubjectIterator>
       <biblio:foreachMagazineLanguageIterator>
          <tr><td>language</td><td><a href="../<biblio:MagazineLanguageType/>/<biblio:MagazineLanguageType/>.jsp?uri=<biblio:MagazineLanguage/>"><biblio:MagazineLanguage /></a></td></tr>
       </biblio:foreachMagazineLanguageIterator>
@@ -70,6 +76,9 @@
       <biblio:foreachMagazineHasDataSourceIterator>
          <tr><td>hasDataSource</td><td><a href="../<biblio:MagazineHasDataSourceType/>/<biblio:MagazineHasDataSourceType/>.jsp?uri=<biblio:MagazineHasDataSource/>"><biblio:MagazineHasDataSource /></a></td></tr>
       </biblio:foreachMagazineHasDataSourceIterator>
+      <biblio:foreachMagazineIdentifiedByIterator>
+         <tr><td>identifiedBy</td><td><a href="../<biblio:MagazineIdentifiedByType/>/<biblio:MagazineIdentifiedByType/>.jsp?uri=<biblio:MagazineIdentifiedBy/>"><biblio:MagazineIdentifiedBy /></a></td></tr>
+      </biblio:foreachMagazineIdentifiedByIterator>
       <biblio:foreachMagazinePrecedesIterator>
          <tr><td>precedes</td><td><a href="../<biblio:MagazinePrecedesType/>/<biblio:MagazinePrecedesType/>.jsp?uri=<biblio:MagazinePrecedes/>"><biblio:MagazinePrecedes /></a></td></tr>
       </biblio:foreachMagazinePrecedesIterator>
@@ -82,9 +91,6 @@
       <biblio:foreachMagazineIsFindingAidForIterator>
          <tr><td>isFindingAidFor</td><td><a href="../<biblio:MagazineIsFindingAidForType/>/<biblio:MagazineIsFindingAidForType/>.jsp?uri=<biblio:MagazineIsFindingAidFor/>"><biblio:MagazineIsFindingAidFor /></a></td></tr>
       </biblio:foreachMagazineIsFindingAidForIterator>
-      <biblio:foreachMagazineFollowsIterator>
-         <tr><td>follows</td><td><a href="../<biblio:MagazineFollowsType/>/<biblio:MagazineFollowsType/>.jsp?uri=<biblio:MagazineFollows/>"><biblio:MagazineFollows /></a></td></tr>
-      </biblio:foreachMagazineFollowsIterator>
       <biblio:foreachMagazineAbsorbedByIterator>
          <tr><td>absorbedBy</td><td><a href="../<biblio:MagazineAbsorbedByType/>/<biblio:MagazineAbsorbedByType/>.jsp?uri=<biblio:MagazineAbsorbedBy/>"><biblio:MagazineAbsorbedBy /></a></td></tr>
       </biblio:foreachMagazineAbsorbedByIterator>
@@ -115,9 +121,6 @@
       <biblio:foreachMagazinePrecedesInNarrativeIterator>
          <tr><td>precedesInNarrative</td><td><a href="../<biblio:MagazinePrecedesInNarrativeType/>/<biblio:MagazinePrecedesInNarrativeType/>.jsp?uri=<biblio:MagazinePrecedesInNarrative/>"><biblio:MagazinePrecedesInNarrative /></a></td></tr>
       </biblio:foreachMagazinePrecedesInNarrativeIterator>
-      <biblio:foreachMagazineIsSubjectOfIterator>
-         <tr><td>isSubjectOf</td><td><a href="../<biblio:MagazineIsSubjectOfType/>/<biblio:MagazineIsSubjectOfType/>.jsp?uri=<biblio:MagazineIsSubjectOf/>"><biblio:MagazineIsSubjectOf /></a></td></tr>
-      </biblio:foreachMagazineIsSubjectOfIterator>
       <biblio:foreachMagazineIsLastOfIterator>
          <tr><td>isLastOf</td><td><a href="../<biblio:MagazineIsLastOfType/>/<biblio:MagazineIsLastOfType/>.jsp?uri=<biblio:MagazineIsLastOf/>"><biblio:MagazineIsLastOf /></a></td></tr>
       </biblio:foreachMagazineIsLastOfIterator>
@@ -148,9 +151,6 @@
       <biblio:foreachMagazineHasContributionIterator>
          <tr><td>hasContribution</td><td><a href="../<biblio:MagazineHasContributionType/>/<biblio:MagazineHasContributionType/>.jsp?uri=<biblio:MagazineHasContribution/>"><biblio:MagazineHasContribution /></a></td></tr>
       </biblio:foreachMagazineHasContributionIterator>
-      <biblio:foreachMagazineAccompaniesIterator>
-         <tr><td>accompanies</td><td><a href="../<biblio:MagazineAccompaniesType/>/<biblio:MagazineAccompaniesType/>.jsp?uri=<biblio:MagazineAccompanies/>"><biblio:MagazineAccompanies /></a></td></tr>
-      </biblio:foreachMagazineAccompaniesIterator>
       <biblio:foreachMagazineHasTitleIterator>
          <tr><td>hasTitle</td><td><a href="../<biblio:MagazineHasTitleType/>/<biblio:MagazineHasTitleType/>.jsp?uri=<biblio:MagazineHasTitle/>"><biblio:MagazineHasTitle /></a></td></tr>
       </biblio:foreachMagazineHasTitleIterator>
@@ -178,31 +178,19 @@
       <biblio:foreachMagazineIsUnionOfIterator>
          <tr><td>isUnionOf</td><td><a href="../<biblio:MagazineIsUnionOfType/>/<biblio:MagazineIsUnionOfType/>.jsp?uri=<biblio:MagazineIsUnionOf/>"><biblio:MagazineIsUnionOf /></a></td></tr>
       </biblio:foreachMagazineIsUnionOfIterator>
-      <biblio:foreachMagazineRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:MagazineRelationType/>/<biblio:MagazineRelationType/>.jsp?uri=<biblio:MagazineRelation/>"><biblio:MagazineRelation /></a></td></tr>
-      </biblio:foreachMagazineRelationIterator>
-      <biblio:foreachMagazineSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:MagazineSubjectType/>/<biblio:MagazineSubjectType/>.jsp?uri=<biblio:MagazineSubject/>"><biblio:MagazineSubject /></a></td></tr>
-      </biblio:foreachMagazineSubjectIterator>
-      <biblio:foreachMagazineIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:MagazineIdentifiedByType/>/<biblio:MagazineIdentifiedByType/>.jsp?uri=<biblio:MagazineIdentifiedBy/>"><biblio:MagazineIdentifiedBy /></a></td></tr>
-      </biblio:foreachMagazineIdentifiedByIterator>
       <biblio:foreachMagazineHasFirstIterator>
          <tr><td>hasFirst</td><td><a href="../<biblio:MagazineHasFirstType/>/<biblio:MagazineHasFirstType/>.jsp?uri=<biblio:MagazineHasFirst/>"><biblio:MagazineHasFirst /></a></td></tr>
       </biblio:foreachMagazineHasFirstIterator>
-      <biblio:foreachMagazineHasAnnotationIterator>
-         <tr><td>hasAnnotation</td><td><a href="../<biblio:MagazineHasAnnotationType/>/<biblio:MagazineHasAnnotationType/>.jsp?uri=<biblio:MagazineHasAnnotation/>"><biblio:MagazineHasAnnotation /></a></td></tr>
-      </biblio:foreachMagazineHasAnnotationIterator>
       <biblio:foreachMagazineHasLastIterator>
          <tr><td>hasLast</td><td><a href="../<biblio:MagazineHasLastType/>/<biblio:MagazineHasLastType/>.jsp?uri=<biblio:MagazineHasLast/>"><biblio:MagazineHasLast /></a></td></tr>
       </biblio:foreachMagazineHasLastIterator>
-      <biblio:foreachMagazineAccompaniedByIterator>
-         <tr><td>accompaniedBy</td><td><a href="../<biblio:MagazineAccompaniedByType/>/<biblio:MagazineAccompaniedByType/>.jsp?uri=<biblio:MagazineAccompaniedBy/>"><biblio:MagazineAccompaniedBy /></a></td></tr>
-      </biblio:foreachMagazineAccompaniedByIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
+      <biblio:foreachMagazineAgentInverseIterator>
+         <tr><td>agent</td><td><a href="../<biblio:MagazineAgentInverseType/>/<biblio:MagazineAgentInverseType/>.jsp?uri=<biblio:MagazineAgentInverse/>"><biblio:MagazineAgentInverse/></a></td></tr>
+      </biblio:foreachMagazineAgentInverseIterator>
    </table>
    </biblio:Magazine>
 

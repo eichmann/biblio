@@ -46,15 +46,24 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachDatasetRelationIterator>
+         <tr><td>relation</td><td><a href="../<biblio:DatasetRelationType/>/<biblio:DatasetRelationType/>.jsp?uri=<biblio:DatasetRelation/>"><biblio:DatasetRelation /></a></td></tr>
+      </biblio:foreachDatasetRelationIterator>
       <biblio:foreachDatasetHasPartIterator>
          <tr><td>hasPart</td><td><a href="../<biblio:DatasetHasPartType/>/<biblio:DatasetHasPartType/>.jsp?uri=<biblio:DatasetHasPart/>"><biblio:DatasetHasPart /></a></td></tr>
       </biblio:foreachDatasetHasPartIterator>
+      <biblio:foreachDatasetSubjectIterator>
+         <tr><td>subject</td><td><a href="../<biblio:DatasetSubjectType/>/<biblio:DatasetSubjectType/>.jsp?uri=<biblio:DatasetSubject/>"><biblio:DatasetSubject /></a></td></tr>
+      </biblio:foreachDatasetSubjectIterator>
       <biblio:foreachDatasetLanguageIterator>
          <tr><td>language</td><td><a href="../<biblio:DatasetLanguageType/>/<biblio:DatasetLanguageType/>.jsp?uri=<biblio:DatasetLanguage/>"><biblio:DatasetLanguage /></a></td></tr>
       </biblio:foreachDatasetLanguageIterator>
       <biblio:foreachDatasetIsPartOfIterator>
          <tr><td>isPartOf</td><td><a href="../<biblio:DatasetIsPartOfType/>/<biblio:DatasetIsPartOfType/>.jsp?uri=<biblio:DatasetIsPartOf/>"><biblio:DatasetIsPartOf /></a></td></tr>
       </biblio:foreachDatasetIsPartOfIterator>
+      <biblio:foreachDatasetIdentifiedByIterator>
+         <tr><td>identifiedBy</td><td><a href="../<biblio:DatasetIdentifiedByType/>/<biblio:DatasetIdentifiedByType/>.jsp?uri=<biblio:DatasetIdentifiedBy/>"><biblio:DatasetIdentifiedBy /></a></td></tr>
+      </biblio:foreachDatasetIdentifiedByIterator>
       <biblio:foreachDatasetPerformedAtIterator>
          <tr><td>performedAt</td><td><a href="../<biblio:DatasetPerformedAtType/>/<biblio:DatasetPerformedAtType/>.jsp?uri=<biblio:DatasetPerformedAt/>"><biblio:DatasetPerformedAt /></a></td></tr>
       </biblio:foreachDatasetPerformedAtIterator>
@@ -82,9 +91,6 @@
       <biblio:foreachDatasetIsFindingAidForIterator>
          <tr><td>isFindingAidFor</td><td><a href="../<biblio:DatasetIsFindingAidForType/>/<biblio:DatasetIsFindingAidForType/>.jsp?uri=<biblio:DatasetIsFindingAidFor/>"><biblio:DatasetIsFindingAidFor /></a></td></tr>
       </biblio:foreachDatasetIsFindingAidForIterator>
-      <biblio:foreachDatasetFollowsIterator>
-         <tr><td>follows</td><td><a href="../<biblio:DatasetFollowsType/>/<biblio:DatasetFollowsType/>.jsp?uri=<biblio:DatasetFollows/>"><biblio:DatasetFollows /></a></td></tr>
-      </biblio:foreachDatasetFollowsIterator>
       <biblio:foreachDatasetAbsorbedByIterator>
          <tr><td>absorbedBy</td><td><a href="../<biblio:DatasetAbsorbedByType/>/<biblio:DatasetAbsorbedByType/>.jsp?uri=<biblio:DatasetAbsorbedBy/>"><biblio:DatasetAbsorbedBy /></a></td></tr>
       </biblio:foreachDatasetAbsorbedByIterator>
@@ -115,9 +121,6 @@
       <biblio:foreachDatasetPrecedesInNarrativeIterator>
          <tr><td>precedesInNarrative</td><td><a href="../<biblio:DatasetPrecedesInNarrativeType/>/<biblio:DatasetPrecedesInNarrativeType/>.jsp?uri=<biblio:DatasetPrecedesInNarrative/>"><biblio:DatasetPrecedesInNarrative /></a></td></tr>
       </biblio:foreachDatasetPrecedesInNarrativeIterator>
-      <biblio:foreachDatasetIsSubjectOfIterator>
-         <tr><td>isSubjectOf</td><td><a href="../<biblio:DatasetIsSubjectOfType/>/<biblio:DatasetIsSubjectOfType/>.jsp?uri=<biblio:DatasetIsSubjectOf/>"><biblio:DatasetIsSubjectOf /></a></td></tr>
-      </biblio:foreachDatasetIsSubjectOfIterator>
       <biblio:foreachDatasetIsLastOfIterator>
          <tr><td>isLastOf</td><td><a href="../<biblio:DatasetIsLastOfType/>/<biblio:DatasetIsLastOfType/>.jsp?uri=<biblio:DatasetIsLastOf/>"><biblio:DatasetIsLastOf /></a></td></tr>
       </biblio:foreachDatasetIsLastOfIterator>
@@ -148,9 +151,6 @@
       <biblio:foreachDatasetHasContributionIterator>
          <tr><td>hasContribution</td><td><a href="../<biblio:DatasetHasContributionType/>/<biblio:DatasetHasContributionType/>.jsp?uri=<biblio:DatasetHasContribution/>"><biblio:DatasetHasContribution /></a></td></tr>
       </biblio:foreachDatasetHasContributionIterator>
-      <biblio:foreachDatasetAccompaniesIterator>
-         <tr><td>accompanies</td><td><a href="../<biblio:DatasetAccompaniesType/>/<biblio:DatasetAccompaniesType/>.jsp?uri=<biblio:DatasetAccompanies/>"><biblio:DatasetAccompanies /></a></td></tr>
-      </biblio:foreachDatasetAccompaniesIterator>
       <biblio:foreachDatasetHasTitleIterator>
          <tr><td>hasTitle</td><td><a href="../<biblio:DatasetHasTitleType/>/<biblio:DatasetHasTitleType/>.jsp?uri=<biblio:DatasetHasTitle/>"><biblio:DatasetHasTitle /></a></td></tr>
       </biblio:foreachDatasetHasTitleIterator>
@@ -182,9 +182,9 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
-      <biblio:foreachDatasetRelationInverseIterator>
-         <tr><td>relation</td><td><a href="../<biblio:DatasetRelationInverseType/>/<biblio:DatasetRelationInverseType/>.jsp?uri=<biblio:DatasetRelationInverse/>"><biblio:DatasetRelationInverse/></a></td></tr>
-      </biblio:foreachDatasetRelationInverseIterator>
+      <biblio:foreachDatasetAgentInverseIterator>
+         <tr><td>agent</td><td><a href="../<biblio:DatasetAgentInverseType/>/<biblio:DatasetAgentInverseType/>.jsp?uri=<biblio:DatasetAgentInverse/>"><biblio:DatasetAgentInverse/></a></td></tr>
+      </biblio:foreachDatasetAgentInverseIterator>
    </table>
    </biblio:Dataset>
 
