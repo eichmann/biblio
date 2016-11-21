@@ -61,9 +61,12 @@
       <biblio:foreachDatasetIsPartOfIterator>
          <tr><td>isPartOf</td><td><a href="../<biblio:DatasetIsPartOfType/>/<biblio:DatasetIsPartOfType/>.jsp?uri=<biblio:DatasetIsPartOf/>"><biblio:DatasetIsPartOf /></a></td></tr>
       </biblio:foreachDatasetIsPartOfIterator>
-      <biblio:foreachDatasetIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:DatasetIdentifiedByType/>/<biblio:DatasetIdentifiedByType/>.jsp?uri=<biblio:DatasetIdentifiedBy/>"><biblio:DatasetIdentifiedBy /></a></td></tr>
-      </biblio:foreachDatasetIdentifiedByIterator>
+      <biblio:foreachDatasetFollowsIterator>
+         <tr><td>follows</td><td><a href="../<biblio:DatasetFollowsType/>/<biblio:DatasetFollowsType/>.jsp?uri=<biblio:DatasetFollows/>"><biblio:DatasetFollows /></a></td></tr>
+      </biblio:foreachDatasetFollowsIterator>
+      <biblio:foreachDatasetHasAnnotationIterator>
+         <tr><td>hasAnnotation</td><td><a href="../<biblio:DatasetHasAnnotationType/>/<biblio:DatasetHasAnnotationType/>.jsp?uri=<biblio:DatasetHasAnnotation/>"><biblio:DatasetHasAnnotation /></a></td></tr>
+      </biblio:foreachDatasetHasAnnotationIterator>
       <biblio:foreachDatasetPerformedAtIterator>
          <tr><td>performedAt</td><td><a href="../<biblio:DatasetPerformedAtType/>/<biblio:DatasetPerformedAtType/>.jsp?uri=<biblio:DatasetPerformedAt/>"><biblio:DatasetPerformedAt /></a></td></tr>
       </biblio:foreachDatasetPerformedAtIterator>
@@ -79,9 +82,6 @@
       <biblio:foreachDatasetHasDataSourceIterator>
          <tr><td>hasDataSource</td><td><a href="../<biblio:DatasetHasDataSourceType/>/<biblio:DatasetHasDataSourceType/>.jsp?uri=<biblio:DatasetHasDataSource/>"><biblio:DatasetHasDataSource /></a></td></tr>
       </biblio:foreachDatasetHasDataSourceIterator>
-      <biblio:foreachDatasetPrecedesIterator>
-         <tr><td>precedes</td><td><a href="../<biblio:DatasetPrecedesType/>/<biblio:DatasetPrecedesType/>.jsp?uri=<biblio:DatasetPrecedes/>"><biblio:DatasetPrecedes /></a></td></tr>
-      </biblio:foreachDatasetPrecedesIterator>
       <biblio:foreachDatasetContinuesUnderNewTitleIterator>
          <tr><td>continuesUnderNewTitle</td><td><a href="../<biblio:DatasetContinuesUnderNewTitleType/>/<biblio:DatasetContinuesUnderNewTitleType/>.jsp?uri=<biblio:DatasetContinuesUnderNewTitle/>"><biblio:DatasetContinuesUnderNewTitle /></a></td></tr>
       </biblio:foreachDatasetContinuesUnderNewTitleIterator>
@@ -182,9 +182,6 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
-      <biblio:foreachDatasetAgentInverseIterator>
-         <tr><td>agent</td><td><a href="../<biblio:DatasetAgentInverseType/>/<biblio:DatasetAgentInverseType/>.jsp?uri=<biblio:DatasetAgentInverse/>"><biblio:DatasetAgentInverse/></a></td></tr>
-      </biblio:foreachDatasetAgentInverseIterator>
    </table>
    </biblio:Dataset>
 

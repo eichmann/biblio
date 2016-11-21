@@ -49,18 +49,21 @@
       <biblio:foreachMagazineRelationIterator>
          <tr><td>relation</td><td><a href="../<biblio:MagazineRelationType/>/<biblio:MagazineRelationType/>.jsp?uri=<biblio:MagazineRelation/>"><biblio:MagazineRelation /></a></td></tr>
       </biblio:foreachMagazineRelationIterator>
-      <biblio:foreachMagazineHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:MagazineHasPartType/>/<biblio:MagazineHasPartType/>.jsp?uri=<biblio:MagazineHasPart/>"><biblio:MagazineHasPart /></a></td></tr>
-      </biblio:foreachMagazineHasPartIterator>
       <biblio:foreachMagazineSubjectIterator>
          <tr><td>subject</td><td><a href="../<biblio:MagazineSubjectType/>/<biblio:MagazineSubjectType/>.jsp?uri=<biblio:MagazineSubject/>"><biblio:MagazineSubject /></a></td></tr>
       </biblio:foreachMagazineSubjectIterator>
       <biblio:foreachMagazineLanguageIterator>
          <tr><td>language</td><td><a href="../<biblio:MagazineLanguageType/>/<biblio:MagazineLanguageType/>.jsp?uri=<biblio:MagazineLanguage/>"><biblio:MagazineLanguage /></a></td></tr>
       </biblio:foreachMagazineLanguageIterator>
-      <biblio:foreachMagazineIsPartOfIterator>
-         <tr><td>isPartOf</td><td><a href="../<biblio:MagazineIsPartOfType/>/<biblio:MagazineIsPartOfType/>.jsp?uri=<biblio:MagazineIsPartOf/>"><biblio:MagazineIsPartOf /></a></td></tr>
-      </biblio:foreachMagazineIsPartOfIterator>
+      <biblio:foreachMagazineHasFirstIterator>
+         <tr><td>hasFirst</td><td><a href="../<biblio:MagazineHasFirstType/>/<biblio:MagazineHasFirstType/>.jsp?uri=<biblio:MagazineHasFirst/>"><biblio:MagazineHasFirst /></a></td></tr>
+      </biblio:foreachMagazineHasFirstIterator>
+      <biblio:foreachMagazineHasAnnotationIterator>
+         <tr><td>hasAnnotation</td><td><a href="../<biblio:MagazineHasAnnotationType/>/<biblio:MagazineHasAnnotationType/>.jsp?uri=<biblio:MagazineHasAnnotation/>"><biblio:MagazineHasAnnotation /></a></td></tr>
+      </biblio:foreachMagazineHasAnnotationIterator>
+      <biblio:foreachMagazineHasLastIterator>
+         <tr><td>hasLast</td><td><a href="../<biblio:MagazineHasLastType/>/<biblio:MagazineHasLastType/>.jsp?uri=<biblio:MagazineHasLast/>"><biblio:MagazineHasLast /></a></td></tr>
+      </biblio:foreachMagazineHasLastIterator>
       <biblio:foreachMagazinePerformedAtIterator>
          <tr><td>performedAt</td><td><a href="../<biblio:MagazinePerformedAtType/>/<biblio:MagazinePerformedAtType/>.jsp?uri=<biblio:MagazinePerformedAt/>"><biblio:MagazinePerformedAt /></a></td></tr>
       </biblio:foreachMagazinePerformedAtIterator>
@@ -76,12 +79,6 @@
       <biblio:foreachMagazineHasDataSourceIterator>
          <tr><td>hasDataSource</td><td><a href="../<biblio:MagazineHasDataSourceType/>/<biblio:MagazineHasDataSourceType/>.jsp?uri=<biblio:MagazineHasDataSource/>"><biblio:MagazineHasDataSource /></a></td></tr>
       </biblio:foreachMagazineHasDataSourceIterator>
-      <biblio:foreachMagazineIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:MagazineIdentifiedByType/>/<biblio:MagazineIdentifiedByType/>.jsp?uri=<biblio:MagazineIdentifiedBy/>"><biblio:MagazineIdentifiedBy /></a></td></tr>
-      </biblio:foreachMagazineIdentifiedByIterator>
-      <biblio:foreachMagazinePrecedesIterator>
-         <tr><td>precedes</td><td><a href="../<biblio:MagazinePrecedesType/>/<biblio:MagazinePrecedesType/>.jsp?uri=<biblio:MagazinePrecedes/>"><biblio:MagazinePrecedes /></a></td></tr>
-      </biblio:foreachMagazinePrecedesIterator>
       <biblio:foreachMagazineContinuesUnderNewTitleIterator>
          <tr><td>continuesUnderNewTitle</td><td><a href="../<biblio:MagazineContinuesUnderNewTitleType/>/<biblio:MagazineContinuesUnderNewTitleType/>.jsp?uri=<biblio:MagazineContinuesUnderNewTitle/>"><biblio:MagazineContinuesUnderNewTitle /></a></td></tr>
       </biblio:foreachMagazineContinuesUnderNewTitleIterator>
@@ -178,19 +175,10 @@
       <biblio:foreachMagazineIsUnionOfIterator>
          <tr><td>isUnionOf</td><td><a href="../<biblio:MagazineIsUnionOfType/>/<biblio:MagazineIsUnionOfType/>.jsp?uri=<biblio:MagazineIsUnionOf/>"><biblio:MagazineIsUnionOf /></a></td></tr>
       </biblio:foreachMagazineIsUnionOfIterator>
-      <biblio:foreachMagazineHasFirstIterator>
-         <tr><td>hasFirst</td><td><a href="../<biblio:MagazineHasFirstType/>/<biblio:MagazineHasFirstType/>.jsp?uri=<biblio:MagazineHasFirst/>"><biblio:MagazineHasFirst /></a></td></tr>
-      </biblio:foreachMagazineHasFirstIterator>
-      <biblio:foreachMagazineHasLastIterator>
-         <tr><td>hasLast</td><td><a href="../<biblio:MagazineHasLastType/>/<biblio:MagazineHasLastType/>.jsp?uri=<biblio:MagazineHasLast/>"><biblio:MagazineHasLast /></a></td></tr>
-      </biblio:foreachMagazineHasLastIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
-      <biblio:foreachMagazineAgentInverseIterator>
-         <tr><td>agent</td><td><a href="../<biblio:MagazineAgentInverseType/>/<biblio:MagazineAgentInverseType/>.jsp?uri=<biblio:MagazineAgentInverse/>"><biblio:MagazineAgentInverse/></a></td></tr>
-      </biblio:foreachMagazineAgentInverseIterator>
    </table>
    </biblio:Magazine>
 

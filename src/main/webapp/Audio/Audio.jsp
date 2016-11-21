@@ -58,9 +58,9 @@
       <biblio:foreachAudioLanguageIterator>
          <tr><td>language</td><td><a href="../<biblio:AudioLanguageType/>/<biblio:AudioLanguageType/>.jsp?uri=<biblio:AudioLanguage/>"><biblio:AudioLanguage /></a></td></tr>
       </biblio:foreachAudioLanguageIterator>
-      <biblio:foreachAudioIsPartOfIterator>
-         <tr><td>isPartOf</td><td><a href="../<biblio:AudioIsPartOfType/>/<biblio:AudioIsPartOfType/>.jsp?uri=<biblio:AudioIsPartOf/>"><biblio:AudioIsPartOf /></a></td></tr>
-      </biblio:foreachAudioIsPartOfIterator>
+      <biblio:foreachAudioHasAnnotationIterator>
+         <tr><td>hasAnnotation</td><td><a href="../<biblio:AudioHasAnnotationType/>/<biblio:AudioHasAnnotationType/>.jsp?uri=<biblio:AudioHasAnnotation/>"><biblio:AudioHasAnnotation /></a></td></tr>
+      </biblio:foreachAudioHasAnnotationIterator>
       <biblio:foreachAudioPerformedAtIterator>
          <tr><td>performedAt</td><td><a href="../<biblio:AudioPerformedAtType/>/<biblio:AudioPerformedAtType/>.jsp?uri=<biblio:AudioPerformedAt/>"><biblio:AudioPerformedAt /></a></td></tr>
       </biblio:foreachAudioPerformedAtIterator>
@@ -76,12 +76,6 @@
       <biblio:foreachAudioHasDataSourceIterator>
          <tr><td>hasDataSource</td><td><a href="../<biblio:AudioHasDataSourceType/>/<biblio:AudioHasDataSourceType/>.jsp?uri=<biblio:AudioHasDataSource/>"><biblio:AudioHasDataSource /></a></td></tr>
       </biblio:foreachAudioHasDataSourceIterator>
-      <biblio:foreachAudioIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:AudioIdentifiedByType/>/<biblio:AudioIdentifiedByType/>.jsp?uri=<biblio:AudioIdentifiedBy/>"><biblio:AudioIdentifiedBy /></a></td></tr>
-      </biblio:foreachAudioIdentifiedByIterator>
-      <biblio:foreachAudioPrecedesIterator>
-         <tr><td>precedes</td><td><a href="../<biblio:AudioPrecedesType/>/<biblio:AudioPrecedesType/>.jsp?uri=<biblio:AudioPrecedes/>"><biblio:AudioPrecedes /></a></td></tr>
-      </biblio:foreachAudioPrecedesIterator>
       <biblio:foreachAudioContinuesUnderNewTitleIterator>
          <tr><td>continuesUnderNewTitle</td><td><a href="../<biblio:AudioContinuesUnderNewTitleType/>/<biblio:AudioContinuesUnderNewTitleType/>.jsp?uri=<biblio:AudioContinuesUnderNewTitle/>"><biblio:AudioContinuesUnderNewTitle /></a></td></tr>
       </biblio:foreachAudioContinuesUnderNewTitleIterator>
@@ -182,9 +176,6 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
-      <biblio:foreachAudioAgentInverseIterator>
-         <tr><td>agent</td><td><a href="../<biblio:AudioAgentInverseType/>/<biblio:AudioAgentInverseType/>.jsp?uri=<biblio:AudioAgentInverse/>"><biblio:AudioAgentInverse/></a></td></tr>
-      </biblio:foreachAudioAgentInverseIterator>
    </table>
    </biblio:Audio>
 

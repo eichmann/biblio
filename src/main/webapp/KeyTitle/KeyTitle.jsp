@@ -37,9 +37,6 @@
       <biblio:foreachKeyTitleIsTitleOfIterator>
          <tr><td>isTitleOf</td><td><a href="../<biblio:KeyTitleIsTitleOfType/>/<biblio:KeyTitleIsTitleOfType/>.jsp?uri=<biblio:KeyTitleIsTitleOf/>"><biblio:KeyTitleIsTitleOf /></a></td></tr>
       </biblio:foreachKeyTitleIsTitleOfIterator>
-      <biblio:foreachKeyTitleHasSourceStatusIterator>
-         <tr><td>hasSourceStatus</td><td><a href="../<biblio:KeyTitleHasSourceStatusType/>/<biblio:KeyTitleHasSourceStatusType/>.jsp?uri=<biblio:KeyTitleHasSourceStatus/>"><biblio:KeyTitleHasSourceStatus /></a></td></tr>
-      </biblio:foreachKeyTitleHasSourceStatusIterator>
       <biblio:foreachKeyTitleHasDerivativeIterator>
          <tr><td>hasDerivative</td><td><a href="../<biblio:KeyTitleHasDerivativeType/>/<biblio:KeyTitleHasDerivativeType/>.jsp?uri=<biblio:KeyTitleHasDerivative/>"><biblio:KeyTitleHasDerivative /></a></td></tr>
       </biblio:foreachKeyTitleHasDerivativeIterator>

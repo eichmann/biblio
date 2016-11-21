@@ -46,21 +46,33 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachThreeDimensionalObjectHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:ThreeDimensionalObjectHasPartType/>/<biblio:ThreeDimensionalObjectHasPartType/>.jsp?uri=<biblio:ThreeDimensionalObjectHasPart/>"><biblio:ThreeDimensionalObjectHasPart /></a></td></tr>
+      </biblio:foreachThreeDimensionalObjectHasPartIterator>
       <biblio:foreachThreeDimensionalObjectSubjectIterator>
          <tr><td>subject</td><td><a href="../<biblio:ThreeDimensionalObjectSubjectType/>/<biblio:ThreeDimensionalObjectSubjectType/>.jsp?uri=<biblio:ThreeDimensionalObjectSubject/>"><biblio:ThreeDimensionalObjectSubject /></a></td></tr>
       </biblio:foreachThreeDimensionalObjectSubjectIterator>
       <biblio:foreachThreeDimensionalObjectLanguageIterator>
          <tr><td>language</td><td><a href="../<biblio:ThreeDimensionalObjectLanguageType/>/<biblio:ThreeDimensionalObjectLanguageType/>.jsp?uri=<biblio:ThreeDimensionalObjectLanguage/>"><biblio:ThreeDimensionalObjectLanguage /></a></td></tr>
       </biblio:foreachThreeDimensionalObjectLanguageIterator>
-      <biblio:foreachThreeDimensionalObjectRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:ThreeDimensionalObjectRelationType/>/<biblio:ThreeDimensionalObjectRelationType/>.jsp?uri=<biblio:ThreeDimensionalObjectRelation/>"><biblio:ThreeDimensionalObjectRelation /></a></td></tr>
-      </biblio:foreachThreeDimensionalObjectRelationIterator>
-      <biblio:foreachThreeDimensionalObjectHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:ThreeDimensionalObjectHasPartType/>/<biblio:ThreeDimensionalObjectHasPartType/>.jsp?uri=<biblio:ThreeDimensionalObjectHasPart/>"><biblio:ThreeDimensionalObjectHasPart /></a></td></tr>
-      </biblio:foreachThreeDimensionalObjectHasPartIterator>
       <biblio:foreachThreeDimensionalObjectIsPartOfIterator>
          <tr><td>isPartOf</td><td><a href="../<biblio:ThreeDimensionalObjectIsPartOfType/>/<biblio:ThreeDimensionalObjectIsPartOfType/>.jsp?uri=<biblio:ThreeDimensionalObjectIsPartOf/>"><biblio:ThreeDimensionalObjectIsPartOf /></a></td></tr>
       </biblio:foreachThreeDimensionalObjectIsPartOfIterator>
+      <biblio:foreachThreeDimensionalObjectPrecedesIterator>
+         <tr><td>precedes</td><td><a href="../<biblio:ThreeDimensionalObjectPrecedesType/>/<biblio:ThreeDimensionalObjectPrecedesType/>.jsp?uri=<biblio:ThreeDimensionalObjectPrecedes/>"><biblio:ThreeDimensionalObjectPrecedes /></a></td></tr>
+      </biblio:foreachThreeDimensionalObjectPrecedesIterator>
+      <biblio:foreachThreeDimensionalObjectFollowsIterator>
+         <tr><td>follows</td><td><a href="../<biblio:ThreeDimensionalObjectFollowsType/>/<biblio:ThreeDimensionalObjectFollowsType/>.jsp?uri=<biblio:ThreeDimensionalObjectFollows/>"><biblio:ThreeDimensionalObjectFollows /></a></td></tr>
+      </biblio:foreachThreeDimensionalObjectFollowsIterator>
+      <biblio:foreachThreeDimensionalObjectHasAnnotationIterator>
+         <tr><td>hasAnnotation</td><td><a href="../<biblio:ThreeDimensionalObjectHasAnnotationType/>/<biblio:ThreeDimensionalObjectHasAnnotationType/>.jsp?uri=<biblio:ThreeDimensionalObjectHasAnnotation/>"><biblio:ThreeDimensionalObjectHasAnnotation /></a></td></tr>
+      </biblio:foreachThreeDimensionalObjectHasAnnotationIterator>
+      <biblio:foreachThreeDimensionalObjectIsSubjectOfIterator>
+         <tr><td>isSubjectOf</td><td><a href="../<biblio:ThreeDimensionalObjectIsSubjectOfType/>/<biblio:ThreeDimensionalObjectIsSubjectOfType/>.jsp?uri=<biblio:ThreeDimensionalObjectIsSubjectOf/>"><biblio:ThreeDimensionalObjectIsSubjectOf /></a></td></tr>
+      </biblio:foreachThreeDimensionalObjectIsSubjectOfIterator>
+      <biblio:foreachThreeDimensionalObjectAccompaniesIterator>
+         <tr><td>accompanies</td><td><a href="../<biblio:ThreeDimensionalObjectAccompaniesType/>/<biblio:ThreeDimensionalObjectAccompaniesType/>.jsp?uri=<biblio:ThreeDimensionalObjectAccompanies/>"><biblio:ThreeDimensionalObjectAccompanies /></a></td></tr>
+      </biblio:foreachThreeDimensionalObjectAccompaniesIterator>
       <biblio:foreachThreeDimensionalObjectPerformedAtIterator>
          <tr><td>performedAt</td><td><a href="../<biblio:ThreeDimensionalObjectPerformedAtType/>/<biblio:ThreeDimensionalObjectPerformedAtType/>.jsp?uri=<biblio:ThreeDimensionalObjectPerformedAt/>"><biblio:ThreeDimensionalObjectPerformedAt /></a></td></tr>
       </biblio:foreachThreeDimensionalObjectPerformedAtIterator>
@@ -76,12 +88,6 @@
       <biblio:foreachThreeDimensionalObjectHasDataSourceIterator>
          <tr><td>hasDataSource</td><td><a href="../<biblio:ThreeDimensionalObjectHasDataSourceType/>/<biblio:ThreeDimensionalObjectHasDataSourceType/>.jsp?uri=<biblio:ThreeDimensionalObjectHasDataSource/>"><biblio:ThreeDimensionalObjectHasDataSource /></a></td></tr>
       </biblio:foreachThreeDimensionalObjectHasDataSourceIterator>
-      <biblio:foreachThreeDimensionalObjectIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:ThreeDimensionalObjectIdentifiedByType/>/<biblio:ThreeDimensionalObjectIdentifiedByType/>.jsp?uri=<biblio:ThreeDimensionalObjectIdentifiedBy/>"><biblio:ThreeDimensionalObjectIdentifiedBy /></a></td></tr>
-      </biblio:foreachThreeDimensionalObjectIdentifiedByIterator>
-      <biblio:foreachThreeDimensionalObjectPrecedesIterator>
-         <tr><td>precedes</td><td><a href="../<biblio:ThreeDimensionalObjectPrecedesType/>/<biblio:ThreeDimensionalObjectPrecedesType/>.jsp?uri=<biblio:ThreeDimensionalObjectPrecedes/>"><biblio:ThreeDimensionalObjectPrecedes /></a></td></tr>
-      </biblio:foreachThreeDimensionalObjectPrecedesIterator>
       <biblio:foreachThreeDimensionalObjectContinuesUnderNewTitleIterator>
          <tr><td>continuesUnderNewTitle</td><td><a href="../<biblio:ThreeDimensionalObjectContinuesUnderNewTitleType/>/<biblio:ThreeDimensionalObjectContinuesUnderNewTitleType/>.jsp?uri=<biblio:ThreeDimensionalObjectContinuesUnderNewTitle/>"><biblio:ThreeDimensionalObjectContinuesUnderNewTitle /></a></td></tr>
       </biblio:foreachThreeDimensionalObjectContinuesUnderNewTitleIterator>
@@ -182,6 +188,9 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
+      <biblio:foreachThreeDimensionalObjectRelationInverseIterator>
+         <tr><td>relation</td><td><a href="../<biblio:ThreeDimensionalObjectRelationInverseType/>/<biblio:ThreeDimensionalObjectRelationInverseType/>.jsp?uri=<biblio:ThreeDimensionalObjectRelationInverse/>"><biblio:ThreeDimensionalObjectRelationInverse/></a></td></tr>
+      </biblio:foreachThreeDimensionalObjectRelationInverseIterator>
       <biblio:foreachThreeDimensionalObjectAgentInverseIterator>
          <tr><td>agent</td><td><a href="../<biblio:ThreeDimensionalObjectAgentInverseType/>/<biblio:ThreeDimensionalObjectAgentInverseType/>.jsp?uri=<biblio:ThreeDimensionalObjectAgentInverse/>"><biblio:ThreeDimensionalObjectAgentInverse/></a></td></tr>
       </biblio:foreachThreeDimensionalObjectAgentInverseIterator>

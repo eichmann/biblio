@@ -46,21 +46,6 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachIndexRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:IndexRelationType/>/<biblio:IndexRelationType/>.jsp?uri=<biblio:IndexRelation/>"><biblio:IndexRelation /></a></td></tr>
-      </biblio:foreachIndexRelationIterator>
-      <biblio:foreachIndexHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:IndexHasPartType/>/<biblio:IndexHasPartType/>.jsp?uri=<biblio:IndexHasPart/>"><biblio:IndexHasPart /></a></td></tr>
-      </biblio:foreachIndexHasPartIterator>
-      <biblio:foreachIndexSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:IndexSubjectType/>/<biblio:IndexSubjectType/>.jsp?uri=<biblio:IndexSubject/>"><biblio:IndexSubject /></a></td></tr>
-      </biblio:foreachIndexSubjectIterator>
-      <biblio:foreachIndexLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:IndexLanguageType/>/<biblio:IndexLanguageType/>.jsp?uri=<biblio:IndexLanguage/>"><biblio:IndexLanguage /></a></td></tr>
-      </biblio:foreachIndexLanguageIterator>
-      <biblio:foreachIndexIsPartOfIterator>
-         <tr><td>isPartOf</td><td><a href="../<biblio:IndexIsPartOfType/>/<biblio:IndexIsPartOfType/>.jsp?uri=<biblio:IndexIsPartOf/>"><biblio:IndexIsPartOf /></a></td></tr>
-      </biblio:foreachIndexIsPartOfIterator>
       <biblio:foreachIndexPerformedAtIterator>
          <tr><td>performedAt</td><td><a href="../<biblio:IndexPerformedAtType/>/<biblio:IndexPerformedAtType/>.jsp?uri=<biblio:IndexPerformedAt/>"><biblio:IndexPerformedAt /></a></td></tr>
       </biblio:foreachIndexPerformedAtIterator>
@@ -76,12 +61,6 @@
       <biblio:foreachIndexHasDataSourceIterator>
          <tr><td>hasDataSource</td><td><a href="../<biblio:IndexHasDataSourceType/>/<biblio:IndexHasDataSourceType/>.jsp?uri=<biblio:IndexHasDataSource/>"><biblio:IndexHasDataSource /></a></td></tr>
       </biblio:foreachIndexHasDataSourceIterator>
-      <biblio:foreachIndexIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:IndexIdentifiedByType/>/<biblio:IndexIdentifiedByType/>.jsp?uri=<biblio:IndexIdentifiedBy/>"><biblio:IndexIdentifiedBy /></a></td></tr>
-      </biblio:foreachIndexIdentifiedByIterator>
-      <biblio:foreachIndexPrecedesIterator>
-         <tr><td>precedes</td><td><a href="../<biblio:IndexPrecedesType/>/<biblio:IndexPrecedesType/>.jsp?uri=<biblio:IndexPrecedes/>"><biblio:IndexPrecedes /></a></td></tr>
-      </biblio:foreachIndexPrecedesIterator>
       <biblio:foreachIndexContinuesUnderNewTitleIterator>
          <tr><td>continuesUnderNewTitle</td><td><a href="../<biblio:IndexContinuesUnderNewTitleType/>/<biblio:IndexContinuesUnderNewTitleType/>.jsp?uri=<biblio:IndexContinuesUnderNewTitle/>"><biblio:IndexContinuesUnderNewTitle /></a></td></tr>
       </biblio:foreachIndexContinuesUnderNewTitleIterator>
@@ -182,9 +161,9 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
-      <biblio:foreachIndexAgentInverseIterator>
-         <tr><td>agent</td><td><a href="../<biblio:IndexAgentInverseType/>/<biblio:IndexAgentInverseType/>.jsp?uri=<biblio:IndexAgentInverse/>"><biblio:IndexAgentInverse/></a></td></tr>
-      </biblio:foreachIndexAgentInverseIterator>
+      <biblio:foreachIndexRelationInverseIterator>
+         <tr><td>relation</td><td><a href="../<biblio:IndexRelationInverseType/>/<biblio:IndexRelationInverseType/>.jsp?uri=<biblio:IndexRelationInverse/>"><biblio:IndexRelationInverse/></a></td></tr>
+      </biblio:foreachIndexRelationInverseIterator>
    </table>
    </biblio:Index>
 

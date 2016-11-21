@@ -58,12 +58,12 @@
       <biblio:foreachMovingImageLanguageIterator>
          <tr><td>language</td><td><a href="../<biblio:MovingImageLanguageType/>/<biblio:MovingImageLanguageType/>.jsp?uri=<biblio:MovingImageLanguage/>"><biblio:MovingImageLanguage /></a></td></tr>
       </biblio:foreachMovingImageLanguageIterator>
-      <biblio:foreachMovingImageIsPartOfIterator>
-         <tr><td>isPartOf</td><td><a href="../<biblio:MovingImageIsPartOfType/>/<biblio:MovingImageIsPartOfType/>.jsp?uri=<biblio:MovingImageIsPartOf/>"><biblio:MovingImageIsPartOf /></a></td></tr>
-      </biblio:foreachMovingImageIsPartOfIterator>
-      <biblio:foreachMovingImageIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:MovingImageIdentifiedByType/>/<biblio:MovingImageIdentifiedByType/>.jsp?uri=<biblio:MovingImageIdentifiedBy/>"><biblio:MovingImageIdentifiedBy /></a></td></tr>
-      </biblio:foreachMovingImageIdentifiedByIterator>
+      <biblio:foreachMovingImageFollowsIterator>
+         <tr><td>follows</td><td><a href="../<biblio:MovingImageFollowsType/>/<biblio:MovingImageFollowsType/>.jsp?uri=<biblio:MovingImageFollows/>"><biblio:MovingImageFollows /></a></td></tr>
+      </biblio:foreachMovingImageFollowsIterator>
+      <biblio:foreachMovingImageHasAnnotationIterator>
+         <tr><td>hasAnnotation</td><td><a href="../<biblio:MovingImageHasAnnotationType/>/<biblio:MovingImageHasAnnotationType/>.jsp?uri=<biblio:MovingImageHasAnnotation/>"><biblio:MovingImageHasAnnotation /></a></td></tr>
+      </biblio:foreachMovingImageHasAnnotationIterator>
       <biblio:foreachMovingImagePerformedAtIterator>
          <tr><td>performedAt</td><td><a href="../<biblio:MovingImagePerformedAtType/>/<biblio:MovingImagePerformedAtType/>.jsp?uri=<biblio:MovingImagePerformedAt/>"><biblio:MovingImagePerformedAt /></a></td></tr>
       </biblio:foreachMovingImagePerformedAtIterator>
@@ -79,9 +79,6 @@
       <biblio:foreachMovingImageHasDataSourceIterator>
          <tr><td>hasDataSource</td><td><a href="../<biblio:MovingImageHasDataSourceType/>/<biblio:MovingImageHasDataSourceType/>.jsp?uri=<biblio:MovingImageHasDataSource/>"><biblio:MovingImageHasDataSource /></a></td></tr>
       </biblio:foreachMovingImageHasDataSourceIterator>
-      <biblio:foreachMovingImagePrecedesIterator>
-         <tr><td>precedes</td><td><a href="../<biblio:MovingImagePrecedesType/>/<biblio:MovingImagePrecedesType/>.jsp?uri=<biblio:MovingImagePrecedes/>"><biblio:MovingImagePrecedes /></a></td></tr>
-      </biblio:foreachMovingImagePrecedesIterator>
       <biblio:foreachMovingImageContinuesUnderNewTitleIterator>
          <tr><td>continuesUnderNewTitle</td><td><a href="../<biblio:MovingImageContinuesUnderNewTitleType/>/<biblio:MovingImageContinuesUnderNewTitleType/>.jsp?uri=<biblio:MovingImageContinuesUnderNewTitle/>"><biblio:MovingImageContinuesUnderNewTitle /></a></td></tr>
       </biblio:foreachMovingImageContinuesUnderNewTitleIterator>
@@ -182,9 +179,6 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
-      <biblio:foreachMovingImageAgentInverseIterator>
-         <tr><td>agent</td><td><a href="../<biblio:MovingImageAgentInverseType/>/<biblio:MovingImageAgentInverseType/>.jsp?uri=<biblio:MovingImageAgentInverse/>"><biblio:MovingImageAgentInverse/></a></td></tr>
-      </biblio:foreachMovingImageAgentInverseIterator>
    </table>
    </biblio:MovingImage>
 

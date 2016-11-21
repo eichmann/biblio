@@ -46,21 +46,6 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachFiniteResourceRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:FiniteResourceRelationType/>/<biblio:FiniteResourceRelationType/>.jsp?uri=<biblio:FiniteResourceRelation/>"><biblio:FiniteResourceRelation /></a></td></tr>
-      </biblio:foreachFiniteResourceRelationIterator>
-      <biblio:foreachFiniteResourceHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:FiniteResourceHasPartType/>/<biblio:FiniteResourceHasPartType/>.jsp?uri=<biblio:FiniteResourceHasPart/>"><biblio:FiniteResourceHasPart /></a></td></tr>
-      </biblio:foreachFiniteResourceHasPartIterator>
-      <biblio:foreachFiniteResourceSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:FiniteResourceSubjectType/>/<biblio:FiniteResourceSubjectType/>.jsp?uri=<biblio:FiniteResourceSubject/>"><biblio:FiniteResourceSubject /></a></td></tr>
-      </biblio:foreachFiniteResourceSubjectIterator>
-      <biblio:foreachFiniteResourceLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:FiniteResourceLanguageType/>/<biblio:FiniteResourceLanguageType/>.jsp?uri=<biblio:FiniteResourceLanguage/>"><biblio:FiniteResourceLanguage /></a></td></tr>
-      </biblio:foreachFiniteResourceLanguageIterator>
-      <biblio:foreachFiniteResourceIsPartOfIterator>
-         <tr><td>isPartOf</td><td><a href="../<biblio:FiniteResourceIsPartOfType/>/<biblio:FiniteResourceIsPartOfType/>.jsp?uri=<biblio:FiniteResourceIsPartOf/>"><biblio:FiniteResourceIsPartOf /></a></td></tr>
-      </biblio:foreachFiniteResourceIsPartOfIterator>
       <biblio:foreachFiniteResourcePerformedAtIterator>
          <tr><td>performedAt</td><td><a href="../<biblio:FiniteResourcePerformedAtType/>/<biblio:FiniteResourcePerformedAtType/>.jsp?uri=<biblio:FiniteResourcePerformedAt/>"><biblio:FiniteResourcePerformedAt /></a></td></tr>
       </biblio:foreachFiniteResourcePerformedAtIterator>
@@ -76,12 +61,6 @@
       <biblio:foreachFiniteResourceHasDataSourceIterator>
          <tr><td>hasDataSource</td><td><a href="../<biblio:FiniteResourceHasDataSourceType/>/<biblio:FiniteResourceHasDataSourceType/>.jsp?uri=<biblio:FiniteResourceHasDataSource/>"><biblio:FiniteResourceHasDataSource /></a></td></tr>
       </biblio:foreachFiniteResourceHasDataSourceIterator>
-      <biblio:foreachFiniteResourceIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:FiniteResourceIdentifiedByType/>/<biblio:FiniteResourceIdentifiedByType/>.jsp?uri=<biblio:FiniteResourceIdentifiedBy/>"><biblio:FiniteResourceIdentifiedBy /></a></td></tr>
-      </biblio:foreachFiniteResourceIdentifiedByIterator>
-      <biblio:foreachFiniteResourcePrecedesIterator>
-         <tr><td>precedes</td><td><a href="../<biblio:FiniteResourcePrecedesType/>/<biblio:FiniteResourcePrecedesType/>.jsp?uri=<biblio:FiniteResourcePrecedes/>"><biblio:FiniteResourcePrecedes /></a></td></tr>
-      </biblio:foreachFiniteResourcePrecedesIterator>
       <biblio:foreachFiniteResourceContinuesUnderNewTitleIterator>
          <tr><td>continuesUnderNewTitle</td><td><a href="../<biblio:FiniteResourceContinuesUnderNewTitleType/>/<biblio:FiniteResourceContinuesUnderNewTitleType/>.jsp?uri=<biblio:FiniteResourceContinuesUnderNewTitle/>"><biblio:FiniteResourceContinuesUnderNewTitle /></a></td></tr>
       </biblio:foreachFiniteResourceContinuesUnderNewTitleIterator>
@@ -182,9 +161,9 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
-      <biblio:foreachFiniteResourceAgentInverseIterator>
-         <tr><td>agent</td><td><a href="../<biblio:FiniteResourceAgentInverseType/>/<biblio:FiniteResourceAgentInverseType/>.jsp?uri=<biblio:FiniteResourceAgentInverse/>"><biblio:FiniteResourceAgentInverse/></a></td></tr>
-      </biblio:foreachFiniteResourceAgentInverseIterator>
+      <biblio:foreachFiniteResourceRelationInverseIterator>
+         <tr><td>relation</td><td><a href="../<biblio:FiniteResourceRelationInverseType/>/<biblio:FiniteResourceRelationInverseType/>.jsp?uri=<biblio:FiniteResourceRelationInverse/>"><biblio:FiniteResourceRelationInverse/></a></td></tr>
+      </biblio:foreachFiniteResourceRelationInverseIterator>
    </table>
    </biblio:FiniteResource>
 

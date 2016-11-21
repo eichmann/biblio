@@ -3,10 +3,12 @@
 <br>
 <h3><a href="<util:applicationRoot/>/index.jsp">Home</a></h3>
 <ul>
+<li><a href="<util:applicationRoot/>/search.jsp">Search</a>
 </ul>
 <h3>Classes</h3>
 <ul>
 <li><a href="<util:applicationRoot/>/classHierarchy.jsp">Class Hierarchy</a>
 <li><a href="<util:applicationRoot/>/classList.jsp">Class List</a>
+<li><a href="<util:applicationRoot/>/graphs/ontology.jsp">Class Graph</a>
 </ul>
 </div>

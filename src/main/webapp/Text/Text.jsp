@@ -49,24 +49,15 @@
       <biblio:foreachTextRelationIterator>
          <tr><td>relation</td><td><a href="../<biblio:TextRelationType/>/<biblio:TextRelationType/>.jsp?uri=<biblio:TextRelation/>"><biblio:TextRelation /></a></td></tr>
       </biblio:foreachTextRelationIterator>
-      <biblio:foreachTextHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:TextHasPartType/>/<biblio:TextHasPartType/>.jsp?uri=<biblio:TextHasPart/>"><biblio:TextHasPart /></a></td></tr>
-      </biblio:foreachTextHasPartIterator>
       <biblio:foreachTextSubjectIterator>
          <tr><td>subject</td><td><a href="../<biblio:TextSubjectType/>/<biblio:TextSubjectType/>.jsp?uri=<biblio:TextSubject/>"><biblio:TextSubject /></a></td></tr>
       </biblio:foreachTextSubjectIterator>
       <biblio:foreachTextLanguageIterator>
          <tr><td>language</td><td><a href="../<biblio:TextLanguageType/>/<biblio:TextLanguageType/>.jsp?uri=<biblio:TextLanguage/>"><biblio:TextLanguage /></a></td></tr>
       </biblio:foreachTextLanguageIterator>
-      <biblio:foreachTextIsPartOfIterator>
-         <tr><td>isPartOf</td><td><a href="../<biblio:TextIsPartOfType/>/<biblio:TextIsPartOfType/>.jsp?uri=<biblio:TextIsPartOf/>"><biblio:TextIsPartOf /></a></td></tr>
-      </biblio:foreachTextIsPartOfIterator>
-      <biblio:foreachTextIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:TextIdentifiedByType/>/<biblio:TextIdentifiedByType/>.jsp?uri=<biblio:TextIdentifiedBy/>"><biblio:TextIdentifiedBy /></a></td></tr>
-      </biblio:foreachTextIdentifiedByIterator>
-      <biblio:foreachTextPrecedesIterator>
-         <tr><td>precedes</td><td><a href="../<biblio:TextPrecedesType/>/<biblio:TextPrecedesType/>.jsp?uri=<biblio:TextPrecedes/>"><biblio:TextPrecedes /></a></td></tr>
-      </biblio:foreachTextPrecedesIterator>
+      <biblio:foreachTextHasAnnotationIterator>
+         <tr><td>hasAnnotation</td><td><a href="../<biblio:TextHasAnnotationType/>/<biblio:TextHasAnnotationType/>.jsp?uri=<biblio:TextHasAnnotation/>"><biblio:TextHasAnnotation /></a></td></tr>
+      </biblio:foreachTextHasAnnotationIterator>
       <biblio:foreachTextPerformedAtIterator>
          <tr><td>performedAt</td><td><a href="../<biblio:TextPerformedAtType/>/<biblio:TextPerformedAtType/>.jsp?uri=<biblio:TextPerformedAt/>"><biblio:TextPerformedAt /></a></td></tr>
       </biblio:foreachTextPerformedAtIterator>
@@ -182,9 +173,6 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
-      <biblio:foreachTextAgentInverseIterator>
-         <tr><td>agent</td><td><a href="../<biblio:TextAgentInverseType/>/<biblio:TextAgentInverseType/>.jsp?uri=<biblio:TextAgentInverse/>"><biblio:TextAgentInverse/></a></td></tr>
-      </biblio:foreachTextAgentInverseIterator>
    </table>
    </biblio:Text>
 

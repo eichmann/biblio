@@ -31,15 +31,15 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachDdcShelfMarkIsClassificationForIterator>
-         <tr><td>isClassificationFor</td><td><a href="../<biblio:DdcShelfMarkIsClassificationForType/>/<biblio:DdcShelfMarkIsClassificationForType/>.jsp?uri=<biblio:DdcShelfMarkIsClassificationFor/>"><biblio:DdcShelfMarkIsClassificationFor /></a></td></tr>
-      </biblio:foreachDdcShelfMarkIsClassificationForIterator>
       <biblio:foreachDdcShelfMarkSemanticRelationIterator>
          <tr><td>semanticRelation</td><td><a href="../<biblio:DdcShelfMarkSemanticRelationType/>/<biblio:DdcShelfMarkSemanticRelationType/>.jsp?uri=<biblio:DdcShelfMarkSemanticRelation/>"><biblio:DdcShelfMarkSemanticRelation /></a></td></tr>
       </biblio:foreachDdcShelfMarkSemanticRelationIterator>
       <biblio:foreachDdcShelfMarkTopConceptOfIterator>
          <tr><td>topConceptOf</td><td><a href="../<biblio:DdcShelfMarkTopConceptOfType/>/<biblio:DdcShelfMarkTopConceptOfType/>.jsp?uri=<biblio:DdcShelfMarkTopConceptOf/>"><biblio:DdcShelfMarkTopConceptOf /></a></td></tr>
       </biblio:foreachDdcShelfMarkTopConceptOfIterator>
+      <biblio:foreachDdcShelfMarkIsClassificationForIterator>
+         <tr><td>isClassificationFor</td><td><a href="../<biblio:DdcShelfMarkIsClassificationForType/>/<biblio:DdcShelfMarkIsClassificationForType/>.jsp?uri=<biblio:DdcShelfMarkIsClassificationFor/>"><biblio:DdcShelfMarkIsClassificationFor /></a></td></tr>
+      </biblio:foreachDdcShelfMarkIsClassificationForIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>

@@ -46,9 +46,6 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachMonographRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:MonographRelationType/>/<biblio:MonographRelationType/>.jsp?uri=<biblio:MonographRelation/>"><biblio:MonographRelation /></a></td></tr>
-      </biblio:foreachMonographRelationIterator>
       <biblio:foreachMonographHasPartIterator>
          <tr><td>hasPart</td><td><a href="../<biblio:MonographHasPartType/>/<biblio:MonographHasPartType/>.jsp?uri=<biblio:MonographHasPart/>"><biblio:MonographHasPart /></a></td></tr>
       </biblio:foreachMonographHasPartIterator>
@@ -58,12 +55,9 @@
       <biblio:foreachMonographLanguageIterator>
          <tr><td>language</td><td><a href="../<biblio:MonographLanguageType/>/<biblio:MonographLanguageType/>.jsp?uri=<biblio:MonographLanguage/>"><biblio:MonographLanguage /></a></td></tr>
       </biblio:foreachMonographLanguageIterator>
-      <biblio:foreachMonographIsPartOfIterator>
-         <tr><td>isPartOf</td><td><a href="../<biblio:MonographIsPartOfType/>/<biblio:MonographIsPartOfType/>.jsp?uri=<biblio:MonographIsPartOf/>"><biblio:MonographIsPartOf /></a></td></tr>
-      </biblio:foreachMonographIsPartOfIterator>
-      <biblio:foreachMonographIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:MonographIdentifiedByType/>/<biblio:MonographIdentifiedByType/>.jsp?uri=<biblio:MonographIdentifiedBy/>"><biblio:MonographIdentifiedBy /></a></td></tr>
-      </biblio:foreachMonographIdentifiedByIterator>
+      <biblio:foreachMonographHasAnnotationIterator>
+         <tr><td>hasAnnotation</td><td><a href="../<biblio:MonographHasAnnotationType/>/<biblio:MonographHasAnnotationType/>.jsp?uri=<biblio:MonographHasAnnotation/>"><biblio:MonographHasAnnotation /></a></td></tr>
+      </biblio:foreachMonographHasAnnotationIterator>
       <biblio:foreachMonographPerformedAtIterator>
          <tr><td>performedAt</td><td><a href="../<biblio:MonographPerformedAtType/>/<biblio:MonographPerformedAtType/>.jsp?uri=<biblio:MonographPerformedAt/>"><biblio:MonographPerformedAt /></a></td></tr>
       </biblio:foreachMonographPerformedAtIterator>
@@ -79,9 +73,6 @@
       <biblio:foreachMonographHasDataSourceIterator>
          <tr><td>hasDataSource</td><td><a href="../<biblio:MonographHasDataSourceType/>/<biblio:MonographHasDataSourceType/>.jsp?uri=<biblio:MonographHasDataSource/>"><biblio:MonographHasDataSource /></a></td></tr>
       </biblio:foreachMonographHasDataSourceIterator>
-      <biblio:foreachMonographPrecedesIterator>
-         <tr><td>precedes</td><td><a href="../<biblio:MonographPrecedesType/>/<biblio:MonographPrecedesType/>.jsp?uri=<biblio:MonographPrecedes/>"><biblio:MonographPrecedes /></a></td></tr>
-      </biblio:foreachMonographPrecedesIterator>
       <biblio:foreachMonographContinuesUnderNewTitleIterator>
          <tr><td>continuesUnderNewTitle</td><td><a href="../<biblio:MonographContinuesUnderNewTitleType/>/<biblio:MonographContinuesUnderNewTitleType/>.jsp?uri=<biblio:MonographContinuesUnderNewTitle/>"><biblio:MonographContinuesUnderNewTitle /></a></td></tr>
       </biblio:foreachMonographContinuesUnderNewTitleIterator>
@@ -182,9 +173,9 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
-      <biblio:foreachMonographAgentInverseIterator>
-         <tr><td>agent</td><td><a href="../<biblio:MonographAgentInverseType/>/<biblio:MonographAgentInverseType/>.jsp?uri=<biblio:MonographAgentInverse/>"><biblio:MonographAgentInverse/></a></td></tr>
-      </biblio:foreachMonographAgentInverseIterator>
+      <biblio:foreachMonographRelationInverseIterator>
+         <tr><td>relation</td><td><a href="../<biblio:MonographRelationInverseType/>/<biblio:MonographRelationInverseType/>.jsp?uri=<biblio:MonographRelationInverse/>"><biblio:MonographRelationInverse/></a></td></tr>
+      </biblio:foreachMonographRelationInverseIterator>
    </table>
    </biblio:Monograph>
 

@@ -31,6 +31,9 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachMotivationInSchemeIterator>
+         <tr><td>inScheme</td><td><a href="../<biblio:MotivationInSchemeType/>/<biblio:MotivationInSchemeType/>.jsp?uri=<biblio:MotivationInScheme/>"><biblio:MotivationInScheme /></a></td></tr>
+      </biblio:foreachMotivationInSchemeIterator>
       <biblio:foreachMotivationSemanticRelationIterator>
          <tr><td>semanticRelation</td><td><a href="../<biblio:MotivationSemanticRelationType/>/<biblio:MotivationSemanticRelationType/>.jsp?uri=<biblio:MotivationSemanticRelation/>"><biblio:MotivationSemanticRelation /></a></td></tr>
       </biblio:foreachMotivationSemanticRelationIterator>

@@ -28,6 +28,9 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
+      <biblio:foreachElectronicNoteIterator>
+         <tr><td>note</td><td><biblio:ElectronicNote /></td></tr>
+      </biblio:foreachElectronicNoteIterator>
       <biblio:foreachElectronicAwardNoteIterator>
          <tr><td>awardNote</td><td><biblio:ElectronicAwardNote /></td></tr>
       </biblio:foreachElectronicAwardNoteIterator>

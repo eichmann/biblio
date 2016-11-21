@@ -27,19 +27,10 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
-      <biblio:foreachOrganizationBirthDateIterator>
-         <tr><td>birthDate</td><td><biblio:OrganizationBirthDate /></td></tr>
-      </biblio:foreachOrganizationBirthDateIterator>
-      <biblio:foreachOrganizationDeathDateIterator>
-         <tr><td>deathDate</td><td><biblio:OrganizationDeathDate /></td></tr>
-      </biblio:foreachOrganizationDeathDateIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachOrganizationIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:OrganizationIdentifiedByType/>/<biblio:OrganizationIdentifiedByType/>.jsp?uri=<biblio:OrganizationIdentifiedBy/>"><biblio:OrganizationIdentifiedBy /></a></td></tr>
-      </biblio:foreachOrganizationIdentifiedByIterator>
       <biblio:foreachOrganizationReceivedIterator>
          <tr><td>received</td><td><a href="../<biblio:OrganizationReceivedType/>/<biblio:OrganizationReceivedType/>.jsp?uri=<biblio:OrganizationReceived/>"><biblio:OrganizationReceived /></a></td></tr>
       </biblio:foreachOrganizationReceivedIterator>
@@ -50,9 +41,6 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
-      <biblio:foreachOrganizationRelationInverseIterator>
-         <tr><td>relation</td><td><a href="../<biblio:OrganizationRelationInverseType/>/<biblio:OrganizationRelationInverseType/>.jsp?uri=<biblio:OrganizationRelationInverse/>"><biblio:OrganizationRelationInverse/></a></td></tr>
-      </biblio:foreachOrganizationRelationInverseIterator>
       <biblio:foreachOrganizationAgentInverseIterator>
          <tr><td>agent</td><td><a href="../<biblio:OrganizationAgentInverseType/>/<biblio:OrganizationAgentInverseType/>.jsp?uri=<biblio:OrganizationAgentInverse/>"><biblio:OrganizationAgentInverse/></a></td></tr>
       </biblio:foreachOrganizationAgentInverseIterator>

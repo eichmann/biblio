@@ -34,9 +34,6 @@
       <biblio:foreachPublisherProvisionAtLocationIterator>
          <tr><td>atLocation</td><td><a href="../<biblio:PublisherProvisionAtLocationType/>/<biblio:PublisherProvisionAtLocationType/>.jsp?uri=<biblio:PublisherProvisionAtLocation/>"><biblio:PublisherProvisionAtLocation /></a></td></tr>
       </biblio:foreachPublisherProvisionAtLocationIterator>
-      <biblio:foreachPublisherProvisionAgentIterator>
-         <tr><td>agent</td><td><a href="../<biblio:PublisherProvisionAgentType/>/<biblio:PublisherProvisionAgentType/>.jsp?uri=<biblio:PublisherProvisionAgent/>"><biblio:PublisherProvisionAgent /></a></td></tr>
-      </biblio:foreachPublisherProvisionAgentIterator>
       <biblio:foreachPublisherProvisionMadeAvailableIterator>
          <tr><td>madeAvailable</td><td><a href="../<biblio:PublisherProvisionMadeAvailableType/>/<biblio:PublisherProvisionMadeAvailableType/>.jsp?uri=<biblio:PublisherProvisionMadeAvailable/>"><biblio:PublisherProvisionMadeAvailable /></a></td></tr>
       </biblio:foreachPublisherProvisionMadeAvailableIterator>

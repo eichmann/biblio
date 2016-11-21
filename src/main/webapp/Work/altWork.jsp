@@ -47,15 +47,15 @@
 								<biblio:WorkHasContribution />
 							</c:set>
 							<c:choose>
-								<c:when test="${type == 'Contribution'}">
-									<biblio:Contribution subjectURI="${url}">
-										<biblio:foreachContributionAgentIterator classFilter="Person">
-											<biblio:Person>
-                                                (<a href="../Person/altPerson.jsp?uri=<biblio:PersonSubjectURI/>"><biblio:PersonLabel /></a>)
-                                            </biblio:Person>
-										</biblio:foreachContributionAgentIterator>
-									</biblio:Contribution>
-								</c:when>
+<%-- 								<c:when test="${type == 'Contribution'}"> --%>
+<%-- 									<biblio:Contribution subjectURI="${url}"> --%>
+<%-- 										<biblio:foreachContributionAgentIterator classFilter="Person"> --%>
+<%-- 											<biblio:Person> --%>
+<%--                                                 (<a href="../Person/altPerson.jsp?uri=<biblio:PersonSubjectURI/>"><biblio:PersonLabel /></a>) --%>
+<%--                                             </biblio:Person> --%>
+<%-- 										</biblio:foreachContributionAgentIterator> --%>
+<%-- 									</biblio:Contribution> --%>
+<%-- 								</c:when> --%>
 								<c:when test="${type == 'CreatorContribution'}">
 									<biblio:CreatorContribution subjectURI="${url}">
 										<biblio:foreachCreatorContributionAgentIterator
@@ -127,11 +127,11 @@
 							Performed At: <a
 								href="../<biblio:WorkPerformedAtType/>/<biblio:WorkPerformedAtType/>.jsp?uri=<biblio:WorkPerformedAt/>"><biblio:WorkPerformedAt /></a>
 					</biblio:foreachWorkPerformedAtIterator>
-					<biblio:foreachWorkIsPartOfIterator>
-						<p>
-							Part Of: <a
-								href="../<biblio:WorkIsPartOfType/>/<biblio:WorkIsPartOfType/>.jsp?uri=<biblio:WorkIsPartOf/>"><biblio:WorkIsPartOf /></a>
-					</biblio:foreachWorkIsPartOfIterator>
+<%-- 					<biblio:foreachWorkIsPartOfIterator> --%>
+<!-- 						<p> -->
+<!-- 							Part Of: <a -->
+<%-- 								href="../<biblio:WorkIsPartOfType/>/<biblio:WorkIsPartOfType/>.jsp?uri=<biblio:WorkIsPartOf/>"><biblio:WorkIsPartOf /></a> --%>
+<%-- 					</biblio:foreachWorkIsPartOfIterator> --%>
 					<biblio:foreachWorkFollowsInNarrativeIterator>
 						<p>
 							Follows in Narrative: <a
@@ -152,11 +152,11 @@
 							Data Source: <a
 								href="../<biblio:WorkHasDataSourceType/>/<biblio:WorkHasDataSourceType/>.jsp?uri=<biblio:WorkHasDataSource/>"><biblio:WorkHasDataSource /></a>
 					</biblio:foreachWorkHasDataSourceIterator>
-					<biblio:foreachWorkPrecedesIterator>
-						<p>
-							Precedes: <a
-								href="../<biblio:WorkPrecedesType/>/<biblio:WorkPrecedesType/>.jsp?uri=<biblio:WorkPrecedes/>"><biblio:WorkPrecedes /></a>
-					</biblio:foreachWorkPrecedesIterator>
+<%-- 					<biblio:foreachWorkPrecedesIterator> --%>
+<!-- 						<p> -->
+<!-- 							Precedes: <a -->
+<%-- 								href="../<biblio:WorkPrecedesType/>/<biblio:WorkPrecedesType/>.jsp?uri=<biblio:WorkPrecedes/>"><biblio:WorkPrecedes /></a> --%>
+<%-- 					</biblio:foreachWorkPrecedesIterator> --%>
 					<biblio:foreachWorkContinuesUnderNewTitleIterator>
 						<p>
 							Continues Under New Title: <a
@@ -172,11 +172,11 @@
 							Finding Aid For: <a
 								href="../<biblio:WorkIsFindingAidForType/>/<biblio:WorkIsFindingAidForType/>.jsp?uri=<biblio:WorkIsFindingAidFor/>"><biblio:WorkIsFindingAidFor /></a>
 					</biblio:foreachWorkIsFindingAidForIterator>
-					<biblio:foreachWorkFollowsIterator>
-						<p>
-							Follows: <a
-								href="../<biblio:WorkFollowsType/>/<biblio:WorkFollowsType/>.jsp?uri=<biblio:WorkFollows/>"><biblio:WorkFollows /></a>
-					</biblio:foreachWorkFollowsIterator>
+<%-- 					<biblio:foreachWorkFollowsIterator> --%>
+<!-- 						<p> -->
+<!-- 							Follows: <a -->
+<%-- 								href="../<biblio:WorkFollowsType/>/<biblio:WorkFollowsType/>.jsp?uri=<biblio:WorkFollows/>"><biblio:WorkFollows /></a> --%>
+<%-- 					</biblio:foreachWorkFollowsIterator> --%>
 					<biblio:foreachWorkAbsorbedByIterator>
 						<p>
 							Absorbed by: <a
@@ -222,11 +222,11 @@
 							Precedes in Narrative: <a
 								href="../<biblio:WorkPrecedesInNarrativeType/>/<biblio:WorkPrecedesInNarrativeType/>.jsp?uri=<biblio:WorkPrecedesInNarrative/>"><biblio:WorkPrecedesInNarrative /></a>
 					</biblio:foreachWorkPrecedesInNarrativeIterator>
-					<biblio:foreachWorkIsSubjectOfIterator>
-						<p>
-							Subject of: <a
-								href="../<biblio:WorkIsSubjectOfType/>/<biblio:WorkIsSubjectOfType/>.jsp?uri=<biblio:WorkIsSubjectOf/>"><biblio:WorkIsSubjectOf /></a>
-					</biblio:foreachWorkIsSubjectOfIterator>
+<%-- 					<biblio:foreachWorkIsSubjectOfIterator> --%>
+<!-- 						<p> -->
+<!-- 							Subject of: <a -->
+<%-- 								href="../<biblio:WorkIsSubjectOfType/>/<biblio:WorkIsSubjectOfType/>.jsp?uri=<biblio:WorkIsSubjectOf/>"><biblio:WorkIsSubjectOf /></a> --%>
+<%-- 					</biblio:foreachWorkIsSubjectOfIterator> --%>
 					<biblio:foreachWorkIsLastOfIterator>
 						<p>
 							Last of: <a
@@ -247,11 +247,11 @@
 							Expression of: <a
 								href="../<biblio:WorkIsExpressionOfType/>/<biblio:WorkIsExpressionOfType/>.jsp?uri=<biblio:WorkIsExpressionOf/>"><biblio:WorkIsExpressionOf /></a>
 					</biblio:foreachWorkIsExpressionOfIterator>
-					<biblio:foreachWorkLanguageIterator>
-						<p>
-							Language: <a
-								href="../<biblio:WorkLanguageType/>/<biblio:WorkLanguageType/>.jsp?uri=<biblio:WorkLanguage/>"><biblio:WorkLanguage /></a>
-					</biblio:foreachWorkLanguageIterator>
+<%-- 					<biblio:foreachWorkLanguageIterator> --%>
+<!-- 						<p> -->
+<!-- 							Language: <a -->
+<%-- 								href="../<biblio:WorkLanguageType/>/<biblio:WorkLanguageType/>.jsp?uri=<biblio:WorkLanguage/>"><biblio:WorkLanguage /></a> --%>
+<%-- 					</biblio:foreachWorkLanguageIterator> --%>
 					<biblio:foreachWorkSupplementsIterator>
 						<p>
 							Supplements: <a
@@ -277,11 +277,11 @@
 							Other Edition: <a
 								href="../<biblio:WorkHasOtherEditionType/>/<biblio:WorkHasOtherEditionType/>.jsp?uri=<biblio:WorkHasOtherEdition/>"><biblio:WorkHasOtherEdition /></a>
 					</biblio:foreachWorkHasOtherEditionIterator>
-					<biblio:foreachWorkAccompaniesIterator>
-						<p>
-							Accompanies: <a
-								href="../<biblio:WorkAccompaniesType/>/<biblio:WorkAccompaniesType/>.jsp?uri=<biblio:WorkAccompanies/>"><biblio:WorkAccompanies /></a>
-					</biblio:foreachWorkAccompaniesIterator>
+<%-- 					<biblio:foreachWorkAccompaniesIterator> --%>
+<!-- 						<p> -->
+<!-- 							Accompanies: <a -->
+<%-- 								href="../<biblio:WorkAccompaniesType/>/<biblio:WorkAccompaniesType/>.jsp?uri=<biblio:WorkAccompanies/>"><biblio:WorkAccompanies /></a> --%>
+<%-- 					</biblio:foreachWorkAccompaniesIterator> --%>
 					<biblio:foreachWorkHasSupplementIterator>
 						<p>
 							Supplement: <a
@@ -317,11 +317,11 @@
 							Created for Degree: <a
 								href="../<biblio:WorkCreatedForDegreeType/>/<biblio:WorkCreatedForDegreeType/>.jsp?uri=<biblio:WorkCreatedForDegree/>"><biblio:WorkCreatedForDegree /></a>
 					</biblio:foreachWorkCreatedForDegreeIterator>
-					<biblio:foreachWorkHasPartIterator>
-						<p>
-							Part: <a
-								href="../<biblio:WorkHasPartType/>/<biblio:WorkHasPartType/>.jsp?uri=<biblio:WorkHasPart/>"><biblio:WorkHasPart /></a>
-					</biblio:foreachWorkHasPartIterator>
+<%-- 					<biblio:foreachWorkHasPartIterator> --%>
+<!-- 						<p> -->
+<!-- 							Part: <a -->
+<%-- 								href="../<biblio:WorkHasPartType/>/<biblio:WorkHasPartType/>.jsp?uri=<biblio:WorkHasPart/>"><biblio:WorkHasPart /></a> --%>
+<%-- 					</biblio:foreachWorkHasPartIterator> --%>
 					<biblio:foreachWorkIsUnionOfIterator>
 						<p>
 							Union of: <a

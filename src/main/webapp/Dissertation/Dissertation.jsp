@@ -49,21 +49,6 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachDissertationRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:DissertationRelationType/>/<biblio:DissertationRelationType/>.jsp?uri=<biblio:DissertationRelation/>"><biblio:DissertationRelation /></a></td></tr>
-      </biblio:foreachDissertationRelationIterator>
-      <biblio:foreachDissertationHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:DissertationHasPartType/>/<biblio:DissertationHasPartType/>.jsp?uri=<biblio:DissertationHasPart/>"><biblio:DissertationHasPart /></a></td></tr>
-      </biblio:foreachDissertationHasPartIterator>
-      <biblio:foreachDissertationSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:DissertationSubjectType/>/<biblio:DissertationSubjectType/>.jsp?uri=<biblio:DissertationSubject/>"><biblio:DissertationSubject /></a></td></tr>
-      </biblio:foreachDissertationSubjectIterator>
-      <biblio:foreachDissertationLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:DissertationLanguageType/>/<biblio:DissertationLanguageType/>.jsp?uri=<biblio:DissertationLanguage/>"><biblio:DissertationLanguage /></a></td></tr>
-      </biblio:foreachDissertationLanguageIterator>
-      <biblio:foreachDissertationIsPartOfIterator>
-         <tr><td>isPartOf</td><td><a href="../<biblio:DissertationIsPartOfType/>/<biblio:DissertationIsPartOfType/>.jsp?uri=<biblio:DissertationIsPartOf/>"><biblio:DissertationIsPartOf /></a></td></tr>
-      </biblio:foreachDissertationIsPartOfIterator>
       <biblio:foreachDissertationPerformedAtIterator>
          <tr><td>performedAt</td><td><a href="../<biblio:DissertationPerformedAtType/>/<biblio:DissertationPerformedAtType/>.jsp?uri=<biblio:DissertationPerformedAt/>"><biblio:DissertationPerformedAt /></a></td></tr>
       </biblio:foreachDissertationPerformedAtIterator>
@@ -79,12 +64,6 @@
       <biblio:foreachDissertationHasDataSourceIterator>
          <tr><td>hasDataSource</td><td><a href="../<biblio:DissertationHasDataSourceType/>/<biblio:DissertationHasDataSourceType/>.jsp?uri=<biblio:DissertationHasDataSource/>"><biblio:DissertationHasDataSource /></a></td></tr>
       </biblio:foreachDissertationHasDataSourceIterator>
-      <biblio:foreachDissertationIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:DissertationIdentifiedByType/>/<biblio:DissertationIdentifiedByType/>.jsp?uri=<biblio:DissertationIdentifiedBy/>"><biblio:DissertationIdentifiedBy /></a></td></tr>
-      </biblio:foreachDissertationIdentifiedByIterator>
-      <biblio:foreachDissertationPrecedesIterator>
-         <tr><td>precedes</td><td><a href="../<biblio:DissertationPrecedesType/>/<biblio:DissertationPrecedesType/>.jsp?uri=<biblio:DissertationPrecedes/>"><biblio:DissertationPrecedes /></a></td></tr>
-      </biblio:foreachDissertationPrecedesIterator>
       <biblio:foreachDissertationContinuesUnderNewTitleIterator>
          <tr><td>continuesUnderNewTitle</td><td><a href="../<biblio:DissertationContinuesUnderNewTitleType/>/<biblio:DissertationContinuesUnderNewTitleType/>.jsp?uri=<biblio:DissertationContinuesUnderNewTitle/>"><biblio:DissertationContinuesUnderNewTitle /></a></td></tr>
       </biblio:foreachDissertationContinuesUnderNewTitleIterator>
@@ -185,9 +164,9 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
-      <biblio:foreachDissertationAgentInverseIterator>
-         <tr><td>agent</td><td><a href="../<biblio:DissertationAgentInverseType/>/<biblio:DissertationAgentInverseType/>.jsp?uri=<biblio:DissertationAgentInverse/>"><biblio:DissertationAgentInverse/></a></td></tr>
-      </biblio:foreachDissertationAgentInverseIterator>
+      <biblio:foreachDissertationRelationInverseIterator>
+         <tr><td>relation</td><td><a href="../<biblio:DissertationRelationInverseType/>/<biblio:DissertationRelationInverseType/>.jsp?uri=<biblio:DissertationRelationInverse/>"><biblio:DissertationRelationInverse/></a></td></tr>
+      </biblio:foreachDissertationRelationInverseIterator>
    </table>
    </biblio:Dissertation>
 

@@ -27,6 +27,12 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
+      <biblio:foreachRWOBirthDateIterator>
+         <tr><td>birthDate</td><td><biblio:RWOBirthDate /></td></tr>
+      </biblio:foreachRWOBirthDateIterator>
+      <biblio:foreachRWODeathDateIterator>
+         <tr><td>deathDate</td><td><biblio:RWODeathDate /></td></tr>
+      </biblio:foreachRWODeathDateIterator>
    </table>
 
    <h3>Object Properties</h3>
@@ -38,6 +44,9 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
+      <biblio:foreachRWOAgentInverseIterator>
+         <tr><td>agent</td><td><a href="../<biblio:RWOAgentInverseType/>/<biblio:RWOAgentInverseType/>.jsp?uri=<biblio:RWOAgentInverse/>"><biblio:RWOAgentInverse/></a></td></tr>
+      </biblio:foreachRWOAgentInverseIterator>
    </table>
    </biblio:RWO>
 

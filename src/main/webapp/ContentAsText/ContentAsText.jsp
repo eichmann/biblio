@@ -34,6 +34,9 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachContentAsTextIsBodyOfIterator>
+         <tr><td>isBodyOf</td><td><a href="../<biblio:ContentAsTextIsBodyOfType/>/<biblio:ContentAsTextIsBodyOfType/>.jsp?uri=<biblio:ContentAsTextIsBodyOf/>"><biblio:ContentAsTextIsBodyOf /></a></td></tr>
+      </biblio:foreachContentAsTextIsBodyOfIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>

@@ -31,15 +31,9 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachSpineTitleHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:SpineTitleHasPartType/>/<biblio:SpineTitleHasPartType/>.jsp?uri=<biblio:SpineTitleHasPart/>"><biblio:SpineTitleHasPart /></a></td></tr>
-      </biblio:foreachSpineTitleHasPartIterator>
       <biblio:foreachSpineTitleIsTitleOfIterator>
          <tr><td>isTitleOf</td><td><a href="../<biblio:SpineTitleIsTitleOfType/>/<biblio:SpineTitleIsTitleOfType/>.jsp?uri=<biblio:SpineTitleIsTitleOf/>"><biblio:SpineTitleIsTitleOf /></a></td></tr>
       </biblio:foreachSpineTitleIsTitleOfIterator>
-      <biblio:foreachSpineTitleHasSourceStatusIterator>
-         <tr><td>hasSourceStatus</td><td><a href="../<biblio:SpineTitleHasSourceStatusType/>/<biblio:SpineTitleHasSourceStatusType/>.jsp?uri=<biblio:SpineTitleHasSourceStatus/>"><biblio:SpineTitleHasSourceStatus /></a></td></tr>
-      </biblio:foreachSpineTitleHasSourceStatusIterator>
       <biblio:foreachSpineTitleHasDerivativeIterator>
          <tr><td>hasDerivative</td><td><a href="../<biblio:SpineTitleHasDerivativeType/>/<biblio:SpineTitleHasDerivativeType/>.jsp?uri=<biblio:SpineTitleHasDerivative/>"><biblio:SpineTitleHasDerivative /></a></td></tr>
       </biblio:foreachSpineTitleHasDerivativeIterator>

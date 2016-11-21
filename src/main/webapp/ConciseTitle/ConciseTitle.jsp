@@ -31,15 +31,9 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachConciseTitleHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:ConciseTitleHasPartType/>/<biblio:ConciseTitleHasPartType/>.jsp?uri=<biblio:ConciseTitleHasPart/>"><biblio:ConciseTitleHasPart /></a></td></tr>
-      </biblio:foreachConciseTitleHasPartIterator>
       <biblio:foreachConciseTitleIsTitleOfIterator>
          <tr><td>isTitleOf</td><td><a href="../<biblio:ConciseTitleIsTitleOfType/>/<biblio:ConciseTitleIsTitleOfType/>.jsp?uri=<biblio:ConciseTitleIsTitleOf/>"><biblio:ConciseTitleIsTitleOf /></a></td></tr>
       </biblio:foreachConciseTitleIsTitleOfIterator>
-      <biblio:foreachConciseTitleHasSourceStatusIterator>
-         <tr><td>hasSourceStatus</td><td><a href="../<biblio:ConciseTitleHasSourceStatusType/>/<biblio:ConciseTitleHasSourceStatusType/>.jsp?uri=<biblio:ConciseTitleHasSourceStatus/>"><biblio:ConciseTitleHasSourceStatus /></a></td></tr>
-      </biblio:foreachConciseTitleHasSourceStatusIterator>
       <biblio:foreachConciseTitleHasDerivativeIterator>
          <tr><td>hasDerivative</td><td><a href="../<biblio:ConciseTitleHasDerivativeType/>/<biblio:ConciseTitleHasDerivativeType/>.jsp?uri=<biblio:ConciseTitleHasDerivative/>"><biblio:ConciseTitleHasDerivative /></a></td></tr>
       </biblio:foreachConciseTitleHasDerivativeIterator>

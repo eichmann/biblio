@@ -31,15 +31,9 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachDistinctiveTitleHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:DistinctiveTitleHasPartType/>/<biblio:DistinctiveTitleHasPartType/>.jsp?uri=<biblio:DistinctiveTitleHasPart/>"><biblio:DistinctiveTitleHasPart /></a></td></tr>
-      </biblio:foreachDistinctiveTitleHasPartIterator>
       <biblio:foreachDistinctiveTitleIsTitleOfIterator>
          <tr><td>isTitleOf</td><td><a href="../<biblio:DistinctiveTitleIsTitleOfType/>/<biblio:DistinctiveTitleIsTitleOfType/>.jsp?uri=<biblio:DistinctiveTitleIsTitleOf/>"><biblio:DistinctiveTitleIsTitleOf /></a></td></tr>
       </biblio:foreachDistinctiveTitleIsTitleOfIterator>
-      <biblio:foreachDistinctiveTitleHasSourceStatusIterator>
-         <tr><td>hasSourceStatus</td><td><a href="../<biblio:DistinctiveTitleHasSourceStatusType/>/<biblio:DistinctiveTitleHasSourceStatusType/>.jsp?uri=<biblio:DistinctiveTitleHasSourceStatus/>"><biblio:DistinctiveTitleHasSourceStatus /></a></td></tr>
-      </biblio:foreachDistinctiveTitleHasSourceStatusIterator>
       <biblio:foreachDistinctiveTitleHasDerivativeIterator>
          <tr><td>hasDerivative</td><td><a href="../<biblio:DistinctiveTitleHasDerivativeType/>/<biblio:DistinctiveTitleHasDerivativeType/>.jsp?uri=<biblio:DistinctiveTitleHasDerivative/>"><biblio:DistinctiveTitleHasDerivative /></a></td></tr>
       </biblio:foreachDistinctiveTitleHasDerivativeIterator>

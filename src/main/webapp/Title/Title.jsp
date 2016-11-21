@@ -31,15 +31,9 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachTitleHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:TitleHasPartType/>/<biblio:TitleHasPartType/>.jsp?uri=<biblio:TitleHasPart/>"><biblio:TitleHasPart /></a></td></tr>
-      </biblio:foreachTitleHasPartIterator>
       <biblio:foreachTitleIsTitleOfIterator>
          <tr><td>isTitleOf</td><td><a href="../<biblio:TitleIsTitleOfType/>/<biblio:TitleIsTitleOfType/>.jsp?uri=<biblio:TitleIsTitleOf/>"><biblio:TitleIsTitleOf /></a></td></tr>
       </biblio:foreachTitleIsTitleOfIterator>
-      <biblio:foreachTitleHasSourceStatusIterator>
-         <tr><td>hasSourceStatus</td><td><a href="../<biblio:TitleHasSourceStatusType/>/<biblio:TitleHasSourceStatusType/>.jsp?uri=<biblio:TitleHasSourceStatus/>"><biblio:TitleHasSourceStatus /></a></td></tr>
-      </biblio:foreachTitleHasSourceStatusIterator>
       <biblio:foreachTitleHasDerivativeIterator>
          <tr><td>hasDerivative</td><td><a href="../<biblio:TitleHasDerivativeType/>/<biblio:TitleHasDerivativeType/>.jsp?uri=<biblio:TitleHasDerivative/>"><biblio:TitleHasDerivative /></a></td></tr>
       </biblio:foreachTitleHasDerivativeIterator>

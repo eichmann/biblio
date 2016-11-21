@@ -31,13 +31,13 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachTemporalEntityIsSubjectOfIterator>
+         <tr><td>isSubjectOf</td><td><a href="../<biblio:TemporalEntityIsSubjectOfType/>/<biblio:TemporalEntityIsSubjectOfType/>.jsp?uri=<biblio:TemporalEntityIsSubjectOf/>"><biblio:TemporalEntityIsSubjectOf /></a></td></tr>
+      </biblio:foreachTemporalEntityIsSubjectOfIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
-      <biblio:foreachTemporalEntityAgentInverseIterator>
-         <tr><td>agent</td><td><a href="../<biblio:TemporalEntityAgentInverseType/>/<biblio:TemporalEntityAgentInverseType/>.jsp?uri=<biblio:TemporalEntityAgentInverse/>"><biblio:TemporalEntityAgentInverse/></a></td></tr>
-      </biblio:foreachTemporalEntityAgentInverseIterator>
    </table>
    </biblio:TemporalEntity>
 

@@ -31,15 +31,9 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachRunningTitleHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:RunningTitleHasPartType/>/<biblio:RunningTitleHasPartType/>.jsp?uri=<biblio:RunningTitleHasPart/>"><biblio:RunningTitleHasPart /></a></td></tr>
-      </biblio:foreachRunningTitleHasPartIterator>
       <biblio:foreachRunningTitleIsTitleOfIterator>
          <tr><td>isTitleOf</td><td><a href="../<biblio:RunningTitleIsTitleOfType/>/<biblio:RunningTitleIsTitleOfType/>.jsp?uri=<biblio:RunningTitleIsTitleOf/>"><biblio:RunningTitleIsTitleOf /></a></td></tr>
       </biblio:foreachRunningTitleIsTitleOfIterator>
-      <biblio:foreachRunningTitleHasSourceStatusIterator>
-         <tr><td>hasSourceStatus</td><td><a href="../<biblio:RunningTitleHasSourceStatusType/>/<biblio:RunningTitleHasSourceStatusType/>.jsp?uri=<biblio:RunningTitleHasSourceStatus/>"><biblio:RunningTitleHasSourceStatus /></a></td></tr>
-      </biblio:foreachRunningTitleHasSourceStatusIterator>
       <biblio:foreachRunningTitleHasDerivativeIterator>
          <tr><td>hasDerivative</td><td><a href="../<biblio:RunningTitleHasDerivativeType/>/<biblio:RunningTitleHasDerivativeType/>.jsp?uri=<biblio:RunningTitleHasDerivative/>"><biblio:RunningTitleHasDerivative /></a></td></tr>
       </biblio:foreachRunningTitleHasDerivativeIterator>

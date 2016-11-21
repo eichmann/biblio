@@ -31,15 +31,15 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachNlmClassificationIsClassificationForIterator>
-         <tr><td>isClassificationFor</td><td><a href="../<biblio:NlmClassificationIsClassificationForType/>/<biblio:NlmClassificationIsClassificationForType/>.jsp?uri=<biblio:NlmClassificationIsClassificationFor/>"><biblio:NlmClassificationIsClassificationFor /></a></td></tr>
-      </biblio:foreachNlmClassificationIsClassificationForIterator>
       <biblio:foreachNlmClassificationSemanticRelationIterator>
          <tr><td>semanticRelation</td><td><a href="../<biblio:NlmClassificationSemanticRelationType/>/<biblio:NlmClassificationSemanticRelationType/>.jsp?uri=<biblio:NlmClassificationSemanticRelation/>"><biblio:NlmClassificationSemanticRelation /></a></td></tr>
       </biblio:foreachNlmClassificationSemanticRelationIterator>
       <biblio:foreachNlmClassificationTopConceptOfIterator>
          <tr><td>topConceptOf</td><td><a href="../<biblio:NlmClassificationTopConceptOfType/>/<biblio:NlmClassificationTopConceptOfType/>.jsp?uri=<biblio:NlmClassificationTopConceptOf/>"><biblio:NlmClassificationTopConceptOf /></a></td></tr>
       </biblio:foreachNlmClassificationTopConceptOfIterator>
+      <biblio:foreachNlmClassificationIsClassificationForIterator>
+         <tr><td>isClassificationFor</td><td><a href="../<biblio:NlmClassificationIsClassificationForType/>/<biblio:NlmClassificationIsClassificationForType/>.jsp?uri=<biblio:NlmClassificationIsClassificationFor/>"><biblio:NlmClassificationIsClassificationFor /></a></td></tr>
+      </biblio:foreachNlmClassificationIsClassificationForIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>

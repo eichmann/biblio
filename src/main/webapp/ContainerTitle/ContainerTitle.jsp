@@ -31,15 +31,9 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachContainerTitleHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:ContainerTitleHasPartType/>/<biblio:ContainerTitleHasPartType/>.jsp?uri=<biblio:ContainerTitleHasPart/>"><biblio:ContainerTitleHasPart /></a></td></tr>
-      </biblio:foreachContainerTitleHasPartIterator>
       <biblio:foreachContainerTitleIsTitleOfIterator>
          <tr><td>isTitleOf</td><td><a href="../<biblio:ContainerTitleIsTitleOfType/>/<biblio:ContainerTitleIsTitleOfType/>.jsp?uri=<biblio:ContainerTitleIsTitleOf/>"><biblio:ContainerTitleIsTitleOf /></a></td></tr>
       </biblio:foreachContainerTitleIsTitleOfIterator>
-      <biblio:foreachContainerTitleHasSourceStatusIterator>
-         <tr><td>hasSourceStatus</td><td><a href="../<biblio:ContainerTitleHasSourceStatusType/>/<biblio:ContainerTitleHasSourceStatusType/>.jsp?uri=<biblio:ContainerTitleHasSourceStatus/>"><biblio:ContainerTitleHasSourceStatus /></a></td></tr>
-      </biblio:foreachContainerTitleHasSourceStatusIterator>
       <biblio:foreachContainerTitleHasDerivativeIterator>
          <tr><td>hasDerivative</td><td><a href="../<biblio:ContainerTitleHasDerivativeType/>/<biblio:ContainerTitleHasDerivativeType/>.jsp?uri=<biblio:ContainerTitleHasDerivative/>"><biblio:ContainerTitleHasDerivative /></a></td></tr>
       </biblio:foreachContainerTitleHasDerivativeIterator>

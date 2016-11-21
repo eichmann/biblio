@@ -31,9 +31,6 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachEventAtLocationIterator>
-         <tr><td>atLocation</td><td><a href="../<biblio:EventAtLocationType/>/<biblio:EventAtLocationType/>.jsp?uri=<biblio:EventAtLocation/>"><biblio:EventAtLocation /></a></td></tr>
-      </biblio:foreachEventAtLocationIterator>
       <biblio:foreachEventRecordedInIterator>
          <tr><td>recordedIn</td><td><a href="../<biblio:EventRecordedInType/>/<biblio:EventRecordedInType/>.jsp?uri=<biblio:EventRecordedIn/>"><biblio:EventRecordedIn /></a></td></tr>
       </biblio:foreachEventRecordedInIterator>

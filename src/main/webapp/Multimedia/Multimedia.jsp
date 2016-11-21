@@ -61,9 +61,12 @@
       <biblio:foreachMultimediaIsPartOfIterator>
          <tr><td>isPartOf</td><td><a href="../<biblio:MultimediaIsPartOfType/>/<biblio:MultimediaIsPartOfType/>.jsp?uri=<biblio:MultimediaIsPartOf/>"><biblio:MultimediaIsPartOf /></a></td></tr>
       </biblio:foreachMultimediaIsPartOfIterator>
-      <biblio:foreachMultimediaIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:MultimediaIdentifiedByType/>/<biblio:MultimediaIdentifiedByType/>.jsp?uri=<biblio:MultimediaIdentifiedBy/>"><biblio:MultimediaIdentifiedBy /></a></td></tr>
-      </biblio:foreachMultimediaIdentifiedByIterator>
+      <biblio:foreachMultimediaFollowsIterator>
+         <tr><td>follows</td><td><a href="../<biblio:MultimediaFollowsType/>/<biblio:MultimediaFollowsType/>.jsp?uri=<biblio:MultimediaFollows/>"><biblio:MultimediaFollows /></a></td></tr>
+      </biblio:foreachMultimediaFollowsIterator>
+      <biblio:foreachMultimediaHasAnnotationIterator>
+         <tr><td>hasAnnotation</td><td><a href="../<biblio:MultimediaHasAnnotationType/>/<biblio:MultimediaHasAnnotationType/>.jsp?uri=<biblio:MultimediaHasAnnotation/>"><biblio:MultimediaHasAnnotation /></a></td></tr>
+      </biblio:foreachMultimediaHasAnnotationIterator>
       <biblio:foreachMultimediaPerformedAtIterator>
          <tr><td>performedAt</td><td><a href="../<biblio:MultimediaPerformedAtType/>/<biblio:MultimediaPerformedAtType/>.jsp?uri=<biblio:MultimediaPerformedAt/>"><biblio:MultimediaPerformedAt /></a></td></tr>
       </biblio:foreachMultimediaPerformedAtIterator>
@@ -79,9 +82,6 @@
       <biblio:foreachMultimediaHasDataSourceIterator>
          <tr><td>hasDataSource</td><td><a href="../<biblio:MultimediaHasDataSourceType/>/<biblio:MultimediaHasDataSourceType/>.jsp?uri=<biblio:MultimediaHasDataSource/>"><biblio:MultimediaHasDataSource /></a></td></tr>
       </biblio:foreachMultimediaHasDataSourceIterator>
-      <biblio:foreachMultimediaPrecedesIterator>
-         <tr><td>precedes</td><td><a href="../<biblio:MultimediaPrecedesType/>/<biblio:MultimediaPrecedesType/>.jsp?uri=<biblio:MultimediaPrecedes/>"><biblio:MultimediaPrecedes /></a></td></tr>
-      </biblio:foreachMultimediaPrecedesIterator>
       <biblio:foreachMultimediaContinuesUnderNewTitleIterator>
          <tr><td>continuesUnderNewTitle</td><td><a href="../<biblio:MultimediaContinuesUnderNewTitleType/>/<biblio:MultimediaContinuesUnderNewTitleType/>.jsp?uri=<biblio:MultimediaContinuesUnderNewTitle/>"><biblio:MultimediaContinuesUnderNewTitle /></a></td></tr>
       </biblio:foreachMultimediaContinuesUnderNewTitleIterator>
@@ -182,9 +182,6 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
-      <biblio:foreachMultimediaAgentInverseIterator>
-         <tr><td>agent</td><td><a href="../<biblio:MultimediaAgentInverseType/>/<biblio:MultimediaAgentInverseType/>.jsp?uri=<biblio:MultimediaAgentInverse/>"><biblio:MultimediaAgentInverse/></a></td></tr>
-      </biblio:foreachMultimediaAgentInverseIterator>
    </table>
    </biblio:Multimedia>
 

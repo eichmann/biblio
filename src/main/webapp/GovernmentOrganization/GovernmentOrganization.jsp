@@ -27,19 +27,10 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
-      <biblio:foreachGovernmentOrganizationBirthDateIterator>
-         <tr><td>birthDate</td><td><biblio:GovernmentOrganizationBirthDate /></td></tr>
-      </biblio:foreachGovernmentOrganizationBirthDateIterator>
-      <biblio:foreachGovernmentOrganizationDeathDateIterator>
-         <tr><td>deathDate</td><td><biblio:GovernmentOrganizationDeathDate /></td></tr>
-      </biblio:foreachGovernmentOrganizationDeathDateIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachGovernmentOrganizationIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:GovernmentOrganizationIdentifiedByType/>/<biblio:GovernmentOrganizationIdentifiedByType/>.jsp?uri=<biblio:GovernmentOrganizationIdentifiedBy/>"><biblio:GovernmentOrganizationIdentifiedBy /></a></td></tr>
-      </biblio:foreachGovernmentOrganizationIdentifiedByIterator>
       <biblio:foreachGovernmentOrganizationReceivedIterator>
          <tr><td>received</td><td><a href="../<biblio:GovernmentOrganizationReceivedType/>/<biblio:GovernmentOrganizationReceivedType/>.jsp?uri=<biblio:GovernmentOrganizationReceived/>"><biblio:GovernmentOrganizationReceived /></a></td></tr>
       </biblio:foreachGovernmentOrganizationReceivedIterator>
@@ -50,9 +41,6 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
-      <biblio:foreachGovernmentOrganizationRelationInverseIterator>
-         <tr><td>relation</td><td><a href="../<biblio:GovernmentOrganizationRelationInverseType/>/<biblio:GovernmentOrganizationRelationInverseType/>.jsp?uri=<biblio:GovernmentOrganizationRelationInverse/>"><biblio:GovernmentOrganizationRelationInverse/></a></td></tr>
-      </biblio:foreachGovernmentOrganizationRelationInverseIterator>
       <biblio:foreachGovernmentOrganizationAgentInverseIterator>
          <tr><td>agent</td><td><a href="../<biblio:GovernmentOrganizationAgentInverseType/>/<biblio:GovernmentOrganizationAgentInverseType/>.jsp?uri=<biblio:GovernmentOrganizationAgentInverse/>"><biblio:GovernmentOrganizationAgentInverse/></a></td></tr>
       </biblio:foreachGovernmentOrganizationAgentInverseIterator>

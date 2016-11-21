@@ -31,12 +31,9 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachConferenceIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:ConferenceIdentifiedByType/>/<biblio:ConferenceIdentifiedByType/>.jsp?uri=<biblio:ConferenceIdentifiedBy/>"><biblio:ConferenceIdentifiedBy /></a></td></tr>
-      </biblio:foreachConferenceIdentifiedByIterator>
-      <biblio:foreachConferenceAtLocationIterator>
-         <tr><td>atLocation</td><td><a href="../<biblio:ConferenceAtLocationType/>/<biblio:ConferenceAtLocationType/>.jsp?uri=<biblio:ConferenceAtLocation/>"><biblio:ConferenceAtLocation /></a></td></tr>
-      </biblio:foreachConferenceAtLocationIterator>
+      <biblio:foreachConferenceIsSubjectOfIterator>
+         <tr><td>isSubjectOf</td><td><a href="../<biblio:ConferenceIsSubjectOfType/>/<biblio:ConferenceIsSubjectOfType/>.jsp?uri=<biblio:ConferenceIsSubjectOf/>"><biblio:ConferenceIsSubjectOf /></a></td></tr>
+      </biblio:foreachConferenceIsSubjectOfIterator>
       <biblio:foreachConferenceRecordedInIterator>
          <tr><td>recordedIn</td><td><a href="../<biblio:ConferenceRecordedInType/>/<biblio:ConferenceRecordedInType/>.jsp?uri=<biblio:ConferenceRecordedIn/>"><biblio:ConferenceRecordedIn /></a></td></tr>
       </biblio:foreachConferenceRecordedInIterator>

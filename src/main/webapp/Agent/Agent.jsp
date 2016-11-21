@@ -27,19 +27,10 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
-      <biblio:foreachAgentBirthDateIterator>
-         <tr><td>birthDate</td><td><biblio:AgentBirthDate /></td></tr>
-      </biblio:foreachAgentBirthDateIterator>
-      <biblio:foreachAgentDeathDateIterator>
-         <tr><td>deathDate</td><td><biblio:AgentDeathDate /></td></tr>
-      </biblio:foreachAgentDeathDateIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachAgentIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:AgentIdentifiedByType/>/<biblio:AgentIdentifiedByType/>.jsp?uri=<biblio:AgentIdentifiedBy/>"><biblio:AgentIdentifiedBy /></a></td></tr>
-      </biblio:foreachAgentIdentifiedByIterator>
       <biblio:foreachAgentReceivedIterator>
          <tr><td>received</td><td><a href="../<biblio:AgentReceivedType/>/<biblio:AgentReceivedType/>.jsp?uri=<biblio:AgentReceived/>"><biblio:AgentReceived /></a></td></tr>
       </biblio:foreachAgentReceivedIterator>
@@ -50,15 +41,9 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
-      <biblio:foreachAgentRelationInverseIterator>
-         <tr><td>relation</td><td><a href="../<biblio:AgentRelationInverseType/>/<biblio:AgentRelationInverseType/>.jsp?uri=<biblio:AgentRelationInverse/>"><biblio:AgentRelationInverse/></a></td></tr>
-      </biblio:foreachAgentRelationInverseIterator>
       <biblio:foreachAgentHeldByInverseIterator>
          <tr><td>heldBy</td><td><a href="../<biblio:AgentHeldByInverseType/>/<biblio:AgentHeldByInverseType/>.jsp?uri=<biblio:AgentHeldByInverse/>"><biblio:AgentHeldByInverse/></a></td></tr>
       </biblio:foreachAgentHeldByInverseIterator>
-      <biblio:foreachAgentAgentInverseIterator>
-         <tr><td>agent</td><td><a href="../<biblio:AgentAgentInverseType/>/<biblio:AgentAgentInverseType/>.jsp?uri=<biblio:AgentAgentInverse/>"><biblio:AgentAgentInverse/></a></td></tr>
-      </biblio:foreachAgentAgentInverseIterator>
    </table>
    </biblio:Agent>
 

@@ -26,11 +26,11 @@
       <biblio:foreachInstanceHasProvisionIterator classFilter="PublisherProvision">
         <c:set var="provision"><biblio:InstanceHasProvision/></c:set>
         <biblio:PublisherProvision subjectURI="${provision}">
-            <biblio:foreachPublisherProvisionAgentIterator classFilter="Organization">
-                <biblio:Organization>
-                     <p><b>Publisher:</b> <a href="../Organization/altOrganization.jsp?uri=<biblio:OrganizationSubjectURI/>"><biblio:OrganizationLabel/></a>
-                </biblio:Organization>
-            </biblio:foreachPublisherProvisionAgentIterator>
+<%--             <biblio:foreachPublisherProvisionAgentIterator classFilter="Organization"> --%>
+<%--                 <biblio:Organization> --%>
+<%--                      <p><b>Publisher:</b> <a href="../Organization/altOrganization.jsp?uri=<biblio:OrganizationSubjectURI/>"><biblio:OrganizationLabel/></a> --%>
+<%--                 </biblio:Organization> --%>
+<%--             </biblio:foreachPublisherProvisionAgentIterator> --%>
             <biblio:foreachPublisherProvisionAtLocationIterator>
                 <biblio:Location>
                     : <a href="../Location/Location.jsp?uri=<biblio:LocationSubjectURI/>"><biblio:LocationLabel/></a>
@@ -100,9 +100,9 @@
       <biblio:foreachInstanceDimensionsIterator>
          <p>Dimensions: <biblio:InstanceDimensions />
       </biblio:foreachInstanceDimensionsIterator>
-      <biblio:foreachInstanceNoteIterator>
-         <p>Note: <biblio:InstanceNote />
-      </biblio:foreachInstanceNoteIterator>
+<%--       <biblio:foreachInstanceNoteIterator> --%>
+<%--          <p>Note: <biblio:InstanceNote /> --%>
+<%--       </biblio:foreachInstanceNoteIterator> --%>
       <biblio:foreachInstanceResponsibilityNoteIterator>
          <p>Responsibility Note: <biblio:InstanceResponsibilityNote />
       </biblio:foreachInstanceResponsibilityNoteIterator>
@@ -117,9 +117,9 @@
       </biblio:foreachInstanceExtentIterator>
     <p>Subject(s):
       <ol class=bulletedList>
-      <biblio:foreachInstanceSubjectIterator>
-         <li><a href="../<biblio:InstanceSubjectType/>/<biblio:InstanceSubjectType/>.jsp?uri=<biblio:InstanceSubject/>"><biblio:InstanceSubject /></a>
-      </biblio:foreachInstanceSubjectIterator>
+<%--       <biblio:foreachInstanceSubjectIterator> --%>
+<%--          <li><a href="../<biblio:InstanceSubjectType/>/<biblio:InstanceSubjectType/>.jsp?uri=<biblio:InstanceSubject/>"><biblio:InstanceSubject /></a> --%>
+<%--       </biblio:foreachInstanceSubjectIterator> --%>
       </ol>
       
       <biblio:foreachInstanceHasReproductionIterator>
@@ -128,18 +128,18 @@
       <biblio:foreachInstanceHasTableOfContentsIterator>
          <p>Table of Contents: <a href="../<biblio:InstanceHasTableOfContentsType/>/<biblio:InstanceHasTableOfContentsType/>.jsp?uri=<biblio:InstanceHasTableOfContents/>"><biblio:InstanceHasTableOfContents /></a>
       </biblio:foreachInstanceHasTableOfContentsIterator>
-      <biblio:foreachInstanceHasAnnotationIterator>
-         <p>Annotation: <a href="../<biblio:InstanceHasAnnotationType/>/<biblio:InstanceHasAnnotationType/>.jsp?uri=<biblio:InstanceHasAnnotation/>"><biblio:InstanceHasAnnotation /></a>
-      </biblio:foreachInstanceHasAnnotationIterator>
+<%--       <biblio:foreachInstanceHasAnnotationIterator> --%>
+<%--          <p>Annotation: <a href="../<biblio:InstanceHasAnnotationType/>/<biblio:InstanceHasAnnotationType/>.jsp?uri=<biblio:InstanceHasAnnotation/>"><biblio:InstanceHasAnnotation /></a> --%>
+<%--       </biblio:foreachInstanceHasAnnotationIterator> --%>
       <biblio:foreachInstanceHasCoverArtIterator>
          <p>Cover Art: <a href="../<biblio:InstanceHasCoverArtType/>/<biblio:InstanceHasCoverArtType/>.jsp?uri=<biblio:InstanceHasCoverArt/>"><biblio:InstanceHasCoverArt /></a>
       </biblio:foreachInstanceHasCoverArtIterator>
-      <biblio:foreachInstanceRelationIterator>
-         <p>Relation: <a href="../<biblio:InstanceRelationType/>/<biblio:InstanceRelationType/>.jsp?uri=<biblio:InstanceRelation/>"><biblio:InstanceRelation /></a>
-      </biblio:foreachInstanceRelationIterator>
-      <biblio:foreachInstanceLanguageIterator>
-         <p>Language: <a href="../<biblio:InstanceLanguageType/>/<biblio:InstanceLanguageType/>.jsp?uri=<biblio:InstanceLanguage/>"><biblio:InstanceLanguage /></a>
-      </biblio:foreachInstanceLanguageIterator>
+<%--       <biblio:foreachInstanceRelationIterator> --%>
+<%--          <p>Relation: <a href="../<biblio:InstanceRelationType/>/<biblio:InstanceRelationType/>.jsp?uri=<biblio:InstanceRelation/>"><biblio:InstanceRelation /></a> --%>
+<%--       </biblio:foreachInstanceRelationIterator> --%>
+<%--       <biblio:foreachInstanceLanguageIterator> --%>
+<%--          <p>Language: <a href="../<biblio:InstanceLanguageType/>/<biblio:InstanceLanguageType/>.jsp?uri=<biblio:InstanceLanguage/>"><biblio:InstanceLanguage /></a> --%>
+<%--       </biblio:foreachInstanceLanguageIterator> --%>
       <biblio:foreachInstanceReproducesIterator>
          <p>Reproduces: <a href="../<biblio:InstanceReproducesType/>/<biblio:InstanceReproducesType/>.jsp?uri=<biblio:InstanceReproduces/>"><biblio:InstanceReproduces /></a>
       </biblio:foreachInstanceReproducesIterator>
@@ -152,9 +152,9 @@
       <biblio:foreachInstanceIssuedWithIterator>
          <p>Issued With: <a href="../<biblio:InstanceIssuedWithType/>/<biblio:InstanceIssuedWithType/>.jsp?uri=<biblio:InstanceIssuedWith/>"><biblio:InstanceIssuedWith /></a>
       </biblio:foreachInstanceIssuedWithIterator>
-      <biblio:foreachInstanceHasPartIterator>
-         <p>Part: <a href="../<biblio:InstanceHasPartType/>/<biblio:InstanceHasPartType/>.jsp?uri=<biblio:InstanceHasPart/>"><biblio:InstanceHasPart /></a>
-      </biblio:foreachInstanceHasPartIterator>
+<%--       <biblio:foreachInstanceHasPartIterator> --%>
+<%--          <p>Part: <a href="../<biblio:InstanceHasPartType/>/<biblio:InstanceHasPartType/>.jsp?uri=<biblio:InstanceHasPart/>"><biblio:InstanceHasPart /></a> --%>
+<%--       </biblio:foreachInstanceHasPartIterator> --%>
 
    </biblio:Instance>
 

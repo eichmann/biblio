@@ -37,9 +37,6 @@
       <biblio:foreachAbbreviatedTitleIsTitleOfIterator>
          <tr><td>isTitleOf</td><td><a href="../<biblio:AbbreviatedTitleIsTitleOfType/>/<biblio:AbbreviatedTitleIsTitleOfType/>.jsp?uri=<biblio:AbbreviatedTitleIsTitleOf/>"><biblio:AbbreviatedTitleIsTitleOf /></a></td></tr>
       </biblio:foreachAbbreviatedTitleIsTitleOfIterator>
-      <biblio:foreachAbbreviatedTitleHasSourceStatusIterator>
-         <tr><td>hasSourceStatus</td><td><a href="../<biblio:AbbreviatedTitleHasSourceStatusType/>/<biblio:AbbreviatedTitleHasSourceStatusType/>.jsp?uri=<biblio:AbbreviatedTitleHasSourceStatus/>"><biblio:AbbreviatedTitleHasSourceStatus /></a></td></tr>
-      </biblio:foreachAbbreviatedTitleHasSourceStatusIterator>
       <biblio:foreachAbbreviatedTitleHasDerivativeIterator>
          <tr><td>hasDerivative</td><td><a href="../<biblio:AbbreviatedTitleHasDerivativeType/>/<biblio:AbbreviatedTitleHasDerivativeType/>.jsp?uri=<biblio:AbbreviatedTitleHasDerivative/>"><biblio:AbbreviatedTitleHasDerivative /></a></td></tr>
       </biblio:foreachAbbreviatedTitleHasDerivativeIterator>

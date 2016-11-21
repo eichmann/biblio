@@ -31,12 +31,12 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachAuthorityIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:AuthorityIdentifiedByType/>/<biblio:AuthorityIdentifiedByType/>.jsp?uri=<biblio:AuthorityIdentifiedBy/>"><biblio:AuthorityIdentifiedBy /></a></td></tr>
-      </biblio:foreachAuthorityIdentifiedByIterator>
       <biblio:foreachAuthorityIdentifiesRWOIterator>
          <tr><td>identifiesRWO</td><td><a href="../<biblio:AuthorityIdentifiesRWOType/>/<biblio:AuthorityIdentifiesRWOType/>.jsp?uri=<biblio:AuthorityIdentifiesRWO/>"><biblio:AuthorityIdentifiesRWO /></a></td></tr>
       </biblio:foreachAuthorityIdentifiesRWOIterator>
+      <biblio:foreachAuthorityIsSubjectOfIterator>
+         <tr><td>isSubjectOf</td><td><a href="../<biblio:AuthorityIsSubjectOfType/>/<biblio:AuthorityIsSubjectOfType/>.jsp?uri=<biblio:AuthorityIsSubjectOf/>"><biblio:AuthorityIsSubjectOf /></a></td></tr>
+      </biblio:foreachAuthorityIsSubjectOfIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>

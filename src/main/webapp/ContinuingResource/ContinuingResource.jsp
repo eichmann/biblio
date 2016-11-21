@@ -46,21 +46,6 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachContinuingResourceRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:ContinuingResourceRelationType/>/<biblio:ContinuingResourceRelationType/>.jsp?uri=<biblio:ContinuingResourceRelation/>"><biblio:ContinuingResourceRelation /></a></td></tr>
-      </biblio:foreachContinuingResourceRelationIterator>
-      <biblio:foreachContinuingResourceHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:ContinuingResourceHasPartType/>/<biblio:ContinuingResourceHasPartType/>.jsp?uri=<biblio:ContinuingResourceHasPart/>"><biblio:ContinuingResourceHasPart /></a></td></tr>
-      </biblio:foreachContinuingResourceHasPartIterator>
-      <biblio:foreachContinuingResourceSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:ContinuingResourceSubjectType/>/<biblio:ContinuingResourceSubjectType/>.jsp?uri=<biblio:ContinuingResourceSubject/>"><biblio:ContinuingResourceSubject /></a></td></tr>
-      </biblio:foreachContinuingResourceSubjectIterator>
-      <biblio:foreachContinuingResourceLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:ContinuingResourceLanguageType/>/<biblio:ContinuingResourceLanguageType/>.jsp?uri=<biblio:ContinuingResourceLanguage/>"><biblio:ContinuingResourceLanguage /></a></td></tr>
-      </biblio:foreachContinuingResourceLanguageIterator>
-      <biblio:foreachContinuingResourceIsPartOfIterator>
-         <tr><td>isPartOf</td><td><a href="../<biblio:ContinuingResourceIsPartOfType/>/<biblio:ContinuingResourceIsPartOfType/>.jsp?uri=<biblio:ContinuingResourceIsPartOf/>"><biblio:ContinuingResourceIsPartOf /></a></td></tr>
-      </biblio:foreachContinuingResourceIsPartOfIterator>
       <biblio:foreachContinuingResourcePerformedAtIterator>
          <tr><td>performedAt</td><td><a href="../<biblio:ContinuingResourcePerformedAtType/>/<biblio:ContinuingResourcePerformedAtType/>.jsp?uri=<biblio:ContinuingResourcePerformedAt/>"><biblio:ContinuingResourcePerformedAt /></a></td></tr>
       </biblio:foreachContinuingResourcePerformedAtIterator>
@@ -76,12 +61,6 @@
       <biblio:foreachContinuingResourceHasDataSourceIterator>
          <tr><td>hasDataSource</td><td><a href="../<biblio:ContinuingResourceHasDataSourceType/>/<biblio:ContinuingResourceHasDataSourceType/>.jsp?uri=<biblio:ContinuingResourceHasDataSource/>"><biblio:ContinuingResourceHasDataSource /></a></td></tr>
       </biblio:foreachContinuingResourceHasDataSourceIterator>
-      <biblio:foreachContinuingResourceIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:ContinuingResourceIdentifiedByType/>/<biblio:ContinuingResourceIdentifiedByType/>.jsp?uri=<biblio:ContinuingResourceIdentifiedBy/>"><biblio:ContinuingResourceIdentifiedBy /></a></td></tr>
-      </biblio:foreachContinuingResourceIdentifiedByIterator>
-      <biblio:foreachContinuingResourcePrecedesIterator>
-         <tr><td>precedes</td><td><a href="../<biblio:ContinuingResourcePrecedesType/>/<biblio:ContinuingResourcePrecedesType/>.jsp?uri=<biblio:ContinuingResourcePrecedes/>"><biblio:ContinuingResourcePrecedes /></a></td></tr>
-      </biblio:foreachContinuingResourcePrecedesIterator>
       <biblio:foreachContinuingResourceContinuesUnderNewTitleIterator>
          <tr><td>continuesUnderNewTitle</td><td><a href="../<biblio:ContinuingResourceContinuesUnderNewTitleType/>/<biblio:ContinuingResourceContinuesUnderNewTitleType/>.jsp?uri=<biblio:ContinuingResourceContinuesUnderNewTitle/>"><biblio:ContinuingResourceContinuesUnderNewTitle /></a></td></tr>
       </biblio:foreachContinuingResourceContinuesUnderNewTitleIterator>
@@ -182,9 +161,9 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
-      <biblio:foreachContinuingResourceAgentInverseIterator>
-         <tr><td>agent</td><td><a href="../<biblio:ContinuingResourceAgentInverseType/>/<biblio:ContinuingResourceAgentInverseType/>.jsp?uri=<biblio:ContinuingResourceAgentInverse/>"><biblio:ContinuingResourceAgentInverse/></a></td></tr>
-      </biblio:foreachContinuingResourceAgentInverseIterator>
+      <biblio:foreachContinuingResourceRelationInverseIterator>
+         <tr><td>relation</td><td><a href="../<biblio:ContinuingResourceRelationInverseType/>/<biblio:ContinuingResourceRelationInverseType/>.jsp?uri=<biblio:ContinuingResourceRelationInverse/>"><biblio:ContinuingResourceRelationInverse/></a></td></tr>
+      </biblio:foreachContinuingResourceRelationInverseIterator>
    </table>
    </biblio:ContinuingResource>
 

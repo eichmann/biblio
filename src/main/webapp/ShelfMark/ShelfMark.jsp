@@ -31,15 +31,15 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachShelfMarkIsClassificationForIterator>
-         <tr><td>isClassificationFor</td><td><a href="../<biblio:ShelfMarkIsClassificationForType/>/<biblio:ShelfMarkIsClassificationForType/>.jsp?uri=<biblio:ShelfMarkIsClassificationFor/>"><biblio:ShelfMarkIsClassificationFor /></a></td></tr>
-      </biblio:foreachShelfMarkIsClassificationForIterator>
       <biblio:foreachShelfMarkSemanticRelationIterator>
          <tr><td>semanticRelation</td><td><a href="../<biblio:ShelfMarkSemanticRelationType/>/<biblio:ShelfMarkSemanticRelationType/>.jsp?uri=<biblio:ShelfMarkSemanticRelation/>"><biblio:ShelfMarkSemanticRelation /></a></td></tr>
       </biblio:foreachShelfMarkSemanticRelationIterator>
       <biblio:foreachShelfMarkTopConceptOfIterator>
          <tr><td>topConceptOf</td><td><a href="../<biblio:ShelfMarkTopConceptOfType/>/<biblio:ShelfMarkTopConceptOfType/>.jsp?uri=<biblio:ShelfMarkTopConceptOf/>"><biblio:ShelfMarkTopConceptOf /></a></td></tr>
       </biblio:foreachShelfMarkTopConceptOfIterator>
+      <biblio:foreachShelfMarkIsClassificationForIterator>
+         <tr><td>isClassificationFor</td><td><a href="../<biblio:ShelfMarkIsClassificationForType/>/<biblio:ShelfMarkIsClassificationForType/>.jsp?uri=<biblio:ShelfMarkIsClassificationFor/>"><biblio:ShelfMarkIsClassificationFor /></a></td></tr>
+      </biblio:foreachShelfMarkIsClassificationForIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>

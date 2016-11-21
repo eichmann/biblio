@@ -23,12 +23,12 @@
          <p>Death Date: <biblio:PersonDeathDate />
       </biblio:foreachPersonDeathDateIterator>
 
-      <biblio:foreachPersonIdentifiedByIterator>
-         <p>Identified By: <a href="../<biblio:PersonIdentifiedByType/>/<biblio:PersonIdentifiedByType/>.jsp?uri=<biblio:PersonIdentifiedBy/>"><biblio:PersonIdentifiedBy /></a>
-      </biblio:foreachPersonIdentifiedByIterator>
-      <biblio:foreachPersonIsSubjectOfIterator>
-         <p>Subject of: <a href="../<biblio:PersonIsSubjectOfType/>/<biblio:PersonIsSubjectOfType/>.jsp?uri=<biblio:PersonIsSubjectOf/>"><biblio:PersonIsSubjectOf /></a>
-      </biblio:foreachPersonIsSubjectOfIterator>
+<%--       <biblio:foreachPersonIdentifiedByIterator> --%>
+<%--          <p>Identified By: <a href="../<biblio:PersonIdentifiedByType/>/<biblio:PersonIdentifiedByType/>.jsp?uri=<biblio:PersonIdentifiedBy/>"><biblio:PersonIdentifiedBy /></a> --%>
+<%--       </biblio:foreachPersonIdentifiedByIterator> --%>
+<%--       <biblio:foreachPersonIsSubjectOfIterator> --%>
+<%--          <p>Subject of: <a href="../<biblio:PersonIsSubjectOfType/>/<biblio:PersonIsSubjectOfType/>.jsp?uri=<biblio:PersonIsSubjectOf/>"><biblio:PersonIsSubjectOf /></a> --%>
+<%--       </biblio:foreachPersonIsSubjectOfIterator> --%>
       <biblio:foreachPersonReceivedIterator>
          <p>Received: <a href="../<biblio:PersonReceivedType/>/<biblio:PersonReceivedType/>.jsp?uri=<biblio:PersonReceived/>"><biblio:PersonReceived /></a>
       </biblio:foreachPersonReceivedIterator>
