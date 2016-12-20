@@ -27,16 +27,19 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
+      <biblio:foreachManufacturerProvisionDateIterator>
+         <tr><td>date</td><td><biblio:ManufacturerProvisionDate /></td></tr>
+      </biblio:foreachManufacturerProvisionDateIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachManufacturerProvisionAtLocationIterator>
-         <tr><td>atLocation</td><td><a href="../<biblio:ManufacturerProvisionAtLocationType/>/<biblio:ManufacturerProvisionAtLocationType/>.jsp?uri=<biblio:ManufacturerProvisionAtLocation/>"><biblio:ManufacturerProvisionAtLocation /></a></td></tr>
-      </biblio:foreachManufacturerProvisionAtLocationIterator>
       <biblio:foreachManufacturerProvisionAgentIterator>
          <tr><td>agent</td><td><a href="../<biblio:ManufacturerProvisionAgentType/>/<biblio:ManufacturerProvisionAgentType/>.jsp?uri=<biblio:ManufacturerProvisionAgent/>"><biblio:ManufacturerProvisionAgent /></a></td></tr>
       </biblio:foreachManufacturerProvisionAgentIterator>
+      <biblio:foreachManufacturerProvisionAtLocationIterator>
+         <tr><td>atLocation</td><td><a href="../<biblio:ManufacturerProvisionAtLocationType/>/<biblio:ManufacturerProvisionAtLocationType/>.jsp?uri=<biblio:ManufacturerProvisionAtLocation/>"><biblio:ManufacturerProvisionAtLocation /></a></td></tr>
+      </biblio:foreachManufacturerProvisionAtLocationIterator>
       <biblio:foreachManufacturerProvisionMadeAvailableIterator>
          <tr><td>madeAvailable</td><td><a href="../<biblio:ManufacturerProvisionMadeAvailableType/>/<biblio:ManufacturerProvisionMadeAvailableType/>.jsp?uri=<biblio:ManufacturerProvisionMadeAvailable/>"><biblio:ManufacturerProvisionMadeAvailable /></a></td></tr>
       </biblio:foreachManufacturerProvisionMadeAvailableIterator>

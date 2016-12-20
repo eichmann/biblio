@@ -31,6 +31,9 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachMainTitleElementFollowsIterator>
+         <tr><td>follows</td><td><a href="../<biblio:MainTitleElementFollowsType/>/<biblio:MainTitleElementFollowsType/>.jsp?uri=<biblio:MainTitleElementFollows/>"><biblio:MainTitleElementFollows /></a></td></tr>
+      </biblio:foreachMainTitleElementFollowsIterator>
       <biblio:foreachMainTitleElementIsPartOfIterator>
          <tr><td>isPartOf</td><td><a href="../<biblio:MainTitleElementIsPartOfType/>/<biblio:MainTitleElementIsPartOfType/>.jsp?uri=<biblio:MainTitleElementIsPartOf/>"><biblio:MainTitleElementIsPartOf /></a></td></tr>
       </biblio:foreachMainTitleElementIsPartOfIterator>

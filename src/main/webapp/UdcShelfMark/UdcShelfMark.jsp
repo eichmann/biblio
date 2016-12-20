@@ -31,25 +31,10 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachUdcShelfMarkSemanticRelationIterator>
-         <tr><td>semanticRelation</td><td><a href="../<biblio:UdcShelfMarkSemanticRelationType/>/<biblio:UdcShelfMarkSemanticRelationType/>.jsp?uri=<biblio:UdcShelfMarkSemanticRelation/>"><biblio:UdcShelfMarkSemanticRelation /></a></td></tr>
-      </biblio:foreachUdcShelfMarkSemanticRelationIterator>
-      <biblio:foreachUdcShelfMarkTopConceptOfIterator>
-         <tr><td>topConceptOf</td><td><a href="../<biblio:UdcShelfMarkTopConceptOfType/>/<biblio:UdcShelfMarkTopConceptOfType/>.jsp?uri=<biblio:UdcShelfMarkTopConceptOf/>"><biblio:UdcShelfMarkTopConceptOf /></a></td></tr>
-      </biblio:foreachUdcShelfMarkTopConceptOfIterator>
-      <biblio:foreachUdcShelfMarkIsClassificationForIterator>
-         <tr><td>isClassificationFor</td><td><a href="../<biblio:UdcShelfMarkIsClassificationForType/>/<biblio:UdcShelfMarkIsClassificationForType/>.jsp?uri=<biblio:UdcShelfMarkIsClassificationFor/>"><biblio:UdcShelfMarkIsClassificationFor /></a></td></tr>
-      </biblio:foreachUdcShelfMarkIsClassificationForIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
-      <biblio:foreachUdcShelfMarkMemberInverseIterator>
-         <tr><td>member</td><td><a href="../<biblio:UdcShelfMarkMemberInverseType/>/<biblio:UdcShelfMarkMemberInverseType/>.jsp?uri=<biblio:UdcShelfMarkMemberInverse/>"><biblio:UdcShelfMarkMemberInverse/></a></td></tr>
-      </biblio:foreachUdcShelfMarkMemberInverseIterator>
-      <biblio:foreachUdcShelfMarkHasGenreInverseIterator>
-         <tr><td>hasGenre</td><td><a href="../<biblio:UdcShelfMarkHasGenreInverseType/>/<biblio:UdcShelfMarkHasGenreInverseType/>.jsp?uri=<biblio:UdcShelfMarkHasGenreInverse/>"><biblio:UdcShelfMarkHasGenreInverse/></a></td></tr>
-      </biblio:foreachUdcShelfMarkHasGenreInverseIterator>
    </table>
    </biblio:UdcShelfMark>
 

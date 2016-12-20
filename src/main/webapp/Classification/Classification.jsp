@@ -31,25 +31,10 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachClassificationIsClassificationForIterator>
-         <tr><td>isClassificationFor</td><td><a href="../<biblio:ClassificationIsClassificationForType/>/<biblio:ClassificationIsClassificationForType/>.jsp?uri=<biblio:ClassificationIsClassificationFor/>"><biblio:ClassificationIsClassificationFor /></a></td></tr>
-      </biblio:foreachClassificationIsClassificationForIterator>
-      <biblio:foreachClassificationSemanticRelationIterator>
-         <tr><td>semanticRelation</td><td><a href="../<biblio:ClassificationSemanticRelationType/>/<biblio:ClassificationSemanticRelationType/>.jsp?uri=<biblio:ClassificationSemanticRelation/>"><biblio:ClassificationSemanticRelation /></a></td></tr>
-      </biblio:foreachClassificationSemanticRelationIterator>
-      <biblio:foreachClassificationTopConceptOfIterator>
-         <tr><td>topConceptOf</td><td><a href="../<biblio:ClassificationTopConceptOfType/>/<biblio:ClassificationTopConceptOfType/>.jsp?uri=<biblio:ClassificationTopConceptOf/>"><biblio:ClassificationTopConceptOf /></a></td></tr>
-      </biblio:foreachClassificationTopConceptOfIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
-      <biblio:foreachClassificationMemberInverseIterator>
-         <tr><td>member</td><td><a href="../<biblio:ClassificationMemberInverseType/>/<biblio:ClassificationMemberInverseType/>.jsp?uri=<biblio:ClassificationMemberInverse/>"><biblio:ClassificationMemberInverse/></a></td></tr>
-      </biblio:foreachClassificationMemberInverseIterator>
-      <biblio:foreachClassificationHasGenreInverseIterator>
-         <tr><td>hasGenre</td><td><a href="../<biblio:ClassificationHasGenreInverseType/>/<biblio:ClassificationHasGenreInverseType/>.jsp?uri=<biblio:ClassificationHasGenreInverse/>"><biblio:ClassificationHasGenreInverse/></a></td></tr>
-      </biblio:foreachClassificationHasGenreInverseIterator>
    </table>
    </biblio:Classification>
 

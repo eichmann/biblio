@@ -37,15 +37,6 @@
       <biblio:foreachAbbreviatedTitleIsTitleOfIterator>
          <tr><td>isTitleOf</td><td><a href="../<biblio:AbbreviatedTitleIsTitleOfType/>/<biblio:AbbreviatedTitleIsTitleOfType/>.jsp?uri=<biblio:AbbreviatedTitleIsTitleOf/>"><biblio:AbbreviatedTitleIsTitleOf /></a></td></tr>
       </biblio:foreachAbbreviatedTitleIsTitleOfIterator>
-      <biblio:foreachAbbreviatedTitleHasDerivativeIterator>
-         <tr><td>hasDerivative</td><td><a href="../<biblio:AbbreviatedTitleHasDerivativeType/>/<biblio:AbbreviatedTitleHasDerivativeType/>.jsp?uri=<biblio:AbbreviatedTitleHasDerivative/>"><biblio:AbbreviatedTitleHasDerivative /></a></td></tr>
-      </biblio:foreachAbbreviatedTitleHasDerivativeIterator>
-      <biblio:foreachAbbreviatedTitleIsPreferredTitleOfIterator>
-         <tr><td>isPreferredTitleOf</td><td><a href="../<biblio:AbbreviatedTitleIsPreferredTitleOfType/>/<biblio:AbbreviatedTitleIsPreferredTitleOfType/>.jsp?uri=<biblio:AbbreviatedTitleIsPreferredTitleOf/>"><biblio:AbbreviatedTitleIsPreferredTitleOf /></a></td></tr>
-      </biblio:foreachAbbreviatedTitleIsPreferredTitleOfIterator>
-      <biblio:foreachAbbreviatedTitleDerivedFromIterator>
-         <tr><td>derivedFrom</td><td><a href="../<biblio:AbbreviatedTitleDerivedFromType/>/<biblio:AbbreviatedTitleDerivedFromType/>.jsp?uri=<biblio:AbbreviatedTitleDerivedFrom/>"><biblio:AbbreviatedTitleDerivedFrom /></a></td></tr>
-      </biblio:foreachAbbreviatedTitleDerivedFromIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>

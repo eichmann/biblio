@@ -33,13 +33,49 @@
       <biblio:foreachRWODeathDateIterator>
          <tr><td>deathDate</td><td><biblio:RWODeathDate /></td></tr>
       </biblio:foreachRWODeathDateIterator>
+      <biblio:foreachRWOPrefLabelIterator>
+         <tr><td>prefLabel</td><td><biblio:RWOPrefLabel /></td></tr>
+      </biblio:foreachRWOPrefLabelIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachRWOSubjectIterator>
+         <tr><td>subject</td><td><a href="../<biblio:RWOSubjectType/>/<biblio:RWOSubjectType/>.jsp?uri=<biblio:RWOSubject/>"><biblio:RWOSubject /></a></td></tr>
+      </biblio:foreachRWOSubjectIterator>
+      <biblio:foreachRWORelationIterator>
+         <tr><td>relation</td><td><a href="../<biblio:RWORelationType/>/<biblio:RWORelationType/>.jsp?uri=<biblio:RWORelation/>"><biblio:RWORelation /></a></td></tr>
+      </biblio:foreachRWORelationIterator>
+      <biblio:foreachRWOPrecedesIterator>
+         <tr><td>precedes</td><td><a href="../<biblio:RWOPrecedesType/>/<biblio:RWOPrecedesType/>.jsp?uri=<biblio:RWOPrecedes/>"><biblio:RWOPrecedes /></a></td></tr>
+      </biblio:foreachRWOPrecedesIterator>
       <biblio:foreachRWOIsIdentifiedByAuthorityIterator>
          <tr><td>isIdentifiedByAuthority</td><td><a href="../<biblio:RWOIsIdentifiedByAuthorityType/>/<biblio:RWOIsIdentifiedByAuthorityType/>.jsp?uri=<biblio:RWOIsIdentifiedByAuthority/>"><biblio:RWOIsIdentifiedByAuthority /></a></td></tr>
       </biblio:foreachRWOIsIdentifiedByAuthorityIterator>
+      <biblio:foreachRWOIdentifiedByIterator>
+         <tr><td>identifiedBy</td><td><a href="../<biblio:RWOIdentifiedByType/>/<biblio:RWOIdentifiedByType/>.jsp?uri=<biblio:RWOIdentifiedBy/>"><biblio:RWOIdentifiedBy /></a></td></tr>
+      </biblio:foreachRWOIdentifiedByIterator>
+      <biblio:foreachRWOAccompaniesIterator>
+         <tr><td>accompanies</td><td><a href="../<biblio:RWOAccompaniesType/>/<biblio:RWOAccompaniesType/>.jsp?uri=<biblio:RWOAccompanies/>"><biblio:RWOAccompanies /></a></td></tr>
+      </biblio:foreachRWOAccompaniesIterator>
+      <biblio:foreachRWOFollowsIterator>
+         <tr><td>follows</td><td><a href="../<biblio:RWOFollowsType/>/<biblio:RWOFollowsType/>.jsp?uri=<biblio:RWOFollows/>"><biblio:RWOFollows /></a></td></tr>
+      </biblio:foreachRWOFollowsIterator>
+      <biblio:foreachRWOHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:RWOHasPartType/>/<biblio:RWOHasPartType/>.jsp?uri=<biblio:RWOHasPart/>"><biblio:RWOHasPart /></a></td></tr>
+      </biblio:foreachRWOHasPartIterator>
+      <biblio:foreachRWOLanguageIterator>
+         <tr><td>language</td><td><a href="../<biblio:RWOLanguageType/>/<biblio:RWOLanguageType/>.jsp?uri=<biblio:RWOLanguage/>"><biblio:RWOLanguage /></a></td></tr>
+      </biblio:foreachRWOLanguageIterator>
+      <biblio:foreachRWOIsSubjectOfIterator>
+         <tr><td>isSubjectOf</td><td><a href="../<biblio:RWOIsSubjectOfType/>/<biblio:RWOIsSubjectOfType/>.jsp?uri=<biblio:RWOIsSubjectOf/>"><biblio:RWOIsSubjectOf /></a></td></tr>
+      </biblio:foreachRWOIsSubjectOfIterator>
+      <biblio:foreachRWOHasAnnotationIterator>
+         <tr><td>hasAnnotation</td><td><a href="../<biblio:RWOHasAnnotationType/>/<biblio:RWOHasAnnotationType/>.jsp?uri=<biblio:RWOHasAnnotation/>"><biblio:RWOHasAnnotation /></a></td></tr>
+      </biblio:foreachRWOHasAnnotationIterator>
+      <biblio:foreachRWOIsPartOfIterator>
+         <tr><td>isPartOf</td><td><a href="../<biblio:RWOIsPartOfType/>/<biblio:RWOIsPartOfType/>.jsp?uri=<biblio:RWOIsPartOf/>"><biblio:RWOIsPartOf /></a></td></tr>
+      </biblio:foreachRWOIsPartOfIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>

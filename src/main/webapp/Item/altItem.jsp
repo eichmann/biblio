@@ -17,22 +17,10 @@
     <h2><biblio:ItemLabel /></h2>
    </table>
 
-       <biblio:foreachItemDimensionsIterator>
-             <p>Dimensions: <biblio:ItemDimensions />
-       </biblio:foreachItemDimensionsIterator>
-       <biblio:foreachItemHasCirculationStatusIterator>
-         <p>Circulation Status: <a href="../<biblio:ItemHasCirculationStatusType/>/<biblio:ItemHasCirculationStatusType/>.jsp?uri=<biblio:ItemHasCirculationStatus/>"><biblio:ItemHasCirculationStatus /></a>
-      </biblio:foreachItemHasCirculationStatusIterator>
       <biblio:foreachItemIsHoldingForIterator>
          <p>Instance: <a href="../<biblio:ItemIsHoldingForType/>/alt<biblio:ItemIsHoldingForType/>.jsp?uri=<biblio:ItemIsHoldingFor/>"><biblio:ItemIsHoldingFor /></a>
       </biblio:foreachItemIsHoldingForIterator>
-      <biblio:foreachItemGovernedByIterator>
-         <p>Governed By: <a href="../<biblio:ItemGovernedByType/>/<biblio:ItemGovernedByType/>.jsp?uri=<biblio:ItemGovernedBy/>"><biblio:ItemGovernedBy /></a>
-      </biblio:foreachItemGovernedByIterator>
-      <biblio:foreachItemHeldByIterator>
-         <p>Held By: <a href="../<biblio:ItemHeldByType/>/<biblio:ItemHeldByType/>.jsp?uri=<biblio:ItemHeldBy/>"><biblio:ItemHeldBy /></a>
-      </biblio:foreachItemHeldByIterator>
-      <biblio:foreachItemHasTitleIterator>
+       <biblio:foreachItemHasTitleIterator>
          <p>Title: <a href="../<biblio:ItemHasTitleType/>/<biblio:ItemHasTitleType/>.jsp?uri=<biblio:ItemHasTitle/>"><biblio:ItemHasTitle /></a>
       </biblio:foreachItemHasTitleIterator>
    </biblio:Item>

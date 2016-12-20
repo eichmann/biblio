@@ -27,28 +27,13 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
-      <biblio:foreachManuscriptDimensionsIterator>
-         <tr><td>dimensions</td><td><biblio:ManuscriptDimensions /></td></tr>
-      </biblio:foreachManuscriptDimensionsIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachManuscriptHasCirculationStatusIterator>
-         <tr><td>hasCirculationStatus</td><td><a href="../<biblio:ManuscriptHasCirculationStatusType/>/<biblio:ManuscriptHasCirculationStatusType/>.jsp?uri=<biblio:ManuscriptHasCirculationStatus/>"><biblio:ManuscriptHasCirculationStatus /></a></td></tr>
-      </biblio:foreachManuscriptHasCirculationStatusIterator>
       <biblio:foreachManuscriptIsHoldingForIterator>
          <tr><td>isHoldingFor</td><td><a href="../<biblio:ManuscriptIsHoldingForType/>/<biblio:ManuscriptIsHoldingForType/>.jsp?uri=<biblio:ManuscriptIsHoldingFor/>"><biblio:ManuscriptIsHoldingFor /></a></td></tr>
       </biblio:foreachManuscriptIsHoldingForIterator>
-      <biblio:foreachManuscriptGovernedByIterator>
-         <tr><td>governedBy</td><td><a href="../<biblio:ManuscriptGovernedByType/>/<biblio:ManuscriptGovernedByType/>.jsp?uri=<biblio:ManuscriptGovernedBy/>"><biblio:ManuscriptGovernedBy /></a></td></tr>
-      </biblio:foreachManuscriptGovernedByIterator>
-      <biblio:foreachManuscriptHeldByIterator>
-         <tr><td>heldBy</td><td><a href="../<biblio:ManuscriptHeldByType/>/<biblio:ManuscriptHeldByType/>.jsp?uri=<biblio:ManuscriptHeldBy/>"><biblio:ManuscriptHeldBy /></a></td></tr>
-      </biblio:foreachManuscriptHeldByIterator>
-      <biblio:foreachManuscriptHasTitleIterator>
-         <tr><td>hasTitle</td><td><a href="../<biblio:ManuscriptHasTitleType/>/<biblio:ManuscriptHasTitleType/>.jsp?uri=<biblio:ManuscriptHasTitle/>"><biblio:ManuscriptHasTitle /></a></td></tr>
-      </biblio:foreachManuscriptHasTitleIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>

@@ -31,15 +31,15 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachConferenceIdentifiedByIterator>
+         <tr><td>identifiedBy</td><td><a href="../<biblio:ConferenceIdentifiedByType/>/<biblio:ConferenceIdentifiedByType/>.jsp?uri=<biblio:ConferenceIdentifiedBy/>"><biblio:ConferenceIdentifiedBy /></a></td></tr>
+      </biblio:foreachConferenceIdentifiedByIterator>
       <biblio:foreachConferenceIsSubjectOfIterator>
          <tr><td>isSubjectOf</td><td><a href="../<biblio:ConferenceIsSubjectOfType/>/<biblio:ConferenceIsSubjectOfType/>.jsp?uri=<biblio:ConferenceIsSubjectOf/>"><biblio:ConferenceIsSubjectOf /></a></td></tr>
       </biblio:foreachConferenceIsSubjectOfIterator>
-      <biblio:foreachConferenceRecordedInIterator>
-         <tr><td>recordedIn</td><td><a href="../<biblio:ConferenceRecordedInType/>/<biblio:ConferenceRecordedInType/>.jsp?uri=<biblio:ConferenceRecordedIn/>"><biblio:ConferenceRecordedIn /></a></td></tr>
-      </biblio:foreachConferenceRecordedInIterator>
-      <biblio:foreachConferencePerformanceOfIterator>
-         <tr><td>performanceOf</td><td><a href="../<biblio:ConferencePerformanceOfType/>/<biblio:ConferencePerformanceOfType/>.jsp?uri=<biblio:ConferencePerformanceOf/>"><biblio:ConferencePerformanceOf /></a></td></tr>
-      </biblio:foreachConferencePerformanceOfIterator>
+      <biblio:foreachConferenceIsPartOfIterator>
+         <tr><td>isPartOf</td><td><a href="../<biblio:ConferenceIsPartOfType/>/<biblio:ConferenceIsPartOfType/>.jsp?uri=<biblio:ConferenceIsPartOf/>"><biblio:ConferenceIsPartOf /></a></td></tr>
+      </biblio:foreachConferenceIsPartOfIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>

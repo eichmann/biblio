@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Collection List - http://www.w3.org/2004/02/skos/core#Collection</title>
+<title>Collection List - http://bib.ld4l.org/ontology/Collection</title>
 <style type="text/css" media="all">    @import "/biblio/resources/style.css";</style></head>
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">

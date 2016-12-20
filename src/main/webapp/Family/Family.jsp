@@ -31,15 +31,15 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachFamilyIdentifiedByIterator>
+         <tr><td>identifiedBy</td><td><a href="../<biblio:FamilyIdentifiedByType/>/<biblio:FamilyIdentifiedByType/>.jsp?uri=<biblio:FamilyIdentifiedBy/>"><biblio:FamilyIdentifiedBy /></a></td></tr>
+      </biblio:foreachFamilyIdentifiedByIterator>
+      <biblio:foreachFamilyIsSubjectOfIterator>
+         <tr><td>isSubjectOf</td><td><a href="../<biblio:FamilyIsSubjectOfType/>/<biblio:FamilyIsSubjectOfType/>.jsp?uri=<biblio:FamilyIsSubjectOf/>"><biblio:FamilyIsSubjectOf /></a></td></tr>
+      </biblio:foreachFamilyIsSubjectOfIterator>
       <biblio:foreachFamilyIsPartOfIterator>
          <tr><td>isPartOf</td><td><a href="../<biblio:FamilyIsPartOfType/>/<biblio:FamilyIsPartOfType/>.jsp?uri=<biblio:FamilyIsPartOf/>"><biblio:FamilyIsPartOf /></a></td></tr>
       </biblio:foreachFamilyIsPartOfIterator>
-      <biblio:foreachFamilyReceivedIterator>
-         <tr><td>received</td><td><a href="../<biblio:FamilyReceivedType/>/<biblio:FamilyReceivedType/>.jsp?uri=<biblio:FamilyReceived/>"><biblio:FamilyReceived /></a></td></tr>
-      </biblio:foreachFamilyReceivedIterator>
-      <biblio:foreachFamilyIsAnnotatorOfIterator>
-         <tr><td>isAnnotatorOf</td><td><a href="../<biblio:FamilyIsAnnotatorOfType/>/<biblio:FamilyIsAnnotatorOfType/>.jsp?uri=<biblio:FamilyIsAnnotatorOf/>"><biblio:FamilyIsAnnotatorOf /></a></td></tr>
-      </biblio:foreachFamilyIsAnnotatorOfIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
@@ -47,9 +47,6 @@
       <biblio:foreachFamilyAgentInverseIterator>
          <tr><td>agent</td><td><a href="../<biblio:FamilyAgentInverseType/>/<biblio:FamilyAgentInverseType/>.jsp?uri=<biblio:FamilyAgentInverse/>"><biblio:FamilyAgentInverse/></a></td></tr>
       </biblio:foreachFamilyAgentInverseIterator>
-      <biblio:foreachFamilyHeldByInverseIterator>
-         <tr><td>heldBy</td><td><a href="../<biblio:FamilyHeldByInverseType/>/<biblio:FamilyHeldByInverseType/>.jsp?uri=<biblio:FamilyHeldByInverse/>"><biblio:FamilyHeldByInverse/></a></td></tr>
-      </biblio:foreachFamilyHeldByInverseIterator>
    </table>
    </biblio:Family>
 

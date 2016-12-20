@@ -34,12 +34,6 @@
       <biblio:foreachMotivationInSchemeIterator>
          <tr><td>inScheme</td><td><a href="../<biblio:MotivationInSchemeType/>/<biblio:MotivationInSchemeType/>.jsp?uri=<biblio:MotivationInScheme/>"><biblio:MotivationInScheme /></a></td></tr>
       </biblio:foreachMotivationInSchemeIterator>
-      <biblio:foreachMotivationSemanticRelationIterator>
-         <tr><td>semanticRelation</td><td><a href="../<biblio:MotivationSemanticRelationType/>/<biblio:MotivationSemanticRelationType/>.jsp?uri=<biblio:MotivationSemanticRelation/>"><biblio:MotivationSemanticRelation /></a></td></tr>
-      </biblio:foreachMotivationSemanticRelationIterator>
-      <biblio:foreachMotivationTopConceptOfIterator>
-         <tr><td>topConceptOf</td><td><a href="../<biblio:MotivationTopConceptOfType/>/<biblio:MotivationTopConceptOfType/>.jsp?uri=<biblio:MotivationTopConceptOf/>"><biblio:MotivationTopConceptOf /></a></td></tr>
-      </biblio:foreachMotivationTopConceptOfIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
@@ -47,12 +41,6 @@
       <biblio:foreachMotivationMotivatedByInverseIterator>
          <tr><td>motivatedBy</td><td><a href="../<biblio:MotivationMotivatedByInverseType/>/<biblio:MotivationMotivatedByInverseType/>.jsp?uri=<biblio:MotivationMotivatedByInverse/>"><biblio:MotivationMotivatedByInverse/></a></td></tr>
       </biblio:foreachMotivationMotivatedByInverseIterator>
-      <biblio:foreachMotivationMemberInverseIterator>
-         <tr><td>member</td><td><a href="../<biblio:MotivationMemberInverseType/>/<biblio:MotivationMemberInverseType/>.jsp?uri=<biblio:MotivationMemberInverse/>"><biblio:MotivationMemberInverse/></a></td></tr>
-      </biblio:foreachMotivationMemberInverseIterator>
-      <biblio:foreachMotivationHasGenreInverseIterator>
-         <tr><td>hasGenre</td><td><a href="../<biblio:MotivationHasGenreInverseType/>/<biblio:MotivationHasGenreInverseType/>.jsp?uri=<biblio:MotivationHasGenreInverse/>"><biblio:MotivationHasGenreInverse/></a></td></tr>
-      </biblio:foreachMotivationHasGenreInverseIterator>
    </table>
    </biblio:Motivation>
 

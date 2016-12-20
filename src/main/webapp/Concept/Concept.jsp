@@ -27,26 +27,26 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
+      <biblio:foreachConceptPrefLabelIterator>
+         <tr><td>prefLabel</td><td><biblio:ConceptPrefLabel /></td></tr>
+      </biblio:foreachConceptPrefLabelIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachConceptSemanticRelationIterator>
-         <tr><td>semanticRelation</td><td><a href="../<biblio:ConceptSemanticRelationType/>/<biblio:ConceptSemanticRelationType/>.jsp?uri=<biblio:ConceptSemanticRelation/>"><biblio:ConceptSemanticRelation /></a></td></tr>
-      </biblio:foreachConceptSemanticRelationIterator>
-      <biblio:foreachConceptTopConceptOfIterator>
-         <tr><td>topConceptOf</td><td><a href="../<biblio:ConceptTopConceptOfType/>/<biblio:ConceptTopConceptOfType/>.jsp?uri=<biblio:ConceptTopConceptOf/>"><biblio:ConceptTopConceptOf /></a></td></tr>
-      </biblio:foreachConceptTopConceptOfIterator>
+      <biblio:foreachConceptIdentifiedByIterator>
+         <tr><td>identifiedBy</td><td><a href="../<biblio:ConceptIdentifiedByType/>/<biblio:ConceptIdentifiedByType/>.jsp?uri=<biblio:ConceptIdentifiedBy/>"><biblio:ConceptIdentifiedBy /></a></td></tr>
+      </biblio:foreachConceptIdentifiedByIterator>
+      <biblio:foreachConceptInSchemeIterator>
+         <tr><td>inScheme</td><td><a href="../<biblio:ConceptInSchemeType/>/<biblio:ConceptInSchemeType/>.jsp?uri=<biblio:ConceptInScheme/>"><biblio:ConceptInScheme /></a></td></tr>
+      </biblio:foreachConceptInSchemeIterator>
+      <biblio:foreachConceptIsSubjectOfIterator>
+         <tr><td>isSubjectOf</td><td><a href="../<biblio:ConceptIsSubjectOfType/>/<biblio:ConceptIsSubjectOfType/>.jsp?uri=<biblio:ConceptIsSubjectOf/>"><biblio:ConceptIsSubjectOf /></a></td></tr>
+      </biblio:foreachConceptIsSubjectOfIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
-      <biblio:foreachConceptMemberInverseIterator>
-         <tr><td>member</td><td><a href="../<biblio:ConceptMemberInverseType/>/<biblio:ConceptMemberInverseType/>.jsp?uri=<biblio:ConceptMemberInverse/>"><biblio:ConceptMemberInverse/></a></td></tr>
-      </biblio:foreachConceptMemberInverseIterator>
-      <biblio:foreachConceptHasGenreInverseIterator>
-         <tr><td>hasGenre</td><td><a href="../<biblio:ConceptHasGenreInverseType/>/<biblio:ConceptHasGenreInverseType/>.jsp?uri=<biblio:ConceptHasGenreInverse/>"><biblio:ConceptHasGenreInverse/></a></td></tr>
-      </biblio:foreachConceptHasGenreInverseIterator>
    </table>
    </biblio:Concept>
 

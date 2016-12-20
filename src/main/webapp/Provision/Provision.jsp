@@ -27,10 +27,19 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
+      <biblio:foreachProvisionDateIterator>
+         <tr><td>date</td><td><biblio:ProvisionDate /></td></tr>
+      </biblio:foreachProvisionDateIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachProvisionAgentIterator>
+         <tr><td>agent</td><td><a href="../<biblio:ProvisionAgentType/>/<biblio:ProvisionAgentType/>.jsp?uri=<biblio:ProvisionAgent/>"><biblio:ProvisionAgent /></a></td></tr>
+      </biblio:foreachProvisionAgentIterator>
+      <biblio:foreachProvisionAtLocationIterator>
+         <tr><td>atLocation</td><td><a href="../<biblio:ProvisionAtLocationType/>/<biblio:ProvisionAtLocationType/>.jsp?uri=<biblio:ProvisionAtLocation/>"><biblio:ProvisionAtLocation /></a></td></tr>
+      </biblio:foreachProvisionAtLocationIterator>
       <biblio:foreachProvisionMadeAvailableIterator>
          <tr><td>madeAvailable</td><td><a href="../<biblio:ProvisionMadeAvailableType/>/<biblio:ProvisionMadeAvailableType/>.jsp?uri=<biblio:ProvisionMadeAvailable/>"><biblio:ProvisionMadeAvailable /></a></td></tr>
       </biblio:foreachProvisionMadeAvailableIterator>

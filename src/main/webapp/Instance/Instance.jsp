@@ -23,115 +23,87 @@
 
    <h3>Functional Datatype Properties</h3>
    <table>
-      <tr><td>aspectRatio</td><td><biblio:InstanceAspectRatio /></td></tr>
    </table>
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
-      <biblio:foreachInstanceAwardNoteIterator>
-         <tr><td>awardNote</td><td><biblio:InstanceAwardNote /></td></tr>
-      </biblio:foreachInstanceAwardNoteIterator>
-      <biblio:foreachInstanceColorContentIterator>
-         <tr><td>colorContent</td><td><biblio:InstanceColorContent /></td></tr>
-      </biblio:foreachInstanceColorContentIterator>
-      <biblio:foreachInstanceGraphicScaleNoteIterator>
-         <tr><td>graphicScaleNote</td><td><biblio:InstanceGraphicScaleNote /></td></tr>
-      </biblio:foreachInstanceGraphicScaleNoteIterator>
-      <biblio:foreachInstanceCopyrightDateIterator>
-         <tr><td>copyrightDate</td><td><biblio:InstanceCopyrightDate /></td></tr>
-      </biblio:foreachInstanceCopyrightDateIterator>
-      <biblio:foreachInstanceAccessibilityFeatureIterator>
-         <tr><td>accessibilityFeature</td><td><biblio:InstanceAccessibilityFeature /></td></tr>
-      </biblio:foreachInstanceAccessibilityFeatureIterator>
-      <biblio:foreachInstanceIllustrationNoteIterator>
-         <tr><td>illustrationNote</td><td><biblio:InstanceIllustrationNote /></td></tr>
-      </biblio:foreachInstanceIllustrationNoteIterator>
-      <biblio:foreachInstanceDurationIterator>
-         <tr><td>duration</td><td><biblio:InstanceDuration /></td></tr>
-      </biblio:foreachInstanceDurationIterator>
-      <biblio:foreachInstanceModeOfIssuanceIterator>
-         <tr><td>modeOfIssuance</td><td><biblio:InstanceModeOfIssuance /></td></tr>
-      </biblio:foreachInstanceModeOfIssuanceIterator>
-      <biblio:foreachInstanceSupplementaryContentNoteIterator>
-         <tr><td>supplementaryContentNote</td><td><biblio:InstanceSupplementaryContentNote /></td></tr>
-      </biblio:foreachInstanceSupplementaryContentNoteIterator>
-      <biblio:foreachInstancePreferredCitationIterator>
-         <tr><td>preferredCitation</td><td><biblio:InstancePreferredCitation /></td></tr>
-      </biblio:foreachInstancePreferredCitationIterator>
-      <biblio:foreachInstanceNotationSystemIterator>
-         <tr><td>notationSystem</td><td><biblio:InstanceNotationSystem /></td></tr>
-      </biblio:foreachInstanceNotationSystemIterator>
-      <biblio:foreachInstanceProviderStatementIterator>
-         <tr><td>providerStatement</td><td><biblio:InstanceProviderStatement /></td></tr>
-      </biblio:foreachInstanceProviderStatementIterator>
-      <biblio:foreachInstanceFormDesignationIterator>
-         <tr><td>formDesignation</td><td><biblio:InstanceFormDesignation /></td></tr>
-      </biblio:foreachInstanceFormDesignationIterator>
-      <biblio:foreachInstanceCustodialHistoryIterator>
-         <tr><td>custodialHistory</td><td><biblio:InstanceCustodialHistory /></td></tr>
-      </biblio:foreachInstanceCustodialHistoryIterator>
-      <biblio:foreachInstanceContentsNoteIterator>
-         <tr><td>contentsNote</td><td><biblio:InstanceContentsNote /></td></tr>
-      </biblio:foreachInstanceContentsNoteIterator>
-      <biblio:foreachInstanceDimensionsIterator>
-         <tr><td>dimensions</td><td><biblio:InstanceDimensions /></td></tr>
-      </biblio:foreachInstanceDimensionsIterator>
-      <biblio:foreachInstanceResponsibilityNoteIterator>
-         <tr><td>responsibilityNote</td><td><biblio:InstanceResponsibilityNote /></td></tr>
-      </biblio:foreachInstanceResponsibilityNoteIterator>
-      <biblio:foreachInstanceProducesSoundIterator>
-         <tr><td>producesSound</td><td><biblio:InstanceProducesSound /></td></tr>
-      </biblio:foreachInstanceProducesSoundIterator>
-      <biblio:foreachInstanceFormatOfMusicIterator>
-         <tr><td>formatOfMusic</td><td><biblio:InstanceFormatOfMusic /></td></tr>
-      </biblio:foreachInstanceFormatOfMusicIterator>
       <biblio:foreachInstanceExtentIterator>
          <tr><td>extent</td><td><biblio:InstanceExtent /></td></tr>
       </biblio:foreachInstanceExtentIterator>
+      <biblio:foreachInstanceIllustrationNoteIterator>
+         <tr><td>illustrationNote</td><td><biblio:InstanceIllustrationNote /></td></tr>
+      </biblio:foreachInstanceIllustrationNoteIterator>
+      <biblio:foreachInstanceDimensionsIterator>
+         <tr><td>dimensions</td><td><biblio:InstanceDimensions /></td></tr>
+      </biblio:foreachInstanceDimensionsIterator>
+      <biblio:foreachInstanceNoteIterator>
+         <tr><td>note</td><td><biblio:InstanceNote /></td></tr>
+      </biblio:foreachInstanceNoteIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachInstanceIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:InstanceIdentifiedByType/>/<biblio:InstanceIdentifiedByType/>.jsp?uri=<biblio:InstanceIdentifiedBy/>"><biblio:InstanceIdentifiedBy /></a></td></tr>
-      </biblio:foreachInstanceIdentifiedByIterator>
-      <biblio:foreachInstanceHasProvisionIterator>
-         <tr><td>hasProvision</td><td><a href="../<biblio:InstanceHasProvisionType/>/<biblio:InstanceHasProvisionType/>.jsp?uri=<biblio:InstanceHasProvision/>"><biblio:InstanceHasProvision /></a></td></tr>
-      </biblio:foreachInstanceHasProvisionIterator>
+      <biblio:foreachInstanceSubjectIterator>
+         <tr><td>subject</td><td><a href="../<biblio:InstanceSubjectType/>/<biblio:InstanceSubjectType/>.jsp?uri=<biblio:InstanceSubject/>"><biblio:InstanceSubject /></a></td></tr>
+      </biblio:foreachInstanceSubjectIterator>
+      <biblio:foreachInstanceRelationIterator>
+         <tr><td>relation</td><td><a href="../<biblio:InstanceRelationType/>/<biblio:InstanceRelationType/>.jsp?uri=<biblio:InstanceRelation/>"><biblio:InstanceRelation /></a></td></tr>
+      </biblio:foreachInstanceRelationIterator>
+      <biblio:foreachInstanceAccompaniedByIterator>
+         <tr><td>accompaniedBy</td><td><a href="../<biblio:InstanceAccompaniedByType/>/<biblio:InstanceAccompaniedByType/>.jsp?uri=<biblio:InstanceAccompaniedBy/>"><biblio:InstanceAccompaniedBy /></a></td></tr>
+      </biblio:foreachInstanceAccompaniedByIterator>
+      <biblio:foreachInstancePrecedesIterator>
+         <tr><td>precedes</td><td><a href="../<biblio:InstancePrecedesType/>/<biblio:InstancePrecedesType/>.jsp?uri=<biblio:InstancePrecedes/>"><biblio:InstancePrecedes /></a></td></tr>
+      </biblio:foreachInstancePrecedesIterator>
       <biblio:foreachInstanceHasReproductionIterator>
          <tr><td>hasReproduction</td><td><a href="../<biblio:InstanceHasReproductionType/>/<biblio:InstanceHasReproductionType/>.jsp?uri=<biblio:InstanceHasReproduction/>"><biblio:InstanceHasReproduction /></a></td></tr>
       </biblio:foreachInstanceHasReproductionIterator>
-      <biblio:foreachInstanceHasTableOfContentsIterator>
-         <tr><td>hasTableOfContents</td><td><a href="../<biblio:InstanceHasTableOfContentsType/>/<biblio:InstanceHasTableOfContentsType/>.jsp?uri=<biblio:InstanceHasTableOfContents/>"><biblio:InstanceHasTableOfContents /></a></td></tr>
-      </biblio:foreachInstanceHasTableOfContentsIterator>
-      <biblio:foreachInstanceHasCoverArtIterator>
-         <tr><td>hasCoverArt</td><td><a href="../<biblio:InstanceHasCoverArtType/>/<biblio:InstanceHasCoverArtType/>.jsp?uri=<biblio:InstanceHasCoverArt/>"><biblio:InstanceHasCoverArt /></a></td></tr>
-      </biblio:foreachInstanceHasCoverArtIterator>
-      <biblio:foreachInstanceReproducesIterator>
-         <tr><td>reproduces</td><td><a href="../<biblio:InstanceReproducesType/>/<biblio:InstanceReproducesType/>.jsp?uri=<biblio:InstanceReproduces/>"><biblio:InstanceReproduces /></a></td></tr>
-      </biblio:foreachInstanceReproducesIterator>
-      <biblio:foreachInstanceHasPreferredTitleIterator>
-         <tr><td>hasPreferredTitle</td><td><a href="../<biblio:InstanceHasPreferredTitleType/>/<biblio:InstanceHasPreferredTitleType/>.jsp?uri=<biblio:InstanceHasPreferredTitle/>"><biblio:InstanceHasPreferredTitle /></a></td></tr>
-      </biblio:foreachInstanceHasPreferredTitleIterator>
-      <biblio:foreachInstanceHasHoldingIterator>
-         <tr><td>hasHolding</td><td><a href="../<biblio:InstanceHasHoldingType/>/<biblio:InstanceHasHoldingType/>.jsp?uri=<biblio:InstanceHasHolding/>"><biblio:InstanceHasHolding /></a></td></tr>
-      </biblio:foreachInstanceHasHoldingIterator>
-      <biblio:foreachInstanceHasTitleIterator>
-         <tr><td>hasTitle</td><td><a href="../<biblio:InstanceHasTitleType/>/<biblio:InstanceHasTitleType/>.jsp?uri=<biblio:InstanceHasTitle/>"><biblio:InstanceHasTitle /></a></td></tr>
-      </biblio:foreachInstanceHasTitleIterator>
-      <biblio:foreachInstanceEquivalentToIterator>
-         <tr><td>equivalentTo</td><td><a href="../<biblio:InstanceEquivalentToType/>/<biblio:InstanceEquivalentToType/>.jsp?uri=<biblio:InstanceEquivalentTo/>"><biblio:InstanceEquivalentTo /></a></td></tr>
-      </biblio:foreachInstanceEquivalentToIterator>
-      <biblio:foreachInstanceIssuedWithIterator>
-         <tr><td>issuedWith</td><td><a href="../<biblio:InstanceIssuedWithType/>/<biblio:InstanceIssuedWithType/>.jsp?uri=<biblio:InstanceIssuedWith/>"><biblio:InstanceIssuedWith /></a></td></tr>
-      </biblio:foreachInstanceIssuedWithIterator>
       <biblio:foreachInstanceIsInstanceOfIterator>
          <tr><td>isInstanceOf</td><td><a href="../<biblio:InstanceIsInstanceOfType/>/<biblio:InstanceIsInstanceOfType/>.jsp?uri=<biblio:InstanceIsInstanceOf/>"><biblio:InstanceIsInstanceOf /></a></td></tr>
       </biblio:foreachInstanceIsInstanceOfIterator>
+      <biblio:foreachInstanceIdentifiedByIterator>
+         <tr><td>identifiedBy</td><td><a href="../<biblio:InstanceIdentifiedByType/>/<biblio:InstanceIdentifiedByType/>.jsp?uri=<biblio:InstanceIdentifiedBy/>"><biblio:InstanceIdentifiedBy /></a></td></tr>
+      </biblio:foreachInstanceIdentifiedByIterator>
+      <biblio:foreachInstanceAccompaniesIterator>
+         <tr><td>accompanies</td><td><a href="../<biblio:InstanceAccompaniesType/>/<biblio:InstanceAccompaniesType/>.jsp?uri=<biblio:InstanceAccompanies/>"><biblio:InstanceAccompanies /></a></td></tr>
+      </biblio:foreachInstanceAccompaniesIterator>
+      <biblio:foreachInstanceFollowsIterator>
+         <tr><td>follows</td><td><a href="../<biblio:InstanceFollowsType/>/<biblio:InstanceFollowsType/>.jsp?uri=<biblio:InstanceFollows/>"><biblio:InstanceFollows /></a></td></tr>
+      </biblio:foreachInstanceFollowsIterator>
+      <biblio:foreachInstanceReproducesIterator>
+         <tr><td>reproduces</td><td><a href="../<biblio:InstanceReproducesType/>/<biblio:InstanceReproducesType/>.jsp?uri=<biblio:InstanceReproduces/>"><biblio:InstanceReproduces /></a></td></tr>
+      </biblio:foreachInstanceReproducesIterator>
+      <biblio:foreachInstanceHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:InstanceHasPartType/>/<biblio:InstanceHasPartType/>.jsp?uri=<biblio:InstanceHasPart/>"><biblio:InstanceHasPart /></a></td></tr>
+      </biblio:foreachInstanceHasPartIterator>
+      <biblio:foreachInstanceLanguageIterator>
+         <tr><td>language</td><td><a href="../<biblio:InstanceLanguageType/>/<biblio:InstanceLanguageType/>.jsp?uri=<biblio:InstanceLanguage/>"><biblio:InstanceLanguage /></a></td></tr>
+      </biblio:foreachInstanceLanguageIterator>
+      <biblio:foreachInstanceIsSubjectOfIterator>
+         <tr><td>isSubjectOf</td><td><a href="../<biblio:InstanceIsSubjectOfType/>/<biblio:InstanceIsSubjectOfType/>.jsp?uri=<biblio:InstanceIsSubjectOf/>"><biblio:InstanceIsSubjectOf /></a></td></tr>
+      </biblio:foreachInstanceIsSubjectOfIterator>
+      <biblio:foreachInstanceHasHoldingIterator>
+         <tr><td>hasHolding</td><td><a href="../<biblio:InstanceHasHoldingType/>/<biblio:InstanceHasHoldingType/>.jsp?uri=<biblio:InstanceHasHolding/>"><biblio:InstanceHasHolding /></a></td></tr>
+      </biblio:foreachInstanceHasHoldingIterator>
+      <biblio:foreachInstanceHasAnnotationIterator>
+         <tr><td>hasAnnotation</td><td><a href="../<biblio:InstanceHasAnnotationType/>/<biblio:InstanceHasAnnotationType/>.jsp?uri=<biblio:InstanceHasAnnotation/>"><biblio:InstanceHasAnnotation /></a></td></tr>
+      </biblio:foreachInstanceHasAnnotationIterator>
+      <biblio:foreachInstanceIsPartOfIterator>
+         <tr><td>isPartOf</td><td><a href="../<biblio:InstanceIsPartOfType/>/<biblio:InstanceIsPartOfType/>.jsp?uri=<biblio:InstanceIsPartOf/>"><biblio:InstanceIsPartOf /></a></td></tr>
+      </biblio:foreachInstanceIsPartOfIterator>
+      <biblio:foreachInstanceHasProvisionIterator>
+         <tr><td>hasProvision</td><td><a href="../<biblio:InstanceHasProvisionType/>/<biblio:InstanceHasProvisionType/>.jsp?uri=<biblio:InstanceHasProvision/>"><biblio:InstanceHasProvision /></a></td></tr>
+      </biblio:foreachInstanceHasProvisionIterator>
+      <biblio:foreachInstanceHasTitleIterator>
+         <tr><td>hasTitle</td><td><a href="../<biblio:InstanceHasTitleType/>/<biblio:InstanceHasTitleType/>.jsp?uri=<biblio:InstanceHasTitle/>"><biblio:InstanceHasTitle /></a></td></tr>
+      </biblio:foreachInstanceHasTitleIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
+      <biblio:foreachInstanceAgentInverseIterator>
+         <tr><td>agent</td><td><a href="../<biblio:InstanceAgentInverseType/>/<biblio:InstanceAgentInverseType/>.jsp?uri=<biblio:InstanceAgentInverse/>"><biblio:InstanceAgentInverse/></a></td></tr>
+      </biblio:foreachInstanceAgentInverseIterator>
    </table>
    </biblio:Instance>
 

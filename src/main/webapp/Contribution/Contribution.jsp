@@ -31,6 +31,9 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachContributionAgentIterator>
+         <tr><td>agent</td><td><a href="../<biblio:ContributionAgentType/>/<biblio:ContributionAgentType/>.jsp?uri=<biblio:ContributionAgent/>"><biblio:ContributionAgent /></a></td></tr>
+      </biblio:foreachContributionAgentIterator>
       <biblio:foreachContributionContributedToIterator>
          <tr><td>contributedTo</td><td><a href="../<biblio:ContributionContributedToType/>/<biblio:ContributionContributedToType/>.jsp?uri=<biblio:ContributionContributedTo/>"><biblio:ContributionContributedTo /></a></td></tr>
       </biblio:foreachContributionContributedToIterator>

@@ -27,10 +27,16 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
+      <biblio:foreachAuthorityPrefLabelIterator>
+         <tr><td>prefLabel</td><td><biblio:AuthorityPrefLabel /></td></tr>
+      </biblio:foreachAuthorityPrefLabelIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachAuthorityIdentifiedByIterator>
+         <tr><td>identifiedBy</td><td><a href="../<biblio:AuthorityIdentifiedByType/>/<biblio:AuthorityIdentifiedByType/>.jsp?uri=<biblio:AuthorityIdentifiedBy/>"><biblio:AuthorityIdentifiedBy /></a></td></tr>
+      </biblio:foreachAuthorityIdentifiedByIterator>
       <biblio:foreachAuthorityIdentifiesRWOIterator>
          <tr><td>identifiesRWO</td><td><a href="../<biblio:AuthorityIdentifiesRWOType/>/<biblio:AuthorityIdentifiesRWOType/>.jsp?uri=<biblio:AuthorityIdentifiesRWO/>"><biblio:AuthorityIdentifiesRWO /></a></td></tr>
       </biblio:foreachAuthorityIdentifiesRWOIterator>

@@ -31,25 +31,10 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachShelfMarkSemanticRelationIterator>
-         <tr><td>semanticRelation</td><td><a href="../<biblio:ShelfMarkSemanticRelationType/>/<biblio:ShelfMarkSemanticRelationType/>.jsp?uri=<biblio:ShelfMarkSemanticRelation/>"><biblio:ShelfMarkSemanticRelation /></a></td></tr>
-      </biblio:foreachShelfMarkSemanticRelationIterator>
-      <biblio:foreachShelfMarkTopConceptOfIterator>
-         <tr><td>topConceptOf</td><td><a href="../<biblio:ShelfMarkTopConceptOfType/>/<biblio:ShelfMarkTopConceptOfType/>.jsp?uri=<biblio:ShelfMarkTopConceptOf/>"><biblio:ShelfMarkTopConceptOf /></a></td></tr>
-      </biblio:foreachShelfMarkTopConceptOfIterator>
-      <biblio:foreachShelfMarkIsClassificationForIterator>
-         <tr><td>isClassificationFor</td><td><a href="../<biblio:ShelfMarkIsClassificationForType/>/<biblio:ShelfMarkIsClassificationForType/>.jsp?uri=<biblio:ShelfMarkIsClassificationFor/>"><biblio:ShelfMarkIsClassificationFor /></a></td></tr>
-      </biblio:foreachShelfMarkIsClassificationForIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
-      <biblio:foreachShelfMarkMemberInverseIterator>
-         <tr><td>member</td><td><a href="../<biblio:ShelfMarkMemberInverseType/>/<biblio:ShelfMarkMemberInverseType/>.jsp?uri=<biblio:ShelfMarkMemberInverse/>"><biblio:ShelfMarkMemberInverse/></a></td></tr>
-      </biblio:foreachShelfMarkMemberInverseIterator>
-      <biblio:foreachShelfMarkHasGenreInverseIterator>
-         <tr><td>hasGenre</td><td><a href="../<biblio:ShelfMarkHasGenreInverseType/>/<biblio:ShelfMarkHasGenreInverseType/>.jsp?uri=<biblio:ShelfMarkHasGenreInverse/>"><biblio:ShelfMarkHasGenreInverse/></a></td></tr>
-      </biblio:foreachShelfMarkHasGenreInverseIterator>
    </table>
    </biblio:ShelfMark>
 

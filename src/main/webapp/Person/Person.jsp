@@ -37,12 +37,39 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachPersonReceivedIterator>
-         <tr><td>received</td><td><a href="../<biblio:PersonReceivedType/>/<biblio:PersonReceivedType/>.jsp?uri=<biblio:PersonReceived/>"><biblio:PersonReceived /></a></td></tr>
-      </biblio:foreachPersonReceivedIterator>
-      <biblio:foreachPersonIsAnnotatorOfIterator>
-         <tr><td>isAnnotatorOf</td><td><a href="../<biblio:PersonIsAnnotatorOfType/>/<biblio:PersonIsAnnotatorOfType/>.jsp?uri=<biblio:PersonIsAnnotatorOf/>"><biblio:PersonIsAnnotatorOf /></a></td></tr>
-      </biblio:foreachPersonIsAnnotatorOfIterator>
+      <biblio:foreachPersonSubjectIterator>
+         <tr><td>subject</td><td><a href="../<biblio:PersonSubjectType/>/<biblio:PersonSubjectType/>.jsp?uri=<biblio:PersonSubject/>"><biblio:PersonSubject /></a></td></tr>
+      </biblio:foreachPersonSubjectIterator>
+      <biblio:foreachPersonRelationIterator>
+         <tr><td>relation</td><td><a href="../<biblio:PersonRelationType/>/<biblio:PersonRelationType/>.jsp?uri=<biblio:PersonRelation/>"><biblio:PersonRelation /></a></td></tr>
+      </biblio:foreachPersonRelationIterator>
+      <biblio:foreachPersonPrecedesIterator>
+         <tr><td>precedes</td><td><a href="../<biblio:PersonPrecedesType/>/<biblio:PersonPrecedesType/>.jsp?uri=<biblio:PersonPrecedes/>"><biblio:PersonPrecedes /></a></td></tr>
+      </biblio:foreachPersonPrecedesIterator>
+      <biblio:foreachPersonIdentifiedByIterator>
+         <tr><td>identifiedBy</td><td><a href="../<biblio:PersonIdentifiedByType/>/<biblio:PersonIdentifiedByType/>.jsp?uri=<biblio:PersonIdentifiedBy/>"><biblio:PersonIdentifiedBy /></a></td></tr>
+      </biblio:foreachPersonIdentifiedByIterator>
+      <biblio:foreachPersonAccompaniesIterator>
+         <tr><td>accompanies</td><td><a href="../<biblio:PersonAccompaniesType/>/<biblio:PersonAccompaniesType/>.jsp?uri=<biblio:PersonAccompanies/>"><biblio:PersonAccompanies /></a></td></tr>
+      </biblio:foreachPersonAccompaniesIterator>
+      <biblio:foreachPersonFollowsIterator>
+         <tr><td>follows</td><td><a href="../<biblio:PersonFollowsType/>/<biblio:PersonFollowsType/>.jsp?uri=<biblio:PersonFollows/>"><biblio:PersonFollows /></a></td></tr>
+      </biblio:foreachPersonFollowsIterator>
+      <biblio:foreachPersonHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:PersonHasPartType/>/<biblio:PersonHasPartType/>.jsp?uri=<biblio:PersonHasPart/>"><biblio:PersonHasPart /></a></td></tr>
+      </biblio:foreachPersonHasPartIterator>
+      <biblio:foreachPersonLanguageIterator>
+         <tr><td>language</td><td><a href="../<biblio:PersonLanguageType/>/<biblio:PersonLanguageType/>.jsp?uri=<biblio:PersonLanguage/>"><biblio:PersonLanguage /></a></td></tr>
+      </biblio:foreachPersonLanguageIterator>
+      <biblio:foreachPersonIsSubjectOfIterator>
+         <tr><td>isSubjectOf</td><td><a href="../<biblio:PersonIsSubjectOfType/>/<biblio:PersonIsSubjectOfType/>.jsp?uri=<biblio:PersonIsSubjectOf/>"><biblio:PersonIsSubjectOf /></a></td></tr>
+      </biblio:foreachPersonIsSubjectOfIterator>
+      <biblio:foreachPersonHasAnnotationIterator>
+         <tr><td>hasAnnotation</td><td><a href="../<biblio:PersonHasAnnotationType/>/<biblio:PersonHasAnnotationType/>.jsp?uri=<biblio:PersonHasAnnotation/>"><biblio:PersonHasAnnotation /></a></td></tr>
+      </biblio:foreachPersonHasAnnotationIterator>
+      <biblio:foreachPersonIsPartOfIterator>
+         <tr><td>isPartOf</td><td><a href="../<biblio:PersonIsPartOfType/>/<biblio:PersonIsPartOfType/>.jsp?uri=<biblio:PersonIsPartOf/>"><biblio:PersonIsPartOf /></a></td></tr>
+      </biblio:foreachPersonIsPartOfIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
@@ -50,9 +77,6 @@
       <biblio:foreachPersonAgentInverseIterator>
          <tr><td>agent</td><td><a href="../<biblio:PersonAgentInverseType/>/<biblio:PersonAgentInverseType/>.jsp?uri=<biblio:PersonAgentInverse/>"><biblio:PersonAgentInverse/></a></td></tr>
       </biblio:foreachPersonAgentInverseIterator>
-      <biblio:foreachPersonHeldByInverseIterator>
-         <tr><td>heldBy</td><td><a href="../<biblio:PersonHeldByInverseType/>/<biblio:PersonHeldByInverseType/>.jsp?uri=<biblio:PersonHeldByInverse/>"><biblio:PersonHeldByInverse/></a></td></tr>
-      </biblio:foreachPersonHeldByInverseIterator>
    </table>
    </biblio:Person>
 

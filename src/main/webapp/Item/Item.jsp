@@ -27,25 +27,16 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
-      <biblio:foreachItemDimensionsIterator>
-         <tr><td>dimensions</td><td><biblio:ItemDimensions /></td></tr>
-      </biblio:foreachItemDimensionsIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachItemHasCirculationStatusIterator>
-         <tr><td>hasCirculationStatus</td><td><a href="../<biblio:ItemHasCirculationStatusType/>/<biblio:ItemHasCirculationStatusType/>.jsp?uri=<biblio:ItemHasCirculationStatus/>"><biblio:ItemHasCirculationStatus /></a></td></tr>
-      </biblio:foreachItemHasCirculationStatusIterator>
       <biblio:foreachItemIsHoldingForIterator>
          <tr><td>isHoldingFor</td><td><a href="../<biblio:ItemIsHoldingForType/>/<biblio:ItemIsHoldingForType/>.jsp?uri=<biblio:ItemIsHoldingFor/>"><biblio:ItemIsHoldingFor /></a></td></tr>
       </biblio:foreachItemIsHoldingForIterator>
-      <biblio:foreachItemGovernedByIterator>
-         <tr><td>governedBy</td><td><a href="../<biblio:ItemGovernedByType/>/<biblio:ItemGovernedByType/>.jsp?uri=<biblio:ItemGovernedBy/>"><biblio:ItemGovernedBy /></a></td></tr>
-      </biblio:foreachItemGovernedByIterator>
-      <biblio:foreachItemHeldByIterator>
-         <tr><td>heldBy</td><td><a href="../<biblio:ItemHeldByType/>/<biblio:ItemHeldByType/>.jsp?uri=<biblio:ItemHeldBy/>"><biblio:ItemHeldBy /></a></td></tr>
-      </biblio:foreachItemHeldByIterator>
+      <biblio:foreachItemIsPartOfIterator>
+         <tr><td>isPartOf</td><td><a href="../<biblio:ItemIsPartOfType/>/<biblio:ItemIsPartOfType/>.jsp?uri=<biblio:ItemIsPartOf/>"><biblio:ItemIsPartOf /></a></td></tr>
+      </biblio:foreachItemIsPartOfIterator>
       <biblio:foreachItemHasTitleIterator>
          <tr><td>hasTitle</td><td><a href="../<biblio:ItemHasTitleType/>/<biblio:ItemHasTitleType/>.jsp?uri=<biblio:ItemHasTitle/>"><biblio:ItemHasTitle /></a></td></tr>
       </biblio:foreachItemHasTitleIterator>
@@ -53,6 +44,9 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
+      <biblio:foreachItemAgentInverseIterator>
+         <tr><td>agent</td><td><a href="../<biblio:ItemAgentInverseType/>/<biblio:ItemAgentInverseType/>.jsp?uri=<biblio:ItemAgentInverse/>"><biblio:ItemAgentInverse/></a></td></tr>
+      </biblio:foreachItemAgentInverseIterator>
    </table>
    </biblio:Item>
 

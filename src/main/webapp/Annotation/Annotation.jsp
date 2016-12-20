@@ -23,7 +23,6 @@
 
    <h3>Functional Datatype Properties</h3>
    <table>
-      <tr><td>annotatedAt</td><td><biblio:AnnotationAnnotatedAt /></td></tr>
    </table>
 
    <h3>Non-Functional Datatype Properties</h3>

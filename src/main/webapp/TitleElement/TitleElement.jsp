@@ -31,6 +31,15 @@
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachTitleElementPrecedesIterator>
+         <tr><td>precedes</td><td><a href="../<biblio:TitleElementPrecedesType/>/<biblio:TitleElementPrecedesType/>.jsp?uri=<biblio:TitleElementPrecedes/>"><biblio:TitleElementPrecedes /></a></td></tr>
+      </biblio:foreachTitleElementPrecedesIterator>
+      <biblio:foreachTitleElementFollowsIterator>
+         <tr><td>follows</td><td><a href="../<biblio:TitleElementFollowsType/>/<biblio:TitleElementFollowsType/>.jsp?uri=<biblio:TitleElementFollows/>"><biblio:TitleElementFollows /></a></td></tr>
+      </biblio:foreachTitleElementFollowsIterator>
+      <biblio:foreachTitleElementIsPartOfIterator>
+         <tr><td>isPartOf</td><td><a href="../<biblio:TitleElementIsPartOfType/>/<biblio:TitleElementIsPartOfType/>.jsp?uri=<biblio:TitleElementIsPartOf/>"><biblio:TitleElementIsPartOf /></a></td></tr>
+      </biblio:foreachTitleElementIsPartOfIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>

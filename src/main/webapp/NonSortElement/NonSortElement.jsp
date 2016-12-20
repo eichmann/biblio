@@ -31,12 +31,12 @@
 
    <h3>Object Properties</h3>
    <table>
-      <biblio:foreachNonSortElementIsPartOfIterator>
-         <tr><td>isPartOf</td><td><a href="../<biblio:NonSortElementIsPartOfType/>/<biblio:NonSortElementIsPartOfType/>.jsp?uri=<biblio:NonSortElementIsPartOf/>"><biblio:NonSortElementIsPartOf /></a></td></tr>
-      </biblio:foreachNonSortElementIsPartOfIterator>
       <biblio:foreachNonSortElementPrecedesIterator>
          <tr><td>precedes</td><td><a href="../<biblio:NonSortElementPrecedesType/>/<biblio:NonSortElementPrecedesType/>.jsp?uri=<biblio:NonSortElementPrecedes/>"><biblio:NonSortElementPrecedes /></a></td></tr>
       </biblio:foreachNonSortElementPrecedesIterator>
+      <biblio:foreachNonSortElementIsPartOfIterator>
+         <tr><td>isPartOf</td><td><a href="../<biblio:NonSortElementIsPartOfType/>/<biblio:NonSortElementIsPartOfType/>.jsp?uri=<biblio:NonSortElementIsPartOf/>"><biblio:NonSortElementIsPartOf /></a></td></tr>
+      </biblio:foreachNonSortElementIsPartOfIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>

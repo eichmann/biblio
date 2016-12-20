@@ -27,23 +27,53 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
+      <biblio:foreachMeetingBirthDateIterator>
+         <tr><td>birthDate</td><td><biblio:MeetingBirthDate /></td></tr>
+      </biblio:foreachMeetingBirthDateIterator>
+      <biblio:foreachMeetingDeathDateIterator>
+         <tr><td>deathDate</td><td><biblio:MeetingDeathDate /></td></tr>
+      </biblio:foreachMeetingDeathDateIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachMeetingSubjectIterator>
+         <tr><td>subject</td><td><a href="../<biblio:MeetingSubjectType/>/<biblio:MeetingSubjectType/>.jsp?uri=<biblio:MeetingSubject/>"><biblio:MeetingSubject /></a></td></tr>
+      </biblio:foreachMeetingSubjectIterator>
+      <biblio:foreachMeetingPrecedesIterator>
+         <tr><td>precedes</td><td><a href="../<biblio:MeetingPrecedesType/>/<biblio:MeetingPrecedesType/>.jsp?uri=<biblio:MeetingPrecedes/>"><biblio:MeetingPrecedes /></a></td></tr>
+      </biblio:foreachMeetingPrecedesIterator>
+      <biblio:foreachMeetingIdentifiedByIterator>
+         <tr><td>identifiedBy</td><td><a href="../<biblio:MeetingIdentifiedByType/>/<biblio:MeetingIdentifiedByType/>.jsp?uri=<biblio:MeetingIdentifiedBy/>"><biblio:MeetingIdentifiedBy /></a></td></tr>
+      </biblio:foreachMeetingIdentifiedByIterator>
+      <biblio:foreachMeetingAccompaniesIterator>
+         <tr><td>accompanies</td><td><a href="../<biblio:MeetingAccompaniesType/>/<biblio:MeetingAccompaniesType/>.jsp?uri=<biblio:MeetingAccompanies/>"><biblio:MeetingAccompanies /></a></td></tr>
+      </biblio:foreachMeetingAccompaniesIterator>
+      <biblio:foreachMeetingFollowsIterator>
+         <tr><td>follows</td><td><a href="../<biblio:MeetingFollowsType/>/<biblio:MeetingFollowsType/>.jsp?uri=<biblio:MeetingFollows/>"><biblio:MeetingFollows /></a></td></tr>
+      </biblio:foreachMeetingFollowsIterator>
+      <biblio:foreachMeetingHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:MeetingHasPartType/>/<biblio:MeetingHasPartType/>.jsp?uri=<biblio:MeetingHasPart/>"><biblio:MeetingHasPart /></a></td></tr>
+      </biblio:foreachMeetingHasPartIterator>
+      <biblio:foreachMeetingLanguageIterator>
+         <tr><td>language</td><td><a href="../<biblio:MeetingLanguageType/>/<biblio:MeetingLanguageType/>.jsp?uri=<biblio:MeetingLanguage/>"><biblio:MeetingLanguage /></a></td></tr>
+      </biblio:foreachMeetingLanguageIterator>
       <biblio:foreachMeetingIsSubjectOfIterator>
          <tr><td>isSubjectOf</td><td><a href="../<biblio:MeetingIsSubjectOfType/>/<biblio:MeetingIsSubjectOfType/>.jsp?uri=<biblio:MeetingIsSubjectOf/>"><biblio:MeetingIsSubjectOf /></a></td></tr>
       </biblio:foreachMeetingIsSubjectOfIterator>
-      <biblio:foreachMeetingRecordedInIterator>
-         <tr><td>recordedIn</td><td><a href="../<biblio:MeetingRecordedInType/>/<biblio:MeetingRecordedInType/>.jsp?uri=<biblio:MeetingRecordedIn/>"><biblio:MeetingRecordedIn /></a></td></tr>
-      </biblio:foreachMeetingRecordedInIterator>
-      <biblio:foreachMeetingPerformanceOfIterator>
-         <tr><td>performanceOf</td><td><a href="../<biblio:MeetingPerformanceOfType/>/<biblio:MeetingPerformanceOfType/>.jsp?uri=<biblio:MeetingPerformanceOf/>"><biblio:MeetingPerformanceOf /></a></td></tr>
-      </biblio:foreachMeetingPerformanceOfIterator>
+      <biblio:foreachMeetingHasAnnotationIterator>
+         <tr><td>hasAnnotation</td><td><a href="../<biblio:MeetingHasAnnotationType/>/<biblio:MeetingHasAnnotationType/>.jsp?uri=<biblio:MeetingHasAnnotation/>"><biblio:MeetingHasAnnotation /></a></td></tr>
+      </biblio:foreachMeetingHasAnnotationIterator>
+      <biblio:foreachMeetingIsPartOfIterator>
+         <tr><td>isPartOf</td><td><a href="../<biblio:MeetingIsPartOfType/>/<biblio:MeetingIsPartOfType/>.jsp?uri=<biblio:MeetingIsPartOf/>"><biblio:MeetingIsPartOf /></a></td></tr>
+      </biblio:foreachMeetingIsPartOfIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
+      <biblio:foreachMeetingRelationInverseIterator>
+         <tr><td>relation</td><td><a href="../<biblio:MeetingRelationInverseType/>/<biblio:MeetingRelationInverseType/>.jsp?uri=<biblio:MeetingRelationInverse/>"><biblio:MeetingRelationInverse/></a></td></tr>
+      </biblio:foreachMeetingRelationInverseIterator>
       <biblio:foreachMeetingAgentInverseIterator>
          <tr><td>agent</td><td><a href="../<biblio:MeetingAgentInverseType/>/<biblio:MeetingAgentInverseType/>.jsp?uri=<biblio:MeetingAgentInverse/>"><biblio:MeetingAgentInverse/></a></td></tr>
       </biblio:foreachMeetingAgentInverseIterator>

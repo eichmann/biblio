@@ -27,22 +27,22 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
+      <biblio:foreachTitleDateIterator>
+         <tr><td>date</td><td><biblio:TitleDate /></td></tr>
+      </biblio:foreachTitleDateIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachTitleHasSourceStatusIterator>
+         <tr><td>hasSourceStatus</td><td><a href="../<biblio:TitleHasSourceStatusType/>/<biblio:TitleHasSourceStatusType/>.jsp?uri=<biblio:TitleHasSourceStatus/>"><biblio:TitleHasSourceStatus /></a></td></tr>
+      </biblio:foreachTitleHasSourceStatusIterator>
       <biblio:foreachTitleIsTitleOfIterator>
          <tr><td>isTitleOf</td><td><a href="../<biblio:TitleIsTitleOfType/>/<biblio:TitleIsTitleOfType/>.jsp?uri=<biblio:TitleIsTitleOf/>"><biblio:TitleIsTitleOf /></a></td></tr>
       </biblio:foreachTitleIsTitleOfIterator>
-      <biblio:foreachTitleHasDerivativeIterator>
-         <tr><td>hasDerivative</td><td><a href="../<biblio:TitleHasDerivativeType/>/<biblio:TitleHasDerivativeType/>.jsp?uri=<biblio:TitleHasDerivative/>"><biblio:TitleHasDerivative /></a></td></tr>
-      </biblio:foreachTitleHasDerivativeIterator>
-      <biblio:foreachTitleIsPreferredTitleOfIterator>
-         <tr><td>isPreferredTitleOf</td><td><a href="../<biblio:TitleIsPreferredTitleOfType/>/<biblio:TitleIsPreferredTitleOfType/>.jsp?uri=<biblio:TitleIsPreferredTitleOf/>"><biblio:TitleIsPreferredTitleOf /></a></td></tr>
-      </biblio:foreachTitleIsPreferredTitleOfIterator>
-      <biblio:foreachTitleDerivedFromIterator>
-         <tr><td>derivedFrom</td><td><a href="../<biblio:TitleDerivedFromType/>/<biblio:TitleDerivedFromType/>.jsp?uri=<biblio:TitleDerivedFrom/>"><biblio:TitleDerivedFrom /></a></td></tr>
-      </biblio:foreachTitleDerivedFromIterator>
+      <biblio:foreachTitleHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:TitleHasPartType/>/<biblio:TitleHasPartType/>.jsp?uri=<biblio:TitleHasPart/>"><biblio:TitleHasPart /></a></td></tr>
+      </biblio:foreachTitleHasPartIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>

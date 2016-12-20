@@ -27,20 +27,59 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
+      <biblio:foreachLocationBirthDateIterator>
+         <tr><td>birthDate</td><td><biblio:LocationBirthDate /></td></tr>
+      </biblio:foreachLocationBirthDateIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
+      <biblio:foreachLocationSubjectIterator>
+         <tr><td>subject</td><td><a href="../<biblio:LocationSubjectType/>/<biblio:LocationSubjectType/>.jsp?uri=<biblio:LocationSubject/>"><biblio:LocationSubject /></a></td></tr>
+      </biblio:foreachLocationSubjectIterator>
+      <biblio:foreachLocationAccompaniedByIterator>
+         <tr><td>accompaniedBy</td><td><a href="../<biblio:LocationAccompaniedByType/>/<biblio:LocationAccompaniedByType/>.jsp?uri=<biblio:LocationAccompaniedBy/>"><biblio:LocationAccompaniedBy /></a></td></tr>
+      </biblio:foreachLocationAccompaniedByIterator>
+      <biblio:foreachLocationPrecedesIterator>
+         <tr><td>precedes</td><td><a href="../<biblio:LocationPrecedesType/>/<biblio:LocationPrecedesType/>.jsp?uri=<biblio:LocationPrecedes/>"><biblio:LocationPrecedes /></a></td></tr>
+      </biblio:foreachLocationPrecedesIterator>
       <biblio:foreachLocationLocationOfIterator>
          <tr><td>locationOf</td><td><a href="../<biblio:LocationLocationOfType/>/<biblio:LocationLocationOfType/>.jsp?uri=<biblio:LocationLocationOf/>"><biblio:LocationLocationOf /></a></td></tr>
       </biblio:foreachLocationLocationOfIterator>
+      <biblio:foreachLocationIdentifiedByIterator>
+         <tr><td>identifiedBy</td><td><a href="../<biblio:LocationIdentifiedByType/>/<biblio:LocationIdentifiedByType/>.jsp?uri=<biblio:LocationIdentifiedBy/>"><biblio:LocationIdentifiedBy /></a></td></tr>
+      </biblio:foreachLocationIdentifiedByIterator>
+      <biblio:foreachLocationAccompaniesIterator>
+         <tr><td>accompanies</td><td><a href="../<biblio:LocationAccompaniesType/>/<biblio:LocationAccompaniesType/>.jsp?uri=<biblio:LocationAccompanies/>"><biblio:LocationAccompanies /></a></td></tr>
+      </biblio:foreachLocationAccompaniesIterator>
+      <biblio:foreachLocationFollowsIterator>
+         <tr><td>follows</td><td><a href="../<biblio:LocationFollowsType/>/<biblio:LocationFollowsType/>.jsp?uri=<biblio:LocationFollows/>"><biblio:LocationFollows /></a></td></tr>
+      </biblio:foreachLocationFollowsIterator>
+      <biblio:foreachLocationHasPartIterator>
+         <tr><td>hasPart</td><td><a href="../<biblio:LocationHasPartType/>/<biblio:LocationHasPartType/>.jsp?uri=<biblio:LocationHasPart/>"><biblio:LocationHasPart /></a></td></tr>
+      </biblio:foreachLocationHasPartIterator>
+      <biblio:foreachLocationLanguageIterator>
+         <tr><td>language</td><td><a href="../<biblio:LocationLanguageType/>/<biblio:LocationLanguageType/>.jsp?uri=<biblio:LocationLanguage/>"><biblio:LocationLanguage /></a></td></tr>
+      </biblio:foreachLocationLanguageIterator>
+      <biblio:foreachLocationIsSubjectOfIterator>
+         <tr><td>isSubjectOf</td><td><a href="../<biblio:LocationIsSubjectOfType/>/<biblio:LocationIsSubjectOfType/>.jsp?uri=<biblio:LocationIsSubjectOf/>"><biblio:LocationIsSubjectOf /></a></td></tr>
+      </biblio:foreachLocationIsSubjectOfIterator>
+      <biblio:foreachLocationHasAnnotationIterator>
+         <tr><td>hasAnnotation</td><td><a href="../<biblio:LocationHasAnnotationType/>/<biblio:LocationHasAnnotationType/>.jsp?uri=<biblio:LocationHasAnnotation/>"><biblio:LocationHasAnnotation /></a></td></tr>
+      </biblio:foreachLocationHasAnnotationIterator>
+      <biblio:foreachLocationIsPartOfIterator>
+         <tr><td>isPartOf</td><td><a href="../<biblio:LocationIsPartOfType/>/<biblio:LocationIsPartOfType/>.jsp?uri=<biblio:LocationIsPartOf/>"><biblio:LocationIsPartOf /></a></td></tr>
+      </biblio:foreachLocationIsPartOfIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
-      <biblio:foreachLocationHasOriginPlaceInverseIterator>
-         <tr><td>hasOriginPlace</td><td><a href="../<biblio:LocationHasOriginPlaceInverseType/>/<biblio:LocationHasOriginPlaceInverseType/>.jsp?uri=<biblio:LocationHasOriginPlaceInverse/>"><biblio:LocationHasOriginPlaceInverse/></a></td></tr>
-      </biblio:foreachLocationHasOriginPlaceInverseIterator>
+      <biblio:foreachLocationRelationInverseIterator>
+         <tr><td>relation</td><td><a href="../<biblio:LocationRelationInverseType/>/<biblio:LocationRelationInverseType/>.jsp?uri=<biblio:LocationRelationInverse/>"><biblio:LocationRelationInverse/></a></td></tr>
+      </biblio:foreachLocationRelationInverseIterator>
+      <biblio:foreachLocationAgentInverseIterator>
+         <tr><td>agent</td><td><a href="../<biblio:LocationAgentInverseType/>/<biblio:LocationAgentInverseType/>.jsp?uri=<biblio:LocationAgentInverse/>"><biblio:LocationAgentInverse/></a></td></tr>
+      </biblio:foreachLocationAgentInverseIterator>
    </table>
    </biblio:Location>
 

@@ -37,15 +37,6 @@
       <biblio:foreachKeyTitleIsTitleOfIterator>
          <tr><td>isTitleOf</td><td><a href="../<biblio:KeyTitleIsTitleOfType/>/<biblio:KeyTitleIsTitleOfType/>.jsp?uri=<biblio:KeyTitleIsTitleOf/>"><biblio:KeyTitleIsTitleOf /></a></td></tr>
       </biblio:foreachKeyTitleIsTitleOfIterator>
-      <biblio:foreachKeyTitleHasDerivativeIterator>
-         <tr><td>hasDerivative</td><td><a href="../<biblio:KeyTitleHasDerivativeType/>/<biblio:KeyTitleHasDerivativeType/>.jsp?uri=<biblio:KeyTitleHasDerivative/>"><biblio:KeyTitleHasDerivative /></a></td></tr>
-      </biblio:foreachKeyTitleHasDerivativeIterator>
-      <biblio:foreachKeyTitleIsPreferredTitleOfIterator>
-         <tr><td>isPreferredTitleOf</td><td><a href="../<biblio:KeyTitleIsPreferredTitleOfType/>/<biblio:KeyTitleIsPreferredTitleOfType/>.jsp?uri=<biblio:KeyTitleIsPreferredTitleOf/>"><biblio:KeyTitleIsPreferredTitleOf /></a></td></tr>
-      </biblio:foreachKeyTitleIsPreferredTitleOfIterator>
-      <biblio:foreachKeyTitleDerivedFromIterator>
-         <tr><td>derivedFrom</td><td><a href="../<biblio:KeyTitleDerivedFromType/>/<biblio:KeyTitleDerivedFromType/>.jsp?uri=<biblio:KeyTitleDerivedFrom/>"><biblio:KeyTitleDerivedFrom /></a></td></tr>
-      </biblio:foreachKeyTitleDerivedFromIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
