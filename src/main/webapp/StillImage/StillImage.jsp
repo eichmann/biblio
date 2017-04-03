@@ -70,9 +70,6 @@
       <biblio:foreachStillImageSupplementsIterator>
          <tr><td>supplements</td><td><a href="../<biblio:StillImageSupplementsType/>/<biblio:StillImageSupplementsType/>.jsp?uri=<biblio:StillImageSupplements/>"><biblio:StillImageSupplements /></a></td></tr>
       </biblio:foreachStillImageSupplementsIterator>
-      <biblio:foreachStillImageAbsorbedByIterator>
-         <tr><td>absorbedBy</td><td><a href="../<biblio:StillImageAbsorbedByType/>/<biblio:StillImageAbsorbedByType/>.jsp?uri=<biblio:StillImageAbsorbedBy/>"><biblio:StillImageAbsorbedBy /></a></td></tr>
-      </biblio:foreachStillImageAbsorbedByIterator>
       <biblio:foreachStillImageSupersedesIterator>
          <tr><td>supersedes</td><td><a href="../<biblio:StillImageSupersedesType/>/<biblio:StillImageSupersedesType/>.jsp?uri=<biblio:StillImageSupersedes/>"><biblio:StillImageSupersedes /></a></td></tr>
       </biblio:foreachStillImageSupersedesIterator>
@@ -85,9 +82,6 @@
       <biblio:foreachStillImageHasDerivativeIterator>
          <tr><td>hasDerivative</td><td><a href="../<biblio:StillImageHasDerivativeType/>/<biblio:StillImageHasDerivativeType/>.jsp?uri=<biblio:StillImageHasDerivative/>"><biblio:StillImageHasDerivative /></a></td></tr>
       </biblio:foreachStillImageHasDerivativeIterator>
-      <biblio:foreachStillImageHasAbsorbedIterator>
-         <tr><td>hasAbsorbed</td><td><a href="../<biblio:StillImageHasAbsorbedType/>/<biblio:StillImageHasAbsorbedType/>.jsp?uri=<biblio:StillImageHasAbsorbed/>"><biblio:StillImageHasAbsorbed /></a></td></tr>
-      </biblio:foreachStillImageHasAbsorbedIterator>
       <biblio:foreachStillImageHasSupplementIterator>
          <tr><td>hasSupplement</td><td><a href="../<biblio:StillImageHasSupplementType/>/<biblio:StillImageHasSupplementType/>.jsp?uri=<biblio:StillImageHasSupplement/>"><biblio:StillImageHasSupplement /></a></td></tr>
       </biblio:foreachStillImageHasSupplementIterator>

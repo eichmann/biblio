@@ -73,15 +73,9 @@
       <biblio:foreachMultimediaAbsorbedByIterator>
          <tr><td>absorbedBy</td><td><a href="../<biblio:MultimediaAbsorbedByType/>/<biblio:MultimediaAbsorbedByType/>.jsp?uri=<biblio:MultimediaAbsorbedBy/>"><biblio:MultimediaAbsorbedBy /></a></td></tr>
       </biblio:foreachMultimediaAbsorbedByIterator>
-      <biblio:foreachMultimediaSupersededByIterator>
-         <tr><td>supersededBy</td><td><a href="../<biblio:MultimediaSupersededByType/>/<biblio:MultimediaSupersededByType/>.jsp?uri=<biblio:MultimediaSupersededBy/>"><biblio:MultimediaSupersededBy /></a></td></tr>
-      </biblio:foreachMultimediaSupersededByIterator>
       <biblio:foreachMultimediaDerivedFromIterator>
          <tr><td>derivedFrom</td><td><a href="../<biblio:MultimediaDerivedFromType/>/<biblio:MultimediaDerivedFromType/>.jsp?uri=<biblio:MultimediaDerivedFrom/>"><biblio:MultimediaDerivedFrom /></a></td></tr>
       </biblio:foreachMultimediaDerivedFromIterator>
-      <biblio:foreachMultimediaHasDerivativeIterator>
-         <tr><td>hasDerivative</td><td><a href="../<biblio:MultimediaHasDerivativeType/>/<biblio:MultimediaHasDerivativeType/>.jsp?uri=<biblio:MultimediaHasDerivative/>"><biblio:MultimediaHasDerivative /></a></td></tr>
-      </biblio:foreachMultimediaHasDerivativeIterator>
       <biblio:foreachMultimediaHasAbsorbedIterator>
          <tr><td>hasAbsorbed</td><td><a href="../<biblio:MultimediaHasAbsorbedType/>/<biblio:MultimediaHasAbsorbedType/>.jsp?uri=<biblio:MultimediaHasAbsorbed/>"><biblio:MultimediaHasAbsorbed /></a></td></tr>
       </biblio:foreachMultimediaHasAbsorbedIterator>
@@ -103,9 +97,6 @@
       <biblio:foreachMultimediaHasTitleIterator>
          <tr><td>hasTitle</td><td><a href="../<biblio:MultimediaHasTitleType/>/<biblio:MultimediaHasTitleType/>.jsp?uri=<biblio:MultimediaHasTitle/>"><biblio:MultimediaHasTitle /></a></td></tr>
       </biblio:foreachMultimediaHasTitleIterator>
-      <biblio:foreachMultimediaTranslatedAsIterator>
-         <tr><td>translatedAs</td><td><a href="../<biblio:MultimediaTranslatedAsType/>/<biblio:MultimediaTranslatedAsType/>.jsp?uri=<biblio:MultimediaTranslatedAs/>"><biblio:MultimediaTranslatedAs /></a></td></tr>
-      </biblio:foreachMultimediaTranslatedAsIterator>
       <biblio:foreachMultimediaContinuedUnderNewTitleByIterator>
          <tr><td>continuedUnderNewTitleBy</td><td><a href="../<biblio:MultimediaContinuedUnderNewTitleByType/>/<biblio:MultimediaContinuedUnderNewTitleByType/>.jsp?uri=<biblio:MultimediaContinuedUnderNewTitleBy/>"><biblio:MultimediaContinuedUnderNewTitleBy /></a></td></tr>
       </biblio:foreachMultimediaContinuedUnderNewTitleByIterator>

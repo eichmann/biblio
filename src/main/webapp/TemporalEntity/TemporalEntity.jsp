@@ -40,9 +40,6 @@
       <biblio:foreachTemporalEntityIdentifiedByIterator>
          <tr><td>identifiedBy</td><td><a href="../<biblio:TemporalEntityIdentifiedByType/>/<biblio:TemporalEntityIdentifiedByType/>.jsp?uri=<biblio:TemporalEntityIdentifiedBy/>"><biblio:TemporalEntityIdentifiedBy /></a></td></tr>
       </biblio:foreachTemporalEntityIdentifiedByIterator>
-      <biblio:foreachTemporalEntityFollowsIterator>
-         <tr><td>follows</td><td><a href="../<biblio:TemporalEntityFollowsType/>/<biblio:TemporalEntityFollowsType/>.jsp?uri=<biblio:TemporalEntityFollows/>"><biblio:TemporalEntityFollows /></a></td></tr>
-      </biblio:foreachTemporalEntityFollowsIterator>
       <biblio:foreachTemporalEntityIsSubjectOfIterator>
          <tr><td>isSubjectOf</td><td><a href="../<biblio:TemporalEntityIsSubjectOfType/>/<biblio:TemporalEntityIsSubjectOfType/>.jsp?uri=<biblio:TemporalEntityIsSubjectOf/>"><biblio:TemporalEntityIsSubjectOf /></a></td></tr>
       </biblio:foreachTemporalEntityIsSubjectOfIterator>
@@ -53,9 +50,6 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
-      <biblio:foreachTemporalEntityRelationInverseIterator>
-         <tr><td>relation</td><td><a href="../<biblio:TemporalEntityRelationInverseType/>/<biblio:TemporalEntityRelationInverseType/>.jsp?uri=<biblio:TemporalEntityRelationInverse/>"><biblio:TemporalEntityRelationInverse/></a></td></tr>
-      </biblio:foreachTemporalEntityRelationInverseIterator>
       <biblio:foreachTemporalEntityAgentInverseIterator>
          <tr><td>agent</td><td><a href="../<biblio:TemporalEntityAgentInverseType/>/<biblio:TemporalEntityAgentInverseType/>.jsp?uri=<biblio:TemporalEntityAgentInverse/>"><biblio:TemporalEntityAgentInverse/></a></td></tr>
       </biblio:foreachTemporalEntityAgentInverseIterator>

@@ -34,12 +34,6 @@
       <biblio:foreachNotatedMovementSubjectIterator>
          <tr><td>subject</td><td><a href="../<biblio:NotatedMovementSubjectType/>/<biblio:NotatedMovementSubjectType/>.jsp?uri=<biblio:NotatedMovementSubject/>"><biblio:NotatedMovementSubject /></a></td></tr>
       </biblio:foreachNotatedMovementSubjectIterator>
-      <biblio:foreachNotatedMovementRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:NotatedMovementRelationType/>/<biblio:NotatedMovementRelationType/>.jsp?uri=<biblio:NotatedMovementRelation/>"><biblio:NotatedMovementRelation /></a></td></tr>
-      </biblio:foreachNotatedMovementRelationIterator>
-      <biblio:foreachNotatedMovementHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:NotatedMovementHasPartType/>/<biblio:NotatedMovementHasPartType/>.jsp?uri=<biblio:NotatedMovementHasPart/>"><biblio:NotatedMovementHasPart /></a></td></tr>
-      </biblio:foreachNotatedMovementHasPartIterator>
       <biblio:foreachNotatedMovementLanguageIterator>
          <tr><td>language</td><td><a href="../<biblio:NotatedMovementLanguageType/>/<biblio:NotatedMovementLanguageType/>.jsp?uri=<biblio:NotatedMovementLanguage/>"><biblio:NotatedMovementLanguage /></a></td></tr>
       </biblio:foreachNotatedMovementLanguageIterator>

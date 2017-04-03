@@ -73,15 +73,9 @@
       <biblio:foreachDatasetAbsorbedByIterator>
          <tr><td>absorbedBy</td><td><a href="../<biblio:DatasetAbsorbedByType/>/<biblio:DatasetAbsorbedByType/>.jsp?uri=<biblio:DatasetAbsorbedBy/>"><biblio:DatasetAbsorbedBy /></a></td></tr>
       </biblio:foreachDatasetAbsorbedByIterator>
-      <biblio:foreachDatasetSupersededByIterator>
-         <tr><td>supersededBy</td><td><a href="../<biblio:DatasetSupersededByType/>/<biblio:DatasetSupersededByType/>.jsp?uri=<biblio:DatasetSupersededBy/>"><biblio:DatasetSupersededBy /></a></td></tr>
-      </biblio:foreachDatasetSupersededByIterator>
       <biblio:foreachDatasetDerivedFromIterator>
          <tr><td>derivedFrom</td><td><a href="../<biblio:DatasetDerivedFromType/>/<biblio:DatasetDerivedFromType/>.jsp?uri=<biblio:DatasetDerivedFrom/>"><biblio:DatasetDerivedFrom /></a></td></tr>
       </biblio:foreachDatasetDerivedFromIterator>
-      <biblio:foreachDatasetHasDerivativeIterator>
-         <tr><td>hasDerivative</td><td><a href="../<biblio:DatasetHasDerivativeType/>/<biblio:DatasetHasDerivativeType/>.jsp?uri=<biblio:DatasetHasDerivative/>"><biblio:DatasetHasDerivative /></a></td></tr>
-      </biblio:foreachDatasetHasDerivativeIterator>
       <biblio:foreachDatasetHasAbsorbedIterator>
          <tr><td>hasAbsorbed</td><td><a href="../<biblio:DatasetHasAbsorbedType/>/<biblio:DatasetHasAbsorbedType/>.jsp?uri=<biblio:DatasetHasAbsorbed/>"><biblio:DatasetHasAbsorbed /></a></td></tr>
       </biblio:foreachDatasetHasAbsorbedIterator>
@@ -103,9 +97,6 @@
       <biblio:foreachDatasetHasTitleIterator>
          <tr><td>hasTitle</td><td><a href="../<biblio:DatasetHasTitleType/>/<biblio:DatasetHasTitleType/>.jsp?uri=<biblio:DatasetHasTitle/>"><biblio:DatasetHasTitle /></a></td></tr>
       </biblio:foreachDatasetHasTitleIterator>
-      <biblio:foreachDatasetTranslatedAsIterator>
-         <tr><td>translatedAs</td><td><a href="../<biblio:DatasetTranslatedAsType/>/<biblio:DatasetTranslatedAsType/>.jsp?uri=<biblio:DatasetTranslatedAs/>"><biblio:DatasetTranslatedAs /></a></td></tr>
-      </biblio:foreachDatasetTranslatedAsIterator>
       <biblio:foreachDatasetContinuedUnderNewTitleByIterator>
          <tr><td>continuedUnderNewTitleBy</td><td><a href="../<biblio:DatasetContinuedUnderNewTitleByType/>/<biblio:DatasetContinuedUnderNewTitleByType/>.jsp?uri=<biblio:DatasetContinuedUnderNewTitleBy/>"><biblio:DatasetContinuedUnderNewTitleBy /></a></td></tr>
       </biblio:foreachDatasetContinuedUnderNewTitleByIterator>

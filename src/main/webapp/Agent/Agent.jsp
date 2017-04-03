@@ -40,9 +40,6 @@
       <biblio:foreachAgentSubjectIterator>
          <tr><td>subject</td><td><a href="../<biblio:AgentSubjectType/>/<biblio:AgentSubjectType/>.jsp?uri=<biblio:AgentSubject/>"><biblio:AgentSubject /></a></td></tr>
       </biblio:foreachAgentSubjectIterator>
-      <biblio:foreachAgentRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:AgentRelationType/>/<biblio:AgentRelationType/>.jsp?uri=<biblio:AgentRelation/>"><biblio:AgentRelation /></a></td></tr>
-      </biblio:foreachAgentRelationIterator>
       <biblio:foreachAgentAccompaniedByIterator>
          <tr><td>accompaniedBy</td><td><a href="../<biblio:AgentAccompaniedByType/>/<biblio:AgentAccompaniedByType/>.jsp?uri=<biblio:AgentAccompaniedBy/>"><biblio:AgentAccompaniedBy /></a></td></tr>
       </biblio:foreachAgentAccompaniedByIterator>
@@ -80,6 +77,9 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
+      <biblio:foreachAgentRelationInverseIterator>
+         <tr><td>relation</td><td><a href="../<biblio:AgentRelationInverseType/>/<biblio:AgentRelationInverseType/>.jsp?uri=<biblio:AgentRelationInverse/>"><biblio:AgentRelationInverse/></a></td></tr>
+      </biblio:foreachAgentRelationInverseIterator>
       <biblio:foreachAgentAgentInverseIterator>
          <tr><td>agent</td><td><a href="../<biblio:AgentAgentInverseType/>/<biblio:AgentAgentInverseType/>.jsp?uri=<biblio:AgentAgentInverse/>"><biblio:AgentAgentInverse/></a></td></tr>
       </biblio:foreachAgentAgentInverseIterator>

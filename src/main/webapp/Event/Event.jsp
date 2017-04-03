@@ -27,12 +27,6 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
-      <biblio:foreachEventBirthDateIterator>
-         <tr><td>birthDate</td><td><biblio:EventBirthDate /></td></tr>
-      </biblio:foreachEventBirthDateIterator>
-      <biblio:foreachEventDeathDateIterator>
-         <tr><td>deathDate</td><td><biblio:EventDeathDate /></td></tr>
-      </biblio:foreachEventDeathDateIterator>
       <biblio:foreachEventDateIterator>
          <tr><td>date</td><td><biblio:EventDate /></td></tr>
       </biblio:foreachEventDateIterator>

@@ -17,7 +17,7 @@
 	<div id="content"><jsp:include page="/header.jsp" flush="true" />
 		<jsp:include page="/menu.jsp" flush="true"><jsp:param
 				name="caller" value="research" /></jsp:include><div id="centerCol">
-			<h3>Search</h3>
+			<h3><util:applicationName/> Search</h3>
 			<form method='POST' action='search.jsp'>
 				<input name="query" value="${param.query}" size=50> <input
 					type=submit name=submitButton value=Search><br>
@@ -35,9 +35,10 @@
 					Search Results:
 					<c:out value="${param.query}" />
 				</h3>
+				<c:set var="index"><util:propertyValue name="LuceneIndex"/></c:set>
 				<c:choose>
 					<c:when test="${param.mode == 'work'}">
-						<lucene:search lucenePath="/Volumes/LD4L/lucene/stanford/work"
+						<lucene:search lucenePath="${index}/work"
 							label="content" queryParserName="boolean"
 							queryString="${param.query}">
 							<p>
@@ -52,7 +53,7 @@
 						</lucene:search>
 					</c:when>
 					<c:when test="${param.mode == 'person' or empty param.mode}">
-                        <lucene:search lucenePath="/Volumes/LD4L/lucene/stanford/person"
+                        <lucene:search lucenePath="${index}/person"
                             label="content" queryParserName="boolean"
                             queryString="${param.query}">
                             <p>

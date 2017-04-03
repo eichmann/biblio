@@ -40,9 +40,6 @@
       <biblio:foreachPersonSubjectIterator>
          <tr><td>subject</td><td><a href="../<biblio:PersonSubjectType/>/<biblio:PersonSubjectType/>.jsp?uri=<biblio:PersonSubject/>"><biblio:PersonSubject /></a></td></tr>
       </biblio:foreachPersonSubjectIterator>
-      <biblio:foreachPersonRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:PersonRelationType/>/<biblio:PersonRelationType/>.jsp?uri=<biblio:PersonRelation/>"><biblio:PersonRelation /></a></td></tr>
-      </biblio:foreachPersonRelationIterator>
       <biblio:foreachPersonPrecedesIterator>
          <tr><td>precedes</td><td><a href="../<biblio:PersonPrecedesType/>/<biblio:PersonPrecedesType/>.jsp?uri=<biblio:PersonPrecedes/>"><biblio:PersonPrecedes /></a></td></tr>
       </biblio:foreachPersonPrecedesIterator>
@@ -74,6 +71,9 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
+      <biblio:foreachPersonRelationInverseIterator>
+         <tr><td>relation</td><td><a href="../<biblio:PersonRelationInverseType/>/<biblio:PersonRelationInverseType/>.jsp?uri=<biblio:PersonRelationInverse/>"><biblio:PersonRelationInverse/></a></td></tr>
+      </biblio:foreachPersonRelationInverseIterator>
       <biblio:foreachPersonAgentInverseIterator>
          <tr><td>agent</td><td><a href="../<biblio:PersonAgentInverseType/>/<biblio:PersonAgentInverseType/>.jsp?uri=<biblio:PersonAgentInverse/>"><biblio:PersonAgentInverse/></a></td></tr>
       </biblio:foreachPersonAgentInverseIterator>

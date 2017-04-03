@@ -40,9 +40,6 @@
       <biblio:foreachThreeDimensionalObjectPrecedesIterator>
          <tr><td>precedes</td><td><a href="../<biblio:ThreeDimensionalObjectPrecedesType/>/<biblio:ThreeDimensionalObjectPrecedesType/>.jsp?uri=<biblio:ThreeDimensionalObjectPrecedes/>"><biblio:ThreeDimensionalObjectPrecedes /></a></td></tr>
       </biblio:foreachThreeDimensionalObjectPrecedesIterator>
-      <biblio:foreachThreeDimensionalObjectIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:ThreeDimensionalObjectIdentifiedByType/>/<biblio:ThreeDimensionalObjectIdentifiedByType/>.jsp?uri=<biblio:ThreeDimensionalObjectIdentifiedBy/>"><biblio:ThreeDimensionalObjectIdentifiedBy /></a></td></tr>
-      </biblio:foreachThreeDimensionalObjectIdentifiedByIterator>
       <biblio:foreachThreeDimensionalObjectAccompaniesIterator>
          <tr><td>accompanies</td><td><a href="../<biblio:ThreeDimensionalObjectAccompaniesType/>/<biblio:ThreeDimensionalObjectAccompaniesType/>.jsp?uri=<biblio:ThreeDimensionalObjectAccompanies/>"><biblio:ThreeDimensionalObjectAccompanies /></a></td></tr>
       </biblio:foreachThreeDimensionalObjectAccompaniesIterator>
@@ -55,9 +52,6 @@
       <biblio:foreachThreeDimensionalObjectLanguageIterator>
          <tr><td>language</td><td><a href="../<biblio:ThreeDimensionalObjectLanguageType/>/<biblio:ThreeDimensionalObjectLanguageType/>.jsp?uri=<biblio:ThreeDimensionalObjectLanguage/>"><biblio:ThreeDimensionalObjectLanguage /></a></td></tr>
       </biblio:foreachThreeDimensionalObjectLanguageIterator>
-      <biblio:foreachThreeDimensionalObjectIsSubjectOfIterator>
-         <tr><td>isSubjectOf</td><td><a href="../<biblio:ThreeDimensionalObjectIsSubjectOfType/>/<biblio:ThreeDimensionalObjectIsSubjectOfType/>.jsp?uri=<biblio:ThreeDimensionalObjectIsSubjectOf/>"><biblio:ThreeDimensionalObjectIsSubjectOf /></a></td></tr>
-      </biblio:foreachThreeDimensionalObjectIsSubjectOfIterator>
       <biblio:foreachThreeDimensionalObjectHasAnnotationIterator>
          <tr><td>hasAnnotation</td><td><a href="../<biblio:ThreeDimensionalObjectHasAnnotationType/>/<biblio:ThreeDimensionalObjectHasAnnotationType/>.jsp?uri=<biblio:ThreeDimensionalObjectHasAnnotation/>"><biblio:ThreeDimensionalObjectHasAnnotation /></a></td></tr>
       </biblio:foreachThreeDimensionalObjectHasAnnotationIterator>
@@ -67,9 +61,6 @@
       <biblio:foreachThreeDimensionalObjectSupplementsIterator>
          <tr><td>supplements</td><td><a href="../<biblio:ThreeDimensionalObjectSupplementsType/>/<biblio:ThreeDimensionalObjectSupplementsType/>.jsp?uri=<biblio:ThreeDimensionalObjectSupplements/>"><biblio:ThreeDimensionalObjectSupplements /></a></td></tr>
       </biblio:foreachThreeDimensionalObjectSupplementsIterator>
-      <biblio:foreachThreeDimensionalObjectAbsorbedByIterator>
-         <tr><td>absorbedBy</td><td><a href="../<biblio:ThreeDimensionalObjectAbsorbedByType/>/<biblio:ThreeDimensionalObjectAbsorbedByType/>.jsp?uri=<biblio:ThreeDimensionalObjectAbsorbedBy/>"><biblio:ThreeDimensionalObjectAbsorbedBy /></a></td></tr>
-      </biblio:foreachThreeDimensionalObjectAbsorbedByIterator>
       <biblio:foreachThreeDimensionalObjectSupersedesIterator>
          <tr><td>supersedes</td><td><a href="../<biblio:ThreeDimensionalObjectSupersedesType/>/<biblio:ThreeDimensionalObjectSupersedesType/>.jsp?uri=<biblio:ThreeDimensionalObjectSupersedes/>"><biblio:ThreeDimensionalObjectSupersedes /></a></td></tr>
       </biblio:foreachThreeDimensionalObjectSupersedesIterator>

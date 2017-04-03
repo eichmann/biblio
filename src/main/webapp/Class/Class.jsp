@@ -33,9 +33,6 @@
       <biblio:foreachClassNoteIterator>
          <tr><td>note</td><td><biblio:ClassNote /></td></tr>
       </biblio:foreachClassNoteIterator>
-      <biblio:foreachClassTerm_statusIterator>
-         <tr><td>term_status</td><td><biblio:ClassTerm_status /></td></tr>
-      </biblio:foreachClassTerm_statusIterator>
       <biblio:foreachClassScopeNoteIterator>
          <tr><td>scopeNote</td><td><biblio:ClassScopeNote /></td></tr>
       </biblio:foreachClassScopeNoteIterator>

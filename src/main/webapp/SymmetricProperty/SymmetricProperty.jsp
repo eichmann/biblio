@@ -27,12 +27,6 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
-      <biblio:foreachSymmetricPropertyEditorialNoteIterator>
-         <tr><td>editorialNote</td><td><biblio:SymmetricPropertyEditorialNote /></td></tr>
-      </biblio:foreachSymmetricPropertyEditorialNoteIterator>
-      <biblio:foreachSymmetricPropertyNoteIterator>
-         <tr><td>note</td><td><biblio:SymmetricPropertyNote /></td></tr>
-      </biblio:foreachSymmetricPropertyNoteIterator>
       <biblio:foreachSymmetricPropertyLabelIterator>
          <tr><td>label</td><td><biblio:SymmetricPropertyLabel /></td></tr>
       </biblio:foreachSymmetricPropertyLabelIterator>

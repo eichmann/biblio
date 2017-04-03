@@ -43,9 +43,6 @@
       <biblio:foreachAudioIdentifiedByIterator>
          <tr><td>identifiedBy</td><td><a href="../<biblio:AudioIdentifiedByType/>/<biblio:AudioIdentifiedByType/>.jsp?uri=<biblio:AudioIdentifiedBy/>"><biblio:AudioIdentifiedBy /></a></td></tr>
       </biblio:foreachAudioIdentifiedByIterator>
-      <biblio:foreachAudioAccompaniesIterator>
-         <tr><td>accompanies</td><td><a href="../<biblio:AudioAccompaniesType/>/<biblio:AudioAccompaniesType/>.jsp?uri=<biblio:AudioAccompanies/>"><biblio:AudioAccompanies /></a></td></tr>
-      </biblio:foreachAudioAccompaniesIterator>
       <biblio:foreachAudioFollowsIterator>
          <tr><td>follows</td><td><a href="../<biblio:AudioFollowsType/>/<biblio:AudioFollowsType/>.jsp?uri=<biblio:AudioFollows/>"><biblio:AudioFollows /></a></td></tr>
       </biblio:foreachAudioFollowsIterator>
@@ -64,9 +61,6 @@
       <biblio:foreachAudioIsPartOfIterator>
          <tr><td>isPartOf</td><td><a href="../<biblio:AudioIsPartOfType/>/<biblio:AudioIsPartOfType/>.jsp?uri=<biblio:AudioIsPartOf/>"><biblio:AudioIsPartOf /></a></td></tr>
       </biblio:foreachAudioIsPartOfIterator>
-      <biblio:foreachAudioSupplementsIterator>
-         <tr><td>supplements</td><td><a href="../<biblio:AudioSupplementsType/>/<biblio:AudioSupplementsType/>.jsp?uri=<biblio:AudioSupplements/>"><biblio:AudioSupplements /></a></td></tr>
-      </biblio:foreachAudioSupplementsIterator>
       <biblio:foreachAudioDerivedFromIterator>
          <tr><td>derivedFrom</td><td><a href="../<biblio:AudioDerivedFromType/>/<biblio:AudioDerivedFromType/>.jsp?uri=<biblio:AudioDerivedFrom/>"><biblio:AudioDerivedFrom /></a></td></tr>
       </biblio:foreachAudioDerivedFromIterator>

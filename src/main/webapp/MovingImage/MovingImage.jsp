@@ -70,9 +70,6 @@
       <biblio:foreachMovingImageSupplementsIterator>
          <tr><td>supplements</td><td><a href="../<biblio:MovingImageSupplementsType/>/<biblio:MovingImageSupplementsType/>.jsp?uri=<biblio:MovingImageSupplements/>"><biblio:MovingImageSupplements /></a></td></tr>
       </biblio:foreachMovingImageSupplementsIterator>
-      <biblio:foreachMovingImageAbsorbedByIterator>
-         <tr><td>absorbedBy</td><td><a href="../<biblio:MovingImageAbsorbedByType/>/<biblio:MovingImageAbsorbedByType/>.jsp?uri=<biblio:MovingImageAbsorbedBy/>"><biblio:MovingImageAbsorbedBy /></a></td></tr>
-      </biblio:foreachMovingImageAbsorbedByIterator>
       <biblio:foreachMovingImageSupersedesIterator>
          <tr><td>supersedes</td><td><a href="../<biblio:MovingImageSupersedesType/>/<biblio:MovingImageSupersedesType/>.jsp?uri=<biblio:MovingImageSupersedes/>"><biblio:MovingImageSupersedes /></a></td></tr>
       </biblio:foreachMovingImageSupersedesIterator>

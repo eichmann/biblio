@@ -27,9 +27,6 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
-      <biblio:foreachRestrictionCardinalityIterator>
-         <tr><td>cardinality</td><td><biblio:RestrictionCardinality /></td></tr>
-      </biblio:foreachRestrictionCardinalityIterator>
       <biblio:foreachRestrictionMinCardinalityIterator>
          <tr><td>minCardinality</td><td><biblio:RestrictionMinCardinality /></td></tr>
       </biblio:foreachRestrictionMinCardinalityIterator>

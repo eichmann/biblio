@@ -70,24 +70,15 @@
       <biblio:foreachCartographySupplementsIterator>
          <tr><td>supplements</td><td><a href="../<biblio:CartographySupplementsType/>/<biblio:CartographySupplementsType/>.jsp?uri=<biblio:CartographySupplements/>"><biblio:CartographySupplements /></a></td></tr>
       </biblio:foreachCartographySupplementsIterator>
-      <biblio:foreachCartographyAbsorbedByIterator>
-         <tr><td>absorbedBy</td><td><a href="../<biblio:CartographyAbsorbedByType/>/<biblio:CartographyAbsorbedByType/>.jsp?uri=<biblio:CartographyAbsorbedBy/>"><biblio:CartographyAbsorbedBy /></a></td></tr>
-      </biblio:foreachCartographyAbsorbedByIterator>
       <biblio:foreachCartographySupersedesIterator>
          <tr><td>supersedes</td><td><a href="../<biblio:CartographySupersedesType/>/<biblio:CartographySupersedesType/>.jsp?uri=<biblio:CartographySupersedes/>"><biblio:CartographySupersedes /></a></td></tr>
       </biblio:foreachCartographySupersedesIterator>
-      <biblio:foreachCartographySupersededByIterator>
-         <tr><td>supersededBy</td><td><a href="../<biblio:CartographySupersededByType/>/<biblio:CartographySupersededByType/>.jsp?uri=<biblio:CartographySupersededBy/>"><biblio:CartographySupersededBy /></a></td></tr>
-      </biblio:foreachCartographySupersededByIterator>
       <biblio:foreachCartographyDerivedFromIterator>
          <tr><td>derivedFrom</td><td><a href="../<biblio:CartographyDerivedFromType/>/<biblio:CartographyDerivedFromType/>.jsp?uri=<biblio:CartographyDerivedFrom/>"><biblio:CartographyDerivedFrom /></a></td></tr>
       </biblio:foreachCartographyDerivedFromIterator>
       <biblio:foreachCartographyHasDerivativeIterator>
          <tr><td>hasDerivative</td><td><a href="../<biblio:CartographyHasDerivativeType/>/<biblio:CartographyHasDerivativeType/>.jsp?uri=<biblio:CartographyHasDerivative/>"><biblio:CartographyHasDerivative /></a></td></tr>
       </biblio:foreachCartographyHasDerivativeIterator>
-      <biblio:foreachCartographyHasAbsorbedIterator>
-         <tr><td>hasAbsorbed</td><td><a href="../<biblio:CartographyHasAbsorbedType/>/<biblio:CartographyHasAbsorbedType/>.jsp?uri=<biblio:CartographyHasAbsorbed/>"><biblio:CartographyHasAbsorbed /></a></td></tr>
-      </biblio:foreachCartographyHasAbsorbedIterator>
       <biblio:foreachCartographyHasSupplementIterator>
          <tr><td>hasSupplement</td><td><a href="../<biblio:CartographyHasSupplementType/>/<biblio:CartographyHasSupplementType/>.jsp?uri=<biblio:CartographyHasSupplement/>"><biblio:CartographyHasSupplement /></a></td></tr>
       </biblio:foreachCartographyHasSupplementIterator>

@@ -27,9 +27,6 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
-      <biblio:foreachLocationBirthDateIterator>
-         <tr><td>birthDate</td><td><biblio:LocationBirthDate /></td></tr>
-      </biblio:foreachLocationBirthDateIterator>
    </table>
 
    <h3>Object Properties</h3>

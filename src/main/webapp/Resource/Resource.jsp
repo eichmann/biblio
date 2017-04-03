@@ -48,15 +48,9 @@
       <biblio:foreachResourceIsDefinedByIterator>
          <tr><td>isDefinedBy</td><td><biblio:ResourceIsDefinedBy /></td></tr>
       </biblio:foreachResourceIsDefinedByIterator>
-      <biblio:foreachResourceModifiedIterator>
-         <tr><td>modified</td><td><biblio:ResourceModified /></td></tr>
-      </biblio:foreachResourceModifiedIterator>
       <biblio:foreachResourceTerm_statusIterator>
          <tr><td>term_status</td><td><biblio:ResourceTerm_status /></td></tr>
       </biblio:foreachResourceTerm_statusIterator>
-      <biblio:foreachResourceIssuedIterator>
-         <tr><td>issued</td><td><biblio:ResourceIssued /></td></tr>
-      </biblio:foreachResourceIssuedIterator>
       <biblio:foreachResourcePrefLabelIterator>
          <tr><td>prefLabel</td><td><biblio:ResourcePrefLabel /></td></tr>
       </biblio:foreachResourcePrefLabelIterator>
@@ -72,12 +66,6 @@
       <biblio:foreachResourceSeeAlsoIterator>
          <tr><td>seeAlso</td><td><biblio:ResourceSeeAlso /></td></tr>
       </biblio:foreachResourceSeeAlsoIterator>
-      <biblio:foreachResourcePreferredNamespacePrefixIterator>
-         <tr><td>preferredNamespacePrefix</td><td><biblio:ResourcePreferredNamespacePrefix /></td></tr>
-      </biblio:foreachResourcePreferredNamespacePrefixIterator>
-      <biblio:foreachResourceVersionInfoIterator>
-         <tr><td>versionInfo</td><td><biblio:ResourceVersionInfo /></td></tr>
-      </biblio:foreachResourceVersionInfoIterator>
       <biblio:foreachResourceCommentIterator>
          <tr><td>comment</td><td><biblio:ResourceComment /></td></tr>
       </biblio:foreachResourceCommentIterator>

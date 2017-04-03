@@ -64,9 +64,6 @@
       <biblio:foreachCollectionIsPartOfIterator>
          <tr><td>isPartOf</td><td><a href="../<biblio:CollectionIsPartOfType/>/<biblio:CollectionIsPartOfType/>.jsp?uri=<biblio:CollectionIsPartOf/>"><biblio:CollectionIsPartOf /></a></td></tr>
       </biblio:foreachCollectionIsPartOfIterator>
-      <biblio:foreachCollectionAbsorbedByIterator>
-         <tr><td>absorbedBy</td><td><a href="../<biblio:CollectionAbsorbedByType/>/<biblio:CollectionAbsorbedByType/>.jsp?uri=<biblio:CollectionAbsorbedBy/>"><biblio:CollectionAbsorbedBy /></a></td></tr>
-      </biblio:foreachCollectionAbsorbedByIterator>
       <biblio:foreachCollectionSupersedesIterator>
          <tr><td>supersedes</td><td><a href="../<biblio:CollectionSupersedesType/>/<biblio:CollectionSupersedesType/>.jsp?uri=<biblio:CollectionSupersedes/>"><biblio:CollectionSupersedes /></a></td></tr>
       </biblio:foreachCollectionSupersedesIterator>

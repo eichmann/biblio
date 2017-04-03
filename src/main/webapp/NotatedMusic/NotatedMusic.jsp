@@ -37,15 +37,9 @@
       <biblio:foreachNotatedMusicRelationIterator>
          <tr><td>relation</td><td><a href="../<biblio:NotatedMusicRelationType/>/<biblio:NotatedMusicRelationType/>.jsp?uri=<biblio:NotatedMusicRelation/>"><biblio:NotatedMusicRelation /></a></td></tr>
       </biblio:foreachNotatedMusicRelationIterator>
-      <biblio:foreachNotatedMusicPrecedesIterator>
-         <tr><td>precedes</td><td><a href="../<biblio:NotatedMusicPrecedesType/>/<biblio:NotatedMusicPrecedesType/>.jsp?uri=<biblio:NotatedMusicPrecedes/>"><biblio:NotatedMusicPrecedes /></a></td></tr>
-      </biblio:foreachNotatedMusicPrecedesIterator>
       <biblio:foreachNotatedMusicIdentifiedByIterator>
          <tr><td>identifiedBy</td><td><a href="../<biblio:NotatedMusicIdentifiedByType/>/<biblio:NotatedMusicIdentifiedByType/>.jsp?uri=<biblio:NotatedMusicIdentifiedBy/>"><biblio:NotatedMusicIdentifiedBy /></a></td></tr>
       </biblio:foreachNotatedMusicIdentifiedByIterator>
-      <biblio:foreachNotatedMusicAccompaniesIterator>
-         <tr><td>accompanies</td><td><a href="../<biblio:NotatedMusicAccompaniesType/>/<biblio:NotatedMusicAccompaniesType/>.jsp?uri=<biblio:NotatedMusicAccompanies/>"><biblio:NotatedMusicAccompanies /></a></td></tr>
-      </biblio:foreachNotatedMusicAccompaniesIterator>
       <biblio:foreachNotatedMusicFollowsIterator>
          <tr><td>follows</td><td><a href="../<biblio:NotatedMusicFollowsType/>/<biblio:NotatedMusicFollowsType/>.jsp?uri=<biblio:NotatedMusicFollows/>"><biblio:NotatedMusicFollows /></a></td></tr>
       </biblio:foreachNotatedMusicFollowsIterator>
@@ -64,9 +58,6 @@
       <biblio:foreachNotatedMusicIsPartOfIterator>
          <tr><td>isPartOf</td><td><a href="../<biblio:NotatedMusicIsPartOfType/>/<biblio:NotatedMusicIsPartOfType/>.jsp?uri=<biblio:NotatedMusicIsPartOf/>"><biblio:NotatedMusicIsPartOf /></a></td></tr>
       </biblio:foreachNotatedMusicIsPartOfIterator>
-      <biblio:foreachNotatedMusicSupplementsIterator>
-         <tr><td>supplements</td><td><a href="../<biblio:NotatedMusicSupplementsType/>/<biblio:NotatedMusicSupplementsType/>.jsp?uri=<biblio:NotatedMusicSupplements/>"><biblio:NotatedMusicSupplements /></a></td></tr>
-      </biblio:foreachNotatedMusicSupplementsIterator>
       <biblio:foreachNotatedMusicDerivedFromIterator>
          <tr><td>derivedFrom</td><td><a href="../<biblio:NotatedMusicDerivedFromType/>/<biblio:NotatedMusicDerivedFromType/>.jsp?uri=<biblio:NotatedMusicDerivedFrom/>"><biblio:NotatedMusicDerivedFrom /></a></td></tr>
       </biblio:foreachNotatedMusicDerivedFromIterator>
@@ -82,9 +73,6 @@
       <biblio:foreachNotatedMusicHasTitleIterator>
          <tr><td>hasTitle</td><td><a href="../<biblio:NotatedMusicHasTitleType/>/<biblio:NotatedMusicHasTitleType/>.jsp?uri=<biblio:NotatedMusicHasTitle/>"><biblio:NotatedMusicHasTitle /></a></td></tr>
       </biblio:foreachNotatedMusicHasTitleIterator>
-      <biblio:foreachNotatedMusicContinuedUnderNewTitleByIterator>
-         <tr><td>continuedUnderNewTitleBy</td><td><a href="../<biblio:NotatedMusicContinuedUnderNewTitleByType/>/<biblio:NotatedMusicContinuedUnderNewTitleByType/>.jsp?uri=<biblio:NotatedMusicContinuedUnderNewTitleBy/>"><biblio:NotatedMusicContinuedUnderNewTitleBy /></a></td></tr>
-      </biblio:foreachNotatedMusicContinuedUnderNewTitleByIterator>
       <biblio:foreachNotatedMusicHasOriginalVersionIterator>
          <tr><td>hasOriginalVersion</td><td><a href="../<biblio:NotatedMusicHasOriginalVersionType/>/<biblio:NotatedMusicHasOriginalVersionType/>.jsp?uri=<biblio:NotatedMusicHasOriginalVersion/>"><biblio:NotatedMusicHasOriginalVersion /></a></td></tr>
       </biblio:foreachNotatedMusicHasOriginalVersionIterator>

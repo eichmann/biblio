@@ -30,9 +30,6 @@
       <biblio:foreachAnnotationPropertyDefinitionIterator>
          <tr><td>definition</td><td><biblio:AnnotationPropertyDefinition /></td></tr>
       </biblio:foreachAnnotationPropertyDefinitionIterator>
-      <biblio:foreachAnnotationPropertyTerm_statusIterator>
-         <tr><td>term_status</td><td><biblio:AnnotationPropertyTerm_status /></td></tr>
-      </biblio:foreachAnnotationPropertyTerm_statusIterator>
       <biblio:foreachAnnotationPropertyLabelIterator>
          <tr><td>label</td><td><biblio:AnnotationPropertyLabel /></td></tr>
       </biblio:foreachAnnotationPropertyLabelIterator>
@@ -42,9 +39,6 @@
       <biblio:foreachAnnotationPropertySeeAlsoIterator>
          <tr><td>seeAlso</td><td><biblio:AnnotationPropertySeeAlso /></td></tr>
       </biblio:foreachAnnotationPropertySeeAlsoIterator>
-      <biblio:foreachAnnotationPropertyCommentIterator>
-         <tr><td>comment</td><td><biblio:AnnotationPropertyComment /></td></tr>
-      </biblio:foreachAnnotationPropertyCommentIterator>
    </table>
 
    <h3>Object Properties</h3>
