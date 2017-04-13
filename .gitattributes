@@ -259,6 +259,7 @@ src/main/webapp/graphs/ontology.json -text
 src/main/webapp/graphs/ontology.jsp -text
 src/main/webapp/header.jsp -text
 src/main/webapp/images/bullet-l1.gif -text
+src/main/webapp/images/leo.png -text
 src/main/webapp/index.jsp -text
 src/main/webapp/menu.jsp -text
 src/main/webapp/resources/style.css -text

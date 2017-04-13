@@ -9,7 +9,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Work - http://bib.ld4l.org/ontology/Work</title>
 <style type="text/css" media="all">
-@import "/biblio/resources/style.css";
+@import "<util:applicationRoot/>/resources/style.css";
 </style>
 </head>
 <body>

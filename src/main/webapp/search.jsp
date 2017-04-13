@@ -10,7 +10,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Ontology Generator 1.0</title>
 <style type="text/css" media="all">
-@import "/biblio/resources/style.css";
+@import "<util:applicationRoot/>/resources/style.css";
 </style>
 </head>
 <body>

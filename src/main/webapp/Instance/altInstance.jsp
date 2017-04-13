@@ -8,11 +8,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Instance - http://bib.ld4l.org/ontology/Instance</title>
-<style type="text/css" media="all">    @import "/biblio/resources/style.css";</style></head>
+<style type="text/css" media="all">    @import "<util:applicationRoot/>/resources/style.css";</style></head>
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="Instance.jsp?uri=${param.uri}">generated view</a></p>
    <p><a href="../utility/sparqlDump.jsp?type=Instance&uri=${param.uri}">RDF dump</a></p>
+   <c:set var="site"><util:applicationName></util:applicationName></c:set>
    <biblio:Instance subjectURI="${param.uri}">
       <biblio:foreachInstanceHasTitleIterator>
          <h2><biblio:Title><biblio:TitleLabel/></biblio:Title></h2>
@@ -41,7 +42,17 @@
 
       <biblio:foreachInstanceIdentifiedByIterator classFilter="Identifier">
         <biblio:Identifier>
-         <p><b>Stanford Catalog:</b> <a href="https://searchworks.stanford.edu/view/<biblio:IdentifierLabel/>"><biblio:IdentifierLabel/></a>
+	        <c:choose>
+	        <c:when test="${site == 'cornell'}">
+	             <p><b>Cornell Catalog:</b> <a href="https://newcatalog.library.cornell.edu/catalog/<biblio:IdentifierLabel/>"><biblio:IdentifierLabel/></a>
+	        </c:when>
+	        <c:when test="${site == 'harvard'}">
+	             <p><b>Harvard Catalog:</b> <a href="http://id.lib.harvard.edu/aleph/<biblio:IdentifierLabel/>/catalog"><biblio:IdentifierLabel/></a>
+	        </c:when>
+	        <c:when test="${site == 'stanford'}">
+	             <p><b>Stanford Catalog:</b> <a href="https://searchworks.stanford.edu/view/<biblio:IdentifierLabel/>"><biblio:IdentifierLabel/></a>
+	        </c:when>
+	        </c:choose>
         </biblio:Identifier>
       </biblio:foreachInstanceIdentifiedByIterator>
       <biblio:foreachInstanceIdentifiedByIterator classFilter="OclcIdentifier">

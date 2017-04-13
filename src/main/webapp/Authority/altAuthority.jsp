@@ -9,7 +9,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Authority - http://www.loc.gov/mads/rdf/v1#Authority</title>
 <style type="text/css" media="all">
-@import "/biblio/resources/style.css";
+@import "<util:applicationRoot/>/resources/style.css";
 </style>
 </head>
 <body>
