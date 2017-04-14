@@ -11,7 +11,12 @@
 <style type="text/css" media="all">    @import "<util:applicationRoot/>/resources/style.css";</style></head>
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
-<h3><a href="Person/PersonList.jsp">Person List</a></h3>
+<c:catch var="exception">
+    <jsp:include page="local_index.jsp"/>
+</c:catch>
+<c:if test="${exception != null}">
+    Default message for the index page. Create a local_index.jsp to customize this application's home page.
+</c:if>
 
 <jsp:include page="/footer.jsp" flush="true" /></div></div></body>
 </html>
