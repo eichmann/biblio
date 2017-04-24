@@ -28,6 +28,7 @@
 						Title:
 						<biblio:Title>
 							<biblio:TitleLabel />
+							<c:set var="title"><biblio:TitleLabel /></c:set>
 						</biblio:Title>
 					</h2>
 				</biblio:foreachWorkHasTitleIterator>
@@ -36,6 +37,13 @@
 						Monograph</a>
 				<p>
 					<a href="../Text/Text.jsp?uri=${param.uri}">as Text</a>
+                <p/>
+                <c:url var="encodedURL" value="http://localhost:8081/viaf/search.jsp">
+                    <c:param name="mode" value="work"/>
+                    <c:param name="query" value="${title}"/>
+                </c:url>
+                <b><a href="${encodedURL}">Possible VIAF Records</a></b>
+
 					<biblio:foreachWorkHasContributionIterator>
 						<p>
 							<b>Contribution:</b> <a

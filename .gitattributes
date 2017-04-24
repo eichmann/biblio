@@ -262,6 +262,8 @@ src/main/webapp/images/bullet-l1.gif -text
 src/main/webapp/images/leo.png -text
 src/main/webapp/index.jsp -text
 src/main/webapp/local_index.jsp -text
+src/main/webapp/local_menu_end.jsp -text
+src/main/webapp/local_menu_home.jsp -text
 src/main/webapp/menu.jsp -text
 src/main/webapp/resources/style.css -text
 src/main/webapp/search.jsp -text
