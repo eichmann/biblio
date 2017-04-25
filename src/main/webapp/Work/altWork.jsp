@@ -38,11 +38,12 @@
 				<p>
 					<a href="../Text/Text.jsp?uri=${param.uri}">as Text</a>
                 <p/>
-                <c:url var="encodedURL" value="http://localhost:8081/viaf/search.jsp">
+                <h2>Possible VIAF Records</h2>
+                <c:url var="encodedURL" value="http://guardian.slis.uiowa.edu:8080/viaf/embedded_search.jsp">
                     <c:param name="mode" value="work"/>
                     <c:param name="query" value="${title}"/>
                 </c:url>
-                <b><a href="${encodedURL}">Possible VIAF Records</a></b>
+                <c:import url="${encodedURL}"/>
 
 					<biblio:foreachWorkHasContributionIterator>
 						<p>

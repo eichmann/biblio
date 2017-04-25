@@ -39,14 +39,15 @@
 						<biblio:PersonDeathDate />
 				</biblio:foreachPersonDeathDateIterator>
 
-                <c:url var="encodedURL" value="http://localhost:8081/viaf/search.jsp">
+                <h2>Possible VIAF Records</h2>
+                <c:url var="encodedURL" value="http://localhost:8080/viaf/embedded_search.jsp">
                     <c:param name="mode" value="person"/>
                     <c:param name="query"><biblio:PersonLabel /></c:param>
                 </c:url>
-                <h3><a href="${encodedURL}">Possible VIAF Records</a></h3><p/>
+                <c:import url="${encodedURL}"/>
 
 				<h2>Works</h2>
-				<ul>
+				<ol class="bulletedList">
 					<biblio:foreachPersonAgentInverseIterator>
 						<c:set var="work">
 							<biblio:PersonAgentInverse />
@@ -65,9 +66,9 @@
 						</biblio:Contribution>
 
 					</biblio:foreachPersonAgentInverseIterator>
-				</ul>
+				</ol>
 				<h2>Subject Of:</h2>
-				<ul>
+				<ol class="bulletedList">
 					<biblio:foreachPersonIsSubjectOfIterator>
 						<biblio:Work>
 							<biblio:foreachWorkHasTitleIterator>
@@ -78,7 +79,7 @@
 							</biblio:foreachWorkHasTitleIterator>
 						</biblio:Work>
 					</biblio:foreachPersonIsSubjectOfIterator>
-				</ul>
+				</ol>
 			</biblio:Person>
 
 			<jsp:include page="/footer.jsp" flush="true" /></div>
