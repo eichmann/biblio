@@ -14,6 +14,7 @@
     <li><a href="/stanford/">Stanford Catalog</a>
     </c:if>
     <li><a href="/fast/">FAST</a>
+    <li><a href="/geonames/">GeoNames</a>
     <li><a href="/grid/">GRID</a>
     <li><a href="/viaf/">VIAF</a>
 </ul>
