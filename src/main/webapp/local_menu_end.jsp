@@ -13,6 +13,7 @@
     <c:if test="${applicationName != 'stanford' }">
     <li><a href="/stanford/">Stanford Catalog</a>
     </c:if>
+    <li><a href="/dbpedia/">DBpedia</a>
     <li><a href="/fast/">FAST</a>
     <li><a href="/geonames/">GeoNames</a>
     <li><a href="/grid/">GRID</a>
