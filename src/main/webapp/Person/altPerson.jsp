@@ -40,11 +40,16 @@
 				</biblio:foreachPersonDeathDateIterator>
 
                 <h2>Possible VIAF Records</h2>
-                <c:url var="encodedURL" value="http://localhost:8080/viaf/embedded_search.jsp">
+                <c:url var="encodedURL" value="http://services.ld4l.org/viaf/embedded_search.jsp">
                     <c:param name="mode" value="person"/>
                     <c:param name="query"><biblio:PersonLabel /></c:param>
                 </c:url>
-                <c:import url="${encodedURL}"/>
+                <c:catch var="viaf_result">
+                    <c:import url="${encodedURL}"/>
+                </c:catch>
+                <c:if test="${not empty viaf_result}">
+                    The VIAF server is currently unavailable.<p>
+                </c:if>
 
 				<h2>Works</h2>
 				<ol class="bulletedList">
