@@ -188,6 +188,8 @@ src/main/webapp/PerformerContribution/PerformerContributionList.jsp -text
 src/main/webapp/Person/Person.jsp -text
 src/main/webapp/Person/PersonList.jsp -text
 src/main/webapp/Person/altPerson.jsp -text
+src/main/webapp/Person/linkPerson.jsp -text
+src/main/webapp/Person/unlinkPerson.jsp -text
 src/main/webapp/PostalRegistrationNumber/PostalRegistrationNumber.jsp -text
 src/main/webapp/PostalRegistrationNumber/PostalRegistrationNumberList.jsp -text
 src/main/webapp/Property/Property.jsp -text

@@ -110,6 +110,21 @@
         	<artifactId>LuceneTagLib</artifactId>
         	<version>0.0.8-SNAPSHOT</version>
         </dependency>
+        <dependency>
+        	<groupId>org.postgresql</groupId>
+        	<artifactId>postgresql</artifactId>
+        	<version>9.3-1102-jdbc4</version>
+        </dependency>
+        <dependency>
+        	<groupId>VIAFTagLib</groupId>
+        	<artifactId>VIAFTagLib</artifactId>
+        	<version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+        	<groupId>DBpediaTagLib</groupId>
+        	<artifactId>DBpediaTagLib</artifactId>
+        	<version>0.0.1-SNAPSHOT</version>
+        </dependency>
   </dependencies>
   <build>
   	<plugins>
