@@ -32,7 +32,17 @@
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachVideoRecordingNumberIdentifiesIterator>
-         <tr><td>identifies</td><td><a href="../<biblio:VideoRecordingNumberIdentifiesType/>/<biblio:VideoRecordingNumberIdentifiesType/>.jsp?uri=<biblio:VideoRecordingNumberIdentifies/>"><biblio:VideoRecordingNumberIdentifies /></a></td></tr>
+         <tr><td>identifies</td><td>
+            <c:set var="localType"><biblio:VideoRecordingNumberIdentifiesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:VideoRecordingNumberIdentifies/>"><biblio:VideoRecordingNumberIdentifies/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:VideoRecordingNumberIdentifiesType/>/<biblio:VideoRecordingNumberIdentifiesType/>.jsp?uri=<biblio:VideoRecordingNumberIdentifies/>"><biblio:VideoRecordingNumberIdentifies /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachVideoRecordingNumberIdentifiesIterator>
    </table>
 

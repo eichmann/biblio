@@ -27,18 +27,51 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
+      <biblio:foreachFamilyNameIterator>
+         <tr><td>name</td><td><biblio:FamilyName /></td></tr>
+      </biblio:foreachFamilyNameIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachFamilyIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:FamilyIdentifiedByType/>/<biblio:FamilyIdentifiedByType/>.jsp?uri=<biblio:FamilyIdentifiedBy/>"><biblio:FamilyIdentifiedBy /></a></td></tr>
+         <tr><td>identifiedBy</td><td>
+            <c:set var="localType"><biblio:FamilyIdentifiedByType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FamilyIdentifiedBy/>"><biblio:FamilyIdentifiedBy/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FamilyIdentifiedByType/>/<biblio:FamilyIdentifiedByType/>.jsp?uri=<biblio:FamilyIdentifiedBy/>"><biblio:FamilyIdentifiedBy /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFamilyIdentifiedByIterator>
       <biblio:foreachFamilyIsSubjectOfIterator>
-         <tr><td>isSubjectOf</td><td><a href="../<biblio:FamilyIsSubjectOfType/>/<biblio:FamilyIsSubjectOfType/>.jsp?uri=<biblio:FamilyIsSubjectOf/>"><biblio:FamilyIsSubjectOf /></a></td></tr>
+         <tr><td>isSubjectOf</td><td>
+            <c:set var="localType"><biblio:FamilyIsSubjectOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FamilyIsSubjectOf/>"><biblio:FamilyIsSubjectOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FamilyIsSubjectOfType/>/<biblio:FamilyIsSubjectOfType/>.jsp?uri=<biblio:FamilyIsSubjectOf/>"><biblio:FamilyIsSubjectOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFamilyIsSubjectOfIterator>
       <biblio:foreachFamilyIsPartOfIterator>
-         <tr><td>isPartOf</td><td><a href="../<biblio:FamilyIsPartOfType/>/<biblio:FamilyIsPartOfType/>.jsp?uri=<biblio:FamilyIsPartOf/>"><biblio:FamilyIsPartOf /></a></td></tr>
+         <tr><td>isPartOf</td><td>
+            <c:set var="localType"><biblio:FamilyIsPartOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FamilyIsPartOf/>"><biblio:FamilyIsPartOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FamilyIsPartOfType/>/<biblio:FamilyIsPartOfType/>.jsp?uri=<biblio:FamilyIsPartOf/>"><biblio:FamilyIsPartOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFamilyIsPartOfIterator>
    </table>
 

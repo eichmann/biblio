@@ -32,7 +32,17 @@
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachSubTitleElementIsPartOfIterator>
-         <tr><td>isPartOf</td><td><a href="../<biblio:SubTitleElementIsPartOfType/>/<biblio:SubTitleElementIsPartOfType/>.jsp?uri=<biblio:SubTitleElementIsPartOf/>"><biblio:SubTitleElementIsPartOf /></a></td></tr>
+         <tr><td>isPartOf</td><td>
+            <c:set var="localType"><biblio:SubTitleElementIsPartOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:SubTitleElementIsPartOf/>"><biblio:SubTitleElementIsPartOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:SubTitleElementIsPartOfType/>/<biblio:SubTitleElementIsPartOfType/>.jsp?uri=<biblio:SubTitleElementIsPartOf/>"><biblio:SubTitleElementIsPartOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachSubTitleElementIsPartOfIterator>
    </table>
 

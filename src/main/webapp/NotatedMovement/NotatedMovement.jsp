@@ -32,22 +32,108 @@
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachNotatedMovementSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:NotatedMovementSubjectType/>/<biblio:NotatedMovementSubjectType/>.jsp?uri=<biblio:NotatedMovementSubject/>"><biblio:NotatedMovementSubject /></a></td></tr>
+         <tr><td>subject</td><td>
+            <c:set var="localType"><biblio:NotatedMovementSubjectType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:NotatedMovementSubject/>"><biblio:NotatedMovementSubject/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:NotatedMovementSubjectType/>/<biblio:NotatedMovementSubjectType/>.jsp?uri=<biblio:NotatedMovementSubject/>"><biblio:NotatedMovementSubject /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachNotatedMovementSubjectIterator>
+      <biblio:foreachNotatedMovementRelationIterator>
+         <tr><td>relation</td><td>
+            <c:set var="localType"><biblio:NotatedMovementRelationType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:NotatedMovementRelation/>"><biblio:NotatedMovementRelation/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:NotatedMovementRelationType/>/<biblio:NotatedMovementRelationType/>.jsp?uri=<biblio:NotatedMovementRelation/>"><biblio:NotatedMovementRelation /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
+      </biblio:foreachNotatedMovementRelationIterator>
+      <biblio:foreachNotatedMovementHasPartIterator>
+         <tr><td>hasPart</td><td>
+            <c:set var="localType"><biblio:NotatedMovementHasPartType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:NotatedMovementHasPart/>"><biblio:NotatedMovementHasPart/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:NotatedMovementHasPartType/>/<biblio:NotatedMovementHasPartType/>.jsp?uri=<biblio:NotatedMovementHasPart/>"><biblio:NotatedMovementHasPart /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
+      </biblio:foreachNotatedMovementHasPartIterator>
       <biblio:foreachNotatedMovementLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:NotatedMovementLanguageType/>/<biblio:NotatedMovementLanguageType/>.jsp?uri=<biblio:NotatedMovementLanguage/>"><biblio:NotatedMovementLanguage /></a></td></tr>
+         <tr><td>language</td><td>
+            <c:set var="localType"><biblio:NotatedMovementLanguageType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:NotatedMovementLanguage/>"><biblio:NotatedMovementLanguage/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:NotatedMovementLanguageType/>/<biblio:NotatedMovementLanguageType/>.jsp?uri=<biblio:NotatedMovementLanguage/>"><biblio:NotatedMovementLanguage /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachNotatedMovementLanguageIterator>
       <biblio:foreachNotatedMovementHasAnnotationIterator>
-         <tr><td>hasAnnotation</td><td><a href="../<biblio:NotatedMovementHasAnnotationType/>/<biblio:NotatedMovementHasAnnotationType/>.jsp?uri=<biblio:NotatedMovementHasAnnotation/>"><biblio:NotatedMovementHasAnnotation /></a></td></tr>
+         <tr><td>hasAnnotation</td><td>
+            <c:set var="localType"><biblio:NotatedMovementHasAnnotationType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:NotatedMovementHasAnnotation/>"><biblio:NotatedMovementHasAnnotation/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:NotatedMovementHasAnnotationType/>/<biblio:NotatedMovementHasAnnotationType/>.jsp?uri=<biblio:NotatedMovementHasAnnotation/>"><biblio:NotatedMovementHasAnnotation /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachNotatedMovementHasAnnotationIterator>
       <biblio:foreachNotatedMovementHasContributionIterator>
-         <tr><td>hasContribution</td><td><a href="../<biblio:NotatedMovementHasContributionType/>/<biblio:NotatedMovementHasContributionType/>.jsp?uri=<biblio:NotatedMovementHasContribution/>"><biblio:NotatedMovementHasContribution /></a></td></tr>
+         <tr><td>hasContribution</td><td>
+            <c:set var="localType"><biblio:NotatedMovementHasContributionType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:NotatedMovementHasContribution/>"><biblio:NotatedMovementHasContribution/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:NotatedMovementHasContributionType/>/<biblio:NotatedMovementHasContributionType/>.jsp?uri=<biblio:NotatedMovementHasContribution/>"><biblio:NotatedMovementHasContribution /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachNotatedMovementHasContributionIterator>
       <biblio:foreachNotatedMovementHasInstanceIterator>
-         <tr><td>hasInstance</td><td><a href="../<biblio:NotatedMovementHasInstanceType/>/<biblio:NotatedMovementHasInstanceType/>.jsp?uri=<biblio:NotatedMovementHasInstance/>"><biblio:NotatedMovementHasInstance /></a></td></tr>
+         <tr><td>hasInstance</td><td>
+            <c:set var="localType"><biblio:NotatedMovementHasInstanceType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:NotatedMovementHasInstance/>"><biblio:NotatedMovementHasInstance/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:NotatedMovementHasInstanceType/>/<biblio:NotatedMovementHasInstanceType/>.jsp?uri=<biblio:NotatedMovementHasInstance/>"><biblio:NotatedMovementHasInstance /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachNotatedMovementHasInstanceIterator>
       <biblio:foreachNotatedMovementHasTitleIterator>
-         <tr><td>hasTitle</td><td><a href="../<biblio:NotatedMovementHasTitleType/>/<biblio:NotatedMovementHasTitleType/>.jsp?uri=<biblio:NotatedMovementHasTitle/>"><biblio:NotatedMovementHasTitle /></a></td></tr>
+         <tr><td>hasTitle</td><td>
+            <c:set var="localType"><biblio:NotatedMovementHasTitleType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:NotatedMovementHasTitle/>"><biblio:NotatedMovementHasTitle/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:NotatedMovementHasTitleType/>/<biblio:NotatedMovementHasTitleType/>.jsp?uri=<biblio:NotatedMovementHasTitle/>"><biblio:NotatedMovementHasTitle /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachNotatedMovementHasTitleIterator>
    </table>
 

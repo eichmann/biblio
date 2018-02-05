@@ -36,6 +36,9 @@
       <biblio:foreachPropertyNoteIterator>
          <tr><td>note</td><td><biblio:PropertyNote /></td></tr>
       </biblio:foreachPropertyNoteIterator>
+      <biblio:foreachPropertyTerm_statusIterator>
+         <tr><td>term_status</td><td><biblio:PropertyTerm_status /></td></tr>
+      </biblio:foreachPropertyTerm_statusIterator>
       <biblio:foreachPropertyScopeNoteIterator>
          <tr><td>scopeNote</td><td><biblio:PropertyScopeNote /></td></tr>
       </biblio:foreachPropertyScopeNoteIterator>

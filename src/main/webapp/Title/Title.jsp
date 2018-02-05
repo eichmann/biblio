@@ -30,18 +30,51 @@
       <biblio:foreachTitleDateIterator>
          <tr><td>date</td><td><biblio:TitleDate /></td></tr>
       </biblio:foreachTitleDateIterator>
+      <biblio:foreachTitleNameIterator>
+         <tr><td>name</td><td><biblio:TitleName /></td></tr>
+      </biblio:foreachTitleNameIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachTitleHasSourceStatusIterator>
-         <tr><td>hasSourceStatus</td><td><a href="../<biblio:TitleHasSourceStatusType/>/<biblio:TitleHasSourceStatusType/>.jsp?uri=<biblio:TitleHasSourceStatus/>"><biblio:TitleHasSourceStatus /></a></td></tr>
+         <tr><td>hasSourceStatus</td><td>
+            <c:set var="localType"><biblio:TitleHasSourceStatusType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:TitleHasSourceStatus/>"><biblio:TitleHasSourceStatus/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:TitleHasSourceStatusType/>/<biblio:TitleHasSourceStatusType/>.jsp?uri=<biblio:TitleHasSourceStatus/>"><biblio:TitleHasSourceStatus /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachTitleHasSourceStatusIterator>
       <biblio:foreachTitleIsTitleOfIterator>
-         <tr><td>isTitleOf</td><td><a href="../<biblio:TitleIsTitleOfType/>/<biblio:TitleIsTitleOfType/>.jsp?uri=<biblio:TitleIsTitleOf/>"><biblio:TitleIsTitleOf /></a></td></tr>
+         <tr><td>isTitleOf</td><td>
+            <c:set var="localType"><biblio:TitleIsTitleOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:TitleIsTitleOf/>"><biblio:TitleIsTitleOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:TitleIsTitleOfType/>/<biblio:TitleIsTitleOfType/>.jsp?uri=<biblio:TitleIsTitleOf/>"><biblio:TitleIsTitleOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachTitleIsTitleOfIterator>
       <biblio:foreachTitleHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:TitleHasPartType/>/<biblio:TitleHasPartType/>.jsp?uri=<biblio:TitleHasPart/>"><biblio:TitleHasPart /></a></td></tr>
+         <tr><td>hasPart</td><td>
+            <c:set var="localType"><biblio:TitleHasPartType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:TitleHasPart/>"><biblio:TitleHasPart/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:TitleHasPartType/>/<biblio:TitleHasPartType/>.jsp?uri=<biblio:TitleHasPart/>"><biblio:TitleHasPart /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachTitleHasPartIterator>
    </table>
 

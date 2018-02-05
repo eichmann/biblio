@@ -27,90 +27,363 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
+      <biblio:foreachSerialNameIterator>
+         <tr><td>name</td><td><biblio:SerialName /></td></tr>
+      </biblio:foreachSerialNameIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachSerialSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:SerialSubjectType/>/<biblio:SerialSubjectType/>.jsp?uri=<biblio:SerialSubject/>"><biblio:SerialSubject /></a></td></tr>
+         <tr><td>subject</td><td>
+            <c:set var="localType"><biblio:SerialSubjectType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:SerialSubject/>"><biblio:SerialSubject/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:SerialSubjectType/>/<biblio:SerialSubjectType/>.jsp?uri=<biblio:SerialSubject/>"><biblio:SerialSubject /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachSerialSubjectIterator>
       <biblio:foreachSerialRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:SerialRelationType/>/<biblio:SerialRelationType/>.jsp?uri=<biblio:SerialRelation/>"><biblio:SerialRelation /></a></td></tr>
+         <tr><td>relation</td><td>
+            <c:set var="localType"><biblio:SerialRelationType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:SerialRelation/>"><biblio:SerialRelation/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:SerialRelationType/>/<biblio:SerialRelationType/>.jsp?uri=<biblio:SerialRelation/>"><biblio:SerialRelation /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachSerialRelationIterator>
       <biblio:foreachSerialAccompaniedByIterator>
-         <tr><td>accompaniedBy</td><td><a href="../<biblio:SerialAccompaniedByType/>/<biblio:SerialAccompaniedByType/>.jsp?uri=<biblio:SerialAccompaniedBy/>"><biblio:SerialAccompaniedBy /></a></td></tr>
+         <tr><td>accompaniedBy</td><td>
+            <c:set var="localType"><biblio:SerialAccompaniedByType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:SerialAccompaniedBy/>"><biblio:SerialAccompaniedBy/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:SerialAccompaniedByType/>/<biblio:SerialAccompaniedByType/>.jsp?uri=<biblio:SerialAccompaniedBy/>"><biblio:SerialAccompaniedBy /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachSerialAccompaniedByIterator>
       <biblio:foreachSerialPrecedesIterator>
-         <tr><td>precedes</td><td><a href="../<biblio:SerialPrecedesType/>/<biblio:SerialPrecedesType/>.jsp?uri=<biblio:SerialPrecedes/>"><biblio:SerialPrecedes /></a></td></tr>
+         <tr><td>precedes</td><td>
+            <c:set var="localType"><biblio:SerialPrecedesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:SerialPrecedes/>"><biblio:SerialPrecedes/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:SerialPrecedesType/>/<biblio:SerialPrecedesType/>.jsp?uri=<biblio:SerialPrecedes/>"><biblio:SerialPrecedes /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachSerialPrecedesIterator>
       <biblio:foreachSerialIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:SerialIdentifiedByType/>/<biblio:SerialIdentifiedByType/>.jsp?uri=<biblio:SerialIdentifiedBy/>"><biblio:SerialIdentifiedBy /></a></td></tr>
+         <tr><td>identifiedBy</td><td>
+            <c:set var="localType"><biblio:SerialIdentifiedByType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:SerialIdentifiedBy/>"><biblio:SerialIdentifiedBy/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:SerialIdentifiedByType/>/<biblio:SerialIdentifiedByType/>.jsp?uri=<biblio:SerialIdentifiedBy/>"><biblio:SerialIdentifiedBy /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachSerialIdentifiedByIterator>
       <biblio:foreachSerialAccompaniesIterator>
-         <tr><td>accompanies</td><td><a href="../<biblio:SerialAccompaniesType/>/<biblio:SerialAccompaniesType/>.jsp?uri=<biblio:SerialAccompanies/>"><biblio:SerialAccompanies /></a></td></tr>
+         <tr><td>accompanies</td><td>
+            <c:set var="localType"><biblio:SerialAccompaniesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:SerialAccompanies/>"><biblio:SerialAccompanies/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:SerialAccompaniesType/>/<biblio:SerialAccompaniesType/>.jsp?uri=<biblio:SerialAccompanies/>"><biblio:SerialAccompanies /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachSerialAccompaniesIterator>
       <biblio:foreachSerialFollowsIterator>
-         <tr><td>follows</td><td><a href="../<biblio:SerialFollowsType/>/<biblio:SerialFollowsType/>.jsp?uri=<biblio:SerialFollows/>"><biblio:SerialFollows /></a></td></tr>
+         <tr><td>follows</td><td>
+            <c:set var="localType"><biblio:SerialFollowsType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:SerialFollows/>"><biblio:SerialFollows/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:SerialFollowsType/>/<biblio:SerialFollowsType/>.jsp?uri=<biblio:SerialFollows/>"><biblio:SerialFollows /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachSerialFollowsIterator>
       <biblio:foreachSerialHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:SerialHasPartType/>/<biblio:SerialHasPartType/>.jsp?uri=<biblio:SerialHasPart/>"><biblio:SerialHasPart /></a></td></tr>
+         <tr><td>hasPart</td><td>
+            <c:set var="localType"><biblio:SerialHasPartType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:SerialHasPart/>"><biblio:SerialHasPart/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:SerialHasPartType/>/<biblio:SerialHasPartType/>.jsp?uri=<biblio:SerialHasPart/>"><biblio:SerialHasPart /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachSerialHasPartIterator>
       <biblio:foreachSerialLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:SerialLanguageType/>/<biblio:SerialLanguageType/>.jsp?uri=<biblio:SerialLanguage/>"><biblio:SerialLanguage /></a></td></tr>
+         <tr><td>language</td><td>
+            <c:set var="localType"><biblio:SerialLanguageType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:SerialLanguage/>"><biblio:SerialLanguage/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:SerialLanguageType/>/<biblio:SerialLanguageType/>.jsp?uri=<biblio:SerialLanguage/>"><biblio:SerialLanguage /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachSerialLanguageIterator>
       <biblio:foreachSerialHasAnnotationIterator>
-         <tr><td>hasAnnotation</td><td><a href="../<biblio:SerialHasAnnotationType/>/<biblio:SerialHasAnnotationType/>.jsp?uri=<biblio:SerialHasAnnotation/>"><biblio:SerialHasAnnotation /></a></td></tr>
+         <tr><td>hasAnnotation</td><td>
+            <c:set var="localType"><biblio:SerialHasAnnotationType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:SerialHasAnnotation/>"><biblio:SerialHasAnnotation/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:SerialHasAnnotationType/>/<biblio:SerialHasAnnotationType/>.jsp?uri=<biblio:SerialHasAnnotation/>"><biblio:SerialHasAnnotation /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachSerialHasAnnotationIterator>
       <biblio:foreachSerialIsPartOfIterator>
-         <tr><td>isPartOf</td><td><a href="../<biblio:SerialIsPartOfType/>/<biblio:SerialIsPartOfType/>.jsp?uri=<biblio:SerialIsPartOf/>"><biblio:SerialIsPartOf /></a></td></tr>
+         <tr><td>isPartOf</td><td>
+            <c:set var="localType"><biblio:SerialIsPartOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:SerialIsPartOf/>"><biblio:SerialIsPartOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:SerialIsPartOfType/>/<biblio:SerialIsPartOfType/>.jsp?uri=<biblio:SerialIsPartOf/>"><biblio:SerialIsPartOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachSerialIsPartOfIterator>
       <biblio:foreachSerialSupplementsIterator>
-         <tr><td>supplements</td><td><a href="../<biblio:SerialSupplementsType/>/<biblio:SerialSupplementsType/>.jsp?uri=<biblio:SerialSupplements/>"><biblio:SerialSupplements /></a></td></tr>
+         <tr><td>supplements</td><td>
+            <c:set var="localType"><biblio:SerialSupplementsType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:SerialSupplements/>"><biblio:SerialSupplements/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:SerialSupplementsType/>/<biblio:SerialSupplementsType/>.jsp?uri=<biblio:SerialSupplements/>"><biblio:SerialSupplements /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachSerialSupplementsIterator>
       <biblio:foreachSerialAbsorbedByIterator>
-         <tr><td>absorbedBy</td><td><a href="../<biblio:SerialAbsorbedByType/>/<biblio:SerialAbsorbedByType/>.jsp?uri=<biblio:SerialAbsorbedBy/>"><biblio:SerialAbsorbedBy /></a></td></tr>
+         <tr><td>absorbedBy</td><td>
+            <c:set var="localType"><biblio:SerialAbsorbedByType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:SerialAbsorbedBy/>"><biblio:SerialAbsorbedBy/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:SerialAbsorbedByType/>/<biblio:SerialAbsorbedByType/>.jsp?uri=<biblio:SerialAbsorbedBy/>"><biblio:SerialAbsorbedBy /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachSerialAbsorbedByIterator>
       <biblio:foreachSerialSupersedesIterator>
-         <tr><td>supersedes</td><td><a href="../<biblio:SerialSupersedesType/>/<biblio:SerialSupersedesType/>.jsp?uri=<biblio:SerialSupersedes/>"><biblio:SerialSupersedes /></a></td></tr>
+         <tr><td>supersedes</td><td>
+            <c:set var="localType"><biblio:SerialSupersedesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:SerialSupersedes/>"><biblio:SerialSupersedes/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:SerialSupersedesType/>/<biblio:SerialSupersedesType/>.jsp?uri=<biblio:SerialSupersedes/>"><biblio:SerialSupersedes /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachSerialSupersedesIterator>
       <biblio:foreachSerialSupersededByIterator>
-         <tr><td>supersededBy</td><td><a href="../<biblio:SerialSupersededByType/>/<biblio:SerialSupersededByType/>.jsp?uri=<biblio:SerialSupersededBy/>"><biblio:SerialSupersededBy /></a></td></tr>
+         <tr><td>supersededBy</td><td>
+            <c:set var="localType"><biblio:SerialSupersededByType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:SerialSupersededBy/>"><biblio:SerialSupersededBy/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:SerialSupersededByType/>/<biblio:SerialSupersededByType/>.jsp?uri=<biblio:SerialSupersededBy/>"><biblio:SerialSupersededBy /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachSerialSupersededByIterator>
       <biblio:foreachSerialDerivedFromIterator>
-         <tr><td>derivedFrom</td><td><a href="../<biblio:SerialDerivedFromType/>/<biblio:SerialDerivedFromType/>.jsp?uri=<biblio:SerialDerivedFrom/>"><biblio:SerialDerivedFrom /></a></td></tr>
+         <tr><td>derivedFrom</td><td>
+            <c:set var="localType"><biblio:SerialDerivedFromType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:SerialDerivedFrom/>"><biblio:SerialDerivedFrom/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:SerialDerivedFromType/>/<biblio:SerialDerivedFromType/>.jsp?uri=<biblio:SerialDerivedFrom/>"><biblio:SerialDerivedFrom /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachSerialDerivedFromIterator>
       <biblio:foreachSerialHasDerivativeIterator>
-         <tr><td>hasDerivative</td><td><a href="../<biblio:SerialHasDerivativeType/>/<biblio:SerialHasDerivativeType/>.jsp?uri=<biblio:SerialHasDerivative/>"><biblio:SerialHasDerivative /></a></td></tr>
+         <tr><td>hasDerivative</td><td>
+            <c:set var="localType"><biblio:SerialHasDerivativeType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:SerialHasDerivative/>"><biblio:SerialHasDerivative/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:SerialHasDerivativeType/>/<biblio:SerialHasDerivativeType/>.jsp?uri=<biblio:SerialHasDerivative/>"><biblio:SerialHasDerivative /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachSerialHasDerivativeIterator>
       <biblio:foreachSerialHasAbsorbedIterator>
-         <tr><td>hasAbsorbed</td><td><a href="../<biblio:SerialHasAbsorbedType/>/<biblio:SerialHasAbsorbedType/>.jsp?uri=<biblio:SerialHasAbsorbed/>"><biblio:SerialHasAbsorbed /></a></td></tr>
+         <tr><td>hasAbsorbed</td><td>
+            <c:set var="localType"><biblio:SerialHasAbsorbedType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:SerialHasAbsorbed/>"><biblio:SerialHasAbsorbed/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:SerialHasAbsorbedType/>/<biblio:SerialHasAbsorbedType/>.jsp?uri=<biblio:SerialHasAbsorbed/>"><biblio:SerialHasAbsorbed /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachSerialHasAbsorbedIterator>
       <biblio:foreachSerialHasSupplementIterator>
-         <tr><td>hasSupplement</td><td><a href="../<biblio:SerialHasSupplementType/>/<biblio:SerialHasSupplementType/>.jsp?uri=<biblio:SerialHasSupplement/>"><biblio:SerialHasSupplement /></a></td></tr>
+         <tr><td>hasSupplement</td><td>
+            <c:set var="localType"><biblio:SerialHasSupplementType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:SerialHasSupplement/>"><biblio:SerialHasSupplement/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:SerialHasSupplementType/>/<biblio:SerialHasSupplementType/>.jsp?uri=<biblio:SerialHasSupplement/>"><biblio:SerialHasSupplement /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachSerialHasSupplementIterator>
       <biblio:foreachSerialTranslatesIterator>
-         <tr><td>translates</td><td><a href="../<biblio:SerialTranslatesType/>/<biblio:SerialTranslatesType/>.jsp?uri=<biblio:SerialTranslates/>"><biblio:SerialTranslates /></a></td></tr>
+         <tr><td>translates</td><td>
+            <c:set var="localType"><biblio:SerialTranslatesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:SerialTranslates/>"><biblio:SerialTranslates/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:SerialTranslatesType/>/<biblio:SerialTranslatesType/>.jsp?uri=<biblio:SerialTranslates/>"><biblio:SerialTranslates /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachSerialTranslatesIterator>
       <biblio:foreachSerialHasContributionIterator>
-         <tr><td>hasContribution</td><td><a href="../<biblio:SerialHasContributionType/>/<biblio:SerialHasContributionType/>.jsp?uri=<biblio:SerialHasContribution/>"><biblio:SerialHasContribution /></a></td></tr>
+         <tr><td>hasContribution</td><td>
+            <c:set var="localType"><biblio:SerialHasContributionType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:SerialHasContribution/>"><biblio:SerialHasContribution/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:SerialHasContributionType/>/<biblio:SerialHasContributionType/>.jsp?uri=<biblio:SerialHasContribution/>"><biblio:SerialHasContribution /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachSerialHasContributionIterator>
       <biblio:foreachSerialHasInstanceIterator>
-         <tr><td>hasInstance</td><td><a href="../<biblio:SerialHasInstanceType/>/<biblio:SerialHasInstanceType/>.jsp?uri=<biblio:SerialHasInstance/>"><biblio:SerialHasInstance /></a></td></tr>
+         <tr><td>hasInstance</td><td>
+            <c:set var="localType"><biblio:SerialHasInstanceType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:SerialHasInstance/>"><biblio:SerialHasInstance/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:SerialHasInstanceType/>/<biblio:SerialHasInstanceType/>.jsp?uri=<biblio:SerialHasInstance/>"><biblio:SerialHasInstance /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachSerialHasInstanceIterator>
       <biblio:foreachSerialContinuesUnderNewTitleIterator>
-         <tr><td>continuesUnderNewTitle</td><td><a href="../<biblio:SerialContinuesUnderNewTitleType/>/<biblio:SerialContinuesUnderNewTitleType/>.jsp?uri=<biblio:SerialContinuesUnderNewTitle/>"><biblio:SerialContinuesUnderNewTitle /></a></td></tr>
+         <tr><td>continuesUnderNewTitle</td><td>
+            <c:set var="localType"><biblio:SerialContinuesUnderNewTitleType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:SerialContinuesUnderNewTitle/>"><biblio:SerialContinuesUnderNewTitle/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:SerialContinuesUnderNewTitleType/>/<biblio:SerialContinuesUnderNewTitleType/>.jsp?uri=<biblio:SerialContinuesUnderNewTitle/>"><biblio:SerialContinuesUnderNewTitle /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachSerialContinuesUnderNewTitleIterator>
       <biblio:foreachSerialHasTitleIterator>
-         <tr><td>hasTitle</td><td><a href="../<biblio:SerialHasTitleType/>/<biblio:SerialHasTitleType/>.jsp?uri=<biblio:SerialHasTitle/>"><biblio:SerialHasTitle /></a></td></tr>
+         <tr><td>hasTitle</td><td>
+            <c:set var="localType"><biblio:SerialHasTitleType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:SerialHasTitle/>"><biblio:SerialHasTitle/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:SerialHasTitleType/>/<biblio:SerialHasTitleType/>.jsp?uri=<biblio:SerialHasTitle/>"><biblio:SerialHasTitle /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachSerialHasTitleIterator>
       <biblio:foreachSerialTranslatedAsIterator>
-         <tr><td>translatedAs</td><td><a href="../<biblio:SerialTranslatedAsType/>/<biblio:SerialTranslatedAsType/>.jsp?uri=<biblio:SerialTranslatedAs/>"><biblio:SerialTranslatedAs /></a></td></tr>
+         <tr><td>translatedAs</td><td>
+            <c:set var="localType"><biblio:SerialTranslatedAsType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:SerialTranslatedAs/>"><biblio:SerialTranslatedAs/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:SerialTranslatedAsType/>/<biblio:SerialTranslatedAsType/>.jsp?uri=<biblio:SerialTranslatedAs/>"><biblio:SerialTranslatedAs /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachSerialTranslatedAsIterator>
       <biblio:foreachSerialContinuedUnderNewTitleByIterator>
-         <tr><td>continuedUnderNewTitleBy</td><td><a href="../<biblio:SerialContinuedUnderNewTitleByType/>/<biblio:SerialContinuedUnderNewTitleByType/>.jsp?uri=<biblio:SerialContinuedUnderNewTitleBy/>"><biblio:SerialContinuedUnderNewTitleBy /></a></td></tr>
+         <tr><td>continuedUnderNewTitleBy</td><td>
+            <c:set var="localType"><biblio:SerialContinuedUnderNewTitleByType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:SerialContinuedUnderNewTitleBy/>"><biblio:SerialContinuedUnderNewTitleBy/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:SerialContinuedUnderNewTitleByType/>/<biblio:SerialContinuedUnderNewTitleByType/>.jsp?uri=<biblio:SerialContinuedUnderNewTitleBy/>"><biblio:SerialContinuedUnderNewTitleBy /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachSerialContinuedUnderNewTitleByIterator>
       <biblio:foreachSerialHasOriginalVersionIterator>
-         <tr><td>hasOriginalVersion</td><td><a href="../<biblio:SerialHasOriginalVersionType/>/<biblio:SerialHasOriginalVersionType/>.jsp?uri=<biblio:SerialHasOriginalVersion/>"><biblio:SerialHasOriginalVersion /></a></td></tr>
+         <tr><td>hasOriginalVersion</td><td>
+            <c:set var="localType"><biblio:SerialHasOriginalVersionType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:SerialHasOriginalVersion/>"><biblio:SerialHasOriginalVersion/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:SerialHasOriginalVersionType/>/<biblio:SerialHasOriginalVersionType/>.jsp?uri=<biblio:SerialHasOriginalVersion/>"><biblio:SerialHasOriginalVersion /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachSerialHasOriginalVersionIterator>
    </table>
 

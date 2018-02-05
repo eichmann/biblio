@@ -32,10 +32,30 @@
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachPerformerContributionAgentIterator>
-         <tr><td>agent</td><td><a href="../<biblio:PerformerContributionAgentType/>/<biblio:PerformerContributionAgentType/>.jsp?uri=<biblio:PerformerContributionAgent/>"><biblio:PerformerContributionAgent /></a></td></tr>
+         <tr><td>agent</td><td>
+            <c:set var="localType"><biblio:PerformerContributionAgentType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:PerformerContributionAgent/>"><biblio:PerformerContributionAgent/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:PerformerContributionAgentType/>/<biblio:PerformerContributionAgentType/>.jsp?uri=<biblio:PerformerContributionAgent/>"><biblio:PerformerContributionAgent /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachPerformerContributionAgentIterator>
       <biblio:foreachPerformerContributionContributedToIterator>
-         <tr><td>contributedTo</td><td><a href="../<biblio:PerformerContributionContributedToType/>/<biblio:PerformerContributionContributedToType/>.jsp?uri=<biblio:PerformerContributionContributedTo/>"><biblio:PerformerContributionContributedTo /></a></td></tr>
+         <tr><td>contributedTo</td><td>
+            <c:set var="localType"><biblio:PerformerContributionContributedToType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:PerformerContributionContributedTo/>"><biblio:PerformerContributionContributedTo/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:PerformerContributionContributedToType/>/<biblio:PerformerContributionContributedToType/>.jsp?uri=<biblio:PerformerContributionContributedTo/>"><biblio:PerformerContributionContributedTo /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachPerformerContributionContributedToIterator>
    </table>
 

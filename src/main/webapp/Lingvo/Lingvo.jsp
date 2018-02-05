@@ -35,9 +35,6 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
-      <biblio:foreachLingvoLanguageInverseIterator>
-         <tr><td>language</td><td><a href="../<biblio:LingvoLanguageInverseType/>/<biblio:LingvoLanguageInverseType/>.jsp?uri=<biblio:LingvoLanguageInverse/>"><biblio:LingvoLanguageInverse/></a></td></tr>
-      </biblio:foreachLingvoLanguageInverseIterator>
    </table>
    </biblio:Lingvo>
 

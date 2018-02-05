@@ -33,42 +33,155 @@
       <biblio:foreachOrganizationDeathDateIterator>
          <tr><td>deathDate</td><td><biblio:OrganizationDeathDate /></td></tr>
       </biblio:foreachOrganizationDeathDateIterator>
+      <biblio:foreachOrganizationNameIterator>
+         <tr><td>name</td><td><biblio:OrganizationName /></td></tr>
+      </biblio:foreachOrganizationNameIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachOrganizationSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:OrganizationSubjectType/>/<biblio:OrganizationSubjectType/>.jsp?uri=<biblio:OrganizationSubject/>"><biblio:OrganizationSubject /></a></td></tr>
+         <tr><td>subject</td><td>
+            <c:set var="localType"><biblio:OrganizationSubjectType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:OrganizationSubject/>"><biblio:OrganizationSubject/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:OrganizationSubjectType/>/<biblio:OrganizationSubjectType/>.jsp?uri=<biblio:OrganizationSubject/>"><biblio:OrganizationSubject /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachOrganizationSubjectIterator>
       <biblio:foreachOrganizationAccompaniedByIterator>
-         <tr><td>accompaniedBy</td><td><a href="../<biblio:OrganizationAccompaniedByType/>/<biblio:OrganizationAccompaniedByType/>.jsp?uri=<biblio:OrganizationAccompaniedBy/>"><biblio:OrganizationAccompaniedBy /></a></td></tr>
+         <tr><td>accompaniedBy</td><td>
+            <c:set var="localType"><biblio:OrganizationAccompaniedByType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:OrganizationAccompaniedBy/>"><biblio:OrganizationAccompaniedBy/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:OrganizationAccompaniedByType/>/<biblio:OrganizationAccompaniedByType/>.jsp?uri=<biblio:OrganizationAccompaniedBy/>"><biblio:OrganizationAccompaniedBy /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachOrganizationAccompaniedByIterator>
       <biblio:foreachOrganizationPrecedesIterator>
-         <tr><td>precedes</td><td><a href="../<biblio:OrganizationPrecedesType/>/<biblio:OrganizationPrecedesType/>.jsp?uri=<biblio:OrganizationPrecedes/>"><biblio:OrganizationPrecedes /></a></td></tr>
+         <tr><td>precedes</td><td>
+            <c:set var="localType"><biblio:OrganizationPrecedesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:OrganizationPrecedes/>"><biblio:OrganizationPrecedes/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:OrganizationPrecedesType/>/<biblio:OrganizationPrecedesType/>.jsp?uri=<biblio:OrganizationPrecedes/>"><biblio:OrganizationPrecedes /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachOrganizationPrecedesIterator>
       <biblio:foreachOrganizationIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:OrganizationIdentifiedByType/>/<biblio:OrganizationIdentifiedByType/>.jsp?uri=<biblio:OrganizationIdentifiedBy/>"><biblio:OrganizationIdentifiedBy /></a></td></tr>
+         <tr><td>identifiedBy</td><td>
+            <c:set var="localType"><biblio:OrganizationIdentifiedByType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:OrganizationIdentifiedBy/>"><biblio:OrganizationIdentifiedBy/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:OrganizationIdentifiedByType/>/<biblio:OrganizationIdentifiedByType/>.jsp?uri=<biblio:OrganizationIdentifiedBy/>"><biblio:OrganizationIdentifiedBy /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachOrganizationIdentifiedByIterator>
       <biblio:foreachOrganizationAccompaniesIterator>
-         <tr><td>accompanies</td><td><a href="../<biblio:OrganizationAccompaniesType/>/<biblio:OrganizationAccompaniesType/>.jsp?uri=<biblio:OrganizationAccompanies/>"><biblio:OrganizationAccompanies /></a></td></tr>
+         <tr><td>accompanies</td><td>
+            <c:set var="localType"><biblio:OrganizationAccompaniesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:OrganizationAccompanies/>"><biblio:OrganizationAccompanies/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:OrganizationAccompaniesType/>/<biblio:OrganizationAccompaniesType/>.jsp?uri=<biblio:OrganizationAccompanies/>"><biblio:OrganizationAccompanies /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachOrganizationAccompaniesIterator>
       <biblio:foreachOrganizationFollowsIterator>
-         <tr><td>follows</td><td><a href="../<biblio:OrganizationFollowsType/>/<biblio:OrganizationFollowsType/>.jsp?uri=<biblio:OrganizationFollows/>"><biblio:OrganizationFollows /></a></td></tr>
+         <tr><td>follows</td><td>
+            <c:set var="localType"><biblio:OrganizationFollowsType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:OrganizationFollows/>"><biblio:OrganizationFollows/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:OrganizationFollowsType/>/<biblio:OrganizationFollowsType/>.jsp?uri=<biblio:OrganizationFollows/>"><biblio:OrganizationFollows /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachOrganizationFollowsIterator>
       <biblio:foreachOrganizationHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:OrganizationHasPartType/>/<biblio:OrganizationHasPartType/>.jsp?uri=<biblio:OrganizationHasPart/>"><biblio:OrganizationHasPart /></a></td></tr>
+         <tr><td>hasPart</td><td>
+            <c:set var="localType"><biblio:OrganizationHasPartType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:OrganizationHasPart/>"><biblio:OrganizationHasPart/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:OrganizationHasPartType/>/<biblio:OrganizationHasPartType/>.jsp?uri=<biblio:OrganizationHasPart/>"><biblio:OrganizationHasPart /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachOrganizationHasPartIterator>
       <biblio:foreachOrganizationLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:OrganizationLanguageType/>/<biblio:OrganizationLanguageType/>.jsp?uri=<biblio:OrganizationLanguage/>"><biblio:OrganizationLanguage /></a></td></tr>
+         <tr><td>language</td><td>
+            <c:set var="localType"><biblio:OrganizationLanguageType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:OrganizationLanguage/>"><biblio:OrganizationLanguage/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:OrganizationLanguageType/>/<biblio:OrganizationLanguageType/>.jsp?uri=<biblio:OrganizationLanguage/>"><biblio:OrganizationLanguage /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachOrganizationLanguageIterator>
       <biblio:foreachOrganizationIsSubjectOfIterator>
-         <tr><td>isSubjectOf</td><td><a href="../<biblio:OrganizationIsSubjectOfType/>/<biblio:OrganizationIsSubjectOfType/>.jsp?uri=<biblio:OrganizationIsSubjectOf/>"><biblio:OrganizationIsSubjectOf /></a></td></tr>
+         <tr><td>isSubjectOf</td><td>
+            <c:set var="localType"><biblio:OrganizationIsSubjectOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:OrganizationIsSubjectOf/>"><biblio:OrganizationIsSubjectOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:OrganizationIsSubjectOfType/>/<biblio:OrganizationIsSubjectOfType/>.jsp?uri=<biblio:OrganizationIsSubjectOf/>"><biblio:OrganizationIsSubjectOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachOrganizationIsSubjectOfIterator>
       <biblio:foreachOrganizationHasAnnotationIterator>
-         <tr><td>hasAnnotation</td><td><a href="../<biblio:OrganizationHasAnnotationType/>/<biblio:OrganizationHasAnnotationType/>.jsp?uri=<biblio:OrganizationHasAnnotation/>"><biblio:OrganizationHasAnnotation /></a></td></tr>
+         <tr><td>hasAnnotation</td><td>
+            <c:set var="localType"><biblio:OrganizationHasAnnotationType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:OrganizationHasAnnotation/>"><biblio:OrganizationHasAnnotation/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:OrganizationHasAnnotationType/>/<biblio:OrganizationHasAnnotationType/>.jsp?uri=<biblio:OrganizationHasAnnotation/>"><biblio:OrganizationHasAnnotation /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachOrganizationHasAnnotationIterator>
       <biblio:foreachOrganizationIsPartOfIterator>
-         <tr><td>isPartOf</td><td><a href="../<biblio:OrganizationIsPartOfType/>/<biblio:OrganizationIsPartOfType/>.jsp?uri=<biblio:OrganizationIsPartOf/>"><biblio:OrganizationIsPartOf /></a></td></tr>
+         <tr><td>isPartOf</td><td>
+            <c:set var="localType"><biblio:OrganizationIsPartOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:OrganizationIsPartOf/>"><biblio:OrganizationIsPartOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:OrganizationIsPartOfType/>/<biblio:OrganizationIsPartOfType/>.jsp?uri=<biblio:OrganizationIsPartOf/>"><biblio:OrganizationIsPartOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachOrganizationIsPartOfIterator>
    </table>
 

@@ -32,13 +32,43 @@
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachTitleElementPrecedesIterator>
-         <tr><td>precedes</td><td><a href="../<biblio:TitleElementPrecedesType/>/<biblio:TitleElementPrecedesType/>.jsp?uri=<biblio:TitleElementPrecedes/>"><biblio:TitleElementPrecedes /></a></td></tr>
+         <tr><td>precedes</td><td>
+            <c:set var="localType"><biblio:TitleElementPrecedesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:TitleElementPrecedes/>"><biblio:TitleElementPrecedes/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:TitleElementPrecedesType/>/<biblio:TitleElementPrecedesType/>.jsp?uri=<biblio:TitleElementPrecedes/>"><biblio:TitleElementPrecedes /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachTitleElementPrecedesIterator>
       <biblio:foreachTitleElementFollowsIterator>
-         <tr><td>follows</td><td><a href="../<biblio:TitleElementFollowsType/>/<biblio:TitleElementFollowsType/>.jsp?uri=<biblio:TitleElementFollows/>"><biblio:TitleElementFollows /></a></td></tr>
+         <tr><td>follows</td><td>
+            <c:set var="localType"><biblio:TitleElementFollowsType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:TitleElementFollows/>"><biblio:TitleElementFollows/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:TitleElementFollowsType/>/<biblio:TitleElementFollowsType/>.jsp?uri=<biblio:TitleElementFollows/>"><biblio:TitleElementFollows /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachTitleElementFollowsIterator>
       <biblio:foreachTitleElementIsPartOfIterator>
-         <tr><td>isPartOf</td><td><a href="../<biblio:TitleElementIsPartOfType/>/<biblio:TitleElementIsPartOfType/>.jsp?uri=<biblio:TitleElementIsPartOf/>"><biblio:TitleElementIsPartOf /></a></td></tr>
+         <tr><td>isPartOf</td><td>
+            <c:set var="localType"><biblio:TitleElementIsPartOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:TitleElementIsPartOf/>"><biblio:TitleElementIsPartOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:TitleElementIsPartOfType/>/<biblio:TitleElementIsPartOfType/>.jsp?uri=<biblio:TitleElementIsPartOf/>"><biblio:TitleElementIsPartOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachTitleElementIsPartOfIterator>
    </table>
 

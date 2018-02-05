@@ -32,10 +32,30 @@
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachAuthorContributionAgentIterator>
-         <tr><td>agent</td><td><a href="../<biblio:AuthorContributionAgentType/>/<biblio:AuthorContributionAgentType/>.jsp?uri=<biblio:AuthorContributionAgent/>"><biblio:AuthorContributionAgent /></a></td></tr>
+         <tr><td>agent</td><td>
+            <c:set var="localType"><biblio:AuthorContributionAgentType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:AuthorContributionAgent/>"><biblio:AuthorContributionAgent/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:AuthorContributionAgentType/>/<biblio:AuthorContributionAgentType/>.jsp?uri=<biblio:AuthorContributionAgent/>"><biblio:AuthorContributionAgent /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachAuthorContributionAgentIterator>
       <biblio:foreachAuthorContributionContributedToIterator>
-         <tr><td>contributedTo</td><td><a href="../<biblio:AuthorContributionContributedToType/>/<biblio:AuthorContributionContributedToType/>.jsp?uri=<biblio:AuthorContributionContributedTo/>"><biblio:AuthorContributionContributedTo /></a></td></tr>
+         <tr><td>contributedTo</td><td>
+            <c:set var="localType"><biblio:AuthorContributionContributedToType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:AuthorContributionContributedTo/>"><biblio:AuthorContributionContributedTo/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:AuthorContributionContributedToType/>/<biblio:AuthorContributionContributedToType/>.jsp?uri=<biblio:AuthorContributionContributedTo/>"><biblio:AuthorContributionContributedTo /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachAuthorContributionContributedToIterator>
    </table>
 

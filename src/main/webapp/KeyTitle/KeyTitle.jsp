@@ -32,10 +32,30 @@
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachKeyTitleHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:KeyTitleHasPartType/>/<biblio:KeyTitleHasPartType/>.jsp?uri=<biblio:KeyTitleHasPart/>"><biblio:KeyTitleHasPart /></a></td></tr>
+         <tr><td>hasPart</td><td>
+            <c:set var="localType"><biblio:KeyTitleHasPartType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:KeyTitleHasPart/>"><biblio:KeyTitleHasPart/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:KeyTitleHasPartType/>/<biblio:KeyTitleHasPartType/>.jsp?uri=<biblio:KeyTitleHasPart/>"><biblio:KeyTitleHasPart /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachKeyTitleHasPartIterator>
       <biblio:foreachKeyTitleIsTitleOfIterator>
-         <tr><td>isTitleOf</td><td><a href="../<biblio:KeyTitleIsTitleOfType/>/<biblio:KeyTitleIsTitleOfType/>.jsp?uri=<biblio:KeyTitleIsTitleOf/>"><biblio:KeyTitleIsTitleOf /></a></td></tr>
+         <tr><td>isTitleOf</td><td>
+            <c:set var="localType"><biblio:KeyTitleIsTitleOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:KeyTitleIsTitleOf/>"><biblio:KeyTitleIsTitleOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:KeyTitleIsTitleOfType/>/<biblio:KeyTitleIsTitleOfType/>.jsp?uri=<biblio:KeyTitleIsTitleOf/>"><biblio:KeyTitleIsTitleOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachKeyTitleIsTitleOfIterator>
    </table>
 

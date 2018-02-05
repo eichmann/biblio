@@ -27,39 +27,148 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
+      <biblio:foreachMeetingBirthDateIterator>
+         <tr><td>birthDate</td><td><biblio:MeetingBirthDate /></td></tr>
+      </biblio:foreachMeetingBirthDateIterator>
+      <biblio:foreachMeetingDeathDateIterator>
+         <tr><td>deathDate</td><td><biblio:MeetingDeathDate /></td></tr>
+      </biblio:foreachMeetingDeathDateIterator>
+      <biblio:foreachMeetingNameIterator>
+         <tr><td>name</td><td><biblio:MeetingName /></td></tr>
+      </biblio:foreachMeetingNameIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachMeetingSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:MeetingSubjectType/>/<biblio:MeetingSubjectType/>.jsp?uri=<biblio:MeetingSubject/>"><biblio:MeetingSubject /></a></td></tr>
+         <tr><td>subject</td><td>
+            <c:set var="localType"><biblio:MeetingSubjectType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:MeetingSubject/>"><biblio:MeetingSubject/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:MeetingSubjectType/>/<biblio:MeetingSubjectType/>.jsp?uri=<biblio:MeetingSubject/>"><biblio:MeetingSubject /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachMeetingSubjectIterator>
       <biblio:foreachMeetingPrecedesIterator>
-         <tr><td>precedes</td><td><a href="../<biblio:MeetingPrecedesType/>/<biblio:MeetingPrecedesType/>.jsp?uri=<biblio:MeetingPrecedes/>"><biblio:MeetingPrecedes /></a></td></tr>
+         <tr><td>precedes</td><td>
+            <c:set var="localType"><biblio:MeetingPrecedesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:MeetingPrecedes/>"><biblio:MeetingPrecedes/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:MeetingPrecedesType/>/<biblio:MeetingPrecedesType/>.jsp?uri=<biblio:MeetingPrecedes/>"><biblio:MeetingPrecedes /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachMeetingPrecedesIterator>
       <biblio:foreachMeetingIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:MeetingIdentifiedByType/>/<biblio:MeetingIdentifiedByType/>.jsp?uri=<biblio:MeetingIdentifiedBy/>"><biblio:MeetingIdentifiedBy /></a></td></tr>
+         <tr><td>identifiedBy</td><td>
+            <c:set var="localType"><biblio:MeetingIdentifiedByType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:MeetingIdentifiedBy/>"><biblio:MeetingIdentifiedBy/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:MeetingIdentifiedByType/>/<biblio:MeetingIdentifiedByType/>.jsp?uri=<biblio:MeetingIdentifiedBy/>"><biblio:MeetingIdentifiedBy /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachMeetingIdentifiedByIterator>
       <biblio:foreachMeetingAccompaniesIterator>
-         <tr><td>accompanies</td><td><a href="../<biblio:MeetingAccompaniesType/>/<biblio:MeetingAccompaniesType/>.jsp?uri=<biblio:MeetingAccompanies/>"><biblio:MeetingAccompanies /></a></td></tr>
+         <tr><td>accompanies</td><td>
+            <c:set var="localType"><biblio:MeetingAccompaniesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:MeetingAccompanies/>"><biblio:MeetingAccompanies/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:MeetingAccompaniesType/>/<biblio:MeetingAccompaniesType/>.jsp?uri=<biblio:MeetingAccompanies/>"><biblio:MeetingAccompanies /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachMeetingAccompaniesIterator>
       <biblio:foreachMeetingFollowsIterator>
-         <tr><td>follows</td><td><a href="../<biblio:MeetingFollowsType/>/<biblio:MeetingFollowsType/>.jsp?uri=<biblio:MeetingFollows/>"><biblio:MeetingFollows /></a></td></tr>
+         <tr><td>follows</td><td>
+            <c:set var="localType"><biblio:MeetingFollowsType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:MeetingFollows/>"><biblio:MeetingFollows/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:MeetingFollowsType/>/<biblio:MeetingFollowsType/>.jsp?uri=<biblio:MeetingFollows/>"><biblio:MeetingFollows /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachMeetingFollowsIterator>
       <biblio:foreachMeetingHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:MeetingHasPartType/>/<biblio:MeetingHasPartType/>.jsp?uri=<biblio:MeetingHasPart/>"><biblio:MeetingHasPart /></a></td></tr>
+         <tr><td>hasPart</td><td>
+            <c:set var="localType"><biblio:MeetingHasPartType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:MeetingHasPart/>"><biblio:MeetingHasPart/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:MeetingHasPartType/>/<biblio:MeetingHasPartType/>.jsp?uri=<biblio:MeetingHasPart/>"><biblio:MeetingHasPart /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachMeetingHasPartIterator>
       <biblio:foreachMeetingLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:MeetingLanguageType/>/<biblio:MeetingLanguageType/>.jsp?uri=<biblio:MeetingLanguage/>"><biblio:MeetingLanguage /></a></td></tr>
+         <tr><td>language</td><td>
+            <c:set var="localType"><biblio:MeetingLanguageType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:MeetingLanguage/>"><biblio:MeetingLanguage/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:MeetingLanguageType/>/<biblio:MeetingLanguageType/>.jsp?uri=<biblio:MeetingLanguage/>"><biblio:MeetingLanguage /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachMeetingLanguageIterator>
       <biblio:foreachMeetingIsSubjectOfIterator>
-         <tr><td>isSubjectOf</td><td><a href="../<biblio:MeetingIsSubjectOfType/>/<biblio:MeetingIsSubjectOfType/>.jsp?uri=<biblio:MeetingIsSubjectOf/>"><biblio:MeetingIsSubjectOf /></a></td></tr>
+         <tr><td>isSubjectOf</td><td>
+            <c:set var="localType"><biblio:MeetingIsSubjectOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:MeetingIsSubjectOf/>"><biblio:MeetingIsSubjectOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:MeetingIsSubjectOfType/>/<biblio:MeetingIsSubjectOfType/>.jsp?uri=<biblio:MeetingIsSubjectOf/>"><biblio:MeetingIsSubjectOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachMeetingIsSubjectOfIterator>
       <biblio:foreachMeetingHasAnnotationIterator>
-         <tr><td>hasAnnotation</td><td><a href="../<biblio:MeetingHasAnnotationType/>/<biblio:MeetingHasAnnotationType/>.jsp?uri=<biblio:MeetingHasAnnotation/>"><biblio:MeetingHasAnnotation /></a></td></tr>
+         <tr><td>hasAnnotation</td><td>
+            <c:set var="localType"><biblio:MeetingHasAnnotationType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:MeetingHasAnnotation/>"><biblio:MeetingHasAnnotation/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:MeetingHasAnnotationType/>/<biblio:MeetingHasAnnotationType/>.jsp?uri=<biblio:MeetingHasAnnotation/>"><biblio:MeetingHasAnnotation /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachMeetingHasAnnotationIterator>
       <biblio:foreachMeetingIsPartOfIterator>
-         <tr><td>isPartOf</td><td><a href="../<biblio:MeetingIsPartOfType/>/<biblio:MeetingIsPartOfType/>.jsp?uri=<biblio:MeetingIsPartOf/>"><biblio:MeetingIsPartOf /></a></td></tr>
+         <tr><td>isPartOf</td><td>
+            <c:set var="localType"><biblio:MeetingIsPartOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:MeetingIsPartOf/>"><biblio:MeetingIsPartOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:MeetingIsPartOfType/>/<biblio:MeetingIsPartOfType/>.jsp?uri=<biblio:MeetingIsPartOf/>"><biblio:MeetingIsPartOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachMeetingIsPartOfIterator>
    </table>
 

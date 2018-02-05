@@ -32,7 +32,17 @@
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachCodenIdentifiesIterator>
-         <tr><td>identifies</td><td><a href="../<biblio:CodenIdentifiesType/>/<biblio:CodenIdentifiesType/>.jsp?uri=<biblio:CodenIdentifies/>"><biblio:CodenIdentifies /></a></td></tr>
+         <tr><td>identifies</td><td>
+            <c:set var="localType"><biblio:CodenIdentifiesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:CodenIdentifies/>"><biblio:CodenIdentifies/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:CodenIdentifiesType/>/<biblio:CodenIdentifiesType/>.jsp?uri=<biblio:CodenIdentifies/>"><biblio:CodenIdentifies /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachCodenIdentifiesIterator>
    </table>
 

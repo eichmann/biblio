@@ -32,7 +32,17 @@
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachSiciIdentifiesIterator>
-         <tr><td>identifies</td><td><a href="../<biblio:SiciIdentifiesType/>/<biblio:SiciIdentifiesType/>.jsp?uri=<biblio:SiciIdentifies/>"><biblio:SiciIdentifies /></a></td></tr>
+         <tr><td>identifies</td><td>
+            <c:set var="localType"><biblio:SiciIdentifiesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:SiciIdentifies/>"><biblio:SiciIdentifies/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:SiciIdentifiesType/>/<biblio:SiciIdentifiesType/>.jsp?uri=<biblio:SiciIdentifies/>"><biblio:SiciIdentifies /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachSiciIdentifiesIterator>
    </table>
 

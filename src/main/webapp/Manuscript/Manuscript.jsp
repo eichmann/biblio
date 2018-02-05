@@ -32,7 +32,17 @@
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachManuscriptIsHoldingForIterator>
-         <tr><td>isHoldingFor</td><td><a href="../<biblio:ManuscriptIsHoldingForType/>/<biblio:ManuscriptIsHoldingForType/>.jsp?uri=<biblio:ManuscriptIsHoldingFor/>"><biblio:ManuscriptIsHoldingFor /></a></td></tr>
+         <tr><td>isHoldingFor</td><td>
+            <c:set var="localType"><biblio:ManuscriptIsHoldingForType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ManuscriptIsHoldingFor/>"><biblio:ManuscriptIsHoldingFor/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ManuscriptIsHoldingForType/>/<biblio:ManuscriptIsHoldingForType/>.jsp?uri=<biblio:ManuscriptIsHoldingFor/>"><biblio:ManuscriptIsHoldingFor /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachManuscriptIsHoldingForIterator>
    </table>
 

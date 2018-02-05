@@ -32,10 +32,30 @@
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachComposerContributionAgentIterator>
-         <tr><td>agent</td><td><a href="../<biblio:ComposerContributionAgentType/>/<biblio:ComposerContributionAgentType/>.jsp?uri=<biblio:ComposerContributionAgent/>"><biblio:ComposerContributionAgent /></a></td></tr>
+         <tr><td>agent</td><td>
+            <c:set var="localType"><biblio:ComposerContributionAgentType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ComposerContributionAgent/>"><biblio:ComposerContributionAgent/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ComposerContributionAgentType/>/<biblio:ComposerContributionAgentType/>.jsp?uri=<biblio:ComposerContributionAgent/>"><biblio:ComposerContributionAgent /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachComposerContributionAgentIterator>
       <biblio:foreachComposerContributionContributedToIterator>
-         <tr><td>contributedTo</td><td><a href="../<biblio:ComposerContributionContributedToType/>/<biblio:ComposerContributionContributedToType/>.jsp?uri=<biblio:ComposerContributionContributedTo/>"><biblio:ComposerContributionContributedTo /></a></td></tr>
+         <tr><td>contributedTo</td><td>
+            <c:set var="localType"><biblio:ComposerContributionContributedToType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ComposerContributionContributedTo/>"><biblio:ComposerContributionContributedTo/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ComposerContributionContributedToType/>/<biblio:ComposerContributionContributedToType/>.jsp?uri=<biblio:ComposerContributionContributedTo/>"><biblio:ComposerContributionContributedTo /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachComposerContributionContributedToIterator>
    </table>
 

@@ -32,10 +32,30 @@
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachNarratorContributionAgentIterator>
-         <tr><td>agent</td><td><a href="../<biblio:NarratorContributionAgentType/>/<biblio:NarratorContributionAgentType/>.jsp?uri=<biblio:NarratorContributionAgent/>"><biblio:NarratorContributionAgent /></a></td></tr>
+         <tr><td>agent</td><td>
+            <c:set var="localType"><biblio:NarratorContributionAgentType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:NarratorContributionAgent/>"><biblio:NarratorContributionAgent/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:NarratorContributionAgentType/>/<biblio:NarratorContributionAgentType/>.jsp?uri=<biblio:NarratorContributionAgent/>"><biblio:NarratorContributionAgent /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachNarratorContributionAgentIterator>
       <biblio:foreachNarratorContributionContributedToIterator>
-         <tr><td>contributedTo</td><td><a href="../<biblio:NarratorContributionContributedToType/>/<biblio:NarratorContributionContributedToType/>.jsp?uri=<biblio:NarratorContributionContributedTo/>"><biblio:NarratorContributionContributedTo /></a></td></tr>
+         <tr><td>contributedTo</td><td>
+            <c:set var="localType"><biblio:NarratorContributionContributedToType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:NarratorContributionContributedTo/>"><biblio:NarratorContributionContributedTo/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:NarratorContributionContributedToType/>/<biblio:NarratorContributionContributedToType/>.jsp?uri=<biblio:NarratorContributionContributedTo/>"><biblio:NarratorContributionContributedTo /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachNarratorContributionContributedToIterator>
    </table>
 

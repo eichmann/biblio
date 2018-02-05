@@ -32,7 +32,17 @@
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachMatrixNumberIdentifiesIterator>
-         <tr><td>identifies</td><td><a href="../<biblio:MatrixNumberIdentifiesType/>/<biblio:MatrixNumberIdentifiesType/>.jsp?uri=<biblio:MatrixNumberIdentifies/>"><biblio:MatrixNumberIdentifies /></a></td></tr>
+         <tr><td>identifies</td><td>
+            <c:set var="localType"><biblio:MatrixNumberIdentifiesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:MatrixNumberIdentifies/>"><biblio:MatrixNumberIdentifies/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:MatrixNumberIdentifiesType/>/<biblio:MatrixNumberIdentifiesType/>.jsp?uri=<biblio:MatrixNumberIdentifies/>"><biblio:MatrixNumberIdentifies /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachMatrixNumberIdentifiesIterator>
    </table>
 

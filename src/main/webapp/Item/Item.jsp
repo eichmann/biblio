@@ -27,18 +27,51 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
+      <biblio:foreachItemNameIterator>
+         <tr><td>name</td><td><biblio:ItemName /></td></tr>
+      </biblio:foreachItemNameIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachItemIsHoldingForIterator>
-         <tr><td>isHoldingFor</td><td><a href="../<biblio:ItemIsHoldingForType/>/<biblio:ItemIsHoldingForType/>.jsp?uri=<biblio:ItemIsHoldingFor/>"><biblio:ItemIsHoldingFor /></a></td></tr>
+         <tr><td>isHoldingFor</td><td>
+            <c:set var="localType"><biblio:ItemIsHoldingForType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ItemIsHoldingFor/>"><biblio:ItemIsHoldingFor/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ItemIsHoldingForType/>/<biblio:ItemIsHoldingForType/>.jsp?uri=<biblio:ItemIsHoldingFor/>"><biblio:ItemIsHoldingFor /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachItemIsHoldingForIterator>
       <biblio:foreachItemIsPartOfIterator>
-         <tr><td>isPartOf</td><td><a href="../<biblio:ItemIsPartOfType/>/<biblio:ItemIsPartOfType/>.jsp?uri=<biblio:ItemIsPartOf/>"><biblio:ItemIsPartOf /></a></td></tr>
+         <tr><td>isPartOf</td><td>
+            <c:set var="localType"><biblio:ItemIsPartOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ItemIsPartOf/>"><biblio:ItemIsPartOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ItemIsPartOfType/>/<biblio:ItemIsPartOfType/>.jsp?uri=<biblio:ItemIsPartOf/>"><biblio:ItemIsPartOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachItemIsPartOfIterator>
       <biblio:foreachItemHasTitleIterator>
-         <tr><td>hasTitle</td><td><a href="../<biblio:ItemHasTitleType/>/<biblio:ItemHasTitleType/>.jsp?uri=<biblio:ItemHasTitle/>"><biblio:ItemHasTitle /></a></td></tr>
+         <tr><td>hasTitle</td><td>
+            <c:set var="localType"><biblio:ItemHasTitleType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ItemHasTitle/>"><biblio:ItemHasTitle/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ItemHasTitleType/>/<biblio:ItemHasTitleType/>.jsp?uri=<biblio:ItemHasTitle/>"><biblio:ItemHasTitle /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachItemHasTitleIterator>
    </table>
 

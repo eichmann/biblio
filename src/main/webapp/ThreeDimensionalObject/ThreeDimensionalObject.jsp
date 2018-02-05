@@ -27,69 +27,311 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
+      <biblio:foreachThreeDimensionalObjectNameIterator>
+         <tr><td>name</td><td><biblio:ThreeDimensionalObjectName /></td></tr>
+      </biblio:foreachThreeDimensionalObjectNameIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachThreeDimensionalObjectSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:ThreeDimensionalObjectSubjectType/>/<biblio:ThreeDimensionalObjectSubjectType/>.jsp?uri=<biblio:ThreeDimensionalObjectSubject/>"><biblio:ThreeDimensionalObjectSubject /></a></td></tr>
+         <tr><td>subject</td><td>
+            <c:set var="localType"><biblio:ThreeDimensionalObjectSubjectType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ThreeDimensionalObjectSubject/>"><biblio:ThreeDimensionalObjectSubject/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ThreeDimensionalObjectSubjectType/>/<biblio:ThreeDimensionalObjectSubjectType/>.jsp?uri=<biblio:ThreeDimensionalObjectSubject/>"><biblio:ThreeDimensionalObjectSubject /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachThreeDimensionalObjectSubjectIterator>
       <biblio:foreachThreeDimensionalObjectRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:ThreeDimensionalObjectRelationType/>/<biblio:ThreeDimensionalObjectRelationType/>.jsp?uri=<biblio:ThreeDimensionalObjectRelation/>"><biblio:ThreeDimensionalObjectRelation /></a></td></tr>
+         <tr><td>relation</td><td>
+            <c:set var="localType"><biblio:ThreeDimensionalObjectRelationType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ThreeDimensionalObjectRelation/>"><biblio:ThreeDimensionalObjectRelation/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ThreeDimensionalObjectRelationType/>/<biblio:ThreeDimensionalObjectRelationType/>.jsp?uri=<biblio:ThreeDimensionalObjectRelation/>"><biblio:ThreeDimensionalObjectRelation /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachThreeDimensionalObjectRelationIterator>
       <biblio:foreachThreeDimensionalObjectPrecedesIterator>
-         <tr><td>precedes</td><td><a href="../<biblio:ThreeDimensionalObjectPrecedesType/>/<biblio:ThreeDimensionalObjectPrecedesType/>.jsp?uri=<biblio:ThreeDimensionalObjectPrecedes/>"><biblio:ThreeDimensionalObjectPrecedes /></a></td></tr>
+         <tr><td>precedes</td><td>
+            <c:set var="localType"><biblio:ThreeDimensionalObjectPrecedesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ThreeDimensionalObjectPrecedes/>"><biblio:ThreeDimensionalObjectPrecedes/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ThreeDimensionalObjectPrecedesType/>/<biblio:ThreeDimensionalObjectPrecedesType/>.jsp?uri=<biblio:ThreeDimensionalObjectPrecedes/>"><biblio:ThreeDimensionalObjectPrecedes /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachThreeDimensionalObjectPrecedesIterator>
+      <biblio:foreachThreeDimensionalObjectIdentifiedByIterator>
+         <tr><td>identifiedBy</td><td>
+            <c:set var="localType"><biblio:ThreeDimensionalObjectIdentifiedByType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ThreeDimensionalObjectIdentifiedBy/>"><biblio:ThreeDimensionalObjectIdentifiedBy/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ThreeDimensionalObjectIdentifiedByType/>/<biblio:ThreeDimensionalObjectIdentifiedByType/>.jsp?uri=<biblio:ThreeDimensionalObjectIdentifiedBy/>"><biblio:ThreeDimensionalObjectIdentifiedBy /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
+      </biblio:foreachThreeDimensionalObjectIdentifiedByIterator>
       <biblio:foreachThreeDimensionalObjectAccompaniesIterator>
-         <tr><td>accompanies</td><td><a href="../<biblio:ThreeDimensionalObjectAccompaniesType/>/<biblio:ThreeDimensionalObjectAccompaniesType/>.jsp?uri=<biblio:ThreeDimensionalObjectAccompanies/>"><biblio:ThreeDimensionalObjectAccompanies /></a></td></tr>
+         <tr><td>accompanies</td><td>
+            <c:set var="localType"><biblio:ThreeDimensionalObjectAccompaniesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ThreeDimensionalObjectAccompanies/>"><biblio:ThreeDimensionalObjectAccompanies/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ThreeDimensionalObjectAccompaniesType/>/<biblio:ThreeDimensionalObjectAccompaniesType/>.jsp?uri=<biblio:ThreeDimensionalObjectAccompanies/>"><biblio:ThreeDimensionalObjectAccompanies /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachThreeDimensionalObjectAccompaniesIterator>
       <biblio:foreachThreeDimensionalObjectFollowsIterator>
-         <tr><td>follows</td><td><a href="../<biblio:ThreeDimensionalObjectFollowsType/>/<biblio:ThreeDimensionalObjectFollowsType/>.jsp?uri=<biblio:ThreeDimensionalObjectFollows/>"><biblio:ThreeDimensionalObjectFollows /></a></td></tr>
+         <tr><td>follows</td><td>
+            <c:set var="localType"><biblio:ThreeDimensionalObjectFollowsType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ThreeDimensionalObjectFollows/>"><biblio:ThreeDimensionalObjectFollows/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ThreeDimensionalObjectFollowsType/>/<biblio:ThreeDimensionalObjectFollowsType/>.jsp?uri=<biblio:ThreeDimensionalObjectFollows/>"><biblio:ThreeDimensionalObjectFollows /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachThreeDimensionalObjectFollowsIterator>
       <biblio:foreachThreeDimensionalObjectHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:ThreeDimensionalObjectHasPartType/>/<biblio:ThreeDimensionalObjectHasPartType/>.jsp?uri=<biblio:ThreeDimensionalObjectHasPart/>"><biblio:ThreeDimensionalObjectHasPart /></a></td></tr>
+         <tr><td>hasPart</td><td>
+            <c:set var="localType"><biblio:ThreeDimensionalObjectHasPartType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ThreeDimensionalObjectHasPart/>"><biblio:ThreeDimensionalObjectHasPart/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ThreeDimensionalObjectHasPartType/>/<biblio:ThreeDimensionalObjectHasPartType/>.jsp?uri=<biblio:ThreeDimensionalObjectHasPart/>"><biblio:ThreeDimensionalObjectHasPart /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachThreeDimensionalObjectHasPartIterator>
       <biblio:foreachThreeDimensionalObjectLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:ThreeDimensionalObjectLanguageType/>/<biblio:ThreeDimensionalObjectLanguageType/>.jsp?uri=<biblio:ThreeDimensionalObjectLanguage/>"><biblio:ThreeDimensionalObjectLanguage /></a></td></tr>
+         <tr><td>language</td><td>
+            <c:set var="localType"><biblio:ThreeDimensionalObjectLanguageType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ThreeDimensionalObjectLanguage/>"><biblio:ThreeDimensionalObjectLanguage/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ThreeDimensionalObjectLanguageType/>/<biblio:ThreeDimensionalObjectLanguageType/>.jsp?uri=<biblio:ThreeDimensionalObjectLanguage/>"><biblio:ThreeDimensionalObjectLanguage /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachThreeDimensionalObjectLanguageIterator>
+      <biblio:foreachThreeDimensionalObjectIsSubjectOfIterator>
+         <tr><td>isSubjectOf</td><td>
+            <c:set var="localType"><biblio:ThreeDimensionalObjectIsSubjectOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ThreeDimensionalObjectIsSubjectOf/>"><biblio:ThreeDimensionalObjectIsSubjectOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ThreeDimensionalObjectIsSubjectOfType/>/<biblio:ThreeDimensionalObjectIsSubjectOfType/>.jsp?uri=<biblio:ThreeDimensionalObjectIsSubjectOf/>"><biblio:ThreeDimensionalObjectIsSubjectOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
+      </biblio:foreachThreeDimensionalObjectIsSubjectOfIterator>
       <biblio:foreachThreeDimensionalObjectHasAnnotationIterator>
-         <tr><td>hasAnnotation</td><td><a href="../<biblio:ThreeDimensionalObjectHasAnnotationType/>/<biblio:ThreeDimensionalObjectHasAnnotationType/>.jsp?uri=<biblio:ThreeDimensionalObjectHasAnnotation/>"><biblio:ThreeDimensionalObjectHasAnnotation /></a></td></tr>
+         <tr><td>hasAnnotation</td><td>
+            <c:set var="localType"><biblio:ThreeDimensionalObjectHasAnnotationType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ThreeDimensionalObjectHasAnnotation/>"><biblio:ThreeDimensionalObjectHasAnnotation/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ThreeDimensionalObjectHasAnnotationType/>/<biblio:ThreeDimensionalObjectHasAnnotationType/>.jsp?uri=<biblio:ThreeDimensionalObjectHasAnnotation/>"><biblio:ThreeDimensionalObjectHasAnnotation /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachThreeDimensionalObjectHasAnnotationIterator>
       <biblio:foreachThreeDimensionalObjectIsPartOfIterator>
-         <tr><td>isPartOf</td><td><a href="../<biblio:ThreeDimensionalObjectIsPartOfType/>/<biblio:ThreeDimensionalObjectIsPartOfType/>.jsp?uri=<biblio:ThreeDimensionalObjectIsPartOf/>"><biblio:ThreeDimensionalObjectIsPartOf /></a></td></tr>
+         <tr><td>isPartOf</td><td>
+            <c:set var="localType"><biblio:ThreeDimensionalObjectIsPartOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ThreeDimensionalObjectIsPartOf/>"><biblio:ThreeDimensionalObjectIsPartOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ThreeDimensionalObjectIsPartOfType/>/<biblio:ThreeDimensionalObjectIsPartOfType/>.jsp?uri=<biblio:ThreeDimensionalObjectIsPartOf/>"><biblio:ThreeDimensionalObjectIsPartOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachThreeDimensionalObjectIsPartOfIterator>
       <biblio:foreachThreeDimensionalObjectSupplementsIterator>
-         <tr><td>supplements</td><td><a href="../<biblio:ThreeDimensionalObjectSupplementsType/>/<biblio:ThreeDimensionalObjectSupplementsType/>.jsp?uri=<biblio:ThreeDimensionalObjectSupplements/>"><biblio:ThreeDimensionalObjectSupplements /></a></td></tr>
+         <tr><td>supplements</td><td>
+            <c:set var="localType"><biblio:ThreeDimensionalObjectSupplementsType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ThreeDimensionalObjectSupplements/>"><biblio:ThreeDimensionalObjectSupplements/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ThreeDimensionalObjectSupplementsType/>/<biblio:ThreeDimensionalObjectSupplementsType/>.jsp?uri=<biblio:ThreeDimensionalObjectSupplements/>"><biblio:ThreeDimensionalObjectSupplements /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachThreeDimensionalObjectSupplementsIterator>
+      <biblio:foreachThreeDimensionalObjectAbsorbedByIterator>
+         <tr><td>absorbedBy</td><td>
+            <c:set var="localType"><biblio:ThreeDimensionalObjectAbsorbedByType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ThreeDimensionalObjectAbsorbedBy/>"><biblio:ThreeDimensionalObjectAbsorbedBy/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ThreeDimensionalObjectAbsorbedByType/>/<biblio:ThreeDimensionalObjectAbsorbedByType/>.jsp?uri=<biblio:ThreeDimensionalObjectAbsorbedBy/>"><biblio:ThreeDimensionalObjectAbsorbedBy /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
+      </biblio:foreachThreeDimensionalObjectAbsorbedByIterator>
       <biblio:foreachThreeDimensionalObjectSupersedesIterator>
-         <tr><td>supersedes</td><td><a href="../<biblio:ThreeDimensionalObjectSupersedesType/>/<biblio:ThreeDimensionalObjectSupersedesType/>.jsp?uri=<biblio:ThreeDimensionalObjectSupersedes/>"><biblio:ThreeDimensionalObjectSupersedes /></a></td></tr>
+         <tr><td>supersedes</td><td>
+            <c:set var="localType"><biblio:ThreeDimensionalObjectSupersedesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ThreeDimensionalObjectSupersedes/>"><biblio:ThreeDimensionalObjectSupersedes/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ThreeDimensionalObjectSupersedesType/>/<biblio:ThreeDimensionalObjectSupersedesType/>.jsp?uri=<biblio:ThreeDimensionalObjectSupersedes/>"><biblio:ThreeDimensionalObjectSupersedes /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachThreeDimensionalObjectSupersedesIterator>
       <biblio:foreachThreeDimensionalObjectDerivedFromIterator>
-         <tr><td>derivedFrom</td><td><a href="../<biblio:ThreeDimensionalObjectDerivedFromType/>/<biblio:ThreeDimensionalObjectDerivedFromType/>.jsp?uri=<biblio:ThreeDimensionalObjectDerivedFrom/>"><biblio:ThreeDimensionalObjectDerivedFrom /></a></td></tr>
+         <tr><td>derivedFrom</td><td>
+            <c:set var="localType"><biblio:ThreeDimensionalObjectDerivedFromType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ThreeDimensionalObjectDerivedFrom/>"><biblio:ThreeDimensionalObjectDerivedFrom/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ThreeDimensionalObjectDerivedFromType/>/<biblio:ThreeDimensionalObjectDerivedFromType/>.jsp?uri=<biblio:ThreeDimensionalObjectDerivedFrom/>"><biblio:ThreeDimensionalObjectDerivedFrom /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachThreeDimensionalObjectDerivedFromIterator>
       <biblio:foreachThreeDimensionalObjectHasDerivativeIterator>
-         <tr><td>hasDerivative</td><td><a href="../<biblio:ThreeDimensionalObjectHasDerivativeType/>/<biblio:ThreeDimensionalObjectHasDerivativeType/>.jsp?uri=<biblio:ThreeDimensionalObjectHasDerivative/>"><biblio:ThreeDimensionalObjectHasDerivative /></a></td></tr>
+         <tr><td>hasDerivative</td><td>
+            <c:set var="localType"><biblio:ThreeDimensionalObjectHasDerivativeType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ThreeDimensionalObjectHasDerivative/>"><biblio:ThreeDimensionalObjectHasDerivative/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ThreeDimensionalObjectHasDerivativeType/>/<biblio:ThreeDimensionalObjectHasDerivativeType/>.jsp?uri=<biblio:ThreeDimensionalObjectHasDerivative/>"><biblio:ThreeDimensionalObjectHasDerivative /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachThreeDimensionalObjectHasDerivativeIterator>
       <biblio:foreachThreeDimensionalObjectTranslatesIterator>
-         <tr><td>translates</td><td><a href="../<biblio:ThreeDimensionalObjectTranslatesType/>/<biblio:ThreeDimensionalObjectTranslatesType/>.jsp?uri=<biblio:ThreeDimensionalObjectTranslates/>"><biblio:ThreeDimensionalObjectTranslates /></a></td></tr>
+         <tr><td>translates</td><td>
+            <c:set var="localType"><biblio:ThreeDimensionalObjectTranslatesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ThreeDimensionalObjectTranslates/>"><biblio:ThreeDimensionalObjectTranslates/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ThreeDimensionalObjectTranslatesType/>/<biblio:ThreeDimensionalObjectTranslatesType/>.jsp?uri=<biblio:ThreeDimensionalObjectTranslates/>"><biblio:ThreeDimensionalObjectTranslates /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachThreeDimensionalObjectTranslatesIterator>
       <biblio:foreachThreeDimensionalObjectHasContributionIterator>
-         <tr><td>hasContribution</td><td><a href="../<biblio:ThreeDimensionalObjectHasContributionType/>/<biblio:ThreeDimensionalObjectHasContributionType/>.jsp?uri=<biblio:ThreeDimensionalObjectHasContribution/>"><biblio:ThreeDimensionalObjectHasContribution /></a></td></tr>
+         <tr><td>hasContribution</td><td>
+            <c:set var="localType"><biblio:ThreeDimensionalObjectHasContributionType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ThreeDimensionalObjectHasContribution/>"><biblio:ThreeDimensionalObjectHasContribution/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ThreeDimensionalObjectHasContributionType/>/<biblio:ThreeDimensionalObjectHasContributionType/>.jsp?uri=<biblio:ThreeDimensionalObjectHasContribution/>"><biblio:ThreeDimensionalObjectHasContribution /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachThreeDimensionalObjectHasContributionIterator>
       <biblio:foreachThreeDimensionalObjectHasInstanceIterator>
-         <tr><td>hasInstance</td><td><a href="../<biblio:ThreeDimensionalObjectHasInstanceType/>/<biblio:ThreeDimensionalObjectHasInstanceType/>.jsp?uri=<biblio:ThreeDimensionalObjectHasInstance/>"><biblio:ThreeDimensionalObjectHasInstance /></a></td></tr>
+         <tr><td>hasInstance</td><td>
+            <c:set var="localType"><biblio:ThreeDimensionalObjectHasInstanceType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ThreeDimensionalObjectHasInstance/>"><biblio:ThreeDimensionalObjectHasInstance/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ThreeDimensionalObjectHasInstanceType/>/<biblio:ThreeDimensionalObjectHasInstanceType/>.jsp?uri=<biblio:ThreeDimensionalObjectHasInstance/>"><biblio:ThreeDimensionalObjectHasInstance /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachThreeDimensionalObjectHasInstanceIterator>
       <biblio:foreachThreeDimensionalObjectContinuesUnderNewTitleIterator>
-         <tr><td>continuesUnderNewTitle</td><td><a href="../<biblio:ThreeDimensionalObjectContinuesUnderNewTitleType/>/<biblio:ThreeDimensionalObjectContinuesUnderNewTitleType/>.jsp?uri=<biblio:ThreeDimensionalObjectContinuesUnderNewTitle/>"><biblio:ThreeDimensionalObjectContinuesUnderNewTitle /></a></td></tr>
+         <tr><td>continuesUnderNewTitle</td><td>
+            <c:set var="localType"><biblio:ThreeDimensionalObjectContinuesUnderNewTitleType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ThreeDimensionalObjectContinuesUnderNewTitle/>"><biblio:ThreeDimensionalObjectContinuesUnderNewTitle/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ThreeDimensionalObjectContinuesUnderNewTitleType/>/<biblio:ThreeDimensionalObjectContinuesUnderNewTitleType/>.jsp?uri=<biblio:ThreeDimensionalObjectContinuesUnderNewTitle/>"><biblio:ThreeDimensionalObjectContinuesUnderNewTitle /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachThreeDimensionalObjectContinuesUnderNewTitleIterator>
       <biblio:foreachThreeDimensionalObjectHasTitleIterator>
-         <tr><td>hasTitle</td><td><a href="../<biblio:ThreeDimensionalObjectHasTitleType/>/<biblio:ThreeDimensionalObjectHasTitleType/>.jsp?uri=<biblio:ThreeDimensionalObjectHasTitle/>"><biblio:ThreeDimensionalObjectHasTitle /></a></td></tr>
+         <tr><td>hasTitle</td><td>
+            <c:set var="localType"><biblio:ThreeDimensionalObjectHasTitleType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ThreeDimensionalObjectHasTitle/>"><biblio:ThreeDimensionalObjectHasTitle/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ThreeDimensionalObjectHasTitleType/>/<biblio:ThreeDimensionalObjectHasTitleType/>.jsp?uri=<biblio:ThreeDimensionalObjectHasTitle/>"><biblio:ThreeDimensionalObjectHasTitle /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachThreeDimensionalObjectHasTitleIterator>
       <biblio:foreachThreeDimensionalObjectTranslatedAsIterator>
-         <tr><td>translatedAs</td><td><a href="../<biblio:ThreeDimensionalObjectTranslatedAsType/>/<biblio:ThreeDimensionalObjectTranslatedAsType/>.jsp?uri=<biblio:ThreeDimensionalObjectTranslatedAs/>"><biblio:ThreeDimensionalObjectTranslatedAs /></a></td></tr>
+         <tr><td>translatedAs</td><td>
+            <c:set var="localType"><biblio:ThreeDimensionalObjectTranslatedAsType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ThreeDimensionalObjectTranslatedAs/>"><biblio:ThreeDimensionalObjectTranslatedAs/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ThreeDimensionalObjectTranslatedAsType/>/<biblio:ThreeDimensionalObjectTranslatedAsType/>.jsp?uri=<biblio:ThreeDimensionalObjectTranslatedAs/>"><biblio:ThreeDimensionalObjectTranslatedAs /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachThreeDimensionalObjectTranslatedAsIterator>
       <biblio:foreachThreeDimensionalObjectContinuedUnderNewTitleByIterator>
-         <tr><td>continuedUnderNewTitleBy</td><td><a href="../<biblio:ThreeDimensionalObjectContinuedUnderNewTitleByType/>/<biblio:ThreeDimensionalObjectContinuedUnderNewTitleByType/>.jsp?uri=<biblio:ThreeDimensionalObjectContinuedUnderNewTitleBy/>"><biblio:ThreeDimensionalObjectContinuedUnderNewTitleBy /></a></td></tr>
+         <tr><td>continuedUnderNewTitleBy</td><td>
+            <c:set var="localType"><biblio:ThreeDimensionalObjectContinuedUnderNewTitleByType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ThreeDimensionalObjectContinuedUnderNewTitleBy/>"><biblio:ThreeDimensionalObjectContinuedUnderNewTitleBy/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ThreeDimensionalObjectContinuedUnderNewTitleByType/>/<biblio:ThreeDimensionalObjectContinuedUnderNewTitleByType/>.jsp?uri=<biblio:ThreeDimensionalObjectContinuedUnderNewTitleBy/>"><biblio:ThreeDimensionalObjectContinuedUnderNewTitleBy /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachThreeDimensionalObjectContinuedUnderNewTitleByIterator>
    </table>
 

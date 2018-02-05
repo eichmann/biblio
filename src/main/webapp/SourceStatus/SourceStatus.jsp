@@ -32,7 +32,17 @@
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachSourceStatusIsSourceStatusOfIterator>
-         <tr><td>isSourceStatusOf</td><td><a href="../<biblio:SourceStatusIsSourceStatusOfType/>/<biblio:SourceStatusIsSourceStatusOfType/>.jsp?uri=<biblio:SourceStatusIsSourceStatusOf/>"><biblio:SourceStatusIsSourceStatusOf /></a></td></tr>
+         <tr><td>isSourceStatusOf</td><td>
+            <c:set var="localType"><biblio:SourceStatusIsSourceStatusOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:SourceStatusIsSourceStatusOf/>"><biblio:SourceStatusIsSourceStatusOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:SourceStatusIsSourceStatusOfType/>/<biblio:SourceStatusIsSourceStatusOfType/>.jsp?uri=<biblio:SourceStatusIsSourceStatusOf/>"><biblio:SourceStatusIsSourceStatusOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachSourceStatusIsSourceStatusOfIterator>
    </table>
 

@@ -32,7 +32,17 @@
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachMotivationInSchemeIterator>
-         <tr><td>inScheme</td><td><a href="../<biblio:MotivationInSchemeType/>/<biblio:MotivationInSchemeType/>.jsp?uri=<biblio:MotivationInScheme/>"><biblio:MotivationInScheme /></a></td></tr>
+         <tr><td>inScheme</td><td>
+            <c:set var="localType"><biblio:MotivationInSchemeType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:MotivationInScheme/>"><biblio:MotivationInScheme/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:MotivationInSchemeType/>/<biblio:MotivationInSchemeType/>.jsp?uri=<biblio:MotivationInScheme/>"><biblio:MotivationInScheme /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachMotivationInSchemeIterator>
    </table>
 

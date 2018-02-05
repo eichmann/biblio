@@ -33,53 +33,186 @@
       <biblio:foreachAgentDeathDateIterator>
          <tr><td>deathDate</td><td><biblio:AgentDeathDate /></td></tr>
       </biblio:foreachAgentDeathDateIterator>
+      <biblio:foreachAgentNameIterator>
+         <tr><td>name</td><td><biblio:AgentName /></td></tr>
+      </biblio:foreachAgentNameIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachAgentSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:AgentSubjectType/>/<biblio:AgentSubjectType/>.jsp?uri=<biblio:AgentSubject/>"><biblio:AgentSubject /></a></td></tr>
+         <tr><td>subject</td><td>
+            <c:set var="localType"><biblio:AgentSubjectType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:AgentSubject/>"><biblio:AgentSubject/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:AgentSubjectType/>/<biblio:AgentSubjectType/>.jsp?uri=<biblio:AgentSubject/>"><biblio:AgentSubject /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachAgentSubjectIterator>
+      <biblio:foreachAgentRelationIterator>
+         <tr><td>relation</td><td>
+            <c:set var="localType"><biblio:AgentRelationType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:AgentRelation/>"><biblio:AgentRelation/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:AgentRelationType/>/<biblio:AgentRelationType/>.jsp?uri=<biblio:AgentRelation/>"><biblio:AgentRelation /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
+      </biblio:foreachAgentRelationIterator>
       <biblio:foreachAgentAccompaniedByIterator>
-         <tr><td>accompaniedBy</td><td><a href="../<biblio:AgentAccompaniedByType/>/<biblio:AgentAccompaniedByType/>.jsp?uri=<biblio:AgentAccompaniedBy/>"><biblio:AgentAccompaniedBy /></a></td></tr>
+         <tr><td>accompaniedBy</td><td>
+            <c:set var="localType"><biblio:AgentAccompaniedByType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:AgentAccompaniedBy/>"><biblio:AgentAccompaniedBy/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:AgentAccompaniedByType/>/<biblio:AgentAccompaniedByType/>.jsp?uri=<biblio:AgentAccompaniedBy/>"><biblio:AgentAccompaniedBy /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachAgentAccompaniedByIterator>
       <biblio:foreachAgentPrecedesIterator>
-         <tr><td>precedes</td><td><a href="../<biblio:AgentPrecedesType/>/<biblio:AgentPrecedesType/>.jsp?uri=<biblio:AgentPrecedes/>"><biblio:AgentPrecedes /></a></td></tr>
+         <tr><td>precedes</td><td>
+            <c:set var="localType"><biblio:AgentPrecedesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:AgentPrecedes/>"><biblio:AgentPrecedes/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:AgentPrecedesType/>/<biblio:AgentPrecedesType/>.jsp?uri=<biblio:AgentPrecedes/>"><biblio:AgentPrecedes /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachAgentPrecedesIterator>
       <biblio:foreachAgentIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:AgentIdentifiedByType/>/<biblio:AgentIdentifiedByType/>.jsp?uri=<biblio:AgentIdentifiedBy/>"><biblio:AgentIdentifiedBy /></a></td></tr>
+         <tr><td>identifiedBy</td><td>
+            <c:set var="localType"><biblio:AgentIdentifiedByType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:AgentIdentifiedBy/>"><biblio:AgentIdentifiedBy/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:AgentIdentifiedByType/>/<biblio:AgentIdentifiedByType/>.jsp?uri=<biblio:AgentIdentifiedBy/>"><biblio:AgentIdentifiedBy /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachAgentIdentifiedByIterator>
       <biblio:foreachAgentIsAnnotatorOfIterator>
-         <tr><td>isAnnotatorOf</td><td><a href="../<biblio:AgentIsAnnotatorOfType/>/<biblio:AgentIsAnnotatorOfType/>.jsp?uri=<biblio:AgentIsAnnotatorOf/>"><biblio:AgentIsAnnotatorOf /></a></td></tr>
+         <tr><td>isAnnotatorOf</td><td>
+            <c:set var="localType"><biblio:AgentIsAnnotatorOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:AgentIsAnnotatorOf/>"><biblio:AgentIsAnnotatorOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:AgentIsAnnotatorOfType/>/<biblio:AgentIsAnnotatorOfType/>.jsp?uri=<biblio:AgentIsAnnotatorOf/>"><biblio:AgentIsAnnotatorOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachAgentIsAnnotatorOfIterator>
       <biblio:foreachAgentAccompaniesIterator>
-         <tr><td>accompanies</td><td><a href="../<biblio:AgentAccompaniesType/>/<biblio:AgentAccompaniesType/>.jsp?uri=<biblio:AgentAccompanies/>"><biblio:AgentAccompanies /></a></td></tr>
+         <tr><td>accompanies</td><td>
+            <c:set var="localType"><biblio:AgentAccompaniesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:AgentAccompanies/>"><biblio:AgentAccompanies/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:AgentAccompaniesType/>/<biblio:AgentAccompaniesType/>.jsp?uri=<biblio:AgentAccompanies/>"><biblio:AgentAccompanies /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachAgentAccompaniesIterator>
       <biblio:foreachAgentFollowsIterator>
-         <tr><td>follows</td><td><a href="../<biblio:AgentFollowsType/>/<biblio:AgentFollowsType/>.jsp?uri=<biblio:AgentFollows/>"><biblio:AgentFollows /></a></td></tr>
+         <tr><td>follows</td><td>
+            <c:set var="localType"><biblio:AgentFollowsType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:AgentFollows/>"><biblio:AgentFollows/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:AgentFollowsType/>/<biblio:AgentFollowsType/>.jsp?uri=<biblio:AgentFollows/>"><biblio:AgentFollows /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachAgentFollowsIterator>
       <biblio:foreachAgentHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:AgentHasPartType/>/<biblio:AgentHasPartType/>.jsp?uri=<biblio:AgentHasPart/>"><biblio:AgentHasPart /></a></td></tr>
+         <tr><td>hasPart</td><td>
+            <c:set var="localType"><biblio:AgentHasPartType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:AgentHasPart/>"><biblio:AgentHasPart/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:AgentHasPartType/>/<biblio:AgentHasPartType/>.jsp?uri=<biblio:AgentHasPart/>"><biblio:AgentHasPart /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachAgentHasPartIterator>
       <biblio:foreachAgentLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:AgentLanguageType/>/<biblio:AgentLanguageType/>.jsp?uri=<biblio:AgentLanguage/>"><biblio:AgentLanguage /></a></td></tr>
+         <tr><td>language</td><td>
+            <c:set var="localType"><biblio:AgentLanguageType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:AgentLanguage/>"><biblio:AgentLanguage/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:AgentLanguageType/>/<biblio:AgentLanguageType/>.jsp?uri=<biblio:AgentLanguage/>"><biblio:AgentLanguage /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachAgentLanguageIterator>
       <biblio:foreachAgentIsSubjectOfIterator>
-         <tr><td>isSubjectOf</td><td><a href="../<biblio:AgentIsSubjectOfType/>/<biblio:AgentIsSubjectOfType/>.jsp?uri=<biblio:AgentIsSubjectOf/>"><biblio:AgentIsSubjectOf /></a></td></tr>
+         <tr><td>isSubjectOf</td><td>
+            <c:set var="localType"><biblio:AgentIsSubjectOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:AgentIsSubjectOf/>"><biblio:AgentIsSubjectOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:AgentIsSubjectOfType/>/<biblio:AgentIsSubjectOfType/>.jsp?uri=<biblio:AgentIsSubjectOf/>"><biblio:AgentIsSubjectOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachAgentIsSubjectOfIterator>
       <biblio:foreachAgentHasAnnotationIterator>
-         <tr><td>hasAnnotation</td><td><a href="../<biblio:AgentHasAnnotationType/>/<biblio:AgentHasAnnotationType/>.jsp?uri=<biblio:AgentHasAnnotation/>"><biblio:AgentHasAnnotation /></a></td></tr>
+         <tr><td>hasAnnotation</td><td>
+            <c:set var="localType"><biblio:AgentHasAnnotationType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:AgentHasAnnotation/>"><biblio:AgentHasAnnotation/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:AgentHasAnnotationType/>/<biblio:AgentHasAnnotationType/>.jsp?uri=<biblio:AgentHasAnnotation/>"><biblio:AgentHasAnnotation /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachAgentHasAnnotationIterator>
       <biblio:foreachAgentIsPartOfIterator>
-         <tr><td>isPartOf</td><td><a href="../<biblio:AgentIsPartOfType/>/<biblio:AgentIsPartOfType/>.jsp?uri=<biblio:AgentIsPartOf/>"><biblio:AgentIsPartOf /></a></td></tr>
+         <tr><td>isPartOf</td><td>
+            <c:set var="localType"><biblio:AgentIsPartOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:AgentIsPartOf/>"><biblio:AgentIsPartOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:AgentIsPartOfType/>/<biblio:AgentIsPartOfType/>.jsp?uri=<biblio:AgentIsPartOf/>"><biblio:AgentIsPartOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachAgentIsPartOfIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
-      <biblio:foreachAgentRelationInverseIterator>
-         <tr><td>relation</td><td><a href="../<biblio:AgentRelationInverseType/>/<biblio:AgentRelationInverseType/>.jsp?uri=<biblio:AgentRelationInverse/>"><biblio:AgentRelationInverse/></a></td></tr>
-      </biblio:foreachAgentRelationInverseIterator>
       <biblio:foreachAgentAgentInverseIterator>
          <tr><td>agent</td><td><a href="../<biblio:AgentAgentInverseType/>/<biblio:AgentAgentInverseType/>.jsp?uri=<biblio:AgentAgentInverse/>"><biblio:AgentAgentInverse/></a></td></tr>
       </biblio:foreachAgentAgentInverseIterator>

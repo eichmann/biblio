@@ -32,7 +32,17 @@
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachOclcIdentifierIdentifiesIterator>
-         <tr><td>identifies</td><td><a href="../<biblio:OclcIdentifierIdentifiesType/>/<biblio:OclcIdentifierIdentifiesType/>.jsp?uri=<biblio:OclcIdentifierIdentifies/>"><biblio:OclcIdentifierIdentifies /></a></td></tr>
+         <tr><td>identifies</td><td>
+            <c:set var="localType"><biblio:OclcIdentifierIdentifiesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:OclcIdentifierIdentifies/>"><biblio:OclcIdentifierIdentifies/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:OclcIdentifierIdentifiesType/>/<biblio:OclcIdentifierIdentifiesType/>.jsp?uri=<biblio:OclcIdentifierIdentifies/>"><biblio:OclcIdentifierIdentifies /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachOclcIdentifierIdentifiesIterator>
    </table>
 

@@ -32,10 +32,30 @@
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachConductorContributionAgentIterator>
-         <tr><td>agent</td><td><a href="../<biblio:ConductorContributionAgentType/>/<biblio:ConductorContributionAgentType/>.jsp?uri=<biblio:ConductorContributionAgent/>"><biblio:ConductorContributionAgent /></a></td></tr>
+         <tr><td>agent</td><td>
+            <c:set var="localType"><biblio:ConductorContributionAgentType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ConductorContributionAgent/>"><biblio:ConductorContributionAgent/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ConductorContributionAgentType/>/<biblio:ConductorContributionAgentType/>.jsp?uri=<biblio:ConductorContributionAgent/>"><biblio:ConductorContributionAgent /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachConductorContributionAgentIterator>
       <biblio:foreachConductorContributionContributedToIterator>
-         <tr><td>contributedTo</td><td><a href="../<biblio:ConductorContributionContributedToType/>/<biblio:ConductorContributionContributedToType/>.jsp?uri=<biblio:ConductorContributionContributedTo/>"><biblio:ConductorContributionContributedTo /></a></td></tr>
+         <tr><td>contributedTo</td><td>
+            <c:set var="localType"><biblio:ConductorContributionContributedToType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ConductorContributionContributedTo/>"><biblio:ConductorContributionContributedTo/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ConductorContributionContributedToType/>/<biblio:ConductorContributionContributedToType/>.jsp?uri=<biblio:ConductorContributionContributedTo/>"><biblio:ConductorContributionContributedTo /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachConductorContributionContributedToIterator>
    </table>
 

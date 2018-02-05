@@ -27,93 +27,376 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
+      <biblio:foreachFiniteResourceNameIterator>
+         <tr><td>name</td><td><biblio:FiniteResourceName /></td></tr>
+      </biblio:foreachFiniteResourceNameIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachFiniteResourceSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:FiniteResourceSubjectType/>/<biblio:FiniteResourceSubjectType/>.jsp?uri=<biblio:FiniteResourceSubject/>"><biblio:FiniteResourceSubject /></a></td></tr>
+         <tr><td>subject</td><td>
+            <c:set var="localType"><biblio:FiniteResourceSubjectType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FiniteResourceSubject/>"><biblio:FiniteResourceSubject/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FiniteResourceSubjectType/>/<biblio:FiniteResourceSubjectType/>.jsp?uri=<biblio:FiniteResourceSubject/>"><biblio:FiniteResourceSubject /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFiniteResourceSubjectIterator>
       <biblio:foreachFiniteResourceRelationIterator>
-         <tr><td>relation</td><td><a href="../<biblio:FiniteResourceRelationType/>/<biblio:FiniteResourceRelationType/>.jsp?uri=<biblio:FiniteResourceRelation/>"><biblio:FiniteResourceRelation /></a></td></tr>
+         <tr><td>relation</td><td>
+            <c:set var="localType"><biblio:FiniteResourceRelationType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FiniteResourceRelation/>"><biblio:FiniteResourceRelation/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FiniteResourceRelationType/>/<biblio:FiniteResourceRelationType/>.jsp?uri=<biblio:FiniteResourceRelation/>"><biblio:FiniteResourceRelation /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFiniteResourceRelationIterator>
       <biblio:foreachFiniteResourceAccompaniedByIterator>
-         <tr><td>accompaniedBy</td><td><a href="../<biblio:FiniteResourceAccompaniedByType/>/<biblio:FiniteResourceAccompaniedByType/>.jsp?uri=<biblio:FiniteResourceAccompaniedBy/>"><biblio:FiniteResourceAccompaniedBy /></a></td></tr>
+         <tr><td>accompaniedBy</td><td>
+            <c:set var="localType"><biblio:FiniteResourceAccompaniedByType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FiniteResourceAccompaniedBy/>"><biblio:FiniteResourceAccompaniedBy/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FiniteResourceAccompaniedByType/>/<biblio:FiniteResourceAccompaniedByType/>.jsp?uri=<biblio:FiniteResourceAccompaniedBy/>"><biblio:FiniteResourceAccompaniedBy /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFiniteResourceAccompaniedByIterator>
       <biblio:foreachFiniteResourcePrecedesIterator>
-         <tr><td>precedes</td><td><a href="../<biblio:FiniteResourcePrecedesType/>/<biblio:FiniteResourcePrecedesType/>.jsp?uri=<biblio:FiniteResourcePrecedes/>"><biblio:FiniteResourcePrecedes /></a></td></tr>
+         <tr><td>precedes</td><td>
+            <c:set var="localType"><biblio:FiniteResourcePrecedesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FiniteResourcePrecedes/>"><biblio:FiniteResourcePrecedes/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FiniteResourcePrecedesType/>/<biblio:FiniteResourcePrecedesType/>.jsp?uri=<biblio:FiniteResourcePrecedes/>"><biblio:FiniteResourcePrecedes /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFiniteResourcePrecedesIterator>
       <biblio:foreachFiniteResourceIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:FiniteResourceIdentifiedByType/>/<biblio:FiniteResourceIdentifiedByType/>.jsp?uri=<biblio:FiniteResourceIdentifiedBy/>"><biblio:FiniteResourceIdentifiedBy /></a></td></tr>
+         <tr><td>identifiedBy</td><td>
+            <c:set var="localType"><biblio:FiniteResourceIdentifiedByType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FiniteResourceIdentifiedBy/>"><biblio:FiniteResourceIdentifiedBy/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FiniteResourceIdentifiedByType/>/<biblio:FiniteResourceIdentifiedByType/>.jsp?uri=<biblio:FiniteResourceIdentifiedBy/>"><biblio:FiniteResourceIdentifiedBy /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFiniteResourceIdentifiedByIterator>
       <biblio:foreachFiniteResourceAccompaniesIterator>
-         <tr><td>accompanies</td><td><a href="../<biblio:FiniteResourceAccompaniesType/>/<biblio:FiniteResourceAccompaniesType/>.jsp?uri=<biblio:FiniteResourceAccompanies/>"><biblio:FiniteResourceAccompanies /></a></td></tr>
+         <tr><td>accompanies</td><td>
+            <c:set var="localType"><biblio:FiniteResourceAccompaniesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FiniteResourceAccompanies/>"><biblio:FiniteResourceAccompanies/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FiniteResourceAccompaniesType/>/<biblio:FiniteResourceAccompaniesType/>.jsp?uri=<biblio:FiniteResourceAccompanies/>"><biblio:FiniteResourceAccompanies /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFiniteResourceAccompaniesIterator>
       <biblio:foreachFiniteResourceFollowsIterator>
-         <tr><td>follows</td><td><a href="../<biblio:FiniteResourceFollowsType/>/<biblio:FiniteResourceFollowsType/>.jsp?uri=<biblio:FiniteResourceFollows/>"><biblio:FiniteResourceFollows /></a></td></tr>
+         <tr><td>follows</td><td>
+            <c:set var="localType"><biblio:FiniteResourceFollowsType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FiniteResourceFollows/>"><biblio:FiniteResourceFollows/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FiniteResourceFollowsType/>/<biblio:FiniteResourceFollowsType/>.jsp?uri=<biblio:FiniteResourceFollows/>"><biblio:FiniteResourceFollows /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFiniteResourceFollowsIterator>
       <biblio:foreachFiniteResourceHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:FiniteResourceHasPartType/>/<biblio:FiniteResourceHasPartType/>.jsp?uri=<biblio:FiniteResourceHasPart/>"><biblio:FiniteResourceHasPart /></a></td></tr>
+         <tr><td>hasPart</td><td>
+            <c:set var="localType"><biblio:FiniteResourceHasPartType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FiniteResourceHasPart/>"><biblio:FiniteResourceHasPart/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FiniteResourceHasPartType/>/<biblio:FiniteResourceHasPartType/>.jsp?uri=<biblio:FiniteResourceHasPart/>"><biblio:FiniteResourceHasPart /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFiniteResourceHasPartIterator>
       <biblio:foreachFiniteResourceLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:FiniteResourceLanguageType/>/<biblio:FiniteResourceLanguageType/>.jsp?uri=<biblio:FiniteResourceLanguage/>"><biblio:FiniteResourceLanguage /></a></td></tr>
+         <tr><td>language</td><td>
+            <c:set var="localType"><biblio:FiniteResourceLanguageType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FiniteResourceLanguage/>"><biblio:FiniteResourceLanguage/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FiniteResourceLanguageType/>/<biblio:FiniteResourceLanguageType/>.jsp?uri=<biblio:FiniteResourceLanguage/>"><biblio:FiniteResourceLanguage /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFiniteResourceLanguageIterator>
       <biblio:foreachFiniteResourceIsSubjectOfIterator>
-         <tr><td>isSubjectOf</td><td><a href="../<biblio:FiniteResourceIsSubjectOfType/>/<biblio:FiniteResourceIsSubjectOfType/>.jsp?uri=<biblio:FiniteResourceIsSubjectOf/>"><biblio:FiniteResourceIsSubjectOf /></a></td></tr>
+         <tr><td>isSubjectOf</td><td>
+            <c:set var="localType"><biblio:FiniteResourceIsSubjectOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FiniteResourceIsSubjectOf/>"><biblio:FiniteResourceIsSubjectOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FiniteResourceIsSubjectOfType/>/<biblio:FiniteResourceIsSubjectOfType/>.jsp?uri=<biblio:FiniteResourceIsSubjectOf/>"><biblio:FiniteResourceIsSubjectOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFiniteResourceIsSubjectOfIterator>
       <biblio:foreachFiniteResourceHasAnnotationIterator>
-         <tr><td>hasAnnotation</td><td><a href="../<biblio:FiniteResourceHasAnnotationType/>/<biblio:FiniteResourceHasAnnotationType/>.jsp?uri=<biblio:FiniteResourceHasAnnotation/>"><biblio:FiniteResourceHasAnnotation /></a></td></tr>
+         <tr><td>hasAnnotation</td><td>
+            <c:set var="localType"><biblio:FiniteResourceHasAnnotationType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FiniteResourceHasAnnotation/>"><biblio:FiniteResourceHasAnnotation/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FiniteResourceHasAnnotationType/>/<biblio:FiniteResourceHasAnnotationType/>.jsp?uri=<biblio:FiniteResourceHasAnnotation/>"><biblio:FiniteResourceHasAnnotation /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFiniteResourceHasAnnotationIterator>
       <biblio:foreachFiniteResourceIsPartOfIterator>
-         <tr><td>isPartOf</td><td><a href="../<biblio:FiniteResourceIsPartOfType/>/<biblio:FiniteResourceIsPartOfType/>.jsp?uri=<biblio:FiniteResourceIsPartOf/>"><biblio:FiniteResourceIsPartOf /></a></td></tr>
+         <tr><td>isPartOf</td><td>
+            <c:set var="localType"><biblio:FiniteResourceIsPartOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FiniteResourceIsPartOf/>"><biblio:FiniteResourceIsPartOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FiniteResourceIsPartOfType/>/<biblio:FiniteResourceIsPartOfType/>.jsp?uri=<biblio:FiniteResourceIsPartOf/>"><biblio:FiniteResourceIsPartOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFiniteResourceIsPartOfIterator>
       <biblio:foreachFiniteResourceSupplementsIterator>
-         <tr><td>supplements</td><td><a href="../<biblio:FiniteResourceSupplementsType/>/<biblio:FiniteResourceSupplementsType/>.jsp?uri=<biblio:FiniteResourceSupplements/>"><biblio:FiniteResourceSupplements /></a></td></tr>
+         <tr><td>supplements</td><td>
+            <c:set var="localType"><biblio:FiniteResourceSupplementsType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FiniteResourceSupplements/>"><biblio:FiniteResourceSupplements/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FiniteResourceSupplementsType/>/<biblio:FiniteResourceSupplementsType/>.jsp?uri=<biblio:FiniteResourceSupplements/>"><biblio:FiniteResourceSupplements /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFiniteResourceSupplementsIterator>
       <biblio:foreachFiniteResourceAbsorbedByIterator>
-         <tr><td>absorbedBy</td><td><a href="../<biblio:FiniteResourceAbsorbedByType/>/<biblio:FiniteResourceAbsorbedByType/>.jsp?uri=<biblio:FiniteResourceAbsorbedBy/>"><biblio:FiniteResourceAbsorbedBy /></a></td></tr>
+         <tr><td>absorbedBy</td><td>
+            <c:set var="localType"><biblio:FiniteResourceAbsorbedByType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FiniteResourceAbsorbedBy/>"><biblio:FiniteResourceAbsorbedBy/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FiniteResourceAbsorbedByType/>/<biblio:FiniteResourceAbsorbedByType/>.jsp?uri=<biblio:FiniteResourceAbsorbedBy/>"><biblio:FiniteResourceAbsorbedBy /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFiniteResourceAbsorbedByIterator>
       <biblio:foreachFiniteResourceSupersedesIterator>
-         <tr><td>supersedes</td><td><a href="../<biblio:FiniteResourceSupersedesType/>/<biblio:FiniteResourceSupersedesType/>.jsp?uri=<biblio:FiniteResourceSupersedes/>"><biblio:FiniteResourceSupersedes /></a></td></tr>
+         <tr><td>supersedes</td><td>
+            <c:set var="localType"><biblio:FiniteResourceSupersedesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FiniteResourceSupersedes/>"><biblio:FiniteResourceSupersedes/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FiniteResourceSupersedesType/>/<biblio:FiniteResourceSupersedesType/>.jsp?uri=<biblio:FiniteResourceSupersedes/>"><biblio:FiniteResourceSupersedes /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFiniteResourceSupersedesIterator>
       <biblio:foreachFiniteResourceSupersededByIterator>
-         <tr><td>supersededBy</td><td><a href="../<biblio:FiniteResourceSupersededByType/>/<biblio:FiniteResourceSupersededByType/>.jsp?uri=<biblio:FiniteResourceSupersededBy/>"><biblio:FiniteResourceSupersededBy /></a></td></tr>
+         <tr><td>supersededBy</td><td>
+            <c:set var="localType"><biblio:FiniteResourceSupersededByType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FiniteResourceSupersededBy/>"><biblio:FiniteResourceSupersededBy/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FiniteResourceSupersededByType/>/<biblio:FiniteResourceSupersededByType/>.jsp?uri=<biblio:FiniteResourceSupersededBy/>"><biblio:FiniteResourceSupersededBy /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFiniteResourceSupersededByIterator>
       <biblio:foreachFiniteResourceDerivedFromIterator>
-         <tr><td>derivedFrom</td><td><a href="../<biblio:FiniteResourceDerivedFromType/>/<biblio:FiniteResourceDerivedFromType/>.jsp?uri=<biblio:FiniteResourceDerivedFrom/>"><biblio:FiniteResourceDerivedFrom /></a></td></tr>
+         <tr><td>derivedFrom</td><td>
+            <c:set var="localType"><biblio:FiniteResourceDerivedFromType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FiniteResourceDerivedFrom/>"><biblio:FiniteResourceDerivedFrom/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FiniteResourceDerivedFromType/>/<biblio:FiniteResourceDerivedFromType/>.jsp?uri=<biblio:FiniteResourceDerivedFrom/>"><biblio:FiniteResourceDerivedFrom /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFiniteResourceDerivedFromIterator>
       <biblio:foreachFiniteResourceHasDerivativeIterator>
-         <tr><td>hasDerivative</td><td><a href="../<biblio:FiniteResourceHasDerivativeType/>/<biblio:FiniteResourceHasDerivativeType/>.jsp?uri=<biblio:FiniteResourceHasDerivative/>"><biblio:FiniteResourceHasDerivative /></a></td></tr>
+         <tr><td>hasDerivative</td><td>
+            <c:set var="localType"><biblio:FiniteResourceHasDerivativeType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FiniteResourceHasDerivative/>"><biblio:FiniteResourceHasDerivative/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FiniteResourceHasDerivativeType/>/<biblio:FiniteResourceHasDerivativeType/>.jsp?uri=<biblio:FiniteResourceHasDerivative/>"><biblio:FiniteResourceHasDerivative /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFiniteResourceHasDerivativeIterator>
       <biblio:foreachFiniteResourceHasAbsorbedIterator>
-         <tr><td>hasAbsorbed</td><td><a href="../<biblio:FiniteResourceHasAbsorbedType/>/<biblio:FiniteResourceHasAbsorbedType/>.jsp?uri=<biblio:FiniteResourceHasAbsorbed/>"><biblio:FiniteResourceHasAbsorbed /></a></td></tr>
+         <tr><td>hasAbsorbed</td><td>
+            <c:set var="localType"><biblio:FiniteResourceHasAbsorbedType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FiniteResourceHasAbsorbed/>"><biblio:FiniteResourceHasAbsorbed/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FiniteResourceHasAbsorbedType/>/<biblio:FiniteResourceHasAbsorbedType/>.jsp?uri=<biblio:FiniteResourceHasAbsorbed/>"><biblio:FiniteResourceHasAbsorbed /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFiniteResourceHasAbsorbedIterator>
       <biblio:foreachFiniteResourceHasSupplementIterator>
-         <tr><td>hasSupplement</td><td><a href="../<biblio:FiniteResourceHasSupplementType/>/<biblio:FiniteResourceHasSupplementType/>.jsp?uri=<biblio:FiniteResourceHasSupplement/>"><biblio:FiniteResourceHasSupplement /></a></td></tr>
+         <tr><td>hasSupplement</td><td>
+            <c:set var="localType"><biblio:FiniteResourceHasSupplementType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FiniteResourceHasSupplement/>"><biblio:FiniteResourceHasSupplement/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FiniteResourceHasSupplementType/>/<biblio:FiniteResourceHasSupplementType/>.jsp?uri=<biblio:FiniteResourceHasSupplement/>"><biblio:FiniteResourceHasSupplement /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFiniteResourceHasSupplementIterator>
       <biblio:foreachFiniteResourceTranslatesIterator>
-         <tr><td>translates</td><td><a href="../<biblio:FiniteResourceTranslatesType/>/<biblio:FiniteResourceTranslatesType/>.jsp?uri=<biblio:FiniteResourceTranslates/>"><biblio:FiniteResourceTranslates /></a></td></tr>
+         <tr><td>translates</td><td>
+            <c:set var="localType"><biblio:FiniteResourceTranslatesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FiniteResourceTranslates/>"><biblio:FiniteResourceTranslates/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FiniteResourceTranslatesType/>/<biblio:FiniteResourceTranslatesType/>.jsp?uri=<biblio:FiniteResourceTranslates/>"><biblio:FiniteResourceTranslates /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFiniteResourceTranslatesIterator>
       <biblio:foreachFiniteResourceHasContributionIterator>
-         <tr><td>hasContribution</td><td><a href="../<biblio:FiniteResourceHasContributionType/>/<biblio:FiniteResourceHasContributionType/>.jsp?uri=<biblio:FiniteResourceHasContribution/>"><biblio:FiniteResourceHasContribution /></a></td></tr>
+         <tr><td>hasContribution</td><td>
+            <c:set var="localType"><biblio:FiniteResourceHasContributionType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FiniteResourceHasContribution/>"><biblio:FiniteResourceHasContribution/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FiniteResourceHasContributionType/>/<biblio:FiniteResourceHasContributionType/>.jsp?uri=<biblio:FiniteResourceHasContribution/>"><biblio:FiniteResourceHasContribution /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFiniteResourceHasContributionIterator>
       <biblio:foreachFiniteResourceHasInstanceIterator>
-         <tr><td>hasInstance</td><td><a href="../<biblio:FiniteResourceHasInstanceType/>/<biblio:FiniteResourceHasInstanceType/>.jsp?uri=<biblio:FiniteResourceHasInstance/>"><biblio:FiniteResourceHasInstance /></a></td></tr>
+         <tr><td>hasInstance</td><td>
+            <c:set var="localType"><biblio:FiniteResourceHasInstanceType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FiniteResourceHasInstance/>"><biblio:FiniteResourceHasInstance/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FiniteResourceHasInstanceType/>/<biblio:FiniteResourceHasInstanceType/>.jsp?uri=<biblio:FiniteResourceHasInstance/>"><biblio:FiniteResourceHasInstance /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFiniteResourceHasInstanceIterator>
       <biblio:foreachFiniteResourceContinuesUnderNewTitleIterator>
-         <tr><td>continuesUnderNewTitle</td><td><a href="../<biblio:FiniteResourceContinuesUnderNewTitleType/>/<biblio:FiniteResourceContinuesUnderNewTitleType/>.jsp?uri=<biblio:FiniteResourceContinuesUnderNewTitle/>"><biblio:FiniteResourceContinuesUnderNewTitle /></a></td></tr>
+         <tr><td>continuesUnderNewTitle</td><td>
+            <c:set var="localType"><biblio:FiniteResourceContinuesUnderNewTitleType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FiniteResourceContinuesUnderNewTitle/>"><biblio:FiniteResourceContinuesUnderNewTitle/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FiniteResourceContinuesUnderNewTitleType/>/<biblio:FiniteResourceContinuesUnderNewTitleType/>.jsp?uri=<biblio:FiniteResourceContinuesUnderNewTitle/>"><biblio:FiniteResourceContinuesUnderNewTitle /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFiniteResourceContinuesUnderNewTitleIterator>
       <biblio:foreachFiniteResourceHasTitleIterator>
-         <tr><td>hasTitle</td><td><a href="../<biblio:FiniteResourceHasTitleType/>/<biblio:FiniteResourceHasTitleType/>.jsp?uri=<biblio:FiniteResourceHasTitle/>"><biblio:FiniteResourceHasTitle /></a></td></tr>
+         <tr><td>hasTitle</td><td>
+            <c:set var="localType"><biblio:FiniteResourceHasTitleType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FiniteResourceHasTitle/>"><biblio:FiniteResourceHasTitle/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FiniteResourceHasTitleType/>/<biblio:FiniteResourceHasTitleType/>.jsp?uri=<biblio:FiniteResourceHasTitle/>"><biblio:FiniteResourceHasTitle /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFiniteResourceHasTitleIterator>
       <biblio:foreachFiniteResourceTranslatedAsIterator>
-         <tr><td>translatedAs</td><td><a href="../<biblio:FiniteResourceTranslatedAsType/>/<biblio:FiniteResourceTranslatedAsType/>.jsp?uri=<biblio:FiniteResourceTranslatedAs/>"><biblio:FiniteResourceTranslatedAs /></a></td></tr>
+         <tr><td>translatedAs</td><td>
+            <c:set var="localType"><biblio:FiniteResourceTranslatedAsType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FiniteResourceTranslatedAs/>"><biblio:FiniteResourceTranslatedAs/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FiniteResourceTranslatedAsType/>/<biblio:FiniteResourceTranslatedAsType/>.jsp?uri=<biblio:FiniteResourceTranslatedAs/>"><biblio:FiniteResourceTranslatedAs /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFiniteResourceTranslatedAsIterator>
       <biblio:foreachFiniteResourceContinuedUnderNewTitleByIterator>
-         <tr><td>continuedUnderNewTitleBy</td><td><a href="../<biblio:FiniteResourceContinuedUnderNewTitleByType/>/<biblio:FiniteResourceContinuedUnderNewTitleByType/>.jsp?uri=<biblio:FiniteResourceContinuedUnderNewTitleBy/>"><biblio:FiniteResourceContinuedUnderNewTitleBy /></a></td></tr>
+         <tr><td>continuedUnderNewTitleBy</td><td>
+            <c:set var="localType"><biblio:FiniteResourceContinuedUnderNewTitleByType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FiniteResourceContinuedUnderNewTitleBy/>"><biblio:FiniteResourceContinuedUnderNewTitleBy/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FiniteResourceContinuedUnderNewTitleByType/>/<biblio:FiniteResourceContinuedUnderNewTitleByType/>.jsp?uri=<biblio:FiniteResourceContinuedUnderNewTitleBy/>"><biblio:FiniteResourceContinuedUnderNewTitleBy /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFiniteResourceContinuedUnderNewTitleByIterator>
       <biblio:foreachFiniteResourceHasOriginalVersionIterator>
-         <tr><td>hasOriginalVersion</td><td><a href="../<biblio:FiniteResourceHasOriginalVersionType/>/<biblio:FiniteResourceHasOriginalVersionType/>.jsp?uri=<biblio:FiniteResourceHasOriginalVersion/>"><biblio:FiniteResourceHasOriginalVersion /></a></td></tr>
+         <tr><td>hasOriginalVersion</td><td>
+            <c:set var="localType"><biblio:FiniteResourceHasOriginalVersionType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FiniteResourceHasOriginalVersion/>"><biblio:FiniteResourceHasOriginalVersion/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FiniteResourceHasOriginalVersionType/>/<biblio:FiniteResourceHasOriginalVersionType/>.jsp?uri=<biblio:FiniteResourceHasOriginalVersion/>"><biblio:FiniteResourceHasOriginalVersion /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFiniteResourceHasOriginalVersionIterator>
    </table>
 

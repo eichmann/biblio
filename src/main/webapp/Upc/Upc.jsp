@@ -32,7 +32,17 @@
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachUpcIdentifiesIterator>
-         <tr><td>identifies</td><td><a href="../<biblio:UpcIdentifiesType/>/<biblio:UpcIdentifiesType/>.jsp?uri=<biblio:UpcIdentifies/>"><biblio:UpcIdentifies /></a></td></tr>
+         <tr><td>identifies</td><td>
+            <c:set var="localType"><biblio:UpcIdentifiesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:UpcIdentifies/>"><biblio:UpcIdentifies/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:UpcIdentifiesType/>/<biblio:UpcIdentifiesType/>.jsp?uri=<biblio:UpcIdentifies/>"><biblio:UpcIdentifies /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachUpcIdentifiesIterator>
    </table>
 

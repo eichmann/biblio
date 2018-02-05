@@ -44,19 +44,69 @@
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachElectronicIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:ElectronicIdentifiedByType/>/<biblio:ElectronicIdentifiedByType/>.jsp?uri=<biblio:ElectronicIdentifiedBy/>"><biblio:ElectronicIdentifiedBy /></a></td></tr>
+         <tr><td>identifiedBy</td><td>
+            <c:set var="localType"><biblio:ElectronicIdentifiedByType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ElectronicIdentifiedBy/>"><biblio:ElectronicIdentifiedBy/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ElectronicIdentifiedByType/>/<biblio:ElectronicIdentifiedByType/>.jsp?uri=<biblio:ElectronicIdentifiedBy/>"><biblio:ElectronicIdentifiedBy /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachElectronicIdentifiedByIterator>
       <biblio:foreachElectronicIsInstanceOfIterator>
-         <tr><td>isInstanceOf</td><td><a href="../<biblio:ElectronicIsInstanceOfType/>/<biblio:ElectronicIsInstanceOfType/>.jsp?uri=<biblio:ElectronicIsInstanceOf/>"><biblio:ElectronicIsInstanceOf /></a></td></tr>
+         <tr><td>isInstanceOf</td><td>
+            <c:set var="localType"><biblio:ElectronicIsInstanceOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ElectronicIsInstanceOf/>"><biblio:ElectronicIsInstanceOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ElectronicIsInstanceOfType/>/<biblio:ElectronicIsInstanceOfType/>.jsp?uri=<biblio:ElectronicIsInstanceOf/>"><biblio:ElectronicIsInstanceOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachElectronicIsInstanceOfIterator>
       <biblio:foreachElectronicHasHoldingIterator>
-         <tr><td>hasHolding</td><td><a href="../<biblio:ElectronicHasHoldingType/>/<biblio:ElectronicHasHoldingType/>.jsp?uri=<biblio:ElectronicHasHolding/>"><biblio:ElectronicHasHolding /></a></td></tr>
+         <tr><td>hasHolding</td><td>
+            <c:set var="localType"><biblio:ElectronicHasHoldingType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ElectronicHasHolding/>"><biblio:ElectronicHasHolding/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ElectronicHasHoldingType/>/<biblio:ElectronicHasHoldingType/>.jsp?uri=<biblio:ElectronicHasHolding/>"><biblio:ElectronicHasHolding /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachElectronicHasHoldingIterator>
       <biblio:foreachElectronicHasProvisionIterator>
-         <tr><td>hasProvision</td><td><a href="../<biblio:ElectronicHasProvisionType/>/<biblio:ElectronicHasProvisionType/>.jsp?uri=<biblio:ElectronicHasProvision/>"><biblio:ElectronicHasProvision /></a></td></tr>
+         <tr><td>hasProvision</td><td>
+            <c:set var="localType"><biblio:ElectronicHasProvisionType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ElectronicHasProvision/>"><biblio:ElectronicHasProvision/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ElectronicHasProvisionType/>/<biblio:ElectronicHasProvisionType/>.jsp?uri=<biblio:ElectronicHasProvision/>"><biblio:ElectronicHasProvision /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachElectronicHasProvisionIterator>
       <biblio:foreachElectronicHasTitleIterator>
-         <tr><td>hasTitle</td><td><a href="../<biblio:ElectronicHasTitleType/>/<biblio:ElectronicHasTitleType/>.jsp?uri=<biblio:ElectronicHasTitle/>"><biblio:ElectronicHasTitle /></a></td></tr>
+         <tr><td>hasTitle</td><td>
+            <c:set var="localType"><biblio:ElectronicHasTitleType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ElectronicHasTitle/>"><biblio:ElectronicHasTitle/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ElectronicHasTitleType/>/<biblio:ElectronicHasTitleType/>.jsp?uri=<biblio:ElectronicHasTitle/>"><biblio:ElectronicHasTitle /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachElectronicHasTitleIterator>
    </table>
 

@@ -32,10 +32,30 @@
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachNonSortElementPrecedesIterator>
-         <tr><td>precedes</td><td><a href="../<biblio:NonSortElementPrecedesType/>/<biblio:NonSortElementPrecedesType/>.jsp?uri=<biblio:NonSortElementPrecedes/>"><biblio:NonSortElementPrecedes /></a></td></tr>
+         <tr><td>precedes</td><td>
+            <c:set var="localType"><biblio:NonSortElementPrecedesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:NonSortElementPrecedes/>"><biblio:NonSortElementPrecedes/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:NonSortElementPrecedesType/>/<biblio:NonSortElementPrecedesType/>.jsp?uri=<biblio:NonSortElementPrecedes/>"><biblio:NonSortElementPrecedes /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachNonSortElementPrecedesIterator>
       <biblio:foreachNonSortElementIsPartOfIterator>
-         <tr><td>isPartOf</td><td><a href="../<biblio:NonSortElementIsPartOfType/>/<biblio:NonSortElementIsPartOfType/>.jsp?uri=<biblio:NonSortElementIsPartOf/>"><biblio:NonSortElementIsPartOf /></a></td></tr>
+         <tr><td>isPartOf</td><td>
+            <c:set var="localType"><biblio:NonSortElementIsPartOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:NonSortElementIsPartOf/>"><biblio:NonSortElementIsPartOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:NonSortElementIsPartOfType/>/<biblio:NonSortElementIsPartOfType/>.jsp?uri=<biblio:NonSortElementIsPartOf/>"><biblio:NonSortElementIsPartOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachNonSortElementIsPartOfIterator>
    </table>
 

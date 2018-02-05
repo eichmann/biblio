@@ -30,18 +30,51 @@
       <biblio:foreachConceptPrefLabelIterator>
          <tr><td>prefLabel</td><td><biblio:ConceptPrefLabel /></td></tr>
       </biblio:foreachConceptPrefLabelIterator>
+      <biblio:foreachConceptNameIterator>
+         <tr><td>name</td><td><biblio:ConceptName /></td></tr>
+      </biblio:foreachConceptNameIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachConceptIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:ConceptIdentifiedByType/>/<biblio:ConceptIdentifiedByType/>.jsp?uri=<biblio:ConceptIdentifiedBy/>"><biblio:ConceptIdentifiedBy /></a></td></tr>
+         <tr><td>identifiedBy</td><td>
+            <c:set var="localType"><biblio:ConceptIdentifiedByType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ConceptIdentifiedBy/>"><biblio:ConceptIdentifiedBy/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ConceptIdentifiedByType/>/<biblio:ConceptIdentifiedByType/>.jsp?uri=<biblio:ConceptIdentifiedBy/>"><biblio:ConceptIdentifiedBy /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachConceptIdentifiedByIterator>
       <biblio:foreachConceptInSchemeIterator>
-         <tr><td>inScheme</td><td><a href="../<biblio:ConceptInSchemeType/>/<biblio:ConceptInSchemeType/>.jsp?uri=<biblio:ConceptInScheme/>"><biblio:ConceptInScheme /></a></td></tr>
+         <tr><td>inScheme</td><td>
+            <c:set var="localType"><biblio:ConceptInSchemeType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ConceptInScheme/>"><biblio:ConceptInScheme/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ConceptInSchemeType/>/<biblio:ConceptInSchemeType/>.jsp?uri=<biblio:ConceptInScheme/>"><biblio:ConceptInScheme /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachConceptInSchemeIterator>
       <biblio:foreachConceptIsSubjectOfIterator>
-         <tr><td>isSubjectOf</td><td><a href="../<biblio:ConceptIsSubjectOfType/>/<biblio:ConceptIsSubjectOfType/>.jsp?uri=<biblio:ConceptIsSubjectOf/>"><biblio:ConceptIsSubjectOf /></a></td></tr>
+         <tr><td>isSubjectOf</td><td>
+            <c:set var="localType"><biblio:ConceptIsSubjectOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ConceptIsSubjectOf/>"><biblio:ConceptIsSubjectOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ConceptIsSubjectOfType/>/<biblio:ConceptIsSubjectOfType/>.jsp?uri=<biblio:ConceptIsSubjectOf/>"><biblio:ConceptIsSubjectOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachConceptIsSubjectOfIterator>
    </table>
 

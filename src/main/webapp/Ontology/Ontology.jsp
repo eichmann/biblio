@@ -27,6 +27,24 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
+      <biblio:foreachOntologyModifiedIterator>
+         <tr><td>modified</td><td><biblio:OntologyModified /></td></tr>
+      </biblio:foreachOntologyModifiedIterator>
+      <biblio:foreachOntologyIssuedIterator>
+         <tr><td>issued</td><td><biblio:OntologyIssued /></td></tr>
+      </biblio:foreachOntologyIssuedIterator>
+      <biblio:foreachOntologyPreferredNamespacePrefixIterator>
+         <tr><td>preferredNamespacePrefix</td><td><biblio:OntologyPreferredNamespacePrefix /></td></tr>
+      </biblio:foreachOntologyPreferredNamespacePrefixIterator>
+      <biblio:foreachOntologyLabelIterator>
+         <tr><td>label</td><td><biblio:OntologyLabel /></td></tr>
+      </biblio:foreachOntologyLabelIterator>
+      <biblio:foreachOntologyVersionInfoIterator>
+         <tr><td>versionInfo</td><td><biblio:OntologyVersionInfo /></td></tr>
+      </biblio:foreachOntologyVersionInfoIterator>
+      <biblio:foreachOntologyCommentIterator>
+         <tr><td>comment</td><td><biblio:OntologyComment /></td></tr>
+      </biblio:foreachOntologyCommentIterator>
    </table>
 
    <h3>Object Properties</h3>

@@ -32,10 +32,30 @@
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachContributionAgentIterator>
-         <tr><td>agent</td><td><a href="../<biblio:ContributionAgentType/>/<biblio:ContributionAgentType/>.jsp?uri=<biblio:ContributionAgent/>"><biblio:ContributionAgent /></a></td></tr>
+         <tr><td>agent</td><td>
+            <c:set var="localType"><biblio:ContributionAgentType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ContributionAgent/>"><biblio:ContributionAgent/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ContributionAgentType/>/<biblio:ContributionAgentType/>.jsp?uri=<biblio:ContributionAgent/>"><biblio:ContributionAgent /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachContributionAgentIterator>
       <biblio:foreachContributionContributedToIterator>
-         <tr><td>contributedTo</td><td><a href="../<biblio:ContributionContributedToType/>/<biblio:ContributionContributedToType/>.jsp?uri=<biblio:ContributionContributedTo/>"><biblio:ContributionContributedTo /></a></td></tr>
+         <tr><td>contributedTo</td><td>
+            <c:set var="localType"><biblio:ContributionContributedToType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ContributionContributedTo/>"><biblio:ContributionContributedTo/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ContributionContributedToType/>/<biblio:ContributionContributedToType/>.jsp?uri=<biblio:ContributionContributedTo/>"><biblio:ContributionContributedTo /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachContributionContributedToIterator>
    </table>
 

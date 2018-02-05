@@ -32,7 +32,17 @@
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachTechnicalReportNumberIdentifiesIterator>
-         <tr><td>identifies</td><td><a href="../<biblio:TechnicalReportNumberIdentifiesType/>/<biblio:TechnicalReportNumberIdentifiesType/>.jsp?uri=<biblio:TechnicalReportNumberIdentifies/>"><biblio:TechnicalReportNumberIdentifies /></a></td></tr>
+         <tr><td>identifies</td><td>
+            <c:set var="localType"><biblio:TechnicalReportNumberIdentifiesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:TechnicalReportNumberIdentifies/>"><biblio:TechnicalReportNumberIdentifies/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:TechnicalReportNumberIdentifiesType/>/<biblio:TechnicalReportNumberIdentifiesType/>.jsp?uri=<biblio:TechnicalReportNumberIdentifies/>"><biblio:TechnicalReportNumberIdentifies /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachTechnicalReportNumberIdentifiesIterator>
    </table>
 

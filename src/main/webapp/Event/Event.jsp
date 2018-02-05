@@ -27,45 +27,164 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
+      <biblio:foreachEventBirthDateIterator>
+         <tr><td>birthDate</td><td><biblio:EventBirthDate /></td></tr>
+      </biblio:foreachEventBirthDateIterator>
+      <biblio:foreachEventDeathDateIterator>
+         <tr><td>deathDate</td><td><biblio:EventDeathDate /></td></tr>
+      </biblio:foreachEventDeathDateIterator>
       <biblio:foreachEventDateIterator>
          <tr><td>date</td><td><biblio:EventDate /></td></tr>
       </biblio:foreachEventDateIterator>
+      <biblio:foreachEventNameIterator>
+         <tr><td>name</td><td><biblio:EventName /></td></tr>
+      </biblio:foreachEventNameIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachEventSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:EventSubjectType/>/<biblio:EventSubjectType/>.jsp?uri=<biblio:EventSubject/>"><biblio:EventSubject /></a></td></tr>
+         <tr><td>subject</td><td>
+            <c:set var="localType"><biblio:EventSubjectType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:EventSubject/>"><biblio:EventSubject/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:EventSubjectType/>/<biblio:EventSubjectType/>.jsp?uri=<biblio:EventSubject/>"><biblio:EventSubject /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachEventSubjectIterator>
       <biblio:foreachEventPrecedesIterator>
-         <tr><td>precedes</td><td><a href="../<biblio:EventPrecedesType/>/<biblio:EventPrecedesType/>.jsp?uri=<biblio:EventPrecedes/>"><biblio:EventPrecedes /></a></td></tr>
+         <tr><td>precedes</td><td>
+            <c:set var="localType"><biblio:EventPrecedesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:EventPrecedes/>"><biblio:EventPrecedes/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:EventPrecedesType/>/<biblio:EventPrecedesType/>.jsp?uri=<biblio:EventPrecedes/>"><biblio:EventPrecedes /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachEventPrecedesIterator>
       <biblio:foreachEventIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:EventIdentifiedByType/>/<biblio:EventIdentifiedByType/>.jsp?uri=<biblio:EventIdentifiedBy/>"><biblio:EventIdentifiedBy /></a></td></tr>
+         <tr><td>identifiedBy</td><td>
+            <c:set var="localType"><biblio:EventIdentifiedByType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:EventIdentifiedBy/>"><biblio:EventIdentifiedBy/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:EventIdentifiedByType/>/<biblio:EventIdentifiedByType/>.jsp?uri=<biblio:EventIdentifiedBy/>"><biblio:EventIdentifiedBy /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachEventIdentifiedByIterator>
       <biblio:foreachEventAtLocationIterator>
-         <tr><td>atLocation</td><td><a href="../<biblio:EventAtLocationType/>/<biblio:EventAtLocationType/>.jsp?uri=<biblio:EventAtLocation/>"><biblio:EventAtLocation /></a></td></tr>
+         <tr><td>atLocation</td><td>
+            <c:set var="localType"><biblio:EventAtLocationType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:EventAtLocation/>"><biblio:EventAtLocation/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:EventAtLocationType/>/<biblio:EventAtLocationType/>.jsp?uri=<biblio:EventAtLocation/>"><biblio:EventAtLocation /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachEventAtLocationIterator>
       <biblio:foreachEventAccompaniesIterator>
-         <tr><td>accompanies</td><td><a href="../<biblio:EventAccompaniesType/>/<biblio:EventAccompaniesType/>.jsp?uri=<biblio:EventAccompanies/>"><biblio:EventAccompanies /></a></td></tr>
+         <tr><td>accompanies</td><td>
+            <c:set var="localType"><biblio:EventAccompaniesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:EventAccompanies/>"><biblio:EventAccompanies/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:EventAccompaniesType/>/<biblio:EventAccompaniesType/>.jsp?uri=<biblio:EventAccompanies/>"><biblio:EventAccompanies /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachEventAccompaniesIterator>
       <biblio:foreachEventFollowsIterator>
-         <tr><td>follows</td><td><a href="../<biblio:EventFollowsType/>/<biblio:EventFollowsType/>.jsp?uri=<biblio:EventFollows/>"><biblio:EventFollows /></a></td></tr>
+         <tr><td>follows</td><td>
+            <c:set var="localType"><biblio:EventFollowsType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:EventFollows/>"><biblio:EventFollows/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:EventFollowsType/>/<biblio:EventFollowsType/>.jsp?uri=<biblio:EventFollows/>"><biblio:EventFollows /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachEventFollowsIterator>
       <biblio:foreachEventHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:EventHasPartType/>/<biblio:EventHasPartType/>.jsp?uri=<biblio:EventHasPart/>"><biblio:EventHasPart /></a></td></tr>
+         <tr><td>hasPart</td><td>
+            <c:set var="localType"><biblio:EventHasPartType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:EventHasPart/>"><biblio:EventHasPart/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:EventHasPartType/>/<biblio:EventHasPartType/>.jsp?uri=<biblio:EventHasPart/>"><biblio:EventHasPart /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachEventHasPartIterator>
       <biblio:foreachEventLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:EventLanguageType/>/<biblio:EventLanguageType/>.jsp?uri=<biblio:EventLanguage/>"><biblio:EventLanguage /></a></td></tr>
+         <tr><td>language</td><td>
+            <c:set var="localType"><biblio:EventLanguageType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:EventLanguage/>"><biblio:EventLanguage/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:EventLanguageType/>/<biblio:EventLanguageType/>.jsp?uri=<biblio:EventLanguage/>"><biblio:EventLanguage /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachEventLanguageIterator>
       <biblio:foreachEventIsSubjectOfIterator>
-         <tr><td>isSubjectOf</td><td><a href="../<biblio:EventIsSubjectOfType/>/<biblio:EventIsSubjectOfType/>.jsp?uri=<biblio:EventIsSubjectOf/>"><biblio:EventIsSubjectOf /></a></td></tr>
+         <tr><td>isSubjectOf</td><td>
+            <c:set var="localType"><biblio:EventIsSubjectOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:EventIsSubjectOf/>"><biblio:EventIsSubjectOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:EventIsSubjectOfType/>/<biblio:EventIsSubjectOfType/>.jsp?uri=<biblio:EventIsSubjectOf/>"><biblio:EventIsSubjectOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachEventIsSubjectOfIterator>
       <biblio:foreachEventHasAnnotationIterator>
-         <tr><td>hasAnnotation</td><td><a href="../<biblio:EventHasAnnotationType/>/<biblio:EventHasAnnotationType/>.jsp?uri=<biblio:EventHasAnnotation/>"><biblio:EventHasAnnotation /></a></td></tr>
+         <tr><td>hasAnnotation</td><td>
+            <c:set var="localType"><biblio:EventHasAnnotationType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:EventHasAnnotation/>"><biblio:EventHasAnnotation/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:EventHasAnnotationType/>/<biblio:EventHasAnnotationType/>.jsp?uri=<biblio:EventHasAnnotation/>"><biblio:EventHasAnnotation /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachEventHasAnnotationIterator>
       <biblio:foreachEventIsPartOfIterator>
-         <tr><td>isPartOf</td><td><a href="../<biblio:EventIsPartOfType/>/<biblio:EventIsPartOfType/>.jsp?uri=<biblio:EventIsPartOf/>"><biblio:EventIsPartOf /></a></td></tr>
+         <tr><td>isPartOf</td><td>
+            <c:set var="localType"><biblio:EventIsPartOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:EventIsPartOf/>"><biblio:EventIsPartOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:EventIsPartOfType/>/<biblio:EventIsPartOfType/>.jsp?uri=<biblio:EventIsPartOf/>"><biblio:EventIsPartOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachEventIsPartOfIterator>
    </table>
 

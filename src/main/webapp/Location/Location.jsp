@@ -27,45 +27,171 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
+      <biblio:foreachLocationBirthDateIterator>
+         <tr><td>birthDate</td><td><biblio:LocationBirthDate /></td></tr>
+      </biblio:foreachLocationBirthDateIterator>
+      <biblio:foreachLocationNameIterator>
+         <tr><td>name</td><td><biblio:LocationName /></td></tr>
+      </biblio:foreachLocationNameIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachLocationSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:LocationSubjectType/>/<biblio:LocationSubjectType/>.jsp?uri=<biblio:LocationSubject/>"><biblio:LocationSubject /></a></td></tr>
+         <tr><td>subject</td><td>
+            <c:set var="localType"><biblio:LocationSubjectType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:LocationSubject/>"><biblio:LocationSubject/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:LocationSubjectType/>/<biblio:LocationSubjectType/>.jsp?uri=<biblio:LocationSubject/>"><biblio:LocationSubject /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachLocationSubjectIterator>
       <biblio:foreachLocationAccompaniedByIterator>
-         <tr><td>accompaniedBy</td><td><a href="../<biblio:LocationAccompaniedByType/>/<biblio:LocationAccompaniedByType/>.jsp?uri=<biblio:LocationAccompaniedBy/>"><biblio:LocationAccompaniedBy /></a></td></tr>
+         <tr><td>accompaniedBy</td><td>
+            <c:set var="localType"><biblio:LocationAccompaniedByType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:LocationAccompaniedBy/>"><biblio:LocationAccompaniedBy/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:LocationAccompaniedByType/>/<biblio:LocationAccompaniedByType/>.jsp?uri=<biblio:LocationAccompaniedBy/>"><biblio:LocationAccompaniedBy /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachLocationAccompaniedByIterator>
       <biblio:foreachLocationPrecedesIterator>
-         <tr><td>precedes</td><td><a href="../<biblio:LocationPrecedesType/>/<biblio:LocationPrecedesType/>.jsp?uri=<biblio:LocationPrecedes/>"><biblio:LocationPrecedes /></a></td></tr>
+         <tr><td>precedes</td><td>
+            <c:set var="localType"><biblio:LocationPrecedesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:LocationPrecedes/>"><biblio:LocationPrecedes/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:LocationPrecedesType/>/<biblio:LocationPrecedesType/>.jsp?uri=<biblio:LocationPrecedes/>"><biblio:LocationPrecedes /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachLocationPrecedesIterator>
       <biblio:foreachLocationLocationOfIterator>
-         <tr><td>locationOf</td><td><a href="../<biblio:LocationLocationOfType/>/<biblio:LocationLocationOfType/>.jsp?uri=<biblio:LocationLocationOf/>"><biblio:LocationLocationOf /></a></td></tr>
+         <tr><td>locationOf</td><td>
+            <c:set var="localType"><biblio:LocationLocationOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:LocationLocationOf/>"><biblio:LocationLocationOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:LocationLocationOfType/>/<biblio:LocationLocationOfType/>.jsp?uri=<biblio:LocationLocationOf/>"><biblio:LocationLocationOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachLocationLocationOfIterator>
       <biblio:foreachLocationIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:LocationIdentifiedByType/>/<biblio:LocationIdentifiedByType/>.jsp?uri=<biblio:LocationIdentifiedBy/>"><biblio:LocationIdentifiedBy /></a></td></tr>
+         <tr><td>identifiedBy</td><td>
+            <c:set var="localType"><biblio:LocationIdentifiedByType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:LocationIdentifiedBy/>"><biblio:LocationIdentifiedBy/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:LocationIdentifiedByType/>/<biblio:LocationIdentifiedByType/>.jsp?uri=<biblio:LocationIdentifiedBy/>"><biblio:LocationIdentifiedBy /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachLocationIdentifiedByIterator>
       <biblio:foreachLocationAccompaniesIterator>
-         <tr><td>accompanies</td><td><a href="../<biblio:LocationAccompaniesType/>/<biblio:LocationAccompaniesType/>.jsp?uri=<biblio:LocationAccompanies/>"><biblio:LocationAccompanies /></a></td></tr>
+         <tr><td>accompanies</td><td>
+            <c:set var="localType"><biblio:LocationAccompaniesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:LocationAccompanies/>"><biblio:LocationAccompanies/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:LocationAccompaniesType/>/<biblio:LocationAccompaniesType/>.jsp?uri=<biblio:LocationAccompanies/>"><biblio:LocationAccompanies /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachLocationAccompaniesIterator>
       <biblio:foreachLocationFollowsIterator>
-         <tr><td>follows</td><td><a href="../<biblio:LocationFollowsType/>/<biblio:LocationFollowsType/>.jsp?uri=<biblio:LocationFollows/>"><biblio:LocationFollows /></a></td></tr>
+         <tr><td>follows</td><td>
+            <c:set var="localType"><biblio:LocationFollowsType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:LocationFollows/>"><biblio:LocationFollows/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:LocationFollowsType/>/<biblio:LocationFollowsType/>.jsp?uri=<biblio:LocationFollows/>"><biblio:LocationFollows /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachLocationFollowsIterator>
       <biblio:foreachLocationHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:LocationHasPartType/>/<biblio:LocationHasPartType/>.jsp?uri=<biblio:LocationHasPart/>"><biblio:LocationHasPart /></a></td></tr>
+         <tr><td>hasPart</td><td>
+            <c:set var="localType"><biblio:LocationHasPartType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:LocationHasPart/>"><biblio:LocationHasPart/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:LocationHasPartType/>/<biblio:LocationHasPartType/>.jsp?uri=<biblio:LocationHasPart/>"><biblio:LocationHasPart /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachLocationHasPartIterator>
       <biblio:foreachLocationLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:LocationLanguageType/>/<biblio:LocationLanguageType/>.jsp?uri=<biblio:LocationLanguage/>"><biblio:LocationLanguage /></a></td></tr>
+         <tr><td>language</td><td>
+            <c:set var="localType"><biblio:LocationLanguageType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:LocationLanguage/>"><biblio:LocationLanguage/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:LocationLanguageType/>/<biblio:LocationLanguageType/>.jsp?uri=<biblio:LocationLanguage/>"><biblio:LocationLanguage /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachLocationLanguageIterator>
       <biblio:foreachLocationIsSubjectOfIterator>
-         <tr><td>isSubjectOf</td><td><a href="../<biblio:LocationIsSubjectOfType/>/<biblio:LocationIsSubjectOfType/>.jsp?uri=<biblio:LocationIsSubjectOf/>"><biblio:LocationIsSubjectOf /></a></td></tr>
+         <tr><td>isSubjectOf</td><td>
+            <c:set var="localType"><biblio:LocationIsSubjectOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:LocationIsSubjectOf/>"><biblio:LocationIsSubjectOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:LocationIsSubjectOfType/>/<biblio:LocationIsSubjectOfType/>.jsp?uri=<biblio:LocationIsSubjectOf/>"><biblio:LocationIsSubjectOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachLocationIsSubjectOfIterator>
       <biblio:foreachLocationHasAnnotationIterator>
-         <tr><td>hasAnnotation</td><td><a href="../<biblio:LocationHasAnnotationType/>/<biblio:LocationHasAnnotationType/>.jsp?uri=<biblio:LocationHasAnnotation/>"><biblio:LocationHasAnnotation /></a></td></tr>
+         <tr><td>hasAnnotation</td><td>
+            <c:set var="localType"><biblio:LocationHasAnnotationType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:LocationHasAnnotation/>"><biblio:LocationHasAnnotation/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:LocationHasAnnotationType/>/<biblio:LocationHasAnnotationType/>.jsp?uri=<biblio:LocationHasAnnotation/>"><biblio:LocationHasAnnotation /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachLocationHasAnnotationIterator>
       <biblio:foreachLocationIsPartOfIterator>
-         <tr><td>isPartOf</td><td><a href="../<biblio:LocationIsPartOfType/>/<biblio:LocationIsPartOfType/>.jsp?uri=<biblio:LocationIsPartOf/>"><biblio:LocationIsPartOf /></a></td></tr>
+         <tr><td>isPartOf</td><td>
+            <c:set var="localType"><biblio:LocationIsPartOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:LocationIsPartOf/>"><biblio:LocationIsPartOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:LocationIsPartOfType/>/<biblio:LocationIsPartOfType/>.jsp?uri=<biblio:LocationIsPartOf/>"><biblio:LocationIsPartOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachLocationIsPartOfIterator>
    </table>
 

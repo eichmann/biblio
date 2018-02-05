@@ -35,7 +35,17 @@
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachContentAsTextIsBodyOfIterator>
-         <tr><td>isBodyOf</td><td><a href="../<biblio:ContentAsTextIsBodyOfType/>/<biblio:ContentAsTextIsBodyOfType/>.jsp?uri=<biblio:ContentAsTextIsBodyOf/>"><biblio:ContentAsTextIsBodyOf /></a></td></tr>
+         <tr><td>isBodyOf</td><td>
+            <c:set var="localType"><biblio:ContentAsTextIsBodyOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ContentAsTextIsBodyOf/>"><biblio:ContentAsTextIsBodyOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ContentAsTextIsBodyOfType/>/<biblio:ContentAsTextIsBodyOfType/>.jsp?uri=<biblio:ContentAsTextIsBodyOf/>"><biblio:ContentAsTextIsBodyOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachContentAsTextIsBodyOfIterator>
    </table>
 

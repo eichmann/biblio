@@ -32,7 +32,17 @@
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachNamedIndividualInSchemeIterator>
-         <tr><td>inScheme</td><td><a href="../<biblio:NamedIndividualInSchemeType/>/<biblio:NamedIndividualInSchemeType/>.jsp?uri=<biblio:NamedIndividualInScheme/>"><biblio:NamedIndividualInScheme /></a></td></tr>
+         <tr><td>inScheme</td><td>
+            <c:set var="localType"><biblio:NamedIndividualInSchemeType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:NamedIndividualInScheme/>"><biblio:NamedIndividualInScheme/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:NamedIndividualInSchemeType/>/<biblio:NamedIndividualInSchemeType/>.jsp?uri=<biblio:NamedIndividualInScheme/>"><biblio:NamedIndividualInScheme /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachNamedIndividualInSchemeIterator>
    </table>
 

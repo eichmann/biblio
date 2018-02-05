@@ -44,28 +44,108 @@
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachTactileSubjectIterator>
-         <tr><td>subject</td><td><a href="../<biblio:TactileSubjectType/>/<biblio:TactileSubjectType/>.jsp?uri=<biblio:TactileSubject/>"><biblio:TactileSubject /></a></td></tr>
+         <tr><td>subject</td><td>
+            <c:set var="localType"><biblio:TactileSubjectType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:TactileSubject/>"><biblio:TactileSubject/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:TactileSubjectType/>/<biblio:TactileSubjectType/>.jsp?uri=<biblio:TactileSubject/>"><biblio:TactileSubject /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachTactileSubjectIterator>
       <biblio:foreachTactileIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:TactileIdentifiedByType/>/<biblio:TactileIdentifiedByType/>.jsp?uri=<biblio:TactileIdentifiedBy/>"><biblio:TactileIdentifiedBy /></a></td></tr>
+         <tr><td>identifiedBy</td><td>
+            <c:set var="localType"><biblio:TactileIdentifiedByType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:TactileIdentifiedBy/>"><biblio:TactileIdentifiedBy/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:TactileIdentifiedByType/>/<biblio:TactileIdentifiedByType/>.jsp?uri=<biblio:TactileIdentifiedBy/>"><biblio:TactileIdentifiedBy /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachTactileIdentifiedByIterator>
       <biblio:foreachTactileLanguageIterator>
-         <tr><td>language</td><td><a href="../<biblio:TactileLanguageType/>/<biblio:TactileLanguageType/>.jsp?uri=<biblio:TactileLanguage/>"><biblio:TactileLanguage /></a></td></tr>
+         <tr><td>language</td><td>
+            <c:set var="localType"><biblio:TactileLanguageType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:TactileLanguage/>"><biblio:TactileLanguage/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:TactileLanguageType/>/<biblio:TactileLanguageType/>.jsp?uri=<biblio:TactileLanguage/>"><biblio:TactileLanguage /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachTactileLanguageIterator>
       <biblio:foreachTactileHasAnnotationIterator>
-         <tr><td>hasAnnotation</td><td><a href="../<biblio:TactileHasAnnotationType/>/<biblio:TactileHasAnnotationType/>.jsp?uri=<biblio:TactileHasAnnotation/>"><biblio:TactileHasAnnotation /></a></td></tr>
+         <tr><td>hasAnnotation</td><td>
+            <c:set var="localType"><biblio:TactileHasAnnotationType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:TactileHasAnnotation/>"><biblio:TactileHasAnnotation/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:TactileHasAnnotationType/>/<biblio:TactileHasAnnotationType/>.jsp?uri=<biblio:TactileHasAnnotation/>"><biblio:TactileHasAnnotation /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachTactileHasAnnotationIterator>
       <biblio:foreachTactileIsInstanceOfIterator>
-         <tr><td>isInstanceOf</td><td><a href="../<biblio:TactileIsInstanceOfType/>/<biblio:TactileIsInstanceOfType/>.jsp?uri=<biblio:TactileIsInstanceOf/>"><biblio:TactileIsInstanceOf /></a></td></tr>
+         <tr><td>isInstanceOf</td><td>
+            <c:set var="localType"><biblio:TactileIsInstanceOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:TactileIsInstanceOf/>"><biblio:TactileIsInstanceOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:TactileIsInstanceOfType/>/<biblio:TactileIsInstanceOfType/>.jsp?uri=<biblio:TactileIsInstanceOf/>"><biblio:TactileIsInstanceOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachTactileIsInstanceOfIterator>
       <biblio:foreachTactileHasHoldingIterator>
-         <tr><td>hasHolding</td><td><a href="../<biblio:TactileHasHoldingType/>/<biblio:TactileHasHoldingType/>.jsp?uri=<biblio:TactileHasHolding/>"><biblio:TactileHasHolding /></a></td></tr>
+         <tr><td>hasHolding</td><td>
+            <c:set var="localType"><biblio:TactileHasHoldingType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:TactileHasHolding/>"><biblio:TactileHasHolding/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:TactileHasHoldingType/>/<biblio:TactileHasHoldingType/>.jsp?uri=<biblio:TactileHasHolding/>"><biblio:TactileHasHolding /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachTactileHasHoldingIterator>
       <biblio:foreachTactileHasProvisionIterator>
-         <tr><td>hasProvision</td><td><a href="../<biblio:TactileHasProvisionType/>/<biblio:TactileHasProvisionType/>.jsp?uri=<biblio:TactileHasProvision/>"><biblio:TactileHasProvision /></a></td></tr>
+         <tr><td>hasProvision</td><td>
+            <c:set var="localType"><biblio:TactileHasProvisionType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:TactileHasProvision/>"><biblio:TactileHasProvision/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:TactileHasProvisionType/>/<biblio:TactileHasProvisionType/>.jsp?uri=<biblio:TactileHasProvision/>"><biblio:TactileHasProvision /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachTactileHasProvisionIterator>
       <biblio:foreachTactileHasTitleIterator>
-         <tr><td>hasTitle</td><td><a href="../<biblio:TactileHasTitleType/>/<biblio:TactileHasTitleType/>.jsp?uri=<biblio:TactileHasTitle/>"><biblio:TactileHasTitle /></a></td></tr>
+         <tr><td>hasTitle</td><td>
+            <c:set var="localType"><biblio:TactileHasTitleType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:TactileHasTitle/>"><biblio:TactileHasTitle/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:TactileHasTitleType/>/<biblio:TactileHasTitleType/>.jsp?uri=<biblio:TactileHasTitle/>"><biblio:TactileHasTitle /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachTactileHasTitleIterator>
    </table>
 

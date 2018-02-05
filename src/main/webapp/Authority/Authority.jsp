@@ -30,18 +30,51 @@
       <biblio:foreachAuthorityPrefLabelIterator>
          <tr><td>prefLabel</td><td><biblio:AuthorityPrefLabel /></td></tr>
       </biblio:foreachAuthorityPrefLabelIterator>
+      <biblio:foreachAuthorityNameIterator>
+         <tr><td>name</td><td><biblio:AuthorityName /></td></tr>
+      </biblio:foreachAuthorityNameIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachAuthorityIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:AuthorityIdentifiedByType/>/<biblio:AuthorityIdentifiedByType/>.jsp?uri=<biblio:AuthorityIdentifiedBy/>"><biblio:AuthorityIdentifiedBy /></a></td></tr>
+         <tr><td>identifiedBy</td><td>
+            <c:set var="localType"><biblio:AuthorityIdentifiedByType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:AuthorityIdentifiedBy/>"><biblio:AuthorityIdentifiedBy/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:AuthorityIdentifiedByType/>/<biblio:AuthorityIdentifiedByType/>.jsp?uri=<biblio:AuthorityIdentifiedBy/>"><biblio:AuthorityIdentifiedBy /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachAuthorityIdentifiedByIterator>
       <biblio:foreachAuthorityIdentifiesRWOIterator>
-         <tr><td>identifiesRWO</td><td><a href="../<biblio:AuthorityIdentifiesRWOType/>/<biblio:AuthorityIdentifiesRWOType/>.jsp?uri=<biblio:AuthorityIdentifiesRWO/>"><biblio:AuthorityIdentifiesRWO /></a></td></tr>
+         <tr><td>identifiesRWO</td><td>
+            <c:set var="localType"><biblio:AuthorityIdentifiesRWOType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:AuthorityIdentifiesRWO/>"><biblio:AuthorityIdentifiesRWO/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:AuthorityIdentifiesRWOType/>/<biblio:AuthorityIdentifiesRWOType/>.jsp?uri=<biblio:AuthorityIdentifiesRWO/>"><biblio:AuthorityIdentifiesRWO /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachAuthorityIdentifiesRWOIterator>
       <biblio:foreachAuthorityIsSubjectOfIterator>
-         <tr><td>isSubjectOf</td><td><a href="../<biblio:AuthorityIsSubjectOfType/>/<biblio:AuthorityIsSubjectOfType/>.jsp?uri=<biblio:AuthorityIsSubjectOf/>"><biblio:AuthorityIsSubjectOf /></a></td></tr>
+         <tr><td>isSubjectOf</td><td>
+            <c:set var="localType"><biblio:AuthorityIsSubjectOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:AuthorityIsSubjectOf/>"><biblio:AuthorityIsSubjectOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:AuthorityIsSubjectOfType/>/<biblio:AuthorityIsSubjectOfType/>.jsp?uri=<biblio:AuthorityIsSubjectOf/>"><biblio:AuthorityIsSubjectOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachAuthorityIsSubjectOfIterator>
    </table>
 

@@ -35,13 +35,43 @@
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachProvisionAgentIterator>
-         <tr><td>agent</td><td><a href="../<biblio:ProvisionAgentType/>/<biblio:ProvisionAgentType/>.jsp?uri=<biblio:ProvisionAgent/>"><biblio:ProvisionAgent /></a></td></tr>
+         <tr><td>agent</td><td>
+            <c:set var="localType"><biblio:ProvisionAgentType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ProvisionAgent/>"><biblio:ProvisionAgent/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ProvisionAgentType/>/<biblio:ProvisionAgentType/>.jsp?uri=<biblio:ProvisionAgent/>"><biblio:ProvisionAgent /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachProvisionAgentIterator>
       <biblio:foreachProvisionAtLocationIterator>
-         <tr><td>atLocation</td><td><a href="../<biblio:ProvisionAtLocationType/>/<biblio:ProvisionAtLocationType/>.jsp?uri=<biblio:ProvisionAtLocation/>"><biblio:ProvisionAtLocation /></a></td></tr>
+         <tr><td>atLocation</td><td>
+            <c:set var="localType"><biblio:ProvisionAtLocationType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ProvisionAtLocation/>"><biblio:ProvisionAtLocation/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ProvisionAtLocationType/>/<biblio:ProvisionAtLocationType/>.jsp?uri=<biblio:ProvisionAtLocation/>"><biblio:ProvisionAtLocation /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachProvisionAtLocationIterator>
       <biblio:foreachProvisionMadeAvailableIterator>
-         <tr><td>madeAvailable</td><td><a href="../<biblio:ProvisionMadeAvailableType/>/<biblio:ProvisionMadeAvailableType/>.jsp?uri=<biblio:ProvisionMadeAvailable/>"><biblio:ProvisionMadeAvailable /></a></td></tr>
+         <tr><td>madeAvailable</td><td>
+            <c:set var="localType"><biblio:ProvisionMadeAvailableType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ProvisionMadeAvailable/>"><biblio:ProvisionMadeAvailable/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ProvisionMadeAvailableType/>/<biblio:ProvisionMadeAvailableType/>.jsp?uri=<biblio:ProvisionMadeAvailable/>"><biblio:ProvisionMadeAvailable /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachProvisionMadeAvailableIterator>
    </table>
 

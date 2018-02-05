@@ -27,18 +27,51 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
+      <biblio:foreachConferenceNameIterator>
+         <tr><td>name</td><td><biblio:ConferenceName /></td></tr>
+      </biblio:foreachConferenceNameIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachConferenceIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:ConferenceIdentifiedByType/>/<biblio:ConferenceIdentifiedByType/>.jsp?uri=<biblio:ConferenceIdentifiedBy/>"><biblio:ConferenceIdentifiedBy /></a></td></tr>
+         <tr><td>identifiedBy</td><td>
+            <c:set var="localType"><biblio:ConferenceIdentifiedByType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ConferenceIdentifiedBy/>"><biblio:ConferenceIdentifiedBy/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ConferenceIdentifiedByType/>/<biblio:ConferenceIdentifiedByType/>.jsp?uri=<biblio:ConferenceIdentifiedBy/>"><biblio:ConferenceIdentifiedBy /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachConferenceIdentifiedByIterator>
       <biblio:foreachConferenceIsSubjectOfIterator>
-         <tr><td>isSubjectOf</td><td><a href="../<biblio:ConferenceIsSubjectOfType/>/<biblio:ConferenceIsSubjectOfType/>.jsp?uri=<biblio:ConferenceIsSubjectOf/>"><biblio:ConferenceIsSubjectOf /></a></td></tr>
+         <tr><td>isSubjectOf</td><td>
+            <c:set var="localType"><biblio:ConferenceIsSubjectOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ConferenceIsSubjectOf/>"><biblio:ConferenceIsSubjectOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ConferenceIsSubjectOfType/>/<biblio:ConferenceIsSubjectOfType/>.jsp?uri=<biblio:ConferenceIsSubjectOf/>"><biblio:ConferenceIsSubjectOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachConferenceIsSubjectOfIterator>
       <biblio:foreachConferenceIsPartOfIterator>
-         <tr><td>isPartOf</td><td><a href="../<biblio:ConferenceIsPartOfType/>/<biblio:ConferenceIsPartOfType/>.jsp?uri=<biblio:ConferenceIsPartOf/>"><biblio:ConferenceIsPartOf /></a></td></tr>
+         <tr><td>isPartOf</td><td>
+            <c:set var="localType"><biblio:ConferenceIsPartOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:ConferenceIsPartOf/>"><biblio:ConferenceIsPartOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:ConferenceIsPartOfType/>/<biblio:ConferenceIsPartOfType/>.jsp?uri=<biblio:ConferenceIsPartOf/>"><biblio:ConferenceIsPartOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachConferenceIsPartOfIterator>
    </table>
 

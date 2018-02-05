@@ -32,7 +32,17 @@
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachFingerprintIdentifiesIterator>
-         <tr><td>identifies</td><td><a href="../<biblio:FingerprintIdentifiesType/>/<biblio:FingerprintIdentifiesType/>.jsp?uri=<biblio:FingerprintIdentifies/>"><biblio:FingerprintIdentifies /></a></td></tr>
+         <tr><td>identifies</td><td>
+            <c:set var="localType"><biblio:FingerprintIdentifiesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:FingerprintIdentifies/>"><biblio:FingerprintIdentifies/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:FingerprintIdentifiesType/>/<biblio:FingerprintIdentifiesType/>.jsp?uri=<biblio:FingerprintIdentifies/>"><biblio:FingerprintIdentifies /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachFingerprintIdentifiesIterator>
    </table>
 

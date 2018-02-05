@@ -33,6 +33,9 @@
       <biblio:foreachDatatypePropertyNoteIterator>
          <tr><td>note</td><td><biblio:DatatypePropertyNote /></td></tr>
       </biblio:foreachDatatypePropertyNoteIterator>
+      <biblio:foreachDatatypePropertyScopeNoteIterator>
+         <tr><td>scopeNote</td><td><biblio:DatatypePropertyScopeNote /></td></tr>
+      </biblio:foreachDatatypePropertyScopeNoteIterator>
       <biblio:foreachDatatypePropertyExampleIterator>
          <tr><td>example</td><td><biblio:DatatypePropertyExample /></td></tr>
       </biblio:foreachDatatypePropertyExampleIterator>

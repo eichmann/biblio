@@ -32,16 +32,56 @@
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachAnnotationHasBodyIterator>
-         <tr><td>hasBody</td><td><a href="../<biblio:AnnotationHasBodyType/>/<biblio:AnnotationHasBodyType/>.jsp?uri=<biblio:AnnotationHasBody/>"><biblio:AnnotationHasBody /></a></td></tr>
+         <tr><td>hasBody</td><td>
+            <c:set var="localType"><biblio:AnnotationHasBodyType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:AnnotationHasBody/>"><biblio:AnnotationHasBody/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:AnnotationHasBodyType/>/<biblio:AnnotationHasBodyType/>.jsp?uri=<biblio:AnnotationHasBody/>"><biblio:AnnotationHasBody /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachAnnotationHasBodyIterator>
       <biblio:foreachAnnotationMotivatedByIterator>
-         <tr><td>motivatedBy</td><td><a href="../<biblio:AnnotationMotivatedByType/>/<biblio:AnnotationMotivatedByType/>.jsp?uri=<biblio:AnnotationMotivatedBy/>"><biblio:AnnotationMotivatedBy /></a></td></tr>
+         <tr><td>motivatedBy</td><td>
+            <c:set var="localType"><biblio:AnnotationMotivatedByType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:AnnotationMotivatedBy/>"><biblio:AnnotationMotivatedBy/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:AnnotationMotivatedByType/>/<biblio:AnnotationMotivatedByType/>.jsp?uri=<biblio:AnnotationMotivatedBy/>"><biblio:AnnotationMotivatedBy /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachAnnotationMotivatedByIterator>
       <biblio:foreachAnnotationHasTargetIterator>
-         <tr><td>hasTarget</td><td><a href="../<biblio:AnnotationHasTargetType/>/<biblio:AnnotationHasTargetType/>.jsp?uri=<biblio:AnnotationHasTarget/>"><biblio:AnnotationHasTarget /></a></td></tr>
+         <tr><td>hasTarget</td><td>
+            <c:set var="localType"><biblio:AnnotationHasTargetType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:AnnotationHasTarget/>"><biblio:AnnotationHasTarget/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:AnnotationHasTargetType/>/<biblio:AnnotationHasTargetType/>.jsp?uri=<biblio:AnnotationHasTarget/>"><biblio:AnnotationHasTarget /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachAnnotationHasTargetIterator>
       <biblio:foreachAnnotationAnnotatedByIterator>
-         <tr><td>annotatedBy</td><td><a href="../<biblio:AnnotationAnnotatedByType/>/<biblio:AnnotationAnnotatedByType/>.jsp?uri=<biblio:AnnotationAnnotatedBy/>"><biblio:AnnotationAnnotatedBy /></a></td></tr>
+         <tr><td>annotatedBy</td><td>
+            <c:set var="localType"><biblio:AnnotationAnnotatedByType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:AnnotationAnnotatedBy/>"><biblio:AnnotationAnnotatedBy/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:AnnotationAnnotatedByType/>/<biblio:AnnotationAnnotatedByType/>.jsp?uri=<biblio:AnnotationAnnotatedBy/>"><biblio:AnnotationAnnotatedBy /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachAnnotationAnnotatedByIterator>
    </table>
 

@@ -32,10 +32,30 @@
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachCreatorContributionAgentIterator>
-         <tr><td>agent</td><td><a href="../<biblio:CreatorContributionAgentType/>/<biblio:CreatorContributionAgentType/>.jsp?uri=<biblio:CreatorContributionAgent/>"><biblio:CreatorContributionAgent /></a></td></tr>
+         <tr><td>agent</td><td>
+            <c:set var="localType"><biblio:CreatorContributionAgentType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:CreatorContributionAgent/>"><biblio:CreatorContributionAgent/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:CreatorContributionAgentType/>/<biblio:CreatorContributionAgentType/>.jsp?uri=<biblio:CreatorContributionAgent/>"><biblio:CreatorContributionAgent /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachCreatorContributionAgentIterator>
       <biblio:foreachCreatorContributionContributedToIterator>
-         <tr><td>contributedTo</td><td><a href="../<biblio:CreatorContributionContributedToType/>/<biblio:CreatorContributionContributedToType/>.jsp?uri=<biblio:CreatorContributionContributedTo/>"><biblio:CreatorContributionContributedTo /></a></td></tr>
+         <tr><td>contributedTo</td><td>
+            <c:set var="localType"><biblio:CreatorContributionContributedToType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:CreatorContributionContributedTo/>"><biblio:CreatorContributionContributedTo/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:CreatorContributionContributedToType/>/<biblio:CreatorContributionContributedToType/>.jsp?uri=<biblio:CreatorContributionContributedTo/>"><biblio:CreatorContributionContributedTo /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachCreatorContributionContributedToIterator>
    </table>
 

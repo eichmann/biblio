@@ -32,10 +32,30 @@
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachAbbreviatedTitleHasPartIterator>
-         <tr><td>hasPart</td><td><a href="../<biblio:AbbreviatedTitleHasPartType/>/<biblio:AbbreviatedTitleHasPartType/>.jsp?uri=<biblio:AbbreviatedTitleHasPart/>"><biblio:AbbreviatedTitleHasPart /></a></td></tr>
+         <tr><td>hasPart</td><td>
+            <c:set var="localType"><biblio:AbbreviatedTitleHasPartType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:AbbreviatedTitleHasPart/>"><biblio:AbbreviatedTitleHasPart/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:AbbreviatedTitleHasPartType/>/<biblio:AbbreviatedTitleHasPartType/>.jsp?uri=<biblio:AbbreviatedTitleHasPart/>"><biblio:AbbreviatedTitleHasPart /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachAbbreviatedTitleHasPartIterator>
       <biblio:foreachAbbreviatedTitleIsTitleOfIterator>
-         <tr><td>isTitleOf</td><td><a href="../<biblio:AbbreviatedTitleIsTitleOfType/>/<biblio:AbbreviatedTitleIsTitleOfType/>.jsp?uri=<biblio:AbbreviatedTitleIsTitleOf/>"><biblio:AbbreviatedTitleIsTitleOf /></a></td></tr>
+         <tr><td>isTitleOf</td><td>
+            <c:set var="localType"><biblio:AbbreviatedTitleIsTitleOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:AbbreviatedTitleIsTitleOf/>"><biblio:AbbreviatedTitleIsTitleOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:AbbreviatedTitleIsTitleOfType/>/<biblio:AbbreviatedTitleIsTitleOfType/>.jsp?uri=<biblio:AbbreviatedTitleIsTitleOf/>"><biblio:AbbreviatedTitleIsTitleOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachAbbreviatedTitleIsTitleOfIterator>
    </table>
 

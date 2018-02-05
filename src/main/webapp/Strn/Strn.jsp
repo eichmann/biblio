@@ -32,7 +32,17 @@
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachStrnIdentifiesIterator>
-         <tr><td>identifies</td><td><a href="../<biblio:StrnIdentifiesType/>/<biblio:StrnIdentifiesType/>.jsp?uri=<biblio:StrnIdentifies/>"><biblio:StrnIdentifies /></a></td></tr>
+         <tr><td>identifies</td><td>
+            <c:set var="localType"><biblio:StrnIdentifiesType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:StrnIdentifies/>"><biblio:StrnIdentifies/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:StrnIdentifiesType/>/<biblio:StrnIdentifiesType/>.jsp?uri=<biblio:StrnIdentifies/>"><biblio:StrnIdentifies /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachStrnIdentifiesIterator>
    </table>
 

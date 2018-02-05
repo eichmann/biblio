@@ -30,15 +30,38 @@
       <biblio:foreachTopicPrefLabelIterator>
          <tr><td>prefLabel</td><td><biblio:TopicPrefLabel /></td></tr>
       </biblio:foreachTopicPrefLabelIterator>
+      <biblio:foreachTopicNameIterator>
+         <tr><td>name</td><td><biblio:TopicName /></td></tr>
+      </biblio:foreachTopicNameIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
       <biblio:foreachTopicIdentifiedByIterator>
-         <tr><td>identifiedBy</td><td><a href="../<biblio:TopicIdentifiedByType/>/<biblio:TopicIdentifiedByType/>.jsp?uri=<biblio:TopicIdentifiedBy/>"><biblio:TopicIdentifiedBy /></a></td></tr>
+         <tr><td>identifiedBy</td><td>
+            <c:set var="localType"><biblio:TopicIdentifiedByType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:TopicIdentifiedBy/>"><biblio:TopicIdentifiedBy/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:TopicIdentifiedByType/>/<biblio:TopicIdentifiedByType/>.jsp?uri=<biblio:TopicIdentifiedBy/>"><biblio:TopicIdentifiedBy /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachTopicIdentifiedByIterator>
       <biblio:foreachTopicIsSubjectOfIterator>
-         <tr><td>isSubjectOf</td><td><a href="../<biblio:TopicIsSubjectOfType/>/<biblio:TopicIsSubjectOfType/>.jsp?uri=<biblio:TopicIsSubjectOf/>"><biblio:TopicIsSubjectOf /></a></td></tr>
+         <tr><td>isSubjectOf</td><td>
+            <c:set var="localType"><biblio:TopicIsSubjectOfType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<biblio:TopicIsSubjectOf/>"><biblio:TopicIsSubjectOf/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<biblio:TopicIsSubjectOfType/>/<biblio:TopicIsSubjectOfType/>.jsp?uri=<biblio:TopicIsSubjectOf/>"><biblio:TopicIsSubjectOf /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </biblio:foreachTopicIsSubjectOfIterator>
    </table>
 
