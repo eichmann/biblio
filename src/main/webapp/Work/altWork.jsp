@@ -38,12 +38,20 @@
 				<p>
 					<a href="../Text/Text.jsp?uri=${param.uri}">as Text</a>
                 <p/>
-                <h2>Possible VIAF Records</h2>
-                <c:url var="encodedURL" value="http://guardian.slis.uiowa.edu:8080/viaf/embedded_search.jsp">
-                    <c:param name="mode" value="work"/>
-                    <c:param name="query" value="${title}"/>
-                </c:url>
-                <c:import url="${encodedURL}"/>
+                <c:if test="${empty viafID}">
+                    <h2>Possible VIAF Records: <util:regexRewrite source=" [\[/].*" target="">${title}</util:regexRewrite></h2>
+                    <c:url var="encodedURL" value="http://localhost:8081/viaf/embedded_search.jsp">
+                        <c:param name="mode" value="work"/>
+                        <c:param name="query"><util:regexRewrite source=" /.*" target="">${title}</util:regexRewrite></c:param>
+                        <c:param name="source">${param.uri}</c:param>
+                    </c:url>
+                    <c:catch var="viaf_result">
+                        <c:import url="${encodedURL}"/>
+                    </c:catch>
+                    <c:if test="${not empty viaf_result}">
+                        The VIAF server is currently unavailable. ${viaf_result }<p>
+                    </c:if>
+                </c:if>
 
 					<biblio:foreachWorkHasContributionIterator>
 						<p>
