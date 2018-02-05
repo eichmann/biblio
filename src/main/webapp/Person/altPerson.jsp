@@ -64,6 +64,14 @@
 						     <dbpedia:foreachPersonTheAbstractIterator>
 						         <p><util:regexRewrite source='\\\\"' target='"'><dbpedia:PersonTheAbstract /></util:regexRewrite></p>
 						      </dbpedia:foreachPersonTheAbstractIterator>
+						      Active:
+						          <dbpedia:foreachPersonActiveYearsStartYearIterator>
+						              <dbpedia:PersonActiveYearsStartYear/>
+						          </dbpedia:foreachPersonActiveYearsStartYearIterator>
+						          -
+                                  <dbpedia:foreachPersonActiveYearsEndYearIterator>
+    						          <dbpedia:PersonActiveYearsEndYear/>
+                                  </dbpedia:foreachPersonActiveYearsEndYearIterator>
                             </dbpedia:Person>
                          </c:if>
                       </viaf:foreachPersonSameAsIterator>
@@ -88,17 +96,16 @@
 
 				<h2>Works</h2>
 				<ol class="bulletedList">
-					<biblio:foreachPersonAgentInverseIterator>
+					<biblio:foreachPersonAgentInverseIterator limitCriteria="1000" classFilter="CreatorContribution">
 						<c:set var="work">
 							<biblio:PersonAgentInverse />
 						</c:set>
 						<biblio:Contribution subjectURI="${work}">
-							<biblio:foreachContributionContributedToIterator>
+							<biblio:foreachContributionContributedToIterator classFilter="Monograph">
 								<biblio:Work>
-									<biblio:foreachWorkHasTitleIterator>
+									<biblio:foreachWorkHasTitleIterator limitCriteria="1">
 										<biblio:Title>
-											<li><a
-												href="../Work/altWork.jsp?uri=<biblio:WorkSubjectURI/>"><biblio:TitleLabel /></a>
+											<li><a href="../Work/altWork.jsp?uri=<biblio:WorkSubjectURI/>"><biblio:TitleLabel /></a>
 										</biblio:Title>
 									</biblio:foreachWorkHasTitleIterator>
 								</biblio:Work>
@@ -109,12 +116,11 @@
 				</ol>
 				<h2>Subject Of:</h2>
 				<ol class="bulletedList">
-					<biblio:foreachPersonIsSubjectOfIterator>
+					<biblio:foreachPersonIsSubjectOfIterator classFilter="Monograph">
 						<biblio:Work>
-							<biblio:foreachWorkHasTitleIterator>
+							<biblio:foreachWorkHasTitleIterator limitCriteria="1">
 								<biblio:Title>
-									<li><a
-										href="../Work/altWork.jsp?uri=<biblio:WorkSubjectURI/>"><biblio:TitleLabel /></a>
+									<li><a href="../Work/altWork.jsp?uri=<biblio:WorkSubjectURI/>"><biblio:TitleLabel /></a>
 								</biblio:Title>
 							</biblio:foreachWorkHasTitleIterator>
 						</biblio:Work>
