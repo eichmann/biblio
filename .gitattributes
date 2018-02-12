@@ -254,6 +254,7 @@ src/main/webapp/WEB-INF/lib/java-cup-0.11a-beta-20060608-runtime.jar -text
 src/main/webapp/Work/Work.jsp -text
 src/main/webapp/Work/WorkList.jsp -text
 src/main/webapp/Work/altWork.jsp -text
+src/main/webapp/Work/linkWork.jsp -text
 src/main/webapp/classHierarchy.jsp -text
 src/main/webapp/classList.jsp -text
 src/main/webapp/footer.jsp -text

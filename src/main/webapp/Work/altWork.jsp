@@ -52,6 +52,20 @@
                         The VIAF server is currently unavailable. ${viaf_result }<p>
                     </c:if>
                 </c:if>
+                <c:if test="${empty dbpediaID}">
+                    <h2>Possible DBpedia Records</h2>
+                    <c:url var="encodedURL" value="http://localhost:8081/dbpedia/embedded_search.jsp">
+                        <c:param name="mode" value="work"/>
+                        <c:param name="query"><util:regexRewrite source=" /.*" target="">${title}</util:regexRewrite></c:param>
+                        <c:param name="source">${param.uri}</c:param>
+                    </c:url>
+                    <c:catch var="dbpedia_result">
+                        <c:import url="${encodedURL}"/>
+                    </c:catch>
+                    <c:if test="${not empty dbpedia_result}">
+                        The DBpedia server is currently unavailable. ${dbpedia_result }<p>
+                    </c:if>
+                </c:if>
 
 					<biblio:foreachWorkHasContributionIterator>
 						<p>
