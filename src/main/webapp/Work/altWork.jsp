@@ -2,6 +2,9 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="biblio" uri="http://slis.uiowa.edu/BIBFRAME"%>
 <%@ taglib prefix="util" uri="http://icts.uiowa.edu/tagUtil"%>
+<%@ taglib prefix="dbpedia" uri="http://slis.uiowa.edu/DBpedia"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -38,7 +41,33 @@
 				<p>
 					<a href="../Text/Text.jsp?uri=${param.uri}">as Text</a>
                 <p/>
-                <c:if test="${empty viafID}">
+
+                <div id="inclusion">
+                <sql:query var="works" dataSource="jdbc/ld4l">
+                    select target
+                    from sameas
+                    where source = ?
+                    <sql:param value="${param.uri}"/>
+                </sql:query>
+					<c:forEach items="${works.rows}" var="row" varStatus="rowCounter">
+						<h2>dbpedia data <a href="unlinkWork.jsp?source=${param.uri}">(unlink)</a></h2>
+						<c:set var="viafID" value="${row.target}" />
+						<c:if test="${fn:contains(viafID,'dbpedia')}">
+							<dbpedia:Work subjectURI="${viafID}">
+								<dbpedia:foreachWorkDepictionIterator>
+									<img src="<dbpedia:WorkDepiction/>" width="200" align="left" />
+								</dbpedia:foreachWorkDepictionIterator>
+
+								<dbpedia:foreachWorkTheAbstractIterator>
+									<p>
+										<util:regexRewrite source='\\\\"' target='"'><dbpedia:WorkTheAbstract /></util:regexRewrite>
+									</p>
+								</dbpedia:foreachWorkTheAbstractIterator>
+							</dbpedia:Work>
+						</c:if>
+					</c:forEach>
+
+					<c:if test="${empty viafID and empty dbpediaID}">
                     <h2>Possible VIAF Records: <util:regexRewrite source=" [\[/].*" target="">${title}</util:regexRewrite></h2>
                     <c:url var="encodedURL" value="http://localhost:8081/viaf/embedded_search.jsp">
                         <c:param name="mode" value="work"/>
@@ -52,7 +81,7 @@
                         The VIAF server is currently unavailable. ${viaf_result }<p>
                     </c:if>
                 </c:if>
-                <c:if test="${empty dbpediaID}">
+                <c:if test="${empty viafID and empty dbpediaID}">
                     <h2>Possible DBpedia Records</h2>
                     <c:url var="encodedURL" value="http://localhost:8081/dbpedia/embedded_search.jsp">
                         <c:param name="mode" value="work"/>
@@ -66,6 +95,7 @@
                         The DBpedia server is currently unavailable. ${dbpedia_result }<p>
                     </c:if>
                 </c:if>
+                </div>
 
 					<biblio:foreachWorkHasContributionIterator>
 						<p>

@@ -59,7 +59,7 @@
                          <c:if test="${fn:contains(sameas,'dbpedia')}">
                             <dbpedia:Person subjectURI="${sameas}">
 						      <dbpedia:foreachPersonDepictionIterator>
-						         <img src="<dbpedia:PersonDepiction/>" width="100" align="left" />
+						         <img src="<dbpedia:PersonDepiction/>" width="200" align="left" />
 						      </dbpedia:foreachPersonDepictionIterator>
 						     <dbpedia:foreachPersonTheAbstractIterator>
 						         <p><util:regexRewrite source='\\\\"' target='"'><dbpedia:PersonTheAbstract /></util:regexRewrite></p>
